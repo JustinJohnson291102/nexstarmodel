@@ -1,36 +1,29 @@
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const teamMembers = [
   {
     name: "Alex Johnson",
     title: "Founder & CEO",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-1"),
   },
   {
     name: "Samantha Lee",
     title: "Creative Director",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-2"),
   },
   {
     name: "Michael Chen",
     title: "Lead Developer",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-3"),
   },
   {
     name: "Jessica Davis",
     title: "Marketing Strategist",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-4"),
   },
   {
     name: "David Rodriguez",
     title: "Lead Designer",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-5"),
   },
   {
     name: "Emily White",
     title: "Project Manager",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-6"),
   },
 ];
 
@@ -96,17 +89,9 @@ export default function StoryPage() {
                 className="text-center animate-in fade-in slide-in-from-bottom-8 duration-700"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                {member.image && (
-                  <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
-                    <Image
-                      src={member.image.imageUrl}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={member.image.imageHint}
-                    />
-                  </div>
-                )}
+                <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden shadow-lg bg-muted flex items-center justify-center">
+                  {/* Placeholder for image */}
+                </div>
                 <h3 className="text-xl font-bold font-headline">{member.name}</h3>
                 <p className="text-muted-foreground">{member.title}</p>
               </div>

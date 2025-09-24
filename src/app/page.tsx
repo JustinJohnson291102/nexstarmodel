@@ -121,7 +121,20 @@ export default function Home() {
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-left">
-             <div className="grid grid-cols-1 gap-4 mb-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+            <h2 className="font-headline text-primary text-3xl md:text-4xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              We're Changing the Way you View Communications
+            </h2>
+            <p className="text-muted-foreground md:text-lg text-justify animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+              Xebec Communications is a hybrid marketing company with the
+              chutzpah of a millennial combined with the experience of Gen X. We
+              bring to the table the best of cutting-edge ideas, a wealth of
+              insights, the robustness of experience and the magic of agility.
+              We connect the dots quicker, so you benefit faster. From branding
+              to advertising, we offer solutions which are truly 360 degrees in
+              nature. Because we truly believe that the future of Communications
+              lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
+            </p>
+             <div className="grid grid-cols-1 gap-4 mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
               {/* Row 1 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="md:col-span-1 flex flex-col gap-4">
@@ -187,19 +200,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <h2 className="font-headline text-primary text-3xl md:text-4xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
-              We're Changing the Way you View Communications
-            </h2>
-            <p className="text-muted-foreground md:text-lg text-justify animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              Xebec Communications is a hybrid marketing company with the
-              chutzpah of a millennial combined with the experience of Gen X. We
-              bring to the table the best of cutting-edge ideas, a wealth of
-              insights, the robustness of experience and the magic of agility.
-              We connect the dots quicker, so you benefit faster. From branding
-              to advertising, we offer solutions which are truly 360 degrees in
-              nature. Because we truly believe that the future of Communications
-              lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
-            </p>
           </div>
         </div>
       </section>

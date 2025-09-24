@@ -76,6 +76,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
+                Our Gamut of Services are as Diverse as they are Effective
+              </h2>
+              <ul className="space-y-4 mb-8">
+                {servicesList.map((service) => (
+                  <li key={service} className="flex items-center">
+                    <CheckCircle className="h-6 w-6 text-primary mr-3" />
+                    <Link
+                      href="/services"
+                      className="text-lg hover:text-primary transition-colors"
+                    >
+                      {service}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild size="lg" className="group rounded-lg">
+                <Link href="/services">
+                  View Our Services{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+              <Image
+                src="https://picsum.photos/seed/services/600/400"
+                alt="Diverse and effective services"
+                width={600}
+                height={400}
+                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                data-ai-hint="marketing strategy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
@@ -162,47 +203,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Our Gamut of Services are as Diverse as they are Effective
-              </h2>
-              <ul className="space-y-4 mb-8">
-                {servicesList.map((service) => (
-                  <li key={service} className="flex items-center">
-                    <CheckCircle className="h-6 w-6 text-primary mr-3" />
-                    <Link
-                      href="/services"
-                      className="text-lg hover:text-primary transition-colors"
-                    >
-                      {service}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <Button asChild size="lg" className="group rounded-lg">
-                <Link href="/services">
-                  View Our Services{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              <Image
-                src="https://picsum.photos/seed/services/600/400"
-                alt="Diverse and effective services"
-                width={600}
-                height={400}
-                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                data-ai-hint="marketing strategy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
       
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4 text-center">
@@ -227,5 +227,3 @@ export default function Home() {
     </>
   );
 }
-
-    

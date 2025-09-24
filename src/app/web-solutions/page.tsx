@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 export default function WebSolutionsPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+      <section className="relative h-[60vh] w-full flex items-center justify-start text-left">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
           src="https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo"
@@ -16,7 +16,7 @@ export default function WebSolutionsPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="relative z-20 container mx-auto px-4 animate-in fade-in slide-in-from-left-10 duration-700">
           <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-white mb-4">
             Responsive Website <br /> Development Services
           </h1>

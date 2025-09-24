@@ -54,18 +54,25 @@ export default function StoryPage() {
               Our highly-enthusiastic team is a fantastic mix of energy, ideas, experience and new thinking, who work hand-in-hand to create stand-out work. From creative to strategy, business to digital marketing, media to interactive – we’re always raring to go!
             </p>
           </div>
-        </div>
-      </section>
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <Image
-              src="https://drive.google.com/uc?export=view&id=1NJ6xyxPYfTGmOx9s8BUvjXfeh9NlRJ20"
-              alt="Our team at work"
-              width={1200}
-              height={800}
-              className="rounded-lg shadow-xl w-full h-auto object-cover"
-            />
+          <div className="max-w-6xl mx-auto space-y-8">
+            <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
+                <Image
+                src="https://drive.google.com/uc?export=view&id=1NJ6xyxPYfTGmOx9s8BUvjXfeh9NlRJ20"
+                alt="Our team at work"
+                width={1200}
+                height={800}
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+                />
+            </div>
+            <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+                <Image
+                src="https://drive.google.com/uc?export=view&id=1weP9Jy7dvhl8v-VWsZ7N3RSguW1iEELR"
+                alt="Another team picture"
+                width={1200}
+                height={800}
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+                />
+            </div>
           </div>
         </div>
       </section>

@@ -12,53 +12,22 @@ import {
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight } from "lucide-react";
-
-// Simple Autoplay Plugin
-const AutoplayPlugin = (options) => (emblaApi) => {
-  const { delay = 3000, stopOnInteraction = true } = options;
-  let timer = 0;
-
-  const start = () => {
-    stop();
-    timer = window.setTimeout(() => {
-      if (emblaApi.canScrollNext()) {
-        emblaApi.scrollNext();
-      } else {
-        emblaApi.scrollTo(0);
-      }
-    }, delay);
-  };
-
-  const stop = () => {
-    clearTimeout(timer);
-  };
-
-  const onSelect = () => {
-    stop();
-    start();
-  };
-  
-  emblaApi.on("init", start);
-  if (stopOnInteraction) {
-    emblaApi.on("pointerDown", stop);
-    emblaApi.on("select", onSelect);
-  }
-  emblaApi.on("destroy", stop);
-};
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Hero() {
   const heroImages = PlaceHolderImages.filter((img) =>
     img.id.startsWith("hero-")
   );
 
-  const plugin = React.useRef(
-    AutoplayPlugin({ delay: 3000, stopOnInteraction: true })
-  );
-
   return (
     <section className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
       <Carousel
-        plugins={[plugin.current]}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            stopOnInteraction: true,
+          }),
+        ]}
         className="w-full h-full"
         opts={{ loop: true }}
       >

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Code } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,10 +25,13 @@ export default function Footer() {
           <div className="flex flex-col justify-between md:col-span-1">
             <div>
               <Link href="/" className="flex items-center space-x-2 mb-4">
-                <Code className="h-8 w-8 text-accent" />
-                <span className="text-2xl font-bold font-headline text-white">
-                  Digitale Agency
-                </span>
+                 <Image
+                  src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
+                  alt="Nexstar Logo"
+                  width={150}
+                  height={50}
+                  className="object-contain"
+                />
               </Link>
               <p className="text-sm text-gray-400 max-w-sm">
                 Innovating the digital space, one pixel at a time. We are the
@@ -73,7 +76,7 @@ export default function Footer() {
         </div>
          <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">
             <p>
-              &copy; {currentYear} Digitale Agency. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+              &copy; {currentYear} Nexstar. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
             </p>
           </div>
       </div>

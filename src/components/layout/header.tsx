@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Code, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -68,10 +69,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Code className="h-6 w-6 text-accent" />
-          <span className="font-bold font-headline text-accent inline-block">
-            Digitale
-          </span>
+           <Image
+            src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
+            alt="Nexstar Logo"
+            width={120}
+            height={40}
+            className="object-contain"
+          />
         </Link>
         <div className="flex flex-1 items-center justify-end md:justify-center">
           <nav className="hidden md:flex md:gap-6 items-center">
@@ -129,8 +133,13 @@ export default function Header() {
                   className="flex items-center space-x-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Code className="h-6 w-6 text-accent" />
-                  <span className="font-bold font-headline text-accent">Digitale</span>
+                   <Image
+                    src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
+                    alt="Nexstar Logo"
+                    width={100}
+                    height={32}
+                    className="object-contain"
+                  />
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4">

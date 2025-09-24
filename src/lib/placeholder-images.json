@@ -8,9 +8,9 @@
     },
     {
       "id": "hero-1",
-      "description": "Abstract digital art with flowing blue and purple lines.",
-      "imageUrl": "https://images.unsplash.com/photo-1637825891028-564f672aa42c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBkaWdpdGFsfGVufDB8fHx8MTc1ODU5ODEyNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract digital"
+      "description": "A vibrant and colorful abstract painting.",
+      "imageUrl": "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2xvcmZ1bCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MDMxMDI0Mnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "colorful abstract"
     },
     {
       "id": "hero-2",

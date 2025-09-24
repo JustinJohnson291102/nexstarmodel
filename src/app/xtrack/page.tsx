@@ -25,7 +25,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import { ChartTooltipContent } from "@/components/ui/chart";
+import { ChartContainer, ChartTooltipContent } from "@/components/ui/chart";
 
 const chartData = [
   { month: "Jan", desktop: 186, mobile: 80 },
@@ -35,6 +35,17 @@ const chartData = [
   { month: "May", desktop: 209, mobile: 130 },
   { month: "Jun", desktop: 214, mobile: 140 },
 ];
+
+const chartConfig = {
+  desktop: {
+    label: "Desktop",
+    color: "hsl(var(--primary))",
+  },
+  mobile: {
+    label: "Mobile",
+    color: "hsl(var(--muted-foreground))",
+  },
+};
 
 const features = [
   {
@@ -194,81 +205,44 @@ export default function XtrackPage() {
             </CardHeader>
             <CardContent>
               <div className="h-[350px] w-full">
-                <ResponsiveContainer>
-                  <AreaChart data={chartData}>
-                    <defs>
-                      <linearGradient
-                        id="colorDesktop"
-                        x1="0"
-                        y1="0"
-                        x2="0"
-                        y2="1"
-                      >
-                        <stop
-                          offset="5%"
-                          stopColor="hsl(var(--primary))"
-                          stopOpacity={0.8}
-                        />
-                        <stop
-                          offset="95%"
-                          stopColor="hsl(var(--primary))"
-                          stopOpacity={0}
-                        />
-                      </linearGradient>
-                      <linearGradient
-                        id="colorMobile"
-                        x1="0"
-                        y1="0"
-                        x2="0"
-                        y2="1"
-                      >
-                        <stop
-                          offset="5%"
-                          stopColor="hsl(var(--secondary-foreground))"
-                          stopOpacity={0.4}
-                        />
-                        <stop
-                          offset="95%"
-                          stopColor="hsl(var(--secondary-foreground))"
-                          stopOpacity={0}
-                        />
-                      </linearGradient>
-                    </defs>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                <ChartContainer config={chartConfig} className="w-full h-full">
+                  <AreaChart
+                    data={chartData}
+                    margin={{
+                      left: 12,
+                      right: 12,
+                    }}
+                  >
+                    <CartesianGrid vertical={false} />
                     <XAxis
                       dataKey="month"
-                      stroke="hsl(var(--muted-foreground))"
                       tickLine={false}
                       axisLine={false}
-                      fontSize={12}
+                      tickMargin={8}
+                      tickFormatter={(value) => value.slice(0, 3)}
                     />
-                    <YAxis
-                      stroke="hsl(var(--muted-foreground))"
-                      tickLine={false}
-                      axisLine={false}
-                      fontSize={12}
-                      tickFormatter={(value) => `${value}`}
-                    />
-                    <Tooltip
-                      cursor={{ fill: "hsla(var(--primary) / 0.1)" }}
-                      content={<ChartTooltipContent />}
+                    <ChartTooltip
+                      cursor={false}
+                      content={<ChartTooltipContent indicator="dot" />}
                     />
                     <Area
-                      type="monotone"
                       dataKey="desktop"
-                      stroke="hsl(var(--primary))"
-                      fillOpacity={1}
-                      fill="url(#colorDesktop)"
+                      type="natural"
+                      fill="var(--color-desktop)"
+                      fillOpacity={0.4}
+                      stroke="var(--color-desktop)"
+                      stackId="a"
                     />
                     <Area
-                      type="monotone"
                       dataKey="mobile"
-                      stroke="hsl(var(--muted-foreground))"
-                      fillOpacity={1}
-                      fill="url(#colorMobile)"
+                      type="natural"
+                      fill="var(--color-mobile)"
+                      fillOpacity={0.4}
+                      stroke="var(--color-mobile)"
+                      stackId="a"
                     />
                   </AreaChart>
-                </ResponsiveContainer>
+                </ChartContainer>
               </div>
             </CardContent>
           </Card>

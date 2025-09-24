@@ -2,8 +2,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, PenTool, Search } from "lucide-react";
+import { ArrowRight, Code, PenTool, Search, FileScan, LocateFixed, Users, Rocket, TrendingUp, Briefcase, Replace } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { Card, CardContent } from "@/components/ui/card";
+
+const approachFirstRow = [
+  {
+    icon: FileScan,
+    text: "Audit your Digital Marketing & Communication",
+  },
+  {
+    icon: Users,
+    text: "Identify gaps in your digital assets & overall communication",
+  },
+  {
+    icon: LocateFixed,
+    text: "Dive deep into understanding your design & content",
+  },
+];
+
+const approachSecondRow = [
+   {
+    icon: Rocket,
+    text: "Execute campaign",
+  },
+  {
+    icon: Replace,
+    text: "Monitor, Maintain, Re-optimize",
+  },
+  {
+    icon: Briefcase,
+    text: "E-commerce Expertise",
+  },
+    {
+    icon: TrendingUp,
+    text: "Analyze Business Requirements",
+  },
+]
 
 export default function WebSolutionsPage() {
   return (
@@ -52,6 +87,34 @@ export default function WebSolutionsPage() {
                 <h3 className="text-xl font-semibold font-headline">Keywords</h3>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-12 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
+            Our Approach
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            {approachFirstRow.map((item, index) => (
+              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300">
+                <CardContent className="p-6">
+                  <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <p className="font-semibold">{item.text}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+            {approachSecondRow.map((item, index) => (
+              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300">
+                <CardContent className="p-6">
+                  <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <p className="font-semibold">{item.text}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

@@ -22,17 +22,17 @@ export default function Home() {
                   alt="Advertising agency creative process"
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-xl"
+                  className="rounded-lg shadow-xl w-full h-auto"
                   data-ai-hint={adAgencyImage.imageHint}
                 />
               )}
             </div>
             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
                 As an Advertising Agency, We Ignite Brands with Ideas that
                 Transform Behaviour
               </h2>
-              <p className="max-w-xl text-muted-foreground md:text-lg mb-8">
+              <p className="text-muted-foreground md:text-lg mb-8">
                 Across mediums, we have taken both fledgling and legacy brands
                 to a new level of success.
               </p>

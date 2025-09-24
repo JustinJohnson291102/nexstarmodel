@@ -9,9 +9,9 @@ export default function Home() {
       <Hero />
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            Let's build your digital future.
-          </h2>
+           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+            Innovate. Create. Elevate.
+          </h1>
           <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
             From groundbreaking strategies to stunning Shopify stores, we are the architects of your digital success. Explore our services and see how we can elevate your brand.
           </p>

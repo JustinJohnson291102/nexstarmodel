@@ -8,9 +8,9 @@
     },
     {
       "id": "hero-1",
-      "description": "A stylishly dressed person in a modern city setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzYwMzEwNjc4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "fashion model"
+      "description": "A person working on a laptop in a modern, creative office.",
+      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdvcmtzcGFjZXxlbnwwfHx8fDE3NjA5NDY0MDl8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "creative workspace"
     },
     {
       "id": "hero-2",
@@ -63,7 +63,7 @@
     {
       "id": "testimonial-avatar-3",
       "description": "Portrait of a person smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc1ODU4MzY2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc1ODU4MzY2Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person smiling"
     },
     {
@@ -81,13 +81,13 @@
     {
       "id": "podcast-thumb-3",
       "description": "Headphones on a desk with a glowing keyboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1679969061475-29a8d211ba95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGRlc2t8ZW58MHx8fHwxNzU4NjQ0ODYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679969061475-29a8d211ba95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGRlc2t8ZW58MHx8fHwxNzU4NjQ0ODYxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "headphones desk"
     },
     {
       "id": "podcast-thumb-4",
       "description": "A sound wave visualization graphic.",
-      "imageUrl": "https://images.unsplash.com/photo-1686519093104-3140c6dcf284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb3VuZCUyMHdhdmV8ZW58MHx8fHwxNzU4NTk2NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1686519093104-3140c6dcf284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb3VuZCUyMHdhdmV8ZW58MHx8fHwxNzU4NTk2NTEyfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sound wave"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "service-gtm",
       "description": "A rocket launching into the sky, symbolizing a product launch.",
-      "imageUrl": "https://images.unsplash.com/photo-1623077299184-5cc7fd33ea99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8R1RNJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623077299184-5cc7fd33ea99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8R1RNJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "GTM strategy"
     },
     {
@@ -111,13 +111,13 @@
     {
       "id": "service-content",
       "description": "A person writing in a notebook at a desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb250ZW50JTIwbWFya2V0aW5nfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb250ZW50JTIwbWFya2V0aW5nfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "content marketing"
     },
     {
       "id": "service-podcast",
       "description": "A professional microphone in a recording booth.",
-      "imageUrl": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9kY2FzdCUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9kY2FzdCUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "podcast production"
     },
     {

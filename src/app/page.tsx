@@ -27,14 +27,14 @@ export default function Home() {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               {adAgencyImage && (
                 <Image
                   src={adAgencyImage.imageUrl}
                   alt="Advertising agency creative process"
                   width={600}
-                  height={400}
-                  className="rounded-lg shadow-xl w-full h-auto object-cover"
+                  height={450}
+                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                   data-ai-hint={adAgencyImage.imageHint}
                 />
               )}
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700 md:order-2">
               <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
                 Our Gamut of Services are as Diverse as they are Effective
               </h2>
@@ -81,14 +81,14 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700 md:order-1 overflow-hidden rounded-lg shadow-xl">
               {gamutOfServicesImage && (
                 <Image
                   src={gamutOfServicesImage.imageUrl}
                   alt="Diverse and effective services"
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-xl w-full h-auto object-cover"
+                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                   data-ai-hint={gamutOfServicesImage.imageHint}
                 />
               )}

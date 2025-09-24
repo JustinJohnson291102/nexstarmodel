@@ -54,6 +54,37 @@ export default function StoryPage() {
               Our highly-enthusiastic team is a fantastic mix of energy, ideas, experience and new thinking, who work hand-in-hand to create stand-out work. From creative to strategy, business to digital marketing, media to interactive – we’re always raring to go!
             </p>
           </div>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+            <div className="text-center animate-in fade-in slide-in-from-left-10 duration-700">
+              <div className="inline-block">
+                <Image
+                  src="https://drive.google.com/uc?export=view&id=1sHb5vgWug43sY7N9TWDoZfnsTvCBFvSb"
+                  alt="Kiran Bhat"
+                  width={400}
+                  height={400}
+                  className="rounded-lg shadow-lg"
+                />
+                <h3 className="text-2xl font-bold font-headline text-accent mt-4">
+                  Kiran Bhat
+                </h3>
+                <p className="text-lg text-primary font-semibold">CMD</p>
+              </div>
+            </div>
+            <div className="text-left text-muted-foreground prose prose-lg animate-in fade-in slide-in-from-right-10 duration-700">
+              <p>
+                Kiran Bhat is not only an advertising and strategy maestro, she's a veritable force when it comes to busting stereotypes. An Industrial Psychologist by qualification, Kiran went on to get her Executive Education from Harvard Business School.
+              </p>
+              <p>
+                She is also Co-author of the hugely successful book on entrepreneurship - 'No Holy Cows in Business' - she continues to serve as guest faculty in several of India's top management schools. Frequently invited to speak on several industry panels across India.
+              </p>
+              <p>
+                She started Xebec Communications Pvt Ltd in 1992. A rich experience of 28 years stands her in good stead as she continues to steer and build successful brands across diverse verticals - be it BFSI, Retail, Real Estate, B2B, FMCG, Education or new age businesses which need out of the box thinking.
+              </p>
+              <p>
+                Always up for new challenges, Kiran has successfully created a niche for Xebec and herself as one of the most respected and creatively-forward names in Digital Marketing and Advertising Communication.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>

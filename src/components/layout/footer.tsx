@@ -30,7 +30,7 @@ export default function Footer() {
                   alt="Nexstar Logo"
                   width={150}
                   height={50}
-                  className="object-contain"
+                  className="object-contain bg-black"
                 />
               </Link>
               <p className="text-sm text-gray-400 max-w-sm">

@@ -19,7 +19,7 @@ export default function Preloader() {
     >
       <div className="animate-pulse">
         <Image
-          src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
+          src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"
           width={300}
           height={100}

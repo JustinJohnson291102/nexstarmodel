@@ -26,11 +26,11 @@ export default function Footer() {
             <div>
               <Link href="/" className="flex items-center space-x-2 mb-4">
                  <Image
-                  src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
+                  src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
                   alt="Nexstar Logo"
                   width={150}
                   height={50}
-                  className="object-contain bg-black"
+                  className="object-contain"
                 />
               </Link>
               <p className="text-sm text-gray-400 max-w-sm">

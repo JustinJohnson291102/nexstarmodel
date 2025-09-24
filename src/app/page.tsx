@@ -133,8 +133,8 @@ export default function Home() {
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[0]}`}
                       alt="Drive Image 1"
-                      width={400}
-                      height={300}
+                      width={320}
+                      height={240}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
@@ -142,8 +142,8 @@ export default function Home() {
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[1]}`}
                       alt="Drive Image 2"
-                      width={400}
-                      height={300}
+                      width={320}
+                      height={240}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
@@ -152,8 +152,8 @@ export default function Home() {
                   <Image
                     src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
                     alt="Drive Image 3"
-                    width={800}
-                    height={1200}
+                    width={640}
+                    height={960}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
@@ -164,8 +164,8 @@ export default function Home() {
                   <Image
                     src={`https://drive.google.com/uc?export=view&id=${driveImages[3]}`}
                     alt="Drive Image 4"
-                    width={800}
-                    height={1200}
+                    width={640}
+                    height={960}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
@@ -174,8 +174,8 @@ export default function Home() {
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[4]}`}
                       alt="Drive Image 5"
-                      width={400}
-                      height={300}
+                      width={320}
+                      height={240}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
@@ -183,8 +183,8 @@ export default function Home() {
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[5]}`}
                       alt="Drive Image 6"
-                      width={400}
-                      height={300}
+                      width={320}
+                      height={240}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>

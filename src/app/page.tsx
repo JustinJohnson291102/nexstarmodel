@@ -28,7 +28,7 @@ export default function Home() {
     "1uU61ubKLUMHjhEhjC-YSCgADt3gp8Fm-", // small 1
     "1OvONtlQCC-uAkTzLJ10Xf8u59Eo6wSBu", // small 2
     "1anV4fJQo5ijo_xNkxuqx64Z_uPALtLOU", // big 1 (vertical)
-    "1qD7RE55BkSvD6YpZua4hyD4DXFIP_Osu", // big 2 (vertical)
+    "1aH4QgARvTOu9nwMXZA2OH4WOM1ad9Co1", // big 2 (vertical) -> REPLACED
     "18jdLAB6UVCxDq1PPSvl7YJprshpRHNDV", // small 3
     "1OgeTSulBgpPo1PCdnAu_jtxmVpH8RKsO", // small 4
   ];
@@ -150,12 +150,11 @@ export default function Home() {
                 </div>
                 <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700">
                   <Image
-                    src={`https://picsum.photos/seed/comm-grid-1/800/600`}
+                    src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
                     alt="Communications grid image"
                     width={512}
                     height={768}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    data-ai-hint="communications technology"
                   />
                 </div>
               </div>

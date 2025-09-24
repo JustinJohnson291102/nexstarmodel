@@ -90,14 +90,6 @@ export default function StoryPage() {
           <div className="mt-20 md:mt-32">
             <Separator className="my-16 bg-primary" />
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-              <div className="md:order-1 text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-left-10 duration-700 space-y-4">
-                <p>
-                  Anil Bhat lives, sleeps, talks and breathes Digital Marketing - and that's no exaggeration! Having completed his Graduation in Engineering, Anil went on to become a Certified Digital Marketing Specialist with a Google Black Belt certification. He has now completed 25 years in Xebec Communications, as the guiding light behind transforming it into a leading digital marketing company.
-                </p>
-                <p>
-                  Be it Social Media Marketing or Web Design, Search Engine Optimization or Performance Marketing, Application Development or Marketing Strategy - Anil has been instrumental for the Digital Transformation of several brands across verticals like Education, Real Estate, B2B, Retail, Home & Interiors, BFSI and more. As a specialist in the field, he has the expertise to deliver solutions that extend over the entire gamut of E-Commerce, CRM, Lead Generation, Digital Media Planning, Media Buying, Marketing Strategy and Technology.
-                </p>
-              </div>
               <div className="md:order-2 text-center animate-in fade-in slide-in-from-right-10 duration-700">
                 <div className="inline-block">
                   <Image
@@ -107,7 +99,19 @@ export default function StoryPage() {
                     height={280}
                     className="rounded-lg shadow-lg"
                   />
+                  <h3 className="text-2xl font-bold font-headline text-accent mt-4">
+                    Anil Bhat
+                  </h3>
+                  <p className="text-lg text-primary font-semibold">Director & CEO</p>
                 </div>
+              </div>
+              <div className="md:order-1 text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-left-10 duration-700 space-y-4">
+                <p>
+                  Anil Bhat lives, sleeps, talks and breathes Digital Marketing - and that's no exaggeration! Having completed his Graduation in Engineering, Anil went on to become a Certified Digital Marketing Specialist with a Google Black Belt certification. He has now completed 25 years in Xebec Communications, as the guiding light behind transforming it into a leading digital marketing company.
+                </p>
+                <p>
+                  Be it Social Media Marketing or Web Design, Search Engine Optimization or Performance Marketing, Application Development or Marketing Strategy - Anil has been instrumental for the Digital Transformation of several brands across verticals like Education, Real Estate, B2B, Retail, Home & Interiors, BFSI and more. As a specialist in the field, he has the expertise to deliver solutions that extend over the entire gamut of E-Commerce, CRM, Lead Generation, Digital Media Planning, Media Buying, Marketing Strategy and Technology.
+                </p>
               </div>
             </div>
           </div>

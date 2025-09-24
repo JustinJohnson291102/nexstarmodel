@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "Abstract digital art with flowing blue and purple lines.",
+      "imageUrl": "https://images.unsplash.com/photo-1622737133809-d95047b9e673?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGRpZ2l0YWx8ZW58MHx8fHwxNzU4NTk4MTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract digital"
+    },
+    {
+      "id": "hero-2",
+      "description": "A modern office space with people collaborating around a computer.",
+      "imageUrl": "https://images.unsplash.com/photo-1525896544042-354764aa27e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwb2ZmaWNlfGVufDB8fHx8MTc1ODU4ODU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "hero-3",
+      "description": "Close up of a glowing circuit board.",
+      "imageUrl": "https://images.unsplash.com/photo-1697952431907-8542919a16b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaXJjdWl0JTIwYm9hcmR8ZW58MHx8fHwxNzU4Njk0NDA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "circuit board"
+    },
+    {
+      "id": "shopify-store-1",
+      "description": "Screenshot of a stylish, modern e-commerce fashion store.",
+      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBmYXNoaW9ufGVufDB8fHx8MTc1ODYzNDAzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce fashion"
+    },
+    {
+      "id": "shopify-store-2",
+      "description": "Screenshot of an e-commerce store selling artisanal coffee.",
+      "imageUrl": "https://images.unsplash.com/photo-1707483618757-46eb1acc12e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlY29tbWVyY2UlMjBjb2ZmZWV8ZW58MHx8fHwxNzU4Njk0NDA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce coffee"
+    },
+    {
+      "id": "shopify-store-3",
+      "description": "Screenshot of a clean, minimalist e-commerce store for skincare products.",
+      "imageUrl": "https://images.unsplash.com/photo-1674867688579-f46e18cd57f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlY29tbWVyY2UlMjBza2luY2FyZXxlbnwwfHx8fDE3NTg2OTQ0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce skincare"
+    },
+    {
+      "id": "shopify-store-4",
+      "description": "Screenshot of a vibrant e-commerce store for children's toys.",
+      "imageUrl": "https://images.unsplash.com/photo-1741389064005-3343299ecc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjB0b3lzfGVufDB8fHx8MTc1ODY5NDQwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce toys"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Portrait of a smiling woman.",
+      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODY0MDczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Portrait of a man with glasses.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Portrait of a person smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc1ODU4MzY2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "podcast-thumb-1",
+      "description": "Abstract wave patterns in blue and purple.",
+      "imageUrl": "https://images.unsplash.com/photo-1653299832314-5d3dc1e5a83c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjB3YXZlc3xlbnwwfHx8fDE3NTg2MDgxMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract waves"
+    },
+    {
+      "id": "podcast-thumb-2",
+      "description": "Microphone in a recording studio.",
+      "imageUrl": "https://images.unsplash.com/photo-1628529062965-de9280a4ae39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdHVkaW8lMjBtaWNyb3Bob25lfGVufDB8fHx8MTc1ODY5NDQwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "studio microphone"
+    },
+    {
+      "id": "podcast-thumb-3",
+      "description": "Headphones on a desk with a glowing keyboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1613732814108-dbbd3dfce162?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoZWFkcGhvbmVzJTIwZGVza3xlbnwwfHx8fDE3NTg2NDQ4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "headphones desk"
+    },
+    {
+      "id": "podcast-thumb-4",
+      "description": "A sound wave visualization graphic.",
+      "imageUrl": "https://images.unsplash.com/photo-1655138629937-0f21671e1d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c291bmQlMjB3YXZlfGVufDB8fHx8MTc1ODU5NjUxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sound wave"
+    }
+  ]
 }

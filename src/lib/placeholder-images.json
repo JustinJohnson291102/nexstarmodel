@@ -39,7 +39,7 @@
     {
       "id": "shopify-store-3",
       "description": "Screenshot of a clean, minimalist e-commerce store for skincare products.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWNvbW1lcmNlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzU4Njk0NDA2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWNvbW1lcmNlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzU4Njk0NDA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ecommerce skincare"
     },
     {
@@ -63,31 +63,31 @@
     {
       "id": "testimonial-avatar-3",
       "description": "Portrait of a person smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc1ODU4MzY2Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc1ODU4MzY2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person smiling"
     },
     {
       "id": "podcast-thumb-1",
       "description": "Abstract wave patterns in blue and purple.",
-      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHdhdmVzfGVufDB8fHx8MTc1ODYwODExNHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHdhdmVzfGVufDB8fHx8MTc1ODYwODExNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract waves"
     },
     {
       "id": "podcast-thumb-2",
       "description": "Microphone in a recording studio.",
-      "imageUrl": "https://images.unsplash.com/photo-1626126525119-638de4e1032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGlvJTIwbWljcm9waG9uZXxlbnwwfHx8fDE3NTg2OTQ0MDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626126525119-638de4e1032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGlvJTIwbWljcm9waG9uZXxlbnwwfHx8fDE3NTg2OTQ0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "studio microphone"
     },
     {
       "id": "podcast-thumb-3",
       "description": "Headphones on a desk with a glowing keyboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1679969061475-29a8d211ba95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGRlc2t8ZW58MHx8fHwxNzU4NjQ0ODYxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679969061475-29a8d211ba95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGRlc2t8ZW58MHx8fHwxNzU4NjQ0ODYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "headphones desk"
     },
     {
       "id": "podcast-thumb-4",
       "description": "A sound wave visualization graphic.",
-      "imageUrl": "https://images.unsplash.com/photo-1686519093104-3140c6dcf284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb3VuZCUyMHdhdmV8ZW58MHx8fHwxNzU4NTk2NTEyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1686519093104-3140c6dcf284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb3VuZCUyMHdhdmV8ZW58MHx8fHwxNzU4NTk2NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sound wave"
     },
     {
@@ -95,6 +95,12 @@
       "description": "Creative workspace with various design tools.",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1t_TXcMnPTHoBkeRjQ4gE0w72lgzAquqW",
       "imageHint": "creative workspace"
+    },
+    {
+      "id": "b2b-hero",
+      "description": "B2B Marketing Banner",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1AE28XsAlQULX_HMzq7K9a67Ks316H9Dq",
+      "imageHint": "B2B marketing"
     },
     {
       "id": "service-branding",
@@ -135,13 +141,13 @@
     {
       "id": "team-member-1",
       "description": "Portrait of a confident man.",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "team-member-2",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODY0MDczOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODY0MDczOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
@@ -153,19 +159,19 @@
     {
       "id": "team-member-4",
       "description": "Portrait of a creative professional.",
-      "imageUrl": "https://images.unsplash.com/photo-1527362127499-f590dfc9af95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NTg3MDQ1Nzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527362127499-f590dfc9af95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NTg3MDQ1Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "creative professional"
     },
     {
       "id": "team-member-5",
       "description": "Portrait of a friendly looking person.",
-      "imageUrl": "https://images.unsplash.com/photo-1604230006726-d288206e60ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmllbmRseSUyMHBlcnNvbnxlbnwwfHx8fDE3NTg1ODQ4MTl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604230006726-d288206e60ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmllbmRseSUyMHBlcnNvbnxlbnwwfHx8fDE3NTg1ODQ4MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "friendly person"
     },
     {
       "id": "team-member-6",
       "description": "Portrait of a team member.",
-      "imageUrl": "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFtJTIwbWVtYmVyfGVufDB8fHx8MTc1ODYwOTM2N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFtJTIwbWVtYmVyfGVufDB8fHx8MTc1ODYwOTM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "team member"
     }
   ]

@@ -38,7 +38,27 @@ const approachSecondRow = [
     icon: TrendingUp,
     text: "Analyze Business Requirements",
   },
-]
+];
+
+const shopifyServices = [
+  {
+    number: "01",
+    text: "Shopify Store Maintenance, Adding Extensions, & Customizations",
+  },
+  {
+    number: "02",
+    text: "WooCommerce Store Setup, Configuration, & Customization",
+  },
+  {
+    number: "03",
+    text: "HTML5 Website Design, Development, & Maintenance",
+  },
+  {
+    number: "04",
+    text: "Web Development Services",
+  },
+];
+
 
 export default function WebSolutionsPage() {
   return (
@@ -58,7 +78,7 @@ export default function WebSolutionsPage() {
           </h1>
         </div>
       </section>
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -74,14 +94,14 @@ export default function WebSolutionsPage() {
                 <PenTool className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">Design + Development</h3>
               </div>
-              <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-primary" />
-               <Separator className="md:hidden my-4 w-1/2 bg-primary" />
+              <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-blue-500" />
+               <Separator className="md:hidden my-4 w-1/2 bg-blue-500" />
               <div className="flex flex-col items-center p-4">
                 <Code className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">UI/UX</h3>
               </div>
-               <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-primary" />
-               <Separator className="md:hidden my-4 w-1/2 bg-primary" />
+               <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-blue-500" />
+               <Separator className="md:hidden my-4 w-1/2 bg-blue-500" />
               <div className="flex flex-col items-center p-4">
                 <Search className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">Keywords</h3>
@@ -91,7 +111,7 @@ export default function WebSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary/30">
+      <section className="py-20 md:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-12 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
             Our Approach
@@ -119,7 +139,38 @@ export default function WebSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-20 md:py-24">
+        <div className="container mx-auto px-4">
+           <div className="bg-sky-100 dark:bg-sky-900/30 p-8 md:p-12 rounded-lg relative overflow-hidden">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="md:col-span-2">
+                 <h3 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-8">
+                  Shopify Store Setup, <br/>Configuration, & Customization
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+                  {shopifyServices.map((service) => (
+                    <div key={service.number} className="flex items-start gap-4">
+                      <p className="text-5xl font-headline font-bold text-primary/50 -mt-2">{service.number}</p>
+                      <p className="text-foreground">{service.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+             <div className="absolute -right-16 -top-10 md:right-0 md:top-0 w-64 h-64 opacity-50 md:opacity-100">
+               <Image 
+                src="https://drive.google.com/uc?export=view&id=1_7e7jX-e6X3vYjY4sJ8g1Z2B9s9N0z5g"
+                alt="Cartoon"
+                width={256}
+                height={256}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-in fade-in slide-in-from-left-10 duration-700">

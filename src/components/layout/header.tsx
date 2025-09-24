@@ -23,8 +23,8 @@ const mainLinks = [
 ];
 
 const webSolutionsLinks = [
+  { href: "/web-solutions", label: "Web Solutions" },
   { href: "/shopify", label: "Shopify" },
-  { href: "/seo", label: "SEO" },
 ];
 
 const otherLinks = [

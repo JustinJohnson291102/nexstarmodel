@@ -14,15 +14,15 @@
     },
     {
       "id": "hero-2",
-      "description": "An overhead shot of a beautifully plated gourmet meal on a dark table.",
-      "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwZm9vZHxlbnwwfHx8fDE3NjAzMTA3NjN8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "gourmet food"
-    },
-    {
-      "id": "hero-3",
       "description": "A modern office space with people collaborating.",
       "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzYwMzEzNTM0fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "modern office"
+    },
+    {
+      "id": "hero-3",
+      "description": "A group of creative professionals in a meeting.",
+      "imageUrl": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjcmVhdGl2ZSUyMGFnZW5jeXxlbnwwfHx8fDE3NjA5NDY0MDl8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "creative meeting"
     },
     {
       "id": "shopify-store-1",

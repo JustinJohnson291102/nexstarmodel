@@ -36,16 +36,21 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const NavLink = ({ href, label, className = "" }) => (
+  const NavLink = ({ href, label, isNew, className = "" }) => (
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-primary",
+        "text-sm font-medium transition-colors hover:text-primary flex flex-col items-center",
         pathname === href ? "text-primary" : "text-foreground",
         className
       )}
     >
       {label}
+      {isNew && (
+        <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full -mt-1">
+          NEW
+        </span>
+      )}
     </Link>
   );
 
@@ -61,7 +66,16 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end md:justify-center">
           <nav className="hidden md:flex md:gap-6 items-center">
             {mainLinks.map((link) => (
-              <NavLink key={link.href} {...link} />
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-primary",
+                  pathname === link.href ? "text-primary" : "text-foreground"
+                )}
+              >
+                {link.label}
+              </Link>
             ))}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
@@ -79,21 +93,13 @@ export default function Header() {
               <NavLink
                 key={link.href}
                 href={link.href}
-                label={
-                  <div className="flex items-center gap-2">
-                    {link.label}
-                    {link.isNew && (
-                      <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full">
-                        NEW
-                      </span>
-                    )}
-                  </div>
-                }
+                label={link.label}
+                isNew={link.isNew}
               />
             ))}
           </nav>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex items-center">
            <Button asChild>
               <Link href="/contact">Contact Us</Link>
             </Button>
@@ -119,7 +125,7 @@ export default function Header() {
               </div>
               <div className="flex-1 flex flex-col gap-4">
                 {[...mainLinks, ...webSolutionsLinks, ...otherLinks].map(
-                  ({ href, label }) => (
+                  ({ href, label, isNew }) => (
                     <Link
                       key={href}
                       href={href}
@@ -130,6 +136,11 @@ export default function Header() {
                       )}
                     >
                       {label}
+                      {isNew && (
+                         <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full ml-2">
+                          NEW
+                        </span>
+                      )}
                     </Link>
                   )
                 )}

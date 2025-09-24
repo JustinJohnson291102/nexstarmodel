@@ -150,11 +150,12 @@ export default function Home() {
                 </div>
                 <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700">
                   <Image
-                    src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
-                    alt="Drive Image 3"
+                    src={`https://picsum.photos/seed/comm-grid-1/800/600`}
+                    alt="Communications grid image"
                     width={512}
                     height={768}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    data-ai-hint="communications technology"
                   />
                 </div>
               </div>

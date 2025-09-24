@@ -31,9 +31,9 @@ export default function Hero() {
         className="w-full h-full"
         opts={{ loop: true }}
       >
-        <CarouselContent className="-ml-0">
+        <CarouselContent>
           {heroImages.map((img) => (
-            <CarouselItem key={img.id} className="pl-0">
+            <CarouselItem key={img.id}>
               <div className="relative h-full w-full">
                 <Image
                   src={img.imageUrl}

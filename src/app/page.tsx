@@ -97,10 +97,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-12 md:py-16 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-left">
-            <h2 className="font-headline text-primary text-2xl md:text-3xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <div className="text-left">
+            <h2 className="font-headline text-primary text-3xl md:text-4xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
               We're Changing the Way you View Communications
             </h2>
             <p className="text-muted-foreground md:text-lg text-justify animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">

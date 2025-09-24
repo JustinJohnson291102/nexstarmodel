@@ -1,46 +1,39 @@
 import ServiceCard from "@/components/services/service-card";
-import {
-  Code,
-  Rocket,
-  Search,
-  PenTool,
-  Mic,
-  Palette,
-} from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const services = [
   {
-    icon: Code,
+    image: PlaceHolderImages.find((img) => img.id === "service-shopify"),
     title: "Shopify Development",
     description:
       "Custom Shopify themes and apps that are fast, beautiful, and built to convert.",
   },
   {
-    icon: Rocket,
+    image: PlaceHolderImages.find((img) => img.id === "service-gtm"),
     title: "GTM Strategy",
     description:
       "Data-driven Go-To-Market strategies that ensure your product launch is a resounding success.",
   },
   {
-    icon: Search,
+    image: PlaceHolderImages.find((img) => img.id === "service-seo"),
     title: "SEO & Performance",
     description:
       "Boost your visibility and climb the ranks with our expert SEO and performance optimization services.",
   },
   {
-    icon: PenTool,
+    image: PlaceHolderImages.find((img) => img.id === "service-content"),
     title: "Content Marketing",
     description:
       "Engaging content that tells your story, builds your audience, and drives conversions.",
   },
   {
-    icon: Mic,
+    image: PlaceHolderImages.find((img) => img.id === "service-podcast"),
     title: "Podcast Production",
     description:
       "From concept to distribution, we handle everything to make your podcast a hit.",
   },
   {
-    icon: Palette,
+    image: PlaceHolderImages.find((img) => img.id === "service-branding"),
     title: "Branding & UI/UX",
     description:
       "Crafting unique brand identities and intuitive user experiences that captivate and delight.",

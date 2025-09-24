@@ -1,33 +1,5 @@
 import Image from "next/image";
 
-const teamMembers = [
-  {
-    name: "Alex Johnson",
-    title: "Founder & CEO",
-  },
-  {
-    name: "Samantha Lee",
-    title: "Creative Director",
-  },
-  {
-    name: "Michael Chen",
-    title: "Lead Developer",
-  },
-  {
-    name: "Jessica Davis",
-    title: "Marketing Strategist",
-  },
-  {
-    name: "David Rodriguez",
-    title: "Lead Designer",
-  },
-  {
-    name: "Emily White",
-    title: "Project Manager",
-  },
-];
-
-
 export default function StoryPage() {
   return (
     <>
@@ -81,21 +53,6 @@ export default function StoryPage() {
             <p className="text-lg text-muted-foreground mx-auto max-w-3xl mb-16 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               Our highly-enthusiastic team is a fantastic mix of energy, ideas, experience and new thinking, who work hand-in-hand to create stand-out work. From creative to strategy, business to digital marketing, media to interactive – we’re always raring to go!
             </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <div
-                key={member.name}
-                className="text-center animate-in fade-in slide-in-from-bottom-8 duration-700"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden shadow-lg bg-muted flex items-center justify-center">
-                  {/* Placeholder for image */}
-                </div>
-                <h3 className="text-xl font-bold font-headline">{member.name}</h3>
-                <p className="text-muted-foreground">{member.title}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

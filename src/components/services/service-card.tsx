@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ServiceCard({ image, title, description }) {
   return (
-    <Card className="h-full group transition-all duration-300 ease-in-out hover:border-primary hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 hover:rotate-1 overflow-hidden">
+    <Card className="h-full group transition-all duration-300 ease-in-out hover:border-primary hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 hover:rotate-1 overflow-hidden animate-float">
       {image && (
         <CardHeader className="p-0">
           <div className="relative aspect-video w-full overflow-hidden">

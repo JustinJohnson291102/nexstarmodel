@@ -9,7 +9,7 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
-export const GenerateImageOutputSchema = z.object({
+const GenerateImageOutputSchema = z.object({
   imageUrl: z.string().describe("The data URI of the generated image."),
 });
 export type GenerateImageOutput = z.infer<typeof GenerateImageOutputSchema>;

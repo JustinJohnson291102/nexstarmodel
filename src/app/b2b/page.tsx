@@ -93,6 +93,31 @@ export default function B2BPage() {
           </div>
         </div>
       </section>
+
+      <section className="relative py-20 md:py-32 bg-secondary/50">
+        <Image
+          src="https://drive.google.com/uc?export=view&id=1-NnbDMh4fjyoWcOOvCa9UiUHCqi5J0lJ"
+          alt="Integrated Solutions"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-20"
+        />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+              Integrated B2B Marketing Solutions Tailored to Your Brand
+            </h2>
+            <div className="text-lg text-muted-foreground space-y-6">
+              <p>
+                At Xebec, we specialize in GTM -Go to Market Strategy , helping B2B and technology companies launch their products or service and achieve their goals with customized digital marketing strategies rooted in their brand's purpose.
+              </p>
+              <p>
+                Our approach combines real-world objectives, data-driven insights, relatable and relevant content ,out of the box creativity, and ROI-focused strategies to deliver results that matter. We believe in breaking down silos to create cohesive, sustainable marketing plans that ensure all efforts work together seamlessly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       
        <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 text-center">

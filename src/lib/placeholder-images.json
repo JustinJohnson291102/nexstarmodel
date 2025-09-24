@@ -8,21 +8,21 @@
     },
     {
       "id": "hero-1",
-      "description": "A vibrant and colorful abstract painting.",
-      "imageUrl": "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2xvcmZ1bCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MDMxMDI0Mnww&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "colorful abstract"
+      "description": "A stylishly dressed person in a modern city setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzYwMzEwNjc4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "fashion model"
     },
     {
       "id": "hero-2",
-      "description": "A modern office space with people collaborating around a computer.",
-      "imageUrl": "https://images.unsplash.com/photo-1525896544042-354764aa27e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwb2ZmaWNlfGVufDB8fHx8MTc1ODU4ODU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern office"
+      "description": "An overhead shot of a beautifully plated gourmet meal on a dark table.",
+      "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwZm9vZHxlbnwwfHx8fDE3NjAzMTA3NjN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "gourmet food"
     },
     {
       "id": "hero-3",
-      "description": "Close up of a glowing circuit board.",
-      "imageUrl": "https://images.unsplash.com/photo-1651340675491-6fb0bfb5c4ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaXJjdWl0JTIwYm9hcmR8ZW58MHx8fHwxNzU4Njk0NDA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "circuit board"
+      "description": "A chic and modern clothing boutique with arranged apparel.",
+      "imageUrl": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbG90aGluZyUyMHN0b3JlfGVufDB8fHx8MTc2MDMxMDgwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "clothing store"
     },
     {
       "id": "shopify-store-1",
@@ -69,25 +69,25 @@
     {
       "id": "podcast-thumb-1",
       "description": "Abstract wave patterns in blue and purple.",
-      "imageUrl": "https://images.unsplash.com/photo-1624557446133-bd61df5a0e74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHdhdmVzfGVufDB8fHx8MTc1ODYwODExNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHdhdmVzfGVufDB8fHx8MTc1ODYwODExNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract waves"
     },
     {
       "id": "podcast-thumb-2",
       "description": "Microphone in a recording studio.",
-      "imageUrl": "https://images.unsplash.com/photo-1689771455000-7ca175aa03fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHVkaW8lMjBtaWNyb3Bob25lfGVufDB8fHx8MTc1ODY5NDQwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626126525119-638de4e1032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGlvJTIwbWljcm9waG9uZXxlbnwwfHx8fDE3NTg2OTQ0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "studio microphone"
     },
     {
       "id": "podcast-thumb-3",
       "description": "Headphones on a desk with a glowing keyboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1658927420074-85930da203ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoZWFkcGhvbmVzJTIwZGVza3xlbnwwfHx8fDE3NTg2NDQ4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679969061475-29a8d211ba95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGRlc2t8ZW58MHx8fHwxNzU4NjQ0ODYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "headphones desk"
     },
     {
       "id": "podcast-thumb-4",
       "description": "A sound wave visualization graphic.",
-      "imageUrl": "https://images.unsplash.com/photo-1611134612965-d0ba82a139b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb3VuZCUyMHdhdmV8ZW58MHx8fHwxNzU4NTk2NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1686519093104-3140c6dcf284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb3VuZCUyMHdhdmV8ZW58MHx8fHwxNzU4NTk2NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sound wave"
     },
     {
@@ -99,31 +99,31 @@
     {
       "id": "service-gtm",
       "description": "A rocket launching into the sky, symbolizing a product launch.",
-      "imageUrl": "https://images.unsplash.com/photo-1670837435886-7aa05d40d8d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxHVE0lMjBzdHJhdGVneXxlbnwwfHx8fDE3NTg2OTUzNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623077299184-5cc7fd33ea99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8R1RNJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "GTM strategy"
     },
     {
       "id": "service-seo",
       "description": "A magnifying glass over a computer screen with search results.",
-      "imageUrl": "https://images.unsplash.com/photo-1673802851107-a01850d12ce6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxTRU8lMjBwZXJmb3JtYW5jZXxlbnwwfHx8fDE3NTg2OTUzNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1535732850099-99177944f4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxTRU8lMjBwZXJmb3JtYW5jZXxlbnwwfHx8fDE3NTg2OTUzNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "SEO performance"
     },
     {
       "id": "service-content",
       "description": "A person writing in a notebook at a desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb250ZW50JTIwbWFya2V0aW5nfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb250ZW50JTIwbWFya2V0aW5nfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "content marketing"
     },
     {
       "id": "service-podcast",
       "description": "A professional microphone in a recording booth.",
-      "imageUrl": "https://images.unsplash.com/photo-1645548979749-ac783fcb3eb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb2RjYXN0JTIwcHJvZHVjdGlvbnxlbnwwfHx8fDE3NTg2OTUzNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9kY2FzdCUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "podcast production"
     },
     {
       "id": "service-branding",
       "description": "A designer's desk with color swatches and sketches.",
-      "imageUrl": "https://images.unsplash.com/photo-1690228254548-31ef53e40cd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmFuZGluZyUyMHVpfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610387840559-f815b7b3080a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmFuZGluZyUyMHVpfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "branding ui"
     }
   ]

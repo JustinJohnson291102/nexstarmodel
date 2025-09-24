@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -34,76 +35,24 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              {adAgencyImage && (
-                <Image
-                  src={adAgencyImage.imageUrl}
-                  alt="Advertising agency creative process"
-                  width={600}
-                  height={450}
-                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                  data-ai-hint={adAgencyImage.imageHint}
-                />
-              )}
-            </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <h2 className="font-headline text-2xl md:text-3xl font-bold tracking-tight mb-6">
-                As an Advertising Agency, We Ignite Brands with Ideas that
-                Transform Behaviour
-              </h2>
-              <p className="text-muted-foreground md:text-lg mb-8">
-                Across mediums, we have taken both fledgling and legacy brands
-                to a new level of success.
-              </p>
-              <Button asChild size="lg" className="group rounded-lg">
-                <Link href="/story">
-                  Learn More{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              {gamutOfServicesImage && (
-                <Image
-                  src={gamutOfServicesImage.imageUrl}
-                  alt="Diverse and effective services"
-                  width={600}
-                  height={400}
-                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                  data-ai-hint={gamutOfServicesImage.imageHint}
-                />
-              )}
-            </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Our Gamut of Services are as Diverse as they are Effective
-              </h2>
-              <ul className="space-y-4 mb-8">
-                {servicesList.map((service) => (
-                  <li key={service} className="flex items-center">
-                    <CheckCircle className="h-6 w-6 text-accent mr-3" />
-                    <Link
-                      href="/services"
-                      className="text-lg hover:text-primary transition-colors"
-                    >
-                      {service}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <Button asChild size="lg" className="group rounded-lg">
-                <Link href="/services">
-                  View Our Services{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-          </div>
+      <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <Image
+          src="https://drive.google.com/uc?export=view&id=1tRvQjMFjudhVPJnGyTFWnYaTWztlcT0x"
+          alt="Hero background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
+            As an Advertising Agency, We Ignite Brands with Ideas that Transform
+            Behaviour
+          </h1>
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+            Across mediums, we have taken both fledgling and legacy brands to a
+            new level of success.
+          </p>
         </div>
       </section>
 
@@ -193,6 +142,49 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+              {gamutOfServicesImage && (
+                <Image
+                  src={gamutOfServicesImage.imageUrl}
+                  alt="Diverse and effective services"
+                  width={600}
+                  height={400}
+                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  data-ai-hint={gamutOfServicesImage.imageHint}
+                />
+              )}
+            </div>
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
+                Our Gamut of Services are as Diverse as they are Effective
+              </h2>
+              <ul className="space-y-4 mb-8">
+                {servicesList.map((service) => (
+                  <li key={service} className="flex items-center">
+                    <CheckCircle className="h-6 w-6 text-accent mr-3" />
+                    <Link
+                      href="/services"
+                      className="text-lg hover:text-primary transition-colors"
+                    >
+                      {service}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild size="lg" className="group rounded-lg">
+                <Link href="/services">
+                  View Our Services{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -216,3 +208,5 @@ export default function Home() {
     </>
   );
 }
+
+    

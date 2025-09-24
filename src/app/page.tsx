@@ -9,6 +9,9 @@ export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
     (img) => img.id === "service-branding"
   );
+  const gamutOfServicesImage = PlaceHolderImages.find(
+    (img) => img.id === "service-content"
+  );
   return (
     <>
       <Hero />
@@ -21,7 +24,7 @@ export default function Home() {
                   src={adAgencyImage.imageUrl}
                   alt="Advertising agency creative process"
                   width={600}
-                  height={450}
+                  height={400}
                   className="rounded-lg shadow-xl w-full h-auto object-cover"
                   data-ai-hint={adAgencyImage.imageHint}
                 />
@@ -46,7 +49,41 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700 md:order-2">
+              {gamutOfServicesImage && (
+                <Image
+                  src={gamutOfServicesImage.imageUrl}
+                  alt="Diverse and effective services"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-xl w-full h-auto object-cover"
+                  data-ai-hint={gamutOfServicesImage.imageHint}
+                />
+              )}
+            </div>
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700 md:order-1">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
+                Our Gamut of Services are as Diverse as they are Effective
+              </h2>
+              <p className="text-muted-foreground md:text-lg mb-8">
+                We offer a comprehensive suite of services designed to address every aspect of your digital presence. From strategy to execution, we're your dedicated partners in growth.
+              </p>
+              <Button asChild size="lg" className="group rounded-lg">
+                <Link href="/services">
+                  Explore Services{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.

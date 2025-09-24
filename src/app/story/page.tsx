@@ -64,6 +64,7 @@ export default function StoryPage() {
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
                 />
             </div>
+            <div className="h-1 w-24 bg-primary mx-auto my-4 animate-in fade-in duration-500 delay-300"></div>
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image
                 src="https://drive.google.com/uc?export=view&id=1weP9Jy7dvhl8v-VWsZ7N3RSguW1iEELR"

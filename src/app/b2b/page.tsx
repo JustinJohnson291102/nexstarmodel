@@ -37,26 +37,17 @@ export default function B2BPage() {
 
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <div className="absolute inset-0 bg-black/60 z-10" />
+      <section className="relative h-[60vh] w-full">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
             alt="B2B Marketing"
-            fill
-            className="object-cover"
+            layout="fill"
+            objectFit="cover"
             priority
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
-            B2B Marketing Solutions
-          </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Driving Growth and Building Relationships in the Business-to-Business Arena.
-          </p>
-        </div>
       </section>
 
       <section className="py-20 md:py-32">

@@ -44,6 +44,18 @@ export default function StoryPage() {
           </div>
         </div>
       </section>
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Our Team
+            </h2>
+            <p className="text-lg text-muted-foreground mx-auto max-w-3xl animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              Our highly-enthusiastic team is a fantastic mix of energy, ideas, experience and new thinking, who work hand-in-hand to create stand-out work. From creative to strategy, business to digital marketing, media to interactive – we’re always raring to go!
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

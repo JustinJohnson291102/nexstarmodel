@@ -27,7 +27,7 @@ export default function StoryPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
               The Journey of Digitale
             </h2>
-            <div className="prose prose-lg dark:prose-invert mx-auto text-muted-foreground space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <div className="prose prose-lg mx-auto text-muted-foreground space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               <p>
                 Founded on the principle of innovation, Digitale Agency was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
               </p>

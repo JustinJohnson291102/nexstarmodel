@@ -35,24 +35,29 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
-        <div className="absolute inset-0 bg-black/50 z-10" />
+      <section className="w-full">
         <Image
           src="https://drive.google.com/uc?export=view&id=1tRvQjMFjudhVPJnGyTFWnYaTWztlcT0x"
           alt="Hero background"
-          fill
-          className="object-cover"
+          width={1920}
+          height={1080}
+          className="w-full h-auto object-cover"
           priority
         />
-        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
-            As an Advertising Agency, We Ignite Brands with Ideas that Transform
-            Behaviour
-          </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Across mediums, we have taken both fledgling and legacy brands to a
-            new level of success.
-          </p>
+      </section>
+
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-primary mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              As an Advertising Agency, We Ignite Brands with Ideas that Transform
+              Behaviour
+            </h1>
+            <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+              Across mediums, we have taken both fledgling and legacy brands to a
+              new level of success.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -208,5 +213,3 @@ export default function Home() {
     </>
   );
 }
-
-    

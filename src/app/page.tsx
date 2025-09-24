@@ -28,7 +28,7 @@ export default function Home() {
               )}
             </div>
             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
+              <h2 className="font-headline text-2xl md:text-3xl font-bold tracking-tight mb-6">
                 As an Advertising Agency, We Ignite Brands with Ideas that
                 Transform Behaviour
               </h2>
@@ -36,7 +36,7 @@ export default function Home() {
                 Across mediums, we have taken both fledgling and legacy brands
                 to a new level of success.
               </p>
-              <Button asChild size="lg" className="group">
+              <Button asChild size="lg" className="group rounded-lg">
                 <Link href="/story">
                   Learn More{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

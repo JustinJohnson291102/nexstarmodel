@@ -60,8 +60,8 @@ export default function StoryPage() {
                 <Image
                   src="https://drive.google.com/uc?export=view&id=1sHb5vgWug43sY7N9TWDoZfnsTvCBFvSb"
                   alt="Kiran Bhat"
-                  width={400}
-                  height={400}
+                  width={280}
+                  height={280}
                   className="rounded-lg shadow-lg"
                 />
                 <h3 className="text-2xl font-bold font-headline text-accent mt-4">
@@ -70,7 +70,7 @@ export default function StoryPage() {
                 <p className="text-lg text-primary font-semibold">CMD</p>
               </div>
             </div>
-            <div className="text-left text-muted-foreground prose prose-lg animate-in fade-in slide-in-from-right-10 duration-700">
+            <div className="text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-right-10 duration-700">
               <p>
                 Kiran Bhat is not only an advertising and strategy maestro, she's a veritable force when it comes to busting stereotypes. An Industrial Psychologist by qualification, Kiran went on to get her Executive Education from Harvard Business School.
               </p>

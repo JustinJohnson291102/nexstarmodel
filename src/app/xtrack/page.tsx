@@ -25,7 +25,11 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import { ChartContainer, ChartTooltipContent } from "@/components/ui/chart";
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
 
 const chartData = [
   { month: "Jan", desktop: 186, mobile: 80 },

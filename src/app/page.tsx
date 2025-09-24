@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700 md:order-2">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
                 Our Gamut of Services are as Diverse as they are Effective
               </h2>
@@ -81,7 +81,7 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700 md:order-1 overflow-hidden rounded-lg shadow-xl">
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               {gamutOfServicesImage && (
                 <Image
                   src={gamutOfServicesImage.imageUrl}

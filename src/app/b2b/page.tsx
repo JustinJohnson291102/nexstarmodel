@@ -50,8 +50,15 @@ export default function B2BPage() {
         )}
       </section>
 
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 md:py-32">
+         <Image
+          src="https://picsum.photos/seed/b2b-bg/1920/1080"
+          alt="Abstract background"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-10"
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Strategic B2B Marketing to Fuel Your Growth
@@ -61,19 +68,21 @@ export default function B2BPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {b2bServices.map((service, index) => (
               <div
                 key={service.title}
                 className="animate-in fade-in slide-in-from-bottom-6 duration-500"
-                style={{ animationDelay: `${index * 100}ms` }}
+                style={{ animationDelay: `${index * 150}ms` }}
               >
-                <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">
-                  <CardHeader>
-                    <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
-                      <service.icon className="h-8 w-8 text-primary" />
+                <Card className="h-full text-left bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1">
+                  <CardHeader className="flex flex-row items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <service.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle className="font-headline text-2xl pt-4">{service.title}</CardTitle>
+                    <div>
+                      <CardTitle className="font-headline text-xl leading-tight">{service.title}</CardTitle>
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{service.description}</p>

@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import Marquee from "@/components/layout/marquee";
 
 export const metadata: Metadata = {
   title: "Digitale Agency",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-[calc(100vh-8rem)]">{children}</main>
         <Footer />
+        <Marquee text="Attention: Beware of Scams! Scamsters are illegally using our name and logo - Xebec Communications to deceive unsuspecting job seekers and others. WhatsApp groups are being created for online tasks, YouTube reviews, crypto trading, etc. Please be vigilant and do not join any groups. Exit such groups immediately and report to Cybercrime. We do not offer online tasks nor do we do business through WhatsApp. Stay safe!" />
         <Toaster />
       </body>
     </html>

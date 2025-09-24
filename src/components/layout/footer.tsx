@@ -9,19 +9,20 @@ export default function Footer() {
     { href: '/story', label: 'About Us' },
     { href: '#', label: 'Case Studies' },
     { href: '/services', label: 'Services' },
-    { href: '#', label: 'D2C Marketing' },
-    { href: '/xtrack', label: 'XTrack' },
-    { href: '/shopify', label: 'Shopify' },
     { href: '/b2b', label: 'B2B Marketing' },
-    { href: '/gtm-strategy', label: 'Go To Market' },
     { href: '/contact', label: 'Contact' },
+    { href: '/blog', label: 'Blogs' },
+    { href: '/story#team', label: 'Team' },
+    { href: '/services', label: 'TV' },
+    { href: '/services', label: 'Print' },
+    { href: '/services', label: 'Radio' },
   ];
 
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto py-12 px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col justify-between md:col-span-1">
             <div>
               <Link href="/" className="flex items-center space-x-2 mb-4">
                 <Code className="h-8 w-8 text-accent" />
@@ -30,15 +31,14 @@ export default function Footer() {
                 </span>
               </Link>
               <p className="text-sm text-gray-400 max-w-sm">
-                Innovating the digital space, one pixel at a time. We are the architects of your digital success.
+                Innovating the digital space, one pixel at a time. We are the
+                architects of your digital success.
               </p>
             </div>
-            <p className="text-sm text-gray-500 mt-8 md:mt-0">
-              &copy; {currentYear} Digitale Agency. All rights reserved.
-            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-8">
             <div className="flex flex-col space-y-3">
+              <h4 className="font-bold text-lg">Quick Links</h4>
               {footerLinks.slice(0, 5).map((link) => (
                 <Link
                   key={link.label}
@@ -50,7 +50,8 @@ export default function Footer() {
               ))}
             </div>
             <div className="flex flex-col space-y-3">
-              {footerLinks.slice(5).map((link) => (
+               <h4 className="font-bold text-lg text-black">.</h4>
+              {footerLinks.slice(5, 10).map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
@@ -60,8 +61,21 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
+            <div className="flex flex-col space-y-3">
+              <h4 className="font-bold text-lg">Connect</h4>
+               <a href="#" className="text-gray-300 hover:text-white hover:underline transition-colors">Facebook</a>
+               <a href="#" className="text-gray-300 hover:text-white hover:underline transition-colors">LinkedIn</a>
+               <a href="#" className="text-gray-300 hover:text-white hover:underline transition-colors">Twitter</a>
+               <a href="#" className="text-gray-300 hover:text-white hover:underline transition-colors">Instagram</a>
+               <a href="#" className="text-gray-300 hover:text-white hover:underline transition-colors">YouTube</a>
+            </div>
           </div>
         </div>
+         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">
+            <p>
+              &copy; {currentYear} Digitale Agency. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+            </p>
+          </div>
       </div>
     </footer>
   );

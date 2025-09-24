@@ -1,6 +1,13 @@
 import Hero from "@/components/homepage/hero";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Smartphone, MessageSquare, Lightbulb, Users } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle,
+  Smartphone,
+  MessageSquare,
+  Lightbulb,
+  Users,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -26,6 +33,15 @@ export default function Home() {
     { icon: Users, label: "Exclusivity" },
     { icon: MessageSquare, label: "Emotion" },
     { icon: Lightbulb, label: "Experience" },
+  ];
+
+  const driveImages = [
+    "1qD7RE55BkSvD6YpZua4hyD4DXFIP_Osu",
+    "18jdLAB6UVCxDq1PPSvl7YJprshpRHNDV",
+    "1anV4fJQo5ijo_xNkxuqx64Z_uPALtLOU",
+    "1OgeTSulBgpPo1PCdnAu_jtxmVpH8RKsO",
+    "1uU61ubKLUMHjhEhjC-YSCgADt3gp8Fm-",
+    "1OvONtlQCC-uAkTzLJ10Xf8u59Eo6wSBu",
   ];
 
   return (
@@ -120,13 +136,16 @@ export default function Home() {
               nature. Because we truly believe that the future of Communications
               lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
-              {iconGrid.map((item) => (
-                <div key={item.label} className="flex flex-col items-center">
-                  <div className="p-6 border-2 border-primary rounded-lg mb-4 bg-background/20">
-                    <item.icon className="h-10 w-10 text-primary" />
-                  </div>
-                  <p className="font-headline text-lg font-semibold">{item.label}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+              {driveImages.map((id, index) => (
+                <div key={index} className="overflow-hidden rounded-lg shadow-xl">
+                  <Image
+                    src={`https://drive.google.com/uc?export=view&id=${id}`}
+                    alt={`Drive Image ${index + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  />
                 </div>
               ))}
             </div>

@@ -1,0 +1,49 @@
+import Image from "next/image";
+
+export default function StoryPage() {
+  return (
+    <>
+      <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <Image
+          src="https://drive.google.com/uc?export=view&id=1OqAyh5AJXjw63hlhWy3koRpY8GXgoGe6"
+          alt="Group of people collaborating"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
+            Our Story
+          </h1>
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+            We ignite brands with ideas that transform behaviour
+          </p>
+        </div>
+      </section>
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
+              The Journey of Digitale
+            </h2>
+            <div className="prose prose-lg dark:prose-invert mx-auto text-muted-foreground space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              <p>
+                Founded on the principle of innovation, Digitale Agency was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
+              </p>
+              <p>
+                Our journey began with a small team of passionate developers, designers, and marketers who shared a common goal: to build exceptional digital experiences. From crafting pixel-perfect Shopify stores to engineering data-driven go-to-market strategies, we've always been obsessed with delivering results that matter.
+              </p>
+              <p>
+                Over the years, we've grown, but our core mission remains the same. We believe in the power of collaboration, the magic of creativity, and the impact of technology. We're not just a service provider; we're a partner in our clients' success, dedicated to helping them navigate the ever-evolving digital landscape and achieve their most ambitious goals.
+              </p>
+              <p>
+                We're excited about what the future holds and look forward to writing the next chapter of our story with you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

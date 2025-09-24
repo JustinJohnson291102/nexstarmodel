@@ -103,7 +103,7 @@ export default function XtrackPage() {
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
-            Meet <span className="text-primary">XTrack</span>
+            Meet XTrack
           </h1>
           <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
             The Ultimate Analytics Solution to Understand, Engage, and Grow Your

@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -6,15 +7,20 @@ import { ArrowRight } from "lucide-react";
 export default function WebSolutionsPage() {
   return (
     <>
-      <section className="w-full">
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+        <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
           src="https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo"
           alt="Web Solutions Hero Banner"
-          width={1920}
-          height={1080}
-          className="w-full h-auto object-cover"
+          fill
+          className="object-cover"
           priority
         />
+        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">
+            Responsive Website Development Services
+          </h1>
+        </div>
       </section>
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="max-w-3xl mx-auto text-center">

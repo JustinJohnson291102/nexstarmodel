@@ -3,10 +3,6 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   CheckCircle,
-  Smartphone,
-  MessageSquare,
-  Lightbulb,
-  Users,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -133,7 +129,7 @@ export default function Home() {
               {/* Row 1 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="md:col-span-1 flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-lg shadow-xl">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-left-10 duration-700">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[0]}`}
                       alt="Drive Image 1"
@@ -142,7 +138,7 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg shadow-xl">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[1]}`}
                       alt="Drive Image 2"
@@ -152,7 +148,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl">
+                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700">
                   <Image
                     src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
                     alt="Drive Image 3"
@@ -164,7 +160,7 @@ export default function Home() {
               </div>
               {/* Row 2 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl">
+                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-left-10 duration-700">
                   <Image
                     src={`https://drive.google.com/uc?export=view&id=${driveImages[3]}`}
                     alt="Drive Image 4"
@@ -174,7 +170,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="md:col-span-1 flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-lg shadow-xl">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[4]}`}
                       alt="Drive Image 5"
@@ -183,7 +179,7 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg shadow-xl">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700 delay-100">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[5]}`}
                       alt="Drive Image 6"

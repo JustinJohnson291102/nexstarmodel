@@ -19,7 +19,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-gray-200 text-black">
       <div className="container mx-auto py-12 px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col justify-between md:col-span-1">
@@ -33,7 +33,7 @@ export default function Footer() {
                   className="object-contain"
                 />
               </Link>
-              <p className="text-sm text-muted-foreground max-w-sm">
+              <p className="text-sm text-gray-700 max-w-sm">
                 Innovating the digital space, one pixel at a time. We are the
                 architects of your digital success.
               </p>
@@ -46,19 +46,19 @@ export default function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-muted-foreground hover:text-primary hover:underline transition-colors"
+                  className="text-gray-700 hover:text-primary hover:underline transition-colors"
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
             <div className="flex flex-col space-y-3">
-               <h4 className="font-bold text-lg text-secondary">.</h4>
+               <h4 className="font-bold text-lg text-gray-200">.</h4>
               {footerLinks.slice(5, 10).map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-muted-foreground hover:text-primary hover:underline transition-colors"
+                  className="text-gray-700 hover:text-primary hover:underline transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -66,15 +66,15 @@ export default function Footer() {
             </div>
             <div className="flex flex-col space-y-3">
               <h4 className="font-bold text-lg">Connect</h4>
-               <a href="#" className="text-muted-foreground hover:text-primary hover:underline transition-colors">Facebook</a>
-               <a href="#" className="text-muted-foreground hover:text-primary hover:underline transition-colors">LinkedIn</a>
-               <a href="#" className="text-muted-foreground hover:text-primary hover:underline transition-colors">Twitter</a>
-               <a href="#" className="text-muted-foreground hover:text-primary hover:underline transition-colors">Instagram</a>
-               <a href="#" className="text-muted-foreground hover:text-primary hover:underline transition-colors">YouTube</a>
+               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">Facebook</a>
+               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">LinkedIn</a>
+               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">Twitter</a>
+               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">Instagram</a>
+               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">YouTube</a>
             </div>
           </div>
         </div>
-         <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
+         <div className="border-t border-gray-300 mt-8 pt-6 text-center text-sm text-gray-600">
             <p>
               &copy; {currentYear} Nexstar. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
             </p>

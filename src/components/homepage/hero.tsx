@@ -43,7 +43,7 @@ export default function Hero() {
                   data-ai-hint={img.imageHint}
                   priority={img.id === "hero-1"}
                 />
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-black/30" />
               </div>
             </CarouselItem>
           ))}
@@ -58,7 +58,7 @@ export default function Hero() {
             We are a digital agency that builds amazing experiences.
           </p>
           <div className="animate-in fade-in slide-in-from-bottom-16 duration-700 delay-400">
-            <Button asChild size="lg" className="group bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button asChild size="lg" className="group">
               <Link href="/contact">
                 Get Started{" "}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

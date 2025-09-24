@@ -7,8 +7,8 @@ export default function Footer() {
     <footer className="bg-secondary">
       <div className="container mx-auto py-6 px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-            <Code className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline inline-block">
+            <Code className="h-6 w-6 text-accent" />
+            <span className="font-bold font-headline text-accent inline-block">
                 Digitale Agency
             </span>
         </div>

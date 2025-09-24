@@ -21,7 +21,7 @@ export default function Home() {
                   src={adAgencyImage.imageUrl}
                   alt="Advertising agency creative process"
                   width={600}
-                  height={500}
+                  height={450}
                   className="rounded-lg shadow-xl w-full h-auto object-cover"
                   data-ai-hint={adAgencyImage.imageHint}
                 />

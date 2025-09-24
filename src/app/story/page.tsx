@@ -1,4 +1,39 @@
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+
+const teamMembers = [
+  {
+    name: "Alex Johnson",
+    title: "Founder & CEO",
+    image: PlaceHolderImages.find((img) => img.id === "team-member-1"),
+  },
+  {
+    name: "Samantha Lee",
+    title: "Creative Director",
+    image: PlaceHolderImages.find((img) => img.id === "team-member-2"),
+  },
+  {
+    name: "Michael Chen",
+    title: "Lead Developer",
+    image: PlaceHolderImages.find((img) => img.id === "team-member-3"),
+  },
+  {
+    name: "Jessica Davis",
+    title: "Marketing Strategist",
+    image: PlaceHolderImages.find((img) => img.id === "team-member-4"),
+  },
+  {
+    name: "David Rodriguez",
+    title: "Lead Designer",
+    image: PlaceHolderImages.find((img) => img.id === "team-member-5"),
+  },
+  {
+    name: "Emily White",
+    title: "Project Manager",
+    image: PlaceHolderImages.find((img) => img.id === "team-member-6"),
+  },
+];
+
 
 export default function StoryPage() {
   return (
@@ -50,9 +85,32 @@ export default function StoryPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Our Team
             </h2>
-            <p className="text-lg text-muted-foreground mx-auto max-w-3xl animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mx-auto max-w-3xl mb-16 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               Our highly-enthusiastic team is a fantastic mix of energy, ideas, experience and new thinking, who work hand-in-hand to create stand-out work. From creative to strategy, business to digital marketing, media to interactive – we’re always raring to go!
             </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {teamMembers.map((member, index) => (
+              <div
+                key={member.name}
+                className="text-center animate-in fade-in slide-in-from-bottom-8 duration-700"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                {member.image && (
+                  <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                    <Image
+                      src={member.image.imageUrl}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={member.image.imageHint}
+                    />
+                  </div>
+                )}
+                <h3 className="text-xl font-bold font-headline">{member.name}</h3>
+                <p className="text-muted-foreground">{member.title}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

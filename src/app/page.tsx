@@ -1,6 +1,6 @@
 import Hero from "@/components/homepage/hero";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -12,6 +12,15 @@ export default function Home() {
   const gamutOfServicesImage = PlaceHolderImages.find(
     (img) => img.id === "service-content"
   );
+
+  const servicesList = [
+    "Branding",
+    "Social Media",
+    "Digital - Website / Technology",
+    "B2B",
+    "Performance Marketing",
+  ];
+
   return (
     <>
       <Hero />
@@ -48,12 +57,31 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700 md:order-1">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
                 Our Gamut of Services are as Diverse as they are Effective
               </h2>
+              <ul className="space-y-4 mb-8">
+                {servicesList.map((service) => (
+                  <li key={service} className="flex items-center">
+                    <CheckCircle className="h-6 w-6 text-accent mr-3" />
+                    <Link
+                      href="/services"
+                      className="text-lg hover:text-primary transition-colors"
+                    >
+                      {service}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild size="lg" className="group rounded-lg">
+                <Link href="/services">
+                  View Our Services{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
             </div>
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700 md:order-2">
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
               {gamutOfServicesImage && (
                 <Image
                   src={gamutOfServicesImage.imageUrl}

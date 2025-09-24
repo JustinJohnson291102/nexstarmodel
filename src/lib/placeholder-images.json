@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "user-gdrive-image",
+      "description": "Image provided by user from Google Drive.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1f8_6ReZymolTznFYnDCOnPtm9X46RIxL",
+      "imageHint": "user provided"
+    },
+    {
       "id": "hero-1",
       "description": "Abstract digital art with flowing blue and purple lines.",
       "imageUrl": "https://images.unsplash.com/photo-1637825891028-564f672aa42c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBkaWdpdGFsfGVufDB8fHx8MTc1ODU5ODEyNHww&ixlib=rb-4.1.0&q=80&w=1080",

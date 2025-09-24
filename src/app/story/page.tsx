@@ -99,6 +99,19 @@ export default function StoryPage() {
           </div>
         </div>
       </section>
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1NJ6xyxPYfTGmOx9s8BUvjXfeh9NlRJ20"
+              alt="Our team at work"
+              width={1200}
+              height={800}
+              className="rounded-lg shadow-xl w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -17,8 +17,8 @@ export default function WebSolutionsPage() {
           priority
         />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">
-            Responsive Website Development Services
+          <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-white mb-4">
+            Responsive Website <br /> Development Services
           </h1>
         </div>
       </section>

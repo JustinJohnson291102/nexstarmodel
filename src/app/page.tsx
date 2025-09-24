@@ -97,6 +97,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              We're Changing the Way you View Communications
+            </h2>
+            <p className="text-muted-foreground md:text-lg mb-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+              Xebec Communications is a hybrid marketing company with the
+              chutzpah of a millennial combined with the experience of Gen X. We
+              bring to the table the best of cutting-edge ideas, a wealth of
+              insights, the robustness of experience and the magic of agility.
+            </p>
+            <p className="text-muted-foreground md:text-lg mb-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
+              We connect the dots quicker, so you benefit faster. From branding
+              to advertising, we offer solutions which are truly 360 degrees in
+              nature.
+            </p>
+            <p className="text-muted-foreground md:text-lg animate-in fade-in slide-in-from-bottom-5 duration-500 delay-300">
+              Because we truly believe that the future of Communications lies in
+              the 4Es - Engagement, Exclusivity, Emotion and Experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">

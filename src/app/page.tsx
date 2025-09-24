@@ -1,6 +1,6 @@
 import Hero from "@/components/homepage/hero";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, Smartphone, MessageSquare, Lightbulb, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -19,6 +19,13 @@ export default function Home() {
     "Digital - Website / Technology",
     "B2B",
     "Performance Marketing",
+  ];
+
+  const iconGrid = [
+    { icon: Smartphone, label: "Engagement" },
+    { icon: Users, label: "Exclusivity" },
+    { icon: MessageSquare, label: "Emotion" },
+    { icon: Lightbulb, label: "Experience" },
   ];
 
   return (
@@ -97,13 +104,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 md:py-16 bg-secondary">
+      <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-left">
             <h2 className="font-headline text-primary text-3xl md:text-4xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
               We're Changing the Way you View Communications
             </h2>
-            <p className="text-muted-foreground md:text-lg text-justify animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-muted-foreground md:text-lg text-justify animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100 mb-12">
               Xebec Communications is a hybrid marketing company with the
               chutzpah of a millennial combined with the experience of Gen X. We
               bring to the table the best of cutting-edge ideas, a wealth of
@@ -113,6 +120,16 @@ export default function Home() {
               nature. Because we truly believe that the future of Communications
               lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
             </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+              {iconGrid.map((item) => (
+                <div key={item.label} className="flex flex-col items-center">
+                  <div className="p-6 border-2 border-primary rounded-lg mb-4 bg-background/20">
+                    <item.icon className="h-10 w-10 text-primary" />
+                  </div>
+                  <p className="font-headline text-lg font-semibold">{item.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

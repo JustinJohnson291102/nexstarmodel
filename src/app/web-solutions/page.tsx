@@ -39,14 +39,14 @@ export default function WebSolutionsPage() {
                 <PenTool className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">Design + Development</h3>
               </div>
-              <Separator orientation="vertical" className="hidden md:block h-20 mx-8" />
-               <Separator className="md:hidden my-4 w-1/2" />
+              <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-primary" />
+               <Separator className="md:hidden my-4 w-1/2 bg-primary" />
               <div className="flex flex-col items-center p-4">
                 <Code className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">UI/UX</h3>
               </div>
-               <Separator orientation="vertical" className="hidden md:block h-20 mx-8" />
-               <Separator className="md:hidden my-4 w-1/2" />
+               <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-primary" />
+               <Separator className="md:hidden my-4 w-1/2 bg-primary" />
               <div className="flex flex-col items-center p-4">
                 <Search className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">Keywords</h3>

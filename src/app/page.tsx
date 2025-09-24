@@ -29,12 +29,12 @@ export default function Home() {
   ];
 
   const driveImages = [
-    "1qD7RE55BkSvD6YpZua4hyD4DXFIP_Osu",
-    "18jdLAB6UVCxDq1PPSvl7YJprshpRHNDV",
-    "1anV4fJQo5ijo_xNkxuqx64Z_uPALtLOU",
-    "1OgeTSulBgpPo1PCdnAu_jtxmVpH8RKsO",
-    "1uU61ubKLUMHjhEhjC-YSCgADt3gp8Fm-",
-    "1OvONtlQCC-uAkTzLJ10Xf8u59Eo6wSBu",
+    "1uU61ubKLUMHjhEhjC-YSCgADt3gp8Fm-", // small 1
+    "1OvONtlQCC-uAkTzLJ10Xf8u59Eo6wSBu", // small 2
+    "1anV4fJQo5ijo_xNkxuqx64Z_uPALtLOU", // big 1 (vertical)
+    "1qD7RE55BkSvD6YpZua4hyD4DXFIP_Osu", // big 2 (vertical)
+    "18jdLAB6UVCxDq1PPSvl7YJprshpRHNDV", // small 3
+    "1OgeTSulBgpPo1PCdnAu_jtxmVpH8RKsO", // small 4
   ];
 
   return (
@@ -73,7 +73,19 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+              {gamutOfServicesImage && (
+                <Image
+                  src={gamutOfServicesImage.imageUrl}
+                  alt="Diverse and effective services"
+                  width={600}
+                  height={400}
+                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  data-ai-hint={gamutOfServicesImage.imageHint}
+                />
+              )}
+            </div>
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
                 Our Gamut of Services are as Diverse as they are Effective
               </h2>
@@ -97,18 +109,6 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              {gamutOfServicesImage && (
-                <Image
-                  src={gamutOfServicesImage.imageUrl}
-                  alt="Diverse and effective services"
-                  width={600}
-                  height={400}
-                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                  data-ai-hint={gamutOfServicesImage.imageHint}
-                />
-              )}
-            </div>
           </div>
         </div>
       </section>
@@ -129,18 +129,71 @@ export default function Home() {
               nature. Because we truly believe that the future of Communications
               lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
-              {driveImages.map((id, index) => (
-                <div key={index} className="overflow-hidden rounded-lg shadow-xl">
+            <div className="grid grid-cols-1 gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+              {/* Row 1 */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="md:col-span-1 flex flex-col gap-4">
+                  <div className="overflow-hidden rounded-lg shadow-xl">
+                    <Image
+                      src={`https://drive.google.com/uc?export=view&id=${driveImages[0]}`}
+                      alt="Drive Image 1"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                  <div className="overflow-hidden rounded-lg shadow-xl">
+                    <Image
+                      src={`https://drive.google.com/uc?export=view&id=${driveImages[1]}`}
+                      alt="Drive Image 2"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl">
                   <Image
-                    src={`https://drive.google.com/uc?export=view&id=${id}`}
-                    alt={`Drive Image ${index + 1}`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                    src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
+                    alt="Drive Image 3"
+                    width={800}
+                    height={1200}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-              ))}
+              </div>
+              {/* Row 2 */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl">
+                  <Image
+                    src={`https://drive.google.com/uc?export=view&id=${driveImages[3]}`}
+                    alt="Drive Image 4"
+                    width={800}
+                    height={1200}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <div className="md:col-span-1 flex flex-col gap-4">
+                  <div className="overflow-hidden rounded-lg shadow-xl">
+                    <Image
+                      src={`https://drive.google.com/uc?export=view&id=${driveImages[4]}`}
+                      alt="Drive Image 5"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                  <div className="overflow-hidden rounded-lg shadow-xl">
+                    <Image
+                      src={`https://drive.google.com/uc?export=view&id=${driveImages[5]}`}
+                      alt="Drive Image 6"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

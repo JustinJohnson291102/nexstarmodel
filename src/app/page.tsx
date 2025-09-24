@@ -47,20 +47,36 @@ export default function Home() {
       </section>
 
       <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-primary mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-              As an Advertising Agency, We Ignite Brands with Ideas that Transform
-              Behaviour
-            </h1>
-            <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              Across mediums, we have taken both fledgling and legacy brands to a
-              new level of success.
-            </p>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+              <Image
+                src="https://picsum.photos/seed/agency/600/400"
+                alt="Advertising Agency"
+                width={600}
+                height={400}
+                data-ai-hint="creative team"
+                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+              <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-primary mb-4">
+                As an Advertising Agency, We Ignite Brands with Ideas that Transform Behaviour
+              </h1>
+              <p className="text-lg text-muted-foreground mb-8">
+                Across mediums, we have taken both fledgling and legacy brands to a new level of success.
+              </p>
+              <Button asChild size="lg" className="group rounded-lg">
+                <Link href="/story">
+                  View More{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
-
+      
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-left">

@@ -36,7 +36,17 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const NavLink = ({ href, label, isNew, className = "" }) => (
+  const NavLink = ({
+    href,
+    label,
+    isNew,
+    className = "",
+  }: {
+    href: string;
+    label: string;
+    isNew?: boolean;
+    className?: string;
+  }) => (
     <Link
       href={href}
       className={cn(
@@ -99,8 +109,8 @@ export default function Header() {
             ))}
           </nav>
         </div>
-        <div className="hidden md:flex items-center">
-           <Button asChild>
+        <div className="hidden md:flex items-center mr-4">
+           <Button asChild className="rounded-lg">
               <Link href="/contact">Contact Us</Link>
             </Button>
         </div>

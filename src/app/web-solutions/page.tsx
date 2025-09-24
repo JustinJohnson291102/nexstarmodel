@@ -157,7 +157,7 @@ export default function WebSolutionsPage() {
                 </div>
               </div>
             </div>
-             <div className="absolute -right-16 -top-10 md:right-0 md:top-0 w-64 h-64 opacity-50 md:opacity-100">
+             <div className="absolute -right-16 -top-10 md:right-4 md:top-4 w-64 h-64 opacity-50 md:opacity-100">
                <Image 
                 src="https://drive.google.com/uc?export=view&id=11-Xo0IYsoGYRhld3EXBvkuJUY6OcjBYw"
                 alt="Cartoon"

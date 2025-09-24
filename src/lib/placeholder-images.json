@@ -45,7 +45,7 @@
     {
       "id": "shopify-store-4",
       "description": "Screenshot of a vibrant e-commerce store for children's toys.",
-      "imageUrl": "https://images.unsplash.com/photo-1637667798459-0c3276ca3033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjB0b3lzfGVufDB8fHx8MTc1ODY5NDQwNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637667798459-0c3276ca3033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjB0b3lzfGVufDB8fHx8MTc1ODY5NDQwNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ecommerce toys"
     },
     {
@@ -57,7 +57,7 @@
     {
       "id": "testimonial-avatar-2",
       "description": "Portrait of a man with glasses.",
-      "imageUrl": "https://images.unsplash.com/photo-1715029005043-e88d219a3c48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1715029005043-e88d219a3c48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
@@ -97,40 +97,40 @@
       "imageHint": "creative workspace"
     },
     {
-      "id": "service-shopify",
+      "id": "service-branding",
+      "description": "A designer's desk with color swatches and sketches.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1sV1r4BQqyXuPEUiBRKKjEBMufSCTV6l0",
+      "imageHint": "branding ui"
+    },
+    {
+      "id": "service-social-media",
+      "description": "A person using social media on their phone.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1jY1qGWPlCndtNUQGCWiTInrFUkCSgoxJ",
+      "imageHint": "social media"
+    },
+    {
+      "id": "service-website",
       "description": "A person working on a laptop with code on the screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1644984875410-e11486d2b94f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzaG9waWZ5JTIwZGV2ZWxvcG1lbnR8ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "shopify development"
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1WMGmsDafpB6VFzOkNwBAH_oy7YCUXWMn",
+      "imageHint": "website development"
     },
     {
-      "id": "service-gtm",
-      "description": "A rocket launching into the sky, symbolizing a product launch.",
-      "imageUrl": "https://images.unsplash.com/photo-1623077299184-5cc7fd33ea99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8R1RNJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "GTM strategy"
+      "id": "service-b2b",
+      "description": "Two business professionals shaking hands.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1KdwlOUV8FycrA09pJk_WwxX-nCiFKlK2",
+      "imageHint": "b2b marketing"
     },
     {
-      "id": "service-seo",
-      "description": "A magnifying glass over a computer screen with search results.",
-      "imageUrl": "https://images.unsplash.com/photo-1535732850099-99177944f4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxTRU8lMjBwZXJmb3JtYW5jZXxlbnwwfHx8fDE3NTg2OTUzNzZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "SEO performance"
+      "id": "service-performance-marketing",
+      "description": "A chart showing upward trending data.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1DDddv8fnkOXtN8VvDIA3UNhve401V93J",
+      "imageHint": "performance marketing"
     },
     {
       "id": "service-content",
       "description": "A person writing in a notebook at a desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb250ZW50JTIwbWFya2V0aW5nfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo",
       "imageHint": "content marketing"
-    },
-    {
-      "id": "service-podcast",
-      "description": "A professional microphone in a recording booth.",
-      "imageUrl": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9kY2FzdCUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzU4Njk1Mzc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "podcast production"
-    },
-    {
-      "id": "service-branding",
-      "description": "A designer's desk with color swatches and sketches.",
-      "imageUrl": "https://images.unsplash.com/photo-1610387840559-f815b7b3080a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmFuZGluZyUyMHVpfGVufDB8fHx8MTc1ODY5NTM3Nnww&ixlib_rb-4.1.0&q=80&w=1080",
-      "imageHint": "branding ui"
     },
     {
       "id": "team-member-1",

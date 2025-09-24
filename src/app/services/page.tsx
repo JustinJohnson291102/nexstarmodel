@@ -1,58 +1,51 @@
 import Image from "next/image";
-import {
-  ShoppingCart,
-  Rocket,
-  TrendingUp,
-  FileText,
-  Mic,
-  Palette,
-  ArrowRight,
-} from "lucide-react";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import ServiceCard from "@/components/services/service-card";
 
 const services = [
   {
-    icon: ShoppingCart,
-    title: "Shopify Development",
+    image: "service-branding",
+    title: "Branding",
     description:
-      "Custom Shopify themes and apps that are fast, beautiful, and built to convert.",
-    href: "/shopify",
-  },
-  {
-    icon: Rocket,
-    title: "GTM Strategy",
-    description:
-      "Data-driven Go-To-Market strategies that ensure your product launch is a resounding success.",
-    href: "/gtm-strategy",
-  },
-  {
-    icon: TrendingUp,
-    title: "SEO & Performance",
-    description:
-      "Boost your visibility and climb the ranks with our expert SEO and performance optimization services.",
+      "We're a branding agency that helps you connect with your audience on a deeper level by creating a brand that speaks to them. We help you create a unique identity that will set you apart from your competitors.",
     href: "#",
   },
   {
-    icon: FileText,
+    image: "service-social-media",
+    title: "Social Media",
+    description:
+      "We're a social media agency that knows how to get your brand noticed on the most popular platforms. We'll create engaging content that will get people talking about your brand.",
+    href: "#",
+  },
+  {
+    image: "service-website",
+    title: "Digital - Website / Technology",
+    description:
+      "Our website development services are designed to help you create a website that is not only visually appealing but also easy to navigate and user-friendly. We also provide app development services.",
+    href: "#",
+  },
+  {
+    image: "service-b2b",
+    title: "B2B",
+    description:
+      "Our B2B marketing services are designed to help you generate leads and close sales. We'll help you create a marketing strategy that will reach your target audience and get them interested in your products or services.",
+    href: "/b2b",
+  },
+  {
+    image: "service-performance-marketing",
+    title: "Performance Marketing",
+    description:
+      "We're a performance marketing agency that knows how to get the most out of your marketing budget. We'll help you create campaigns that will generate a high return on investment.",
+    href: "#",
+  },
+  {
+    image: "service-content",
     title: "Content Marketing",
     description:
-      "Engaging content that tells your story, builds your audience, and drives conversions.",
-    href: "#",
-  },
-  {
-    icon: Mic,
-    title: "Podcast Production",
-    description:
-      "From concept to distribution, we handle everything to make your podcast a hit.",
-    href: "/podcast",
-  },
-  {
-    icon: Palette,
-    title: "Branding & UI/UX",
-    description:
-      "Crafting unique brand identities and intuitive user experiences that captivate and delight.",
+      "As a content marketing agency, we know how to create content that will engage your audience and drive them to take action. We'll help you create a content strategy that will get you the results you're looking for.",
     href: "#",
   },
 ];
@@ -89,37 +82,26 @@ export default function ServicesPage() {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={service.title}
-                className="animate-in fade-in slide-in-from-bottom-6 duration-500"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <Link href={service.href} className="h-full block">
-                  <Card className="h-full group transition-all duration-300 ease-in-out hover:border-primary hover:shadow-xl hover:-translate-y-2 overflow-hidden">
-                    <CardHeader>
-                      <div className="flex items-center gap-4">
-                        <div className="bg-primary/10 text-primary p-3 rounded-full">
-                          <service.icon className="h-6 w-6" />
-                        </div>
-                        <CardTitle className="font-headline text-2xl">
-                          {service.title}
-                        </CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        {service.description}
-                      </p>
-                      <div className="flex items-center text-primary font-semibold group-hover:text-accent transition-colors">
-                        Learn More
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </div>
-            ))}
+            {services.map((service, index) => {
+              const serviceImage = PlaceHolderImages.find(
+                (img) => img.id === service.image
+              );
+              return (
+                <div
+                  key={service.title}
+                  className="animate-in fade-in slide-in-from-bottom-6 duration-500"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <Link href={service.href} className="h-full block">
+                    <ServiceCard
+                      image={serviceImage}
+                      title={service.title}
+                      description={service.description}
+                    />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ import Footer from "@/components/layout/footer";
 import Marquee from "@/components/layout/marquee";
 
 export const metadata: Metadata = {
-  title: "Digitale Agency",
+  title: "Nexstar",
   description: "Innovating the digital space, one pixel at a time.",
 };
 

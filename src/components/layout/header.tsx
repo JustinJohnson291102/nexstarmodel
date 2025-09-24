@@ -72,8 +72,8 @@ export default function Header() {
            <Image
             src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
             alt="Nexstar Logo"
-            width={120}
-            height={40}
+            width={150}
+            height={50}
             className="object-contain"
           />
         </Link>
@@ -136,8 +136,8 @@ export default function Header() {
                    <Image
                     src="https://drive.google.com/uc?export=view&id=1XjSM_V5ocR-4hD3rzvX33PnP3jRonadV"
                     alt="Nexstar Logo"
-                    width={100}
-                    height={32}
+                    width={120}
+                    height={40}
                     className="object-contain"
                   />
                 </Link>

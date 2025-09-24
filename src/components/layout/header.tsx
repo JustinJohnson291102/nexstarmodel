@@ -57,7 +57,7 @@ export default function Header() {
     >
       {label}
       {isNew && (
-        <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full -mt-1">
+        <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full mt-1">
           NEW
         </span>
       )}
@@ -109,7 +109,7 @@ export default function Header() {
             ))}
           </nav>
         </div>
-        <div className="hidden md:flex items-center mr-4">
+        <div className="hidden md:flex items-center mr-8">
            <Button asChild className="rounded-lg">
               <Link href="/contact">Contact Us</Link>
             </Button>

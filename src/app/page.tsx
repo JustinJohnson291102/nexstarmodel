@@ -92,73 +92,81 @@ export default function Home() {
         </Carousel>
       </section>
 
-      <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              <Image
-                src="https://picsum.photos/seed/agency/600/400"
-                alt="Advertising Agency"
-                width={600}
-                height={400}
-                data-ai-hint="creative team"
-                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-primary mb-4">
-                As an Advertising Agency, We Ignite Brands with Ideas that Transform Behaviour
-              </h1>
-              <p className="text-lg text-muted-foreground mb-8">
-                Across mediums, we have taken both fledgling and legacy brands to a new level of success.
-              </p>
-              <Button asChild size="lg" className="group rounded-lg">
-                <Link href="/story">
-                  View More{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+      <section
+        className="relative bg-cover bg-center bg-fixed text-white"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/parallax-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-primary/80 z-0" />
+        <div className="relative z-10">
+          <div className="py-12 md:py-20">
+            <div className="container mx-auto px-4">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+                  <Image
+                    src="https://picsum.photos/seed/agency/600/400"
+                    alt="Advertising Agency"
+                    width={600}
+                    height={400}
+                    data-ai-hint="creative team"
+                    className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+                  <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-4">
+                    As an Advertising Agency, We Ignite Brands with Ideas that Transform Behaviour
+                  </h1>
+                  <p className="text-lg text-white/90 mb-8">
+                    Across mediums, we have taken both fledgling and legacy brands to a new level of success.
+                  </p>
+                  <Button asChild size="lg" className="group rounded-lg" variant="secondary">
+                    <Link href="/story">
+                      View More{" "}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Our Gamut of Services are as Diverse as they are Effective
-              </h2>
-              <ul className="space-y-4 mb-8">
-                {servicesList.map((service) => (
-                  <li key={service} className="flex items-center">
-                    <CheckCircle className="h-6 w-6 text-primary mr-3" />
-                    <Link
-                      href="/services"
-                      className="text-lg hover:text-primary transition-colors"
-                    >
-                      {service}
+          <div className="py-20 md:py-32">
+            <div className="container mx-auto px-4">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+                  <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
+                    Our Gamut of Services are as Diverse as they are Effective
+                  </h2>
+                  <ul className="space-y-4 mb-8">
+                    {servicesList.map((service) => (
+                      <li key={service} className="flex items-center">
+                        <CheckCircle className="h-6 w-6 text-white mr-3" />
+                        <Link
+                          href="/services"
+                          className="text-lg hover:text-secondary transition-colors"
+                        >
+                          {service}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button asChild size="lg" className="group rounded-lg" variant="secondary">
+                    <Link href="/services">
+                      View Our Services{" "}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                  </li>
-                ))}
-              </ul>
-              <Button asChild size="lg" className="group rounded-lg">
-                <Link href="/services">
-                  View Our Services{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              <Image
-                src="https://picsum.photos/seed/services/600/400"
-                alt="Diverse and effective services"
-                width={600}
-                height={400}
-                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                data-ai-hint="marketing strategy"
-              />
+                  </Button>
+                </div>
+                <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+                  <Image
+                    src="https://picsum.photos/seed/services/600/400"
+                    alt="Diverse and effective services"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                    data-ai-hint="marketing strategy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

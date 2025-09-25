@@ -36,6 +36,11 @@ export default function Home() {
       src: "https://drive.google.com/uc?export=view&id=1Kc8YY1nJG1Btqp248VhPIS35jZuq_u0B",
       alt: "Hero background 2",
     },
+    {
+      id: "hero-main-3",
+      src: "https://drive.google.com/uc?export=view&id=1p_VChqoj-8PRDu02uhsQuJPORLYaG8yE",
+      alt: "Hero background 3",
+    },
   ];
 
   const servicesList = [

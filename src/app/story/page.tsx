@@ -45,8 +45,12 @@ export default function StoryPage() {
           </div>
         </div>
       </section>
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4">
+      <section 
+        className="py-20 md:py-32 bg-secondary relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/team-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-secondary/80 z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-full mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Our Team
@@ -88,7 +92,7 @@ export default function StoryPage() {
           </div>
           
           <div className="mt-20 md:mt-32">
-            <Separator className="my-16 bg-primary" />
+            <Separator className="my-16 bg-primary/20" />
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
               <div className="md:order-2 text-center animate-in fade-in slide-in-from-right-10 duration-700">
                 <div className="inline-block">
@@ -116,6 +120,45 @@ export default function StoryPage() {
             </div>
           </div>
 
+          <div className="mt-20 md:mt-32">
+            <Separator className="my-16 bg-primary/20" />
+            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+              <div className="text-center animate-in fade-in slide-in-from-left-10 duration-700">
+                <div className="inline-block">
+                  <Image
+                    src="https://drive.google.com/uc?export=view&id=1yccbQERS1sPGFOwT51wAZddfr_x50-Lx"
+                    alt="New Team Member"
+                    width={280}
+                    height={280}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <h3 className="text-2xl font-bold font-headline text-accent mt-4">
+                    [New Team Member Name]
+                  </h3>
+                  <p className="text-lg text-primary font-semibold">[Title/Role]</p>
+                </div>
+              </div>
+              <div className="text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-right-10 duration-700 space-y-4">
+                <p>
+                  [Placeholder for the new team member's biography. You can provide the text, and I will add it here.]
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Down the memory lane
+            </h2>
+            <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              {/* Content for this section will go here */}
+              <p className="text-lg text-muted-foreground">This section is ready for your content.</p>
+            </div>
+          </div>
         </div>
       </section>
     </>

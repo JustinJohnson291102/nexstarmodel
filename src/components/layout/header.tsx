@@ -58,7 +58,7 @@ export default function Header() {
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-primary flex flex-col items-center",
+        "text-base font-medium transition-colors hover:text-primary flex flex-col items-center",
         pathname === href ? "text-primary" : "text-foreground",
         className
       )}
@@ -91,7 +91,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "text-base font-medium transition-colors hover:text-primary",
                   pathname === link.href ? "text-primary" : "text-foreground"
                 )}
               >
@@ -99,7 +99,7 @@ export default function Header() {
               </Link>
             ))}
              <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
+              <DropdownMenuTrigger className="flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
                 Services <ChevronDown className="h-4 w-4 ml-1" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -111,7 +111,7 @@ export default function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
+              <DropdownMenuTrigger className="flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
                 Web Solutions <ChevronDown className="h-4 w-4 ml-1" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>

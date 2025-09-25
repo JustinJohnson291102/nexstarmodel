@@ -67,6 +67,8 @@
     height: 10vh;
     min-height: 2rem;
     max-height: 4rem;
+    margin-top: -10.5rem; /* This pulls the waves up to overlap with the header */
+    z-index: 40; /* Ensure it's below the header content but above page content */
   }
 
   .waves {

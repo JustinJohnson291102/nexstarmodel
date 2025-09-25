@@ -77,7 +77,7 @@ export default function Header() {
       <div className="container flex h-28 items-center px-4 md:px-6">
         <Link href="/" className="mr-6 flex items-center space-x-2">
            <Image
-            src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+            src="https://drive.google.com/uc?export=view&id=1gxR72QFBzzcnADMc9jFwX2dbAwf"
             alt="Nexstar Logo"
             width={150}
             height={50}
@@ -153,7 +153,7 @@ export default function Header() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                    <Image
-                    src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+                    src="https://drive.google.com/uc?export=view&id=1gxR72QFBzzcnADMc9jFwX2dbAwf"
                     alt="Nexstar Logo"
                     width={120}
                     height={40}

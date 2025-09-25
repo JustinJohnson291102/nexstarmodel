@@ -4,9 +4,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 const images = [
   "https://drive.google.com/uc?export=view&id=1dxWqXHY_etcuQGpjAui9V_mTsV5CtaQk",
@@ -15,19 +14,10 @@ const images = [
 ];
 
 const MemoryLaneCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    align: "center",
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" }, [
+    Autoplay({ delay: 3000, stopOnInteraction: false }),
+  ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -67,22 +57,6 @@ const MemoryLaneCarousel = () => {
           ))}
         </div>
       </div>
-       <Button
-        variant="outline"
-        size="icon"
-        className="absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 rounded-full h-10 w-10"
-        onClick={scrollPrev}
-      >
-        <ChevronLeft className="h-6 w-6" />
-      </Button>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 rounded-full h-10 w-10"
-        onClick={scrollNext}
-      >
-        <ChevronRight className="h-6 w-6" />
-      </Button>
     </div>
   );
 };

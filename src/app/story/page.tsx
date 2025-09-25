@@ -131,15 +131,14 @@ export default function StoryPage() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-normal text-left tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500 text-muted-foreground">
               Down the memory lane
             </h2>
             <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              {/* Content for this section will go here */}
-              <p className="text-lg text-muted-foreground">This section is ready for your content.</p>
+              <p className="text-lg text-muted-foreground text-left">This section is ready for your content.</p>
             </div>
           </div>
         </div>

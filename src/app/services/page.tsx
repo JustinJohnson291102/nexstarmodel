@@ -1,74 +1,83 @@
+
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import ServiceCard from "@/components/services/service-card";
-
-const services = [
+const servicesData = [
   {
-    image: "service-branding",
-    title: "Branding",
-    description:
-      "We're a branding agency that helps you connect with your audience on a deeper level by creating a brand that speaks to them. We help you create a unique identity that will set you apart from your competitors.",
-    href: "#",
+    title: "Social Media Marketing",
+    points: [
+      "Social-First Strategy Development",
+      "Platform Management",
+      "Community Building + Engagement",
+      "Campaign Creation + Execution",
+      "Social Listening",
+      "Brand Positioning",
+      "Content Analysis + Auditing",
+      "Competitive Analysis",
+      "Co-branded Partnerships",
+      "Audience + Persona Development",
+    ],
+    image: "https://drive.google.com/uc?export=view&id=1DDddv8fnkOXtN8VvDIA3UNhve401V93J",
+    imageAlt: "Social Media Marketing",
+    link: "#",
   },
   {
-    image: "service-social-media",
-    title: "Social Media",
-    description:
-      "We're a social media agency that knows how to get your brand noticed on the most popular platforms. We'll create engaging content that will get people talking about your brand.",
-    href: "#",
+    title: "Creative and Branding Services",
+    points: [
+      "Branding & Creative Strategy",
+      "Graphic Design",
+      "Illustration",
+      "Copywriting",
+      "Full Production: Photo Shoots + Video Shoots",
+    ],
+    image: "https://drive.google.com/uc?export=view&id=1jY1qGWPlCndtNUQGCWiTInrFUkCSgoxJ",
+    imageAlt: "Creative and Branding Services",
+    link: "#",
   },
-  {
-    image: "service-website",
+   {
     title: "Digital - Website / Technology",
-    description:
-      "Our website development services are designed to help you create a website that is not only visually appealing but also easy to navigate and user-friendly. We also provide app development services.",
-    href: "#",
+    points: [
+      "Responsive Web Design",
+      "UI/UX Design",
+      "E-commerce Solutions",
+      "Shopify Development",
+      "Custom Web Applications",
+      "Mobile App Development",
+    ],
+    image: "https://drive.google.com/uc?export=view&id=1WMGmsDafpB6VFzOkNwBAH_oy7YCUXWMn",
+    imageAlt: "Digital - Website / Technology",
+    link: "/web-solutions",
   },
   {
-    image: "service-b2b",
-    title: "B2B",
-    description:
-      "Our B2B marketing services are designed to help you generate leads and close sales. We'll help you create a marketing strategy that will reach your target audience and get them interested in your products or services.",
-    href: "/b2b",
-  },
-  {
-    image: "service-performance-marketing",
-    title: "Performance Marketing",
-    description:
-      "We're a performance marketing agency that knows how to get the most out of your marketing budget. We'll help you create campaigns that will generate a high return on investment.",
-    href: "#",
-  },
-  {
-    image: "service-content",
-    title: "Content Marketing",
-    description:
-      "As a content marketing agency, we know how to create content that will engage your audience and drive them to take action. We'll help you create a content strategy that will get you the results you're looking for.",
-    href: "#",
+    title: "B2B Marketing",
+    points: [
+      "Account-Based Marketing (ABM)",
+      "Lead Generation & Nurturing",
+      "B2B Content Strategy",
+      "Marketing & Sales Analytics",
+      "LinkedIn & Email Marketing",
+    ],
+    image: "https://drive.google.com/uc?export=view&id=1KdwlOUV8FycrA09pJk_WwxX-nCiFKlK2",
+    imageAlt: "B2B Marketing",
+    link: "/b2b",
   },
 ];
 
 export default function ServicesPage() {
-  const heroImage = PlaceHolderImages.find(
-    (img) => img.id === "services-hero"
-  );
-
   return (
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <div className="absolute inset-0 bg-black/50 z-10" />
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt="Services background"
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
+        <Image
+          src="https://drive.google.com/uc?export=view&id=1t_TXcMnPTHoBkeRjQ4gE0w72lgzAquqW"
+          alt="Services background"
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint="creative workspace"
+        />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
             Our Services
@@ -79,29 +88,57 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
-              const serviceImage = PlaceHolderImages.find(
-                (img) => img.id === service.image
-              );
-              return (
+          <div className="space-y-20 md:space-y-32">
+            {servicesData.map((service, index) => (
+              <div
+                key={service.title}
+                className="grid md:grid-cols-2 gap-12 items-center"
+              >
                 <div
-                  key={service.title}
-                  className="animate-in fade-in slide-in-from-bottom-6 duration-500"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  className={`animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl ${
+                    index % 2 !== 0 ? "md:order-2" : ""
+                  }`}
                 >
-                  <Link href={service.href} className="h-full block">
-                    <ServiceCard
-                      image={serviceImage}
-                      title={service.title}
-                      description={service.description}
-                    />
-                  </Link>
+                  <Image
+                    src={service.image}
+                    alt={service.imageAlt}
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  />
                 </div>
-              );
-            })}
+                <div
+                  className={`animate-in fade-in slide-in-from-right-10 duration-700 ${
+                    index % 2 !== 0 ? "md:order-1" : ""
+                  }`}
+                >
+                  <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">
+                    {service.title}
+                  </h2>
+                  <ul className="space-y-2 mb-8">
+                    {service.points.map((point) => (
+                      <li key={point} className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                        <span className="text-lg text-muted-foreground">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="group rounded-lg"
+                    variant="default"
+                  >
+                    <Link href={service.link}>
+                      View More{" "}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

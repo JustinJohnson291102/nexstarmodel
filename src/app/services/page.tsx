@@ -100,9 +100,7 @@ export default function ServicesPage() {
               <div
                 key={service.title}
                 id={service.id}
-                className={`grid md:grid-cols-2 gap-y-12 items-center ${
-                  index % 2 === 0 ? "gap-x-28" : "gap-x-20"
-                }`}
+                className="grid md:grid-cols-2 gap-12 items-center"
               >
                 <div
                   className={`animate-in fade-in duration-700 overflow-hidden rounded-lg shadow-xl ${
@@ -125,7 +123,7 @@ export default function ServicesPage() {
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">
                     {service.title}
                   </h2>
-                  <ul className="space-y-2 mb-8">
+                  <ul className="space-y-3 mb-8">
                     {service.points.map((point) => (
                       <li key={point} className="flex items-start">
                         <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />

@@ -97,8 +97,8 @@ export default function ServicesPage() {
                 className="grid md:grid-cols-2 gap-12 items-center"
               >
                 <div
-                  className={`animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl ${
-                    index % 2 !== 0 ? "md:order-2" : ""
+                  className={`animate-in fade-in duration-700 overflow-hidden rounded-lg shadow-xl ${
+                    index % 2 !== 0 ? "md:order-2 slide-in-from-right-10" : "slide-in-from-left-10"
                   }`}
                 >
                   <Image
@@ -110,8 +110,8 @@ export default function ServicesPage() {
                   />
                 </div>
                 <div
-                  className={`animate-in fade-in slide-in-from-right-10 duration-700 ${
-                    index % 2 !== 0 ? "md:order-1" : ""
+                  className={`animate-in fade-in duration-700 ${
+                    index % 2 !== 0 ? "md:order-1 slide-in-from-left-10" : "slide-in-from-right-10"
                   }`}
                 >
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">

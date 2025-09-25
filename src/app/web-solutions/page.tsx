@@ -103,8 +103,12 @@ export default function WebSolutionsPage() {
           </h1>
         </div>
       </section>
-      <section className="py-20 md:py-24">
-        <div className="container mx-auto px-4">
+      <section 
+        className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/web-interfaces/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Creating Intelligent Interfaces that Adapt to Changing Technology
@@ -114,19 +118,19 @@ export default function WebSolutionsPage() {
             </p>
           </div>
           <div className="max-w-5xl mx-auto animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-around text-center p-8 rounded-lg">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-around text-center p-8 rounded-lg bg-card/50 backdrop-blur-sm border border-border/20">
               <div className="flex flex-col items-center p-4">
                 <PenTool className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">Design + Development</h3>
               </div>
-              <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-blue-500" />
-               <Separator className="md:hidden my-4 w-1/2 bg-blue-500" />
+              <Separator orientation="vertical" className="hidden md:block h-20" />
+               <Separator className="md:hidden my-4 w-1/2" />
               <div className="flex flex-col items-center p-4">
                 <Code className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">UI/UX</h3>
               </div>
-               <Separator orientation="vertical" className="hidden md:block h-20 mx-8 bg-blue-500" />
-               <Separator className="md:hidden my-4 w-1/2 bg-blue-500" />
+               <Separator orientation="vertical" className="hidden md:block h-20" />
+               <Separator className="md:hidden my-4 w-1/2" />
               <div className="flex flex-col items-center p-4">
                 <Search className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold font-headline">Keywords</h3>
@@ -136,14 +140,18 @@ export default function WebSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary/30">
-        <div className="container mx-auto px-4">
+      <section 
+        className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/web-approach/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-12 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
             Our Approach
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
             {approachFirstRow.map((item, index) => (
-              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300">
+              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300 bg-card/80 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                   <p className="font-semibold">{item.text}</p>
@@ -153,7 +161,7 @@ export default function WebSolutionsPage() {
           </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
             {approachSecondRow.map((item, index) => (
-              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300">
+              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300 bg-card/80 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                   <p className="font-semibold">{item.text}</p>
@@ -195,8 +203,12 @@ export default function WebSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4">
+      <section 
+        className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/web-custom/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                 <Image
@@ -248,3 +260,5 @@ export default function WebSolutionsPage() {
     </>
   );
 }
+
+    

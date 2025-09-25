@@ -1,4 +1,7 @@
 
+
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -7,6 +10,12 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
@@ -15,6 +24,19 @@ export default function Home() {
   const gamutOfServicesImage = PlaceHolderImages.find(
     (img) => img.id === "service-content"
   );
+
+  const heroImages = [
+    {
+      id: "hero-main-1",
+      src: "https://drive.google.com/uc?export=view&id=1tRvQjMFjudhVPJnGyTFWnYaTWztlcT0x",
+      alt: "Hero background 1",
+    },
+    {
+      id: "hero-main-2",
+      src: "https://drive.google.com/uc?export=view&id=1Kc8YY1nJG1Btqp248VhPIS35jZuq_u0B",
+      alt: "Hero background 2",
+    },
+  ];
 
   const servicesList = [
     "Branding",
@@ -36,14 +58,33 @@ export default function Home() {
   return (
     <>
       <section className="w-full">
-        <Image
-          src="https://drive.google.com/uc?export=view&id=1tRvQjMFjudhVPJnGyTFWnYaTWztlcT0x"
-          alt="Hero background"
-          width={1920}
-          height={1080}
-          className="w-full h-auto object-cover"
-          priority
-        />
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+              playOnInit: true,
+            }),
+          ]}
+          className="w-full"
+          opts={{ loop: true }}
+        >
+          <CarouselContent>
+            {heroImages.map((img) => (
+              <CarouselItem key={img.id}>
+                <div className="relative h-[60vh] md:h-[100vh] w-full">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover w-full h-auto"
+                    priority={img.id === "hero-main-1"}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </section>
 
       <section className="py-12 md:py-20 bg-background">

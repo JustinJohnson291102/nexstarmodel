@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import MemoryLaneCarousel from "@/components/story/memory-lane-carousel";
 import { Check, Target, Lightbulb, Heart, Users } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const timelineEvents = [
   {
@@ -50,22 +50,38 @@ const coreValues = [
     {
         icon: Lightbulb,
         title: "Innovation",
-        description: "We are relentless in our pursuit of new ideas, challenging the status quo to create groundbreaking digital experiences."
+        description: "We are relentless in our pursuit of new ideas, challenging the status quo to create groundbreaking digital experiences.",
+        image: {
+          src: "https://picsum.photos/seed/value-innovation/600/400",
+          hint: "abstract innovation",
+        }
     },
     {
         icon: Users,
         title: "Partnership",
-        description: "We work as an extension of your team, fostering deep collaboration and aligning our success with yours."
+        description: "We work as an extension of your team, fostering deep collaboration and aligning our success with yours.",
+         image: {
+          src: "https://picsum.photos/seed/value-partnership/600/400",
+          hint: "team collaboration",
+        }
     },
     {
         icon: Heart,
         title: "Passion",
-        description: "Our work is our craft. We pour our hearts into every project, driven by a genuine love for what we do."
+        description: "Our work is our craft. We pour our hearts into every project, driven by a genuine love for what we do.",
+         image: {
+          src: "https://picsum.photos/seed/value-passion/600/400",
+          hint: "creative passion",
+        }
     },
     {
         icon: Target,
         title: "Results-Driven",
-        description: "Creativity is only half the story. We are obsessed with data, measuring our success by the tangible results we deliver."
+        description: "Creativity is only half the story. We are obsessed with data, measuring our success by the tangible results we deliver.",
+         image: {
+          src: "https://picsum.photos/seed/value-results/600/400",
+          hint: "success target",
+        }
     }
 ]
 
@@ -141,10 +157,13 @@ export default function StoryPage() {
                 <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
                   <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
                 </div>
-                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 px-6 py-4 animate-in fade-in zoom-in-90 duration-500">
-                  <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>
-                  <h3 className="mb-3 font-bold text-foreground text-xl">{event.title}</h3>
-                  <p className="text-sm leading-snug tracking-wide text-muted-foreground text-opacity-100">{event.description}</p>
+                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 overflow-hidden animate-in fade-in zoom-in-90 duration-500">
+                  <Image src={event.image.src} alt={event.title} width={600} height={400} className="w-full h-auto object-cover" data-ai-hint={event.image.hint} />
+                  <div className="p-6">
+                    <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>
+                    <h3 className="mb-3 font-bold text-foreground text-xl">{event.title}</h3>
+                    <p className="text-sm leading-snug tracking-wide text-muted-foreground text-opacity-100">{event.description}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -164,14 +183,16 @@ export default function StoryPage() {
           </div>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {coreValues.map((value, index) => (
-               <Card key={index} className="bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: `${index * 150}ms`}}>
-                <CardContent className="p-6 text-center">
-                    <div className="inline-block p-4 bg-primary/10 text-primary rounded-full mb-4">
-                        <value.icon className="h-8 w-8" />
-                    </div>
-                    <h3 className="text-2xl font-bold font-headline mb-2">{value.title}</h3>
-                    <p className="text-muted-foreground">{value.description}</p>
-                </CardContent>
+               <Card key={index} className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: `${index * 150}ms`}}>
+                  <Image src={value.image.src} alt={value.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={value.image.hint} />
+                  <div className="absolute inset-0 bg-black/50" />
+                  <CardContent className="relative z-10 p-6 text-center text-white flex flex-col items-center justify-center h-full">
+                      <div className="inline-block p-4 bg-white/10 text-white rounded-full mb-4">
+                          <value.icon className="h-8 w-8" />
+                      </div>
+                      <h3 className="text-2xl font-bold font-headline mb-2">{value.title}</h3>
+                      <p className="text-white/80">{value.description}</p>
+                  </CardContent>
                </Card>
             ))}
           </div>
@@ -277,4 +298,3 @@ export default function StoryPage() {
   );
 }
 
-    

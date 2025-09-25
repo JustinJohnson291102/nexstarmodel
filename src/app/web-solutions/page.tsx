@@ -67,35 +67,13 @@ const shopifyServices = [
   },
 ];
 
-const heroImages = [
-    { id: "web-hero-user", src: "https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo", alt: "Web solutions" },
-    { id: "web-hero-2", src: "https://picsum.photos/seed/web-hero-2/1920/1080", alt: "Modern web design layout" },
-    { id: "web-hero-3", src: "https://picsum.photos/seed/web-hero-3/1920/1080", alt: "User interface design process" },
-];
-
-
 export default function WebSolutionsPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <Carousel
-          plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
-          className="absolute inset-0 w-full h-full"
-          opts={{ loop: true }}
-        >
-          <CarouselContent>
-            {heroImages.map((img) => (
-              <CarouselItem key={img.id}>
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover"
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+      <section 
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/web-solutions-hero/1920/1080')` }}
+      >
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 container mx-auto px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-white mb-4">
@@ -207,7 +185,7 @@ export default function WebSolutionsPage() {
         className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/web-custom/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-in fade-in slide-in-from-left-10 duration-700">
@@ -260,5 +238,3 @@ export default function WebSolutionsPage() {
     </>
   );
 }
-
-    

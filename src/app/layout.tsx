@@ -9,6 +9,7 @@ import Footer from "@/components/layout/footer";
 import Marquee from "@/components/layout/marquee";
 import { useState, useEffect } from "react";
 import Preloader from "@/components/layout/preloader";
+import HeaderWave from "@/components/layout/header-wave";
 
 export default function RootLayout({
   children,
@@ -47,6 +48,7 @@ export default function RootLayout({
         ) : (
           <>
             <Header />
+            <HeaderWave />
             <main className="min-h-[calc(100vh-8rem)]">{children}</main>
             <Footer />
             <Marquee text="Attention: Beware of Scams! Scamsters are illegally using our name and logo - Xebec Communications to deceive unsuspecting job seekers and others. WhatsApp groups are being created for online tasks, YouTube reviews, crypto trading, etc. Please be vigilant and do not join any groups. Exit such groups immediately and report to Cybercrime. We do not offer online tasks nor do we do business through WhatsApp. Stay safe!" />

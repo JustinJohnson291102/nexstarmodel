@@ -37,27 +37,26 @@ export default function B2BPage() {
 
   return (
     <>
-      <section className="relative h-[60vh] w-full">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt="B2B Marketing"
-            layout="fill"
-            objectFit="cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
+      <section 
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-hero/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="relative z-20 px-4 text-white">
+           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              B2B Marketing
+            </h1>
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
+              Fueling Growth with Strategic Connections
+            </p>
+        </div>
       </section>
 
-      <section className="relative py-20 md:py-32">
-         <Image
-          src="https://picsum.photos/seed/b2b-bg/1920/1080"
-          alt="Abstract background"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-10"
-        />
+      <section 
+        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-services/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -94,20 +93,17 @@ export default function B2BPage() {
         </div>
       </section>
 
-      <section className="relative py-20 md:py-32 bg-secondary/50">
-        <Image
-          src="https://drive.google.com/uc?export=view&id=1-NnbDMh4fjyoWcOOvCa9UiUHCqi5J0lJ"
-          alt="Integrated Solutions"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-20"
-        />
-        <div className="container mx-auto px-4 relative z-10">
+      <section 
+        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-solutions/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-primary/80 z-10" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
               Integrated B2B Marketing Solutions Tailored to Your Brand
             </h2>
-            <div className="text-lg text-muted-foreground space-y-6">
+            <div className="text-lg text-white/90 space-y-6">
               <p>
                 At Xebec, we specialize in GTM -Go to Market Strategy , helping B2B and technology companies launch their products or service and achieve their goals with customized digital marketing strategies rooted in their brand's purpose.
               </p>

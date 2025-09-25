@@ -57,36 +57,60 @@ const features = [
     title: "Real-Time Analytics",
     description:
       "Monitor visitor activity as it happens. Understand user behavior and react to trends instantly.",
+    image: {
+      src: "https://picsum.photos/seed/real-time/600/400",
+      hint: "live data",
+    },
   },
   {
     icon: BarChart2,
     title: "Custom Dashboards",
     description:
       "Create personalized dashboards with the metrics that matter most to your business. No clutter, just clarity.",
+    image: {
+      src: "https://picsum.photos/seed/dashboard-ui/600/400",
+      hint: "data dashboard",
+    },
   },
   {
     icon: Filter,
     title: "Advanced Filtering",
     description:
       "Segment your audience with powerful filters. Analyze data by demographics, location, behavior, and more.",
+    image: {
+      src: "https://picsum.photos/seed/data-filter/600/400",
+      hint: "data filter",
+    },
   },
   {
     icon: Users,
     title: "Audience Insights",
     description:
       "Get a deep understanding of your visitors. Learn where they come from and what they're looking for.",
+    image: {
+      src: "https://picsum.photos/seed/audience/600/400",
+      hint: "audience analysis",
+    },
   },
   {
     icon: Target,
     title: "Conversion Tracking",
     description:
       "Track goals and funnels to optimize your conversion rates and maximize your ROI.",
+    image: {
+      src: "https://picsum.photos/seed/conversion/600/400",
+      hint: "sales funnel",
+    },
   },
   {
     icon: TrendingUp,
     title: "Performance Monitoring",
     description:
       "Keep an eye on your site's performance with detailed reports on page speed and user experience.",
+    image: {
+      src: "https://picsum.photos/seed/performance/600/400",
+      hint: "performance chart",
+    },
   },
 ];
 
@@ -113,8 +137,9 @@ export default function XtrackPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-32 relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/xtrack-intro/1920/1080')` }}>
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Clarity in Every Click
@@ -131,8 +156,9 @@ export default function XtrackPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 md:py-32 bg-secondary/50">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-32 bg-secondary/50 relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/xtrack-features/1920/1080')` }}>
+         <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Powerful Features, Simply Presented
@@ -148,19 +174,29 @@ export default function XtrackPage() {
                 className="animate-in fade-in slide-in-from-bottom-8 duration-500"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <Card className="h-full text-left bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1">
-                  <CardHeader className="flex flex-row items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <feature.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <CardTitle className="font-headline text-xl leading-tight">
-                        {feature.title}
-                      </CardTitle>
+                <Card className="h-full group text-left bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 overflow-hidden">
+                   <CardHeader className="p-0">
+                    <div className="relative aspect-video w-full">
+                       <Image
+                        src={feature.image.src}
+                        alt={feature.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        data-ai-hint={feature.image.hint}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+                      <div className="absolute bottom-4 left-4 flex items-start gap-3">
+                        <div className="bg-primary/50 backdrop-blur-sm p-3 rounded-lg border border-primary-foreground/20">
+                          <feature.icon className="h-6 w-6 text-primary-foreground" />
+                        </div>
+                      </div>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
+                  <CardContent className="p-6">
+                    <CardTitle className="font-headline text-xl leading-tight mb-2">
+                      {feature.title}
+                    </CardTitle>
+                    <p className="text-muted-foreground text-sm">
                       {feature.description}
                     </p>
                   </CardContent>
@@ -192,8 +228,9 @@ export default function XtrackPage() {
       </section>
 
       {/* Dashboard Section */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-32 relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/xtrack-dashboard/1920/1080')` }}>
+        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
               Your Data, Beautifully Visualized
@@ -203,7 +240,7 @@ export default function XtrackPage() {
               stunning visualizations turn numbers into narratives.
             </p>
           </div>
-          <Card className="shadow-2xl shadow-primary/10">
+          <Card className="shadow-2xl shadow-primary/10 bg-card/80 backdrop-blur-sm border-border/50">
             <CardHeader>
               <CardTitle>Monthly Active Users</CardTitle>
             </CardHeader>
@@ -275,7 +312,7 @@ export default function XtrackPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -299,3 +336,5 @@ export default function XtrackPage() {
     </div>
   );
 }
+
+    

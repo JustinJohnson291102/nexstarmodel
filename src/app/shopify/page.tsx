@@ -1,7 +1,15 @@
 
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Store, Brush, Rocket, ShoppingCart, Settings, Repeat } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -47,13 +55,34 @@ const shopifyFeatures = [
   },
 ];
 
+const heroImages = [
+    { id: "shopify-hero-1", src: "https://picsum.photos/seed/shopify-hero-1/1920/1080", alt: "E-commerce website on a laptop" },
+    { id: "shopify-hero-2", src: "https://picsum.photos/seed/shopify-hero-2/1920/1080", alt: "Online shopping experience" },
+    { id: "shopify-hero-3", src: "https://picsum.photos/seed/shopify-hero-3/1920/1080", alt: "Person holding a credit card" },
+];
+
 export default function ShopifyPage() {
   return (
     <div className="bg-background">
-       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/shopify-hero/1920/1080')` }}
-      >
+       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+        <Carousel
+            plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
+            className="absolute inset-0 w-full h-full"
+            opts={{ loop: true }}
+          >
+            <CarouselContent>
+              {heroImages.map((img) => (
+                <CarouselItem key={img.id}>
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 px-4 text-white">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">

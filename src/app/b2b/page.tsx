@@ -1,7 +1,15 @@
 
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BarChart, BrainCircuit, Goal, MessageCircle, Users } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
@@ -46,6 +54,12 @@ const b2bServices = [
   },
 ];
 
+const heroImages = [
+    { id: "b2b-hero-1", src: "https://picsum.photos/seed/b2b-hero-1/1920/1080", alt: "Business meeting" },
+    { id: "b2b-hero-2", src: "https://picsum.photos/seed/b2b-hero-2/1920/1080", alt: "Data analytics dashboard" },
+    { id: "b2b-hero-3", src: "https://picsum.photos/seed/b2b-hero-3/1920/1080", alt: "Team collaborating" },
+]
+
 
 export default function B2BPage() {
   const heroImage = PlaceHolderImages.find(
@@ -54,10 +68,25 @@ export default function B2BPage() {
 
   return (
     <>
-      <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-hero/1920/1080')` }}
-      >
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+        <Carousel
+          plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
+          className="absolute inset-0 w-full h-full"
+          opts={{ loop: true }}
+        >
+          <CarouselContent>
+            {heroImages.map((img) => (
+              <CarouselItem key={img.id}>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 px-4 text-white">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">

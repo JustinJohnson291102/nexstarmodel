@@ -100,7 +100,9 @@ export default function ServicesPage() {
               <div
                 key={service.title}
                 id={service.id}
-                className="grid md:grid-cols-2 gap-x-20 gap-y-12 items-center"
+                className={`grid md:grid-cols-2 gap-y-12 items-center ${
+                  index % 2 === 0 ? "gap-x-28" : "gap-x-20"
+                }`}
               >
                 <div
                   className={`animate-in fade-in duration-700 overflow-hidden rounded-lg shadow-xl ${

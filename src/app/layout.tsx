@@ -9,7 +9,6 @@ import Footer from "@/components/layout/footer";
 import Marquee from "@/components/layout/marquee";
 import { useState, useEffect } from "react";
 import Preloader from "@/components/layout/preloader";
-import WavyHeader from "@/components/layout/wavy-header";
 
 export default function RootLayout({
   children,
@@ -48,30 +47,12 @@ export default function RootLayout({
         ) : (
           <>
             <Header />
-            <WavyHeader />
             <main className="min-h-[calc(100vh-8rem)]">{children}</main>
             <Footer />
             <Marquee text="Attention: Beware of Scams! Scamsters are illegally using our name and logo - Xebec Communications to deceive unsuspecting job seekers and others. WhatsApp groups are being created for online tasks, YouTube reviews, crypto trading, etc. Please be vigilant and do not join any groups. Exit such groups immediately and report to Cybercrime. We do not offer online tasks nor do we do business through WhatsApp. Stay safe!" />
             <Toaster />
           </>
         )}
-        <svg style={{ position: 'fixed', top: '100vh' }}>
-          <defs>
-            <filter id="blob">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="10"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                result="blob"
-              />
-            </filter>
-          </defs>
-        </svg>
       </body>
     </html>
   );

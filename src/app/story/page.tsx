@@ -1,6 +1,73 @@
+
+"use client";
+
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import MemoryLaneCarousel from "@/components/story/memory-lane-carousel";
+import { Check, Target, Lightbulb, Heart, Users } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+
+const timelineEvents = [
+  {
+    year: "2010",
+    title: "The Spark of an Idea",
+    description: "A small team of passionate creatives, developers, and marketers unites with a single mission: to bridge the gap between brilliant ideas and flawless digital execution.",
+    image: {
+      src: "https://picsum.photos/seed/spark/600/400",
+      hint: "bright lightbulb",
+    }
+  },
+  {
+    year: "2014",
+    title: "First Major Client",
+    description: "Landed our first major retail client, delivering a comprehensive e-commerce and branding strategy that resulted in a 200% increase in their online sales within the first year.",
+     image: {
+      src: "https://picsum.photos/seed/client-win/600/400",
+      hint: "business handshake",
+    }
+  },
+  {
+    year: "2018",
+    title: "Expanding Our Services",
+    description: "Launched our dedicated B2B marketing and Go-To-Market strategy divisions, helping SaaS and tech companies make a powerful impact from day one.",
+     image: {
+      src: "https://picsum.photos/seed/expand/600/400",
+      hint: "growth chart",
+    }
+  },
+  {
+    year: "2023",
+    title: "Launching XTrack",
+    description: "Introduced our proprietary analytics platform, XTrack, providing clients with unparalleled insights into their digital performance and user behavior.",
+    image: {
+      src: "https://picsum.photos/seed/xtrack-launch/600/400",
+      hint: "data analytics",
+    }
+  }
+];
+
+const coreValues = [
+    {
+        icon: Lightbulb,
+        title: "Innovation",
+        description: "We are relentless in our pursuit of new ideas, challenging the status quo to create groundbreaking digital experiences."
+    },
+    {
+        icon: Users,
+        title: "Partnership",
+        description: "We work as an extension of your team, fostering deep collaboration and aligning our success with yours."
+    },
+    {
+        icon: Heart,
+        title: "Passion",
+        description: "Our work is our craft. We pour our hearts into every project, driven by a genuine love for what we do."
+    },
+    {
+        icon: Target,
+        title: "Results-Driven",
+        description: "Creativity is only half the story. We are obsessed with data, measuring our success by the tangible results we deliver."
+    }
+]
 
 export default function StoryPage() {
   return (
@@ -23,29 +90,94 @@ export default function StoryPage() {
           </p>
         </div>
       </section>
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
-              The Journey of Digitale
-            </h2>
-            <div className="prose prose-lg mx-auto text-muted-foreground space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              <p>
-                Founded on the principle of innovation, Digitale Agency was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
-              </p>
-              <p>
-                Our journey began with a small team of passionate developers, designers, and marketers who shared a common goal: to build exceptional digital experiences. From crafting pixel-perfect Shopify stores to engineering data-driven go-to-market strategies, we've always been obsessed with delivering results that matter.
-              </p>
-              <p>
-                Over the years, we've grown, but our core mission remains the same. We believe in the power of collaboration, the magic of creativity, and the impact of technology. We're not just a service provider; we're a partner in our clients' success, dedicated to helping them navigate the ever-evolving digital landscape and achieve their most ambitious goals.
-              </p>
-              <p>
-                We're excited about what the future holds and look forward to writing the next chapter of our story with you.
-              </p>
-            </div>
+
+      <section
+        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/vision-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+             <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Mission & Vision</h2>
+                 <p className="text-lg text-muted-foreground">
+                   Founded on the principle of innovation, Digitale Agency was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
+                 </p>
+                 <p className="text-lg text-muted-foreground">
+                   Our vision is to be the leading partner for brands brave enough to shape the future, empowering them to connect with their audiences in more meaningful and impactful ways. We believe in the power of collaboration, the magic of creativity, and the impact of technology.
+                 </p>
+             </div>
+             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+                    <Image
+                      src="https://picsum.photos/seed/mission-image/800/600"
+                      alt="Team discussing a project on a whiteboard"
+                      fill
+                      className="object-cover"
+                      data-ai-hint="team collaboration"
+                    />
+                </div>
+             </div>
           </div>
         </div>
       </section>
+      
+      <section 
+        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/timeline-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-secondary/90 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Journey So Far</h2>
+            <p className="text-lg text-muted-foreground mt-4">A timeline of our milestones and achievements.</p>
+          </div>
+
+          <div className="relative wrap overflow-hidden p-10 h-full">
+            <div className="absolute border-primary/20 h-full border" style={{left: '50%'}}></div>
+            {timelineEvents.map((event, index) => (
+               <div key={index} className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? 'flex-row-reverse left-timeline' : 'right-timeline'}`}>
+                <div className="order-1 w-5/12"></div>
+                <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
+                  <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
+                </div>
+                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 px-6 py-4 animate-in fade-in zoom-in-90 duration-500">
+                  <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>
+                  <h3 className="mb-3 font-bold text-foreground text-xl">{event.title}</h3>
+                  <p className="text-sm leading-snug tracking-wide text-muted-foreground text-opacity-100">{event.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/values-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
+           <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Core Values</h2>
+            <p className="text-lg text-muted-foreground mt-4">The principles that guide everything we do.</p>
+          </div>
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            {coreValues.map((value, index) => (
+               <Card key={index} className="bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: `${index * 150}ms`}}>
+                <CardContent className="p-6 text-center">
+                    <div className="inline-block p-4 bg-primary/10 text-primary rounded-full mb-4">
+                        <value.icon className="h-8 w-8" />
+                    </div>
+                    <h3 className="text-2xl font-bold font-headline mb-2">{value.title}</h3>
+                    <p className="text-muted-foreground">{value.description}</p>
+                </CardContent>
+               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section 
         className="py-20 md:py-32 bg-secondary relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/team-bg/1920/1080')` }}
@@ -84,10 +216,7 @@ export default function StoryPage() {
                 She is also Co-author of the hugely successful book on entrepreneurship - 'No Holy Cows in Business' - she continues to serve as guest faculty in several of India's top management schools. Frequently invited to speak on several industry panels across India.
               </p>
               <p>
-                She started Xebec Communications Pvt Ltd in 1992. A rich experience of 28 years stands her in good stead as she continues to steer and build successful brands across diverse verticals - be it BFSI, Retail, Real Estate, B2B, FMCG, Education or new age businesses which need out of the box thinking.
-              </p>
-              <p>
-                Always up for new challenges, Kiran has successfully created a niche for Xebec and herself as one of the most respected and creatively-forward names in Digital Marketing and Advertising Communication.
+                She started Xebec Communications Pvt Ltd in 1992. A rich experience of 28 years stands her in good stead as she continues to steer and build successful brands across diverse verticals.
               </p>
             </div>
           </div>
@@ -112,10 +241,10 @@ export default function StoryPage() {
               </div>
               <div className="md:order-1 text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-left-10 duration-700 space-y-4">
                 <p>
-                  Anil Bhat lives, sleeps, talks and breathes Digital Marketing - and that's no exaggeration! Having completed his Graduation in Engineering, Anil went on to become a Certified Digital Marketing Specialist with a Google Black Belt certification. He has now completed 25 years in Xebec Communications, as the guiding light behind transforming it into a leading digital marketing company.
+                  Anil Bhat lives, sleeps, talks and breathes Digital Marketing. Having completed his Graduation in Engineering, Anil went on to become a Certified Digital Marketing Specialist with a Google Black Belt certification.
                 </p>
                 <p>
-                  Be it Social Media Marketing or Web Design, Search Engine Optimization or Performance Marketing, Application Development or Marketing Strategy - Anil has been instrumental for the Digital Transformation of several brands across verticals like Education, Real Estate, B2B, Retail, Home & Interiors, BFSI and more. As a specialist in the field, he has the expertise to deliver solutions that extend over the entire gamut of E-Commerce, CRM, Lead Generation, Digital Media Planning, Media Buying, Marketing Strategy and Technology.
+                  As a specialist in the field, he has the expertise to deliver solutions that extend over the entire gamut of E-Commerce, CRM, Lead Generation, Digital Media Planning, Media Buying, Marketing Strategy and Technology.
                 </p>
               </div>
             </div>
@@ -132,7 +261,7 @@ export default function StoryPage() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-normal text-left tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500 text-muted-foreground">
@@ -147,3 +276,5 @@ export default function StoryPage() {
     </>
   );
 }
+
+    

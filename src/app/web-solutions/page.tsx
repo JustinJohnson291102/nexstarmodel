@@ -4,68 +4,70 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, PenTool, Search, FileScan, LocateFixed, Users, Rocket, TrendingUp, Briefcase, Replace } from "lucide-react";
+import { ArrowRight, Code, PenTool, Search, FileScan, LocateFixed, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
 
-const approachFirstRow = [
+const approachSteps = [
   {
     icon: FileScan,
-    text: "Audit your Digital Marketing & Communication",
-  },
-  {
-    icon: Users,
-    text: "Identify gaps in your digital assets & overall communication",
+    text: "Audit & Discovery",
+    description: "We audit your digital marketing, communication, and assets to identify gaps."
   },
   {
     icon: LocateFixed,
-    text: "Dive deep into understanding your design & content",
+    text: "Strategy & Design",
+    description: "We dive deep into understanding your brand to craft a tailored design and content strategy."
   },
-];
-
-const approachSecondRow = [
-   {
+  {
     icon: Rocket,
-    text: "Execute campaign",
+    text: "Development & Execution",
+    description: "Our team executes the campaign with precision, bringing your vision to life."
   },
   {
     icon: Replace,
-    text: "Monitor, Maintain, Re-optimize",
-  },
-  {
-    icon: Briefcase,
-    text: "E-commerce Expertise",
-  },
-    {
-    icon: TrendingUp,
-    text: "Analyze Business Requirements",
+    text: "Optimization & Maintenance",
+    description: "We continuously monitor, maintain, and re-optimize for peak performance."
   },
 ];
 
 const shopifyServices = [
   {
     number: "01",
-    text: "Shopify Store Maintenance, Adding Extensions, & Customizations",
+    text: "Shopify Store Maintenance, adding extensions, & customizations.",
   },
   {
     number: "02",
-    text: "WooCommerce Store Setup, Configuration, & Customization",
+    text: "WooCommerce Store Setup, configuration, & customization.",
   },
   {
     number: "03",
-    text: "HTML5 Website Design, Development, & Maintenance",
+    text: "HTML5 Website Design, development, & maintenance.",
   },
   {
     number: "04",
-    text: "Web Development Services",
+    text: "Full-stack Web Development services for custom applications.",
   },
 ];
+
+const webTechFeatures = [
+  {
+    icon: Smartphone,
+    title: "Mobile-First Design",
+    description: "We prioritize a seamless experience on mobile, ensuring your site looks perfect on any device.",
+  },
+  {
+    icon: Tablet,
+    title: "Responsive Layouts",
+    description: "Our fluid grid concepts ensure your content adapts beautifully to any browser size or screen.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "E-commerce Expertise",
+    description: "From Shopify to WooCommerce, we build online stores that are both beautiful and profitable.",
+  }
+];
+
 
 export default function WebSolutionsPage() {
   return (
@@ -79,8 +81,12 @@ export default function WebSolutionsPage() {
           <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-white mb-4">
             Responsive Website <br /> Development Services
           </h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/90">
+            Creating intelligent interfaces that adapt to a changing technological landscape.
+          </p>
         </div>
       </section>
+      
       <section 
         className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/web-interfaces/1920/1080')` }}
@@ -89,31 +95,20 @@ export default function WebSolutionsPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
-              Creating Intelligent Interfaces that Adapt to Changing Technology
+              Creating Intelligent Interfaces that Adapt
             </h2>
             <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              How can a website design adjust to your technology diversities? By being intelligent enough to adapt itself beautifully, we believe. Which is why, we design engagingly-simple, full-screen experiences, from a mobile-first perspective. We maximize the use of fluid grid concepts so that your content adapts itself fluidly to any browser size. Which means, all your worries of how your website will look on a new phone or tablet are completely taken care of.
+              How can a website design adjust to your technology diversities? By being intelligent enough to adapt itself beautifully. We design engagingly-simple, full-screen experiences from a mobile-first perspective, using fluid grid concepts so your content adapts fluidly to any browser size.
             </p>
           </div>
-          <div className="max-w-5xl mx-auto animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-around text-center p-8 rounded-lg bg-card/50 backdrop-blur-sm border border-border/20">
-              <div className="flex flex-col items-center p-4">
-                <PenTool className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold font-headline">Design + Development</h3>
-              </div>
-              <Separator orientation="vertical" className="hidden md:block h-20" />
-               <Separator className="md:hidden my-4 w-1/2" />
-              <div className="flex flex-col items-center p-4">
-                <Code className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold font-headline">UI/UX</h3>
-              </div>
-               <Separator orientation="vertical" className="hidden md:block h-20" />
-               <Separator className="md:hidden my-4 w-1/2" />
-              <div className="flex flex-col items-center p-4">
-                <Search className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold font-headline">Keywords</h3>
-              </div>
-            </div>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+            {webTechFeatures.map((feature, index) => (
+                <div key={index} className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+                    <feature.icon className="h-12 w-12 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold font-headline mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground text-sm">{feature.description}</p>
+                </div>
+            ))}
           </div>
         </div>
       </section>
@@ -124,25 +119,16 @@ export default function WebSolutionsPage() {
       >
         <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-12 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
-            Our Approach
+          <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-16 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
+            Our Strategic Approach
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-            {approachFirstRow.map((item, index) => (
-              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300 bg-card/80 backdrop-blur-sm">
-                <CardContent className="p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+            {approachSteps.map((item, index) => (
+              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-all duration-300 bg-card/80 backdrop-blur-sm hover:shadow-xl hover:-translate-y-1">
+                <CardContent className="p-8">
                   <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <p className="font-semibold">{item.text}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
-            {approachSecondRow.map((item, index) => (
-              <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors duration-300 bg-card/80 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <p className="font-semibold">{item.text}</p>
+                  <h3 className="font-bold text-lg font-headline mb-2">{item.text}</h3>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -150,32 +136,31 @@ export default function WebSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-           <div className="bg-sky-100 dark:bg-sky-900/30 p-8 md:p-12 rounded-lg relative overflow-hidden">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="md:col-span-2">
+           <div className="bg-sky-100 dark:bg-sky-900/30 p-8 md:p-12 rounded-lg relative overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-700">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
                  <h3 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-8">
-                  Shopify Store Setup, <br/>Configuration, & Customization
+                  E-commerce & Web Development Expertise
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                   {shopifyServices.map((service) => (
-                    <div key={service.number} className="flex items-start gap-4">
-                      <p className="text-5xl font-headline font-bold text-primary/50 -mt-2">{service.number}</p>
-                      <p className="text-foreground">{service.text}</p>
+                    <div key={service.number} className="flex items-start gap-4 group">
+                      <p className="text-5xl font-headline font-bold text-primary/30 transition-colors duration-300 group-hover:text-primary/70 -mt-2">{service.number}</p>
+                      <p className="text-foreground mt-1">{service.text}</p>
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
-             <div className="absolute -right-16 -top-10 md:right-4 md:top-4 w-64 h-64 opacity-50 md:opacity-100">
-               <Image 
-                src="https://drive.google.com/uc?export=view&id=11-Xo0IYsoGYRhld3EXBvkuJUY6OcjBYw"
-                alt="Cartoon"
-                width={256}
-                height={256}
-                className="object-contain"
-              />
+               <div className="relative w-full h-64 md:h-full hidden md:block">
+                 <Image 
+                  src="https://drive.google.com/uc?export=view&id=11-Xo0IYsoGYRhld3EXBvkuJUY6OcjBYw"
+                  alt="E-commerce cartoon"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>

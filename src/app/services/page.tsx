@@ -40,7 +40,7 @@ const servicesData = [
   },
    {
     id: "web-tech",
-    title: "Digital - Website / Technology",
+    title: "Web/Tech Solutions",
     points: [
       "Responsive Web Design",
       "UI/UX Design",

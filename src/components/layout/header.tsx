@@ -24,7 +24,7 @@ const mainLinks = [
 const serviceLinks = [
     { href: "/services#social-media", label: "Social Media" },
     { href: "/services#branding", label: "Creative & Branding" },
-    { href: "/services#web-tech", label: "Web/Tech" },
+    { href: "/web-solutions", label: "Web/Tech" },
     { href: "/services#b2b", label: "B2B Marketing" },
 ]
 

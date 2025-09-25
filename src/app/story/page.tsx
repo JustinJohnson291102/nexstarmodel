@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
+import MemoryLaneCarousel from "@/components/story/memory-lane-carousel";
 
 export default function StoryPage() {
   return (
@@ -138,7 +139,7 @@ export default function StoryPage() {
               Down the memory lane
             </h2>
             <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              <p className="text-lg text-muted-foreground text-left">This section is ready for your content.</p>
+              <MemoryLaneCarousel />
             </div>
           </div>
         </div>

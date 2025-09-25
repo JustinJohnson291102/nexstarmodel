@@ -68,7 +68,7 @@ const shopifyServices = [
 ];
 
 const heroImages = [
-    { id: "web-hero-1", src: "https://picsum.photos/seed/web-hero-1/1920/1080", alt: "Code on a screen" },
+    { id: "web-hero-user", src: "https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo", alt: "Web solutions" },
     { id: "web-hero-2", src: "https://picsum.photos/seed/web-hero-2/1920/1080", alt: "Modern web design layout" },
     { id: "web-hero-3", src: "https://picsum.photos/seed/web-hero-3/1920/1080", alt: "User interface design process" },
 ];

@@ -56,7 +56,7 @@ const shopifyFeatures = [
 ];
 
 const heroImages = [
-    { id: "shopify-hero-1", src: "https://picsum.photos/seed/shopify-hero-1/1920/1080", alt: "E-commerce website on a laptop" },
+    { id: "shopify-hero-user", src: "https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo", alt: "Shopify solutions" },
     { id: "shopify-hero-2", src: "https://picsum.photos/seed/shopify-hero-2/1920/1080", alt: "Online shopping experience" },
     { id: "shopify-hero-3", src: "https://picsum.photos/seed/shopify-hero-3/1920/1080", alt: "Person holding a credit card" },
 ];

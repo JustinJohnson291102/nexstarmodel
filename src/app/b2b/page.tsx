@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BarChart, BrainCircuit, Goal, MessageCircle, Users } from "lucide-react";
@@ -11,21 +12,37 @@ const b2bServices = [
     icon: Goal,
     title: "Account-Based Marketing (ABM)",
     description: "Target high-value accounts with personalized campaigns that treat individual accounts as markets in their own right.",
+    image: {
+      src: "https://picsum.photos/seed/abm/600/400",
+      hint: "marketing target",
+    }
   },
   {
     icon: Users,
     title: "Lead Generation & Nurturing",
     description: "Build a robust pipeline of qualified leads and nurture them through the sales funnel with targeted content and automation.",
+    image: {
+      src: "https://picsum.photos/seed/lead-gen/600/400",
+      hint: "sales funnel",
+    }
   },
   {
     icon: BrainCircuit,
     title: "B2B Content Strategy",
     description: "Establish thought leadership and attract your target audience with valuable, relevant, and consistent content.",
+     image: {
+      src: "https://picsum.photos/seed/content-strategy/600/400",
+      hint: "content creation",
+    }
   },
   {
     icon: BarChart,
     title: "Marketing & Sales Analytics",
     description: "Leverage data to optimize your marketing efforts, measure ROI, and align your sales and marketing teams.",
+     image: {
+      src: "https://picsum.photos/seed/analytics/600/400",
+      hint: "data analytics",
+    }
   },
 ];
 
@@ -67,24 +84,34 @@ export default function B2BPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {b2bServices.map((service, index) => (
               <div
                 key={service.title}
                 className="animate-in fade-in slide-in-from-bottom-6 duration-500"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <Card className="h-full text-left bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1">
-                  <CardHeader className="flex flex-row items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <service.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <CardTitle className="font-headline text-xl leading-tight">{service.title}</CardTitle>
+                <Card className="h-full group text-left bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 overflow-hidden">
+                  <CardHeader className="p-0">
+                    <div className="relative aspect-video w-full">
+                       <Image
+                        src={service.image.src}
+                        alt={service.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        data-ai-hint={service.image.hint}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+                      <div className="absolute bottom-4 left-4 flex items-start gap-3">
+                        <div className="bg-primary/50 backdrop-blur-sm p-3 rounded-lg border border-primary-foreground/20">
+                          <service.icon className="h-6 w-6 text-primary-foreground" />
+                        </div>
+                      </div>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{service.description}</p>
+                  <CardContent className="p-6">
+                     <CardTitle className="font-headline text-xl leading-tight mb-2">{service.title}</CardTitle>
+                    <p className="text-muted-foreground text-sm">{service.description}</p>
                   </CardContent>
                 </Card>
               </div>

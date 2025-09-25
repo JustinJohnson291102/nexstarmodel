@@ -1,7 +1,7 @@
 
 export default function HeaderWave() {
   return (
-    <div className="relative w-full h-10 -mt-px overflow-hidden bg-transparent">
+    <div className="sticky top-[10.5rem] z-40 w-full h-10 -mt-px overflow-hidden bg-transparent">
       <div className="header-waves">
         <svg
           className="waves"

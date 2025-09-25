@@ -15,7 +15,7 @@ const images = [
 
 const MemoryLaneCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" }, [
-    Autoplay({ delay: 3000, stopOnInteraction: false }),
+    Autoplay({ delay: 2000, stopOnInteraction: false }),
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -32,13 +32,13 @@ const MemoryLaneCarousel = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto">
+    <div className="relative w-full max-w-2xl mx-auto">
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex -ml-4">
+        <div className="flex -ml-2">
           {images.map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex-grow-0 basis-1/2 md:basis-1/3 pl-4"
+              className="flex-shrink-0 flex-grow-0 basis-1/2 md:basis-1/3 pl-2"
             >
               <div
                 className={cn(

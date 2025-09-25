@@ -153,6 +153,30 @@ export default function Home() {
                 </div>
               </div>
           
+              <div className="grid md:grid-cols-2 gap-12 items-center mt-20">
+                <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+                  {gamutOfServicesImage && <Image
+                    src={gamutOfServicesImage.imageUrl}
+                    alt="Gamut of Services"
+                    width={600}
+                    height={400}
+                    data-ai-hint={gamutOfServicesImage.imageHint}
+                    className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  />}
+                </div>
+                <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline tracking-tight mb-4">
+                    Our Gamut of Services are as Diverse as they are Effective
+                  </h2>
+                   <ul className="space-y-2 text-lg text-white/90">
+                    <li>Branding</li>
+                    <li>Social Media</li>
+                    <li>Digital - Website / Technology</li>
+                    <li>B2B</li>
+                    <li>Performance Marketing</li>
+                  </ul>
+                </div>
+              </div>
           
         </div>
       </section>

@@ -111,7 +111,7 @@ export default function ServicesPage() {
                 </div>
                 <div
                   className={`animate-in fade-in duration-700 ${
-                    index % 2 !== 0 ? "md:order-1 slide-in-from-left-10" : "slide-in-from-right-10"
+                    index % 2 !== 0 ? "md:order-1 slide-in-from-left-10 md:pr-8" : "slide-in-from-right-10 md:pl-8"
                   }`}
                 >
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">

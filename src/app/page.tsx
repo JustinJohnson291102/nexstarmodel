@@ -120,7 +120,7 @@ export default function Home() {
       
        <section
         className="relative bg-cover bg-center bg-fixed text-white py-20 md:py-32"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-office-light/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-office/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-primary/80 z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -266,7 +266,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/bright-abstract/1920/1080')` }}>
+      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/bright-office-setup/1920/1080')` }}>
         <div className="absolute inset-0 bg-background/80 z-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -289,5 +289,7 @@ export default function Home() {
       </section>
     </>
   );
+
+    
 
     

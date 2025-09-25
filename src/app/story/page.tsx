@@ -119,32 +119,18 @@ export default function StoryPage() {
               </div>
             </div>
           </div>
+            <div className="mt-20 md:mt-32 animate-in fade-in duration-700">
+                <Image
+                  src="https://drive.google.com/uc?export=view&id=1yccbQERS1sPGFOwT51wAZddfr_x50-Lx"
+                  alt="Team Banner"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+            </div>
         </div>
       </section>
       
-      <section className="w-full relative animate-in fade-in duration-700 mt-20 md:mt-32">
-          <div className="relative w-full h-96">
-            <Image
-              src="https://drive.google.com/uc?export=view&id=1yccbQERS1sPGFOwT51wAZddfr_x50-Lx"
-              alt="New Team Member"
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-          <div className="absolute bottom-4 left-4 bg-black/50 text-white p-4 rounded-lg">
-            <h3 className="text-2xl font-bold font-headline text-white mt-4">
-              [New Team Member Name]
-            </h3>
-            <p className="text-lg text-white font-semibold">[Title/Role]</p>
-             <div className="text-white prose prose-lg text-justify space-y-4 mt-4">
-                <p>
-                  [Placeholder for the new team member's biography. You can provide the text, and I will add it here.]
-                </p>
-              </div>
-          </div>
-        </section>
-
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

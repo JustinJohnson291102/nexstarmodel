@@ -197,11 +197,11 @@ export default function Home() {
               nature. Because we truly believe that the future of Communications
               lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
             </p>
-             <div className="grid grid-cols-1 gap-4 mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+             <div className="grid grid-cols-1 gap-4 mt-12 [perspective:1000px]">
               {/* Row 1 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="md:col-span-1 flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-left-10 duration-700">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(-20deg)] slide-in-from-left-20 duration-1000">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[0]}`}
                       alt="Drive Image 1"
@@ -210,7 +210,7 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(-20deg)] slide-in-from-left-20 duration-1000 delay-100">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[1]}`}
                       alt="Drive Image 2"
@@ -220,7 +220,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700">
+                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(20deg)] slide-in-from-right-20 duration-1000">
                   <Image
                     src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
                     alt="Communications grid image"
@@ -232,7 +232,7 @@ export default function Home() {
               </div>
               {/* Row 2 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-left-10 duration-700">
+                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(-20deg)] slide-in-from-left-20 duration-1000">
                   <Image
                     src={`https://drive.google.com/uc?export=view&id=${driveImages[3]}`}
                     alt="Drive Image 4"
@@ -242,7 +242,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="md:col-span-1 flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(20deg)] slide-in-from-right-20 duration-1000">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[4]}`}
                       alt="Drive Image 5"
@@ -251,7 +251,7 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in slide-in-from-right-10 duration-700 delay-100">
+                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(20deg)] slide-in-from-right-20 duration-1000 delay-100">
                     <Image
                       src={`https://drive.google.com/uc?export=view&id=${driveImages[5]}`}
                       alt="Drive Image 6"
@@ -267,8 +267,9 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/innovate-bg/1920/1080')` }}>
+        <div className="absolute inset-0 bg-background/80 z-0" />
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
           </h1>

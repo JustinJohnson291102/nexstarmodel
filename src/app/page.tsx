@@ -17,6 +17,41 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
+const servicesData = [
+  {
+    title: "Social Media Marketing",
+    points: [
+      "Social-First Strategy Development",
+      "Platform Management",
+      "Community Building + Engagement",
+      "Campaign Creation + Execution",
+      "Social Listening",
+      "Brand Positioning",
+      "Content Analysis + Auditing",
+      "Competitive Analysis",
+      "Co-branded Partnerships",
+      "Audience + Persona Development",
+    ],
+    image: "https://drive.google.com/uc?export=view&id=1DDddv8fnkOXtN8VvDIA3UNhve401V93J",
+    imageAlt: "Social Media Marketing",
+    link: "/services",
+  },
+  {
+    title: "Creative and Branding Services",
+    points: [
+      "Branding & Creative Strategy",
+      "Graphic Design",
+      "Illustration",
+      "Copywriting",
+      "Full Production: Photo Shoots + Video Shoots",
+    ],
+    image: "https://drive.google.com/uc?export=view&id=1jY1qGWPlCndtNUQGCWiTInrFUkCSgoxJ",
+    imageAlt: "Creative and Branding Services",
+    link: "/services",
+  },
+];
+
+
 export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
     (img) => img.id === "service-branding"
@@ -41,14 +76,6 @@ export default function Home() {
       src: "https://drive.google.com/uc?export=view&id=1p_VChqoj-8PRDu02uhsQuJPORLYaG8yE",
       alt: "Hero background 3",
     },
-  ];
-
-  const servicesList = [
-    "Branding",
-    "Social Media",
-    "Digital - Website / Technology",
-    "B2B",
-    "Performance Marketing",
   ];
 
   const driveImages = [
@@ -91,15 +118,14 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
       </section>
-
-      <section
+      
+       <section
         className="relative bg-cover bg-center bg-fixed text-white"
         style={{ backgroundImage: `url('https://picsum.photos/seed/parallax-bg/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-primary/80 z-0" />
-        <div className="relative z-10">
-          <div className="py-12 md:py-20">
-            <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="py-20 md:py-32">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                   <Image
@@ -126,48 +152,56 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-            </div>
           </div>
-
-          <div className="py-20 md:py-32">
-            <div className="container mx-auto px-4">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+          <div className="space-y-20 md:space-y-32 py-12">
+            {servicesData.map((service, index) => (
+              <div
+                key={service.title}
+                className="grid md:grid-cols-2 gap-12 items-center"
+              >
+                <div
+                  className={`animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl ${
+                    index % 2 !== 0 ? "md:order-2" : ""
+                  }`}
+                >
+                  <Image
+                    src={service.image}
+                    alt={service.imageAlt}
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <div
+                  className={`animate-in fade-in slide-in-from-right-10 duration-700 ${
+                    index % 2 !== 0 ? "md:order-1" : ""
+                  }`}
+                >
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                    Our Gamut of Services are as Diverse as they are Effective
+                    {service.title}
                   </h2>
-                  <ul className="space-y-4 mb-8">
-                    {servicesList.map((service) => (
-                      <li key={service} className="flex items-center">
-                        <CheckCircle className="h-6 w-6 text-white mr-3" />
-                        <Link
-                          href="/services"
-                          className="text-lg hover:text-secondary transition-colors"
-                        >
-                          {service}
-                        </Link>
+                  <ul className="space-y-2 mb-8">
+                    {service.points.map((point) => (
+                      <li key={point} className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
+                        <span className="text-lg">{point}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button asChild size="lg" className="group rounded-lg" variant="secondary">
-                    <Link href="/services">
-                      View Our Services{" "}
+                  <Button
+                    asChild
+                    size="lg"
+                    className="group rounded-lg"
+                    variant="secondary"
+                  >
+                    <Link href={service.link}>
+                      View More{" "}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                 </div>
-                <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-                  <Image
-                    src="https://picsum.photos/seed/services/600/400"
-                    alt="Diverse and effective services"
-                    width={600}
-                    height={400}
-                    className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                    data-ai-hint="marketing strategy"
-                  />
-                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

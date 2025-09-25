@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -18,9 +19,14 @@ import {
 
 const mainLinks = [
   { href: "/story", label: "Our Story" },
-  { href: "/services", label: "Services" },
-  { href: "/b2b", label: "B2B Marketing" },
 ];
+
+const serviceLinks = [
+    { href: "/services#social-media", label: "Social Media" },
+    { href: "/services#branding", label: "Creative & Branding" },
+    { href: "/services#web-tech", label: "Web/Tech" },
+    { href: "/services#b2b", label: "B2B Marketing" },
+]
 
 const webSolutionsLinks = [
   { href: "/web-solutions", label: "Web Solutions" },
@@ -28,6 +34,7 @@ const webSolutionsLinks = [
 ];
 
 const otherLinks = [
+  { href: "/b2b", label: "B2B Marketing" },
   { href: "/xtrack", label: "XTrack" },
   { href: "/podcast", label: "Podcast" },
   { href: "/gtm-strategy", label: "Go To Market", isNew: true },
@@ -91,6 +98,18 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+             <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
+                Services <ChevronDown className="h-4 w-4 ml-1" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {serviceLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href}>{link.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
                 Web Solutions <ChevronDown className="h-4 w-4 ml-1" />
@@ -143,7 +162,7 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4">
-                {[...mainLinks, ...webSolutionsLinks, ...otherLinks].map(
+                {[...mainLinks, {href: "/services", label: "Services"}, ...webSolutionsLinks, ...otherLinks].map(
                   ({ href, label, isNew }) => (
                     <Link
                       key={href}

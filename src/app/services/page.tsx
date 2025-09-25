@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const servicesData = [
   {
+    id: "social-media",
     title: "Social Media Marketing",
     points: [
       "Social-First Strategy Development",
@@ -24,6 +25,7 @@ const servicesData = [
     link: "#",
   },
   {
+    id: "branding",
     title: "Creative and Branding Services",
     points: [
       "Branding & Creative Strategy",
@@ -37,6 +39,7 @@ const servicesData = [
     link: "#",
   },
    {
+    id: "web-tech",
     title: "Digital - Website / Technology",
     points: [
       "Responsive Web Design",
@@ -51,6 +54,7 @@ const servicesData = [
     link: "/web-solutions",
   },
   {
+    id: "b2b",
     title: "B2B Marketing",
     points: [
       "Account-Based Marketing (ABM)",
@@ -88,12 +92,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary/50">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 md:py-32" style={{ backgroundImage: `url('https://picsum.photos/seed/services-bg/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="space-y-20 md:space-y-32">
             {servicesData.map((service, index) => (
               <div
                 key={service.title}
+                id={service.id}
                 className="grid md:grid-cols-2 gap-12 items-center"
               >
                 <div
@@ -111,7 +117,7 @@ export default function ServicesPage() {
                 </div>
                 <div
                   className={`animate-in fade-in duration-700 ${
-                    index % 2 !== 0 ? "md:order-1 slide-in-from-left-10 md:pr-8" : "slide-in-from-right-10 md:pl-8"
+                    index % 2 !== 0 ? "md:order-1 slide-in-from-left-10" : "slide-in-from-right-10"
                   }`}
                 >
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">

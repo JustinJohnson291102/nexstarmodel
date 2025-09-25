@@ -55,7 +55,7 @@ const b2bServices = [
 ];
 
 const heroImages = [
-    { id: "b2b-hero-user", src: "https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo", alt: "Business meeting" },
+    { id: "b2b-hero-user", src: "https://drive.google.com/uc?export=view&id=1AE28XsAlQULX_HMzq7K9a67Ks316H9Dq", alt: "Business meeting" },
     { id: "b2b-hero-2", src: "https://picsum.photos/seed/b2b-hero-2/1920/1080", alt: "Data analytics dashboard" },
     { id: "b2b-hero-3", src: "https://picsum.photos/seed/b2b-hero-3/1920/1080", alt: "Team collaborating" },
 ]

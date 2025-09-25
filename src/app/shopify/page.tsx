@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Store, Brush, Rocket, ShoppingCart, Settings, Repeat } from "lucide-react";
+import { ArrowRight, Store, Brush, Rocket, ShoppingCart, Settings, Repeat, TrendingUp, ShieldCheck, Star } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -55,40 +55,38 @@ const shopifyFeatures = [
   },
 ];
 
-const heroImages = [
-    { id: "shopify-hero-user", src: "https://drive.google.com/uc?export=view&id=19z7bdrKLhhYaQgu88_2M_IGzXidSUlLo", alt: "Shopify solutions" },
-    { id: "shopify-hero-2", src: "https://picsum.photos/seed/shopify-hero-2/1920/1080", alt: "Online shopping experience" },
-    { id: "shopify-hero-3", src: "https://picsum.photos/seed/shopify-hero-3/1920/1080", alt: "Person holding a credit card" },
+const whyChooseUsFeatures = [
+    {
+        icon: TrendingUp,
+        title: "Growth-Oriented",
+        description: "Our solutions are built with scalability and growth in mind, helping you expand your business.",
+    },
+    {
+        icon: ShieldCheck,
+        title: "Secure & Reliable",
+        description: "We prioritize security and performance to ensure your store is always safe and fast.",
+    },
+    {
+        icon: Star,
+        title: "Expert Team",
+        description: "Our team of certified Shopify experts are dedicated to your success and providing top-notch service.",
+    }
 ];
+
 
 export default function ShopifyPage() {
   return (
     <div className="bg-background">
-       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <Carousel
-            plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
-            className="absolute inset-0 w-full h-full"
-            opts={{ loop: true }}
-          >
-            <CarouselContent>
-              {heroImages.map((img) => (
-                <CarouselItem key={img.id}>
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+       <section 
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/shopify-hero/1920/1080')` }}
+        >
         <div className="absolute inset-0 bg-black/50 z-10" />
-        <div className="relative z-20 px-4 text-white">
-           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Expert Shopify Development
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
               From stunning storefronts to powerful back-end solutions, we build Shopify experiences that sell.
             </p>
         </div>
@@ -147,9 +145,38 @@ export default function ShopifyPage() {
           </div>
         </div>
       </section>
+      
+      <section 
+        className="py-20 md:py-24 bg-secondary relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/why-us-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Why Choose Us?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              We're not just developers; we're your partners in e-commerce success. Our approach is rooted in strategy, creativity, and a deep understanding of the Shopify platform.
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+            {whyChooseUsFeatures.map((feature, index) => (
+                <div key={index} className="flex flex-col items-center p-8 bg-card/50 backdrop-blur-sm rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+                    <feature.icon className="h-12 w-12 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold font-headline mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground text-sm">{feature.description}</p>
+                </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-24 bg-background relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/showcase-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
               Beautiful Stores, Built to Convert
@@ -204,3 +231,5 @@ export default function ShopifyPage() {
     </div>
   );
 }
+
+    

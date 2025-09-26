@@ -1,3 +1,4 @@
+
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -94,6 +95,14 @@ export default {
           from: { transform: 'rotate(360deg)' },
           to: { transform: 'rotate(0deg)' },
         },
+        'marquee-slow': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'marquee2-slow': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -102,8 +111,12 @@ export default {
         marquee: 'marquee 120s linear infinite',
         marquee2: 'marquee2 120s linear infinite',
         'spin-reverse': 'spin-reverse 20s linear infinite',
+        'marquee-slow': 'marquee-slow 60s linear infinite',
+        'marquee2-slow': 'marquee2-slow 60s linear infinite',
       },
     },
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
+
+    

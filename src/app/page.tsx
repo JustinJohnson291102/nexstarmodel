@@ -218,15 +218,7 @@ export default function Home() {
             </p>
              <div className="mt-16 animate-in fade-in slide-in-from-bottom-10 duration-700">
                <Card className="bg-background shadow-xl overflow-hidden">
-                 <div className="grid md:grid-cols-2 items-center">
-                   <div className="relative w-full aspect-square md:aspect-auto md:h-full">
-                     <Image
-                      src="https://drive.google.com/uc?export=view&id=1aNRs_cMrYbSjnbGFzVjDMdJRTL_9jbm-"
-                      alt="Rotating globe"
-                      fill
-                      className="object-cover animate-spin-reverse [animation-duration:20s]"
-                    />
-                   </div>
+                 <div className="grid md:grid-cols-1 items-center">
                    <div className="p-8 md:p-12 text-left">
                      <h3 className="font-headline text-2xl md:text-3xl font-bold mb-4">Our Global Presence</h3>
                      <p className="text-muted-foreground mb-8 text-justify">

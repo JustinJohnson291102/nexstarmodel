@@ -197,13 +197,15 @@ export default function Home() {
                   <h2 className="text-3xl md:text-4xl font-bold font-headline tracking-tight mb-4">
                     Our Gamut of Services are as Diverse as they are Effective
                   </h2>
-                   <ul className="space-y-2 text-lg text-muted-foreground">
-                    <li>Branding</li>
-                    <li>Social Media</li>
-                    <li>Digital - Website / Technology</li>
-                    <li>B2B</li>
-                    <li>Performance Marketing</li>
-                  </ul>
+                   <p className="text-lg text-muted-foreground mb-8">
+                    We offer a comprehensive suite of services designed to build, grow, and sustain your brand's presence. From crafting compelling brand identities and driving engagement on social media, to developing robust web solutions and executing targeted B2B and performance marketing campaigns, our expertise covers the full spectrum of digital marketing.
+                  </p>
+                   <Button asChild size="lg" className="group rounded-lg">
+                    <Link href="/services">
+                      View More{" "}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
           
@@ -214,7 +216,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">WHO WE ARE</h3>
-            <h2 className="font-headline text-primary text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
               A Dynamic Fusion of Creativity & Technology
             </h2>
             <p className="text-muted-foreground md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
@@ -227,9 +229,15 @@ export default function Home() {
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/team-passion/600/400" width={600} height={400} alt="Passionate Team" data-ai-hint="passionate team" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
-              <CardContent className="p-6 flex-grow">
+              <CardContent className="p-6 flex-grow flex flex-col">
                 <CardTitle className="font-headline mb-3 flex items-center gap-3"><Lightbulb className="w-7 h-7 text-primary"/> Our Philosophy</CardTitle>
-                <p className="text-muted-foreground">We thrive on challenges and innovation. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team's diverse expertise ensures we deliver not just services, but experiences that create real impact.</p>
+                <p className="text-muted-foreground flex-grow">We thrive on challenges and innovation. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team's diverse expertise ensures we deliver not just services, but experiences that create real impact.</p>
+                 <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
+                    <Link href="/story">
+                      Learn More
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
               </CardContent>
             </Card>
             
@@ -237,9 +245,15 @@ export default function Home() {
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/team-collab/600/400" width={600} height={400} alt="Team Collaboration" data-ai-hint="team collaboration" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
-              <CardContent className="p-6 flex-grow">
+              <CardContent className="p-6 flex-grow flex flex-col">
                 <CardTitle className="font-headline mb-3 flex items-center gap-3"><Users className="w-7 h-7 text-primary"/> Our Approach</CardTitle>
-                <p className="text-muted-foreground">We believe in collaboration, growth, and pushing boundaries. We work as an extension of your team, ensuring that our solutions are perfectly aligned with your vision and goals to help you achieve lasting success in today’s digital-first world.</p>
+                <p className="text-muted-foreground flex-grow">We believe in collaboration, growth, and pushing boundaries. We work as an extension of your team, ensuring that our solutions are perfectly aligned with your vision and goals to help you achieve lasting success in today’s digital-first world.</p>
+                 <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
+                    <Link href="/contact">
+                      Partner with Us
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
               </CardContent>
             </Card>
 
@@ -247,9 +261,9 @@ export default function Home() {
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/global-reach/600/400" width={600} height={400} alt="Global Reach" data-ai-hint="global network" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
-              <CardContent className="p-6 flex-grow">
+              <CardContent className="p-6 flex-grow flex flex-col">
                 <CardTitle className="font-headline mb-3 flex items-center gap-3"><Scaling className="w-7 h-7 text-primary"/> Our Global Presence</CardTitle>
-                <p className="text-muted-foreground">With our headquarters in New York, and specialized offices in the UK and India, we unite creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.</p>
+                <p className="text-muted-foreground flex-grow">With our headquarters in New York, and specialized offices in the UK and India, we unite creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.</p>
                  <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
                     <Link href="/story">
                       More About Us

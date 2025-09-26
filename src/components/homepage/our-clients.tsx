@@ -4,15 +4,15 @@
 import Image from "next/image";
 
 const clientLogos = [
-  { src: "https://drive.google.com/uc?export=view&id=14j2sZyJV1YATRiyJSg2E0_O9DjPk8-D6", alt: "Client 1" },
-  { src: "https://drive.google.com/uc?export=view&id=1OAzH7GHcGCN6uL4BKLX9p8y5iZSRZMvk", alt: "Client 2" },
-  { src: "https://drive.google.com/uc?export=view&id=1Y9ZIuky4ZjFZ1-VanWgVjRIzvPHXC5ST", alt: "Client 3" },
-  { src: "https://drive.google.com/uc?export=view&id=19gJl3oMZllb5sM3D7N8eTmk6wilyJt3A", alt: "Client 4" },
-  { src: "https://drive.google.com/uc?export=view&id=1O0XMxmIkw4H0OcKXAsOAWvxtlfnM8df5", alt: "Client 5" },
-  { src: "https://drive.google.com/uc?export=view&id=1KJ5dH544HRp4MALUuHvcbdYTk1pHkq0F", alt: "Client 6" },
-  { src: "https://drive.google.com/uc?export=view&id=1d7KIVO44tAxicBtKHyl38-N2DCbUC_Ww", alt: "Client 7" },
-  { src: "https://drive.google.com/uc?export=view&id=1FtVMODKP_rrtPliRW_JBsTA5YTyVgNNI", alt: "Client 8" },
   { src: "https://drive.google.com/uc?export=view&id=1_Vjppvim9Ug8jWFP3FYcreN2IvyuS_VF", alt: "Client 9" },
+  { src: "https://drive.google.com/uc?export=view&id=1FtVMODKP_rrtPliRW_JBsTA5YTyVgNNI", alt: "Client 8" },
+  { src: "https://drive.google.com/uc?export=view&id=1d7KIVO44tAxicBtKHyl38-N2DCbUC_Ww", alt: "Client 7" },
+  { src: "https://drive.google.com/uc?export=view&id=1KJ5dH544HRp4MALUuHvcbdYTk1pHkq0F", alt: "Client 6" },
+  { src: "https://drive.google.com/uc?export=view&id=1O0XMxmIkw4H0OcKXAsOAWvxtlfnM8df5", alt: "Client 5" },
+  { src: "https://drive.google.com/uc?export=view&id=19gJl3oMZllb5sM3D7N8eTmk6wilyJt3A", alt: "Client 4" },
+  { src: "https://drive.google.com/uc?export=view&id=1Y9ZIuky4ZjFZ1-VanWgVjRIzvPHXC5ST", alt: "Client 3" },
+  { src: "https://drive.google.com/uc?export=view&id=1OAzH7GHcGCN6uL4BKLX9p8y5iZSRZMvk", alt: "Client 2" },
+  { src: "https://drive.google.com/uc?export=view&id=14j2sZyJV1YATRiyJSg2E0_O9DjPk8-D6", alt: "Client 1" },
 ];
 
 export default function OurClients() {

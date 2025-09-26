@@ -275,13 +275,13 @@ export default function StoryPage() {
       
       <section 
         className="py-20 md:py-32 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/testimonials-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-office/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-white animate-in fade-in slide-in-from-bottom-5 duration-500">Client's Success Is Our Success</h2>
-            <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">Hear from the partners we've helped along the way.</p>
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-foreground animate-in fade-in slide-in-from-bottom-5 duration-500">Client's Success Is Our Success</h2>
+            <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">Hear from the partners we've helped along the way.</p>
           </div>
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -290,18 +290,18 @@ export default function StoryPage() {
                 className="animate-in fade-in slide-in-from-bottom-7 duration-500"
                 style={{animationDelay: `${index * 150}ms`}}
               >
-              <Card className="bg-background/10 backdrop-blur-md border-white/20 h-full">
-                <CardContent className="p-8 text-white flex flex-col h-full">
-                  <p className="text-5xl text-white/30 -ml-2">"</p>
+              <Card className="bg-card/80 backdrop-blur-md border-border/50 h-full">
+                <CardContent className="p-8 text-foreground flex flex-col h-full">
+                  <p className="text-5xl text-foreground/20 -ml-2">"</p>
                   <p className="italic mb-6 flex-grow">"{testimonial.quote}"</p>
                   <div className="flex items-center mt-auto">
-                    <Avatar className="h-12 w-12 mr-4 border-2 border-white/30">
+                    <Avatar className="h-12 w-12 mr-4 border-2 border-border/30">
                         <AvatarImage src={testimonial.image} alt={testimonial.name} />
                         <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div>
                       <p className="font-bold font-headline">{testimonial.name}</p>
-                      <p className="text-sm text-white/70">{testimonial.company}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -315,5 +315,4 @@ export default function StoryPage() {
   );
 }
 
-
-    
+  

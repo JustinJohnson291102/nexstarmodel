@@ -76,7 +76,7 @@ export default function PortfolioPage() {
     <div className="bg-background text-foreground">
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-white-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp')` }}
       >
         <div className="absolute inset-0 bg-white/60 z-10" />
         <div className="relative z-20 px-4 text-primary-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">

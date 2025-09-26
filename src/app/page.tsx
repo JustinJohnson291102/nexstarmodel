@@ -15,6 +15,8 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent } from "@/components/ui/card";
+
 
 const servicesData = [
   {
@@ -90,15 +92,6 @@ export default function Home() {
       buttonLink: "/contact",
       buttonText: "Get in Touch"
     },
-  ];
-
-  const driveImages = [
-    "1uU61ubKLUMHjhEhjC-YSCgADt3gp8Fm-", // small 1
-    "1OvONtlQCC-uAkTzLJ10Xf8u59Eo6wSBu", // small 2
-    "1anV4fJQo5ijo_xNkxuqx64Z_uPALtLOU", // big 1 (vertical)
-    "1aH4QgARvTOu9nwMXZA2OH4WOM1ad9Co1", // big 2 (vertical) -> REPLACED
-    "18jdLAB6UVCxDq1PPSvl7YJprshpRHNDV", // small 3
-    "1OgeTSulBgpPo1PCdnAu_jtxmVpH8RKsO", // small 4
   ];
 
   return (
@@ -213,87 +206,41 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-12 bg-secondary">
+      <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="text-left">
-            <h2 className="font-headline text-primary text-3xl md:text-4xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
-              We're Changing the Way you View Communications
+          <div className="text-center">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">WHO WE ARE</h3>
+            <h2 className="font-headline text-primary text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              We're a dynamic team of creative people
             </h2>
-            <p className="text-muted-foreground md:text-lg text-justify animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              Xebec Communications is a hybrid marketing company with the
-              chutzpah of a millennial combined with the experience of Gen X. We
-              bring to the table the best of cutting-edge ideas, a wealth of
-              insights, the robustness of experience and the magic of agility.
-              We connect the dots quicker, so you benefit faster. From branding
-              to advertising, we offer solutions which are truly 360 degrees in
-              nature. Because we truly believe that the future of Communications
-              lies in the 4Es - Engagement, Exclusivity, Emotion and Experience.
+            <p className="text-muted-foreground md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+              At Nexstar, we are more than just an IT & Media company—we are a team of passionate innovators, thinkers, and creators. Our strength lies in blending technology with creativity, delivering solutions that inspire, engage, and transform businesses. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team thrives on challenges and innovation. Every member of our dynamic team brings unique expertise, ensuring we deliver not just services, but experiences that create real impact. We believe in collaboration, growth, and pushing boundaries to help our clients achieve lasting success in today’s digital-first world.
             </p>
-             <div className="grid grid-cols-1 gap-4 mt-12 [perspective:1000px]">
-              {/* Row 1 */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-1 flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(-20deg)] slide-in-from-left-20 duration-1000">
-                    <Image
-                      src={`https://drive.google.com/uc?export=view&id=${driveImages[0]}`}
-                      alt="Drive Image 1"
-                      width={256}
-                      height={192}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+             <div className="mt-16 animate-in fade-in slide-in-from-bottom-10 duration-700">
+               <Card className="bg-background shadow-xl overflow-hidden">
+                 <div className="grid md:grid-cols-2 items-center">
+                   <div className="relative w-full aspect-square md:aspect-auto md:h-full">
+                     <Image
+                      src="https://drive.google.com/uc?export=view&id=1aNRs_cMrYbSjnbGFzVjDMdJRTL_9jbm-"
+                      alt="Rotating globe"
+                      fill
+                      className="object-cover"
                     />
-                  </div>
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(-20deg)] slide-in-from-left-20 duration-1000 delay-100">
-                    <Image
-                      src={`https://drive.google.com/uc?export=view&id=${driveImages[1]}`}
-                      alt="Drive Image 2"
-                      width={256}
-                      height={192}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                </div>
-                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(20deg)] slide-in-from-right-20 duration-1000">
-                  <Image
-                    src={`https://drive.google.com/uc?export=view&id=${driveImages[2]}`}
-                    alt="Communications grid image"
-                    width={512}
-                    height={768}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-              </div>
-              {/* Row 2 */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-2 overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(-20deg)] slide-in-from-left-20 duration-1000">
-                  <Image
-                    src={`https://drive.google.com/uc?export=view&id=${driveImages[3]}`}
-                    alt="Drive Image 4"
-                    width={512}
-                    height={768}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <div className="md:col-span-1 flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(20deg)] slide-in-from-right-20 duration-1000">
-                    <Image
-                      src={`https://drive.google.com/uc?export=view&id=${driveImages[4]}`}
-                      alt="Drive Image 5"
-                      width={256}
-                      height={192}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded-lg shadow-xl animate-in fade-in-0 [transform:rotateY(20deg)] slide-in-from-right-20 duration-1000 delay-100">
-                    <Image
-                      src={`https://drive.google.com/uc?export=view&id=${driveImages[5]}`}
-                      alt="Drive Image 6"
-                      width={256}
-                      height={192}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                </div>
-              </div>
+                   </div>
+                   <div className="p-8 md:p-12 text-left">
+                     <h3 className="font-headline text-2xl md:text-3xl font-bold mb-4">Our Global Presence</h3>
+                     <p className="text-muted-foreground mb-8 text-justify">
+                        Nexstar Live LLC maintains a strategic global presence with our headquarters in New York, USA, driving international operations and client strategy. Our specialized offices in the UK and India are centers of excellence for Patents, Trade Secrets, Competitive Intelligence, and Global Finance, ensuring robust intellectual property protection and market-leading insights. This powerful ecosystem unites creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.
+                     </p>
+                     <Button asChild size="lg" className="group rounded-lg">
+                        <Link href="/story">
+                          More About Us
+                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </Button>
+                   </div>
+                 </div>
+               </Card>
             </div>
           </div>
         </div>
@@ -323,5 +270,3 @@ export default function Home() {
     </>
   );
 }
-
-    

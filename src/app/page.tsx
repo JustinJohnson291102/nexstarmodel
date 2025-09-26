@@ -219,8 +219,8 @@ export default function Home() {
             </p>
              <div className="mt-16 animate-in fade-in slide-in-from-bottom-10 duration-700">
                <Card className="bg-background shadow-xl overflow-hidden">
-                 <div className="grid md:grid-cols-2 items-center">
-                   <div className="p-8 md:p-12 text-left">
+                 <div className="grid md:grid-cols-1 items-center">
+                   <div className="p-8 md:p-12 text-center">
                      <h3 className="font-headline text-2xl md:text-3xl font-bold mb-4">Our Global Presence</h3>
                      <p className="text-muted-foreground mb-8 text-justify">
                         Nexstar Live LLC maintains a strategic global presence with our headquarters in New York, USA, driving international operations and client strategy. Our specialized offices in the UK and India are centers of excellence for Patents, Trade Secrets, Competitive Intelligence, and Global Finance, ensuring robust intellectual property protection and market-leading insights. This powerful ecosystem unites creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.
@@ -231,16 +231,6 @@ export default function Home() {
                           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </Button>
-                   </div>
-                   <div className="p-8 md:order-1 flex items-center justify-center">
-                     <Image
-                        src="https://picsum.photos/seed/digital-globe/400"
-                        alt="Digital Globe"
-                        width={300}
-                        height={300}
-                        data-ai-hint="digital globe"
-                        className="animate-spin-slow-reverse"
-                      />
                    </div>
                  </div>
                </Card>
@@ -275,3 +265,5 @@ export default function Home() {
     </>
   );
 }
+
+    

@@ -83,18 +83,6 @@ export default {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-8px)' },
         },
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-        marquee2: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
-        },
-         'spin-reverse': {
-          from: { transform: 'rotate(360deg)' },
-          to: { transform: 'rotate(0deg)' },
-        },
         'marquee-slow': {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
@@ -108,9 +96,6 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         float: 'float 3s ease-in-out infinite',
-        marquee: 'marquee 120s linear infinite',
-        marquee2: 'marquee2 120s linear infinite',
-        'spin-reverse': 'spin-reverse 20s linear infinite',
         'marquee-slow': 'marquee-slow 60s linear infinite',
         'marquee2-slow': 'marquee2-slow 60s linear infinite',
       },
@@ -118,5 +103,3 @@ export default {
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
-
-    

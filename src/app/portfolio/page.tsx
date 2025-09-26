@@ -76,17 +76,19 @@ export default function PortfolioPage() {
     <div className="bg-background text-foreground">
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/portfolio-hero/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-white-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-black/60 z-10" />
-        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
-            Our Portfolio
-          </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
-            A showcase of our commitment to excellence, innovation, and impactful results.
-          </p>
+        <div className="absolute inset-0 bg-white/60 z-10" />
+        <div className="relative z-20 px-4 text-primary-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <div className="bg-background/50 backdrop-blur-sm p-8 rounded-lg">
+            <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 text-foreground">
+              Our Portfolio
+            </h1>
+            <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl mx-auto">
+              A showcase of our commitment to excellence, innovation, and impactful results.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -145,15 +147,15 @@ export default function PortfolioPage() {
 
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/similar-projects-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/light-abstract-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-primary/90 backdrop-blur-sm z-0" />
-        <div className="container mx-auto px-4 relative z-10 text-white">
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10 text-foreground">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
-              Our Similar Projects
+              Our Projects
             </h2>
-            <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
               A glimpse into our technical expertise and innovative solutions across various domains.
             </p>
           </div>
@@ -161,7 +163,7 @@ export default function PortfolioPage() {
             {similarProjects.map((project, index) => (
               <div 
                 key={project.title} 
-                className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6"
+                className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6 transition-all duration-300 hover:shadow-primary/30"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <Image
@@ -172,15 +174,15 @@ export default function PortfolioPage() {
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   data-ai-hint={project.image.hint}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="font-headline text-2xl font-bold text-white mb-2 transition-transform duration-300 group-hover:-translate-y-1">{project.title}</h3>
-                  <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 h-0 group-hover:h-auto">{project.description}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6 transition-all duration-300 group-hover:bg-gradient-to-t group-hover:from-black/70 group-hover:to-black/10">
+                  <h3 className="font-headline text-2xl font-bold text-white mb-2 transition-transform duration-300 group-hover:-translate-y-2">{project.title}</h3>
+                  <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 h-0 group-hover:h-auto group-hover:-translate-y-2 delay-75">{project.description}</p>
                 </div>
               </div>
             ))}
           </div>
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
-              <Button asChild size="lg" variant="secondary" className="group">
+              <Button asChild size="lg" className="group">
                 <Link href="/contact">
                   Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -191,4 +193,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
     

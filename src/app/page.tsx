@@ -62,18 +62,21 @@ export default function Home() {
   const heroImages = [
     {
       id: "hero-main-1",
-      src: "https://drive.google.com/uc?export=view&id=1tRvQjMFjudhVPJnGyTFWnYaTWztlcT0x",
-      alt: "Hero background 1",
+      src: "https://picsum.photos/seed/media-1/1920/1080",
+      alt: "Media industry production",
+      hint: "media production",
     },
     {
       id: "hero-main-2",
-      src: "https://drive.google.com/uc?export=view&id=1Kc8YY1nJG1Btqp248VhPIS35jZuq_u0B",
-      alt: "Hero background 2",
+      src: "https://picsum.photos/seed/media-2/1920/1080",
+      alt: "Newsroom with cameras",
+      hint: "newsroom camera",
     },
     {
       id: "hero-main-3",
-      src: "https://drive.google.com/uc?export=view&id=1p_VChqoj-8PRDu02uhsQuJPORLYaG8yE",
-      alt: "Hero background 3",
+      src: "https://picsum.photos/seed/media-3/1920/1080",
+      alt: "Journalist with a camera",
+      hint: "journalist camera",
     },
   ];
 
@@ -110,6 +113,7 @@ export default function Home() {
                     fill
                     className="object-cover w-full h-auto"
                     priority={img.id === "hero-main-1"}
+                    data-ai-hint={img.hint}
                   />
                 </div>
               </CarouselItem>

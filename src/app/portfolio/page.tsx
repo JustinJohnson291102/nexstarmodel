@@ -82,7 +82,7 @@ export default function PortfolioPage() {
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
             <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
-            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 text-white">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white">
               Our Portfolio
             </h1>
             <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
@@ -193,5 +193,3 @@ export default function PortfolioPage() {
     </div>
   );
 }
-
-    

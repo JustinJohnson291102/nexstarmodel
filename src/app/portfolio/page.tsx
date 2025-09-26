@@ -90,7 +90,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="relative py-20 md:py-24" style={{ backgroundImage: `url('https://picsum.photos/seed/portfolio-bg/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+      <section className="relative py-20 md:py-24" style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract-2/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -191,3 +191,4 @@ export default function PortfolioPage() {
     </div>
   );
 }
+    

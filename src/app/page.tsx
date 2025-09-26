@@ -62,21 +62,21 @@ export default function Home() {
   const heroImages = [
     {
       id: "hero-main-1",
-      src: "https://picsum.photos/seed/workspace/1920/1080",
-      alt: "Professional workspace background",
-      hint: "professional workspace",
+      src: "https://picsum.photos/seed/office-setup/1920/1080",
+      alt: "Modern office setup",
+      hint: "office setup",
     },
     {
       id: "hero-main-2",
-      src: "https://picsum.photos/seed/office-meeting/1920/1080",
-      alt: "Modern office interior",
-      hint: "modern office",
+      src: "https://picsum.photos/seed/laptop-desk/1920/1080",
+      alt: "Laptop setup on a desk",
+      hint: "laptop desk",
     },
     {
       id: "hero-main-3",
-      src: "https://picsum.photos/seed/creative-agency/1920/1080",
-      alt: "Creative team collaborating",
-      hint: "creative team",
+      src: "https://picsum.photos/seed/media-desk/1920/1080",
+      alt: "Media editing desk setup",
+      hint: "media desk",
     },
   ];
 

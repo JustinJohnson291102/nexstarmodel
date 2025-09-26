@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,6 +26,15 @@ export default function Chatbot() {
     },
   ]);
   const [input, setInput] = useState("");
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages, isSubmitting]);
 
   const toggleChat = () => setIsOpen(!isOpen);
 
@@ -34,11 +43,12 @@ export default function Chatbot() {
 
     const userMessage = { role: "user", content: input };
     setMessages((prev) => [...prev, userMessage]);
+    const currentInput = input;
     setInput("");
     setIsSubmitting(true);
 
     try {
-      const response = await chat(input);
+      const response = await chat(currentInput);
       const assistantMessage = { role: "assistant", content: response };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
@@ -75,17 +85,20 @@ export default function Chatbot() {
         )}
       >
         <Card className="shadow-2xl">
-          <CardHeader className="flex flex-row items-center justify-between">
+          <CardHeader className="flex flex-row items-center justify-between border-b">
             <div className="flex items-center gap-3">
-              <Image
+               <Image
                 src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
                 alt="Nexstar Logo"
-                width={100}
-                height={30}
+                width={24}
+                height={24}
                 className="object-contain"
               />
-              <CardTitle className="text-base">Assistant</CardTitle>
+              <CardTitle className="text-base font-semibold">Nexstar Assistant</CardTitle>
             </div>
+             <Button variant="ghost" size="icon" onClick={toggleChat} className="h-6 w-6">
+                <X className="h-4 w-4" />
+             </Button>
           </CardHeader>
           <CardContent className="h-80 overflow-y-auto p-4 space-y-4">
             {messages.map((msg, index) => (
@@ -116,6 +129,7 @@ export default function Chatbot() {
                 </div>
               </div>
             )}
+            <div ref={messagesEndRef} />
           </CardContent>
           <CardFooter className="p-4 border-t">
             <div className="flex w-full items-center space-x-2">
@@ -123,7 +137,7 @@ export default function Chatbot() {
                 placeholder="Type a message..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                onKeyDown={(e) => e.key === "Enter" && !isSubmitting && handleSend()}
                 disabled={isSubmitting}
               />
               <Button onClick={handleSend} size="icon" aria-label="Send Message" disabled={isSubmitting}>

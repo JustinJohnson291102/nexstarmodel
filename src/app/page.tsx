@@ -147,7 +147,7 @@ export default function Home() {
       
        <section
         className="relative bg-cover bg-center bg-fixed text-white py-20 md:py-32"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-office/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-primary/80 z-0" />
         <div className="container mx-auto px-4 relative z-10">

@@ -86,16 +86,18 @@ const coreValues = [
 ];
 
 const teamMembers = [
-    { name: 'Perry A. Sook', title: 'Chairman and CEO', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
-    { name: 'Thomas E. Carter', title: 'President and COO', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
-    { name: 'Michael Biard', title: 'President and COO', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
-    { name: 'Lee Ann Gliha', title: 'EVP and CFO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
-    { name: 'Brett Jenkins', title: 'EVP and CTO', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
-    { name: 'Gabe A. Brier', title: 'EVP, General Counsel', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
-    { name: 'Mike Vaughn', title: 'EVP and Chief Revenue Officer', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
-    { name: 'Andrew Alford', title: 'President, Broadcasting', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
-    { name: 'Karen Brophy', title: 'President, Digital', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
-    { name: 'Dana Zimmer', title: 'President, Distribution', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
+    { name: 'Kristin Watson', title: 'Team Member', imageId: 'person1' },
+    { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: 'person2' },
+    { name: 'Robertson', title: 'Marketing Coordinator', imageId: 'person3' },
+    { name: 'Mehak Steward', title: 'SEO Specialist', imageId: 'person4' },
+    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: 'person5' },
+    { name: 'Ali', title: 'Web Designer', imageId: 'person6' },
+    { name: 'Ichcha', title: 'Developer', imageId: 'person7' },
+    { name: 'Anchal', title: 'Member', imageId: 'person8' },
+    { name: 'Arpita', title: 'Corporate Affairs', imageId: 'person9' },
+    { name: 'Aaditya', title: 'Team', imageId: 'person10' },
+    { name: 'Priyanka', title: 'Team', imageId: 'person11' },
+    { name: 'Aleena Chenail', title: 'Member', imageId: 'person12' },
 ];
 
 const testimonials = [
@@ -242,37 +244,29 @@ export default function StoryPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-full mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
-              Our Team at Nexstar Media Group
+              Our Team
             </h2>
             <p className="text-lg text-muted-foreground mx-auto max-w-3xl mb-16 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               Meet the leaders driving our mission forward. A dedicated team committed to excellence, innovation, and delivering unparalleled value to our partners and audiences.
             </p>
           </div>
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
             {teamMembers.map((member, index) => (
                 <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
-                    <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg">
+                    <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
                         <Image
-                            src={`https://drive.google.com/uc?export=view&id=${member.imageId}`}
+                            src={`https://picsum.photos/seed/${member.imageId}/200/200`}
                             alt={member.name}
                             fill
-                            className="object-cover"
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
                         />
+                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     </div>
                     <h3 className="text-lg font-bold font-headline text-accent">{member.name}</h3>
                     <p className="text-sm text-primary font-semibold">{member.title}</p>
                 </div>
             ))}
           </div>
-          <div className="mt-20 md:mt-32 animate-in fade-in duration-700">
-                <Image
-                  src="https://drive.google.com/uc?export=view&id=1yccbQERS1sPGFOwT51wAZddfr_x50-Lx"
-                  alt="Team Banner"
-                  width={1920}
-                  height={1080}
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-            </div>
         </div>
       </section>
       
@@ -318,4 +312,3 @@ export default function StoryPage() {
   );
 }
 
-    

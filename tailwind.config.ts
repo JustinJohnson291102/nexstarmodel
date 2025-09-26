@@ -90,6 +90,10 @@ export default {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
+         'spin-reverse': {
+          from: { transform: 'rotate(360deg)' },
+          to: { transform: 'rotate(0deg)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -97,6 +101,7 @@ export default {
         float: 'float 3s ease-in-out infinite',
         marquee: 'marquee 120s linear infinite',
         marquee2: 'marquee2 120s linear infinite',
+        'spin-reverse': 'spin-reverse 20s linear infinite',
       },
     },
   },

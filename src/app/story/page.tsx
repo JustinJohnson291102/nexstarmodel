@@ -86,18 +86,18 @@ const coreValues = [
 ];
 
 const teamMembers = [
-    { name: 'Kristin Watson', title: 'Team Member', imageId: 'person1' },
-    { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: 'person2' },
-    { name: 'Robertson', title: 'Marketing Coordinator', imageId: 'person3' },
-    { name: 'Mehak Steward', title: 'SEO Specialist', imageId: 'person4' },
-    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: 'person5' },
-    { name: 'Ali', title: 'Web Designer', imageId: 'person6' },
-    { name: 'Ichcha', title: 'Developer', imageId: 'person7' },
-    { name: 'Anchal', title: 'Member', imageId: 'person8' },
-    { name: 'Arpita', title: 'Corporate Affairs', imageId: 'person9' },
-    { name: 'Aaditya', title: 'Team', imageId: 'person10' },
-    { name: 'Priyanka', title: 'Team', imageId: 'person11' },
-    { name: 'Aleena Chenail', title: 'Member', imageId: 'person12' },
+    { name: 'Kristin Watson', title: 'Team Member', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
+    { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
+    { name: 'Robertson', title: 'Marketing Coordinator', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
+    { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
+    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
+    { name: 'Ali', title: 'Web Designer', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
+    { name: 'Ichcha', title: 'Developer', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
+    { name: 'Anchal', title: 'Member', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
+    { name: 'Arpita', title: 'Corporate Affairs', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
+    { name: 'Aaditya', title: 'Team', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
+    { name: 'Priyanka', title: 'Team', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
+    { name: 'Aleena Chenail', title: 'Member', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
 ];
 
 const testimonials = [
@@ -255,7 +255,7 @@ export default function StoryPage() {
                 <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
                         <Image
-                            src={`https://picsum.photos/seed/${member.imageId}/200/200`}
+                            src={`https://drive.google.com/uc?export=view&id=${member.imageId}`}
                             alt={member.name}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -312,3 +312,5 @@ export default function StoryPage() {
   );
 }
 
+
+    

@@ -13,42 +13,42 @@ const caseStudies = [
     title: "Backup, Blockchain & Crypto",
     category: "Cyber Security",
     description: "Developed a decentralized backup solution using blockchain technology, ensuring immutable and secure data storage for crypto assets.",
-    image: { src: "https://picsum.photos/seed/blockchain-security/800/600", hint: "blockchain security" },
+    image: { src: "https://picsum.photos/seed/office-blockchain/800/600", hint: "office blockchain" },
     tags: ["Blockchain", "Cyber Security", "Go"],
   },
   {
     title: "App Design for Local Agency",
     category: "UI/UX Design",
     description: "Redesigned a mobile application for a local government agency, improving user engagement by 40% through an intuitive, human-centered interface.",
-    image: { src: "https://picsum.photos/seed/app-design-agency/800/600", hint: "mobile app design" },
+    image: { src: "https://picsum.photos/seed/office-app-design/800/600", hint: "office app design" },
     tags: ["UI/UX", "Figma", "React Native"],
   },
   {
     title: "The New in Upcoming Design Think",
     category: "UI/UX Design",
     description: "A forward-thinking exploration of future design trends, culminating in a conceptual prototype for a next-generation mixed-reality interface.",
-    image: { src: "https://picsum.photos/seed/design-thinking/800/600", hint: "design thinking" },
+    image: { src: "https://picsum.photos/seed/office-design-thinking/800/600", hint: "office design thinking" },
     tags: ["AR/VR", "Prototyping", "UX Research"],
   },
   {
     title: "Branding for American IT",
     category: "IT Consultancy",
     description: "Crafted a new brand identity for a major American IT firm, positioning them as an innovative leader in a competitive market.",
-    image: { src: "https://picsum.photos/seed/it-branding/800/600", hint: "corporate branding" },
+    image: { src: "https://picsum.photos/seed/office-branding/800/600", hint: "office branding" },
     tags: ["Branding", "Strategy", "Marketing"],
   },
   {
     title: "World Best Available Scope",
     category: "Data Analytics",
     description: "Executed a global market analysis project, identifying key growth opportunities and providing actionable insights through advanced data modeling.",
-    image: { src: "https://picsum.photos/seed/market-analysis/800/600", hint: "global data" },
+    image: { src: "https://picsum.photos/seed/office-analytics/800/600", hint: "office analytics" },
     tags: ["Data Science", "Tableau", "Python"],
   },
   {
     title: "Software License Management",
     category: "IT Consultancy",
     description: "Implemented a comprehensive software license management system for a Fortune 500 company, saving them over $2M annually.",
-    image: { src: "https://picsum.photos/seed/software-license/800/600", hint: "software management" },
+    image: { src: "https://picsum.photos/seed/office-software/800/600", hint: "office software" },
     tags: ["ITAM", "SaaS", "Optimization"],
   },
 ];
@@ -193,5 +193,3 @@ export default function PortfolioPage() {
     </div>
   );
 }
-
-    

@@ -64,7 +64,7 @@ export default function Home() {
   const heroImages = [
     {
       id: "hero-main-1",
-      src: "https://picsum.photos/seed/office-setup/1920/1080",
+      src: "https://drive.google.com/uc?export=view&id=1_skyPQLwCvJ_IrPtgKPZTfkGdAZ-zN8b",
       alt: "Media professional editing video",
       hint: "video editing",
       title: "Innovate. Create. Elevate.",
@@ -74,7 +74,7 @@ export default function Home() {
     },
     {
       id: "hero-main-2",
-      src: "https://picsum.photos/seed/media-desk/1920/1080",
+      src: "https://drive.google.com/uc?export=view&id=1CTX9EvAM9DZHbThXj9Gm0TN0T0E0x4pK",
       alt: "Team collaborating in a media agency",
       hint: "media team",
       title: "Transforming Brands with Ideas",
@@ -84,7 +84,7 @@ export default function Home() {
     },
     {
       id: "hero-main-3",
-      src: "https://picsum.photos/seed/pro-camera/1920/1080",
+      src: "https://drive.google.com/uc?export=view&id=1i4s7gTix7t7IbVs454RDV6ykh5749uPc",
       alt: "Professional camera setup for media production",
       hint: "camera setup",
       title: "Content that Connects",

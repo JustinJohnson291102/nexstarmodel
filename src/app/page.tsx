@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   CheckCircle,
+  Lightbulb,
+  Scaling,
+  Users,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +18,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
 
@@ -209,32 +212,52 @@ export default function Home() {
       
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="text-center">
+          <div className="text-center mb-16">
             <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">WHO WE ARE</h3>
             <h2 className="font-headline text-primary text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
-              We're a dynamic team of creative people
+              A Dynamic Fusion of Creativity & Technology
             </h2>
             <p className="text-muted-foreground md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              At Nexstar, we are more than just an IT & Media company—we are a team of passionate innovators, thinkers, and creators. Our strength lies in blending technology with creativity, delivering solutions that inspire, engage, and transform businesses. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team thrives on challenges and innovation. Every member of our dynamic team brings unique expertise, ensuring we deliver not just services, but experiences that create real impact. We believe in collaboration, growth, and pushing boundaries to help our clients achieve lasting success in today’s digital-first world.
+              At Nexstar, we are more than just an IT & Media company—we are a team of passionate innovators, thinkers, and creators. Our strength lies in blending technology with creativity to deliver solutions that don't just solve problems, but inspire and engage.
             </p>
-             <div className="mt-16 animate-in fade-in slide-in-from-bottom-10 duration-700">
-               <Card className="bg-background shadow-xl overflow-hidden">
-                 <div className="grid md:grid-cols-1 items-center">
-                   <div className="p-8 md:p-12 text-center">
-                     <h3 className="font-headline text-2xl md:text-3xl font-bold mb-4">Our Global Presence</h3>
-                     <p className="text-muted-foreground mb-8 text-justify">
-                        Nexstar Live LLC maintains a strategic global presence with our headquarters in New York, USA, driving international operations and client strategy. Our specialized offices in the UK and India are centers of excellence for Patents, Trade Secrets, Competitive Intelligence, and Global Finance, ensuring robust intellectual property protection and market-leading insights. This powerful ecosystem unites creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.
-                     </p>
-                     <Button asChild size="lg" className="group rounded-lg">
-                        <Link href="/story">
-                          More About Us
-                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </Button>
-                   </div>
-                 </div>
-               </Card>
-            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200">
+              <CardHeader className="p-0">
+                  <Image src="https://picsum.photos/seed/team-passion/600/400" width={600} height={400} alt="Passionate Team" data-ai-hint="passionate team" className="rounded-t-lg object-cover aspect-video"/>
+              </CardHeader>
+              <CardContent className="p-6 flex-grow">
+                <CardTitle className="font-headline mb-3 flex items-center gap-3"><Lightbulb className="w-7 h-7 text-primary"/> Our Philosophy</CardTitle>
+                <p className="text-muted-foreground">We thrive on challenges and innovation. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team's diverse expertise ensures we deliver not just services, but experiences that create real impact.</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300">
+              <CardHeader className="p-0">
+                  <Image src="https://picsum.photos/seed/team-collab/600/400" width={600} height={400} alt="Team Collaboration" data-ai-hint="team collaboration" className="rounded-t-lg object-cover aspect-video"/>
+              </CardHeader>
+              <CardContent className="p-6 flex-grow">
+                <CardTitle className="font-headline mb-3 flex items-center gap-3"><Users className="w-7 h-7 text-primary"/> Our Approach</CardTitle>
+                <p className="text-muted-foreground">We believe in collaboration, growth, and pushing boundaries. We work as an extension of your team, ensuring that our solutions are perfectly aligned with your vision and goals to help you achieve lasting success in today’s digital-first world.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400">
+              <CardHeader className="p-0">
+                  <Image src="https://picsum.photos/seed/global-reach/600/400" width={600} height={400} alt="Global Reach" data-ai-hint="global network" className="rounded-t-lg object-cover aspect-video"/>
+              </CardHeader>
+              <CardContent className="p-6 flex-grow">
+                <CardTitle className="font-headline mb-3 flex items-center gap-3"><Scaling className="w-7 h-7 text-primary"/> Our Global Presence</CardTitle>
+                <p className="text-muted-foreground">With our headquarters in New York, and specialized offices in the UK and India, we unite creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.</p>
+                 <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
+                    <Link href="/story">
+                      More About Us
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -27,6 +27,10 @@ const serviceLinks = [
     { href: "/services#branding", label: "Creative & Branding" },
     { href: "/web-solutions", label: "Web/Tech" },
     { href: "/services#b2b", label: "B2B Marketing" },
+    { href: "/search-marketing", label: "Search Marketing" },
+    { href: "/video-production", label: "Video Production" },
+    { href: "/online-reputation-management", label: "Online Reputation Management" },
+    { href: "/ecommerce-development", label: "E-commerce Development" },
 ]
 
 const webSolutionsLinks = [
@@ -197,5 +201,3 @@ export default function Header() {
     </header>
   );
 }
-
-    

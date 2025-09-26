@@ -85,7 +85,7 @@ export default function Home() {
     },
     {
       id: "hero-main-3",
-      src: "https://drive.google.com/uc?export=view&id=1i4s7gTix7t7IbVs454RDV6ykh5749uPc",
+      src: "https://drive.google.com/uc?export=view&id=1oyEsTgo_HnNtGS7oq3Q4_txz4G5Sn5Eq",
       alt: "Professional camera setup for media production",
       hint: "camera setup",
       title: "Content that Connects",
@@ -265,5 +265,3 @@ export default function Home() {
     </>
   );
 }
-
-    

@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const mainLinks = [
+  { href: "/", label: "Home" },
   { href: "/story", label: "Our Story" },
 ];
 
@@ -126,7 +127,6 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 label={link.label}
-                isNew={link.isNew}
               />
             ))}
           </nav>
@@ -197,3 +197,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

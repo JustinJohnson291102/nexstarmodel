@@ -133,7 +133,7 @@ export default function Home() {
                       {img.subtitle}
                     </p>
                     <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
-                      <Button asChild size="lg" className="group rounded-lg" variant="secondary">
+                      <Button asChild size="lg" className="group rounded-lg">
                         <Link href={img.buttonLink}>
                           {img.buttonText}
                           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

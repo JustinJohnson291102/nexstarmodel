@@ -88,19 +88,19 @@ const coreValues = [
 const teamMembers = [
     // Row 1
     { name: 'Kristin Watson', title: 'Team Member', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
-    { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
-    { name: 'Robertson', title: 'Marketing Coordinator', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
-    { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
+    { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: '1HUudFYwCkR5WFgOW2QEnWzZBxU8BBvQI' },
+    { name: 'Robertson', title: 'Marketing Coordinator', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
+    { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
     // Row 2
-    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
-    { name: 'Ali', title: 'Web Designer', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
-    { name: 'Ichcha', title: 'Developer', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
-    { name: 'Anchal', title: 'Member', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
+    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
+    { name: 'Ali', title: 'Web Designer', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
+    { name: 'Ichcha', title: 'Developer', imageId: '1ewP71AMnXgQWmfiBTCYKKWrpsE_LR95h' },
+    { name: 'Anchal', title: 'Member', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
     // Row 3
-    { name: 'Arpita', title: 'Corporate Affairs', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
-    { name: 'Aaditya', title: 'Team', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
-    { name: 'Priyanka', title: 'Team', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
-    { name: 'Aleena Chenail', title: 'Member', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
+    { name: 'Arpita', title: 'Corporate Affairs', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
+    { name: 'Aaditya', title: 'Team', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
+    { name: 'Priyanka', title: 'Team', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
+    { name: 'Aleena Chenail', title: 'Member', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
 ];
 
 const testimonials = [
@@ -314,5 +314,6 @@ export default function StoryPage() {
     </>
   );
 }
+
 
     

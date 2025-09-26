@@ -78,14 +78,14 @@ export default function PortfolioPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp')` }}
       >
-        <div className="absolute inset-0 bg-white/60 z-10" />
-        <div className="relative z-20 px-4 text-primary-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <div className="bg-background/50 backdrop-blur-sm p-8 rounded-lg">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
             <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
-            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 text-foreground">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 text-white">
               Our Portfolio
             </h1>
-            <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
               A showcase of our commitment to excellence, innovation, and impactful results.
             </p>
           </div>
@@ -193,3 +193,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
+    

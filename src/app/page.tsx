@@ -101,7 +101,7 @@ export default function Home() {
         <Carousel
           plugins={[
             Autoplay({
-              delay: 2000,
+              delay: 5000,
               stopOnInteraction: false,
               playOnInit: true,
             }),
@@ -239,6 +239,7 @@ export default function Home() {
                         width={300}
                         height={300}
                         data-ai-hint="digital globe"
+                        className="animate-spin-slow-reverse"
                       />
                    </div>
                  </div>
@@ -274,3 +275,5 @@ export default function Home() {
     </>
   );
 }
+
+    

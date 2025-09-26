@@ -3,9 +3,9 @@
 
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-import MemoryLaneCarousel from "@/components/story/memory-lane-carousel";
-import { Check, Target, Lightbulb, Heart, Users } from "lucide-react";
+import { Check, Target, Lightbulb, Heart, Users, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const timelineEvents = [
   {
@@ -83,7 +83,42 @@ const coreValues = [
           hint: "success target",
         }
     }
-]
+];
+
+const teamMembers = [
+    { name: 'Perry A. Sook', title: 'Chairman and CEO', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
+    { name: 'Thomas E. Carter', title: 'President and COO', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
+    { name: 'Michael Biard', title: 'President and COO', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
+    { name: 'Lee Ann Gliha', title: 'EVP and CFO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
+    { name: 'Brett Jenkins', title: 'EVP and CTO', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
+    { name: 'Gabe A. Brier', title: 'EVP, General Counsel', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
+    { name: 'Mike Vaughn', title: 'EVP and Chief Revenue Officer', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
+    { name: 'Andrew Alford', title: 'President, Broadcasting', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
+    { name: 'Karen Brophy', title: 'President, Digital', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
+    { name: 'Dana Zimmer', title: 'President, Distribution', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
+];
+
+const testimonials = [
+  {
+    quote: "Their data-driven approach and creative execution have been instrumental in our success. We've seen a significant ROI since partnering with them.",
+    name: "Sarah Jennings",
+    company: "Luxe Retail Co.",
+    image: "https://picsum.photos/seed/testi-sarah/200",
+  },
+  {
+    quote: "The team's dedication and expertise are second to none. They took our vision and turned it into a reality that exceeded all expectations.",
+    name: "Michael Chen",
+    company: "Innovate Tech",
+    image: "https://picsum.photos/seed/testi-michael/200",
+  },
+  {
+    quote: "Working with them was a game-changer for our brand. Their strategic insights helped us connect with our audience in a much more meaningful way.",
+    name: "Laura Rodriguez",
+    company: "Gourmet Foods Inc.",
+    image: "https://picsum.photos/seed/testi-laura/200",
+  }
+];
+
 
 export default function StoryPage() {
   return (
@@ -117,7 +152,7 @@ export default function StoryPage() {
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Mission & Vision</h2>
                  <p className="text-lg text-muted-foreground">
-                   Founded on the principle of innovation, Digitale Agency was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
+                   Founded on the principle of innovation, Nexstar Media Group was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
                  </p>
                  <p className="text-lg text-muted-foreground">
                    Our vision is to be the leading partner for brands brave enough to shape the future, empowering them to connect with their audiences in more meaningful and impactful ways. We believe in the power of collaboration, the magic of creativity, and the impact of technology.
@@ -207,70 +242,29 @@ export default function StoryPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-full mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
-              Our Team
+              Our Team at Nexstar Media Group
             </h2>
             <p className="text-lg text-muted-foreground mx-auto max-w-3xl mb-16 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              Our highly-enthusiastic team is a fantastic mix of energy, ideas, experience and new thinking, who work hand-in-hand to create stand-out work. From creative to strategy, business to digital marketing, media to interactive – we’re always raring to go!
+              Meet the leaders driving our mission forward. A dedicated team committed to excellence, innovation, and delivering unparalleled value to our partners and audiences.
             </p>
           </div>
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-            <div className="text-center animate-in fade-in slide-in-from-left-10 duration-700">
-              <div className="inline-block">
-                <Image
-                  src="https://drive.google.com/uc?export=view&id=1sHb5vgWug43sY7N9TWDoZfnsTvCBFvSb"
-                  alt="Kiran Bhat"
-                  width={280}
-                  height={280}
-                  className="rounded-lg shadow-lg"
-                />
-                <h3 className="text-2xl font-bold font-headline text-accent mt-4">
-                  Kiran Bhat
-                </h3>
-                <p className="text-lg text-primary font-semibold">CMD</p>
-              </div>
-            </div>
-            <div className="text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-right-10 duration-700 space-y-4">
-              <p>
-                Kiran Bhat is not only an advertising and strategy maestro, she's a veritable force when it comes to busting stereotypes. An Industrial Psychologist by qualification, Kiran went on to get her Executive Education from Harvard Business School.
-              </p>
-              <p>
-                She is also Co-author of the hugely successful book on entrepreneurship - 'No Holy Cows in Business' - she continues to serve as guest faculty in several of India's top management schools. Frequently invited to speak on several industry panels across India.
-              </p>
-              <p>
-                She started Xebec Communications Pvt Ltd in 1992. A rich experience of 28 years stands her in good stead as she continues to steer and build successful brands across diverse verticals.
-              </p>
-            </div>
-          </div>
-          
-          <div className="mt-20 md:mt-32">
-            <Separator className="my-16 bg-primary/20" />
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-              <div className="md:order-2 text-center animate-in fade-in slide-in-from-right-10 duration-700">
-                <div className="inline-block">
-                  <Image
-                    src="https://drive.google.com/uc?export=view&id=18bldZBErWmnA1HsjR2UmZIkqnVqRo-qg"
-                    alt="Anil Bhat"
-                    width={280}
-                    height={280}
-                    className="rounded-lg shadow-lg"
-                  />
-                  <h3 className="text-2xl font-bold font-headline text-accent mt-4">
-                    Anil Bhat
-                  </h3>
-                  <p className="text-lg text-primary font-semibold">Director & CEO</p>
+          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {teamMembers.map((member, index) => (
+                <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
+                    <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg">
+                        <Image
+                            src={`https://drive.google.com/uc?export=view&id=${member.imageId}`}
+                            alt={member.name}
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <h3 className="text-lg font-bold font-headline text-accent">{member.name}</h3>
+                    <p className="text-sm text-primary font-semibold">{member.title}</p>
                 </div>
-              </div>
-              <div className="md:order-1 text-muted-foreground prose prose-lg text-justify animate-in fade-in slide-in-from-left-10 duration-700 space-y-4">
-                <p>
-                  Anil Bhat lives, sleeps, talks and breathes Digital Marketing. Having completed his Graduation in Engineering, Anil went on to become a Certified Digital Marketing Specialist with a Google Black Belt certification.
-                </p>
-                <p>
-                  As a specialist in the field, he has the expertise to deliver solutions that extend over the entire gamut of E-Commerce, CRM, Lead Generation, Digital Media Planning, Media Buying, Marketing Strategy and Technology.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
-            <div className="mt-20 md:mt-32 animate-in fade-in duration-700">
+          <div className="mt-20 md:mt-32 animate-in fade-in duration-700">
                 <Image
                   src="https://drive.google.com/uc?export=view&id=1yccbQERS1sPGFOwT51wAZddfr_x50-Lx"
                   alt="Team Banner"
@@ -282,15 +276,41 @@ export default function StoryPage() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-normal text-left tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500 text-muted-foreground">
-              Down the memory lane
-            </h2>
-            <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              <MemoryLaneCarousel />
-            </div>
+      <section 
+        className="py-20 md:py-32 relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/testimonials-bg/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-white animate-in fade-in slide-in-from-bottom-5 duration-500">Client's Success Is Our Success</h2>
+            <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">Hear from the partners we've helped along the way.</p>
+          </div>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index}
+                className="animate-in fade-in slide-in-from-bottom-7 duration-500"
+                style={{animationDelay: `${index * 150}ms`}}
+              >
+              <Card className="bg-background/10 backdrop-blur-md border-white/20 h-full">
+                <CardContent className="p-8 text-white flex flex-col h-full">
+                  <p className="text-5xl text-white/30 -ml-2">"</p>
+                  <p className="italic mb-6 flex-grow">"{testimonial.quote}"</p>
+                  <div className="flex items-center mt-auto">
+                    <Avatar className="h-12 w-12 mr-4 border-2 border-white/30">
+                        <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-bold font-headline">{testimonial.name}</p>
+                      <p className="text-sm text-white/70">{testimonial.company}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -298,3 +318,4 @@ export default function StoryPage() {
   );
 }
 
+    

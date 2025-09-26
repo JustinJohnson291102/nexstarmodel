@@ -41,7 +41,7 @@ const webSolutionsLinks = [
 const otherLinks = [
   { href: "/b2b", label: "B2B Marketing" },
   { href: "/xtrack", label: "XTrack" },
-  { href: "/podcast", label: "Podcast" },
+  { href: "/portfolio", label: "Portfolio" },
 ];
 
 export default function Header() {

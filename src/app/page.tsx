@@ -224,7 +224,7 @@ export default function Home() {
                       src="https://drive.google.com/uc?export=view&id=1aNRs_cMrYbSjnbGFzVjDMdJRTL_9jbm-"
                       alt="Rotating globe"
                       fill
-                      className="object-cover"
+                      className="object-cover animate-spin [animation-duration:20s]"
                     />
                    </div>
                    <div className="p-8 md:p-12 text-left">

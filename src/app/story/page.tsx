@@ -290,17 +290,17 @@ export default function StoryPage() {
                 className="animate-in fade-in slide-in-from-bottom-7 duration-500"
                 style={{animationDelay: `${index * 150}ms`}}
               >
-              <Card className="bg-card/80 backdrop-blur-md border-border/50 h-full">
-                <CardContent className="p-8 text-foreground flex flex-col h-full">
-                  <p className="text-5xl text-foreground/20 -ml-2">"</p>
-                  <p className="italic mb-6 flex-grow">"{testimonial.quote}"</p>
+              <Card className="bg-primary/5 text-foreground backdrop-blur-md border-primary/20 h-full shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                <CardContent className="p-8 flex flex-col h-full">
+                  <p className="text-5xl text-primary/20 -ml-2">"</p>
+                  <blockquote className="italic mb-6 flex-grow border-l-2 border-primary/30 pl-4">"{testimonial.quote}"</blockquote>
                   <div className="flex items-center mt-auto">
-                    <Avatar className="h-12 w-12 mr-4 border-2 border-border/30">
+                    <Avatar className="h-12 w-12 mr-4 border-2 border-primary/30">
                         <AvatarImage src={testimonial.image} alt={testimonial.name} />
                         <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="font-bold font-headline">{testimonial.name}</p>
+                      <p className="font-bold font-headline text-primary">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                     </div>
                   </div>
@@ -315,4 +315,4 @@ export default function StoryPage() {
   );
 }
 
-  
+    

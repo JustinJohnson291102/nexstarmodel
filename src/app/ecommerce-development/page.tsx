@@ -3,9 +3,35 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { ShoppingCart, Store, Code, Palette, Rocket, CheckCircle } from "lucide-react";
+import { ShoppingCart, Store, Code, Palette, Rocket, CheckCircle, HelpCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+
+const faqs = [
+    {
+        question: "Which e-commerce platform is right for me?",
+        answer: "The best platform depends on your specific needs. Shopify is excellent for ease of use and quick setup, while WooCommerce (with WordPress) offers greater flexibility and customization. We'll help you choose the right fit during our initial consultation."
+    },
+    {
+        question: "How long does it take to build an e-commerce website?",
+        answer: "A typical e-commerce project takes between 6 to 12 weeks, depending on the complexity of the design, number of products, and custom features required. We'll provide a detailed timeline after our discovery phase."
+    },
+    {
+        question: "Can you help me migrate my existing store?",
+        answer: "Absolutely. We offer seamless migration services from platforms like Magento, BigCommerce, or any other system to Shopify or WooCommerce, ensuring no loss of data, SEO rankings, or customers."
+    },
+    {
+        question: "Do you provide support after the website is launched?",
+        answer: "Yes, we offer ongoing support and maintenance packages to ensure your store remains secure, up-to-date, and performing at its best. We can also provide training for your team on how to manage the store."
+    }
+]
 
 export default function EcommerceDevelopmentPage() {
   const pageData = {
@@ -61,10 +87,10 @@ export default function EcommerceDevelopmentPage() {
               <div className="prose prose-lg max-w-none">
                 <h2 className="text-3xl font-bold font-headline mb-4">Build Your Digital Flagship</h2>
                 <p>
-                  Your e-commerce website is more than just a place to sell products; it's the heart of your online brand. We craft digital shopping experiences that are not only visually stunning but also engineered for performance, security, and scalability.
+                  Your e-commerce website is more than just a place to sell products; it's the heart of your online brand. It's your 24/7 salesperson, your primary marketing channel, and the most direct connection you have with your customers. We craft digital shopping experiences that are not only visually stunning but also engineered for performance, security, and scalability.
                 </p>
                 <p>
-                  Our end-to-end e-commerce solutions cover everything from initial strategy and design to development, launch, and ongoing optimization. We are your dedicated partners in building a successful online retail business.
+                  Our end-to-end e-commerce solutions cover everything from initial strategy and design to development, launch, and ongoing optimization. We don't just build stores; we build businesses. We are your dedicated partners in building a successful online retail business that thrives in a competitive market.
                 </p>
               </div>
 
@@ -87,17 +113,60 @@ export default function EcommerceDevelopmentPage() {
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Custom Theme Development & Customization</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>App Integration and Custom Plugin Development</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Payment Gateway & Shipping Integration</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>SEO & Performance Optimization</span></li>
+                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>SEO & Performance Optimization for E-commerce</span></li>
+                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Headless Commerce & API-driven Solutions</span></li>
                   </ul>
                    <Button asChild className="group mt-6">
-                    <Link href="/shopify">Learn more about our Shopify Expertise</Link>
+                    <Link href="/shopify">Learn more about our Shopify Expertise <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" /></Link>
                   </Button>
                </div>
-
             </div>
             <div className="md:col-span-1">
               <GetStartedForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section 
+        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/ecommerce-choose/1920/1080')` }}
+      >
+        <div className="absolute inset-0 bg-primary/90 z-10" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Why Choose Us as Your E-commerce Partner?
+            </h2>
+            <p className="text-lg text-white/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              We're not just developers; we're e-commerce strategists dedicated to your growth. We focus on building scalable, secure, and sales-driven online stores that become valuable assets for your business. Our expertise ensures you get a site that not only looks great but also performs flawlessly and delivers a tangible return on investment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-24 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+             <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground mb-12">
+              Have questions? We have answers. Here are some common inquiries about our e-commerce development services.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                  <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">{faq.question}</AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>

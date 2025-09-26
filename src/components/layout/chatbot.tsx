@@ -4,7 +4,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { MessageSquare, Send, X } from "lucide-react";
+import { MessageSquare, Send, X, Loader2 } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -13,29 +13,43 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { chat } from "@/ai/flows/chat-flow";
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hello! How can I help you today?",
+      content: "Hello! I'm the Nexstar Assistant. How can I help you today?",
     },
   ]);
   const [input, setInput] = useState("");
 
   const toggleChat = () => setIsOpen(!isOpen);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (input.trim() === "") return;
-    setMessages([...messages, { role: "user", content: input }]);
-    // Here you would typically call an AI service
+
+    const userMessage = { role: "user", content: input };
+    setMessages((prev) => [...prev, userMessage]);
     setInput("");
-    
-    // Fake response for demonstration
-    setTimeout(() => {
-        setMessages(prev => [...prev, {role: 'assistant', content: "I'm a demo chatbot. I can't process requests yet."}])
-    }, 1000)
+    setIsSubmitting(true);
+
+    try {
+      const response = await chat(input);
+      const assistantMessage = { role: "assistant", content: response };
+      setMessages((prev) => [...prev, assistantMessage]);
+    } catch (error) {
+      console.error("Chat error:", error);
+      const errorMessage = {
+        role: "assistant",
+        content: "Sorry, I'm having trouble connecting. Please try again later.",
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -54,7 +68,9 @@ export default function Chatbot() {
       <div
         className={cn(
           "fixed bottom-24 right-6 z-50 w-full max-w-sm transition-all duration-300 ease-in-out",
-          isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+          isOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-4 pointer-events-none"
         )}
       >
         <Card className="shadow-2xl">
@@ -82,6 +98,14 @@ export default function Chatbot() {
                 </div>
               </div>
             ))}
+             {isSubmitting && (
+              <div className="flex items-end gap-2 justify-start">
+                <div className="max-w-[75%] rounded-lg p-3 text-sm bg-secondary flex items-center gap-2">
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                   Thinking...
+                </div>
+              </div>
+            )}
           </CardContent>
           <CardFooter className="p-4 border-t">
             <div className="flex w-full items-center space-x-2">
@@ -90,8 +114,9 @@ export default function Chatbot() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                disabled={isSubmitting}
               />
-              <Button onClick={handleSend} size="icon" aria-label="Send Message">
+              <Button onClick={handleSend} size="icon" aria-label="Send Message" disabled={isSubmitting}>
                 <Send className="h-4 w-4" />
               </Button>
             </div>
@@ -101,5 +126,3 @@ export default function Chatbot() {
     </>
   );
 }
-
-    

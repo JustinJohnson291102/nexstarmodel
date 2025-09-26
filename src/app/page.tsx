@@ -62,21 +62,21 @@ export default function Home() {
   const heroImages = [
     {
       id: "hero-main-1",
-      src: "https://picsum.photos/seed/media-1/1920/1080",
-      alt: "Media industry production",
-      hint: "media production",
+      src: "https://picsum.photos/seed/prof-bg-1/1920/1080",
+      alt: "Professional workspace background",
+      hint: "professional workspace",
     },
     {
       id: "hero-main-2",
-      src: "https://picsum.photos/seed/media-2/1920/1080",
-      alt: "Newsroom with cameras",
-      hint: "newsroom camera",
+      src: "https://picsum.photos/seed/prof-bg-2/1920/1080",
+      alt: "Modern office interior",
+      hint: "modern office",
     },
     {
       id: "hero-main-3",
-      src: "https://picsum.photos/seed/media-3/1920/1080",
-      alt: "Journalist with a camera",
-      hint: "journalist camera",
+      src: "https://picsum.photos/seed/prof-bg-3/1920/1080",
+      alt: "Creative team collaborating",
+      hint: "creative team",
     },
   ];
 
@@ -294,6 +294,5 @@ export default function Home() {
     </>
   );
 
-}
 
     

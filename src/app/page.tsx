@@ -146,10 +146,10 @@ export default function Home() {
       </section>
       
        <section
-        className="relative bg-cover bg-center bg-fixed text-white py-20 md:py-32"
+        className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-primary/80 z-0" />
+        <div className="absolute inset-0 bg-background/80 z-0" />
         <div className="container mx-auto px-4 relative z-10">
           
               <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -167,10 +167,10 @@ export default function Home() {
                   <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-4">
                     As an Advertising Agency, We Ignite Brands with Ideas that Transform Behaviour
                   </h1>
-                  <p className="text-lg text-white/90 mb-8">
+                  <p className="text-lg text-muted-foreground mb-8">
                     Across mediums, we have taken both fledgling and legacy brands to a new level of success.
                   </p>
-                  <Button asChild size="lg" className="group rounded-lg" variant="secondary">
+                  <Button asChild size="lg" className="group rounded-lg">
                     <Link href="/story">
                       View More{" "}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -194,7 +194,7 @@ export default function Home() {
                   <h2 className="text-3xl md:text-4xl font-bold font-headline tracking-tight mb-4">
                     Our Gamut of Services are as Diverse as they are Effective
                   </h2>
-                   <ul className="space-y-2 text-lg text-white/90">
+                   <ul className="space-y-2 text-lg text-muted-foreground">
                     <li>Branding</li>
                     <li>Social Media</li>
                     <li>Digital - Website / Technology</li>

@@ -86,14 +86,17 @@ const coreValues = [
 ];
 
 const teamMembers = [
+    // Row 1
     { name: 'Kristin Watson', title: 'Team Member', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
     { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
     { name: 'Robertson', title: 'Marketing Coordinator', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
     { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
+    // Row 2
     { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
     { name: 'Ali', title: 'Web Designer', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
     { name: 'Ichcha', title: 'Developer', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
     { name: 'Anchal', title: 'Member', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
+    // Row 3
     { name: 'Arpita', title: 'Corporate Affairs', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
     { name: 'Aaditya', title: 'Team', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
     { name: 'Priyanka', title: 'Team', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
@@ -250,7 +253,7 @@ export default function StoryPage() {
               Meet the leaders driving our mission forward. A dedicated team committed to excellence, innovation, and delivering unparalleled value to our partners and audiences.
             </p>
           </div>
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+          <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-12">
             {teamMembers.map((member, index) => (
                 <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
@@ -311,6 +314,5 @@ export default function StoryPage() {
     </>
   );
 }
-
 
     

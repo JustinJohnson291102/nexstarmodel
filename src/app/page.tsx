@@ -99,8 +99,8 @@ export default function Home() {
       subtitle: "From stunning visuals to compelling narratives, we produce media that matters.",
       buttonLink: "/contact",
       buttonText: "Get in Touch",
-      titleColor: "text-amber-800",
-      subtitleColor: "text-amber-800",
+      titleColor: "text-stone-900",
+      subtitleColor: "text-stone-900",
     },
   ];
 
@@ -304,3 +304,5 @@ export default function Home() {
     </>
   );
 }
+
+    

@@ -133,7 +133,7 @@ export default function Home() {
                       {img.subtitle}
                     </p>
                     <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
-                      <Button asChild size="lg" className="group rounded-lg">
+                      <Button asChild size="lg" className="group">
                         <Link href={img.buttonLink}>
                           {img.buttonText}
                           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -173,7 +173,7 @@ export default function Home() {
                   <p className="text-lg text-muted-foreground mb-8">
                     Across mediums, we have taken both fledgling and legacy brands to a new level of success.
                   </p>
-                  <Button asChild size="lg" className="group rounded-lg">
+                  <Button asChild size="lg" className="group">
                     <Link href="/story">
                       View More{" "}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -200,7 +200,7 @@ export default function Home() {
                    <p className="text-lg text-muted-foreground mb-8">
                     We offer a comprehensive suite of services designed to build, grow, and sustain your brand's presence. From crafting compelling brand identities and driving engagement on social media, to developing robust web solutions and executing targeted B2B and performance marketing campaigns, our expertise covers the full spectrum of digital marketing.
                   </p>
-                   <Button asChild size="lg" className="group rounded-lg">
+                   <Button asChild size="lg" className="group">
                     <Link href="/services">
                       View More{" "}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -232,7 +232,7 @@ export default function Home() {
               <CardContent className="p-6 flex-grow flex flex-col">
                 <CardTitle className="font-headline mb-3 flex items-center gap-3"><Lightbulb className="w-7 h-7 text-primary"/> Our Philosophy</CardTitle>
                 <p className="text-muted-foreground flex-grow">We thrive on challenges and innovation. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team's diverse expertise ensures we deliver not just services, but experiences that create real impact.</p>
-                 <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
+                 <Button asChild size="sm" className="group mt-4 w-fit">
                     <Link href="/story">
                       Learn More
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -248,7 +248,7 @@ export default function Home() {
               <CardContent className="p-6 flex-grow flex flex-col">
                 <CardTitle className="font-headline mb-3 flex items-center gap-3"><Users className="w-7 h-7 text-primary"/> Our Approach</CardTitle>
                 <p className="text-muted-foreground flex-grow">We believe in collaboration, growth, and pushing boundaries. We work as an extension of your team, ensuring that our solutions are perfectly aligned with your vision and goals to help you achieve lasting success in today’s digital-first world.</p>
-                 <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
+                 <Button asChild size="sm" className="group mt-4 w-fit">
                     <Link href="/contact">
                       Partner with Us
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -264,7 +264,7 @@ export default function Home() {
               <CardContent className="p-6 flex-grow flex flex-col">
                 <CardTitle className="font-headline mb-3 flex items-center gap-3"><Scaling className="w-7 h-7 text-primary"/> Our Global Presence</CardTitle>
                 <p className="text-muted-foreground flex-grow">With our headquarters in New York, and specialized offices in the UK and India, we unite creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.</p>
-                 <Button asChild size="sm" className="group rounded-lg mt-4 w-fit">
+                 <Button asChild size="sm" className="group mt-4 w-fit">
                     <Link href="/story">
                       More About Us
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -278,11 +278,11 @@ export default function Home() {
 
       <OurClients />
       
-      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/mountain-landscape/1920/1080')` }}>
+      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/green-mountain/1920/1080')` }}>
         <div className="absolute inset-0 bg-background/80 z-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-            Innovate. Create. Elevate.
+            Architects of Digital Success
           </h1>
           <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
             From groundbreaking strategies to stunning Shopify stores, we are

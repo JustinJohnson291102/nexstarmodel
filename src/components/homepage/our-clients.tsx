@@ -16,7 +16,7 @@ const clientLogos = [
   { src: "https://drive.google.com/uc?id=1Kd0-0XP3HgMxJq7KEQXb2ZMGcS5KU0l8", alt: "Client 1" },
 ];
 
-export default function OurClients() {
+export default function OurClients({ showTitle = true }: { showTitle?: boolean }) {
   // Continuous loop ke liye logos ko duplicate kiya gaya hai
   const extendedLogos = [...clientLogos, ...clientLogos]; 
   
@@ -24,9 +24,11 @@ export default function OurClients() {
     <section className="pt-8 pb-12 md:pt-12 md:pb-16 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="font-headline text-primary text-2xl md:text-3xl font-bold tracking-tight mb-12 animate-in fade-in slide-in-from-bottom-10 duration-700">
-            Our Clients
-          </h2>
+          {showTitle && (
+            <h2 className="font-headline text-primary text-2xl md:text-3xl font-bold tracking-tight mb-12 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              Our Clients
+            </h2>
+          )}
           <div
             // Main container: flex, overflow-x-hidden, aur w-full
             className="relative flex overflow-x-hidden w-full group"

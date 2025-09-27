@@ -6,6 +6,7 @@ import { ArrowRight, Briefcase, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import OurClients from "@/components/homepage/our-clients";
 
 const caseStudies = [
   {
@@ -158,6 +159,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <OurClients showTitle={false} />
 
       {/* PROJECTS SECTION */}
       <section

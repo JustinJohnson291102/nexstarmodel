@@ -21,6 +21,9 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
+// Note: Removed servicesData since it was not in the provided code snippet,
+// but assume it exists elsewhere if the services section is rendered.
+
 export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
     (img) => img.id === "service-branding"
@@ -31,9 +34,9 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[60vh] md:h-[70vh] w-full">
+      <section className="relative h-[60vh] md:h-[75vh] w-full">
         <Image
-          src="https://drive.google.com/uc?export=download&id=1qbJQ-HpshRs-mRcJbqtNnYVpZTPHNook"
+          src="https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4" // Using the corrected download URL
           alt="Hero banner showing a collage of business and technology images"
           fill
           className="object-cover w-full h-full"
@@ -41,7 +44,30 @@ export default function Home() {
           data-ai-hint="business technology collage"
         />
         <div className="absolute inset-0 bg-black/30" />
+        {/* 🚀 FIX APPLIED: Re-added the text overlay content which was missing from your provided snippet */}
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4">
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+            Innovate. Create. Elevate.
+          </h1>
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
+            We are the architects of your digital success story.
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="mt-8 group animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200"
+          >
+            <Link href="/services">
+              Our Services{" "}
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </Button>
+        </div>
+        {/* END of text overlay */}
       </section>
+
+      {/* The rest of your component logic follows:
+      */}
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
@@ -247,3 +273,5 @@ export default function Home() {
     </>
   );
 }
+
+    

@@ -114,8 +114,8 @@ export default function Header() {
                  <DropdownMenuItem asChild>
                     <Link href="/services">All Services</Link>
                   </DropdownMenuItem>
-                {serviceLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} asChild>
+                {serviceLinks.map((link, index) => (
+                  <DropdownMenuItem key={`${link.href}-${index}`} asChild>
                     <Link href={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
                 ))}

@@ -74,7 +74,7 @@ const pricingPlans = [
   {
     name: "Basic Plan",
     priceMonthly: 799,
-    features: { ...starterFeatures, "Minimum 8 Keywords": "Minimum 15 Keywords", "Top 10 Guarantee - 40%*": "Top 10 Guarantee - 60%*", "Guest Blog Posting": 2, "4 Blogs Posting*": "8 Blogs Posting*" },
+    features: { ...starterFeatures, "Minimum 8 Keywords": "Minimum 15 Keywords", "Top 10 Guarantee - 40%*": "Top 10 Guarantee - 60%*", "Guest Blog Posting": 2, "4 Blogs Posting*": "8 Blogs Posting*", "Infographic Creation & Distribution": true },
     highlight: true,
   },
   {
@@ -158,7 +158,7 @@ export default function SEOPricingPage() {
                   ))}
                 </ul>
               </CardContent>
-              <div className="p-6">
+              <div className="p-6 mt-auto">
                 <Button className="w-full">Buy Now</Button>
               </div>
             </Card>

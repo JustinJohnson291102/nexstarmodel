@@ -48,7 +48,11 @@ const webSolutionLinks = [
     { href: "/shopify", label: "Shopify Expertise" },
 ]
 
-const otherLinks: { href: string, label: string }[] = [];
+const pagesLinks = [
+    { href: "/pricing/seo-pricing", label: "SEO Pricing" },
+    { href: "/pricing/smo-pricing", label: "SMO Pricing" },
+    { href: "/pricing/ppc-pricing", label: "PPC Pricing" },
+]
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -138,9 +142,26 @@ export default function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {otherLinks.map((link) => (
-              <NavLink key={link.href} href={link.href} label={link.label} />
-            ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                 <button
+                    className={cn(
+                      "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                       pathname.startsWith('/pricing') ? 'text-primary' : ''
+                    )}
+                  >
+                  Pages <ChevronDown className="h-4 w-4 ml-1" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {pagesLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href}>{link.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
           </nav>
         </div>
         <div className="hidden md:flex items-center mr-8">
@@ -173,7 +194,7 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
-                {[...mainLinks, {href: "/services", label: "Services"}, {href: "/web-solutions", label: "Web Solutions"}, ...otherLinks].map(
+                {[...mainLinks, {href: "/services", label: "Services"}, {href: "/web-solutions", label: "Web Solutions"}, {href: "/pricing/seo-pricing", label: "Pages"}].map(
                   ({ href, label }) => (
                     <NavLink key={href} href={href} label={label} className="text-lg" />
                   )
@@ -194,3 +215,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

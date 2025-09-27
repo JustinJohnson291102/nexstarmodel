@@ -78,24 +78,6 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[70vh]">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-            Innovate. Create. Elevate.
-          </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
-            We are the architects of your digital success story.
-          </p>
-          <Button
-            asChild
-            size="lg"
-            className="mt-8 group animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200"
-          >
-            <Link href="/services">
-              Our Services{" "}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
-        </div>
       </section>
 
       <section className="relative bg-background text-foreground py-20 md:py-32">

@@ -238,24 +238,28 @@ const pricingPlans = [
   {
     name: "Starter Plan",
     priceMonthly: 499,
+    priceYearly: 299,
     features: starterFeatures,
     highlight: false,
   },
   {
     name: "Basic Plan",
     priceMonthly: 699,
+    priceYearly: 499,
     features: basicFeatures,
     highlight: true,
   },
   {
     name: "Enterprise",
     priceMonthly: 899,
+    priceYearly: 699,
     features: enterpriseFeatures,
     highlight: false,
   },
   {
     name: "Business Plan",
     priceMonthly: 999,
+    priceYearly: 899,
     features: businessFeatures,
     highlight: false,
   },
@@ -314,8 +318,8 @@ export default function SEOPricingPage() {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
                 <p className="text-4xl font-bold text-primary pt-4">
-                   ${billingCycle === "monthly" ? plan.priceMonthly : Math.round(plan.priceMonthly * 12 * 0.9)}
-                   <span className="text-lg font-medium text-muted-foreground">/{billingCycle === "monthly" ? "mo" : "yr"}</span>
+                   ${billingCycle === "monthly" ? plan.priceMonthly : plan.priceYearly}
+                   <span className="text-lg font-medium text-muted-foreground">/mo</span>
                 </p>
               </CardHeader>
               <CardContent className="flex-grow">
@@ -323,7 +327,7 @@ export default function SEOPricingPage() {
                   {Object.entries(plan.features).map(([feature, value]) => (
                      <li key={feature} className="flex items-start">
                         <Check className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-0.5" />
-                        <span className="flex-grow">{feature.replace(/-\s\d+%?\*?/, '')}: <span className="font-semibold text-foreground">{typeof value === 'boolean' ? '' : String(value).replace(/.+:\s/, '')}</span></span>
+                        <span className="flex-grow">{feature.replace(/-\s\d+%?\*?/, '')}</span>
                       </li>
                   ))}
                 </ul>

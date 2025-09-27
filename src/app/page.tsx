@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       {/* ✅ FIX APPLIED: Hero banner height restored to a large size: 'md:h-[75vh]' */}
-      <section className="relative h-[60vh] md:h-[75vh] w-full"> 
+      <section className="relative h-[70vh] md:h-[90vh] w-full"> 
         <Image
           src="https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4" // Using the corrected download URL
           alt="Hero banner showing a collage of business and technology images"
@@ -268,4 +268,3 @@ export default function Home() {
     </>
   );
 }
-    

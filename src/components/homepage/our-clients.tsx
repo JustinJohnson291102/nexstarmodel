@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -20,7 +21,7 @@ export default function OurClients() {
   const extendedLogos = [...clientLogos, ...clientLogos]; 
   
   return (
-    <section className="py-20 md:py-24 bg-background">
+    <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="font-headline text-primary text-3xl md:text-5xl font-bold tracking-tight mb-12 animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -33,13 +34,13 @@ export default function OurClients() {
             {/* Pehla set: w-max aur flex-shrink-0 continuous strip ensure karte hain */}
             <div className="flex w-max animate-marquee-slow flex-shrink-0">
               {extendedLogos.map((logo, index) => (
-                <div key={`set1-${index}`} className="mx-8 flex items-center justify-center h-16 opacity-50 transition-opacity duration-300 hover:opacity-100">
+                <div key={`set1-${index}`} className="mx-10 flex items-center justify-center h-24 opacity-50 transition-opacity duration-300 hover:opacity-100">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={150}
-                    height={75}
-                    className="object-contain h-16 w-auto"
+                    width={195}
+                    height={98}
+                    className="object-contain h-24 w-auto"
                   />
                 </div>
               ))}
@@ -48,13 +49,13 @@ export default function OurClients() {
             {/* Doosra set: Loop ko complete karta hai */}
             <div className="flex w-max animate-marquee-slow flex-shrink-0" aria-hidden="true">
               {extendedLogos.map((logo, index) => (
-                <div key={`set2-${index}`} className="mx-8 flex items-center justify-center h-16 opacity-50 transition-opacity duration-300 hover:opacity-100">
+                <div key={`set2-${index}`} className="mx-10 flex items-center justify-center h-24 opacity-50 transition-opacity duration-300 hover:opacity-100">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={150}
-                    height={75}
-                    className="object-contain h-16 w-auto"
+                    width={195}
+                    height={98}
+                    className="object-contain h-24 w-auto"
                   />
                 </div>
               ))}

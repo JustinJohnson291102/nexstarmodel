@@ -2,8 +2,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Check, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -240,6 +241,7 @@ const pricingPlans = [
     priceMonthly: 499,
     priceYearly: 299,
     features: starterFeatures,
+    image: "https://drive.google.com/uc?id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
     highlight: false,
   },
   {
@@ -247,6 +249,7 @@ const pricingPlans = [
     priceMonthly: 699,
     priceYearly: 499,
     features: basicFeatures,
+    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     highlight: true,
   },
   {
@@ -254,6 +257,7 @@ const pricingPlans = [
     priceMonthly: 899,
     priceYearly: 699,
     features: enterpriseFeatures,
+    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     highlight: false,
   },
   {
@@ -261,6 +265,7 @@ const pricingPlans = [
     priceMonthly: 999,
     priceYearly: 899,
     features: businessFeatures,
+    image: "https://drive.google.com/uc?id=1t5M5S-pC7AkWXXznpa8oWlmVY0pe_IAv",
     highlight: false,
   },
 ];
@@ -317,6 +322,14 @@ export default function SEOPricingPage() {
             <Card key={plan.name} className={cn("flex flex-col h-full", plan.highlight ? "border-primary border-2 shadow-primary/20" : "")}>
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
+                <div className="relative w-full h-24 my-4">
+                  <Image
+                    src={plan.image}
+                    alt={`${plan.name} icon`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <p className="text-4xl font-bold text-primary pt-4">
                    ${billingCycle === "monthly" ? plan.priceMonthly : plan.priceYearly}
                    <span className="text-lg font-medium text-muted-foreground">/mo</span>
@@ -332,9 +345,9 @@ export default function SEOPricingPage() {
                   ))}
                 </ul>
               </CardContent>
-              <div className="p-6 mt-auto">
+              <CardFooter className="p-6 mt-auto">
                 <Button className="w-full">Buy Now</Button>
-              </div>
+              </CardFooter>
             </Card>
           ))}
         </div>
@@ -342,5 +355,3 @@ export default function SEOPricingPage() {
     </>
   );
 }
-
-    

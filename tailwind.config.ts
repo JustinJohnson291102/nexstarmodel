@@ -82,18 +82,23 @@ export default {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-8px)' },
         },
-        // ✅ Correct Marquee Keyframe
         'marquee-slow': {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        'chat-bubble': {
+          '0%, 100%': { opacity: '0', transform: 'translateY(0) scale(0.5)' },
+          '15%': { opacity: '1', transform: 'translateY(-100%) scale(1)' },
+          '85%': { opacity: '1', transform: 'translateY(-100%) scale(1)' },
+          '95%': { opacity: '0', transform: 'translateY(0) scale(0.5)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         float: 'float 3s ease-in-out infinite',
-        // ✅ Correct Marquee Animation
         'marquee-slow': 'marquee-slow 60s linear infinite',
+        'chat-bubble': 'chat-bubble 6s ease-in-out infinite',
       },
     },
   },

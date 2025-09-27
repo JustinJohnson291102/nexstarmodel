@@ -17,7 +17,7 @@ export default function Preloader() {
         isMounted ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="animate-pulse">
+      <div>
         <Image
           src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"

@@ -84,8 +84,8 @@ export default {
           '50%': { transform: 'translateY(-8px)' },
         },
         'marquee-slow': {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
         },
         'chat-bubble': {
           '0%, 100%': { opacity: '0', transform: 'translateY(0) scale(0.5)' },

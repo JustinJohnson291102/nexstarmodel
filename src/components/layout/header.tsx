@@ -30,6 +30,17 @@ const serviceLinks = [
     { href: "/video-production", label: "Video Production" },
     { href: "/online-reputation-management", label: "Online Reputation Management" },
     { href: "/ecommerce-development", label: "E-commerce Development" },
+    { href: "/services", label: "Website Development" },
+    { href: "/services", label: "Mobile App Development" },
+    { href: "/services", label: "Augmented Reality" },
+    { href: "/services", label: "Performance Marketing" },
+    { href: "/services", label: "Rapid Website Development" },
+    { href: "/services", label: "Backend & Frontend Outsource" },
+    { href: "/services", label: "WhatsApp Chatbots" },
+    { href: "/services", label: "Digital Business Consulting" },
+    { href: "/services", label: "Digital Branding" },
+    { href: "/services", label: "Digital Analytics" },
+    { href: "/services", label: "Digital Transformation" },
 ];
 
 const webSolutionLinks = [

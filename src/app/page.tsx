@@ -65,76 +65,31 @@ export default function Home() {
     (img) => img.id === "service-content"
   );
 
-  const heroImages = [
-    {
-      id: "hero-main-1",
-      src: "https://drive.google.com/uc?export=view&id=1_skyPQLwCvJ_IrPtgKPZTfkGdAZ-zN8b",
-      alt: "Media professional editing video",
-      hint: "video editing",
-      title: "Innovate. Create. Elevate.",
-      subtitle: "We are the architects of your digital success story.",
-      buttonLink: "/services",
-      buttonText: "Our Services",
-      titleColor: "text-primary",
-      subtitleColor: "text-primary/90",
-    },
-    {
-      id: "hero-main-2",
-      src: "https://drive.google.com/uc?export=view&id=1CTX9EvAM9DZHbThXj9Gm0TN0T0E0x4pK",
-      alt: "Team collaborating in a media agency",
-      hint: "media team",
-      title: "Transforming Brands with Ideas",
-      subtitle: "Igniting behavioral change through powerful media strategies.",
-      buttonLink: "/story",
-      buttonText: "Our Story",
-      titleColor: "text-yellow-400",
-      subtitleColor: "text-yellow-400/90",
-    },
-    {
-      id: "hero-main-3",
-      src: "https://drive.google.com/uc?export=view&id=1oyEsTgo_HnNtGS7oq3Q4_txz4G5Sn5Eq",
-      alt: "Professional camera setup for media production",
-      hint: "camera setup",
-      title: "Content that Connects",
-      subtitle: "From stunning visuals to compelling narratives, we produce media that matters.",
-      buttonLink: "/contact",
-      buttonText: "Get in Touch",
-      titleColor: "text-orange-500",
-      subtitleColor: "text-orange-500",
-    },
-  ];
-
   return (
     <>
-      <section className="w-full relative">
-        <Carousel
-          plugins={[
-            Autoplay({
-              delay: 2000,
-              stopOnInteraction: false,
-              playOnInit: true,
-            }),
-          ]}
-          className="w-full"
-          opts={{ loop: true }}
-        >
-          <CarouselContent>
-            {heroImages.map((img) => (
-              <CarouselItem key={img.id}>
-                <div className="relative h-[60vh] md:h-[100vh] w-full">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover w-full h-auto"
-                    priority={img.id === "hero-main-1"}
-                    data-ai-hint={img.hint}
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+      <section className="relative h-[60vh] md:h-[100vh] w-full">
+        <Image
+          src="https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4"
+          alt="Hero banner showing a collage of business and technology images"
+          fill
+          className="object-cover w-full h-full"
+          priority
+          data-ai-hint="business technology collage"
+        />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+                Innovate. Create. Elevate.
+            </h1>
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
+                We are the architects of your digital success story.
+            </p>
+            <Button asChild size="lg" className="mt-8 group animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+                <Link href="/services">
+                    Our Services <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+            </Button>
+        </div>
       </section>
       
        <section

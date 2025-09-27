@@ -278,13 +278,13 @@ export default function Home() {
 
       <OurClients />
       
-      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/green-mountain/1920/1080')` }}>
-        <div className="absolute inset-0 bg-background/80 z-0" />
+      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/forested-mountains/1920/1080')` }}>
+        <div className="absolute inset-0 bg-black/50 z-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight text-white mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Architects of Digital Success
           </h1>
-          <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
+          <p className="max-w-3xl mx-auto text-white/90 md:text-xl mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
             From groundbreaking strategies to stunning Shopify stores, we are
             the architects of your digital success. Explore our services and see
             how we can elevate your brand.
@@ -302,3 +302,5 @@ export default function Home() {
     </>
   );
 }
+
+    

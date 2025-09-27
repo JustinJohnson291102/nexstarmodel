@@ -29,6 +29,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
+        // ✅ FIX: Google Drive domain added for security
         protocol: 'https',
         hostname: 'drive.google.com',
         port: '',

@@ -1,22 +1,24 @@
-
 "use client";
 
 import Image from "next/image";
 
+// 🔥 FIX: URLs ko working content links (uc?id=FILE_ID) mein change kiya gaya hai.
 const clientLogos = [
-  { src: "https://drive.google.com/uc?export=view&id=1_Vjppvim9Ug8jWFP3FYcreN2IvyuS_VF", alt: "Client 9" },
-  { src: "https://drive.google.com/uc?export=view&id=1FtVMODKP_rrtPliRW_JBsTA5YTyVgNNI", alt: "Client 8" },
-  { src: "https://drive.google.com/uc?export=view&id=1d7KIVO44tAxicBtKHyl38-N2DCbUC_Ww", alt: "Client 7" },
-  { src: "https://drive.google.com/uc?export=view&id=1KJ5dH544HRp4MALUuHvcbdYTk1pHkq0F", alt: "Client 6" },
-  { src: "https://drive.google.com/uc?export=view&id=1O0XMxmIkw4H0OcKXAsOAWvxtlfnM8df5", alt: "Client 5" },
-  { src: "https://drive.google.com/uc?export=view&id=19gJl3oMZllb5sM3D7N8eTmk6wilyJt3A", alt: "Client 4" },
-  { src: "https://drive.google.com/uc?export=view&id=1Y9ZIuky4ZjFZ1-VanWgVjRIzvPHXC5ST", alt: "Client 3" },
-  { src: "https://drive.google.com/uc?export=view&id=1OAzH7GHcGCN6uL4BKLX9p8y5iZSRZMvk", alt: "Client 2" },
-  { src: "https://drive.google.com/uc?export=view&id=14j2sZyJV1YATRiyJSg2E0_O9DjPk8-D6", alt: "Client 1" },
+  { src: "https://drive.google.com/uc?id=1zCWkBc3CvzOA1aJLOPqNWK0CvhRY0XjG", alt: "Client 9" },
+  { src: "https://drive.google.com/uc?id=1j2qPrDz4DksDoFWUlcw4SH_FzIqyKT4W", alt: "Client 8" },
+  { src: "https://drive.google.com/uc?id=1Z0qzQSkiuCXCfBTFByuLTTTUK8_5TJQq", alt: "Client 7" },
+  { src: "https://drive.google.com/uc?id=1V-1ZN6YRSXiFwrg8SC2fZ40pacv20LSu", alt: "Client 6" },
+  { src: "https://drive.google.com/uc?id=1R7erTvruugfy6TonWIEYiAYDClLZKT_V", alt: "Client 5" },
+  { src: "https://drive.google.com/uc?id=1PPd2IcOvjjNdjXkGB0ujmfFv6SideA63", alt: "Client 4" },
+  { src: "https://drive.google.com/uc?id=1MtWFo7keLU5ReO-1Bvda0ZlQqwYugEAp", alt: "Client 3" },
+  { src: "https://drive.google.com/uc?id=1L7f9fjN0-jQc349EcttHLhnj0JyZqZph", alt: "Client 2" },
+  { src: "https://drive.google.com/uc?id=1Kd0-0XP3HgMxJq7KEQXb2ZMGcS5KU0l8", alt: "Client 1" },
 ];
 
 export default function OurClients() {
-  const extendedLogos = [...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos];
+  // Continuous loop ke liye logos ko duplicate kiya gaya hai
+  const extendedLogos = [...clientLogos, ...clientLogos]; 
+  
   return (
     <section className="py-20 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -25,11 +27,13 @@ export default function OurClients() {
             Our Clients
           </h2>
           <div
-            className="relative flex overflow-x-hidden"
+            // Main container: flex, overflow-x-hidden, aur w-full
+            className="relative flex overflow-x-hidden w-full group"
           >
-            <div className="py-2 animate-marquee-slow whitespace-nowrap flex">
+            {/* Pehla set: w-max aur flex-shrink-0 continuous strip ensure karte hain */}
+            <div className="flex w-max animate-marquee-slow flex-shrink-0">
               {extendedLogos.map((logo, index) => (
-                <div key={index} className="mx-8 flex items-center justify-center">
+                <div key={`set1-${index}`} className="mx-8 flex items-center justify-center h-16 opacity-50 transition-opacity duration-300 hover:opacity-100">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
@@ -41,9 +45,10 @@ export default function OurClients() {
               ))}
             </div>
 
-            <div className="absolute top-0 py-2 animate-marquee2-slow whitespace-nowrap flex">
+            {/* Doosra set: Loop ko complete karta hai */}
+            <div className="flex w-max animate-marquee-slow flex-shrink-0" aria-hidden="true">
               {extendedLogos.map((logo, index) => (
-                <div key={index} className="mx-8 flex items-center justify-center">
+                <div key={`set2-${index}`} className="mx-8 flex items-center justify-center h-16 opacity-50 transition-opacity duration-300 hover:opacity-100">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
@@ -54,6 +59,7 @@ export default function OurClients() {
                 </div>
               ))}
             </div>
+            
           </div>
         </div>
       </div>

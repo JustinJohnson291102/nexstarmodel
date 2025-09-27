@@ -1,4 +1,3 @@
-
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -83,21 +82,18 @@ export default {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-8px)' },
         },
+        // ✅ Correct Marquee Keyframe
         'marquee-slow': {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
-        },
-        'marquee2-slow': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         float: 'float 3s ease-in-out infinite',
+        // ✅ Correct Marquee Animation
         'marquee-slow': 'marquee-slow 60s linear infinite',
-        'marquee2-slow': 'marquee2-slow 60s linear infinite',
       },
     },
   },

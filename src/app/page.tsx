@@ -212,8 +212,9 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 md:py-32 bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/tech-abstract/1920/1080')` }}>
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">WHO WE ARE</h3>
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -225,7 +226,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/80">
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/team-passion/600/400" width={600} height={400} alt="Passionate Team" data-ai-hint="passionate team" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
@@ -241,7 +242,7 @@ export default function Home() {
               </CardContent>
             </Card>
             
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300 bg-card/80">
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/team-collab/600/400" width={600} height={400} alt="Team Collaboration" data-ai-hint="team collaboration" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
@@ -257,7 +258,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400 bg-card/80">
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/global-reach/600/400" width={600} height={400} alt="Global Reach" data-ai-hint="global network" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
@@ -302,5 +303,3 @@ export default function Home() {
     </>
   );
 }
-
-    

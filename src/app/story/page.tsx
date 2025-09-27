@@ -129,7 +129,7 @@ export default function StoryPage() {
   return (
     <>
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
-        <div className="absolute inset-0 bg-black/30 z-10" />
+        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <Image
           src="https://drive.google.com/uc?export=view&id=1OqAyh5AJXjw63hlhWy3koRpY8GXgoGe6"
           alt="Group of people collaborating"
@@ -151,7 +151,7 @@ export default function StoryPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/office-parallax/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/60 z-0" />
+        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
@@ -182,7 +182,7 @@ export default function StoryPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/story-journey/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-secondary/70 z-0" />
+        <div className="absolute inset-0 bg-secondary/70 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Journey So Far</h2>
@@ -215,7 +215,7 @@ export default function StoryPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/abstract-values/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/60 z-0" />
+        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
            <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Core Values</h2>
@@ -243,7 +243,7 @@ export default function StoryPage() {
         className="py-20 md:py-32 bg-secondary relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/story-team/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-secondary/60 z-0" />
+        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-full mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -277,7 +277,7 @@ export default function StoryPage() {
         className="py-20 md:py-32 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/story-clients/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/60 z-0" />
+        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-foreground animate-in fade-in slide-in-from-bottom-5 duration-500">Client's Success Is Our Success</h2>
@@ -314,5 +314,3 @@ export default function StoryPage() {
     </>
   );
 }
-
-    

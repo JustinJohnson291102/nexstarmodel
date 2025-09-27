@@ -67,7 +67,7 @@ export default function CreativeBrandingPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
@@ -131,7 +131,7 @@ export default function CreativeBrandingPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/branding-choose/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-primary/70 z-10" />
+        <div className="absolute inset-0 bg-primary/70 z-10"></div>
         <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -172,5 +172,3 @@ export default function CreativeBrandingPage() {
     </div>
   );
 }
-
-    

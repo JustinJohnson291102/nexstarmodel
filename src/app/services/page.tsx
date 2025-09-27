@@ -173,7 +173,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <div className="absolute inset-0 bg-black/20 z-10" />
+        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <Image
           src="https://drive.google.com/uc?export=view&id=1t_TXcMnPTHoBkeRjQ4gE0w72lgzAquqW"
           alt="Services background"
@@ -193,7 +193,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="relative py-20 md:py-32" style={{ backgroundImage: `url('https://picsum.photos/seed/services-bg/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <div className="absolute inset-0 bg-background/50 z-0" />
+        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="space-y-20 md:space-y-32">
             {servicesData.map((service, index) => (
@@ -254,7 +254,7 @@ export default function ServicesPage() {
         className="py-20 md:py-24 bg-secondary relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/why-us-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-secondary/50 z-0" />
+        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -266,7 +266,7 @@ export default function ServicesPage() {
           </div>
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
             {whyChooseUsFeatures.map((feature, index) => (
-                <div key={index} className="flex flex-col items-center p-8 bg-card/40 backdrop-blur-sm rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+                <div key={index} className="flex flex-col items-center p-8 bg-card/50 backdrop-blur-sm rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
                     <feature.icon className="h-12 w-12 text-primary mb-4" />
                     <h3 className="text-xl font-semibold font-headline mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
@@ -300,5 +300,3 @@ export default function ServicesPage() {
     </>
   );
 }
-
-    

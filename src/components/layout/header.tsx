@@ -25,12 +25,15 @@ const mainLinks = [
 const serviceLinks = [
     { href: "/social-media", label: "Social Media" },
     { href: "/creative-branding", label: "Creative & Branding" },
-    { href: "/web-solutions", label: "Web/Tech Solutions" },
     { href: "/b2b", label: "B2B Marketing" },
     { href: "/search-marketing", label: "Search Marketing" },
     { href: "/video-production", label: "Video Production" },
     { href: "/online-reputation-management", label: "Online Reputation Management" },
     { href: "/ecommerce-development", label: "E-commerce Development" },
+];
+
+const webSolutionLinks = [
+    { href: "/web-solutions", label: "Web/Tech Solutions" },
     { href: "/shopify", label: "Shopify Expertise" },
 ]
 
@@ -89,7 +92,7 @@ export default function Header() {
                     href="/services"
                     className={cn(
                       "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
-                       pathname.startsWith('/services') || pathname.startsWith('/social-media') || pathname.startsWith('/creative-branding') || pathname.startsWith('/web-solutions') || pathname.startsWith('/b2b') || pathname.startsWith('/search-marketing') || pathname.startsWith('/video-production') || pathname.startsWith('/online-reputation-management') || pathname.startsWith('/ecommerce-development') || pathname.startsWith('/shopify') ? 'text-primary' : ''
+                       pathname.startsWith('/services') || pathname.startsWith('/social-media') || pathname.startsWith('/creative-branding') || pathname.startsWith('/b2b') || pathname.startsWith('/search-marketing') || pathname.startsWith('/video-production') || pathname.startsWith('/online-reputation-management') || pathname.startsWith('/ecommerce-development') ? 'text-primary' : ''
                     )}
                   >
                   Services <ChevronDown className="h-4 w-4 ml-1" />
@@ -100,6 +103,26 @@ export default function Header() {
                     <Link href="/services">All Services</Link>
                   </DropdownMenuItem>
                 {serviceLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href}>{link.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                 <button
+                    className={cn(
+                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                       pathname.startsWith('/web-solutions') || pathname.startsWith('/shopify') ? 'text-primary' : ''
+                    )}
+                  >
+                  Web Solutions <ChevronDown className="h-4 w-4 ml-1" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {webSolutionLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
                     <Link href={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
@@ -142,7 +165,7 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
-                {[...mainLinks, {href: "/services", label: "Services"}, ...otherLinks].map(
+                {[...mainLinks, {href: "/services", label: "Services"}, {href: "/web-solutions", label: "Web Solutions"}, ...otherLinks].map(
                   ({ href, label }) => (
                     <NavLink key={href} href={href} label={label} />
                   )

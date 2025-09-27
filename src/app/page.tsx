@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <>
-       <section className="relative h-[60vh] md:h-[100vh] w-full">
+       <section className="relative h-[60vh] md:h-[70vh] w-full">
         <Carousel
           plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
           className="w-full h-full"
@@ -62,7 +62,7 @@ export default function Home() {
           <CarouselContent>
             {heroImages.map((image, index) => (
               <CarouselItem key={index}>
-                <div className="w-full h-[60vh] md:h-[100vh] relative">
+                <div className="w-full h-[60vh] md:h-[70vh] relative">
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -77,7 +77,7 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[100vh]">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[70vh]">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
           </h1>

@@ -149,7 +149,7 @@ export default function StoryPage() {
 
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/vision-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/story-vision/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -180,7 +180,7 @@ export default function StoryPage() {
       
       <section 
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/timeline-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/story-journey/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-secondary/90 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -213,7 +213,7 @@ export default function StoryPage() {
 
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/values-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/story-values/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -241,7 +241,7 @@ export default function StoryPage() {
 
       <section 
         className="py-20 md:py-32 bg-secondary relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/team-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/story-team/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -275,7 +275,7 @@ export default function StoryPage() {
       
       <section 
         className="py-20 md:py-32 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/bright-office/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/story-clients/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">

@@ -124,11 +124,11 @@ export default function Home() {
                     priority={img.id === "hero-main-1"}
                     data-ai-hint={img.hint}
                   />
-                  <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white p-4">
+                  <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-primary p-4">
                     <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
                       {img.title}
                     </h1>
-                    <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto mb-8 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+                    <p className="text-lg md:text-2xl text-primary/90 max-w-3xl mx-auto mb-8 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                       {img.subtitle}
                     </p>
                     <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">

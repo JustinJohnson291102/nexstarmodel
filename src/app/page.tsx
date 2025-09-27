@@ -67,7 +67,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[60vh] md:h-[100vh] w-full">
+      <section className="relative h-[42vh] md:h-[70vh] w-full">
         <Image
           src="https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4"
           alt="Hero banner showing a collage of business and technology images"

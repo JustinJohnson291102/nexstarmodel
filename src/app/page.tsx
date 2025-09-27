@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-       <section className="relative h-[60vh] md:h-[70vh] w-full bg-black">
+       <section className="relative h-[60vh] md:h-[70vh] w-full">
         <Carousel
           plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
           className="w-full h-full"
@@ -284,3 +284,5 @@ export default function Home() {
     </>
   );
 }
+
+    

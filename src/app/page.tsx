@@ -20,6 +20,24 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
+const carouselImages = [
+  {
+    src: "https://drive.google.com/uc?export=download&id=1SuutNluGyzd-wJChk9VFu-wJ0arkx19X",
+    alt: "Hero Image 2",
+    hint: "business collage"
+  },
+  {
+    src: "https://drive.google.com/uc?export=download&id=13ktX4VyT7daPwQE1vJGb8gkNd3beWNJt",
+    alt: "Hero Image 3",
+    hint: "technology collage"
+  },
+  {
+    src: "https://drive.google.com/uc?export=download&id=1H1Raqxyy4go2eLbMchu0yeuEPJ_eO7Am",
+    alt: "Hero Image 4",
+    hint: "marketing collage"
+  },
+];
+
 export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
     (img) => img.id === "service-branding"
@@ -30,19 +48,36 @@ export default function Home() {
 
   return (
     <>
-      {/* ✅ FIX APPLIED: Hero banner height restored to a large size: 'md:h-[75vh]' */}
-      <section className="relative h-[200vh] w-full"> 
-        <Image
-          src="https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4" // Using the corrected download URL
-          alt="Hero banner showing a collage of business and technology images"
-          fill
-          // 'object-cover' ensures the image covers the container, which is what you want for a banner.
-          className="object-cover w-full h-full" 
-          priority
-          data-ai-hint="business technology collage"
-        />
+      <section className="relative h-[200vh] w-full">
+         <Carousel
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+            }),
+          ]}
+          className="w-full h-full"
+          opts={{ loop: true }}
+        >
+          <CarouselContent>
+            {carouselImages.map((img, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[200vh] w-full">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover w-full h-full"
+                    priority={index === 0}
+                    data-ai-hint={img.hint}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[200vh]">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
           </h1>
@@ -268,3 +303,4 @@ export default function Home() {
     </>
   );
 }
+    

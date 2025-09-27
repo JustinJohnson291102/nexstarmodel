@@ -10,7 +10,7 @@ export default function Marquee({ text, className }: MarqueeProps) {
   return (
     <div
       className={cn(
-        'bg-primary text-primary-foreground fixed bottom-0 left-0 right-0 z-50 flex w-full overflow-x-hidden',
+        'bg-accent text-accent-foreground fixed bottom-0 left-0 right-0 z-50 flex w-full overflow-x-hidden',
         className
       )}
     >

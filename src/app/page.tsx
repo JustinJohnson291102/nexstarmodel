@@ -54,54 +54,56 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[140vh] w-full">
-        <Carousel
-          plugins={[
-            Autoplay({
-              delay: 2000,
-              stopOnInteraction: false,
-            }),
-          ]}
-          className="w-full h-full"
-          opts={{ loop: true }}
-        >
-          <CarouselContent>
-            {carouselImages.map((img, index) => (
-              <CarouselItem key={index}>
-                <div className="relative h-[140vh] w-full">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-contain w-full h-full"
-                    priority={index === 0}
-                    data-ai-hint={img.hint}
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-            Innovate. Create. Elevate.
-          </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
-            We are the architects of your digital success story.
-          </p>
-          <Button
-            asChild
-            size="lg"
-            className="mt-8 group animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200"
+      <div className="w-[80vw] mx-auto">
+        <section className="relative h-[140vh] w-full">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+              }),
+            ]}
+            className="w-full h-full"
+            opts={{ loop: true }}
           >
-            <Link href="/services">
-              Our Services{" "}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
-        </div>
-      </section>
+            <CarouselContent>
+              {carouselImages.map((img, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative h-[140vh] w-full">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-contain w-full h-full"
+                      priority={index === 0}
+                      data-ai-hint={img.hint}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+              Innovate. Create. Elevate.
+            </h1>
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
+              We are the architects of your digital success story.
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="mt-8 group animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200"
+            >
+              <Link href="/services">
+                Our Services{" "}
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
+          </div>
+        </section>
+      </div>
 
       {/* The rest of your component logic follows: */}
       

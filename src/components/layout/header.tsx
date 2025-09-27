@@ -20,27 +20,21 @@ import {
 const mainLinks = [
   { href: "/", label: "Home" },
   { href: "/story", label: "Our Story" },
-  { href: "/services", label: "Services" },
 ];
 
 const serviceLinks = [
     { href: "/social-media", label: "Social Media" },
     { href: "/creative-branding", label: "Creative & Branding" },
-    { href: "/web-solutions", label: "Web/Tech" },
+    { href: "/web-solutions", label: "Web/Tech Solutions" },
     { href: "/b2b", label: "B2B Marketing" },
     { href: "/search-marketing", label: "Search Marketing" },
     { href: "/video-production", label: "Video Production" },
     { href: "/online-reputation-management", label: "Online Reputation Management" },
     { href: "/ecommerce-development", label: "E-commerce Development" },
+    { href: "/shopify", label: "Shopify Expertise" },
 ]
 
-const webSolutionsLinks = [
-  { href: "/web-solutions", label: "Web Solutions" },
-  { href: "/shopify", label: "Shopify" },
-];
-
 const otherLinks = [
-  { href: "/b2b", label: "B2B Marketing" },
   { href: "/xtrack", label: "XTrack" },
   { href: "/portfolio", label: "Portfolio" },
 ];
@@ -52,28 +46,22 @@ export default function Header() {
   const NavLink = ({
     href,
     label,
-    isNew,
     className = "",
   }: {
     href: string;
     label: string;
-    isNew?: boolean;
     className?: string;
   }) => (
     <Link
       href={href}
       className={cn(
-        "text-lg font-medium transition-colors hover:text-primary flex flex-col items-center",
+        "text-lg font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary" : "text-foreground",
         className
       )}
+       onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}
     >
       {label}
-      {isNew && (
-        <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full mt-1">
-          NEW
-        </span>
-      )}
     </Link>
   );
 
@@ -92,40 +80,36 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end md:justify-center">
           <nav className="hidden md:flex md:gap-6 items-center">
             {mainLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "text-lg font-medium transition-colors hover:text-primary",
-                  pathname === link.href ? "text-primary" : "text-foreground"
-                )}
-              >
-                {link.label}
-              </Link>
+              <NavLink key={link.href} href={link.href} label={link.label} />
             ))}
-             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
-                More <ChevronDown className="h-4 w-4 ml-1" />
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                 <Link
+                    href="/services"
+                    className={cn(
+                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                       pathname.startsWith('/services') || pathname.startsWith('/social-media') || pathname.startsWith('/creative-branding') || pathname.startsWith('/web-solutions') || pathname.startsWith('/b2b') || pathname.startsWith('/search-marketing') || pathname.startsWith('/video-production') || pathname.startsWith('/online-reputation-management') || pathname.startsWith('/ecommerce-development') || pathname.startsWith('/shopify') ? 'text-primary' : ''
+                    )}
+                  >
+                  Services <ChevronDown className="h-4 w-4 ml-1" />
+                </Link>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                {serviceLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} asChild>
-                    <Link href={link.href}>{link.label}</Link>
-                  </DropdownMenuItem>
-                ))}
                  <DropdownMenuItem asChild>
-                    <Link href="/web-solutions">Web Solutions</Link>
+                    <Link href="/services">All Services</Link>
                   </DropdownMenuItem>
-                   <DropdownMenuItem asChild>
-                    <Link href="/shopify">Shopify</Link>
-                  </DropdownMenuItem>
-                 {otherLinks.map((link) => (
+                {serviceLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
                     <Link href={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {otherLinks.map((link) => (
+              <NavLink key={link.href} href={link.href} label={link.label} />
+            ))}
           </nav>
         </div>
         <div className="hidden md:flex items-center mr-8">
@@ -157,20 +141,10 @@ export default function Header() {
                   />
                 </Link>
               </div>
-              <div className="flex-1 flex flex-col gap-4">
-                {[...mainLinks, ...serviceLinks, ...webSolutionsLinks, ...otherLinks].map(
+              <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
+                {[...mainLinks, {href: "/services", label: "Services"}, ...otherLinks].map(
                   ({ href, label }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className={cn(
-                        "text-lg font-medium transition-colors hover:text-primary",
-                        pathname === href ? "text-primary" : "text-foreground"
-                      )}
-                    >
-                      {label}
-                    </Link>
+                    <NavLink key={href} href={href} label={label} />
                   )
                 )}
               </div>

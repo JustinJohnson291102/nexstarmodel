@@ -22,19 +22,24 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
+    src: "https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    alt: "Hero Image 1",
+    hint: "team brainstorming",
+  },
+  {
     src: "https://drive.google.com/uc?export=download&id=1SuutNluGyzd-wJChk9VFu-wJ0arkx19X",
     alt: "Hero Image 2",
-    hint: "business collage"
+    hint: "business collage",
   },
   {
     src: "https://drive.google.com/uc?export=download&id=13ktX4VyT7daPwQE1vJGb8gkNd3beWNJt",
     alt: "Hero Image 3",
-    hint: "technology collage"
+    hint: "technology collage",
   },
   {
     src: "https://drive.google.com/uc?export=download&id=1H1Raqxyy4go2eLbMchu0yeuEPJ_eO7Am",
     alt: "Hero Image 4",
-    hint: "marketing collage"
+    hint: "marketing collage",
   },
 ];
 
@@ -48,8 +53,8 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[200vh] w-full">
-         <Carousel
+      <section className="relative h-screen w-full">
+        <Carousel
           plugins={[
             Autoplay({
               delay: 2000,
@@ -62,7 +67,7 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-[200vh] w-full">
+                <div className="relative h-screen w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}
@@ -77,7 +82,7 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[200vh]">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[100vh]">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
           </h1>
@@ -303,4 +308,3 @@ export default function Home() {
     </>
   );
 }
-    

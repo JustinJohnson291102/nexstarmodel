@@ -71,16 +71,27 @@ const similarProjects = [
 ];
 
 export default function PortfolioPage() {
+  
+  // ✅ UPDATED: New Google Drive link converted to 'uc' (unauthenticated content) format
+  // for direct use with the Next.js Image component and the parallax effect.
+  const heroImageUrl = "https://drive.google.com/uc?id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp";
+
   return (
     <div className="bg-background text-foreground">
+      
+      {/* HERO SECTION with new image and parallax effect */}
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage:
-            "url('https://drive.google.com/uc?export=view&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp')",
-        }}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center"
       >
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        <Image 
+          src={heroImageUrl} 
+          alt="Abstract blue and pink technology background for portfolio hero section with parallax effect" 
+          fill
+          // `bg-fixed` class provides the parallax scrolling effect
+          className="object-cover object-center bg-fixed"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60 z-10" /> {/* Darker overlay for text visibility */}
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white">
@@ -92,6 +103,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* CASE STUDIES SECTION */}
       <section className="relative py-20 md:py-24" style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract-2/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -145,6 +157,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* PROJECTS SECTION */}
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/light-abstract-bg/1920/1080')` }}

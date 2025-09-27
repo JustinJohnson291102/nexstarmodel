@@ -21,7 +21,7 @@ export default function OurClients() {
   const extendedLogos = [...clientLogos, ...clientLogos]; 
   
   return (
-    <section className="py-12 md:py-16 bg-background">
+    <section className="py-12 md:py-16 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="font-headline text-primary text-3xl md:text-5xl font-bold tracking-tight mb-12 animate-in fade-in slide-in-from-bottom-10 duration-700">

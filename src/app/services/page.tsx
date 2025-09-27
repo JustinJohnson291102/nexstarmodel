@@ -139,7 +139,7 @@ const servicesData = [
     ],
     image: "https://picsum.photos/seed/mobile-app-ui/600/400",
     imageAlt: "A mobile phone displaying a modern app interface.",
-    link: "/services",
+    link: "/mobile-app-development",
     imageHint: "mobile app",
   },
   {

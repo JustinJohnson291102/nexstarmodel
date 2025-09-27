@@ -229,18 +229,20 @@ export default function ServicesPage() {
                   <ul className="space-y-3 mb-8">
                     {service.points.slice(0, 5).map((point) => (
                       <li key={point} className={`flex items-start ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                        <CheckCircle className={`h-5 w-5 text-primary mt-1 flex-shrink-0 ${index % 2 === 0 ? 'md:ml-3' : 'mr-3'}`} />
+                        {index % 2 !== 0 && <CheckCircle className={`h-5 w-5 text-primary mt-1 flex-shrink-0 mr-3`} />}
                         <span className="text-lg text-muted-foreground">{point}</span>
-                         {index % 2 !== 0 && <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0 invisible" />}
+                         {index % 2 === 0 && <CheckCircle className="h-5 w-5 text-primary ml-3 mt-1 flex-shrink-0" />}
                       </li>
                     ))}
                   </ul>
-                   <Button asChild size="lg" className="group rounded-lg">
-                    <Link href={service.link}>
-                      View More
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </Button>
+                  <div className={`flex ${index % 2 !== 0 ? 'justify-start' : 'justify-end'}`}>
+                    <Button asChild size="lg" className="group rounded-lg w-auto">
+                      <Link href={service.link}>
+                        View More
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             ))}

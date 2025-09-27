@@ -20,42 +20,26 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
-// 🚀 FIX APPLIED: Changed Google Drive links to use 'export=download' for direct image access.
-const servicesData = [
+const heroImages = [
   {
-    title: "Social Media Marketing",
-    points: [
-      "Social-First Strategy Development",
-      "Platform Management",
-      "Community Building + Engagement",
-      "Campaign Creation + Execution",
-      "Social Listening",
-      "Brand Positioning",
-      "Content Analysis + Auditing",
-      "Competitive Analysis",
-      "Co-branded Partnerships",
-      "Audience + Persona Development",
-    ],
-    // Corrected URL
-    image:
-      "https://drive.google.com/uc?export=download&id=1DDddv8fnkOXtN8VvDIA3UNhve401V93J",
-    imageAlt: "Social Media Marketing",
-    link: "/services",
+    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    alt: "Hero banner showing a collage of business and technology images",
+    hint: "business technology collage",
   },
   {
-    title: "Creative and Branding Services",
-    points: [
-      "Branding & Creative Strategy",
-      "Graphic Design",
-      "Illustration",
-      "Copywriting",
-      "Full Production: Photo Shoots + Video Shoots",
-    ],
-    // Corrected URL
-    image:
-      "https://drive.google.com/uc?export=download&id=1jY1qGWPlCndtNUQGCWiTInrFUkCSgoxJ",
-    imageAlt: "Creative and Branding Services",
-    link: "/services",
+    src: "https://drive.google.com/uc?export=download&id=1SuutNluGyzd-wJChk9VFu-wJ0arkx19X",
+    alt: "Second hero banner image",
+    hint: "digital marketing team",
+  },
+  {
+    src: "https://drive.google.com/uc?export=download&id=1H1Raqxyy4go2eLbMchu0yeuEPJ_eO7Am",
+    alt: "Third hero banner image",
+    hint: "creative design process",
+  },
+  {
+    src: "https://drive.google.com/uc?export=download&id=13ktX4VyT7daPwQE1vJGb8gkNd3beWNJt",
+    alt: "Fourth hero banner image",
+    hint: "data analytics dashboard",
   },
 ];
 
@@ -69,18 +53,31 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[60vh] md:h-[100vh] w-full">
-        <Image
-          // 🚀 FIX APPLIED: Corrected hero image URL
-          src="https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4"
-          alt="Hero banner showing a collage of business and technology images"
-          fill
-          className="object-cover w-full h-full"
-          priority
-          data-ai-hint="business technology collage"
-        />
+       <section className="relative h-[60vh] md:h-[100vh] w-full">
+        <Carousel
+          plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
+          className="w-full h-full"
+          opts={{ loop: true }}
+        >
+          <CarouselContent>
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="w-full h-[60vh] md:h-[100vh] relative">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover w-full h-full"
+                    priority={index === 0}
+                    data-ai-hint={image.hint}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[100vh]">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
           </h1>
@@ -304,4 +301,3 @@ export default function Home() {
     </>
   );
 }
-    

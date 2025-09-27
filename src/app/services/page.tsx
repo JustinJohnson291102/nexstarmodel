@@ -217,8 +217,10 @@ export default function ServicesPage() {
                   />
                 </div>
                 <div
-                  className={`animate-in fade-in duration-700 ${
-                    index % 2 !== 0 ? "md:order-1 slide-in-from-left-10" : "slide-in-from-right-10"
+                  className={`flex flex-col animate-in fade-in duration-700 ${
+                    index % 2 !== 0
+                      ? "md:order-1 slide-in-from-left-10"
+                      : "md:items-end md:text-right slide-in-from-right-10"
                   }`}
                 >
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">
@@ -226,9 +228,10 @@ export default function ServicesPage() {
                   </h2>
                   <ul className="space-y-3 mb-8">
                     {service.points.slice(0, 5).map((point) => (
-                      <li key={point} className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <li key={point} className={`flex items-start ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
+                        <CheckCircle className={`h-5 w-5 text-primary mt-1 flex-shrink-0 ${index % 2 === 0 ? 'md:ml-3' : 'mr-3'}`} />
                         <span className="text-lg text-muted-foreground">{point}</span>
+                         {index % 2 !== 0 && <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0 invisible" />}
                       </li>
                     ))}
                   </ul>
@@ -295,3 +298,5 @@ export default function ServicesPage() {
     </>
   );
 }
+
+    

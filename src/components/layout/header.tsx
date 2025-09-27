@@ -33,13 +33,14 @@ const serviceLinks = [
     { href: "/web-solutions", label: "Website Development" },
     { href: "/mobile-app-development", label: "Mobile App Development" },
     { href: "/augmented-reality", label: "Augmented Reality" },
+    { href: "/gtm-strategy", label: "GTM Strategy"},
     { href: "/services", label: "Performance Marketing" },
     { href: "/services", label: "Rapid Website Development" },
     { href: "/services", label: "Backend & Frontend Outsource" },
     { href: "/services", label: "WhatsApp Chatbots" },
     { href: "/services", label: "Digital Business Consulting" },
     { href: "/services", label: "Digital Branding" },
-    { href: "/services", label: "Digital Analytics" },
+    { href: "/xtrack", label: "XTrack Analytics" },
     { href: "/services", label: "Digital Transformation" },
 ];
 
@@ -104,7 +105,19 @@ export default function Header() {
                     href="/services"
                     className={cn(
                       "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
-                       pathname.startsWith('/services') || pathname.startsWith('/social-media') || pathname.startsWith('/creative-branding') || pathname.startsWith('/b2b') || pathname.startsWith('/search-marketing') || pathname.startsWith('/video-production') || pathname.startsWith('/online-reputation-management') || pathname.startsWith('/ecommerce-development') || pathname.startsWith('/augmented-reality') || pathname.startsWith('/mobile-app-development') ? 'text-primary' : ''
+                       pathname.startsWith('/services') || 
+                       pathname.startsWith('/social-media') || 
+                       pathname.startsWith('/creative-branding') || 
+                       pathname.startsWith('/b2b') || 
+                       pathname.startsWith('/search-marketing') || 
+                       pathname.startsWith('/video-production') || 
+                       pathname.startsWith('/online-reputation-management') || 
+                       pathname.startsWith('/ecommerce-development') || 
+                       pathname.startsWith('/augmented-reality') || 
+                       pathname.startsWith('/mobile-app-development') ||
+                       pathname.startsWith('/gtm-strategy') ||
+                       pathname.startsWith('/xtrack')
+                       ? 'text-primary' : ''
                     )}
                   >
                   Services <ChevronDown className="h-4 w-4 ml-1" />

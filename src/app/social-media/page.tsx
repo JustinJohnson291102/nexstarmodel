@@ -35,7 +35,7 @@ export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
     description: "We build and nurture online communities, turning followers into fans and fans into customers.",
-    heroImage: "https://picsum.photos/seed/social-media-hero/1920/1080",
+    heroImage: "https://drive.google.com/uc?export=view&id=1uh05YPHV-IM1OK1EcuoWstfjxERCNhFO",
     heroHint: "social media network",
     features: [
       {
@@ -65,6 +65,7 @@ export default function SocialMediaPage() {
     <div className="bg-background">
       <section
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
         <div className="relative z-20 px-4 text-primary animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">

@@ -130,22 +130,6 @@ export default function Home() {
                     priority={img.id === "hero-main-1"}
                     data-ai-hint={img.hint}
                   />
-                  <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
-                    <h1 className={`text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700 ${img.titleColor}`}>
-                      {img.title}
-                    </h1>
-                    <p className={`text-lg md:text-2xl max-w-3xl mx-auto mb-8 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200 ${img.subtitleColor}`}>
-                      {img.subtitle}
-                    </p>
-                    <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
-                      <Button asChild size="lg" className="group">
-                        <Link href={img.buttonLink}>
-                          {img.buttonText}
-                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
                 </div>
               </CarouselItem>
             ))}

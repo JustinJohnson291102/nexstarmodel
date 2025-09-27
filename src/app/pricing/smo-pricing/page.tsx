@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Check, X } from "lucide-react";
@@ -11,6 +12,7 @@ const pricingPlans = [
   {
     name: "Starter Plan",
     priceMonthly: 399,
+    image: "https://drive.google.com/uc?id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
     features: [
       "Instagram Account Set-Up",
       "Write applicable posts",
@@ -26,6 +28,7 @@ const pricingPlans = [
   {
     name: "Basic Plan",
     priceMonthly: 599,
+    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     features: [
         "Instagram Marketing",
         "Instagram Account Set-Up",
@@ -80,6 +83,7 @@ const pricingPlans = [
   {
     name: "Enterprise Plan",
     priceMonthly: 799,
+    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     features: [
         "Instagram Marketing",
         "Instagram Account Set-Up",
@@ -133,6 +137,7 @@ const pricingPlans = [
   {
     name: "Business Plan",
     priceMonthly: 899,
+    image: "https://drive.google.com/uc?id=1t5M5S-pC7AkWXXznpa8oWlmVY0pe_IAv",
     features: [
         "Instagram Marketing",
         "Instagram Account Set-Up",
@@ -241,6 +246,14 @@ export default function SMOPricingPage() {
             <Card key={plan.name} className={cn("flex flex-col h-full", plan.highlight ? "border-primary border-2 shadow-primary/20" : "")}>
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
+                 <div className="relative w-full h-24 my-4">
+                  <Image
+                    src={plan.image}
+                    alt={`${plan.name} icon`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <p className="text-4xl font-bold text-primary pt-4">
                    ${billingCycle === "monthly" ? plan.priceMonthly : Math.round(plan.priceMonthly * 12 * 0.9)}
                    <span className="text-lg font-medium text-muted-foreground">/{billingCycle === "monthly" ? "mo" : "yr"}</span>

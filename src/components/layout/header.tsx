@@ -58,7 +58,7 @@ export default function Header() {
     <Link
       href={href}
       className={cn(
-        "text-lg font-medium transition-colors hover:text-primary",
+        "text-xl font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary" : "text-foreground",
         className
       )}
@@ -91,7 +91,7 @@ export default function Header() {
                  <Link
                     href="/services"
                     className={cn(
-                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        pathname.startsWith('/services') || pathname.startsWith('/social-media') || pathname.startsWith('/creative-branding') || pathname.startsWith('/b2b') || pathname.startsWith('/search-marketing') || pathname.startsWith('/video-production') || pathname.startsWith('/online-reputation-management') || pathname.startsWith('/ecommerce-development') ? 'text-primary' : ''
                     )}
                   >
@@ -114,7 +114,7 @@ export default function Header() {
               <DropdownMenuTrigger asChild>
                  <button
                     className={cn(
-                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        pathname.startsWith('/web-solutions') || pathname.startsWith('/shopify') ? 'text-primary' : ''
                     )}
                   >
@@ -167,7 +167,7 @@ export default function Header() {
               <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
                 {[...mainLinks, {href: "/services", label: "Services"}, {href: "/web-solutions", label: "Web Solutions"}, ...otherLinks].map(
                   ({ href, label }) => (
-                    <NavLink key={href} href={href} label={label} />
+                    <NavLink key={href} href={href} label={label} className="text-lg" />
                   )
                 )}
               </div>

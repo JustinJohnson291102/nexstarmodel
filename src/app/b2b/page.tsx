@@ -19,6 +19,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid } from 'recharts';
+import OurClients from "@/components/homepage/our-clients";
 
 
 const b2bServices = [
@@ -203,6 +204,8 @@ export default function B2BPage() {
         </div>
       </section>
 
+      <OurClients />
+
       <section 
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-solutions/1920/1080')` }}
@@ -266,5 +269,3 @@ export default function B2BPage() {
     </>
   );
 }
-
-    

@@ -9,7 +9,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
+import OurClients from "@/components/homepage/our-clients";
 
 const faqs = [
     {
@@ -125,6 +126,8 @@ export default function VideoProductionPage() {
           </div>
         </div>
       </section>
+
+      <OurClients />
 
       <section 
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"

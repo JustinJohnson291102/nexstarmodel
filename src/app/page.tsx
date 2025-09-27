@@ -68,7 +68,7 @@ export default function Home() {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-contain w-full h-full"
+                    className="object-cover w-full h-full"
                     priority={index === 0}
                     data-ai-hint={image.hint}
                   />
@@ -284,5 +284,3 @@ export default function Home() {
     </>
   );
 }
-
-    

@@ -165,15 +165,15 @@ export default function PortfolioPage() {
       {/* PROJECTS SECTION */}
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/light-abstract-bg/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/dark-nature-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
-        <div className="container mx-auto px-4 relative z-10 text-foreground">
+        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
               Our Projects
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
               A glimpse into our technical expertise and innovative solutions across various domains.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function PortfolioPage() {
             ))}
           </div>
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
-             <Button asChild size="lg" className="group">
+             <Button asChild size="lg" variant="secondary" className="group">
                <Link href="/contact">
                  Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                </Link>

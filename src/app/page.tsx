@@ -87,8 +87,8 @@ export default function Home() {
       subtitle: "Igniting behavioral change through powerful media strategies.",
       buttonLink: "/story",
       buttonText: "Our Story",
-      titleColor: "text-violet-600",
-      subtitleColor: "text-violet-600/90",
+      titleColor: "text-yellow-400",
+      subtitleColor: "text-yellow-400/90",
     },
     {
       id: "hero-main-3",
@@ -99,8 +99,8 @@ export default function Home() {
       subtitle: "From stunning visuals to compelling narratives, we produce media that matters.",
       buttonLink: "/contact",
       buttonText: "Get in Touch",
-      titleColor: "text-gray-800",
-      subtitleColor: "text-gray-700",
+      titleColor: "text-gray-400",
+      subtitleColor: "text-gray-300",
     },
   ];
 
@@ -304,5 +304,3 @@ export default function Home() {
     </>
   );
 }
-
-    

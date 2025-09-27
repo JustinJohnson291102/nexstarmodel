@@ -173,7 +173,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-black/20 z-10" />
         <Image
           src="https://drive.google.com/uc?export=view&id=1t_TXcMnPTHoBkeRjQ4gE0w72lgzAquqW"
           alt="Services background"
@@ -193,7 +193,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="relative py-20 md:py-32" style={{ backgroundImage: `url('https://picsum.photos/seed/services-bg/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/50 z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="space-y-20 md:space-y-32">
             {servicesData.map((service, index) => (
@@ -254,7 +254,7 @@ export default function ServicesPage() {
         className="py-20 md:py-24 bg-secondary relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/why-us-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-secondary/70 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-secondary/50 z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">

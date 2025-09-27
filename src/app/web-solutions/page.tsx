@@ -76,7 +76,7 @@ export default function WebSolutionsPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/web-solutions-hero/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 container mx-auto px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-white mb-4">
             Responsive Website <br /> Development Services
@@ -91,7 +91,7 @@ export default function WebSolutionsPage() {
         className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/web-interfaces/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/60 z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -117,7 +117,7 @@ export default function WebSolutionsPage() {
         className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/web-approach/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-secondary/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-secondary/60 z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-16 text-center animate-in fade-in slide-in-from-bottom-5 duration-500">
             Our Strategic Approach
@@ -170,7 +170,7 @@ export default function WebSolutionsPage() {
         className="py-20 md:py-24 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/web-custom/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/60 z-0" />
         <div className="container mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-in fade-in slide-in-from-left-10 duration-700">
@@ -223,3 +223,5 @@ export default function WebSolutionsPage() {
     </>
   );
 }
+
+    

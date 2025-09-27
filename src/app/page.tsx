@@ -21,29 +21,6 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
-const heroImages = [
-  {
-    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
-    alt: "Hero banner showing a collage of business and technology images",
-    hint: "business technology collage",
-  },
-  {
-    src: "https://drive.google.com/uc?export=download&id=1SuutNluGyzd-wJChk9VFu-wJ0arkx19X",
-    alt: "Second hero banner image",
-    hint: "digital marketing team",
-  },
-  {
-    src: "https://drive.google.com/uc?export=download&id=1H1Raqxyy4go2eLbMchu0yeuEPJ_eO7Am",
-    alt: "Third hero banner image",
-    hint: "creative design process",
-  },
-  {
-    src: "https://drive.google.com/uc?export=download&id=13ktX4VyT7daPwQE1vJGb8gkNd3beWNJt",
-    alt: "Fourth hero banner image",
-    hint: "data analytics dashboard",
-  },
-];
-
 export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
     (img) => img.id === "service-branding"
@@ -54,29 +31,15 @@ export default function Home() {
 
   return (
     <>
-       <section className="relative h-[60vh] md:h-[70vh] w-full">
-        <Carousel
-          plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
-          className="w-full h-full"
-          opts={{ loop: true }}
-        >
-          <CarouselContent>
-            {heroImages.map((image, index) => (
-              <CarouselItem key={index}>
-                <div className="w-full h-[60vh] md:h-[70vh] relative">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover w-full h-full"
-                    priority={index === 0}
-                    data-ai-hint={image.hint}
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+      <section className="relative h-[60vh] md:h-[70vh] w-full">
+        <Image
+          src="https://drive.google.com/uc?export=download&id=1qbJQ-HpshRs-mRcJbqtNnYVpZTPHNook"
+          alt="Hero banner showing a collage of business and technology images"
+          fill
+          className="object-cover w-full h-full"
+          priority
+          data-ai-hint="business technology collage"
+        />
         <div className="absolute inset-0 bg-black/30" />
       </section>
 

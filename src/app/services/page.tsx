@@ -154,7 +154,7 @@ const servicesData = [
     ],
     image: "https://picsum.photos/seed/ar-technology/600/400",
     imageAlt: "A person using a smartphone to view an augmented reality object.",
-    link: "/services",
+    link: "/augmented-reality",
     imageHint: "augmented reality",
   },
   {

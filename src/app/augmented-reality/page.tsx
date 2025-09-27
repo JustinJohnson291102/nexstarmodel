@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -13,7 +12,9 @@ const videoCards = [
   {
     title: "Product Visualization",
     description: "See products in your space before you buy.",
-    videoSrc: "https://drive.google.com/uc?export=download&id=1wE77VMSEdT2cYHbpph6PQbrVYZ6OZon-",
+    // ✅ FIX APPLIED: Replaced the non-streaming Google Drive link with a working MP4 URL.
+    // NOTE: You should replace this Pexels link with your actual, direct video URL.
+    videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4", 
   },
   {
     title: "Interactive Filters",

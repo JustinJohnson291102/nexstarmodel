@@ -165,7 +165,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="hidden md:flex items-center mr-8">
-           <Button asChild className="rounded-lg">
+           <Button asChild className="rounded-full">
               <Link href="/contact">Contact Us</Link>
             </Button>
         </div>
@@ -200,7 +200,7 @@ export default function Header() {
                   )
                 )}
               </div>
-              <Button asChild>
+              <Button asChild className="rounded-full">
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -216,4 +216,3 @@ export default function Header() {
   );
 }
 
-    

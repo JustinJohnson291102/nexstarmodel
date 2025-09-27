@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -74,21 +73,22 @@ const similarProjects = [
 export default function PortfolioPage() {
   return (
     <div className="bg-background text-foreground">
-      <section 
+      <section
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp')` }}
+        style={{
+          backgroundImage:
+            "url('https://drive.google.com/uc?export=view&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp')",
+        }}
       >
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
-            <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
-            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white">
-              Our Portfolio
-            </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
-              A showcase of our commitment to excellence, innovation, and impactful results.
-            </p>
-          </div>
+          <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white">
+            Our Portfolio
+          </h1>
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto mt-4">
+            A showcase of our commitment to excellence, innovation, and impactful results.
+          </p>
         </div>
       </section>
 
@@ -105,8 +105,8 @@ export default function PortfolioPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {caseStudies.map((study, index) => (
-              <Card 
-                key={study.title} 
+              <Card
+                key={study.title}
                 className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -136,7 +136,7 @@ export default function PortfolioPage() {
                 </CardContent>
                 <CardFooter className="p-6 pt-0">
                    <Button variant="secondary" className="w-full">
-                     <Eye className="mr-2 h-4 w-4" /> View Case Study
+                    <Eye className="mr-2 h-4 w-4" /> View Case Study
                    </Button>
                 </CardFooter>
               </Card>
@@ -161,17 +161,16 @@ export default function PortfolioPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {similarProjects.map((project, index) => (
-              <div 
-                key={project.title} 
-                className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6 transition-all duration-300 hover:shadow-primary/30"
+              <div
+                key={project.title}
+                className="group relative overflow-hidden rounded-lg shadow-2xl aspect-video animate-in fade-in slide-in-from-bottom-6 transition-all duration-300 hover:shadow-primary/30"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <Image
                   src={project.image.src}
                   alt={project.title}
-                  width={800}
-                  height={600}
-                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                   data-ai-hint={project.image.hint}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6 transition-all duration-300 group-hover:bg-gradient-to-t group-hover:from-black/70 group-hover:to-black/10">
@@ -182,12 +181,12 @@ export default function PortfolioPage() {
             ))}
           </div>
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
-              <Button asChild size="lg" className="group">
-                <Link href="/contact">
-                  Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
+             <Button asChild size="lg" className="group">
+               <Link href="/contact">
+                 Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+               </Link>
+             </Button>
+           </div>
         </div>
       </section>
     </div>

@@ -67,12 +67,12 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[42vh] md:h-[70vh] w-full">
+      <section className="relative h-[42vh] md:h-[70vh] w-full bg-black">
         <Image
           src="https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4"
           alt="Hero banner showing a collage of business and technology images"
           fill
-          className="object-cover w-full h-full"
+          className="object-contain w-full h-full"
           priority
           data-ai-hint="business technology collage"
         />

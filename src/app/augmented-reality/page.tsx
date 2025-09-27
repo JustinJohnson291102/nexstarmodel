@@ -13,7 +13,7 @@ const videoCards = [
   {
     title: "Product Visualization",
     description: "See products in your space before you buy.",
-    videoSrc: "https://videos.pexels.com/video-files/4690242/4690242-sd_640_360_30fps.mp4",
+    videoSrc: "https://drive.google.com/uc?export=download&id=1wE77VMSEdT2cYHbpph6PQbrVYZ6OZon-",
   },
   {
     title: "Interactive Filters",

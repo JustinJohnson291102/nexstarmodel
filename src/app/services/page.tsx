@@ -23,7 +23,7 @@ const servicesData = [
     ],
     image: "https://drive.google.com/uc?export=view&id=1DDddv8fnkOXtN8VvDIA3UNhve401V93J",
     imageAlt: "Social Media Marketing",
-    link: "#",
+    link: "/social-media",
     imageHint: "social media analytics",
   },
   {
@@ -41,7 +41,7 @@ const servicesData = [
     ],
     image: "https://drive.google.com/uc?export=view&id=1jY1qGWPlCndtNUQGCWiTInrFUkCSgoxJ",
     imageAlt: "Creative and Branding Services",
-    link: "#",
+    link: "/creative-branding",
     imageHint: "branding strategy",
   },
   {
@@ -79,6 +79,74 @@ const servicesData = [
     imageAlt: "B2B Marketing",
     link: "/b2b",
     imageHint: "b2b handshake",
+  },
+  {
+    id: "search-marketing",
+    title: "Search Marketing (SEO/SEM)",
+    points: [
+      "Comprehensive SEO Audits",
+      "Keyword Research & Strategy",
+      "On-Page, Off-Page, and Technical SEO",
+      "PPC Campaign Management (Google & Bing)",
+      "Content Marketing & Link Building",
+      "Local SEO & Google My Business",
+      "Analytics and Performance Reporting",
+    ],
+    image: "https://picsum.photos/seed/search-marketing-main/600/400",
+    imageAlt: "Search Marketing",
+    link: "/search-marketing",
+    imageHint: "search marketing",
+  },
+  {
+    id: "video-production",
+    title: "Video Production",
+    points: [
+      "Concept Development & Scriptwriting",
+      "On-Location & Studio Filming",
+      "Post-Production & Editing",
+      "Animation & Motion Graphics",
+      "Corporate Videos & Commercials",
+      "Social Media Content Creation",
+      "Drone Videography",
+    ],
+    image: "https://picsum.photos/seed/video-production-main/600/400",
+    imageAlt: "Video Production",
+    link: "/video-production",
+    imageHint: "video production",
+  },
+  {
+    id: "orm",
+    title: "Online Reputation Management",
+    points: [
+      "Brand & Keyword Monitoring",
+      "Review Generation & Management",
+      "Negative Content Suppression",
+      "Crisis Response & Management",
+      "Positive Content Creation & Promotion",
+      "Search Engine Results Page (SERP) Control",
+      "Social Media Profile Management",
+    ],
+    image: "https://picsum.photos/seed/orm-main/600/400",
+    imageAlt: "Online Reputation Management",
+    link: "/online-reputation-management",
+    imageHint: "reputation management",
+  },
+  {
+    id: "ecommerce",
+    title: "E-commerce Development",
+    points: [
+      "Custom E-commerce Website Design",
+      "Shopify & WooCommerce Development",
+      "Platform Migration Services",
+      "Payment Gateway Integration",
+      "Conversion Rate Optimization (CRO)",
+      "Custom App & Plugin Development",
+      "Maintenance & Support",
+    ],
+    image: "https://picsum.photos/seed/ecommerce-main/600/400",
+    imageAlt: "E-commerce Development",
+    link: "/ecommerce-development",
+    imageHint: "ecommerce development",
   },
 ];
 
@@ -132,7 +200,7 @@ export default function ServicesPage() {
               <div
                 key={service.id}
                 id={service.id}
-                className="grid md:grid-cols-2 gap-12 items-center"
+                className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center"
               >
                 <div
                   className={`animate-in fade-in duration-700 overflow-hidden rounded-lg shadow-xl ${
@@ -157,17 +225,17 @@ export default function ServicesPage() {
                     {service.title}
                   </h2>
                   <ul className="space-y-3 mb-8">
-                    {service.points.map((point) => (
+                    {service.points.slice(0, 5).map((point) => (
                       <li key={point} className="flex items-start">
                         <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                         <span className="text-lg text-muted-foreground">{point}</span>
                       </li>
                     ))}
                   </ul>
-                   <Button asChild size="lg" className="group rounded-lg" variant={service.link === "#" ? "secondary" : "default"} disabled={service.link === "#"}>
+                   <Button asChild size="lg" className="group rounded-lg">
                     <Link href={service.link}>
-                      {service.link === "#" ? "Coming Soon" : "View More"}
-                      {service.link !== "#" && <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />}
+                      View More
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                 </div>
@@ -199,44 +267,6 @@ export default function ServicesPage() {
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                 </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/case-study-bg/1920/1080')` }}
-      >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
-              <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2">Featured Case Study</h3>
-              <h2 className="text-3xl md:text-4xl font-bold font-headline tracking-tight mb-6">
-                Launching a Tech Startup to Market Leadership
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                See how our integrated Go-To-Market strategy, combining web development, B2B marketing, and creative branding, helped a new SaaS platform acquire over 10,000 users in its first six months and secure Series A funding.
-              </p>
-              <Button asChild size="lg" className="group">
-                <Link href="/gtm-strategy">
-                  Read The Full Story <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <Card className="overflow-hidden shadow-2xl group">
-                <div className="relative aspect-video">
-                  <Image
-                    src="https://picsum.photos/seed/case-study-image/800/450"
-                    alt="Case Study"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    data-ai-hint="tech startup meeting"
-                  />
-                </div>
-              </Card>
-            </div>
           </div>
         </div>
       </section>

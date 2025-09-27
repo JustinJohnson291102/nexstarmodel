@@ -20,13 +20,14 @@ import {
 const mainLinks = [
   { href: "/", label: "Home" },
   { href: "/story", label: "Our Story" },
+  { href: "/services", label: "Services" },
 ];
 
 const serviceLinks = [
-    { href: "/services#social-media", label: "Social Media" },
-    { href: "/services#branding", label: "Creative & Branding" },
+    { href: "/social-media", label: "Social Media" },
+    { href: "/creative-branding", label: "Creative & Branding" },
     { href: "/web-solutions", label: "Web/Tech" },
-    { href: "/services#b2b", label: "B2B Marketing" },
+    { href: "/b2b", label: "B2B Marketing" },
     { href: "/search-marketing", label: "Search Marketing" },
     { href: "/video-production", label: "Video Production" },
     { href: "/online-reputation-management", label: "Online Reputation Management" },
@@ -104,7 +105,7 @@ export default function Header() {
             ))}
              <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
-                Services <ChevronDown className="h-4 w-4 ml-1" />
+                More <ChevronDown className="h-4 w-4 ml-1" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 {serviceLinks.map((link) => (
@@ -112,27 +113,19 @@ export default function Header() {
                     <Link href={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
                 ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none">
-                Web Solutions <ChevronDown className="h-4 w-4 ml-1" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                {webSolutionsLinks.map((link) => (
+                 <DropdownMenuItem asChild>
+                    <Link href="/web-solutions">Web Solutions</Link>
+                  </DropdownMenuItem>
+                   <DropdownMenuItem asChild>
+                    <Link href="/shopify">Shopify</Link>
+                  </DropdownMenuItem>
+                 {otherLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
                     <Link href={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            {otherLinks.map((link) => (
-              <NavLink
-                key={link.href}
-                href={link.href}
-                label={link.label}
-              />
-            ))}
           </nav>
         </div>
         <div className="hidden md:flex items-center mr-8">
@@ -165,8 +158,8 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4">
-                {[...mainLinks, {href: "/services", label: "Services"}, ...webSolutionsLinks, ...otherLinks].map(
-                  ({ href, label, isNew }) => (
+                {[...mainLinks, ...serviceLinks, ...webSolutionsLinks, ...otherLinks].map(
+                  ({ href, label }) => (
                     <Link
                       key={href}
                       href={href}
@@ -177,11 +170,6 @@ export default function Header() {
                       )}
                     >
                       {label}
-                      {isNew && (
-                         <span className="bg-accent text-accent-foreground text-xs font-bold px-2 py-0.5 rounded-full ml-2">
-                          NEW
-                        </span>
-                      )}
                     </Link>
                   )
                 )}

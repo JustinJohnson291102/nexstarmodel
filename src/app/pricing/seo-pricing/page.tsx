@@ -116,11 +116,11 @@ export default function SEOPricingPage() {
         </div>
         
         <div className="flex justify-center items-center mb-12">
-          <div className="relative flex items-center p-1 bg-primary rounded-lg">
+          <div className="relative flex items-center p-1 bg-primary rounded-full">
              <button
                 onClick={() => setBillingCycle("monthly")}
                 className={cn(
-                  "relative z-10 w-32 py-2 text-sm font-semibold transition-colors duration-300 rounded-md",
+                  "relative z-10 w-32 py-2 text-sm font-semibold transition-colors duration-300 rounded-full",
                   billingCycle === "monthly" ? "text-primary bg-white" : "text-white bg-transparent"
                 )}
               >
@@ -129,7 +129,7 @@ export default function SEOPricingPage() {
               <button
                 onClick={() => setBillingCycle("yearly")}
                 className={cn(
-                  "relative z-10 w-32 py-2 text-sm font-semibold transition-colors duration-300 rounded-md",
+                  "relative z-10 w-32 py-2 text-sm font-semibold transition-colors duration-300 rounded-full",
                   billingCycle === "yearly" ? "text-primary bg-white" : "text-white bg-transparent"
                 )}
               >

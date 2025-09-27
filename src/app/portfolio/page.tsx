@@ -74,26 +74,21 @@ const similarProjects = [
 
 export default function PortfolioPage() {
   
-  // ✅ UPDATED: New Google Drive link converted to 'uc' (unauthenticated content) format
-  // for direct use with the Next.js Image component and the parallax effect.
   const heroImageUrl = "https://drive.google.com/uc?id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp";
 
   return (
     <div className="bg-background text-foreground">
       
-      {/* HERO SECTION with new image and parallax effect */}
       <section
         className="relative h-[60vh] w-full flex items-center justify-center text-center"
       >
         <Image 
           src={heroImageUrl} 
-          alt="Abstract blue and pink technology background for portfolio hero section with parallax effect" 
+          alt="Abstract blue and pink technology background for portfolio hero section" 
           fill
-          // `bg-fixed` class provides the parallax scrolling effect
-          className="object-cover object-center bg-fixed"
+          className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
             <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
@@ -107,9 +102,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* CASE STUDIES SECTION */}
-      <section className="relative py-20 md:py-24" style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract-2/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <div className="absolute inset-0 z-0"></div>
+      <section className="relative py-20 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -163,18 +156,15 @@ export default function PortfolioPage() {
 
       <OurClients showTitle={false} />
 
-      {/* PROJECTS SECTION */}
       <section
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/dark-nature-bg/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-black/20 z-0"></div>
-        <div className="container mx-auto px-4 relative z-10 text-white">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
               Our Projects
             </h2>
-            <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
               A glimpse into our technical expertise and innovative solutions across various domains.
             </p>
           </div>
@@ -211,3 +201,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
+    

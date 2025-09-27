@@ -104,7 +104,7 @@ export default function Home() {
         <Carousel
           plugins={[
             Autoplay({
-              delay: 5000,
+              delay: 2000,
               stopOnInteraction: false,
               playOnInit: true,
             }),
@@ -124,7 +124,6 @@ export default function Home() {
                     priority={img.id === "hero-main-1"}
                     data-ai-hint={img.hint}
                   />
-                  <div className="absolute inset-0 bg-black/20 z-10"></div>
                   <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white p-4">
                     <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
                       {img.title}
@@ -149,10 +148,8 @@ export default function Home() {
       </section>
       
        <section
-        className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract/1920/1080')` }}
+        className="relative bg-background text-foreground py-20 md:py-32"
       >
-        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           
               <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -212,8 +209,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="relative py-20 md:py-32 bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/tech-abstract/1920/1080')` }}>
-        <div className="absolute inset-0 z-0"></div>
+      <section className="relative py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">WHO WE ARE</h3>
@@ -279,8 +275,7 @@ export default function Home() {
 
       <OurClients />
       
-      <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/forested-mountains/1920/1080')` }}>
-        <div className="absolute inset-0 bg-black/20 z-0"></div>
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground relative">
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight text-white mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Architects of Digital Success
@@ -291,7 +286,7 @@ export default function Home() {
             how we can elevate your brand.
           </p>
           <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300">
-            <Button asChild size="lg" className="group">
+            <Button asChild size="lg" variant="secondary" className="group">
               <Link href="/services">
                 Our Services{" "}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -303,3 +298,5 @@ export default function Home() {
     </>
   );
 }
+
+    

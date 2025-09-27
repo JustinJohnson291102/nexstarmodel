@@ -78,10 +78,9 @@ export default function ShopifyPage() {
   return (
     <div className="bg-background">
        <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
         style={{ backgroundImage: `url('https://picsum.photos/seed/shopify-hero/1920/1080')` }}
         >
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Expert Shopify Development
@@ -93,10 +92,8 @@ export default function ShopifyPage() {
       </section>
 
        <section 
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/shopify-services-bg/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-background"
       >
-        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -147,10 +144,8 @@ export default function ShopifyPage() {
       </section>
       
       <section 
-        className="py-20 md:py-24 bg-secondary relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/why-us-bg/1920/1080')` }}
+        className="py-20 md:py-24 bg-secondary"
       >
-        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -172,10 +167,7 @@ export default function ShopifyPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-background relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/showcase-bg/1920/1080')` }}
-      >
-        <div className="absolute inset-0 z-0"></div>
+      <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -193,10 +185,8 @@ export default function ShopifyPage() {
       </section>
 
        <section 
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/shopify-testimonials-bg/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-secondary"
        >
-         <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -231,3 +221,5 @@ export default function ShopifyPage() {
     </div>
   );
 }
+
+    

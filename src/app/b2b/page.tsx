@@ -86,25 +86,21 @@ export default function B2BPage() {
   return (
     <>
       <section 
-        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-hero-main/1920/1080')` }}
+        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
-        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               B2B Marketing That Drives Results
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
               Fueling Growth with Strategic Connections and Data-Driven Insights
             </p>
         </div>
       </section>
 
       <section 
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-services-bg/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-secondary"
       >
-        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -152,10 +148,8 @@ export default function B2BPage() {
       </section>
 
       <section
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-data/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-background"
       >
-        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
@@ -207,16 +201,14 @@ export default function B2BPage() {
       <OurClients />
 
       <section 
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-solutions/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-primary/70 z-10"></div>
-        <div className="container mx-auto px-4 relative z-10 text-white">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Our B2B Approach is Different
             </h2>
-            <p className="text-lg text-white/90 mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               We go beyond conventional marketing tactics to build meaningful relationships and drive sustainable growth.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -269,3 +261,5 @@ export default function B2BPage() {
     </>
   );
 }
+
+    

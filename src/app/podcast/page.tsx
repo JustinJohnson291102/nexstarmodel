@@ -75,23 +75,20 @@ export default function PortfolioPage() {
   return (
     <div className="bg-background text-foreground">
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/portfolio-hero/1920/1080')` }}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-black/60 z-10" />
-        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
+        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary-foreground" />
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
             Our Portfolio
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
             A showcase of our commitment to excellence, innovation, and impactful results.
           </p>
         </div>
       </section>
 
-      <section className="relative py-20 md:py-24" style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract-2/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+      <section className="relative py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -144,11 +141,9 @@ export default function PortfolioPage() {
       </section>
 
       <section
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/similar-projects-bg/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-primary/90 backdrop-blur-sm z-0" />
-        <div className="container mx-auto px-4 relative z-10 text-white">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
               Our Similar Projects
@@ -191,4 +186,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
     

@@ -7,10 +7,8 @@ export default function ContactPage() {
   return (
     <>
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/contact-hero/1920/1080')` }}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="relative z-20 px-4 text-white">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
               Get in Touch
@@ -21,10 +19,8 @@ export default function ContactPage() {
         </div>
       </section>
       
-      <section className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/contact-bg/1920/1080')` }}
+      <section className="relative py-20 md:py-32 bg-background"
       >
-        <div className="absolute inset-0 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
            <div className="grid md:grid-cols-2 gap-16 items-start">
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8">
@@ -77,3 +73,5 @@ export default function ContactPage() {
     </>
   );
 }
+
+    

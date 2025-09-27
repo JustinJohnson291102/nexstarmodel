@@ -119,12 +119,11 @@ export default function XtrackPage() {
     <div className="bg-background text-foreground">
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] bg-cover bg-center bg-fixed flex items-center justify-center text-center"
+        className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center"
         style={{
           backgroundImage: `url('https://picsum.photos/seed/xtrack-hero/1920/1080')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <div className="relative z-20 px-4 container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
             Meet XTrack
@@ -137,8 +136,7 @@ export default function XtrackPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 md:py-32 relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/xtrack-intro/1920/1080')` }}>
-        <div className="absolute inset-0 z-0"></div>
+      <section className="py-20 md:py-32 relative bg-background">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -156,8 +154,7 @@ export default function XtrackPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 md:py-32 bg-secondary/50 relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/xtrack-features/1920/1080')` }}>
-         <div className="absolute inset-0 z-0"></div>
+      <section className="py-20 md:py-32 bg-secondary/50 relative">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
@@ -209,13 +206,9 @@ export default function XtrackPage() {
 
       {/* Parallax Section 1 */}
       <section
-        className="relative h-[70vh] bg-cover bg-center bg-fixed flex items-center justify-center"
-        style={{
-          backgroundImage: `url('https://picsum.photos/seed/xtrack-parallax1/1920/1080')`,
-        }}
+        className="relative h-[70vh] bg-primary text-primary-foreground flex items-center justify-center"
       >
-        <div className="absolute inset-0 bg-primary/70 z-10"></div>
-        <div className="relative z-20 text-center text-primary-foreground px-4 animate-in fade-in duration-1000">
+        <div className="relative z-20 text-center px-4 animate-in fade-in duration-1000">
           <Zap className="h-16 w-16 mx-auto mb-4" />
           <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">
             Data-Driven Decisions, Made Easy
@@ -228,8 +221,7 @@ export default function XtrackPage() {
       </section>
 
       {/* Dashboard Section */}
-      <section className="py-20 md:py-32 relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/xtrack-dashboard/1920/1080')` }}>
-        <div className="absolute inset-0 z-0"></div>
+      <section className="py-20 md:py-32 relative bg-background">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
@@ -316,12 +308,11 @@ export default function XtrackPage() {
 
        {/* Parallax Section 2 */}
       <section
-        className="relative min-h-[50vh] bg-cover bg-center bg-fixed flex items-center"
+        className="relative min-h-[50vh] bg-cover bg-center flex items-center"
         style={{
           backgroundImage: `url('https://picsum.photos/seed/xtrack-parallax2/1920/1080')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <div className="relative z-20 container mx-auto px-4 py-20 text-white">
           <div className="max-w-2xl">
             <ShieldCheck className="h-12 w-12 text-primary mb-4" />
@@ -360,3 +351,5 @@ export default function XtrackPage() {
     </div>
   );
 }
+
+    

@@ -67,10 +67,9 @@ export default function EcommerceDevelopmentPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
@@ -132,16 +131,14 @@ export default function EcommerceDevelopmentPage() {
       <OurClients />
 
       <section 
-        className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/ecommerce-choose/1920/1080')` }}
+        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
       >
-        <div className="absolute inset-0 bg-primary/70 z-10"></div>
-        <div className="container mx-auto px-4 relative z-10 text-white">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us as Your E-commerce Partner?
             </h2>
-            <p className="text-lg text-white/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               We're not just developers; we're e-commerce strategists dedicated to your growth. We focus on building scalable, secure, and sales-driven online stores that become valuable assets for your business. Our expertise ensures you get a site that not only looks great but also performs flawlessly and delivers a tangible return on investment.
             </p>
           </div>
@@ -176,3 +173,5 @@ export default function EcommerceDevelopmentPage() {
     </div>
   );
 }
+
+    

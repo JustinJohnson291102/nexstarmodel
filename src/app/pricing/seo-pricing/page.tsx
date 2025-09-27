@@ -121,6 +121,63 @@ const basicFeatures = {
   "24/7 Live Project Tracking": true,
 };
 
+const enterpriseFeatures = {
+  "Local & National, International SEO": true,
+  "Minimum 40 Keywords": true,
+  "Top 10 Guarantee - 50%*": true,
+  "Initial Research And Analysis": true,
+  "Business Analysis": true,
+  "In-depth Website Study": true,
+  "Competitor Analysis": true,
+  "Content Duplicacy Check": true,
+  "Initial Backlinks Analysis": true,
+  "Google Penalty Check": true,
+  "Website Speed Analysis": true,
+  "Keyword Research": true,
+  "Canonicalization": true,
+  "Website Page Load Optimization": true,
+  "Initial Report": true,
+  "On Page SEO": true,
+  "Title Tags Optimization": true,
+  "URL Optimization": true,
+  "Internal linking & Optimization": true,
+  "Image & ALT Tag Optimization": true,
+  "Content Optimization": true,
+  "Robots.txt Creation": true,
+  "HTML & XML Sitemap Submission": true,
+  "Schema for Contact": true,
+  "Google Search Console": true,
+  "Bing Webmaster Tool": true,
+  "Google Analytics": true,
+  "HTML Code Cleanup & Optimization": true,
+  "Location Based Page Optimization": true,
+  "Local SEO": true,
+  "Google My Business Setup and Verification": true,
+  "Google Places Optimization": true,
+  "Google My Business Customer Reviews/ratings": true,
+  "Bing Local Listing": true,
+  "Off Page SEO": true,
+  "Content Writing & Submission": true,
+  "PDF/Doc Submission": true,
+  "Classifieds": true,
+  "Blog Commenting": true,
+  "Q & A": true,
+  "Informational Article Writing & Submission": true,
+  "Press Release Writing & Submission": true,
+  "Guest Blog Posting": true,
+  "Infographic Creation & Distribution": true,
+  "12 Blogs Posting*": true,
+  "Social Bookmarking": true,
+  "Status And Report": true,
+  "Search Engine Rank Report": true,
+  "SEO Reports": true,
+  "Google Analytics Report": true,
+  "Activitiy Report": true,
+  "Monthly Action Plan": true,
+  "Email/Chat/Online": true,
+  "24/7 Live Project Tracking": true,
+};
+
 const pricingPlans = [
   {
     name: "Starter Plan",
@@ -135,15 +192,15 @@ const pricingPlans = [
     highlight: true,
   },
   {
-    name: "Enterprise Plan",
-    priceMonthly: 1299,
-    features: { ...starterFeatures, "Minimum 8 Keywords": "Minimum 25 Keywords", "Top 10 Guarantee - 40%*": "Top 10 Guarantee - 80%*", "Guest Blog Posting": 4, "4 Blogs Posting*": "12 Blogs Posting*", "Infographic Creation & Distribution": 2  },
+    name: "Enterprise",
+    priceMonthly: 899,
+    features: enterpriseFeatures,
     highlight: false,
   },
   {
     name: "Business Plan",
     priceMonthly: 1999,
-    features: { ...starterFeatures, "Minimum 8 Keywords": "Minimum 40 Keywords", "Top 10 Guarantee - 40%*": "Top 10 Guarantee - 90%*", "Guest Blog Posting": 6, "4 Blogs Posting*": "16 Blogs Posting*", "Infographic Creation & Distribution": 4 },
+    features: { ...enterpriseFeatures, "Minimum 40 Keywords": "Minimum 60 Keywords", "Top 10 Guarantee - 50%*": "Top 10 Guarantee - 90%*", "Guest Blog Posting": 6, "12 Blogs Posting*": "16 Blogs Posting*", "Infographic Creation & Distribution": 4 },
     highlight: false,
   },
 ];
@@ -225,3 +282,5 @@ export default function SEOPricingPage() {
     </>
   );
 }
+
+    

@@ -64,18 +64,14 @@ export default function Home() {
   const gamutOfServicesImage = PlaceHolderImages.find(
     (img) => img.id === "service-content"
   );
+  const heroImageUrl = "https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4";
 
   return (
     <>
-      <section className="relative h-[50vh] md:h-[80vh] w-full">
-        <Image
-          src="https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4"
-          alt="Hero banner showing a collage of business and technology images"
-          fill
-          className="object-cover w-full h-full"
-          priority
-          data-ai-hint="business technology collage"
-        />
+      <section 
+        className="relative h-[50vh] md:h-[80vh] w-full bg-cover bg-center"
+        style={{ backgroundImage: `url('${heroImageUrl}')` }}
+      >
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4">
             <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">

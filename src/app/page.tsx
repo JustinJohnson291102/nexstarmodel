@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -53,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-       <section className="relative h-[60vh] md:h-[70vh] w-full">
+       <section className="relative h-[60vh] md:h-[70vh] w-full bg-black">
         <Carousel
           plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
           className="w-full h-full"
@@ -67,7 +68,7 @@ export default function Home() {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-cover w-full h-full"
+                    className="object-contain w-full h-full"
                     priority={index === 0}
                     data-ai-hint={image.hint}
                   />

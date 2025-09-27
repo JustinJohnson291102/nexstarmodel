@@ -52,8 +52,8 @@ const coreValues = [
         title: "Innovation",
         description: "We are relentless in our pursuit of new ideas, challenging the status quo to create groundbreaking digital experiences.",
         image: {
-          src: "https://picsum.photos/seed/value-innovation/600/400",
-          hint: "abstract innovation",
+          src: "https://picsum.photos/seed/colorful-innovation/600/400",
+          hint: "abstract colors",
         }
     },
     {
@@ -61,8 +61,8 @@ const coreValues = [
         title: "Partnership",
         description: "We work as an extension of your team, fostering deep collaboration and aligning our success with yours.",
          image: {
-          src: "https://picsum.photos/seed/value-partnership/600/400",
-          hint: "team collaboration",
+          src: "https://picsum.photos/seed/colorful-partnership/600/400",
+          hint: "colorful abstract",
         }
     },
     {
@@ -70,8 +70,8 @@ const coreValues = [
         title: "Passion",
         description: "Our work is our craft. We pour our hearts into every project, driven by a genuine love for what we do.",
          image: {
-          src: "https://picsum.photos/seed/value-passion/600/400",
-          hint: "creative passion",
+          src: "https://picsum.photos/seed/colorful-passion/600/400",
+          hint: "vibrant colors",
         }
     },
     {
@@ -79,8 +79,8 @@ const coreValues = [
         title: "Results-Driven",
         description: "Creativity is only half the story. We are obsessed with data, measuring our success by the tangible results we deliver.",
          image: {
-          src: "https://picsum.photos/seed/value-results/600/400",
-          hint: "success target",
+          src: "https://picsum.photos/seed/colorful-results/600/400",
+          hint: "bright colors",
         }
     }
 ];
@@ -303,5 +303,3 @@ export default function StoryPage() {
     </>
   );
 }
-
-    

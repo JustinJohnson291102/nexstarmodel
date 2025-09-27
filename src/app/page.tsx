@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -53,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-screen w-full">
+      <section className="relative h-[120vh] w-full">
         <Carousel
           plugins={[
             Autoplay({
@@ -67,7 +68,7 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-screen w-full">
+                <div className="relative h-[120vh] w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}
@@ -82,7 +83,7 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4 -mt-[100vh]">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
           </h1>
@@ -308,3 +309,5 @@ export default function Home() {
     </>
   );
 }
+
+    

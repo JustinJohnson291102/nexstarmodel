@@ -1,3 +1,4 @@
+
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -97,7 +98,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         float: 'float 3s ease-in-out infinite',
-        'marquee-slow': 'marquee-slow 60s linear infinite',
+        'marquee-slow': 'marquee-slow 120s linear infinite',
         'chat-bubble': 'chat-bubble 6s ease-in-out infinite',
       },
     },

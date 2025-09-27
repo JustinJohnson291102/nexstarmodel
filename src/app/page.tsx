@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -31,13 +30,14 @@ export default function Home() {
 
   return (
     <>
-      {/* 🚀 FIX APPLIED: Reduced the height for medium and larger screens from 'md:h-[75vh]' to 'md:h-[50vh]' */}
-      <section className="relative h-[60vh] md:h-[50vh] w-full">
+      {/* ✅ FIX APPLIED: Hero banner height restored to a large size: 'md:h-[75vh]' */}
+      <section className="relative h-[60vh] md:h-[75vh] w-full"> 
         <Image
           src="https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4" // Using the corrected download URL
           alt="Hero banner showing a collage of business and technology images"
           fill
-          className="object-cover w-full h-full"
+          // 'object-cover' ensures the image covers the container, which is what you want for a banner.
+          className="object-cover w-full h-full" 
           priority
           data-ai-hint="business technology collage"
         />
@@ -268,5 +268,4 @@ export default function Home() {
     </>
   );
 }
-
     

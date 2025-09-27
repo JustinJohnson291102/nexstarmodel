@@ -37,9 +37,7 @@ const webSolutionLinks = [
     { href: "/shopify", label: "Shopify Expertise" },
 ]
 
-const otherLinks: { href: string, label: string }[] = [
-  { href: "/portfolio", label: "Portfolio" },
-];
+const otherLinks: { href: string, label: string }[] = [];
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

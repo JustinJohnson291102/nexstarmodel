@@ -124,7 +124,7 @@ export default function Home() {
                     priority={img.id === "hero-main-1"}
                     data-ai-hint={img.hint}
                   />
-                  <div className="absolute inset-0 bg-black/50 z-10" />
+                  <div className="absolute inset-0 bg-black/40 z-10" />
                   <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white p-4">
                     <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
                       {img.title}
@@ -152,7 +152,7 @@ export default function Home() {
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/80 z-0" />
+        <div className="absolute inset-0 bg-background/70 z-0" />
         <div className="container mx-auto px-4 relative z-10">
           
               <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
       
       <section className="relative py-20 md:py-32 bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/tech-abstract/1920/1080')` }}>
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-none z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">WHO WE ARE</h3>
@@ -226,7 +226,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/80">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70">
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/team-passion/600/400" width={600} height={400} alt="Passionate Team" data-ai-hint="passionate team" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
@@ -242,7 +242,7 @@ export default function Home() {
               </CardContent>
             </Card>
             
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300 bg-card/80">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300 bg-card/70">
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/team-collab/600/400" width={600} height={400} alt="Team Collaboration" data-ai-hint="team collaboration" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
@@ -258,7 +258,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400 bg-card/80">
+            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400 bg-card/70">
               <CardHeader className="p-0">
                   <Image src="https://picsum.photos/seed/global-reach/600/400" width={600} height={400} alt="Global Reach" data-ai-hint="global network" className="rounded-t-lg object-cover aspect-video"/>
               </CardHeader>
@@ -280,7 +280,7 @@ export default function Home() {
       <OurClients />
       
       <section className="py-20 md:py-32 bg-background relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/seed/forested-mountains/1920/1080')` }}>
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="absolute inset-0 bg-black/40 z-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight text-white mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Architects of Digital Success
@@ -303,3 +303,5 @@ export default function Home() {
     </>
   );
 }
+
+    

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -92,7 +93,7 @@ export default function PortfolioPage() {
           className="object-cover object-center bg-fixed"
           priority
         />
-        <div className="absolute inset-0 bg-black/60 z-10" /> {/* Darker overlay for text visibility */}
+        <div className="absolute inset-0 bg-black/50 z-10" /> {/* Darker overlay for text visibility */}
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
             <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
@@ -108,7 +109,7 @@ export default function PortfolioPage() {
 
       {/* CASE STUDIES SECTION */}
       <section className="relative py-20 md:py-24" style={{ backgroundImage: `url('https://picsum.photos/seed/white-abstract-2/1920/1080')`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -122,7 +123,7 @@ export default function PortfolioPage() {
             {caseStudies.map((study, index) => (
               <Card
                 key={study.title}
-                className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6"
+                className="group relative overflow-hidden bg-card/70 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader className="p-0">
@@ -167,7 +168,7 @@ export default function PortfolioPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/dark-nature-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="absolute inset-0 bg-black/40 z-0" />
         <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -210,3 +211,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
+    

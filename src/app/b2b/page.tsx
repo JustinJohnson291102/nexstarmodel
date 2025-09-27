@@ -89,7 +89,7 @@ export default function B2BPage() {
         className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-hero-main/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               B2B Marketing That Drives Results
@@ -104,7 +104,7 @@ export default function B2BPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-services-bg/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -122,7 +122,7 @@ export default function B2BPage() {
                 className="animate-in fade-in slide-in-from-bottom-6 duration-500"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <Card className="h-full group text-left bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 overflow-hidden">
+                <Card className="h-full group text-left bg-card/70 backdrop-blur-sm border-border/50 transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 overflow-hidden">
                   <CardHeader className="p-0">
                     <div className="relative aspect-video w-full">
                        <Image
@@ -155,7 +155,7 @@ export default function B2BPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-data/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-background/90 backdrop-blur-md z-0" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
@@ -170,7 +170,7 @@ export default function B2BPage() {
                </ul>
             </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <Card className="bg-card/70 backdrop-blur-sm border-border/50">
+              <Card className="bg-card/60 backdrop-blur-sm border-border/50">
                 <CardHeader>
                   <CardTitle>Lead Generation Performance</CardTitle>
                 </CardHeader>
@@ -210,7 +210,7 @@ export default function B2BPage() {
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/b2b-solutions/1920/1080')` }}
       >
-        <div className="absolute inset-0 bg-primary/90 z-10" />
+        <div className="absolute inset-0 bg-primary/80 z-10" />
         <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -269,3 +269,5 @@ export default function B2BPage() {
     </>
   );
 }
+
+    

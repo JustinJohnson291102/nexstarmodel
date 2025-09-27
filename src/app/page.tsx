@@ -21,9 +21,6 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
-// Note: Removed servicesData since it was not in the provided code snippet,
-// but assume it exists elsewhere if the services section is rendered.
-
 export default function Home() {
   const adAgencyImage = PlaceHolderImages.find(
     (img) => img.id === "service-branding"
@@ -34,7 +31,8 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[60vh] md:h-[75vh] w-full">
+      {/* 🚀 FIX APPLIED: Reduced the height for medium and larger screens from 'md:h-[75vh]' to 'md:h-[50vh]' */}
+      <section className="relative h-[60vh] md:h-[50vh] w-full">
         <Image
           src="https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4" // Using the corrected download URL
           alt="Hero banner showing a collage of business and technology images"
@@ -44,7 +42,6 @@ export default function Home() {
           data-ai-hint="business technology collage"
         />
         <div className="absolute inset-0 bg-black/30" />
-        {/* 🚀 FIX APPLIED: Re-added the text overlay content which was missing from your provided snippet */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Innovate. Create. Elevate.
@@ -63,12 +60,10 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-        {/* END of text overlay */}
       </section>
 
-      {/* The rest of your component logic follows:
-      */}
-
+      {/* The rest of your component logic follows: */}
+      
       <section className="relative bg-background text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">

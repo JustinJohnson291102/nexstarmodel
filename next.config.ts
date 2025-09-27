@@ -1,15 +1,21 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /*
+    Yahaan aap Next.js ki doosri configurations daal sakte hain,
+    jaise ki output: 'export' for static export, ya koi aur setting.
+  */
   typescript: {
-    ignoreBuildErrors: true,
+    // Agar aap build errors ko ignore karna chahte hain toh ise 'true' rakhein
+    ignoreBuildErrors: true, 
   },
   eslint: {
+    // Agar aap build ke dauraan eslint errors ko ignore karna chahte hain toh ise 'true' rakhein
     ignoreDuringBuilds: true,
   },
   images: {
     remotePatterns: [
+      // Third-party domains (jaise ki aapne pehle daale the)
       {
         protocol: 'https',
         hostname: 'placehold.co',
@@ -28,8 +34,8 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      // ✅ FIX: Google Drive domain added to allow image loading from there
       {
-        // ✅ FIX: Google Drive domain added for security
         protocol: 'https',
         hostname: 'drive.google.com',
         port: '',

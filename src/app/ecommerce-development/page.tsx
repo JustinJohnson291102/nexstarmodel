@@ -110,11 +110,11 @@ export default function EcommerceDevelopmentPage() {
                <div className="bg-secondary p-8 rounded-lg">
                   <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><ShoppingCart className="w-7 h-7 text-primary"/>Full-Service E-commerce Solutions</h3>
                   <ul className="space-y-3">
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Custom Theme Development & Customization</span></li>
+                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Custom Theme Development &amp; Customization</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>App Integration and Custom Plugin Development</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Payment Gateway & Shipping Integration</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>SEO & Performance Optimization for E-commerce</span></li>
-                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Headless Commerce & API-driven Solutions</span></li>
+                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Payment Gateway &amp; Shipping Integration</span></li>
+                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>SEO &amp; Performance Optimization for E-commerce</span></li>
+                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Headless Commerce &amp; API-driven Solutions</span></li>
                   </ul>
                    <Button asChild className="group mt-6">
                     <Link href="/shopify">Learn more about our Shopify Expertise <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" /></Link>

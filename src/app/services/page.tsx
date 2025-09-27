@@ -193,7 +193,7 @@ const servicesData = [
     points: [
       "Dedicated Development Teams",
       "Staff Augmentation",
-      "React, Node.js, Python, & more",
+      "React, Node.js, Python, &amp; more",
       "API Development & Integration",
       "Flexible Engagement Models",
     ],
@@ -426,3 +426,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

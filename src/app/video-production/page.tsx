@@ -108,13 +108,13 @@ export default function VideoProductionPage() {
                   <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><Users className="w-7 h-7 text-primary"/>Our Video Services Include:</h3>
                   <ul className="space-y-3 columns-1 sm:columns-2">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Corporate Videos</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Commercials & TV Ads</span></li>
+                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Commercials &amp; TV Ads</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Social Media Content</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Animated Explainer Videos</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Product Demos</span></li>
                        <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Customer Testimonials</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Event Coverage</span></li>
-                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Documentary & Short Film</span></li>
+                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Documentary &amp; Short Film</span></li>
                   </ul>
                </div>
 

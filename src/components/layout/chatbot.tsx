@@ -68,7 +68,7 @@ export default function Chatbot() {
       <div className="fixed bottom-6 right-6 z-50">
         {!isOpen && (
           <div className="absolute bottom-full right-0 mb-2 w-max">
-            <div className="relative animate-chat-bubble rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-lg">
+            <div className="relative animate-chat-bubble rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-lg">
               How can I help you?
               <div className="absolute right-4 -bottom-2 h-0 w-0 border-x-8 border-x-transparent border-t-[10px] border-t-primary"></div>
             </div>

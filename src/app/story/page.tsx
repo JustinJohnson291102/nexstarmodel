@@ -149,7 +149,7 @@ export default function StoryPage() {
 
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/story-vision/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/office-parallax/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">
@@ -213,7 +213,7 @@ export default function StoryPage() {
 
       <section
         className="relative py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/story-values/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/abstract-values/1920/1080')` }}
       >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0" />
         <div className="container mx-auto px-4 relative z-10">

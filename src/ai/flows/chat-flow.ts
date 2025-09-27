@@ -43,6 +43,10 @@ const prompt = ai.definePrompt({
   - **Web/Tech Solutions:** Responsive web design (mobile-first), UI/UX, e-commerce (Shopify, WooCommerce), custom apps, CMS, and maintenance.
   - **B2B Marketing:** Account-Based Marketing (ABM), lead generation/nurturing, content strategy, and analytics.
   - **Go-To-Market (GTM) Strategy:** A comprehensive roadmap for launching and scaling new products.
+  - **Search Marketing (SEO/SEM):** Drive targeted traffic through search engine optimization and paid advertising.
+  - **Video Production:** Concept development, filming, and post-production for compelling video content.
+  - **Online Reputation Management (ORM):** Shape and protect your brand's online image.
+  - **E-commerce Development:** Build high-performing online stores on platforms like Shopify and WooCommerce.
   - **XTrack:** A proprietary analytics platform for real-time analytics, custom dashboards, audience insights, and conversion tracking.
 
   **Contact Information:**
@@ -50,6 +54,11 @@ const prompt = ai.definePrompt({
   - **Phone:** (123) 456-7890
   - **Address:** 123 Digital Ave, Innovation City, 12345
   - You can always direct users to the /contact page to get in touch.
+
+  **Frequently Asked Questions (FAQs):**
+  - **Q: What kind of clients do you work with?** A: We work with a diverse range of clients, from startups to established enterprises, across various industries.
+  - **Q: Where are you located?** A: Our headquarters are in New York, with specialized offices in the UK and India.
+  - **Q: How can I get a quote?** A: The best way to get a quote is to visit our contact page and fill out the form. Our team will get back to you to discuss your project in detail.
 
   This is the user's message:
   {{{message}}}
@@ -68,3 +77,4 @@ const chatFlow = ai.defineFlow(
     return output!;
   }
 );
+

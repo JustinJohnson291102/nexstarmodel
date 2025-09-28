@@ -58,6 +58,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Automate for Efficiency",
+        description: "Unlock significant productivity gains by automating repetitive and time-consuming business processes. We identify key areas for automation, from marketing and sales to customer service and back-office operations, allowing your team to focus on high-value, strategic work.",
+        points: [
+            "Workflow analysis and optimization.",
+            "Implementation of robotic process automation (RPA).",
+            "Integration of marketing automation platforms.",
+            "Automated reporting and data entry solutions."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/automation/800/600",
+            hint: "business automation"
+        }
+    },
+    {
+        title: "Embrace the Cloud",
+        description: "Modernize your infrastructure by migrating to the cloud. We help you choose the right cloud platform (AWS, Google Cloud, Azure) and develop a migration strategy that ensures security, scalability, and cost-efficiency. The cloud enables greater flexibility and innovation.",
+        points: [
+            "Cloud readiness assessment and strategy.",
+            "Seamless migration of applications and data.",
+            "Serverless architecture and containerization (Docker, Kubernetes).",
+            "Ongoing cloud management and cost optimization."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/cloud-infra/800/600",
+            hint: "cloud infrastructure"
+        }
+    }
+];
+
 export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
@@ -122,6 +153,37 @@ export default function DigitalTransformationPage() {
           </div>
         </div>
       </section>
+      
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
 
       <OurClients />
 
@@ -171,5 +233,3 @@ export default function DigitalTransformationPage() {
     </div>
   );
 }
-
-    

@@ -34,6 +34,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Optimized for Conversion",
+        description: "A beautiful store isn't enough; it needs to convert. We meticulously design every step of the customer journey, from landing page to checkout, to maximize your sales. Our data-driven approach to Conversion Rate Optimization (CRO) ensures your store is a high-performance sales machine.",
+        points: [
+            "A/B testing of product pages, cart, and checkout flows.",
+            "User behavior analysis to identify and eliminate friction points.",
+            "Implementation of trust signals like reviews and security badges.",
+            "Mobile-first design for a seamless shopping experience on any device."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/ecommerce-conversion/800/600",
+            hint: "sales funnel"
+        }
+    },
+    {
+        title: "Scalable & Powerful Platforms",
+        description: "We are experts in the world's leading e-commerce platforms, Shopify and WooCommerce. We'll help you choose the right one for your business and build a store that can scale with you. Whether you're a startup or an enterprise, we build solutions that last.",
+        points: [
+            "Expert development on Shopify, Shopify Plus, and WooCommerce.",
+            "Custom app and plugin development to extend functionality.",
+            "Seamless integration with your existing ERP, CRM, and marketing tools.",
+            "Headless commerce solutions for ultimate flexibility and performance."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/ecommerce-platforms/800/600",
+            hint: "server infrastructure"
+        }
+    }
+];
+
 export default function EcommerceDevelopmentPage() {
   const pageData = {
     title: "E-commerce Website Design and Development",
@@ -134,6 +165,37 @@ export default function EcommerceDevelopmentPage() {
         </div>
       </section>
 
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
       <OurClients />
 
       <section 
@@ -179,5 +241,3 @@ export default function EcommerceDevelopmentPage() {
     </div>
   );
 }
-
-    

@@ -57,6 +57,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Strategic Technology Planning",
+        description: "Choosing the right technology is critical for long-term success. We help you evaluate and select the optimal technology stack for your business, ensuring it's scalable, secure, and aligned with your budget and goals.",
+        points: [
+            "Comprehensive audit of your current technology stack.",
+            "Evaluation of SaaS, PaaS, and IaaS solutions.",
+            "Guidance on building a scalable and cost-effective infrastructure.",
+            "Vendor selection and negotiation support."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/tech-planning/800/600",
+            hint: "technology strategy"
+        }
+    },
+    {
+        title: "Data-Driven Growth Strategies",
+        description: "Unlock the power of your data. We help you implement the right analytics tools and processes to gather actionable insights. Our strategies turn data into a competitive advantage, driving customer acquisition, retention, and growth.",
+        points: [
+            "Implementation of advanced analytics and business intelligence tools.",
+            "Development of custom dashboards and KPI tracking.",
+            "Customer segmentation and behavior analysis.",
+            "Data-driven marketing and sales funnel optimization."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/data-growth/800/600",
+            hint: "data analytics"
+        }
+    }
+];
+
 export default function DigitalBusinessConsultingPage() {
   const pageData = {
     title: "Digital Business Consulting",
@@ -129,6 +160,37 @@ export default function DigitalBusinessConsultingPage() {
         </div>
       </section>
 
+       <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
       <OurClients />
 
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">
@@ -177,5 +239,3 @@ export default function DigitalBusinessConsultingPage() {
     </div>
   );
 }
-
-    

@@ -57,6 +57,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Cohesive Digital Experience",
+        description: "We ensure your brand identity is consistently applied across every digital touchpoint. From your website's favicon to the tone of your social media posts, we create a unified and memorable brand experience that builds recognition and trust.",
+        points: [
+            "Consistent visual identity across all platforms.",
+            "Unified brand voice and messaging strategy.",
+            "Seamless user experience from social media to website.",
+            "Digital asset optimization for different channels."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/digital-experience/800/600",
+            hint: "digital interface"
+        }
+    },
+    {
+        title: "Content That Builds Your Brand",
+        description: "Your content is your brand's voice in the digital world. We develop a content strategy that not only attracts your target audience but also reinforces your brand's values and expertise. We create content that tells your story and builds a loyal community.",
+        points: [
+            "Content pillar and theme development.",
+            "Creation of blog posts, articles, and social media content.",
+            "Video and visual content production.",
+            "Content distribution strategy to maximize reach."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/brand-content/800/600",
+            hint: "content creation"
+        }
+    }
+];
+
 export default function DigitalBrandingPage() {
   const pageData = {
     title: "Digital Branding",
@@ -131,6 +162,37 @@ export default function DigitalBrandingPage() {
         </div>
       </section>
 
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
       <OurClients />
 
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">
@@ -179,5 +241,3 @@ export default function DigitalBrandingPage() {
     </div>
   );
 }
-
-    

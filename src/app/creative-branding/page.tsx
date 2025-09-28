@@ -31,6 +31,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Strategic Brand Identity",
+        description: "We don't just create pretty logos. We delve deep into your business to build a strategic brand identity that communicates your core values, differentiates you from the competition, and resonates deeply with your target audience.",
+        points: [
+            "In-depth brand discovery and market research.",
+            "Development of a unique brand voice and messaging.",
+            "Creation of a comprehensive visual identity system.",
+            "Detailed brand guidelines to ensure consistency."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/brand-strategy/800/600",
+            hint: "brand strategy"
+        }
+    },
+    {
+        title: "Full-Service Creative Production",
+        description: "Our in-house production team brings your brand to life through stunning visuals. From professional photography to cinematic video production, we create high-quality content that tells your story and engages your audience across all platforms.",
+        points: [
+            "Concept development and storyboarding.",
+            "Professional photo and video shoots.",
+            "Post-production including editing, color grading, and sound design.",
+            "Content optimized for web, social media, and advertising."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/creative-production/800/600",
+            hint: "photo shoot"
+        }
+    }
+];
+
 export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
@@ -122,6 +153,37 @@ export default function CreativeBrandingPage() {
               <GetStartedForm />
             </div>
           </div>
+        </div>
+      </section>
+
+       <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
         </div>
       </section>
 

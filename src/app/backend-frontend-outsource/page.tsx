@@ -54,6 +54,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Seamless Frontend Development",
+        description: "Our frontend developers are experts in creating beautiful, responsive, and intuitive user interfaces. We use modern frameworks like React, Next.js, and Vue.js to build fast, scalable, and engaging web applications.",
+        points: [
+            "Pixel-perfect implementation of UI/UX designs.",
+            "Component-based architecture for maintainability.",
+            "Performance optimization for fast load times.",
+            "Cross-browser compatibility and accessibility compliance."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/frontend-code/800/600",
+            hint: "frontend code"
+        }
+    },
+    {
+        title: "Robust Backend Engineering",
+        description: "We build secure, scalable, and reliable backend systems to power your applications. Our expertise spans Node.js, Python, Java, and more, ensuring we choose the right technology for your specific needs.",
+        points: [
+            "RESTful and GraphQL API development.",
+            "Database design and optimization (SQL & NoSQL).",
+            "Microservices and serverless architecture.",
+            "Third-party service and API integration."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/backend-server/800/600",
+            hint: "server room"
+        }
+    }
+];
+
 export default function BackendFrontendOutsourcePage() {
   const pageData = {
     title: "Backend & Frontend Outsourcing",
@@ -132,6 +163,37 @@ export default function BackendFrontendOutsourcePage() {
               <GetStartedForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
         </div>
       </section>
 

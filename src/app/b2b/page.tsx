@@ -81,6 +81,37 @@ const chartConfig = {
   },
 };
 
+const alternatingContent = [
+    {
+        title: "Targeted ABM Campaigns",
+        description: "Our Account-Based Marketing strategies focus on high-value accounts, delivering personalized messaging and content that resonates with key decision-makers. We help you build deeper relationships and accelerate your sales cycle.",
+        points: [
+            "Ideal Customer Profile (ICP) and account list development.",
+            "Personalized content creation and targeted ad campaigns.",
+            "Multi-channel outreach across email, LinkedIn, and display.",
+            "Sales and marketing team alignment for seamless follow-up."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/b2b-abm-focus/800/600",
+            hint: "marketing focus"
+        }
+    },
+    {
+        title: "Content That Converts",
+        description: "We create high-value content that establishes your brand as a thought leader and drives inbound leads. From in-depth whitepapers to engaging webinars, our content is designed to attract, educate, and convert your target audience.",
+        points: [
+            "Comprehensive content audits and strategy development.",
+            "Creation of whitepapers, case studies, and blog posts.",
+            "Webinar and video production for deeper engagement.",
+            "Content distribution and promotion strategies."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/b2b-content-creation/800/600",
+            hint: "writing content"
+        }
+    }
+];
+
 
 export default function B2BPage() {
   return (
@@ -154,8 +185,39 @@ export default function B2BPage() {
         </div>
       </section>
 
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
       <section
-        className="relative py-20 md:py-32 bg-background"
+        className="relative py-20 md:py-32 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">

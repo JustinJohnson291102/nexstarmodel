@@ -66,7 +66,39 @@ const whyArFilters = [
         title: "Drive User-Generated Content",
         description: "Encourage users to create and share content featuring your brand, amplifying your reach organically."
     }
-]
+];
+
+const alternatingContent = [
+    {
+        title: "AR for E-commerce",
+        description: "Revolutionize the online shopping experience with AR. Allow customers to virtually try on clothes, visualize furniture in their living room, or see how a new gadget looks on their desk. AR reduces returns and increases conversion rates by giving buyers more confidence in their purchase decisions.",
+        points: [
+            "Virtual try-on solutions for fashion and cosmetics.",
+            "Product visualization for furniture, electronics, and more.",
+            "Interactive 3D models that showcase every detail.",
+            "Seamless integration with Shopify, WooCommerce, and other platforms."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/ar-ecommerce/800/600",
+            hint: "ar shopping"
+        }
+    },
+    {
+        title: "AR for Marketing & Events",
+        description: "Create unforgettable marketing campaigns and event experiences with augmented reality. From interactive print ads that come to life, to AR-powered scavenger hunts at trade shows, we help you create buzz and leave a lasting impression.",
+        points: [
+            "AR-enabled packaging and print materials.",
+            "Immersive brand experiences for events and product launches.",
+            "Gamified AR promotions to drive engagement.",
+            "WebAR portals that transport users to virtual worlds."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/ar-marketing/800/600",
+            hint: "ar event"
+        }
+    }
+];
+
 
 export default function AugmentedRealityPage() {
   return (
@@ -129,6 +161,37 @@ export default function AugmentedRealityPage() {
       </section>
 
       <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
@@ -156,7 +219,7 @@ export default function AugmentedRealityPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-20 md:py-32 bg-secondary">
           <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                   <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Build Your AR Dream Experience</h2>
@@ -178,7 +241,7 @@ export default function AugmentedRealityPage() {
           </div>
       </section>
       
-      <section className="py-20 md:py-24 bg-secondary">
+      <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>

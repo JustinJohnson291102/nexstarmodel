@@ -31,6 +31,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "Content That Connects",
+        description: "We develop and create high-quality content that tells your brand's story, educates your audience, and inspires action. From stunning visuals and engaging videos to compelling copy, our content is designed to stop the scroll.",
+        points: [
+            "Monthly content calendar and strategy.",
+            "Professional graphic design, photography, and videography.",
+            "Compelling copywriting that matches your brand voice.",
+            "Content tailored for each platform's algorithm and audience."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/social-content/800/600",
+            hint: "content creation"
+        }
+    },
+    {
+        title: "Targeted Advertising Campaigns",
+        description: "We go beyond organic reach to connect you with your ideal customers through highly targeted social media advertising campaigns. We manage everything from audience research and ad creation to budget optimization and performance tracking.",
+        points: [
+            "Audience segmentation and lookalike audience creation.",
+            "A/B testing of ad creatives and copy for optimal performance.",
+            "Pixel and conversion tracking for measurable ROI.",
+            "Detailed performance reporting and insights."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/social-ads/800/600",
+            hint: "social media ads"
+        }
+    }
+];
+
 export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
@@ -122,6 +153,37 @@ export default function SocialMediaPage() {
               <GetStartedForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
         </div>
       </section>
 

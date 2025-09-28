@@ -65,6 +65,37 @@ const whyChooseUsFeatures = [
     }
 ];
 
+const alternatingContent = [
+    {
+        title: "Full-Funnel Advertising",
+        description: "We create and manage campaigns that target users at every stage of the customer journey, from awareness and consideration to conversion and loyalty. Our integrated approach ensures a seamless experience for your customers and maximum impact for your brand.",
+        points: [
+            "Top-of-funnel brand awareness campaigns.",
+            "Mid-funnel consideration and lead generation.",
+            "Bottom-of-funnel conversion and retargeting campaigns.",
+            "Post-purchase loyalty and retention programs."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/advertising-funnel/800/600",
+            hint: "marketing funnel"
+        }
+    },
+    {
+        title: "Landing Page & Conversion Optimization",
+        description: "Driving traffic is only half the battle. We specialize in creating high-converting landing pages and optimizing your website's user experience to ensure that traffic turns into tangible business results. Through continuous A/B testing and data analysis, we maximize the value of every visitor.",
+        points: [
+            "Custom landing page design and development.",
+            "A/B testing of headlines, copy, and calls-to-action.",
+            "Heatmap and user session analysis to identify friction points.",
+            "Optimization of checkout and form submission processes."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/conversion-optimization-chart/800/600",
+            hint: "conversion chart"
+        }
+    }
+];
+
 const faqs = [
     {
         question: "What is performance marketing?",
@@ -170,9 +201,40 @@ export default function PerformanceMarketingPage() {
              </div>
           </div>
       </section>
+
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
       
       <section 
-        className="py-20 md:py-24 bg-secondary"
+        className="py-20 md:py-24 bg-background"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

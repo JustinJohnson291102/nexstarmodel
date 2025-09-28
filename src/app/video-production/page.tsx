@@ -31,6 +31,37 @@ const faqs = [
     }
 ]
 
+const alternatingContent = [
+    {
+        title: "From Concept to Final Cut",
+        description: "Our end-to-end production process ensures a seamless journey from the initial idea to the final, polished video. We handle everything, so you can focus on your business.",
+        points: [
+            "In-depth strategy and creative brainstorming sessions.",
+            "Detailed storyboarding and scriptwriting.",
+            "Full-service production with professional crew and equipment.",
+            "Meticulous post-production including editing, color grading, and sound mixing."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/video-storyboard/800/600",
+            hint: "video storyboard"
+        }
+    },
+    {
+        title: "Content for Every Platform",
+        description: "We don't just create beautiful videos; we create videos that perform. We understand the nuances of different platforms and optimize our content for maximum engagement, whether it's a cinematic brand film for your website or a short, snappy clip for TikTok.",
+        points: [
+            "High-resolution videos for websites and corporate events.",
+            "Vertical video content for social media stories and reels.",
+            "Short-form video ads for targeted campaigns.",
+            "Animated explainer videos for complex products or services."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/video-platforms/800/600",
+            hint: "social media video"
+        }
+    }
+];
+
 export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
@@ -124,6 +155,37 @@ export default function VideoProductionPage() {
               <GetStartedForm />
             </div>
           </div>
+        </div>
+      </section>
+
+       <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
         </div>
       </section>
 

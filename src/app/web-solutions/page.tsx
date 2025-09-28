@@ -73,6 +73,37 @@ const whyChooseUsFeatures = [
     }
 ];
 
+const alternatingContent = [
+    {
+        title: "Custom Web Applications",
+        description: "Beyond standard websites, we build custom web applications tailored to your unique business processes. From customer portals to internal management tools, we develop solutions that streamline operations and provide value.",
+        points: [
+            "Tailored solutions for your specific business needs.",
+            "Integration with third-party APIs and services.",
+            "Secure user authentication and data management.",
+            "Intuitive interfaces for complex workflows."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/web-app/800/600",
+            hint: "web application"
+        }
+    },
+    {
+        title: "Content Management Systems (CMS)",
+        description: "Take control of your content. We specialize in developing websites on powerful and user-friendly CMS platforms like WordPress, enabling you to easily update your site without any technical knowledge. We provide the training and support you need to manage your content effectively.",
+        points: [
+            "Custom WordPress theme and plugin development.",
+            "User-friendly admin panels for easy content updates.",
+            "Training and documentation for your team.",
+            "Ongoing maintenance and security updates."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/cms-backend/800/600",
+            hint: "cms dashboard"
+        }
+    }
+];
+
 const faqs = [
     {
         question: "How long will it take to build my website?",
@@ -175,7 +206,38 @@ export default function WebSolutionsPage() {
         </div>
     </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
+    <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
+      <section className="py-20 md:py-24 bg-background">
           <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">Full-Spectrum Web Solutions</h2>
@@ -205,7 +267,7 @@ export default function WebSolutionsPage() {
       </section>
 
       <section 
-        className="py-20 md:py-24 bg-background"
+        className="py-20 md:py-24 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -230,7 +292,7 @@ export default function WebSolutionsPage() {
       
       <OurClients />
 
-      <section className="py-20 md:py-24 bg-secondary">
+      <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />

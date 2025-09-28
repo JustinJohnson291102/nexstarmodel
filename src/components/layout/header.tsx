@@ -85,7 +85,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-28 items-center px-4 md:px-6">
+      <div className="container flex h-32 items-center px-4 md:px-6">
         <Link href="/" className="mr-6 flex items-center space-x-2">
            <Image
             src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
@@ -218,5 +218,3 @@ export default function Header() {
     </header>
   );
 }
-
-    

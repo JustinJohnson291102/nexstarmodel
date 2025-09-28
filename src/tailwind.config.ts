@@ -96,10 +96,34 @@ export default {
         typing: {
           '0%': {
             width: '0',
+            opacity: '1',
             'border-right-color': 'hsl(var(--primary-foreground))',
           },
-          '99%': { 'border-right-color': 'hsl(var(--primary-foreground))' },
-          '100%': { width: '100%', 'border-right-color': 'transparent' },
+          '99%': {
+            'border-right-color': 'hsl(var(--primary-foreground))',
+             opacity: '1',
+          },
+          '100%': {
+             width: '100%',
+             opacity: '1',
+            'border-right-color': 'transparent',
+          },
+        },
+        typing2: {
+          '0%': {
+            width: '0',
+            opacity: '1',
+            'border-right-color': 'hsl(var(--primary-foreground))',
+          },
+          '99%': {
+            'border-right-color': 'hsl(var(--primary-foreground))',
+            opacity: '1',
+          },
+          '100%': {
+             width: '100%',
+             opacity: '1',
+            'border-right-color': 'transparent',
+          },
         },
         blink: {
           '50%': {
@@ -124,6 +148,7 @@ export default {
         'marquee-slow': 'marquee-slow 120s linear infinite',
         'chat-bubble': 'chat-bubble 6s ease-in-out infinite',
         typing: 'typing 2s steps(27) forwards',
+        typing2: 'typing2 2s steps(48) forwards',
         blink: 'blink 1s infinite step-start',
         'fade-in-up': 'fade-in-up 1s ease-out forwards',
       },
@@ -145,5 +170,3 @@ export default {
     },
   ],
 } satisfies Config;
-
-    

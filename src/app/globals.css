@@ -67,6 +67,7 @@
   .animate-typing {
     @apply inline-block overflow-hidden whitespace-nowrap border-r-4 border-r-primary-foreground pr-1;
   }
+  .animate-typing2 {
+    @apply inline-block overflow-hidden whitespace-nowrap border-r-4 border-r-primary-foreground pr-1;
+  }
 }
-
-    

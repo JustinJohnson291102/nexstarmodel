@@ -88,13 +88,13 @@ export default function Home() {
             <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-typing">
               Innovate. Create. Elevate.
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in-up opacity-0 animation-delay-[2s]">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-typing2 opacity-0 animation-delay-[2.5s]">
               We are the architects of your digital success story.
             </p>
             <Button
               asChild
               size="lg"
-              className="mt-8 group animate-fade-in-up opacity-0 animation-delay-[3s]"
+              className="mt-8 group animate-fade-in-up opacity-0 animation-delay-[5s]"
             >
               <Link href="/services">
                 Our Services{" "}
@@ -311,5 +311,3 @@ export default function Home() {
     </>
   );
 }
-
-    

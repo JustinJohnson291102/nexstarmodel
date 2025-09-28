@@ -62,23 +62,16 @@ export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
     description: "Modernize your operations, automate processes, and embrace a data-driven culture to stay ahead of the curve.",
-    heroImage: "https://picsum.photos/seed/business-modernization/1920/1080",
-    heroHint: "digital business",
+    heroImage: "https://drive.google.com/uc?export=view&id=1Z5SXzG3ioKVQAVl8pGQO2ZCvzWfL6FY4",
+    heroHint: "abstract digital transformation",
   };
 
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <Image
-          src={pageData.heroImage}
-          alt={pageData.title}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={pageData.heroHint}
-        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Zap className="h-16 w-16 mx-auto mb-4" />

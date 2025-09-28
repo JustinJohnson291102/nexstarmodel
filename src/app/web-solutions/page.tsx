@@ -4,7 +4,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, PenTool, Search, HelpCircle, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle, Scale, ShieldCheck } from "lucide-react";
+import { ArrowRight, Code, PenTool, Search, HelpCircle, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle, Scale, ShieldCheck, Lightbulb } from "lucide-react";
 import GetStartedForm from "@/components/shared/get-started-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";

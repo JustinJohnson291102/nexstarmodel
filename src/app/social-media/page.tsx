@@ -35,7 +35,7 @@ export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
     description: "We build and nurture online communities, turning followers into fans and fans into customers.",
-    heroImage: "https://drive.google.com/uc?export=view&id=1t0eOfMPFn8KXVo53vaDYp90Yi0txupOd",
+    heroImage: "https://picsum.photos/seed/social-media-hero/1920/1080",
     heroHint: "social media network",
     features: [
       {

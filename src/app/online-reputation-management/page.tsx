@@ -35,7 +35,7 @@ export default function OnlineReputationManagementPage() {
   const pageData = {
     title: "Online Reputation Management",
     description: "Shape your brand's narrative, build trust, and protect your online image with our proactive reputation management services.",
-    heroImage: "https://drive.google.com/uc?export=view&id=1YOAGQFSzXIslilWRM3AukvBgmo8rrp48",
+    heroImage: "https://picsum.photos/seed/reputation-hero/1920/1080",
     heroHint: "brand trust",
     features: [
       {

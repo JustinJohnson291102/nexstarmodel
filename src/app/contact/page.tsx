@@ -1,7 +1,7 @@
 
 import ContactForm from "@/components/contact/contact-form";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, MessageSquare } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 
 export default function ContactPage() {
@@ -19,7 +19,6 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container mx-auto px-4 text-white">
           <div className="text-center max-w-3xl mx-auto">
-            <MessageSquare className="h-16 w-16 text-primary mx-auto mb-6" />
             <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">
               Get in Touch
             </h1>
@@ -74,10 +73,10 @@ export default function ContactPage() {
                 </Card>
              </div>
              <div>
-                <Card className="bg-card p-4 sm:p-8 shadow-lg">
+                <Card className="bg-primary text-primary-foreground p-4 sm:p-8 shadow-lg">
                    <div className="text-center mb-6">
                       <h2 className="text-2xl font-bold font-headline">Get Free Quote</h2>
-                      <p className="text-muted-foreground">Just have a quick any questions?</p>
+                      <p className="text-primary-foreground/80">Just have a quick any questions?</p>
                    </div>
                   <CardContent className="p-0">
                     <ContactForm />

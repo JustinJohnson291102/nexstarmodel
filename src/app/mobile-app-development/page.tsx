@@ -35,7 +35,7 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1DKmfa5nUGosaeJGjtEFNXY5EWwYG",
+    heroImage: "https://drive.google.com/uc?export=download&id=1x9jrLNMiSyASUB2PyaL7PWnh_LoOgKFt",
     heroHint: "mobile app development",
     features: [
       {
@@ -63,26 +63,19 @@ export default function MobileAppDevelopmentPage() {
 
   return (
     <div className="bg-background">
-      <section className="relative bg-primary pt-20 pb-12 md:pt-32 md:pb-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="text-center md:text-left text-primary-foreground animate-in fade-in slide-in-from-left-10 duration-700">
-              <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
-                {pageData.title}
-              </h1>
-              <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-xl mx-auto md:mx-0">
-                {pageData.description}
-              </p>
-            </div>
-            <div className="relative h-[50vh] w-full animate-in fade-in slide-in-from-right-10 duration-700">
-                <Image
-                    src={pageData.heroImage}
-                    alt={pageData.title}
-                    fill
-                    className="object-contain"
-                    data-ai-hint={pageData.heroHint}
-                />
-            </div>
+      <section 
+        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 container mx-auto px-4 text-white">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
+              {pageData.title}
+            </h1>
+            <p className="text-lg md:text-2xl text-white/90">
+              {pageData.description}
+            </p>
           </div>
         </div>
       </section>
@@ -179,3 +172,5 @@ export default function MobileAppDevelopmentPage() {
     </div>
   );
 }
+
+    

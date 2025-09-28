@@ -4,7 +4,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, PenTool, Search, HelpCircle, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle } from "lucide-react";
+import { ArrowRight, Code, PenTool, Search, HelpCircle, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle, Scale, ShieldCheck } from "lucide-react";
 import GetStartedForm from "@/components/shared/get-started-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
@@ -15,40 +15,80 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const wordpressBenefits = [
-    {
-        icon: Users,
-        title: "User-Friendly",
-        description: "Easily manage and update your website content without any coding knowledge through its intuitive dashboard."
-    },
-    {
-        icon: PenTool,
-        title: "Highly Customizable",
-        description: "With thousands of themes and plugins, WordPress allows for endless customization to fit your brand's unique needs."
-    },
+const coreFeatures = [
     {
         icon: Search,
         title: "SEO-Friendly",
-        description: "WordPress is built with search engines in mind, and its robust plugin ecosystem helps you optimize your site for better rankings."
+        description: "We build websites with search engine optimization at their core, ensuring you rank higher and attract more organic traffic."
+    },
+    {
+        icon: Smartphone,
+        title: "Responsive Design",
+        description: "Your website will look and perform flawlessly on all devices, from desktops to tablets and smartphones."
+    },
+    {
+        icon: Scale,
+        title: "Scalable Architecture",
+        description: "Our websites are built on a solid foundation that can grow with your business, handling increased traffic and new features with ease."
+    },
+    {
+        icon: ShieldCheck,
+        title: "Secure & Reliable",
+        description: "We prioritize security, implementing best practices to protect your website and your customers' data from threats."
+    }
+];
+
+const processSteps = [
+    { title: "Discovery & Planning", description: "We start by understanding your business, goals, and audience to create a strategic plan." },
+    { title: "IA & Design", description: "We map out the user journey and create a stunning, user-friendly design prototype." },
+    { title: "Development", description: "Our developers bring the design to life with clean, efficient, and scalable code." },
+    { title: "Testing", description: "We rigorously test every aspect of the site to ensure a bug-free, seamless experience." },
+    { title: "Launch", description: "We manage the deployment process for a smooth launch and provide post-launch support." }
+];
+
+const webPackages = [
+    { icon: Briefcase, title: "Competition Analysis" },
+    { icon: Smartphone, title: "Responsive Web Design" },
+    { icon: ShoppingCart, title: "E-commerce Development" },
+    { icon: Replace, title: "CMS Development" },
+    { icon: Rocket, title: "Landing Page Design" },
+    { icon: Users, title: "User Experience (UX) Design" },
+];
+
+const whyChooseUsFeatures = [
+    {
+        icon: Lightbulb,
+        title: "Strategic Approach",
+        description: "We don't just build websites; we build digital experiences that are aligned with your business objectives and drive results.",
+    },
+    {
+        icon: Users,
+        title: "Collaborative Process",
+        description: "We work as your partners, involving you in every step to ensure the final product is a perfect reflection of your vision.",
+    },
+    {
+        icon: TrendingUp,
+        title: "Focus on ROI",
+        description: "Our goal is to create a website that is not just a cost center, but a powerful asset that generates leads and revenue.",
     }
 ];
 
 const faqs = [
     {
-        question: "What is Rapid Website Development?",
-        answer: "Rapid Website Development is an approach that prioritizes quick prototyping and iterative feedback. Instead of a long, rigid planning phase, we build and refine in short cycles, allowing for more flexibility and a faster time-to-market."
+        question: "How long will it take to build my website?",
+        answer: "The timeline depends on the complexity of the project. A standard informational site can take 4-6 weeks, while a custom e-commerce site may take 8-12 weeks or more. We'll provide a detailed timeline after the discovery phase."
     },
     {
-        question: "Why is WordPress a good choice for my business website?",
-        answer: "WordPress powers over 40% of the web for a reason. It's incredibly flexible, user-friendly for content updates, and has a vast ecosystem of plugins for any functionality you can imagine. It's a scalable solution that can grow with your business."
+        question: "How much does a website cost?",
+        answer: "Website costs vary widely. We provide custom quotes based on your specific needs. We can work with you to find a solution that fits your budget, from simple landing pages to complex, custom-built platforms."
     },
     {
-        question: "How long will it take to get my website live?",
-        answer: "With our rapid development process, a standard informational website can often be launched in just a few weeks. More complex projects with custom features or e-commerce will take longer, but our process ensures you see progress and provide feedback much faster than traditional methods."
+        question: "Will I be able to update the website myself?",
+        answer: "Yes. We typically build websites on a Content Management System (CMS) like WordPress, which allows you to easily update content, images, and blog posts without any coding knowledge. We provide training to ensure you're comfortable managing your site."
     },
     {
-        question: "Do you provide support and maintenance after the website is launched?",
-        answer: "Yes, we offer ongoing support and maintenance packages to ensure your website remains secure, up-to-date, and performing optimally. We see ourselves as your long-term digital partner."
+        question: "Do you provide ongoing support and maintenance?",
+        answer: "Absolutely. We offer a range of support and maintenance packages to keep your website secure, updated, and running smoothly. We see ourselves as your long-term digital partner."
     }
 ];
 
@@ -62,23 +102,23 @@ export default function WebSolutionsPage() {
           <div className="grid md:grid-cols-3 gap-16 items-start">
             <div className="md:col-span-2">
               <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-primary animate-in fade-in slide-in-from-left-10 duration-700">
-                Rapid Website Development
+                Website Design & Development
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
-                A rapid development method is a relatively new method designed to make software development processes run more smoothly and faster. It is lighter and less labor intensive than traditional sw development methods.
+                We build beautiful, high-performance websites that are not only visually stunning but also engineered for performance, security, and scalability. Your website is your digital flagship—we make sure it stands out.
               </p>
                <div className="mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
-                    src="https://picsum.photos/seed/rapid-dev/1200/600"
-                    alt="Rapid Website Development"
+                    src="https://picsum.photos/seed/web-dev-hero/1200/600"
+                    alt="Modern Website Design on a laptop"
                     width={1200}
                     height={600}
                     className="rounded-lg shadow-xl"
-                    data-ai-hint="agile development"
+                    data-ai-hint="website design laptop"
                 />
                </div>
             </div>
-            <div className="md:col-span-1 sticky top-28 animate-in fade-in slide-in-from-right-10 duration-700">
+            <div className="md:col-span-1 sticky top-32 animate-in fade-in slide-in-from-right-10 duration-700">
                <GetStartedForm />
             </div>
           </div>
@@ -87,80 +127,108 @@ export default function WebSolutionsPage() {
 
       <section className="py-20 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-                <div className="animate-in fade-in slide-in-from-left-10 duration-700">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">Why Rapid Development is Superior to Traditional Methods</h2>
-                    <p className="text-lg text-muted-foreground mb-8">
-                        Compared to traditional software development's rigid structure and long timelines, rapid development offers a flexible, iterative approach. This means you get a working product faster, can provide feedback earlier, and can adapt to market changes on the fly. It reduces risk, lowers costs, and ensures the final product is exactly what you need.
-                    </p>
-                    <ul className="space-y-4">
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Faster time-to-market for a competitive edge.</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Greater flexibility to adapt to changing requirements.</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>More client involvement for a better end product.</span></li>
-                      <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Reduced development costs and higher ROI.</span></li>
-                    </ul>
-                </div>
-                 <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-                    <Image 
-                        src="https://picsum.photos/seed/agile-vs-waterfall/800/600"
-                        alt="Agile vs Traditional Development"
-                        width={800}
-                        height={600}
-                        className="rounded-lg shadow-xl"
-                        data-ai-hint="agile process"
-                    />
-                 </div>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Built for the Modern Web</h2>
+                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every website we create is built on a foundation of cutting-edge technology and best practices.</p>
+            </div>
+             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {coreFeatures.map((feature, index) => (
+                    <div key={index} className="flex flex-col items-center text-center p-6 bg-card/50 rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index*100}ms`}}>
+                        <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">
+                            <feature.icon className="w-8 h-8" />
+                        </div>
+                        <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
+                        <p className="text-muted-foreground text-sm">{feature.description}</p>
+                    </div>
+                ))}
             </div>
           </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
+       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">The Power of WordPress</h2>
-                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">We leverage the world's most popular content management system to build powerful, scalable, and easy-to-manage websites.</p>
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Proven Development Process</h2>
+                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">A streamlined, transparent process that ensures your project is delivered on time and to the highest standards.</p>
             </div>
-            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                {wordpressBenefits.map((benefit, index) => (
-                    <div key={index} className="flex flex-col items-center text-center p-8 bg-card/50 rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index*150}ms`}}>
-                        <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">
-                            <benefit.icon className="w-10 h-10" />
-                        </div>
-                        <h3 className="text-xl font-bold font-headline mb-2">{benefit.title}</h3>
-                        <p className="text-muted-foreground">{benefit.description}</p>
+            <div className="relative max-w-5xl mx-auto">
+                <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/50 hidden md:block"></div>
+                {processSteps.map((step, index) => (
+                    <div key={index} className={`relative flex items-center mb-12 w-full md:w-1/2 ${index % 2 === 0 ? 'md:ml-auto md:pl-16' : 'md:pr-16'}`}>
+                        <div className="hidden md:block absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-10" style={index % 2 === 0 ? {left: '-8px'} : {right: '-8px'}}></div>
+                        <Card className="w-full shadow-lg hover:shadow-primary/20 transition-shadow">
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-3">
+                                    <div className="bg-primary/10 text-primary p-2 rounded-md">
+                                        <span className="font-bold text-xl">{index + 1}</span>
+                                    </div>
+                                    <span className="font-headline text-2xl">{step.title}</span>
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="text-muted-foreground">{step.description}</p>
+                            </CardContent>
+                        </Card>
                     </div>
                 ))}
             </div>
-             <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300">
-              <Button asChild size="lg" className="group">
-                <Link href="/contact">
-                  Start Your WordPress Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
         </div>
-      </section>
-      <OurClients />
-      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-             <Rocket className="h-16 w-16 mx-auto mb-6" />
-            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
-              Boost Your Online Presence
-            </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-             Ready to launch a stunning, high-performance website in record time? Contact us today to learn how our rapid development services can elevate your digital presence.
-            </p>
-            <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
-              <Button asChild size="lg" variant="secondary" className="group">
-                <Link href="/contact">
-                  Get in Touch <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+    </section>
+
+      <section className="py-20 md:py-24 bg-secondary">
+          <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+                <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">Full-Spectrum Web Solutions</h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                    We offer a wide array of web development services to meet your unique business needs. Whether you need a simple landing page or a complex e-commerce platform, our team has the expertise to deliver.
+                </p>
+                 <div className="grid grid-cols-2 gap-6">
+                    {webPackages.map((pkg) => (
+                        <div key={pkg.title} className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border/20">
+                            <pkg.icon className="w-8 h-8 text-primary" />
+                            <h3 className="font-semibold">{pkg.title}</h3>
+                        </div>
+                    ))}
+                </div>
             </div>
+             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+                <Image 
+                    src="https://picsum.photos/seed/web-solutions-grid/800/700"
+                    alt="Web Solutions Collage"
+                    width={800}
+                    height={700}
+                    className="rounded-lg shadow-xl"
+                    data-ai-hint="web design grid"
+                />
+             </div>
+          </div>
+      </section>
+
+      <section 
+        className="py-20 md:py-24 bg-background"
+      >
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Why Choose Us?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              We are more than just developers; we are your strategic partners in digital growth.
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+            {whyChooseUsFeatures.map((feature, index) => (
+                <div key={index} className="flex flex-col items-center p-8 bg-card/50 backdrop-blur-sm rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+                    <feature.icon className="h-12 w-12 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold font-headline mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground text-sm">{feature.description}</p>
+                </div>
+            ))}
           </div>
         </div>
       </section>
+      
+      <OurClients />
 
       <section className="py-20 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">

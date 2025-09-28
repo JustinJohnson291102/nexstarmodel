@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, FileText, Target, Megaphone, Rocket, TrendingUp, Repeat, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import GetStartedForm from "@/components/shared/get-started-form";
 
 const roadmapSteps = [
   {
@@ -162,26 +163,27 @@ export default function GtmStrategyPage() {
       </section>
       
        <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
-              Ready to Launch?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
-              Our GTM experts are ready to build your custom roadmap to success. Let's discuss your product and how we can make its launch a landmark event.
-            </p>
-            <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
-              <Button asChild size="lg" className="group">
-                <Link href="/contact">
-                  Plan Your Launch <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+          <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div className="max-w-xl">
+              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+                Ready to Launch?
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+                Our GTM experts are ready to build your custom roadmap to success. Let's discuss your product and how we can make its launch a landmark event.
+              </p>
+              <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+                <Button asChild size="lg" className="group">
+                  <Link href="/contact">
+                    Plan Your Launch <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+            <div>
+              <GetStartedForm />
             </div>
           </div>
-        </div>
       </section>
     </>
   );
 }
-
-    

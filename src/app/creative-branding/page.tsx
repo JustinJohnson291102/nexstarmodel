@@ -35,8 +35,8 @@ export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
     description: "We craft unforgettable brand identities that tell your story, captivate your audience, and build lasting loyalty.",
-    heroImage: "https://drive.google.com/uc?export=view&id=15DItKmdbevUOcB0UfVZKKkc6gDKDC1OA",
-    heroHint: "creative branding design",
+    heroImage: "https://picsum.photos/seed/creative-branding-vibrant/1920/1080",
+    heroHint: "vibrant creative branding",
     features: [
       {
         icon: Palette,

@@ -2,65 +2,73 @@
 import ContactForm from "@/components/contact/contact-form";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, MessageSquare } from "lucide-react";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
     <>
       <section 
-        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-secondary/50"
+        className="relative pt-20 pb-12 md:pt-32 md:pb-20 flex items-center justify-center text-center"
       >
-        <div className="container mx-auto px-4">
+        <Image
+          src="https://drive.google.com/uc?export=download&id=1wptAmzKIg3EepYgAVTwp3IpxAZGO0E7_"
+          alt="Contact us background"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 container mx-auto px-4 text-white">
           <div className="text-center max-w-3xl mx-auto">
             <MessageSquare className="h-16 w-16 text-primary mx-auto mb-6" />
             <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">
               Get in Touch
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mt-4">
+            <p className="text-lg md:text-xl text-white/90 mt-4">
               We're here to help you achieve your goals. Whether you have a question about our services or want to start a project, our team is ready to help.
             </p>
           </div>
         </div>
       </section>
       
-      <section className="relative pb-20 md:pb-32 bg-secondary/50">
+      <section className="relative py-20 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4 relative z-10">
            <div className="grid md:grid-cols-2 gap-16 items-start">
              <div className="space-y-8">
-                <Card>
+                <Card className="bg-primary text-primary-foreground">
                   <CardContent className="flex items-center gap-4 p-6">
-                    <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                    <div className="bg-primary-foreground/10 text-primary-foreground p-3 rounded-lg">
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Visit Us</h3>
-                      <p className="text-muted-foreground text-sm">845 3rd Ave 6th floor, New York, NY 10022, United States</p>
-                      <p className="text-muted-foreground text-sm mt-2">Level-5, SB Tower, Film City, Sector-16A, Noida – 201301, (U.P.) India</p>
+                      <p className="text-primary-foreground/80 text-sm">845 3rd Ave 6th floor, New York, NY 10022, United States</p>
+                      <p className="text-primary-foreground/80 text-sm mt-2">Level-5, SB Tower, Film City, Sector-16A, Noida – 201301, (U.P.) India</p>
                     </div>
                   </CardContent>
                 </Card>
-                 <Card>
+                 <Card className="bg-primary text-primary-foreground">
                   <CardContent className="flex items-center gap-4 p-6">
-                    <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                    <div className="bg-primary-foreground/10 text-primary-foreground p-3 rounded-lg">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Contact Us</h3>
-                      <a href="tel:+19176728930" className="text-muted-foreground hover:text-primary transition-colors text-sm">+1 (917) 672-8930</a>
+                      <a href="tel:+19176728930" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">+1 (917) 672-8930</a>
                       <br />
-                      <a href="tel:+919821000921" className="text-muted-foreground hover:text-primary transition-colors text-sm">+91 98210 00921</a>
+                      <a href="tel:+919821000921" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">+91 98210 00921</a>
                     </div>
                   </CardContent>
                 </Card>
-                 <Card>
+                 <Card className="bg-primary text-primary-foreground">
                   <CardContent className="flex items-center gap-4 p-6">
-                    <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                    <div className="bg-primary-foreground/10 text-primary-foreground p-3 rounded-lg">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Email Us</h3>
-                      <a href="mailto:contact@nexstarlive.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">contact@nexstarlive.com</a>
+                      <a href="mailto:contact@nexstarlive.com" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">contact@nexstarlive.com</a>
                        <br />
-                      <a href="mailto:contact@nexstarmedia.in" className="text-muted-foreground hover:text-primary transition-colors text-sm">contact@nexstarmedia.in</a>
+                      <a href="mailto:contact@nexstarmedia.in" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">contact@nexstarmedia.in</a>
                     </div>
                   </CardContent>
                 </Card>

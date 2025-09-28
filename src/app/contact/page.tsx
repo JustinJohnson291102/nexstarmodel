@@ -35,7 +35,7 @@ export default function ContactPage() {
              <div className="space-y-8">
                 <Card className="bg-primary text-primary-foreground">
                   <CardContent className="flex items-center gap-4 p-6">
-                    <div className="bg-primary-foreground/10 text-primary-foreground p-3 rounded-lg">
+                    <div className="bg-primary-foreground text-primary p-3 rounded-lg">
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
@@ -47,7 +47,7 @@ export default function ContactPage() {
                 </Card>
                  <Card className="bg-primary text-primary-foreground">
                   <CardContent className="flex items-center gap-4 p-6">
-                    <div className="bg-primary-foreground/10 text-primary-foreground p-3 rounded-lg">
+                    <div className="bg-primary-foreground text-primary p-3 rounded-lg">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 </Card>
                  <Card className="bg-primary text-primary-foreground">
                   <CardContent className="flex items-center gap-4 p-6">
-                    <div className="bg-primary-foreground/10 text-primary-foreground p-3 rounded-lg">
+                    <div className="bg-primary-foreground text-primary p-3 rounded-lg">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>

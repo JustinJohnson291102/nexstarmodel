@@ -28,6 +28,11 @@ const carouselImages = [
     hint: "team brainstorming",
   },
   {
+    src: "https://drive.google.com/uc?export=view&id=1Dr2V-q3ZFyhPXSR9uP-1dHWAxF5NSXSS",
+    alt: "Hero Image 1",
+    hint: "team brainstorming",
+  },
+  {
     src: "https://drive.google.com/uc?export=download&id=1SuutNluGyzd-wJChk9VFu-wJ0arkx19X",
     alt: "Hero Image 2",
     hint: "business collage",

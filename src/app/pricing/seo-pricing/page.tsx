@@ -277,12 +277,17 @@ export default function SEOPricingPage() {
   return (
     <>
       <section 
-        className="relative h-[50vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=12mNNyoL5Jhp0U5OYZVKT9Dks9GQkv0JB')` }}
       >
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
-              Flexible Pricing Plans
+              SEO Pricing Plans
             </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/90">
+              Choose the perfect plan to boost your organic growth and dominate search rankings.
+            </p>
         </div>
       </section>
 

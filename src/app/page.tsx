@@ -23,7 +23,7 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
-    src: "https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    src: "https://drive.google.com/uc?export=view&id=1Dr2V-q3ZFyhPXSR9uP-1dHWAxF5NSXSS",
     alt: "Hero Image 1",
     hint: "team brainstorming",
   },
@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-[80vw] mx-auto">
+      <div className="w-full">
         <section className="relative h-[112vh] w-full">
           <Carousel
             plugins={[

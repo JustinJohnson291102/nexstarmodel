@@ -75,7 +75,7 @@ export default function AugmentedRealityPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://picsum.photos/seed/ar-yellow-red/1920/1080"
+          src="https://drive.google.com/uc?export=download&id=1n3yl1b97OoCaMW4i-57KbFfmRgNtPzNQ"
           alt="Augmented Reality Services"
           fill
           className="object-cover"

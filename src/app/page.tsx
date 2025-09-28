@@ -85,16 +85,16 @@ export default function Home() {
           </Carousel>
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-typing">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Innovate. Create. Elevate.
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-typing2 opacity-0 animation-delay-[2.5s]">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
               We are the architects of your digital success story.
             </p>
             <Button
               asChild
               size="lg"
-              className="mt-8 group animate-fade-in-up opacity-0 animation-delay-[5s]"
+              className="mt-8 group"
             >
               <Link href="/services">
                 Our Services{" "}

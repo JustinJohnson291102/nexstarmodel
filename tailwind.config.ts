@@ -93,24 +93,6 @@ export default {
           '85%': { opacity: '1', transform: 'translateY(-100%) scale(1)' },
           '95%': { opacity: '0', transform: 'translateY(0) scale(0.5)' },
         },
-        typing: {
-          from: { width: '0' },
-          to: { width: '100%' },
-        },
-        blink: {
-          '0%, 100%': { borderColor: 'transparent' },
-          '50%': { borderColor: 'white' },
-        },
-        'fade-in-up': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(10px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -118,26 +100,10 @@ export default {
         float: 'float 3s ease-in-out infinite',
         'marquee-slow': 'marquee-slow 120s linear infinite',
         'chat-bubble': 'chat-bubble 6s ease-in-out infinite',
-        typing: 'typing 2s steps(27, end) forwards, blink 0.75s 3',
-        'fade-in-up': 'fade-in-up 1s ease-out forwards',
       },
     },
   },
   plugins: [
     require('tailwindcss-animate'),
-    function ({ addUtilities, theme }) {
-      const newUtilities = {};
-      const animationDelay = theme('animationDelay');
-      if (animationDelay) {
-        Object.entries(animationDelay).forEach(([key, value]) => {
-          newUtilities[`.animation-delay-\\[${key}\\]`] = {
-            'animation-delay': value,
-          };
-        });
-      }
-      addUtilities(newUtilities);
-    },
   ],
 } satisfies Config;
-
-    

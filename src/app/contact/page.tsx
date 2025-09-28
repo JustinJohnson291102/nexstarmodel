@@ -72,16 +72,8 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
              </div>
-             <div>
-                <Card className="bg-primary text-primary-foreground p-10 sm:p-14 shadow-lg rounded-3xl">
-                   <div className="text-center mb-8">
-                      <h2 className="text-3xl font-bold font-headline">Request a Free Consultation</h2>
-                      <p className="text-primary-foreground/80 mt-2">Fill out the form below to get started.</p>
-                   </div>
-                  <CardContent className="p-0">
-                    <ContactForm />
-                  </CardContent>
-                </Card>
+             <div className="bg-card p-8 rounded-2xl shadow-lg">
+                <ContactForm />
              </div>
            </div>
         </div>

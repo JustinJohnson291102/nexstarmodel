@@ -91,7 +91,7 @@ export default function PodcastPage() {
     <div className="bg-background text-foreground">
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-         style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1rBJpGQE0wDlAokUHkoaEkeshl1fDitU4')` }}
+         style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1eT9LRdRF581FRDSpAeWrdlKlOMuMpYOv')` }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -233,3 +233,5 @@ export default function PodcastPage() {
     </div>
   );
 }
+
+    

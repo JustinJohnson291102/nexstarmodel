@@ -40,7 +40,7 @@ export default function WebSolutionsPage() {
                 Rapid Website Development
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
-                A rapid development method is a relatively new method designed to make software development processes run more smoothly and faster. It is lighter and less labor-intensive than traditional software development methods.
+                A rapid development method is a relatively new method designed to make software development processes run more smoothly and faster. It is lighter and less labor intensive than traditional sw development methods.
               </p>
                <div className="mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
@@ -116,6 +116,26 @@ export default function WebSolutionsPage() {
         </div>
       </section>
       <OurClients />
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto">
+             <Rocket className="h-16 w-16 mx-auto mb-6" />
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Boost Your Online Presence
+            </h2>
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+             Ready to launch a stunning, high-performance website in record time? Contact us today to learn how our rapid development services can elevate your digital presence.
+            </p>
+            <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+              <Button asChild size="lg" variant="secondary" className="group">
+                <Link href="/contact">
+                  Get in Touch <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

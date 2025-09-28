@@ -85,14 +85,21 @@ const chartConfig = {
 export default function B2BPage() {
   return (
     <>
-      <section 
-        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
-      >
-        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+      <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
+        <Image
+          src="https://picsum.photos/seed/b2b-yellow-red/1920/1080"
+          alt="B2B Marketing"
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint="abstract b2b marketing"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               B2B Marketing That Drives Results
             </h1>
-            <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
               Fueling Growth with Strategic Connections and Data-Driven Insights
             </p>
         </div>

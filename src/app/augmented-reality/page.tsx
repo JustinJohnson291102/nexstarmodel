@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -72,32 +73,28 @@ const whyArFilters = [
 export default function AugmentedRealityPage() {
   return (
     <>
-      <section className="relative bg-primary text-primary-foreground pt-20 md:pt-32">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="text-center md:text-left animate-in fade-in slide-in-from-left-10 duration-700">
-              <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
-                Augmented Reality Services
-              </h1>
-              <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-xl mx-auto md:mx-0">
-                Blur the lines between digital and reality. We craft AR experiences that captivate, engage, and convert.
-              </p>
-              <Button asChild size="lg" className="mt-8 group" variant="secondary">
-                <Link href="/contact">
-                  Get in Touch <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-            <div className="relative h-[60vh] w-full animate-in fade-in slide-in-from-right-10 duration-700">
-                <Image
-                    src="https://drive.google.com/uc?export=download&id=1GNoSpfqj1fyGrnsSnzwbaO1pGf6jJb6r"
-                    alt="Augmented Reality experience on a smartphone"
-                    fill
-                    className="object-contain"
-                    data-ai-hint="augmented reality smartphone"
-                />
-            </div>
-          </div>
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+        <Image
+          src="https://picsum.photos/seed/ar-yellow-red/1920/1080"
+          alt="Augmented Reality Services"
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint="abstract augmented reality"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
+            Augmented Reality Services
+          </h1>
+          <p className="text-lg md:text-2xl text-white/90 max-w-xl mx-auto md:mx-0">
+            Blur the lines between digital and reality. We craft AR experiences that captivate, engage, and convert.
+          </p>
+          <Button asChild size="lg" className="mt-8 group" variant="secondary">
+            <Link href="/contact">
+              Get in Touch <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </Button>
         </div>
       </section>
 

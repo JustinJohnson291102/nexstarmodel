@@ -35,7 +35,7 @@ export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
     description: "From concept to completion, we create compelling video content that tells your story and engages your audience.",
-    heroImage: "https://picsum.photos/seed/video-production-hero/1920/1080",
+    heroImage: "https://picsum.photos/seed/video-yellow-red/1920/1080",
     heroHint: "video production setup",
     features: [
       {
@@ -63,11 +63,17 @@ export default function VideoProductionPage() {
 
   return (
     <div className="bg-background">
-      <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
-      >
-        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+        <Image
+          src={pageData.heroImage}
+          alt={pageData.title}
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint={pageData.heroHint}
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>

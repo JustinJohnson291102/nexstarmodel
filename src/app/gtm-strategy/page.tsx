@@ -97,15 +97,21 @@ const roadmapSteps = [
 export default function GtmStrategyPage() {
   return (
     <>
-      <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/gtm-hero/1920/1080')` }}
-      >
-        <div className="relative z-20 px-4">
-           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
+        <Image
+          src="https://picsum.photos/seed/gtm-yellow-red/1920/1080"
+          alt="Go-To-Market Strategy"
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint="abstract strategy"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Your Go-To-Market Launchpad
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700 delay-100">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
                We turn great ideas into market-leading products. Our Go-To-Market (GTM) strategy is a comprehensive roadmap designed to navigate the complexities of launching and scaling your venture successfully.
             </p>
         </div>

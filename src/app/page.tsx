@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <>
       <div className="w-[80vw] mx-auto">
-        <section className="relative h-[140vh] w-full">
+        <section className="relative h-[112vh] w-full">
           <Carousel
             plugins={[
               Autoplay({
@@ -69,7 +69,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[140vh] w-full">
+                  <div className="relative h-[112vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -85,7 +85,7 @@ export default function Home() {
           </Carousel>
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-2">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4 animate-typing">
               Innovate. Create. Elevate.
             </h1>
             <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in-up opacity-0 animation-delay-[2s]">

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,8 +64,9 @@
 }
 
 @layer utilities {
-  .animate-typing::after {
-    content: '|';
-    animation: blink 1s infinite step-start;
+  .animate-typing {
+    @apply inline-block overflow-hidden whitespace-nowrap border-r-4 border-r-primary-foreground pr-1;
   }
 }
+
+    

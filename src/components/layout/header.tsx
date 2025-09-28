@@ -35,13 +35,13 @@ const serviceLinks = [
     { href: "/augmented-reality", label: "Augmented Reality" },
     { href: "/gtm-strategy", label: "GTM Strategy"},
     { href: "/performance-marketing", label: "Performance Marketing" },
-    { href: "/services", label: "Rapid Website Development" },
-    { href: "/services", label: "Backend & Frontend Outsource" },
-    { href: "/services", label: "WhatsApp Chatbots" },
-    { href: "/services", label: "Digital Business Consulting" },
-    { href: "/services", label: "Digital Branding" },
+    { href: "/rapid-website-development", label: "Rapid Website Development" },
+    { href: "/backend-frontend-outsource", label: "Backend & Frontend Outsource" },
+    { href: "/whatsapp-chatbots", label: "WhatsApp Chatbots" },
+    { href: "/digital-business-consulting", label: "Digital Business Consulting" },
+    { href: "/digital-branding", label: "Digital Branding" },
     { href: "/xtrack", label: "XTrack Analytics" },
-    { href: "/services", label: "Digital Transformation" },
+    { href: "/digital-transformation", label: "Digital Transformation" },
 ];
 
 const webSolutionLinks = [
@@ -81,6 +81,8 @@ export default function Header() {
     </Link>
   );
 
+  const isServiceActive = serviceLinks.some(link => pathname.startsWith(link.href) && link.href !== '/services') || pathname === '/services';
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-28 items-center px-4 md:px-6">
@@ -105,20 +107,7 @@ export default function Header() {
                     href="/services"
                     className={cn(
                       "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
-                       pathname.startsWith('/services') || 
-                       pathname.startsWith('/social-media') || 
-                       pathname.startsWith('/creative-branding') || 
-                       pathname.startsWith('/b2b') || 
-                       pathname.startsWith('/search-marketing') || 
-                       pathname.startsWith('/video-production') || 
-                       pathname.startsWith('/online-reputation-management') || 
-                       pathname.startsWith('/ecommerce-development') || 
-                       pathname.startsWith('/augmented-reality') || 
-                       pathname.startsWith('/mobile-app-development') ||
-                       pathname.startsWith('/gtm-strategy') ||
-                       pathname.startsWith('/performance-marketing') ||
-                       pathname.startsWith('/xtrack')
-                       ? 'text-primary' : ''
+                       isServiceActive ? 'text-primary' : ''
                     )}
                   >
                   Services <ChevronDown className="h-4 w-4 ml-1" />
@@ -229,3 +218,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

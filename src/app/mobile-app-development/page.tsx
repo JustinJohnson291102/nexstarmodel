@@ -35,7 +35,7 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1x9jrLNMiSyASUB2PyaL7PWnh_LoOgKFt",
+    heroImage: "https://drive.google.com/uc?export=download&id=1DKmfa5nUGosaeJGjtEFNXY5EWw2KXwYG",
     heroHint: "mobile app development",
     features: [
       {
@@ -172,5 +172,7 @@ export default function MobileAppDevelopmentPage() {
     </div>
   );
 }
+
+    
 
     

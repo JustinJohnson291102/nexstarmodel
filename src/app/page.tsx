@@ -99,7 +99,7 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              className="mt-20 group transform scale-125"
+              className="mt-20 group transform scale-150"
             >
               <Link href="/services">
                 Our Services{" "}
@@ -316,7 +316,5 @@ export default function Home() {
     </>
   );
 }
-
-    
 
     

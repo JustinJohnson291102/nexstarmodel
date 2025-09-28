@@ -98,7 +98,7 @@ export default {
           to: { width: '100%' },
         },
         blink: {
-          'from, to': { borderColor: 'transparent' },
+          '0%, 100%': { borderColor: 'transparent' },
           '50%': { borderColor: 'white' },
         },
         'fade-in-up': {
@@ -118,7 +118,7 @@ export default {
         float: 'float 3s ease-in-out infinite',
         'marquee-slow': 'marquee-slow 120s linear infinite',
         'chat-bubble': 'chat-bubble 6s ease-in-out infinite',
-        typing: 'typing 2s steps(27, end), blink .75s step-end infinite',
+        typing: 'typing 2s steps(27, end) forwards, blink 0.75s 3',
         'fade-in-up': 'fade-in-up 1s ease-out forwards',
       },
     },
@@ -139,3 +139,5 @@ export default {
     },
   ],
 } satisfies Config;
+
+    

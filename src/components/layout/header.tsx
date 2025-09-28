@@ -34,7 +34,7 @@ const serviceLinks = [
     { href: "/mobile-app-development", label: "Mobile App Development" },
     { href: "/augmented-reality", label: "Augmented Reality" },
     { href: "/gtm-strategy", label: "GTM Strategy"},
-    { href: "/services", label: "Performance Marketing" },
+    { href: "/performance-marketing", label: "Performance Marketing" },
     { href: "/services", label: "Rapid Website Development" },
     { href: "/services", label: "Backend & Frontend Outsource" },
     { href: "/services", label: "WhatsApp Chatbots" },
@@ -116,6 +116,7 @@ export default function Header() {
                        pathname.startsWith('/augmented-reality') || 
                        pathname.startsWith('/mobile-app-development') ||
                        pathname.startsWith('/gtm-strategy') ||
+                       pathname.startsWith('/performance-marketing') ||
                        pathname.startsWith('/xtrack')
                        ? 'text-primary' : ''
                     )}

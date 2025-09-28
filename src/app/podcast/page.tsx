@@ -7,6 +7,15 @@ import { ArrowRight, Mic, Headphones, PlayCircle, Rss } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 
 const episodes = [
   {
@@ -41,6 +50,22 @@ const episodes = [
     tags: ["B2B", "ABM", "Lead Generation"],
     episodeNumber: "Ep. 09",
   },
+    {
+    title: "Mastering Social Media Engagement",
+    category: "Social Media",
+    description: "Explore strategies for creating authentic connections and fostering a vibrant community around your brand on social media.",
+    image: { src: "https://picsum.photos/seed/podcast-social/800/600", hint: "social media engagement" },
+    tags: ["Community", "Engagement", "Content"],
+    episodeNumber: "Ep. 08",
+  },
+   {
+    title: "The Power of Video Storytelling",
+    category: "Video Production",
+    description: "Discover how to leverage video to tell compelling stories that capture attention and drive action.",
+    image: { src: "https://picsum.photos/seed/podcast-video/800/600", hint: "video storytelling" },
+    tags: ["Video", "Storytelling", "Production"],
+    episodeNumber: "Ep. 07",
+  },
 ];
 
 const featuredGuests = [
@@ -65,20 +90,27 @@ export default function PodcastPage() {
   return (
     <div className="bg-background text-foreground">
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+         style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1rBJpGQE0wDlAokUHkoaEkeshl1fDitU4')` }}
       >
-        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <Mic className="h-20 w-20 mx-auto mb-4 text-primary-foreground" />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <Mic className="h-20 w-20 mx-auto mb-4" />
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
             Nexstar Insights
           </h1>
-          <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
             Your weekly dose of digital marketing trends, strategies, and success stories.
           </p>
         </div>
       </section>
 
-      <section className="relative py-20 md:py-24 bg-background">
+      <section className="relative py-20 md:py-24 bg-secondary">
+         <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10" 
+          style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-bg/1920/1080')`}}
+          data-ai-hint="colorful abstract"
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -88,50 +120,69 @@ export default function PodcastPage() {
               Tune in to our latest conversations with industry leaders and innovators.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {episodes.map((episode, index) => (
-              <Card 
-                key={episode.title} 
-                className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="grid md:grid-cols-3">
-                  <div className="md:col-span-1 relative aspect-video md:aspect-auto">
-                    <Image
-                      src={episode.image.src}
-                      alt={episode.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      data-ai-hint={episode.image.hint}
-                    />
-                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:bg-gradient-to-r" />
+          
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+                stopOnInteraction: true,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {episodes.map((episode, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card 
+                      className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6 h-full flex flex-col"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                        <CardHeader className="p-0">
+                          <div className="relative aspect-video">
+                            <Image
+                              src={episode.image.src}
+                              alt={episode.title}
+                              fill
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              data-ai-hint={episode.image.hint}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                             <div className="absolute top-4 left-4">
+                              <Badge variant="secondary">{episode.category}</Badge>
+                            </div>
+                             <div className="absolute bottom-4 right-4">
+                               <div className="bg-primary/50 text-primary-foreground p-3 rounded-full backdrop-blur-sm border border-primary-foreground/20">
+                                <Headphones className="h-6 w-6" />
+                              </div>
+                            </div>
+                          </div>
+                        </CardHeader>
+                        <CardContent className="p-6 flex-grow">
+                          <div className="flex justify-between items-center mb-2">
+                            <span className="text-xs font-semibold text-muted-foreground">{episode.episodeNumber}</span>
+                          </div>
+                          <CardTitle className="font-headline text-xl mb-3 leading-tight">{episode.title}</CardTitle>
+                          <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{episode.description}</p>
+                        </CardContent>
+                        <CardFooter className="p-6 pt-0 mt-auto">
+                           <Button className="w-full group/button">
+                             <PlayCircle className="mr-2 h-5 w-5 transition-transform group-hover/button:scale-110" /> Listen Now
+                           </Button>
+                        </CardFooter>
+                    </Card>
                   </div>
-                  <div className="md:col-span-2">
-                    <CardHeader>
-                       <div className="flex justify-between items-center">
-                        <Badge variant="secondary">{episode.category}</Badge>
-                        <span className="text-xs font-semibold text-muted-foreground">{episode.episodeNumber}</span>
-                       </div>
-                       <CardTitle className="font-headline text-xl mt-2 leading-tight">{episode.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{episode.description}</p>
-                       <div className="flex flex-wrap gap-2">
-                        {episode.tags.map(tag => (
-                          <Badge key={tag} variant="outline">{tag}</Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                    <CardFooter>
-                       <Button className="w-full">
-                         <PlayCircle className="mr-2 h-5 w-5" /> Listen Now
-                       </Button>
-                    </CardFooter>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
+          </Carousel>
+
         </div>
       </section>
 
@@ -182,5 +233,3 @@ export default function PodcastPage() {
     </div>
   );
 }
-
-    

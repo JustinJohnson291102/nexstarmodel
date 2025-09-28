@@ -16,6 +16,7 @@ const caseStudies = [
     description: "Developed a decentralized backup solution using blockchain technology, ensuring immutable and secure data storage for crypto assets.",
     image: { src: "https://picsum.photos/seed/office-blockchain/800/600", hint: "office blockchain" },
     tags: ["Blockchain", "Cyber Security", "Go"],
+    link: "/portfolio/blockchain-crypto"
   },
   {
     title: "App Design for Local Agency",
@@ -23,6 +24,7 @@ const caseStudies = [
     description: "Redesigned a mobile application for a local government agency, improving user engagement by 40% through an intuitive, human-centered interface.",
     image: { src: "https://picsum.photos/seed/office-app-design/800/600", hint: "office app design" },
     tags: ["UI/UX", "Figma", "React Native"],
+     link: "/portfolio/app-design"
   },
   {
     title: "The New in Upcoming Design Think",
@@ -30,6 +32,7 @@ const caseStudies = [
     description: "A forward-thinking exploration of future design trends, culminating in a conceptual prototype for a next-generation mixed-reality interface.",
     image: { src: "https://picsum.photos/seed/office-design-thinking/800/600", hint: "office design thinking" },
     tags: ["AR/VR", "Prototyping", "UX Research"],
+     link: "/portfolio/design-think"
   },
   {
     title: "Branding for American IT",
@@ -37,6 +40,7 @@ const caseStudies = [
     description: "Crafted a new brand identity for a major American IT firm, positioning them as an innovative leader in a competitive market.",
     image: { src: "https://picsum.photos/seed/office-branding/800/600", hint: "office branding" },
     tags: ["Branding", "Strategy", "Marketing"],
+     link: "/portfolio/it-branding"
   },
   {
     title: "World Best Available Scope",
@@ -44,6 +48,7 @@ const caseStudies = [
     description: "Executed a global market analysis project, identifying key growth opportunities and providing actionable insights through advanced data modeling.",
     image: { src: "https://picsum.photos/seed/office-analytics/800/600", hint: "office analytics" },
     tags: ["Data Science", "Tableau", "Python"],
+     link: "/portfolio/market-analysis"
   },
   {
     title: "Software License Management",
@@ -51,6 +56,7 @@ const caseStudies = [
     description: "Implemented a comprehensive software license management system for a Fortune 500 company, saving them over $2M annually.",
     image: { src: "https://picsum.photos/seed/office-software/800/600", hint: "office software" },
     tags: ["ITAM", "SaaS", "Optimization"],
+     link: "/portfolio/license-management"
   },
 ];
 
@@ -114,9 +120,9 @@ export default function PortfolioPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {caseStudies.map((study, index) => (
+              <Link href={study.link} key={study.title}>
               <Card
-                key={study.title}
-                className="group relative overflow-hidden bg-card/70 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6"
+                className="group relative overflow-hidden bg-card/70 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6 h-full"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader className="p-0">
@@ -135,7 +141,7 @@ export default function PortfolioPage() {
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="font-headline text-xl mb-2 leading-tight">{study.title}</CardTitle>
+                  <CardTitle className="font-headline text-xl mb-2 leading-tight group-hover:text-primary transition-colors">{study.title}</CardTitle>
                   <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{study.description}</p>
                    <div className="flex flex-wrap gap-2">
                     {study.tags.map(tag => (
@@ -144,11 +150,12 @@ export default function PortfolioPage() {
                   </div>
                 </CardContent>
                 <CardFooter className="p-6 pt-0">
-                   <Button variant="secondary" className="w-full">
-                    <Eye className="mr-2 h-4 w-4" /> View Case Study
-                   </Button>
+                  <div className="flex items-center text-primary font-semibold">
+                    <Eye className="mr-2 h-4 w-4" /> View Case Study <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-1" />
+                  </div>
                 </CardFooter>
               </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -201,5 +208,3 @@ export default function PortfolioPage() {
     </div>
   );
 }
-
-    

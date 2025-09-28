@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, PenTool, Search, FileScan, LocateFixed, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle } from "lucide-react";
 import GetStartedForm from "@/components/shared/get-started-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import OurClients from "@/components/homepage/our-clients";
 
 const wordpressBenefits = [
     {
@@ -114,7 +115,7 @@ export default function WebSolutionsPage() {
             </div>
         </div>
       </section>
-
+      <OurClients />
     </>
   );
 }

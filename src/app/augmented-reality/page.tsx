@@ -13,17 +13,20 @@ const videoCards = [
   {
     title: "Product Visualization",
     description: "See products in your space before you buy.",
-    videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4", 
+    videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4",
+    image: { src: "https://picsum.photos/seed/ar-product-viz/800/450", hint: "ar product" },
   },
   {
     title: "Interactive Filters",
     description: "Engage users with fun, shareable brand filters.",
     videoSrc: "https://videos.pexels.com/video-files/7578508/7578508-sd_640_360_25fps.mp4",
+    image: { src: "https://picsum.photos/seed/ar-filter/800/450", hint: "ar social" },
   },
   {
     title: "AR Portals",
     description: "Step into a new world with immersive brand portals.",
     videoSrc: "https://videos.pexels.com/video-files/4429377/4429377-sd_540_960_30fps.mp4",
+    image: { src: "https://picsum.photos/seed/ar-portal/800/450", hint: "ar portal" },
   },
 ];
 
@@ -136,6 +139,7 @@ export default function AugmentedRealityPage() {
                             <div className="relative aspect-video bg-black">
                                 <video
                                     src={card.videoSrc}
+                                    poster={card.image.src}
                                     className="w-full h-full object-cover"
                                     autoPlay
                                     loop

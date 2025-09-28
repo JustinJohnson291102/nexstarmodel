@@ -90,9 +90,16 @@ export default function PodcastPage() {
   return (
     <div className="bg-background text-foreground">
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1eT9LRdRF581FRDSpAeWrdlKlOMuMpYOv')` }}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center"
       >
+        <Image
+          src="https://drive.google.com/uc?export=view&id=1eT9LRdRF581FRDSpAeWrdlKlOMuMpYOv"
+          alt="Podcast hero background"
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint="podcast setup"
+        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Mic className="h-20 w-20 mx-auto mb-4" />
@@ -233,5 +240,3 @@ export default function PodcastPage() {
     </div>
   );
 }
-
-    

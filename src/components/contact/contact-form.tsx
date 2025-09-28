@@ -23,8 +23,14 @@ const formSchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters.",
   }),
+   company: z.string().min(2, {
+    message: "Company must be at least 2 characters.",
+  }),
   email: z.string().email({
     message: "Please enter a valid email address.",
+  }),
+   subject: z.string().min(5, {
+    message: "Subject must be at least 5 characters.",
   }),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
@@ -39,7 +45,9 @@ export default function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
+      company: "",
       email: "",
+      subject: "",
       message: "",
     },
   });
@@ -60,7 +68,7 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           control={form.control}
           name="name"
@@ -69,6 +77,19 @@ export default function ContactForm() {
               <FormLabel>Name</FormLabel>
               <FormControl>
                 <Input placeholder="Your Name" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="company"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Company</FormLabel>
+              <FormControl>
+                <Input placeholder="Your Company" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -89,6 +110,19 @@ export default function ContactForm() {
         />
         <FormField
           control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Subject</FormLabel>
+              <FormControl>
+                <Input placeholder="Subject of your message" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
           name="message"
           render={({ field }) => (
             <FormItem>
@@ -102,7 +136,7 @@ export default function ContactForm() {
         />
         <Button type="submit" className="w-full" disabled={isSubmitting}>
           {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? "Submitting..." : "Submit Now"}
         </Button>
       </form>
     </Form>

@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Zap, CheckCircle, HelpCircle } from "lucide-react";
+import { Zap, CheckCircle, HelpCircle, Cloud, ShieldCheck, Repeat, Cpu, ArrowRight } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +11,33 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+
+const transformationServices = [
+    {
+        icon: Repeat,
+        title: "Legacy System Modernization",
+        description: "We refactor or replace outdated software with modern, scalable, and maintainable solutions without disrupting your business operations."
+    },
+    {
+        icon: Cpu,
+        title: "Business Process Automation",
+        description: "Identify and automate repetitive, manual tasks to increase efficiency, reduce errors, and free up your team for more strategic work."
+    },
+    {
+        icon: Cloud,
+        title: "Cloud Migration & Strategy",
+        description: "Seamlessly migrate your infrastructure and applications to the cloud (AWS, GCP, Azure) for enhanced scalability, security, and cost-effectiveness."
+    },
+    {
+        icon: ShieldCheck,
+        title: "Data-Driven Culture Implementation",
+        description: "We help you implement the tools and processes needed to collect, analyze, and act on data, turning insights into a competitive advantage."
+    }
+];
 
 const faqs = [
     {
@@ -19,8 +46,16 @@ const faqs = [
     },
     {
         question: "Where do we start with digital transformation?",
-        answer: "Our process begins with a comprehensive audit of your current processes and technology stack. From there, we work with you to create a prioritized roadmap that focuses on high-impact areas for transformation, ensuring a smooth and successful journey."
+        answer: "Our process begins with a comprehensive audit of your current processes, technology stack, and business goals. From there, we work with you to create a prioritized roadmap that focuses on high-impact areas for transformation, ensuring a smooth and successful journey."
     },
+    {
+        question: "Is digital transformation only for large enterprises?",
+        answer: "Not at all. Businesses of all sizes can benefit from digital transformation. For small businesses, it can be about adopting cloud-based tools to improve efficiency. For larger companies, it might be a more comprehensive overhaul of legacy systems. We tailor our approach to your size and needs."
+    },
+     {
+        question: "How do you manage the change within the organization?",
+        answer: "Change management is a critical component of our digital transformation services. We work with your team to ensure clear communication, provide thorough training, and demonstrate the value of new processes and tools to foster adoption and minimize resistance."
+    }
 ]
 
 export default function DigitalTransformationPage() {
@@ -34,11 +69,19 @@ export default function DigitalTransformationPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center"
       >
+        <Image
+          src={pageData.heroImage}
+          alt={pageData.title}
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint={pageData.heroHint}
+        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <Zap className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
@@ -50,17 +93,37 @@ export default function DigitalTransformationPage() {
 
       <section className="py-20 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
                 <h2 className="text-3xl font-bold font-headline mb-4">Evolve Your Business for the Digital Age</h2>
                 <p>
-                 To stay competitive, businesses must adapt. Our digital transformation services help you modernize legacy systems, automate manual processes, and leverage the power of cloud computing and data analytics. We guide you through every step of the journey, from strategy and planning to implementation and change management, ensuring a successful transition to a more agile and efficient organization.
+                 To stay competitive in a rapidly changing world, businesses must adapt. Digital transformation is no longer an option—it's a necessity. Our services help you shed outdated legacy systems, automate time-consuming manual processes, and leverage the power of cloud computing and data analytics. We guide you through every step of the journey, from strategy and planning to implementation and change management, ensuring a successful transition to a more agile, efficient, and resilient organization.
                 </p>
+                 <ul className="space-y-4 mt-6">
+                    <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Increase operational efficiency and reduce costs.</span></li>
+                    <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Enhance customer experience with modern, digital-first services.</span></li>
+                    <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Unlock new revenue streams and business models.</span></li>
+                    <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Improve decision-making with real-time data and analytics.</span></li>
+                </ul>
               </div>
 
+               <div className="bg-secondary p-8 rounded-lg">
+                    <h3 className="text-2xl font-bold font-headline mb-6 text-center">Our Core Transformation Services</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {transformationServices.map((service) => (
+                             <Card key={service.title} className="p-6 flex flex-col items-center text-center">
+                                 <div className="bg-primary/10 text-primary p-3 rounded-full mb-4">
+                                   <service.icon className="w-7 h-7" />
+                                 </div>
+                                 <h4 className="text-lg font-bold font-headline mb-2">{service.title}</h4>
+                                 <p className="text-muted-foreground text-sm">{service.description}</p>
+                             </Card>
+                        ))}
+                    </div>
+                </div>
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
           </div>
@@ -68,6 +131,27 @@ export default function DigitalTransformationPage() {
       </section>
 
       <OurClients />
+
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto">
+             <Zap className="h-16 w-16 text-primary-foreground mx-auto mb-6" />
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Ready to Future-Proof Your Business?
+            </h2>
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+              The future is digital. Let us help you build a more agile, resilient, and competitive business. Contact us to begin your transformation journey.
+            </p>
+            <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+              <Button asChild size="lg" variant="secondary" className="group">
+                <Link href="/contact">
+                  Start Your Transformation <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
        <section className="py-20 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">

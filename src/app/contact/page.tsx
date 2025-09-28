@@ -33,7 +33,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 relative z-10">
            <div className="grid md:grid-cols-2 gap-16 items-start">
              <div className="space-y-8">
-                <Card className="bg-primary text-primary-foreground">
+                <Card className="bg-primary text-primary-foreground rounded-3xl">
                   <CardContent className="flex items-center gap-4 p-6">
                     <div className="bg-primary-foreground text-primary p-3 rounded-lg">
                       <MapPin className="h-6 w-6" />
@@ -45,7 +45,7 @@ export default function ContactPage() {
                     </div>
                   </CardContent>
                 </Card>
-                 <Card className="bg-primary text-primary-foreground">
+                 <Card className="bg-primary text-primary-foreground rounded-3xl">
                   <CardContent className="flex items-center gap-4 p-6">
                     <div className="bg-primary-foreground text-primary p-3 rounded-lg">
                       <Phone className="h-6 w-6" />
@@ -58,7 +58,7 @@ export default function ContactPage() {
                     </div>
                   </CardContent>
                 </Card>
-                 <Card className="bg-primary text-primary-foreground">
+                 <Card className="bg-primary text-primary-foreground rounded-3xl">
                   <CardContent className="flex items-center gap-4 p-6">
                     <div className="bg-primary-foreground text-primary p-3 rounded-lg">
                       <Mail className="h-6 w-6" />
@@ -73,10 +73,10 @@ export default function ContactPage() {
                 </Card>
              </div>
              <div>
-                <Card className="bg-primary text-primary-foreground p-4 sm:p-8 shadow-lg">
-                   <div className="text-center mb-6">
-                      <h2 className="text-2xl font-bold font-headline">Get Free Quote</h2>
-                      <p className="text-primary-foreground/80">Just have a quick any questions?</p>
+                <Card className="bg-primary text-primary-foreground p-8 sm:p-12 shadow-lg">
+                   <div className="text-center mb-8">
+                      <h2 className="text-3xl font-bold font-headline">Request a Free Consultation</h2>
+                      <p className="text-primary-foreground/80 mt-2">Fill out the form below to get started.</p>
                    </div>
                   <CardContent className="p-0">
                     <ContactForm />

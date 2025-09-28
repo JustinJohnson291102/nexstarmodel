@@ -35,7 +35,7 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1DKmfa5nUGosaeJGjtEFNXY5EWw2KXwYG",
+    heroImage: "https://picsum.photos/seed/mobile-development/1920/1080",
     heroHint: "mobile app development",
     features: [
       {
@@ -64,7 +64,7 @@ export default function MobileAppDevelopmentPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
         <div className="absolute inset-0 bg-black/50" />
@@ -172,7 +172,3 @@ export default function MobileAppDevelopmentPage() {
     </div>
   );
 }
-
-    
-
-    

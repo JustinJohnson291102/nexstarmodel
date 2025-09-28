@@ -13,8 +13,6 @@ const videoCards = [
   {
     title: "Product Visualization",
     description: "See products in your space before you buy.",
-    // ✅ FIX APPLIED: Replaced the non-streaming Google Drive link with a working MP4 URL.
-    // NOTE: You should replace this Pexels link with your actual, direct video URL.
     videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4", 
   },
   {
@@ -73,15 +71,10 @@ const whyArFilters = [
 export default function AugmentedRealityPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <Image
-          src="https://drive.google.com/uc?export=download&id=1n3yl1b97OoCaMW4i-57KbFfmRgNtPzNQ"
-          alt="Augmented Reality Services"
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint="abstract augmented reality"
-        />
+      <section 
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1n3yl1b97OoCaMW4i-57KbFfmRgNtPzNQ')` }}
+        >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">

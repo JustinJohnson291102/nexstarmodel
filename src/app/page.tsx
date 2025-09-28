@@ -28,23 +28,23 @@ const carouselImages = [
     hint: "team brainstorming",
   },
   {
-    src: "https://drive.google.com/uc?export=view&id=1Dr2V-q3ZFyhPXSR9uP-1dHWAxF5NSXSS",
-    alt: "Hero Image 1",
-    hint: "team brainstorming",
+    src: "https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    alt: "Hero Image 2",
+    hint: "digital marketing",
   },
   {
     src: "https://drive.google.com/uc?export=download&id=1SuutNluGyzd-wJChk9VFu-wJ0arkx19X",
-    alt: "Hero Image 2",
+    alt: "Hero Image 3",
     hint: "business collage",
   },
   {
     src: "https://drive.google.com/uc?export=download&id=13ktX4VyT7daPwQE1vJGb8gkNd3beWNJt",
-    alt: "Hero Image 3",
+    alt: "Hero Image 4",
     hint: "technology collage",
   },
   {
     src: "https://drive.google.com/uc?export=download&id=1H1Raqxyy4go2eLbMchu0yeuEPJ_eO7Am",
-    alt: "Hero Image 4",
+    alt: "Hero Image 5",
     hint: "marketing collage",
   },
 ];
@@ -316,3 +316,5 @@ export default function Home() {
     </>
   );
 }
+
+    

@@ -20,6 +20,7 @@ import {
 const mainLinks = [
   { href: "/", label: "Home" },
   { href: "/story", label: "Our Story" },
+  { href: "/podcast", label: "Podcast" },
 ];
 
 const serviceLinks = [

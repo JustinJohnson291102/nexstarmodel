@@ -3,87 +3,77 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Briefcase, Eye } from "lucide-react";
+import { ArrowRight, Mic, Headphones, PlayCircle, Rss } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const caseStudies = [
+const episodes = [
   {
-    title: "Backup, Blockchain & Crypto",
-    category: "Cyber Security",
-    description: "Developed a decentralized backup solution using blockchain technology, ensuring immutable and secure data storage for crypto assets.",
-    image: { src: "https://picsum.photos/seed/blockchain-security/800/600", hint: "blockchain security" },
-    tags: ["Blockchain", "Cyber Security", "Go"],
+    title: "The Future of Digital Marketing",
+    category: "Marketing Trends",
+    description: "An in-depth discussion on how AI, machine learning, and data analytics are shaping the future of the marketing industry.",
+    image: { src: "https://picsum.photos/seed/podcast-future/800/600", hint: "futuristic marketing" },
+    tags: ["AI", "Data Analytics", "Marketing"],
+    episodeNumber: "Ep. 12",
   },
   {
-    title: "App Design for Local Agency",
-    category: "UI/UX Design",
-    description: "Redesigned a mobile application for a local government agency, improving user engagement by 40% through an intuitive, human-centered interface.",
-    image: { src: "https://picsum.photos/seed/app-design-agency/800/600", hint: "mobile app design" },
-    tags: ["UI/UX", "Figma", "React Native"],
+    title: "Building a Brand That Lasts",
+    category: "Branding",
+    description: "Experts share their secrets on creating a strong brand identity that resonates with audiences and stands the test of time.",
+    image: { src: "https://picsum.photos/seed/podcast-branding/800/600", hint: "brand identity" },
+    tags: ["Branding", "Strategy", "Storytelling"],
+    episodeNumber: "Ep. 11",
   },
   {
-    title: "The New in Upcoming Design Think",
-    category: "UI/UX Design",
-    description: "A forward-thinking exploration of future design trends, culminating in a conceptual prototype for a next-generation mixed-reality interface.",
-    image: { src: "https://picsum.photos/seed/design-thinking/800/600", hint: "design thinking" },
-    tags: ["AR/VR", "Prototyping", "UX Research"],
+    title: "The Art of Conversion Rate Optimization",
+    category: "E-commerce",
+    description: "Learn the techniques and tools used by top professionals to turn website visitors into loyal customers.",
+    image: { src: "https://picsum.photos/seed/podcast-cro/800/600", hint: "conversion optimization" },
+    tags: ["CRO", "E-commerce", "UX"],
+    episodeNumber: "Ep. 10",
   },
   {
-    title: "Branding for American IT",
-    category: "IT Consultancy",
-    description: "Crafted a new brand identity for a major American IT firm, positioning them as an innovative leader in a competitive market.",
-    image: { src: "https://picsum.photos/seed/it-branding/800/600", hint: "corporate branding" },
-    tags: ["Branding", "Strategy", "Marketing"],
-  },
-  {
-    title: "World Best Available Scope",
-    category: "Data Analytics",
-    description: "Executed a global market analysis project, identifying key growth opportunities and providing actionable insights through advanced data modeling.",
-    image: { src: "https://picsum.photos/seed/market-analysis/800/600", hint: "global data" },
-    tags: ["Data Science", "Tableau", "Python"],
-  },
-  {
-    title: "Software License Management",
-    category: "IT Consultancy",
-    description: "Implemented a comprehensive software license management system for a Fortune 500 company, saving them over $2M annually.",
-    image: { src: "https://picsum.photos/seed/software-license/800/600", hint: "software management" },
-    tags: ["ITAM", "SaaS", "Optimization"],
+    title: "Navigating the World of B2B Marketing",
+    category: "B2B",
+    description: "A deep dive into the unique challenges and opportunities in the B2B marketing landscape, with a focus on ABM and lead nurturing.",
+    image: { src: "https://picsum.photos/seed/podcast-b2b/800/600", hint: "b2b strategy" },
+    tags: ["B2B", "ABM", "Lead Generation"],
+    episodeNumber: "Ep. 09",
   },
 ];
 
-const similarProjects = [
+const featuredGuests = [
   {
-    title: "AI-Powered Threat Detection",
-    description: "A real-time cybersecurity platform that uses machine learning to predict and neutralize threats before they can cause damage.",
-    image: { src: "https://picsum.photos/seed/ai-threat/800/600", hint: "ai security" },
+    name: "Jane Doe",
+    title: "CEO, Innovate Inc.",
+    image: { src: "https://picsum.photos/seed/guest-jane/400", hint: "business woman" },
   },
   {
-    title: "E-commerce Personalization Engine",
-    description: "A data-driven recommendation engine that increased average order value by 25% for a major online retailer.",
-    image: { src: "https://picsum.photos/seed/ecommerce-ai/800/600", hint: "ecommerce analytics" },
+    name: "John Smith",
+    title: "Marketing Guru & Author",
+    image: { src: "https://picsum.photos/seed/guest-john/400", hint: "marketing expert" },
   },
   {
-    title: "IoT Smart City Dashboard",
-    description: "A UI/UX project to visualize complex city-wide data from IoT sensors, enabling better urban planning and resource management.",
-    image: { src: "https://picsum.photos/seed/smart-city/800/600", hint: "smart city" },
+    name: "Emily White",
+    title: "Head of UX, Creative Solutions",
+    image: { src: "https://picsum.photos/seed/guest-emily/400", hint: "ux designer" },
   },
 ];
 
-export default function PortfolioPage() {
+export default function PodcastPage() {
   return (
     <div className="bg-background text-foreground">
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-primary text-primary-foreground"
       >
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary-foreground" />
+          <Mic className="h-20 w-20 mx-auto mb-4 text-primary-foreground" />
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
-            Our Portfolio
+            Nexstar Insights
           </h1>
           <p className="text-lg md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-            A showcase of our commitment to excellence, innovation, and impactful results.
+            Your weekly dose of digital marketing trends, strategies, and success stories.
           </p>
         </div>
       </section>
@@ -92,48 +82,53 @@ export default function PortfolioPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
-              Recent Case Studies
+              Latest Episodes
             </h2>
             <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              Transforming challenges into triumphs. Here's a look at how we've helped our clients succeed.
+              Tune in to our latest conversations with industry leaders and innovators.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {caseStudies.map((study, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {episodes.map((episode, index) => (
               <Card 
-                key={study.title} 
+                key={episode.title} 
                 className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardHeader className="p-0">
-                  <div className="relative aspect-video">
+                <div className="grid md:grid-cols-3">
+                  <div className="md:col-span-1 relative aspect-video md:aspect-auto">
                     <Image
-                      src={study.image.src}
-                      alt={study.title}
+                      src={episode.image.src}
+                      alt={episode.title}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      data-ai-hint={study.image.hint}
+                      data-ai-hint={episode.image.hint}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-                    <div className="absolute top-4 right-4">
-                      <Badge variant="secondary" className="bg-background/20 text-white backdrop-blur-sm">{study.category}</Badge>
-                    </div>
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:bg-gradient-to-r" />
                   </div>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="font-headline text-xl mb-2 leading-tight">{study.title}</CardTitle>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{study.description}</p>
-                   <div className="flex flex-wrap gap-2">
-                    {study.tags.map(tag => (
-                      <Badge key={tag} variant="outline">{tag}</Badge>
-                    ))}
+                  <div className="md:col-span-2">
+                    <CardHeader>
+                       <div className="flex justify-between items-center">
+                        <Badge variant="secondary">{episode.category}</Badge>
+                        <span className="text-xs font-semibold text-muted-foreground">{episode.episodeNumber}</span>
+                       </div>
+                       <CardTitle className="font-headline text-xl mt-2 leading-tight">{episode.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{episode.description}</p>
+                       <div className="flex flex-wrap gap-2">
+                        {episode.tags.map(tag => (
+                          <Badge key={tag} variant="outline">{tag}</Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                    <CardFooter>
+                       <Button className="w-full">
+                         <PlayCircle className="mr-2 h-5 w-5" /> Listen Now
+                       </Button>
+                    </CardFooter>
                   </div>
-                </CardContent>
-                <CardFooter className="p-6 pt-0">
-                   <Button variant="secondary" className="w-full">
-                     <Eye className="mr-2 h-4 w-4" /> View Case Study
-                   </Button>
-                </CardFooter>
+                </div>
               </Card>
             ))}
           </div>
@@ -146,30 +141,31 @@ export default function PortfolioPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
-              Our Similar Projects
+              Featured Guests
             </h2>
             <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              A glimpse into our technical expertise and innovative solutions across various domains.
+              We've had the pleasure of hosting some of the brightest minds in the industry.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {similarProjects.map((project, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {featuredGuests.map((guest, index) => (
               <div 
-                key={project.title} 
-                className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6"
+                key={guest.name} 
+                className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6 text-center"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <Image
-                  src={project.image.src}
-                  alt={project.title}
-                  width={800}
-                  height={600}
-                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                  data-ai-hint={project.image.hint}
-                />
+                <div className="relative aspect-square">
+                    <Image
+                        src={guest.image.src}
+                        alt={guest.name}
+                        fill
+                        className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                        data-ai-hint={guest.image.hint}
+                    />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="font-headline text-2xl font-bold text-white mb-2 transition-transform duration-300 group-hover:-translate-y-1">{project.title}</h3>
-                  <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 h-0 group-hover:h-auto">{project.description}</p>
+                  <h3 className="font-headline text-2xl font-bold text-white mb-1">{guest.name}</h3>
+                  <p className="text-white/80 text-sm">{guest.title}</p>
                 </div>
               </div>
             ))}
@@ -177,7 +173,7 @@ export default function PortfolioPage() {
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
               <Button asChild size="lg" variant="secondary" className="group">
                 <Link href="/contact">
-                  Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  Become a Guest <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
             </div>
@@ -186,5 +182,3 @@ export default function PortfolioPage() {
     </div>
   );
 }
-
-    

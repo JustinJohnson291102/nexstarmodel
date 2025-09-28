@@ -1,26 +1,28 @@
+
 import ContactForm from "@/components/contact/contact-form";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, MessageSquare } from "lucide-react";
 
 export default function ContactPage() {
   return (
     <>
       <section 
-        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-background"
+        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-secondary/50"
       >
         <div className="container mx-auto px-4">
-          <div className="text-center">
+          <div className="text-center max-w-3xl mx-auto">
+            <MessageSquare className="h-16 w-16 text-primary mx-auto mb-6" />
             <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">
-              Get Free Quote
+              Get in Touch
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mt-2">
-              Just have a quick any questions?
+            <p className="text-lg md:text-xl text-muted-foreground mt-4">
+              We're here to help you achieve your goals. Whether you have a question about our services or want to start a project, our team is ready to help.
             </p>
           </div>
         </div>
       </section>
       
-      <section className="relative pb-20 md:pb-32 bg-background">
+      <section className="relative pb-20 md:pb-32 bg-secondary/50">
         <div className="container mx-auto px-4 relative z-10">
            <div className="grid md:grid-cols-2 gap-16 items-start">
              <div className="space-y-8">
@@ -64,7 +66,7 @@ export default function ContactPage() {
                 </Card>
              </div>
              <div>
-                <Card className="bg-card/80 backdrop-blur-sm border-border/50 p-4 sm:p-8 shadow-lg">
+                <Card className="bg-card p-4 sm:p-8 shadow-lg">
                    <div className="text-center mb-6">
                       <h2 className="text-2xl font-bold font-headline">Get Free Quote</h2>
                       <p className="text-muted-foreground">Just have a quick any questions?</p>
@@ -78,10 +80,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-secondary py-20 md:py-24">
+      <section className="bg-background py-20 md:py-24">
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8">
-                <div className="h-[400px] md:h-[500px] w-full">
+                <div className="h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden shadow-lg">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.613337920792!2d-73.9712196845942!3d40.75050097932788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590155b33c07%3A0x232e6e58284e3753!2s845%203rd%20Ave%2C%20New%20York%2C%20NY%2010022%2C%20USA!5e0!3m2!1sen!2sin!4v1678886311545!5m2!1sen!2sin"
                         width="100%"
@@ -92,7 +94,7 @@ export default function ContactPage() {
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
-                 <div className="h-[400px] md:h-[500px] w-full">
+                 <div className="h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden shadow-lg">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.492063045293!2d77.31296561508127!3d28.58502098243685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a55b314d69%3A0x1c98492019934d61!2sSB%20Tower!5e0!3m2!1sen!2sin!4v1678886393521!5m2!1sen!2sin"
                         width="100%"

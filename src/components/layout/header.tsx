@@ -113,7 +113,7 @@ export default function Header() {
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </Link>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent className="max-h-96 overflow-y-auto">
                  <DropdownMenuItem asChild>
                     <Link href="/services">All Services</Link>
                   </DropdownMenuItem>

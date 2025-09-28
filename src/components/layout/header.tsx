@@ -20,7 +20,6 @@ import {
 const mainLinks = [
   { href: "/", label: "Home" },
   { href: "/story", label: "Our Story" },
-  { href: "/podcast", label: "Podcast" },
 ];
 
 const serviceLinks = [
@@ -164,7 +163,7 @@ export default function Header() {
                        pathname.startsWith('/pricing') ? 'text-primary' : ''
                     )}
                   >
-                  Pages <ChevronDown className="h-4 w-4 ml-1" />
+                  Pricing <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -175,7 +174,7 @@ export default function Header() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            
+            <NavLink href="/podcast" label="Podcast" />
           </nav>
         </div>
         <div className="hidden md:flex items-center mr-8">
@@ -208,7 +207,7 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
-                {[...mainLinks, {href: "/services", label: "Services"}, {href: "/web-solutions", label: "Web Solutions"}, {href: "/pricing/seo-pricing", label: "Pages"}].map(
+                {[...mainLinks, { href: "/services", label: "Services" }, { href: "/web-solutions", label: "Web Solutions" }, { href: "/pricing/seo-pricing", label: "Pricing" }, { href: "/podcast", label: "Podcast" }].map(
                   ({ href, label }) => (
                     <NavLink key={href} href={href} label={label} className="text-lg" />
                   )
@@ -229,4 +228,3 @@ export default function Header() {
     </header>
   );
 }
-

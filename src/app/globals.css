@@ -61,3 +61,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .animate-typing::after {
+    content: '|';
+    animation: blink 1s infinite step-start;
+  }
+}

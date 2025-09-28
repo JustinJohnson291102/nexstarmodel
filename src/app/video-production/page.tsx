@@ -35,7 +35,7 @@ export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
     description: "From concept to completion, we create compelling video content that tells your story and engages your audience.",
-    heroImage: "https://drive.google.com/uc?export=view&id=1LLYpiJfx8dAXAwB5MXcgaYr8I_WNe9OJ",
+    heroImage: "https://picsum.photos/seed/video-production-vibrant/1920/1080",
     heroHint: "video production setup",
     features: [
       {
@@ -172,7 +172,3 @@ export default function VideoProductionPage() {
     </div>
   );
 }
-
-    
-
-    

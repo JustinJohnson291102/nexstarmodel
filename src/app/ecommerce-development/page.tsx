@@ -38,7 +38,7 @@ export default function EcommerceDevelopmentPage() {
   const pageData = {
     title: "E-commerce Website Design and Development",
     description: "We build beautiful, high-performing e-commerce websites that turn visitors into loyal customers.",
-    heroImage: "https://picsum.photos/seed/ecommerce-yellow-red/1920/1080",
+    heroImage: "https://drive.google.com/uc?export=download&id=1047rQg6rdePCm-rXbyf-7AsuU7YYpsvS",
     heroHint: "online shopping",
     features: [
       {

@@ -4,10 +4,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, PenTool, Search, FileScan, LocateFixed, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle } from "lucide-react";
+import { ArrowRight, Code, PenTool, Search, HelpCircle, Users, Rocket, TrendingUp, Briefcase, Replace, ShoppingCart, Smartphone, Tablet, CheckCircle } from "lucide-react";
 import GetStartedForm from "@/components/shared/get-started-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const wordpressBenefits = [
     {
@@ -24,6 +30,25 @@ const wordpressBenefits = [
         icon: Search,
         title: "SEO-Friendly",
         description: "WordPress is built with search engines in mind, and its robust plugin ecosystem helps you optimize your site for better rankings."
+    }
+];
+
+const faqs = [
+    {
+        question: "What is Rapid Website Development?",
+        answer: "Rapid Website Development is an approach that prioritizes quick prototyping and iterative feedback. Instead of a long, rigid planning phase, we build and refine in short cycles, allowing for more flexibility and a faster time-to-market."
+    },
+    {
+        question: "Why is WordPress a good choice for my business website?",
+        answer: "WordPress powers over 40% of the web for a reason. It's incredibly flexible, user-friendly for content updates, and has a vast ecosystem of plugins for any functionality you can imagine. It's a scalable solution that can grow with your business."
+    },
+    {
+        question: "How long will it take to get my website live?",
+        answer: "With our rapid development process, a standard informational website can often be launched in just a few weeks. More complex projects with custom features or e-commerce will take longer, but our process ensures you see progress and provide feedback much faster than traditional methods."
+    },
+    {
+        question: "Do you provide support and maintenance after the website is launched?",
+        answer: "Yes, we offer ongoing support and maintenance packages to ensure your website remains secure, up-to-date, and performing optimally. We see ourselves as your long-term digital partner."
     }
 ];
 
@@ -133,6 +158,32 @@ export default function WebSolutionsPage() {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-24 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+             <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground mb-12">
+              Your questions about our web development process, answered.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                  <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">{faq.question}</AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>

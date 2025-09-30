@@ -133,10 +133,7 @@ export default function Home() {
                   <video
                     src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
                     className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                    controls
                   ></video>
                 </div>
               </Card>

@@ -89,6 +89,12 @@ const alternatingContent = [
     }
 ];
 
+const impactStats = [
+    { value: "40%", label: "Increase in Operational Efficiency" },
+    { value: "30%", label: "Reduction in Costs" },
+    { value: "50%", label: "Improvement in Customer Satisfaction" },
+];
+
 export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
@@ -150,6 +156,28 @@ export default function DigitalTransformationPage() {
             <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/dt-parallax/1920/1080')`}}
+        data-ai-hint="colorful data visualization"
+      >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">The Impact of Transformation</h2>
+            <p className="text-lg text-white/80 mt-4">Driving measurable improvements across your business.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {impactStats.map((stat, index) => (
+              <div key={stat.label} className="p-8 text-center bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms` }}>
+                <p className="text-6xl font-bold font-headline">{stat.value}</p>
+                <p className="text-lg text-white/80 mt-2">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -233,3 +261,5 @@ export default function DigitalTransformationPage() {
     </div>
   );
 }
+
+    

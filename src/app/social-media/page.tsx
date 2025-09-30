@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Users, Megaphone, BarChart, PenTool, CheckCircle, HelpCircle } from "lucide-react";
+import { Users, Megaphone, BarChart, PenTool, CheckCircle, HelpCircle, ThumbsUp, MessageCircle, Share2 } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
+import { Card } from "@/components/ui/card";
 
 const faqs = [
     {
@@ -60,6 +61,13 @@ const alternatingContent = [
             hint: "social media ads"
         }
     }
+];
+
+const platformCards = [
+    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/instagram-ui/600/400", hint: "instagram feed" }},
+    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/facebook-ui/600/400", hint: "facebook page" }},
+    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/linkedin-ui/600/400", hint: "linkedin profile" }},
+    { platform: "TikTok", description: "Engaging short-form video and trend-setting.", image: { src: "https://picsum.photos/seed/tiktok-ui/600/400", hint: "tiktok videos" }},
 ];
 
 export default function SocialMediaPage() {
@@ -149,12 +157,40 @@ export default function SocialMediaPage() {
                </div>
 
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
           </div>
         </div>
       </section>
+
+      <section 
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/social-parallax/1920/1080')`}}
+        data-ai-hint="abstract social media"
+       >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+          <div className="max-w-4xl mx-auto text-center">
+             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Mastering Every Platform</h2>
+             <p className="text-lg text-primary-foreground/80 mb-12 max-w-2xl mx-auto">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {platformCards.map(card => (
+                  <Card key={card.platform} className="bg-background/10 border-white/20 group overflow-hidden">
+                    <div className="relative aspect-video">
+                        <Image src={card.image.src} alt={card.platform} fill className="object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint} />
+                        <div className="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div className="p-4">
+                        <h3 className="font-headline text-xl font-bold mb-1">{card.platform}</h3>
+                        <p className="text-sm text-white/70">{card.description}</p>
+                    </div>
+                  </Card>
+              ))}
+             </div>
+          </div>
+        </div>
+       </section>
 
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 space-y-24">
@@ -232,3 +268,5 @@ export default function SocialMediaPage() {
     </div>
   );
 }
+
+    

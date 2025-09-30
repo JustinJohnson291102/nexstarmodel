@@ -93,16 +93,9 @@ export default function WhatsappChatbotsPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <Image
-          src={pageData.heroImage}
-          alt={pageData.title}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={pageData.heroHint}
-        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <MessageCircle className="h-16 w-16 mx-auto mb-4" />
@@ -175,15 +168,20 @@ export default function WhatsappChatbotsPage() {
           </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
+       <section 
+        className="py-20 md:py-24 bg-background bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/whatsapp-parallax/1920/1080')`}}
+        data-ai-hint="colorful abstract tech"
+       >
+          <div className="absolute inset-0 bg-background/90" />
+          <div className="container mx-auto px-4 relative z-10">
                <div className="text-center mb-16">
                   <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Industry Use Cases</h2>
                   <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See how WhatsApp chatbots can transform various industries.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {useCases.map((useCase) => (
-                      <Card key={useCase.title} className="text-center p-8">
+                      <Card key={useCase.title} className="text-center p-8 bg-card/70 backdrop-blur-sm">
                           <div className="bg-primary/10 text-primary p-4 rounded-full inline-block mb-4">
                             <useCase.icon className="w-8 h-8" />
                           </div>
@@ -245,3 +243,5 @@ export default function WhatsappChatbotsPage() {
     </div>
   );
 }
+
+    

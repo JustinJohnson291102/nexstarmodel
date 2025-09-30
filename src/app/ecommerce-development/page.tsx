@@ -13,6 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
+import { Card } from "@/components/ui/card";
 
 
 const faqs = [
@@ -63,6 +64,13 @@ const alternatingContent = [
             hint: "server infrastructure"
         }
     }
+];
+
+const platformLogos = [
+    { name: "Shopify", logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg" },
+    { name: "WooCommerce", logo: "https://cdn.worldvectorlogo.com/logos/woocommerce.svg" },
+    { name: "BigCommerce", logo: "https://cdn.worldvectorlogo.com/logos/bigcommerce-1.svg" },
+    { name: "Magento", logo: "https://cdn.worldvectorlogo.com/logos/magento.svg" },
 ];
 
 export default function EcommerceDevelopmentPage() {
@@ -158,12 +166,34 @@ export default function EcommerceDevelopmentPage() {
                   </Button>
                </div>
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
           </div>
         </div>
       </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/ecommerce-parallax/1920/1080')` }}
+        data-ai-hint="abstract tech background"
+      >
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline">Platform Agnostic, Results-Driven</h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">We have deep expertise across all major e-commerce platforms.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {platformLogos.map((p) => (
+              <Card key={p.name} className="p-8 flex justify-center items-center bg-card/70 backdrop-blur-sm h-32 transition-transform duration-300 hover:-translate-y-2">
+                <Image src={p.logo} alt={p.name} width={150} height={40} className="object-contain" />
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 space-y-24">
@@ -241,3 +271,5 @@ export default function EcommerceDevelopmentPage() {
     </div>
   );
 }
+
+    

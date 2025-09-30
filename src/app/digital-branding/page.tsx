@@ -88,6 +88,13 @@ const alternatingContent = [
     }
 ];
 
+const touchpoints = [
+    { name: "Website", image: { src: "https://picsum.photos/seed/touchpoint-web/400/300", hint: "website design" } },
+    { name: "Social Media", image: { src: "https://picsum.photos/seed/touchpoint-social/400/300", hint: "social media app" } },
+    { name: "Email", image: { src: "https://picsum.photos/seed/touchpoint-email/400/300", hint: "email marketing" } },
+    { name: "Digital Ads", image: { src: "https://picsum.photos/seed/touchpoint-ads/400/300", hint: "online advertising" } },
+];
+
 export default function DigitalBrandingPage() {
   const pageData = {
     title: "Digital Branding",
@@ -99,16 +106,9 @@ export default function DigitalBrandingPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <Image
-          src={pageData.heroImage}
-          alt={pageData.title}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={pageData.heroHint}
-        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Palette className="h-16 w-16 mx-auto mb-4" />
@@ -158,6 +158,33 @@ export default function DigitalBrandingPage() {
             <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/digital-brand-parallax/1920/1080')` }}
+        data-ai-hint="colorful abstract pattern"
+      >
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline">Consistency Across All Touchpoints</h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">We ensure your brand looks and feels the same everywhere your customers interact with it.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {touchpoints.map((item, index) => (
+              <Card key={item.name} className="group overflow-hidden bg-card/70 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms`}}>
+                <div className="relative aspect-video">
+                  <Image src={item.image.src} alt={item.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={item.image.hint} />
+                  <div className="absolute inset-0 bg-black/30" />
+                </div>
+                <div className="p-4 text-center">
+                  <h3 className="font-headline text-xl font-bold">{item.name}</h3>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -241,3 +268,5 @@ export default function DigitalBrandingPage() {
     </div>
   );
 }
+
+    

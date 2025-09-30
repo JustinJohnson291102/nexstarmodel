@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Smartphone, ShieldCheck, TrendingUp, Brush, Server, Users, CheckCircle, HelpCircle } from "lucide-react";
+import { Smartphone, ShieldCheck, TrendingUp, Brush, Server, Users, CheckCircle, HelpCircle, Code, AppWindow, ArrowRight } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +11,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const faqs = [
     {
@@ -29,7 +32,38 @@ const faqs = [
         question: "Will you help me submit my app to the app stores?",
         answer: "Absolutely. Our service includes managing the entire submission process for both the Apple App Store and Google Play Store, ensuring your app meets all guidelines and is successfully launched."
     }
-]
+];
+
+const alternatingContent = [
+    {
+        title: "Native Performance, Beautiful Design",
+        description: "We specialize in building native iOS and Android apps that offer the best performance, security, and user experience. Our UI/UX designers work in tandem with our developers to create apps that are not only powerful but also intuitive and beautiful to use.",
+        points: [
+            "Swift for high-performance iOS applications.",
+            "Kotlin for modern, robust Android applications.",
+            "Human-centered UI/UX design and prototyping.",
+            "Full integration with device-native features like cameras and GPS."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/native-app/800/600",
+            hint: "mobile app screen"
+        }
+    },
+    {
+        title: "Scalable Backend & Cloud Services",
+        description: "A great app needs a powerful backend. We build secure and scalable server-side infrastructure to support your app's features, manage user data, and handle growth. From custom APIs to cloud integration, we've got your backend covered.",
+        points: [
+            "RESTful and GraphQL API development.",
+            "Secure cloud hosting on AWS, Google Cloud, or Azure.",
+            "Real-time databases for interactive features.",
+            "Third-party service integrations (payments, maps, social media)."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/app-backend/800/600",
+            hint: "cloud server"
+        }
+    }
+];
 
 export default function MobileAppDevelopmentPage() {
   const pageData = {
@@ -120,10 +154,72 @@ export default function MobileAppDevelopmentPage() {
                </div>
 
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/app-dev-parallax/1920/1080')` }}
+        data-ai-hint="colorful app interface"
+      >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">One Codebase, Two Platforms</h2>
+            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Accelerate your time-to-market with cross-platform development.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="p-8 text-center bg-white/10 backdrop-blur-md border-white/20">
+              <AppWindow className="w-12 h-12 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold font-headline mb-3">Native iOS & Android</h3>
+              <p className="text-white/80">Maximum performance and best user experience.</p>
+            </Card>
+             <Card className="p-8 text-center bg-white/20 backdrop-blur-md border-white/30 scale-105 shadow-2xl">
+              <Code className="w-12 h-12 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold font-headline mb-3">React Native</h3>
+              <p className="text-white/80">Write once, deploy everywhere. Faster development and cost savings.</p>
+            </Card>
+            <Card className="p-8 text-center bg-white/10 backdrop-blur-md border-white/20">
+              <Smartphone className="w-12 h-12 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold font-headline mb-3">Seamless Integration</h3>
+              <p className="text-white/80">Consistent brand experience across all devices.</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+          {alternatingContent.map((item, index) => (
+            <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+              <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                <Image 
+                  src={item.image.src}
+                  alt={item.title}
+                  width={800}
+                  height={600}
+                  data-ai-hint={item.image.hint}
+                  className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                <p className="text-muted-foreground mb-6">{item.description}</p>
+                <ul className="space-y-3">
+                  {item.points.map(point => (
+                    <li key={point} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-muted-foreground">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>  
+          ))}
         </div>
       </section>
 
@@ -140,6 +236,11 @@ export default function MobileAppDevelopmentPage() {
             <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               We build more than just apps; we build business solutions. Our team focuses on creating scalable, secure, and engaging mobile experiences that deliver a clear return on investment. We are your long-term partner, committed to your app's success from launch and beyond.
             </p>
+             <Button asChild size="lg" variant="secondary" className="mt-8 group">
+                <Link href="/contact">
+                  Start Your App Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
           </div>
         </div>
       </section>
@@ -172,3 +273,5 @@ export default function MobileAppDevelopmentPage() {
     </div>
   );
 }
+
+    

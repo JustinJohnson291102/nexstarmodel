@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight, FileText, Target, Megaphone, Rocket, TrendingUp, Repeat, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GetStartedForm from "@/components/shared/get-started-form";
+import { Card, CardContent } from "@/components/ui/card";
 
 const roadmapSteps = [
   {
@@ -94,6 +95,12 @@ const roadmapSteps = [
   },
 ];
 
+const stats = [
+    { value: "50%", label: "Faster Time-to-Market" },
+    { value: "2x", label: "Higher Adoption Rates" },
+    { value: "40%", label: "Reduction in Customer Acquisition Cost" }
+];
+
 
 export default function GtmStrategyPage() {
   return (
@@ -161,6 +168,28 @@ export default function GtmStrategyPage() {
           </div>
         </div>
       </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{backgroundImage: "url('https://picsum.photos/seed/gtm-parallax/1920/1080')"}}
+        data-ai-hint="launch success"
+      >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Measurable Impact</h2>
+                <p className="text-lg text-primary-foreground/80 mt-4">Our GTM strategies deliver tangible results.</p>
+            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {stats.map(stat => (
+              <div key={stat.label} className="p-8 bg-black/10 rounded-lg backdrop-blur-sm border border-white/20">
+                <p className="text-6xl font-bold font-headline">{stat.value}</p>
+                <p className="text-lg text-primary-foreground/80 mt-2">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       
        <section className="py-20 md:py-32 bg-secondary">
           <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
@@ -179,7 +208,7 @@ export default function GtmStrategyPage() {
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="sticky top-32">
               <GetStartedForm />
             </div>
           </div>
@@ -187,3 +216,5 @@ export default function GtmStrategyPage() {
     </>
   );
 }
+
+    

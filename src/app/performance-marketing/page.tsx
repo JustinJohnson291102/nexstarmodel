@@ -119,15 +119,18 @@ export default function PerformanceMarketingPage() {
   return (
     <>
       <section 
-        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-background"
+        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/performance-parallax/1920/1080')`}}
+        data-ai-hint="colorful data analytics"
       >
-        <div className="container mx-auto px-4">
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-3 gap-16 items-start">
             <div className="md:col-span-2">
-              <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-primary animate-in fade-in slide-in-from-left-10 duration-700">
+              <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-white animate-in fade-in slide-in-from-left-10 duration-700">
                 Performance Marketing
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
+              <p className="text-lg md:text-xl text-white/80 max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
                  Drive growth and maximize your return on investment with our data-driven performance marketing strategies. We create, manage, and optimize campaigns that deliver measurable results.
               </p>
                <div className="mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
@@ -308,3 +311,5 @@ export default function PerformanceMarketingPage() {
     </>
   );
 }
+
+    

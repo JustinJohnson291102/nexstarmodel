@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Users, CheckCircle, HelpCircle, Code, Layers, Rocket, Handshake, ArrowRight } from "lucide-react";
+import { Users, CheckCircle, HelpCircle, Code, Layers, Rocket, Handshake, ArrowRight, Server, Brush } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -96,16 +96,9 @@ export default function BackendFrontendOutsourcePage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('${pageData.heroImage}')`}}
       >
-        <Image
-          src={pageData.heroImage}
-          alt={pageData.title}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={pageData.heroHint}
-        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Code className="h-16 w-16 mx-auto mb-4" />
@@ -161,6 +154,38 @@ export default function BackendFrontendOutsourcePage() {
             </div>
             <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/outsource-parallax/1920/1080')`}}
+        data-ai-hint="global network"
+      >
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">Full-Stack Capabilities</h2>
+              <p className="text-lg text-muted-foreground">From pixel-perfect frontends to robust and scalable backends, our developers cover the entire stack.</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8">
+              <Card className="bg-card/70 backdrop-blur-sm p-6 flex items-center gap-6">
+                <Brush className="w-12 h-12 text-primary" />
+                <div>
+                  <h3 className="text-2xl font-bold font-headline">Frontend Development</h3>
+                  <p className="text-muted-foreground">Engaging user interfaces built with modern frameworks like React, Vue, and Angular.</p>
+                </div>
+              </Card>
+              <Card className="bg-card/70 backdrop-blur-sm p-6 flex items-center gap-6">
+                <Server className="w-12 h-12 text-primary" />
+                <div>
+                  <h3 className="text-2xl font-bold font-headline">Backend Development</h3>
+                  <p className="text-muted-foreground">Secure and scalable server-side solutions using Node.js, Python, Java, and more.</p>
+                </div>
+              </Card>
             </div>
           </div>
         </div>

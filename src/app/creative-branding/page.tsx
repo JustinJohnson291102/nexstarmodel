@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Palette, PenTool, ImageIcon, Type, CheckCircle, HelpCircle } from "lucide-react";
+import { Palette, PenTool, ImageIcon, Type, CheckCircle, HelpCircle, Eye, BrainCircuit, Heart } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -60,6 +60,13 @@ const alternatingContent = [
             hint: "photo shoot"
         }
     }
+];
+
+const processSteps = [
+    { icon: Eye, title: "Discovery & Research", description: "Understanding your vision and market." },
+    { icon: BrainCircuit, title: "Strategy & Concept", description: "Building the strategic foundation." },
+    { icon: PenTool, title: "Design & Creation", description: "Bringing the brand to life visually." },
+    { icon: Heart, title: "Refinement & Delivery", description: "Perfecting and launching your new identity." },
 ];
 
 export default function CreativeBrandingPage() {
@@ -149,9 +156,34 @@ export default function CreativeBrandingPage() {
                </div>
 
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/branding-parallax/1920/1080')`}}
+        data-ai-hint="colorful abstract design"
+      >
+        <div className="absolute inset-0 bg-background/80" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline">Our Branding Process</h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">A collaborative journey to uncover your brand's true identity.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, index) => (
+              <div key={step.title} className="text-center p-6 bg-card/80 rounded-lg shadow-lg border border-border/20 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms`}}>
+                <div className="bg-primary/10 text-primary rounded-full p-4 inline-block mb-4">
+                  <step.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold font-headline mb-2">{step.title}</h3>
+                <p className="text-muted-foreground text-sm">{step.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -232,3 +264,5 @@ export default function CreativeBrandingPage() {
     </div>
   );
 }
+
+    

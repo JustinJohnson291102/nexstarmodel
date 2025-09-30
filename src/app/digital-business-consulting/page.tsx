@@ -88,6 +88,13 @@ const alternatingContent = [
     }
 ];
 
+const consultingFocus = [
+    { title: "Strategy", description: "Aligning digital initiatives with business objectives." },
+    { title: "Technology", description: "Choosing the right tools for sustainable growth." },
+    { title: "Operations", description: "Optimizing processes for maximum efficiency." },
+    { title: "Growth", description: "Identifying new market and revenue opportunities." },
+];
+
 export default function DigitalBusinessConsultingPage() {
   const pageData = {
     title: "Digital Business Consulting",
@@ -99,16 +106,9 @@ export default function DigitalBusinessConsultingPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <Image
-          src={pageData.heroImage}
-          alt={pageData.title}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={pageData.heroHint}
-        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Lightbulb className="h-16 w-16 mx-auto mb-4" />
@@ -156,6 +156,28 @@ export default function DigitalBusinessConsultingPage() {
             <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/consulting-parallax/1920/1080')` }}
+        data-ai-hint="colorful business strategy"
+      >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Core Consulting Pillars</h2>
+            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">A holistic approach to navigating the digital landscape.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {consultingFocus.map((focus, index) => (
+              <div key={focus.title} className="p-6 text-center bg-white/10 rounded-lg backdrop-blur-sm border border-white/20 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms`}}>
+                <h3 className="text-2xl font-bold font-headline mb-2">{focus.title}</h3>
+                <p className="text-white/70">{focus.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -239,3 +261,5 @@ export default function DigitalBusinessConsultingPage() {
     </div>
   );
 }
+
+    

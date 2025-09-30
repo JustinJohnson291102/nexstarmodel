@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Video, Film, Edit3, Mic, Users, CheckCircle, HelpCircle } from "lucide-react";
+import { Video, Film, Edit3, Mic, Users, CheckCircle, HelpCircle, Clapperboard, Lightbulb, Camera } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -60,6 +60,13 @@ const alternatingContent = [
             hint: "social media video"
         }
     }
+];
+
+const videoTypes = [
+    { type: "Brand Films", image: { src: "https://picsum.photos/seed/brand-film/400/500", hint: "cinematic film" } },
+    { type: "Commercials", image: { src: "https://picsum.photos/seed/commercial-ad/400/500", hint: "tv commercial" } },
+    { type: "Social Content", image: { src: "https://picsum.photos/seed/social-video/400/500", hint: "social media" } },
+    { type: "Animations", image: { src: "https://picsum.photos/seed/animation-video/400/500", hint: "abstract animation" } },
 ];
 
 export default function VideoProductionPage() {
@@ -151,9 +158,34 @@ export default function VideoProductionPage() {
                </div>
 
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/video-parallax/1920/1080')`}}
+        data-ai-hint="colorful film reel"
+      >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Videos for Every Goal</h2>
+            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Crafting the perfect video format to meet your unique business objectives.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {videoTypes.map((video, index) => (
+              <div key={video.type} className="group relative rounded-lg overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms`}}>
+                <Image src={video.image.src} alt={video.type} width={400} height={500} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={video.image.hint} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-2xl font-bold font-headline">{video.type}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -234,3 +266,5 @@ export default function VideoProductionPage() {
     </div>
   );
 }
+
+    

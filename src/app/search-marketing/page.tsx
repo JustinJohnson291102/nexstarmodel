@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { BarChart, Search, Target, TrendingUp, DollarSign, CheckCircle, HelpCircle } from "lucide-react";
+import { BarChart, Search, Target, TrendingUp, DollarSign, CheckCircle, HelpCircle, ArrowRight } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +11,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Card } from "@/components/ui/card";
 
 
 const faqs = [
@@ -30,7 +33,38 @@ const faqs = [
         question: "How do you measure the success of a search marketing campaign?",
         answer: "We track a variety of Key Performance Indicators (KPIs), including keyword rankings, organic traffic, click-through rates (CTR), conversion rates, cost per acquisition (CPA), and overall ROI. We provide detailed monthly reports to show you exactly how our efforts are impacting your bottom line."
     }
-]
+];
+
+const alternatingContent = [
+    {
+        title: "Dominating Organic Search with SEO",
+        description: "Climb to the top of search engine rankings and capture valuable organic traffic. Our SEO strategies are comprehensive, covering everything from technical website optimization and on-page content to authoritative link building.",
+        points: [
+            "In-depth keyword research to target high-intent customers.",
+            "Technical SEO to ensure your site is perfectly indexed.",
+            "High-quality content creation that attracts and engages.",
+            "Strategic link-building to boost your site's authority."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/organic-seo/800/600",
+            hint: "seo chart"
+        }
+    },
+    {
+        title: "Immediate Impact with PPC/SEM",
+        description: "Get instant visibility and drive targeted traffic with our expert Pay-Per-Click (PPC) and Search Engine Marketing (SEM) campaigns. We manage your ad spend effectively to maximize your ROI.",
+        points: [
+            "Google Ads & Bing Ads campaign management.",
+            "Compelling ad copy and landing page optimization.",
+            "Strategic bid management and budget allocation.",
+            "A/B testing for continuous performance improvement."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/ppc-impact/800/600",
+            hint: "ppc ads"
+        }
+    }
+];
 
 export default function SearchMarketingPage() {
   const pageData = {
@@ -121,12 +155,79 @@ export default function SearchMarketingPage() {
                </div>
 
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
           </div>
         </div>
       </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/search-parallax/1920/1080')`}}
+        data-ai-hint="digital data stream"
+      >
+        <div className="absolute inset-0 bg-black/70" />
+        <div className="container mx-auto px-4 relative z-10 text-white">
+            <div className="text-center">
+                <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">A Dual-Pronged Attack</h2>
+                <p className="text-lg text-white/80 max-w-2xl mx-auto mb-12">We combine SEO and SEM for short-term wins and long-term dominance.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <Card className="bg-white/10 border-white/20 text-white backdrop-blur-md">
+                    <CardContent className="p-8 text-center">
+                        <Search className="w-12 h-12 mx-auto mb-4 text-accent" />
+                        <h3 className="text-2xl font-bold font-headline mb-3">SEO: The Foundation</h3>
+                        <p className="text-white/80">Building your brand's authority for sustainable, organic growth that lasts.</p>
+                    </CardContent>
+                </Card>
+                 <Card className="bg-white/10 border-white/20 text-white backdrop-blur-md">
+                    <CardContent className="p-8 text-center">
+                        <DollarSign className="w-12 h-12 mx-auto mb-4 text-accent" />
+                        <h3 className="text-2xl font-bold font-headline mb-3">SEM: The Accelerator</h3>
+                        <p className="text-white/80">Driving immediate, targeted traffic to capture customers at the moment of intent.</p>
+                    </CardContent>
+                </Card>
+            </div>
+        </div>
+      </section>
+
+       <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                         <Button asChild className="mt-6 group">
+                            <Link href={index === 0 ? '/pricing/seo-pricing' : '/pricing/ppc-pricing'}>
+                              View Pricing <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                        </Button>
+                    </div>
+                </div>  
+            ))}
+        </div>
+      </section>
+
 
       <OurClients />
 
@@ -173,3 +274,5 @@ export default function SearchMarketingPage() {
     </div>
   );
 }
+
+    

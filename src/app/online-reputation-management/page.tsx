@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { ShieldCheck, MessageSquare, Star, Search, CheckCircle, HelpCircle } from "lucide-react";
+import { ShieldCheck, MessageSquare, Star, Search, CheckCircle, HelpCircle, Siren, Eye } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
+import { Card, CardContent } from "@/components/ui/card";
 
 const faqs = [
     {
@@ -30,6 +31,37 @@ const faqs = [
         answer: "Reputation is dynamic and requires continuous attention. While we can manage a specific crisis, we strongly recommend an ongoing ORM strategy to proactively monitor your brand, cultivate positive reviews, and be prepared to address any new issues that may arise."
     }
 ]
+
+const alternatingContent = [
+    {
+        title: "Proactive Brand Monitoring",
+        description: "We are your eyes and ears online. Our team uses advanced tools to monitor mentions of your brand across social media, forums, news sites, and review platforms, allowing us to stay ahead of the conversation.",
+        points: [
+            "24/7 monitoring of brand keywords.",
+            "Sentiment analysis to gauge public perception.",
+            "Real-time alerts for critical mentions.",
+            "Competitor reputation tracking."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/orm-monitoring/800/600",
+            hint: "data monitoring"
+        }
+    },
+    {
+        title: "Strategic Content for Reputation Building",
+        description: "The best defense is a good offense. We create and promote a portfolio of positive, high-quality content that reinforces your brand's authority and pushes down unwanted search results.",
+        points: [
+            "Creation of positive news articles and press releases.",
+            "Development of thought leadership blog content.",
+            "Promotion of positive customer testimonials and case studies.",
+            "Creation and optimization of owned media properties."
+        ],
+        image: {
+            src: "https://picsum.photos/seed/orm-content/800/600",
+            hint: "positive content"
+        }
+    }
+];
 
 export default function OnlineReputationManagementPage() {
   const pageData = {
@@ -116,10 +148,72 @@ export default function OnlineReputationManagementPage() {
                </div>
 
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 sticky top-32">
               <GetStartedForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/orm-parallax/1920/1080')` }}
+        data-ai-hint="digital security"
+      >
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline">Our ORM Strategy</h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">A proactive approach to building and protecting your brand image.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-8 text-center bg-card/70 backdrop-blur-sm">
+              <Eye className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold font-headline mb-2">Monitor</h3>
+              <p className="text-muted-foreground">Continuously track mentions and sentiment across all online channels.</p>
+            </Card>
+            <Card className="p-8 text-center bg-card/70 backdrop-blur-sm">
+              <MessageSquare className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold font-headline mb-2">Manage</h3>
+              <p className="text-muted-foreground">Engage with reviews, both positive and negative, to show you're listening.</p>
+            </Card>
+            <Card className="p-8 text-center bg-card/70 backdrop-blur-sm">
+              <Star className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold font-headline mb-2">Build</h3>
+              <p className="text-muted-foreground">Proactively create and promote positive content to build a strong reputation.</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-24">
+            {alternatingContent.map((item, index) => (
+                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
+                        <Image 
+                            src={item.image.src}
+                            alt={item.title}
+                            width={800}
+                            height={600}
+                            data-ai-hint={item.image.hint}
+                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                            {item.points.map(point => (
+                                <li key={point} className="flex items-start">
+                                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>  
+            ))}
         </div>
       </section>
 
@@ -168,3 +262,5 @@ export default function OnlineReputationManagementPage() {
     </div>
   );
 }
+
+    

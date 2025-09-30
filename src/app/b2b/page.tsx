@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BarChart, BrainCircuit, Goal, MessageCircle, Users, CheckCircle, TrendingUp, Zap, ShieldCheck } from "lucide-react";
+import { ArrowRight, BarChart, BrainCircuit, Goal, MessageCircle, Users, CheckCircle, TrendingUp, Zap, ShieldCheck, Handshake } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/chart";
 import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid } from 'recharts';
 import OurClients from "@/components/homepage/our-clients";
+import GetStartedForm from "@/components/shared/get-started-form";
 
 
 const b2bServices = [
@@ -112,6 +113,12 @@ const alternatingContent = [
     }
 ];
 
+const stats = [
+    { value: "3x", label: "Higher ROI on Marketing Spend" },
+    { value: "50%", label: "Increase in Qualified Leads" },
+    { value: "2x", label: "Faster Sales Cycles" }
+];
+
 
 export default function B2BPage() {
   return (
@@ -179,6 +186,24 @@ export default function B2BPage() {
                     <p className="text-muted-foreground text-sm">{service.description}</p>
                   </CardContent>
                 </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{backgroundImage: "url('https://picsum.photos/seed/b2b-parallax-stats/1920/1080')"}}
+        data-ai-hint="business success"
+      >
+        <div className="absolute inset-0 bg-primary/90" />
+        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {stats.map(stat => (
+              <div key={stat.label} className="p-8 bg-black/10 rounded-lg">
+                <p className="text-6xl font-bold font-headline">{stat.value}</p>
+                <p className="text-lg text-primary-foreground/80 mt-2">{stat.label}</p>
               </div>
             ))}
           </div>

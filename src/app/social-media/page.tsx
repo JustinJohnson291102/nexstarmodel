@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import GetStartedForm from "@/components/shared/get-started-form";
-import { Users, Megaphone, BarChart, PenTool, CheckCircle, HelpCircle, ThumbsUp, MessageCircle, Share2 } from "lucide-react";
+import { Users, Megaphone, BarChart, PenTool, CheckCircle, HelpCircle, ThumbsUp, MessageCircle, Share2, ArrowRight } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/accordion";
 import OurClients from "@/components/homepage/our-clients";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const faqs = [
     {
@@ -166,8 +168,8 @@ export default function SocialMediaPage() {
 
       <section 
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/social-parallax/1920/1080')`}}
-        data-ai-hint="abstract social media"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/social-yellow-parallax/1920/1080')`}}
+        data-ai-hint="yellow social media"
        >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
@@ -217,6 +219,11 @@ export default function SocialMediaPage() {
                                 </li>
                             ))}
                         </ul>
+                         <Button asChild className="mt-6 group">
+                            <Link href="/pricing/smo-pricing">
+                              View Pricing <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                        </Button>
                     </div>
                 </div>  
             ))}
@@ -268,5 +275,3 @@ export default function SocialMediaPage() {
     </div>
   );
 }
-
-    

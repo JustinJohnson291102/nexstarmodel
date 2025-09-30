@@ -4,13 +4,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BarChart, BrainCircuit, Goal, MessageCircle, Users, CheckCircle, TrendingUp, Zap, ShieldCheck, Handshake } from "lucide-react";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -20,7 +13,6 @@ import {
 } from "@/components/ui/chart";
 import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid } from 'recharts';
 import OurClients from "@/components/homepage/our-clients";
-import GetStartedForm from "@/components/shared/get-started-form";
 
 
 const b2bServices = [
@@ -355,5 +347,3 @@ export default function B2BPage() {
     </>
   );
 }
-
-    

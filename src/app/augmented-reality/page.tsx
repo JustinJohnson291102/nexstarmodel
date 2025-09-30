@@ -164,6 +164,22 @@ export default function AugmentedRealityPage() {
         </div>
       </section>
 
+      <section
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: "url('https://picsum.photos/seed/ar-yellow-parallax/1920/1080')" }}
+        data-ai-hint="yellow augmented reality"
+      >
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">Step Into the Future</h2>
+            <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto">
+              Augmented Reality is not just a technology; it's a new medium for storytelling, engagement, and commerce. We help brands harness its power to create unforgettable experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 space-y-24">
             {alternatingContent.map((item, index) => (
@@ -278,7 +294,3 @@ export default function AugmentedRealityPage() {
     </>
   );
 }
-
-    
-
-    

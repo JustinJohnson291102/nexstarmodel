@@ -123,9 +123,15 @@ export default function Home() {
               <Card className="overflow-hidden shadow-xl">
                  <CardContent className="p-0">
                     <div className="aspect-video">
-                       <div className="w-full h-full bg-secondary flex items-center justify-center">
-                         <p className="text-muted-foreground">Video will be placed here.</p>
-                       </div>
+                        <video
+                          src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
+                          className="w-full h-full object-cover"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          controls
+                        ></video>
                     </div>
                  </CardContent>
               </Card>

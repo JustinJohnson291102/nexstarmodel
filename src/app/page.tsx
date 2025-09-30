@@ -123,7 +123,6 @@ export default function Home() {
               <Card className="overflow-hidden shadow-xl">
                  <CardContent className="p-0">
                     <div className="aspect-video">
-                       {/* This is a placeholder until the local video file is ready */}
                        <div className="w-full h-full bg-secondary flex items-center justify-center">
                          <p className="text-muted-foreground">Video will be placed here.</p>
                        </div>
@@ -136,9 +135,20 @@ export default function Home() {
       </section>
 
       <section className="relative bg-secondary text-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
+          
           <div className="grid md:grid-cols-2 gap-12 items-center">
-             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+                <Image
+                  src="https://picsum.photos/seed/ad-agency/600/400"
+                  alt="Advertising Agency"
+                  width={600}
+                  height={400}
+                  data-ai-hint="advertising agency"
+                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                />
+            </div>
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
                 <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  As an Advertising Agency
                 </h2>
@@ -154,22 +164,8 @@ export default function Home() {
                   </Link>
                 </Button>
              </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-                <Image
-                  src="https://picsum.photos/seed/ad-agency/600/400"
-                  alt="Advertising Agency"
-                  width={600}
-                  height={400}
-                  data-ai-hint="advertising agency"
-                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                />
-            </div>
           </div>
-        </div>
-      </section>
 
-      <section className="relative bg-background text-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
@@ -183,7 +179,7 @@ export default function Home() {
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
-                Our Gamut of Services are as Diverse as they are Effective
+                Our Gamut of Services
               </h2>
               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
                   <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
@@ -198,10 +194,11 @@ export default function Home() {
               </Button>
             </div>
           </div>
+
         </div>
       </section>
 
-      <section className="relative py-20 md:py-32 bg-secondary">
+      <section className="relative py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -338,5 +335,3 @@ export default function Home() {
     </>
   );
 }
-
-    

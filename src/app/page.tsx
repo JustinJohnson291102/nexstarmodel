@@ -124,7 +124,7 @@ export default function Home() {
                  <CardContent className="p-0">
                     <div className="aspect-video">
                         <video
-                          src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
+                          src="/videohero.mp4"
                           className="w-full h-full object-cover"
                           autoPlay
                           loop
@@ -341,3 +341,5 @@ export default function Home() {
     </>
   );
 }
+
+    

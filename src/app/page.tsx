@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
   Carousel,
   CarouselContent,
@@ -50,17 +49,10 @@ const carouselImages = [
 ];
 
 export default function Home() {
-  const adAgencyImage = PlaceHolderImages.find(
-    (img) => img.id === "service-branding"
-  );
-  const gamutOfServicesImage = PlaceHolderImages.find(
-    (img) => img.id === "service-content"
-  );
-
   return (
     <>
       <div className="w-full">
-        <section className="relative h-[259.2vh] w-full">
+        <section className="relative h-[100vh] w-full">
           <Carousel
             plugins={[
               Autoplay({
@@ -74,7 +66,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[259.2vh] w-full">
+                  <div className="relative h-[100vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -113,26 +105,90 @@ export default function Home() {
       <section className="relative bg-background text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              {gamutOfServicesImage && (
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+                Driving Digital Excellence
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
+              </p>
+              <Button asChild size="lg" className="group">
+                <Link href="/contact">
+                  Get Started{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+              <Card className="overflow-hidden shadow-xl">
+                 <CardContent className="p-0">
+                    <div className="aspect-video">
+                       {/* This is a placeholder until the local video file is ready */}
+                       <div className="w-full h-full bg-secondary flex items-center justify-center">
+                         <p className="text-muted-foreground">Video will be placed here.</p>
+                       </div>
+                    </div>
+                 </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-secondary text-foreground py-20 md:py-32">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+                <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+                 As an Advertising Agency
+                </h2>
+                <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+                  <li>We are a hybrid with the chutzpah of a millennial and the experience of a Gen X.</li>
+                  <li>We are agile and connect the dots quicker.</li>
+                  <li>We believe the future of Communications lies in the 4Es of Engagement, Exclusivity, Emotion, and Experience.</li>
+                </ul>
+                <Button asChild size="lg" className="group" variant="outline">
+                  <Link href="/story">
+                    Our Story{" "}
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+             </div>
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={gamutOfServicesImage.imageUrl}
-                  alt="Gamut of Services"
+                  src="https://picsum.photos/seed/ad-agency/600/400"
+                  alt="Advertising Agency"
                   width={600}
                   height={400}
-                  data-ai-hint={gamutOfServicesImage.imageHint}
+                  data-ai-hint="advertising agency"
                   className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                 />
-              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-background text-foreground py-20 md:py-32">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+              <Image
+                src="https://picsum.photos/seed/service-gamut/600/400"
+                alt="Gamut of Services"
+                width={600}
+                height={400}
+                data-ai-hint="marketing services"
+                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+              />
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Our Gamut of Services are as Diverse as they are Effective
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8">
-                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</span></li>
-                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>From compelling brand identities to robust web solutions and targeted marketing.</span></li>
-                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>Our expertise covers the full spectrum of digital marketing.</span></li>
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+                  <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
+                  <li>From compelling brand identities to robust web solutions and targeted marketing.</li>
+                  <li>Our expertise covers the full spectrum of digital marketing.</li>
               </ul>
               <Button asChild size="lg" className="group">
                 <Link href="/services">
@@ -282,3 +338,5 @@ export default function Home() {
     </>
   );
 }
+
+    

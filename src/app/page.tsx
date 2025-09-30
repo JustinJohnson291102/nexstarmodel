@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full">
-        <section className="relative h-[calc(100vh-8rem)] w-full">
+        <section className="relative h-[85vh] w-full">
           <Carousel
             plugins={[
               Autoplay({
@@ -74,7 +74,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[calc(100vh-8rem)] w-full">
+                  <div className="relative h-[85vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}

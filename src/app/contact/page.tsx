@@ -11,7 +11,7 @@ export default function ContactPage() {
     <>
       <section 
         className="relative pt-20 pb-12 md:pt-32 md:pb-20 flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/contact-hero-vibrant/1920/1080')` }}
+        style={{ backgroundImage: `url('https://drive.google.com/uc?export=view&id=1wptAmzKIg3EepYgAVTwp3IpxAZGO0E7_')` }}
         data-ai-hint="vibrant contact background"
       >
         <div className="absolute inset-0 bg-black/50" />

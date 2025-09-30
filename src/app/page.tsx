@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full">
-        <section className="relative h-[180vh] w-full">
+        <section className="relative h-[259.2vh] w-full">
           <Carousel
             plugins={[
               Autoplay({
@@ -74,7 +74,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[180vh] w-full">
+                  <div className="relative h-[259.2vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -112,65 +112,7 @@ export default function Home() {
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-4">
-                Driving Digital Excellence
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                At Nexstar, we specialize in transforming brands through cutting-edge digital solutions. Our services are designed to enhance your online presence, engage your audience, and drive measurable growth.
-              </p>
-              <Button asChild size="lg" className="group">
-                <Link href="/services">
-                  Explore Services{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <Card className="overflow-hidden shadow-2xl">
-                <div className="aspect-video">
-                  <video
-                    src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
-                    className="w-full h-full object-cover"
-                    controls
-                  ></video>
-                </div>
-              </Card>
-            </div>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-              <Image
-                src="https://picsum.photos/seed/agency/600/400"
-                alt="Advertising Agency"
-                width={600}
-                height={400}
-                data-ai-hint="creative team"
-                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
-                As an Advertising Agency, We Ignite Brands with Ideas that
-                Transform Behaviour
-              </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8">
-                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>Across mediums, we have taken both fledgling and legacy brands to a new level of success.</span></li>
-                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>Our creative strategies are designed to captivate audiences and drive engagement.</span></li>
-                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>We focus on results that matter, turning ideas into measurable outcomes.</span></li>
-              </ul>
-              <Button asChild size="lg" className="group">
-                <Link href="/story">
-                  View More{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-20">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               {gamutOfServicesImage && (
                 <Image
@@ -340,5 +282,3 @@ export default function Home() {
     </>
   );
 }
-
-    

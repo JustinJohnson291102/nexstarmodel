@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full">
-        <section className="relative h-[122vh] w-full">
+        <section className="relative h-[calc(100vh-8rem)] w-full">
           <Carousel
             plugins={[
               Autoplay({
@@ -74,7 +74,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[122vh] w-full">
+                  <div className="relative h-[calc(100vh-8rem)] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -99,7 +99,7 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              className="mt-20 group transform scale-150"
+              className="mt-8 group"
             >
               <Link href="/services">
                 Our Services{" "}
@@ -316,5 +316,3 @@ export default function Home() {
     </>
   );
 }
-
-    

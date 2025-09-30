@@ -48,7 +48,7 @@ export default function RootLayout({
         ) : (
           <>
             <Header />
-            <main>{children}</main>
+            <main className="pt-32">{children}</main>
             <Footer />
             <Marquee text="Igniting brands with ideas that transform behaviour. Contact us to start your digital success story." />
             <Chatbot />

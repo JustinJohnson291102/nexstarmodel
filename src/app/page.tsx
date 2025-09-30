@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full">
-        <section className="relative h-[140vh] w-full">
+        <section className="relative h-[180vh] w-full">
           <Carousel
             plugins={[
               Autoplay({
@@ -74,7 +74,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[140vh] w-full">
+                  <div className="relative h-[180vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -110,10 +110,39 @@ export default function Home() {
         </section>
       </div>
 
-      {/* The rest of your component logic follows: */}
-      
       <section className="relative bg-background text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-4">
+                Driving Digital Excellence
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                At Nexstar, we specialize in transforming brands through cutting-edge digital solutions. Our services are designed to enhance your online presence, engage your audience, and drive measurable growth.
+              </p>
+              <Button asChild size="lg" className="group">
+                <Link href="/services">
+                  Explore Services{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
+              <Card className="overflow-hidden shadow-2xl">
+                <div className="aspect-video">
+                  <video
+                    src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  ></video>
+                </div>
+              </Card>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
@@ -126,14 +155,15 @@ export default function Home() {
               />
             </div>
             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 As an Advertising Agency, We Ignite Brands with Ideas that
                 Transform Behaviour
-              </h1>
-              <p className="text-lg text-muted-foreground mb-8">
-                Across mediums, we have taken both fledgling and legacy brands to
-                a new level of success.
-              </p>
+              </h2>
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8">
+                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>Across mediums, we have taken both fledgling and legacy brands to a new level of success.</span></li>
+                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>Our creative strategies are designed to captivate audiences and drive engagement.</span></li>
+                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>We focus on results that matter, turning ideas into measurable outcomes.</span></li>
+              </ul>
               <Button asChild size="lg" className="group">
                 <Link href="/story">
                   View More{" "}
@@ -157,17 +187,14 @@ export default function Home() {
               )}
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline tracking-tight mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Our Gamut of Services are as Diverse as they are Effective
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                We offer a comprehensive suite of services designed to build,
-                grow, and sustain your brand's presence. From crafting compelling
-                brand identities and driving engagement on social media, to
-                developing robust web solutions and executing targeted B2B and
-                performance marketing campaigns, our expertise covers the full
-                spectrum of digital marketing.
-              </p>
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8">
+                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</span></li>
+                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>From compelling brand identities to robust web solutions and targeted marketing.</span></li>
+                  <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /><span>Our expertise covers the full spectrum of digital marketing.</span></li>
+              </ul>
               <Button asChild size="lg" className="group">
                 <Link href="/services">
                   View More{" "}
@@ -316,3 +343,5 @@ export default function Home() {
     </>
   );
 }
+
+    

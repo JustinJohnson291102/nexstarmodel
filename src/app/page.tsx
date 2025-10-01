@@ -91,7 +91,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex justify-center">
-        <div className="w-[60vw]">
+        <div className="w-[55vw]">
           <section className="relative h-[130vh] w-full">
             <Carousel
               plugins={[

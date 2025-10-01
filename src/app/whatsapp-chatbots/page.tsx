@@ -86,7 +86,7 @@ export default function WhatsappChatbotsPage() {
   const pageData = {
     title: "WhatsApp Chatbots",
     description: "Automate customer conversations and drive engagement with AI-powered WhatsApp chatbots.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1I_SdniqPDuy0QJKzv-wd1eFN6UdK6pSb",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/WhatsApp-Chatbot-3.png?updatedAt=1759313002805",
     heroHint: "chatbot conversation",
   };
 

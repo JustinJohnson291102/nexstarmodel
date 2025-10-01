@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex justify-between">
-        <div className="w-full md:w-[50%]">
+        <div className="w-full md:w-[70%]">
           <section className="relative h-[64vh] w-full">
             <Carousel
               plugins={[
@@ -130,8 +130,8 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="hidden md:block w-[50%] p-4">
-            <div className="h-[64vh] w-full p-1">
+        <div className="hidden md:block w-[30%] p-1">
+            <div className="h-[64vh] w-full">
                 <video
                     src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
                     className="w-full h-full object-contain"
@@ -144,7 +144,11 @@ export default function Home() {
         </div>
       </div>
       
-      <section className="relative bg-secondary text-foreground py-20 md:py-32">
+      <section 
+        className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
+        style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
+        >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
           
           <div className="grid md:grid-cols-2 gap-12 items-center">

@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex justify-between">
-        <div className="w-full md:w-[70%]">
+        <div className="w-full md:w-[50%]">
           <section className="relative h-[64vh] w-full">
             <Carousel
               plugins={[
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="hidden md:block w-[30%] p-1">
+        <div className="hidden md:block w-[50%] p-1">
             <div className="h-[64vh] w-full">
                 <video
                     src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"

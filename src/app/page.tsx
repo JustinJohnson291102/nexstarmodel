@@ -61,7 +61,7 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-cover w-full h-full"
+                      className="object-contain w-full h-full"
                       priority={index === 0}
                       data-ai-hint={img.hint}
                     />
@@ -126,7 +126,7 @@ export default function Home() {
                <Image
                  src="https://picsum.photos/seed/ad-agency-professional/2028/520"
                  alt="Advertising Agency"
-                 width={2028}
+                 width={2636}
                  height={520}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
@@ -155,7 +155,7 @@ export default function Home() {
               <Image
                 src="https://picsum.photos/seed/service-gamut-professional/2028/520"
                 alt="Gamut of Services"
-                width={2028}
+                width={2636}
                 height={520}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
@@ -204,7 +204,7 @@ export default function Home() {
               <CardHeader className="p-0">
                 <Image
                   src="https://picsum.photos/seed/team-passion-professional/2028/520"
-                  width={2028}
+                  width={2636}
                   height={520}
                   alt="Passionate Team"
                   data-ai-hint="passionate team"
@@ -234,7 +234,7 @@ export default function Home() {
               <CardHeader className="p-0">
                 <Image
                   src="https://picsum.photos/seed/team-collab-professional/2028/520"
-                  width={2028}
+                  width={2636}
                   height={520}
                   alt="Team Collaboration"
                   data-ai-hint="team collaboration"
@@ -264,7 +264,7 @@ export default function Home() {
               <CardHeader className="p-0">
                 <Image
                   src="https://picsum.photos/seed/global-reach-professional/2028/520"
-                  width={2028}
+                  width={2636}
                   height={520}
                   alt="Global Reach"
                   data-ai-hint="global network"
@@ -319,3 +319,5 @@ export default function Home() {
     </>
   );
 }
+
+    

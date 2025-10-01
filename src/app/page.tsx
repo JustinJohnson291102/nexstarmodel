@@ -95,8 +95,8 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <div className="w-full flex justify-center">
-        <div className="w-[55vw]">
+      <div className="w-full flex justify-between">
+        <div className="w-full md:w-[70%]">
           <section className="relative h-[130vh] w-full">
             <Carousel
               plugins={[
@@ -146,6 +146,22 @@ export default function Home() {
             </div>
           </section>
         </div>
+        <div className="hidden md:block w-[30%] p-4">
+            <div className="h-full w-full border-4 border-gray-300 p-1">
+                <div className="h-full w-full border-4 border-gray-400 p-1">
+                    <div className="h-full w-full border-4 border-gray-500 p-1">
+                        <video
+                            src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
+                            className="w-full h-full object-cover"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        ></video>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
@@ -159,10 +175,10 @@ export default function Home() {
             </p>
           </div>
           <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <div className="w-full aspect-[16/9]">
-              <video
+            <div className="w-full">
+               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-full object-contain rounded-lg shadow-xl bg-black"
+                className="w-full h-auto object-contain rounded-lg shadow-xl bg-black"
                 autoPlay
                 loop
                 muted
@@ -391,5 +407,3 @@ export default function Home() {
     </>
   );
 }
-
-    

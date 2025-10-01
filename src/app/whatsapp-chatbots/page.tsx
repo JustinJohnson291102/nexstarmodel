@@ -86,7 +86,7 @@ export default function WhatsappChatbotsPage() {
   const pageData = {
     title: "WhatsApp Chatbots",
     description: "Automate customer conversations and drive engagement with AI-powered WhatsApp chatbots.",
-    heroImage: "/images/whatsapp-chatbots.jpg",
+    heroImage: "https://drive.google.com/uc?export=download&id=1I_SdniqPDuy0QJKzv-wd1eFN6UdK6pSb",
     heroHint: "chatbot conversation",
   };
 
@@ -95,6 +95,7 @@ export default function WhatsappChatbotsPage() {
       <section
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
+        data-ai-hint={pageData.heroHint}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -243,3 +244,5 @@ export default function WhatsappChatbotsPage() {
     </div>
   );
 }
+
+    

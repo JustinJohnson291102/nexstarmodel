@@ -37,7 +37,7 @@ const carouselImages = [
     hint: "business collage",
   },
   {
-    src: "https://drive.google.com/uc?export=download&id=13ktX4VyT7daPwQE1vJGb8gkNd3beWNJt",
+    src: "https://drive.google.com/uc?export=download&id=1S7D9GO56ZmKdoLWU9FVOI8dsDTBRgz94",
     alt: "Hero Image 4",
     hint: "technology collage",
   },

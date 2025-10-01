@@ -22,24 +22,6 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
-const carouselImages = [
-  {
-    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
-    alt: "Hero Image 1",
-    hint: "team brainstorming",
-  },
-  {
-    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(3).png?updatedAt=1759317268835",
-    alt: "Hero Image 2",
-    hint: "digital marketing",
-  },
-  {
-    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
-    alt: "Hero Image 3",
-    hint: "modern office",
-  },
-];
-
 const whoWeAreCards = [
     {
       title: "Our Philosophy",
@@ -95,51 +77,16 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <div className="w-full flex flex-col md:flex-row">
-        <div className="w-full md:w-[72%] p-1">
-            <div className="h-[64vh] w-full">
-               <Carousel
-                  plugins={[
-                    Autoplay({
-                      delay: 2000,
-                      stopOnInteraction: false,
-                    }),
-                  ]}
-                  className="w-full h-full"
-                  opts={{ loop: true }}
-                >
-                  <CarouselContent>
-                    {carouselImages.map((img, index) => (
-                      <CarouselItem key={index}>
-                        <div className="relative h-[64vh] w-full">
-                          <Image
-                            src={img.src}
-                            alt={img.alt}
-                            fill
-                            className="object-contain w-full h-full"
-                            priority={index === 0}
-                            data-ai-hint={img.hint}
-                          />
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                </Carousel>
-            </div>
-        </div>
-        <div className="w-full md:w-[28%]">
-          <section className="relative h-[64vh] w-full">
-            <video
-                src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-full object-contain"
-                autoPlay
-                loop
-                muted
-                playsInline
-            ></video>
-          </section>
-        </div>
-      </div>
+      <section className="relative h-[calc(100vh-8rem)] w-full overflow-hidden">
+        <video
+          src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
+      </section>
       
       <section 
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"

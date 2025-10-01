@@ -77,60 +77,67 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[calc(100vh-8rem)] w-full overflow-hidden">
-        <video
-          src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div>
-                         <Carousel
-                            opts={{
-                              align: "start",
-                              loop: true,
-                            }}
-                             plugins={[
-                              Autoplay({
-                                delay: 3000,
-                                stopOnInteraction: true,
-                              }),
-                            ]}
-                            className="w-full"
-                          >
-                            <CarouselContent>
-                              <CarouselItem>
-                                 <Image src="https://ik.imagekit.io/ggelm1lwa/advetising%20services.jpg?updatedAt=1759315133641" alt="Image 1" width={800} height={600} className="rounded-lg object-contain w-full h-auto" />
-                              </CarouselItem>
-                              <CarouselItem>
-                                <Image src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035" alt="Image 2" width={800} height={600} className="rounded-lg object-contain w-full h-auto" />
-                              </CarouselItem>
-                               <CarouselItem>
-                                <Image src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870" alt="Image 3" width={800} height={600} className="rounded-lg object-contain w-full h-auto" />
-                              </CarouselItem>
-                            </CarouselContent>
-                          </Carousel>
-                    </div>
-                    <div className="flex justify-center">
-                        <div className="relative h-[80vh] w-[45vh] overflow-hidden rounded-2xl border-8 border-gray-800 shadow-2xl">
-                             <video
-                                src="https://videos.pexels.com/video-files/4434246/4434246-hd_720_1366_25fps.mp4"
-                                className="absolute top-0 left-0 w-full h-full object-contain"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                              ></video>
-                        </div>
-                    </div>
-                </div>
+      <section className="relative h-screen w-full flex items-center justify-center">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="md:order-2 flex justify-center">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[
+                  Autoplay({
+                    delay: 3000,
+                    stopOnInteraction: true,
+                  }),
+                ]}
+                className="w-full"
+              >
+                <CarouselContent>
+                  <CarouselItem>
+                    <Image
+                      src="https://ik.imagekit.io/ggelm1lwa/advetising%20services.jpg?updatedAt=1759315133641"
+                      alt="Image 1"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-auto"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image
+                      src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035"
+                      alt="Image 2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-auto"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image
+                      src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870"
+                      alt="Image 3"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-auto"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+              </Carousel>
             </div>
+            <div className="md:order-1 flex justify-center">
+              <div className="relative h-[80vh] w-[45vh] overflow-hidden rounded-2xl border-8 border-gray-800 shadow-2xl">
+                <video
+                  src="https://videos.pexels.com/video-files/4434246/4434246-hd_720_1366_25fps.mp4"
+                  className="absolute top-0 left-0 w-full h-full object-contain"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                ></video>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       

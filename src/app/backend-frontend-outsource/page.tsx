@@ -96,7 +96,7 @@ export default function BackendFrontendOutsourcePage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-[#4a2c2a]"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-[#3b2321]"
       >
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Code className="h-16 w-16 mx-auto mb-4" />

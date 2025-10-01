@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -123,7 +124,7 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="aspect-video">
                     <video
-                      src="/videohero.mp4"
+                      src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
                       className="w-full h-full object-cover"
                       autoPlay
                       loop
@@ -145,7 +146,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://picsum.photos/seed/ad-agency/600/400"
+                 src="https://picsum.photos/seed/ad-agency-professional/600/400"
                  alt="Advertising Agency"
                  width={600}
                  height={400}
@@ -174,7 +175,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://picsum.photos/seed/service-gamut/600/400"
+                src="https://picsum.photos/seed/service-gamut-professional/600/400"
                 alt="Gamut of Services"
                 width={600}
                 height={400}
@@ -224,7 +225,7 @@ export default function Home() {
             <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70">
               <CardHeader className="p-0">
                 <Image
-                  src="https://picsum.photos/seed/team-passion/600/400"
+                  src="https://picsum.photos/seed/team-passion-professional/600/400"
                   width={600}
                   height={400}
                   alt="Passionate Team"
@@ -254,7 +255,7 @@ export default function Home() {
             <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300 bg-card/70">
               <CardHeader className="p-0">
                 <Image
-                  src="https://picsum.photos/seed/team-collab/600/400"
+                  src="https://picsum.photos/seed/team-collab-professional/600/400"
                   width={600}
                   height={400}
                   alt="Team Collaboration"
@@ -284,7 +285,7 @@ export default function Home() {
             <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400 bg-card/70">
               <CardHeader className="p-0">
                 <Image
-                  src="https://picsum.photos/seed/global-reach/600/400"
+                  src="https://picsum.photos/seed/global-reach-professional/600/400"
                   width={600}
                   height={400}
                   alt="Global Reach"

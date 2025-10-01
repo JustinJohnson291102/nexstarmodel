@@ -21,7 +21,7 @@ const b2bServices = [
     title: "Account-Based Marketing (ABM)",
     description: "Target high-value accounts with personalized campaigns that treat individual accounts as markets in their own right.",
     image: {
-      src: "https://picsum.photos/seed/abm/600/400",
+      src: "https://picsum.photos/seed/abm-vibrant/600/400",
       hint: "marketing target",
     }
   },
@@ -30,7 +30,7 @@ const b2bServices = [
     title: "Lead Generation & Nurturing",
     description: "Build a robust pipeline of qualified leads and nurture them through the sales funnel with targeted content and automation.",
     image: {
-      src: "https://picsum.photos/seed/lead-gen/600/400",
+      src: "https://picsum.photos/seed/lead-gen-vibrant/600/400",
       hint: "sales funnel",
     }
   },
@@ -39,7 +39,7 @@ const b2bServices = [
     title: "B2B Content Strategy",
     description: "Establish thought leadership and attract your target audience with valuable, relevant, and consistent content.",
      image: {
-      src: "https://picsum.photos/seed/content-strategy/600/400",
+      src: "https://picsum.photos/seed/content-strategy-vibrant/600/400",
       hint: "content creation",
     }
   },
@@ -48,7 +48,7 @@ const b2bServices = [
     title: "Marketing & Sales Analytics",
     description: "Leverage data to optimize your marketing efforts, measure ROI, and align your sales and marketing teams.",
      image: {
-      src: "https://picsum.photos/seed/analytics/600/400",
+      src: "https://picsum.photos/seed/analytics-vibrant/600/400",
       hint: "data analytics",
     }
   },
@@ -85,7 +85,7 @@ const alternatingContent = [
             "Sales and marketing team alignment for seamless follow-up."
         ],
         image: {
-            src: "https://picsum.photos/seed/b2b-abm-focus/800/600",
+            src: "https://picsum.photos/seed/b2b-abm-professional/800/600",
             hint: "marketing focus"
         }
     },
@@ -99,7 +99,7 @@ const alternatingContent = [
             "Content distribution and promotion strategies."
         ],
         image: {
-            src: "https://picsum.photos/seed/b2b-content-creation/800/600",
+            src: "https://picsum.photos/seed/b2b-content-professional/800/600",
             hint: "writing content"
         }
     }
@@ -117,7 +117,7 @@ export default function B2BPage() {
     <>
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://picsum.photos/seed/b2b-yellow-red/1920/1080"
+          src="https://picsum.photos/seed/b2b-hero-professional/1920/1080"
           alt="B2B Marketing"
           fill
           className="object-cover"
@@ -186,7 +186,7 @@ export default function B2BPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://picsum.photos/seed/b2b-parallax-stats/1920/1080')"}}
+        style={{backgroundImage: "url('https://picsum.photos/seed/b2b-parallax-colorful/1920/1080')"}}
         data-ai-hint="business success"
       >
         <div className="absolute inset-0 bg-primary/90" />

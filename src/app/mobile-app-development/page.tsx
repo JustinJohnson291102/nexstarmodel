@@ -45,7 +45,7 @@ const alternatingContent = [
             "Full integration with device-native features like cameras and GPS."
         ],
         image: {
-            src: "https://picsum.photos/seed/native-app/800/600",
+            src: "https://picsum.photos/seed/native-app-professional/800/600",
             hint: "mobile app screen"
         }
     },
@@ -59,7 +59,7 @@ const alternatingContent = [
             "Third-party service integrations (payments, maps, social media)."
         ],
         image: {
-            src: "https://picsum.photos/seed/app-backend/800/600",
+            src: "https://picsum.photos/seed/app-backend-professional/800/600",
             hint: "cloud server"
         }
     }
@@ -69,7 +69,7 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "https://picsum.photos/seed/mobile-development/1920/1080",
+    heroImage: "https://picsum.photos/seed/mobile-dev-professional/1920/1080",
     heroHint: "mobile app development",
     features: [
       {
@@ -163,7 +163,7 @@ export default function MobileAppDevelopmentPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/app-dev-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/app-dev-parallax-vibrant/1920/1080')` }}
         data-ai-hint="colorful app interface"
       >
         <div className="absolute inset-0 bg-primary/90" />
@@ -273,5 +273,3 @@ export default function MobileAppDevelopmentPage() {
     </div>
   );
 }
-
-    

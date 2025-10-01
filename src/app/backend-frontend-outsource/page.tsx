@@ -65,7 +65,7 @@ const alternatingContent = [
             "Cross-browser compatibility and accessibility compliance."
         ],
         image: {
-            src: "https://picsum.photos/seed/frontend-code/800/600",
+            src: "https://picsum.photos/seed/frontend-professional/800/600",
             hint: "frontend code"
         }
     },
@@ -79,7 +79,7 @@ const alternatingContent = [
             "Third-party service and API integration."
         ],
         image: {
-            src: "https://picsum.photos/seed/backend-server/800/600",
+            src: "https://picsum.photos/seed/backend-professional/800/600",
             hint: "server room"
         }
     }
@@ -89,7 +89,7 @@ export default function BackendFrontendOutsourcePage() {
   const pageData = {
     title: "Backend & Frontend Outsourcing",
     description: "Scale your development capabilities with our expert, dedicated teams.",
-    heroImage: "https://picsum.photos/seed/coding-team/1920/1080",
+    heroImage: "https://picsum.photos/seed/coding-team-professional/1920/1080",
     heroHint: "development team",
   };
 
@@ -161,7 +161,7 @@ export default function BackendFrontendOutsourcePage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/outsource-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/outsource-parallax-vibrant/1920/1080')`}}
         data-ai-hint="global network"
       >
         <div className="absolute inset-0 bg-background/90" />
@@ -270,5 +270,3 @@ export default function BackendFrontendOutsourcePage() {
     </div>
   );
 }
-
-    

@@ -43,7 +43,7 @@ const alternatingContent = [
             "Competitor reputation tracking."
         ],
         image: {
-            src: "https://picsum.photos/seed/orm-monitoring/800/600",
+            src: "https://picsum.photos/seed/orm-monitoring-professional/800/600",
             hint: "data monitoring"
         }
     },
@@ -57,7 +57,7 @@ const alternatingContent = [
             "Creation and optimization of owned media properties."
         ],
         image: {
-            src: "https://picsum.photos/seed/orm-content/800/600",
+            src: "https://picsum.photos/seed/orm-content-professional/800/600",
             hint: "positive content"
         }
     }
@@ -67,7 +67,7 @@ export default function OnlineReputationManagementPage() {
   const pageData = {
     title: "Online Reputation Management",
     description: "Shape your brand's narrative, build trust, and protect your online image with our proactive reputation management services.",
-    heroImage: "https://picsum.photos/seed/reputation-hero/1920/1080",
+    heroImage: "https://picsum.photos/seed/reputation-hero-professional/1920/1080",
     heroHint: "brand trust",
     features: [
       {
@@ -157,7 +157,7 @@ export default function OnlineReputationManagementPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/orm-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/orm-parallax-vibrant/1920/1080')` }}
         data-ai-hint="digital security"
       >
         <div className="absolute inset-0 bg-background/90" />
@@ -262,5 +262,3 @@ export default function OnlineReputationManagementPage() {
     </div>
   );
 }
-
-    

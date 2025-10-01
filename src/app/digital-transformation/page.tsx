@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -68,7 +69,7 @@ const alternatingContent = [
             "Automated reporting and data entry solutions."
         ],
         image: {
-            src: "https://picsum.photos/seed/automation/800/600",
+            src: "https://picsum.photos/seed/automation-professional/800/600",
             hint: "business automation"
         }
     },
@@ -82,7 +83,7 @@ const alternatingContent = [
             "Ongoing cloud management and cost optimization."
         ],
         image: {
-            src: "https://picsum.photos/seed/cloud-infra/800/600",
+            src: "https://picsum.photos/seed/cloud-infra-professional/800/600",
             hint: "cloud infrastructure"
         }
     }
@@ -98,7 +99,7 @@ export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
     description: "Modernize your operations, automate processes, and embrace a data-driven culture to stay ahead of the curve.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1Z5SXzG3ioKVQAVl8pGQO2ZCvzWfL6FY4",
+    heroImage: "https://picsum.photos/seed/digital-transformation-professional/1920/1080",
     heroHint: "abstract digital transformation",
   };
 
@@ -161,7 +162,7 @@ export default function DigitalTransformationPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/dt-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/dt-parallax-vibrant/1920/1080')`}}
         data-ai-hint="colorful data visualization"
       >
         <div className="absolute inset-0 bg-primary/90" />

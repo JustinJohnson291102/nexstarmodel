@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -45,7 +46,7 @@ const alternatingContent = [
             "Mobile-first design for a seamless shopping experience on any device."
         ],
         image: {
-            src: "https://picsum.photos/seed/ecommerce-conversion/800/600",
+            src: "https://picsum.photos/seed/ecommerce-conversion-vibrant/800/600",
             hint: "sales funnel"
         }
     },
@@ -59,7 +60,7 @@ const alternatingContent = [
             "Headless commerce solutions for ultimate flexibility and performance."
         ],
         image: {
-            src: "https://picsum.photos/seed/ecommerce-platforms/800/600",
+            src: "https://picsum.photos/seed/ecommerce-platforms-vibrant/800/600",
             hint: "server infrastructure"
         }
     }
@@ -76,7 +77,7 @@ export default function EcommerceDevelopmentPage() {
   const pageData = {
     title: "E-commerce Website Design and Development",
     description: "We build beautiful, high-performing e-commerce websites that turn visitors into loyal customers.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1047rQg6rdePCm-rXbyf-7AsuU7YYpsvS",
+    heroImage: "https://picsum.photos/seed/ecommerce-hero-professional/1920/1080",
     heroHint: "online shopping",
     features: [
       {
@@ -174,7 +175,7 @@ export default function EcommerceDevelopmentPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/ecommerce-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/ecommerce-parallax-vibrant/1920/1080')` }}
         data-ai-hint="abstract tech background"
       >
         <div className="absolute inset-0 bg-background/90" />

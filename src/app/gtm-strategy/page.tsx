@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -18,7 +19,7 @@ const roadmapSteps = [
         "Analyze pricing models and potential revenue streams."
     ],
     image: {
-      src: "https://picsum.photos/seed/market-research/800/600",
+      src: "https://picsum.photos/seed/market-research-professional/800/600",
       hint: "market research",
     },
   },
@@ -32,7 +33,7 @@ const roadmapSteps = [
         "Create a comprehensive brand style guide."
     ],
     image: {
-      src: "https://picsum.photos/seed/positioning/800/600",
+      src: "https://picsum.photos/seed/positioning-professional/800/600",
       hint: "brand positioning",
     },
   },
@@ -46,7 +47,7 @@ const roadmapSteps = [
         "Launch a coming-soon landing page to capture leads."
     ],
     image: {
-      src: "https://picsum.photos/seed/pre-launch/800/600",
+      src: "https://picsum.photos/seed/pre-launch-professional/800/600",
       hint: "product launch",
     },
   },
@@ -60,7 +61,7 @@ const roadmapSteps = [
         "Secure launch coverage on product discovery sites like Product Hunt."
     ],
     image: {
-      src: "https://picsum.photos/seed/launch-campaign/800/600",
+      src: "https://picsum.photos/seed/launch-campaign-professional/800/600",
       hint: "rocket launch",
     },
   },
@@ -74,7 +75,7 @@ const roadmapSteps = [
         "Establish key partnerships and affiliate programs."
     ],
     image: {
-      src: "https://picsum.photos/seed/growth/800/600",
+      src: "https://picsum.photos/seed/growth-professional/800/600",
       hint: "growth chart",
     },
   },
@@ -88,7 +89,7 @@ const roadmapSteps = [
         "Continuously refine product features and marketing strategies."
     ],
     image: {
-      src: "https://picsum.photos/seed/optimize/800/600",
+      src: "https://picsum.photos/seed/optimize-professional/800/600",
       hint: "optimization process",
     },
   },
@@ -106,7 +107,7 @@ export default function GtmStrategyPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://drive.google.com/uc?export=download&id=1yQcCZl9bNUt2fUPVCQYNLOt9_mDbG1s1"
+          src="https://picsum.photos/seed/gtm-hero-professional/1920/1080"
           alt="Go-To-Market Strategy"
           fill
           className="object-cover"
@@ -170,7 +171,7 @@ export default function GtmStrategyPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://picsum.photos/seed/gtm-parallax/1920/1080')"}}
+        style={{backgroundImage: "url('https://picsum.photos/seed/gtm-parallax-vibrant/1920/1080')"}}
         data-ai-hint="launch success"
       >
         <div className="absolute inset-0 bg-primary/90" />

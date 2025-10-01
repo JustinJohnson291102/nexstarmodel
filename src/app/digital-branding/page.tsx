@@ -68,7 +68,7 @@ const alternatingContent = [
             "Digital asset optimization for different channels."
         ],
         image: {
-            src: "https://picsum.photos/seed/digital-experience/800/600",
+            src: "https://picsum.photos/seed/digital-experience-vibrant/800/600",
             hint: "digital interface"
         }
     },
@@ -82,24 +82,24 @@ const alternatingContent = [
             "Content distribution strategy to maximize reach."
         ],
         image: {
-            src: "https://picsum.photos/seed/brand-content/800/600",
+            src: "https://picsum.photos/seed/brand-content-vibrant/800/600",
             hint: "content creation"
         }
     }
 ];
 
 const touchpoints = [
-    { name: "Website", image: { src: "https://picsum.photos/seed/touchpoint-web/400/300", hint: "website design" } },
-    { name: "Social Media", image: { src: "https://picsum.photos/seed/touchpoint-social/400/300", hint: "social media app" } },
-    { name: "Email", image: { src: "https://picsum.photos/seed/touchpoint-email/400/300", hint: "email marketing" } },
-    { name: "Digital Ads", image: { src: "https://picsum.photos/seed/touchpoint-ads/400/300", hint: "online advertising" } },
+    { name: "Website", image: { src: "https://picsum.photos/seed/touchpoint-web-professional/400/300", hint: "website design" } },
+    { name: "Social Media", image: { src: "https://picsum.photos/seed/touchpoint-social-professional/400/300", hint: "social media app" } },
+    { name: "Email", image: { src: "https://picsum.photos/seed/touchpoint-email-professional/400/300", hint: "email marketing" } },
+    { name: "Digital Ads", image: { src: "https://picsum.photos/seed/touchpoint-ads-professional/400/300", hint: "online advertising" } },
 ];
 
 export default function DigitalBrandingPage() {
   const pageData = {
     title: "Digital Branding",
     description: "Craft a consistent and compelling brand identity across all your digital touchpoints.",
-    heroImage: "https://picsum.photos/seed/digital-brand-id/1920/1080",
+    heroImage: "https://picsum.photos/seed/digital-brand-professional/1920/1080",
     heroHint: "digital identity",
   };
 
@@ -164,7 +164,7 @@ export default function DigitalBrandingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/digital-brand-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/digital-brand-parallax-vibrant/1920/1080')` }}
         data-ai-hint="colorful abstract pattern"
       >
         <div className="absolute inset-0 bg-background/90" />
@@ -268,5 +268,3 @@ export default function DigitalBrandingPage() {
     </div>
   );
 }
-
-    

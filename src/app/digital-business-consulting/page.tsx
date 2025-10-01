@@ -68,7 +68,7 @@ const alternatingContent = [
             "Vendor selection and negotiation support."
         ],
         image: {
-            src: "https://picsum.photos/seed/tech-planning/800/600",
+            src: "https://picsum.photos/seed/tech-planning-professional/800/600",
             hint: "technology strategy"
         }
     },
@@ -82,7 +82,7 @@ const alternatingContent = [
             "Data-driven marketing and sales funnel optimization."
         ],
         image: {
-            src: "https://picsum.photos/seed/data-growth/800/600",
+            src: "https://picsum.photos/seed/data-growth-professional/800/600",
             hint: "data analytics"
         }
     }
@@ -99,7 +99,7 @@ export default function DigitalBusinessConsultingPage() {
   const pageData = {
     title: "Digital Business Consulting",
     description: "Navigate the complexities of the digital landscape with our expert guidance and strategic insights.",
-    heroImage: "https://picsum.photos/seed/business-consulting/1920/1080",
+    heroImage: "https://picsum.photos/seed/business-consulting-professional/1920/1080",
     heroHint: "business consulting",
   };
 
@@ -162,7 +162,7 @@ export default function DigitalBusinessConsultingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/consulting-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/consulting-parallax-vibrant/1920/1080')` }}
         data-ai-hint="colorful business strategy"
       >
         <div className="absolute inset-0 bg-primary/90" />
@@ -261,5 +261,3 @@ export default function DigitalBusinessConsultingPage() {
     </div>
   );
 }
-
-    

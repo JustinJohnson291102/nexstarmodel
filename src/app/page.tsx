@@ -97,7 +97,7 @@ export default function Home() {
     <>
       <div className="w-full flex justify-between">
         <div className="w-full md:w-[70%]">
-          <section className="relative h-[130vh] w-full">
+          <section className="relative h-[91vh] w-full">
             <Carousel
               plugins={[
                 Autoplay({
@@ -111,7 +111,7 @@ export default function Home() {
               <CarouselContent>
                 {carouselImages.map((img, index) => (
                   <CarouselItem key={index}>
-                    <div className="relative h-[130vh] w-full">
+                    <div className="relative h-[91vh] w-full">
                       <Image
                         src={img.src}
                         alt={img.alt}
@@ -135,8 +135,7 @@ export default function Home() {
               </p>
               <Button
                 asChild
-                size="lg"
-                className="mt-8 group"
+                className="mt-12 group px-12 py-8 text-xl"
               >
                 <Link href="/services">
                   Our Services{" "}
@@ -147,7 +146,7 @@ export default function Home() {
           </section>
         </div>
         <div className="hidden md:block w-[30%] p-4">
-            <div className="h-full w-full border-4 border-gray-300 p-1">
+            <div className="h-[91vh] w-full border-4 border-gray-300 p-1">
                 <div className="h-full w-full border-4 border-gray-400 p-1">
                     <div className="h-full w-full border-4 border-gray-500 p-1">
                         <video
@@ -163,32 +162,6 @@ export default function Home() {
             </div>
         </div>
       </div>
-
-      <section className="relative bg-background text-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight">
-              Driving Digital Excellence
-            </h2>
-            <p className="text-lg text-muted-foreground mt-4">
-              At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
-            </p>
-          </div>
-          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <div className="w-full">
-               <video
-                src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-auto object-contain rounded-lg shadow-xl bg-black"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-              ></video>
-            </div>
-          </div>
-        </div>
-      </section>
       
       <section className="relative bg-secondary text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">

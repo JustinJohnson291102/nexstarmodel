@@ -115,7 +115,7 @@ const stats = [
 export default function B2BPage() {
   return (
     <>
-      <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
+      <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center">
         <Image
           src="/images/b2b.jpg"
           alt="B2B Marketing"
@@ -126,7 +126,7 @@ export default function B2BPage() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
-           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
+           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
               B2B Marketing That Drives Results
             </h1>
             <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
@@ -136,10 +136,10 @@ export default function B2BPage() {
       </section>
 
       <section 
-        className="relative py-20 md:py-32 bg-secondary"
+        className="relative py-16 md:py-24 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Our Core B2B Services
             </h2>
@@ -148,7 +148,7 @@ export default function B2BPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {b2bServices.map((service, index) => (
               <div
                 key={service.title}
@@ -185,27 +185,27 @@ export default function B2BPage() {
       </section>
 
       <section
-        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
+        className="py-20 md:py-24 bg-cover bg-center bg-fixed"
         style={{backgroundImage: "url('https://picsum.photos/seed/yellow-b2b-parallax/1920/1080')"}}
         data-ai-hint="yellow business success"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             {stats.map(stat => (
-              <div key={stat.label} className="p-8 bg-black/10 rounded-lg">
-                <p className="text-6xl font-bold font-headline">{stat.value}</p>
-                <p className="text-lg text-primary-foreground/80 mt-2">{stat.label}</p>
+              <div key={stat.label} className="p-6 bg-black/10 rounded-lg">
+                <p className="text-5xl md:text-6xl font-bold font-headline">{stat.value}</p>
+                <p className="text-base md:text-lg text-primary-foreground/80 mt-2">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 space-y-20 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -234,10 +234,10 @@ export default function B2BPage() {
       </section>
 
       <section
-        className="relative py-20 md:py-32 bg-secondary"
+        className="relative py-16 md:py-24 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Data-Driven Insights</h2>
                <p className="text-lg text-muted-foreground mb-8">
@@ -255,7 +255,7 @@ export default function B2BPage() {
                   <CardTitle>Lead Generation Performance</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="h-[300px] w-full">
+                  <div className="h-[250px] sm:h-[300px] w-full">
                     <ChartContainer config={chartConfig} className="w-full h-full">
                       <AreaChart data={chartData} margin={{ left: -20, right: 20, top: 10, bottom: 0 }}>
                         <defs>
@@ -287,7 +287,7 @@ export default function B2BPage() {
       <OurClients />
 
       <section 
-        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
+        className="relative py-16 md:py-24 bg-primary text-primary-foreground"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -324,7 +324,7 @@ export default function B2BPage() {
         </div>
       </section>
       
-       <section className="py-20 md:py-32 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <MessageCircle className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -347,3 +347,5 @@ export default function B2BPage() {
     </>
   );
 }
+
+    

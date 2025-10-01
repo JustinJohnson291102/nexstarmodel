@@ -1,84 +1,101 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = [
+  const mainLinks = [
     { href: '/', label: 'Home' },
     { href: '/story', label: 'About Us' },
     { href: '/services', label: 'Services' },
-    { href: '/b2b', label: 'B2B Marketing' },
+    { href: '/portfolio', label: 'Portfolio' },
     { href: '/contact', label: 'Contact' },
-    { href: '/blog', label: 'Blogs' },
-    { href: '/story#team', label: 'Team' },
-    { href: '/services', label: 'TV' },
-    { href: '/services', label: 'Print' },
-    { href: '/services', label: 'Radio' },
+  ];
+
+  const serviceLinks = [
+    { href: '/b2b', label: 'B2B Marketing' },
+    { href: '/search-marketing', label: 'Search Marketing' },
+    { href: '/social-media', label: 'Social Media' },
+    { href: '/web-solutions', label: 'Web Solutions' },
+    { href: '/ecommerce-development', label: 'E-commerce' },
+  ];
+
+  const socialLinks = [
+    { href: '#', label: 'Facebook', icon: Facebook },
+    { href: '#', label: 'Twitter', icon: Twitter },
+    { href: '#', label: 'LinkedIn', icon: Linkedin },
+    { href: '#', label: 'Instagram', icon: Instagram },
+    { href: '#', label: 'YouTube', icon: Youtube },
   ];
 
   return (
-    <footer className="bg-gray-200 text-black">
+    <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto py-12 px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex flex-col justify-between md:col-span-1">
-            <div>
-              <Link href="/" className="flex items-center space-x-2 mb-4">
-                 <Image
-                  src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
-                  alt="Nexstar Logo"
-                  width={150}
-                  height={50}
-                  className="object-contain"
-                />
-              </Link>
-              <p className="text-sm text-gray-700 max-w-sm">
-                Innovating the digital space, one pixel at a time. We are the
-                architects of your digital success.
-              </p>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          
+          <div className="md:col-span-4 flex flex-col items-start">
+            <Link href="/" className="mb-4">
+               <Image
+                src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+                alt="Nexstar Logo"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </Link>
+            <p className="text-sm text-muted-foreground max-w-sm">
+              Innovating the digital space, one pixel at a time. We are the
+              architects of your digital success.
+            </p>
           </div>
-          <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-8">
-            <div className="flex flex-col space-y-3">
-              <h4 className="font-bold text-lg">Quick Links</h4>
-              {footerLinks.slice(0, 5).map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-gray-700 hover:text-primary hover:underline transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+          
+          <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
+            <div>
+              <h4 className="font-bold text-lg mb-3">Quick Links</h4>
+              <ul className="space-y-2">
+                {mainLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="flex flex-col space-y-3">
-               <h4 className="font-bold text-lg text-gray-200">.</h4>
-              {footerLinks.slice(5, 10).map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-gray-700 hover:text-primary hover:underline transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div>
+              <h4 className="font-bold text-lg mb-3">Top Services</h4>
+              <ul className="space-y-2">
+                {serviceLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="flex flex-col space-y-3">
-              <h4 className="font-bold text-lg">Connect</h4>
-               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">Facebook</a>
-               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">LinkedIn</a>
-               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">Twitter</a>
-               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">Instagram</a>
-               <a href="#" className="text-gray-700 hover:text-primary hover:underline transition-colors">YouTube</a>
+            <div className="col-span-2 sm:col-span-2">
+              <h4 className="font-bold text-lg mb-3">Connect With Us</h4>
+              <div className="flex space-x-4">
+                {socialLinks.map((link) => (
+                  <a key={link.label} href={link.href} className="text-muted-foreground hover:text-primary transition-colors" aria-label={link.label}>
+                    <link.icon className="h-6 w-6" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-         <div className="border-t border-gray-300 mt-8 pt-6 text-center text-sm text-gray-600">
+         <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
             <p>
-              &amp;copy; {currentYear} Nexstar. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+              &copy; {currentYear} Nexstar. All rights reserved. | <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             </p>
           </div>
       </div>
     </footer>
   );
 }
+
+    

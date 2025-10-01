@@ -311,8 +311,9 @@ export default function ServicesPage() {
           priority
           data-ai-hint="yellow creative workspace"
         />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">
             Our Services
           </h1>
           <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
@@ -321,14 +322,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="relative py-20 md:py-32 bg-background">
+      <section className="relative py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="space-y-20 md:space-y-32">
+          <div className="space-y-16 md:space-y-24">
             {servicesData.map((service, index) => (
               <div
                 key={service.id}
                 id={service.id}
-                className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center"
+                className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center"
               >
                 <div
                   className={`animate-in fade-in duration-700 overflow-hidden rounded-lg shadow-xl ${
@@ -348,7 +349,7 @@ export default function ServicesPage() {
                   className={`flex flex-col animate-in fade-in duration-700 ${
                     index % 2 !== 0
                       ? "md:order-1 slide-in-from-left-10"
-                      : "md:items-end md:text-right slide-in-from-right-10"
+                      : "md:items-start slide-in-from-right-10"
                   }`}
                 >
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">
@@ -356,14 +357,13 @@ export default function ServicesPage() {
                   </h2>
                   <ul className="space-y-3 mb-8">
                     {service.points.slice(0, 5).map((point) => (
-                      <li key={point} className={`flex items-start ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                        {index % 2 !== 0 && <CheckCircle className={`h-5 w-5 text-primary mt-1 flex-shrink-0 mr-3`} />}
+                      <li key={point} className={`flex items-start`}>
+                        <CheckCircle className={`h-5 w-5 text-primary mt-1 flex-shrink-0 mr-3`} />
                         <span className="text-lg text-muted-foreground">{point}</span>
-                         {index % 2 === 0 && <CheckCircle className="h-5 w-5 text-primary ml-3 mt-1 flex-shrink-0" />}
                       </li>
                     ))}
                   </ul>
-                  <div className={`flex ${index % 2 !== 0 ? 'justify-start' : 'justify-end'}`}>
+                  <div className={`flex justify-start`}>
                     <Button asChild size="lg" className="group rounded-lg w-auto">
                       <Link href={service.link}>
                         View More
@@ -379,7 +379,7 @@ export default function ServicesPage() {
       </section>
 
       <section 
-        className="py-20 md:py-24 bg-secondary"
+        className="py-16 md:py-24 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -402,7 +402,7 @@ export default function ServicesPage() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
              <Rocket className="h-16 w-16 text-primary-foreground mx-auto mb-6" />
@@ -426,3 +426,5 @@ export default function ServicesPage() {
     </>
   );
 }
+
+    

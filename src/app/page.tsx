@@ -96,8 +96,8 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex justify-between">
-        <div className="w-full md:w-[70%]">
-          <section className="relative h-[91vh] w-full">
+        <div className="w-full md:w-[50%]">
+          <section className="relative h-[64vh] w-full">
             <Carousel
               plugins={[
                 Autoplay({
@@ -111,12 +111,12 @@ export default function Home() {
               <CarouselContent>
                 {carouselImages.map((img, index) => (
                   <CarouselItem key={index}>
-                    <div className="relative h-[91vh] w-full">
+                    <div className="relative h-[64vh] w-full">
                       <Image
                         src={img.src}
                         alt={img.alt}
                         fill
-                        className="object-contain w-full h-full"
+                        className="object-cover w-full h-full"
                         priority={index === 0}
                         data-ai-hint={img.hint}
                       />
@@ -135,7 +135,7 @@ export default function Home() {
               </p>
               <Button
                 asChild
-                className="mt-12 group px-12 py-8 text-xl"
+                className="mt-16 group px-16 py-10 text-2xl"
               >
                 <Link href="/services">
                   Our Services{" "}
@@ -145,8 +145,8 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="hidden md:block w-[30%] p-4">
-            <div className="h-[91vh] w-full border border-gray-300 p-1">
+        <div className="hidden md:block w-[50%] p-4">
+            <div className="h-[64vh] w-full p-1">
                 <video
                     src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
                     className="w-full h-full object-cover"

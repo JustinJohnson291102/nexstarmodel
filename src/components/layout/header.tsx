@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -70,7 +71,7 @@ export default function Header() {
     <Link
       href={href}
       className={cn(
-        "text-xl font-medium transition-colors hover:text-primary",
+        "text-base font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary" : "text-foreground",
         className
       )}
@@ -84,13 +85,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-32 items-center px-4 md:px-6">
+      <div className="container flex h-20 md:h-32 items-center px-4 md:px-6">
         <Link href="/" className="mr-6 flex items-center space-x-2">
            <Image
             src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
             alt="Nexstar Logo"
-            width={150}
-            height={50}
+            width={120}
+            height={40}
             className="object-contain"
           />
         </Link>
@@ -105,14 +106,14 @@ export default function Header() {
                  <Link
                     href="/services"
                     className={cn(
-                      "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        isServiceActive ? 'text-primary' : ''
                     )}
                   >
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </Link>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="max-h-96 overflow-y-auto">
+              <DropdownMenuContent className="max-h-96 overflow-y-auto w-56">
                  <DropdownMenuItem asChild>
                     <Link href="/services">All Services</Link>
                   </DropdownMenuItem>
@@ -128,7 +129,7 @@ export default function Header() {
               <DropdownMenuTrigger asChild>
                  <button
                     className={cn(
-                      "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        pathname.startsWith('/web-solutions') || pathname.startsWith('/shopify') ? 'text-primary' : ''
                     )}
                   >
@@ -148,7 +149,7 @@ export default function Header() {
               <DropdownMenuTrigger asChild>
                  <button
                     className={cn(
-                      "flex items-center text-xl font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        pathname.startsWith('/pricing') ? 'text-primary' : ''
                     )}
                   >
@@ -166,13 +167,13 @@ export default function Header() {
             <NavLink href="/podcast" label="Podcast" />
           </nav>
         </div>
-        <div className="hidden md:flex items-center mr-8">
-           <Button asChild className="rounded-full">
+        <div className="hidden md:flex items-center ml-auto">
+           <Button asChild>
               <Link href="/contact">Contact Us</Link>
             </Button>
         </div>
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="md:hidden ml-auto">
             <Button variant="outline" size="icon">
               <Menu className="h-5 w-5" />
               <span className="sr-only">Open menu</span>
@@ -196,13 +197,13 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
-                {[...mainLinks, { href: "/services", label: "Services" }, { href: "/web-solutions", label: "Web Solutions" }, { href: "/pricing/seo-pricing", label: "Pricing" }, { href: "/podcast", label: "Podcast" }].map(
+                {[...mainLinks, { href: "/services", label: "Services" }, { href: "/portfolio", label: "Portfolio" }, { href: "/pricing/seo-pricing", label: "Pricing" }, { href: "/podcast", label: "Podcast" }].map(
                   ({ href, label }) => (
                     <NavLink key={href} href={href} label={label} className="text-lg" />
                   )
                 )}
               </div>
-              <Button asChild className="rounded-full">
+              <Button asChild className="mt-4">
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -217,3 +218,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex justify-center">
-        <div className="w-[70vw]">
+        <div className="w-[60vw]">
           <section className="relative h-[130vh] w-full">
             <Carousel
               plugins={[
@@ -95,16 +95,16 @@ export default function Home() {
       </div>
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+        <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-5 gap-12 items-center">
+          <div className="md:col-span-2">
             <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight">
               Driving Digital Excellence
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground mt-4">
               At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
             </p>
           </div>
-          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <div className="md:col-span-3 animate-in fade-in slide-in-from-bottom-10 duration-700">
             <div className="aspect-video w-full">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
@@ -126,10 +126,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://picsum.photos/seed/ad-agency-professional/2028/520"
+                 src="https://picsum.photos/seed/ad-agency-professional/2028/1040"
                  alt="Advertising Agency"
                  width={2636}
-                 height={520}
+                 height={1040}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
@@ -155,10 +155,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://picsum.photos/seed/service-gamut-professional/2028/520"
+                src="https://picsum.photos/seed/service-gamut-professional/2028/1040"
                 alt="Gamut of Services"
                 width={2636}
-                height={520}
+                height={1040}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -175,6 +175,64 @@ export default function Home() {
               <Button asChild size="lg" className="group">
                 <Link href="/services">
                   View More{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+           <div className="grid md:grid-cols-2 gap-12 items-center">
+             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+               <Image
+                 src="https://picsum.photos/seed/colorful-ui-ux/2028/1040"
+                 alt="UI/UX Design"
+                 width={2636}
+                 height={1040}
+                 data-ai-hint="colorful ui ux"
+                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+               />
+            </div>
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
+               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+                 User-Centric Design
+               </h2>
+               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+                 <li>We create intuitive and beautiful user interfaces that delight users.</li>
+                 <li>Our UI/UX process is driven by research and focused on user needs.</li>
+                 <li>We design experiences that are not just functional but also memorable.</li>
+               </ul>
+               <Button asChild size="lg" className="group" variant="outline">
+                 <Link href="/web-solutions">
+                   See Our Process{" "}
+                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                 </Link>
+               </Button>
+             </div>
+          </div>
+          
+           <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
+              <Image
+                src="https://picsum.photos/seed/vibrant-data-analytics/2028/1040"
+                alt="Data-Driven Strategies"
+                width={2636}
+                height={1040}
+                data-ai-hint="vibrant data"
+                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+                Data-Driven Strategies
+              </h2>
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+                 <li>We leverage data to make informed decisions and optimize for success.</li>
+                 <li>Our analytics-first approach ensures every campaign is measurable.</li>
+                 <li>Unlock powerful insights and achieve a higher return on investment.</li>
+              </ul>
+              <Button asChild size="lg" className="group">
+                <Link href="/xtrack">
+                  Explore XTrack{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

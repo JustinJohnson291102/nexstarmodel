@@ -96,50 +96,47 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex flex-col md:flex-row">
-        <div className="hidden md:block w-full md:w-[72%] p-1">
+        <div className="w-full md:w-[72%] p-1">
             <div className="h-[64vh] w-full">
-                <video
-                    src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                    className="w-full h-full object-contain"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                ></video>
+               <Carousel
+                  plugins={[
+                    Autoplay({
+                      delay: 2000,
+                      stopOnInteraction: false,
+                    }),
+                  ]}
+                  className="w-full h-full"
+                  opts={{ loop: true }}
+                >
+                  <CarouselContent>
+                    {carouselImages.map((img, index) => (
+                      <CarouselItem key={index}>
+                        <div className="relative h-[64vh] w-full">
+                          <Image
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                            className="object-contain w-full h-full"
+                            priority={index === 0}
+                            data-ai-hint={img.hint}
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                </Carousel>
             </div>
         </div>
         <div className="w-full md:w-[28%]">
           <section className="relative h-[64vh] w-full">
-            <Carousel
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                  stopOnInteraction: false,
-                }),
-              ]}
-              className="w-full h-full"
-              opts={{ loop: true }}
-            >
-              <CarouselContent>
-                {carouselImages.map((img, index) => (
-                  <CarouselItem key={index}>
-                    <div className="relative h-[64vh] w-full">
-                      <Image
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        className="object-contain w-full h-full"
-                        priority={index === 0}
-                        data-ai-hint={img.hint}
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-            </div>
+            <video
+                src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
+                className="w-full h-full object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
+            ></video>
           </section>
         </div>
       </div>

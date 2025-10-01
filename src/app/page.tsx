@@ -95,7 +95,19 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex flex-col md:flex-row">
+        <div className="hidden md:block w-full md:w-[72%] p-1">
+            <div className="h-[64vh] w-full">
+                <video
+                    src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
+                    className="w-full h-full object-contain"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
+            </div>
+        </div>
         <div className="w-full md:w-[28%]">
           <section className="relative h-[64vh] w-full">
             <Carousel
@@ -129,18 +141,6 @@ export default function Home() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
             </div>
           </section>
-        </div>
-        <div className="hidden md:block w-[72%] p-1">
-            <div className="h-[64vh] w-full">
-                <video
-                    src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                    className="w-full h-full object-contain"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                ></video>
-            </div>
         </div>
       </div>
       

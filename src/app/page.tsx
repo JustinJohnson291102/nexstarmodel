@@ -111,7 +111,7 @@ export default function Home() {
             <div className="aspect-video w-full">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-full object-cover rounded-lg shadow-xl"
+                className="w-full h-full object-contain rounded-lg shadow-xl"
                 autoPlay
                 loop
                 muted

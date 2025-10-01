@@ -80,7 +80,7 @@ const similarProjects = [
 
 export default function PortfolioPage() {
   
-  const heroImageUrl = "https://drive.google.com/uc?id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp";
+  const heroImageUrl = "https://drive.google.com/uc?export=download&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp";
 
   return (
     <div className="bg-background text-foreground">

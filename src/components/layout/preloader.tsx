@@ -19,7 +19,7 @@ export default function Preloader() {
     >
       <div>
         <Image
-          src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+          src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"
           width={300}
           height={100}

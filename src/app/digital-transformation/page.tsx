@@ -99,7 +99,7 @@ export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
     description: "Modernize your operations, automate processes, and embrace a data-driven culture to stay ahead of the curve.",
-    heroImage: "https://drive.google.com/uc?export=view&id=1Z5SXzG3ioKVQAVl8pGQO2ZCvzWfL6FY4",
+    heroImage: "https://drive.google.com/uc?export=download&id=1Z5SXzG3ioKVQAVl8pGQO2ZCvzWfL6FY4",
     heroHint: "abstract digital transformation",
   };
 
@@ -261,5 +261,3 @@ export default function DigitalTransformationPage() {
     </div>
   );
 }
-
-    

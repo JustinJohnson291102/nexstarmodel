@@ -88,7 +88,7 @@ export default function RapidWebsiteDevelopmentPage() {
   const pageData = {
     title: "Rapid Website Development",
     description: "Launch your online presence in record time with our efficient and agile website development services.",
-    heroImage: "https://drive.google.com/uc?export=view&id=1GG6Apbf31al1DYa7DT9ik7DVXUh7HK7L",
+    heroImage: "https://drive.google.com/uc?export=download&id=1GG6Apbf31al1DYa7DT9ik7DVXUh7HK7L",
     heroHint: "rocket launch",
   };
 
@@ -241,5 +241,3 @@ export default function RapidWebsiteDevelopmentPage() {
     </div>
   );
 }
-
-    

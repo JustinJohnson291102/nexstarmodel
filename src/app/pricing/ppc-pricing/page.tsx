@@ -12,7 +12,7 @@ const pricingPlans = [
     name: "Starter Plan",
     price: "$305",
     priceSuffix: "/mo",
-    image: "https://drive.google.com/uc?id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
+    image: "https://drive.google.com/uc?export=download&id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
     features: [
       "Ad Budget Less than INR 1 Lakh/M",
       "Any 1 Network Account Set-up (Google Ads, Facebook/Instagram)",
@@ -46,7 +46,7 @@ const pricingPlans = [
     name: "Basic Plan",
     price: "10%",
     priceSuffix: "/Total Budget",
-    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
+    image: "https://drive.google.com/uc?export=download&id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     features: [
       "Ad Budget 3 Lakh/M",
       "All Network Account Set-up (Google Ads, Facebook)",
@@ -81,7 +81,7 @@ const pricingPlans = [
     name: "Enterprise",
     price: "15%",
     priceSuffix: "/Total Budget",
-    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
+    image: "https://drive.google.com/uc?export=download&id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     features: [
       "Ad Budget More Than 4 Lakh/M",
       "All Network Account Set-up (Google Ads, Facebook/Instagram)",

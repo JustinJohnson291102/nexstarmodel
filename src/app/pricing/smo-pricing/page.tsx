@@ -13,7 +13,7 @@ const pricingPlans = [
     name: "Starter Plan",
     priceMonthly: 399,
     priceYearly: 199,
-    image: "https://drive.google.com/uc?id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
+    image: "https://drive.google.com/uc?export=download&id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
     features: [
         "Instagram Account Set-Up",
         "Write applicable posts",
@@ -63,7 +63,7 @@ const pricingPlans = [
     name: "Basic Plan",
     priceMonthly: 599,
     priceYearly: 399,
-    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
+    image: "https://drive.google.com/uc?export=download&id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     features: [
         "Instagram Account Set-Up",
         "Write applicable posts",
@@ -113,7 +113,7 @@ const pricingPlans = [
     name: "Enterprise Plan",
     priceMonthly: 799,
     priceYearly: 599,
-    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
+    image: "https://drive.google.com/uc?export=download&id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     features: [
         "Instagram Marketing",
         "Instagram Account Set-Up",
@@ -168,7 +168,7 @@ const pricingPlans = [
     name: "Business Plan",
     priceMonthly: 899,
     priceYearly: 799,
-    image: "https://drive.google.com/uc?id=1t5M5S-pC7AkWXXznpa8oWlmVY0pe_IAv",
+    image: "https://drive.google.com/uc?export=download&id=1t5M5S-pC7AkWXXznpa8oWlmVY0pe_IAv",
     features: [
         "Instagram Marketing",
         "Instagram Account Set-Up",

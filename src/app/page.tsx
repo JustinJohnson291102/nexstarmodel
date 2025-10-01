@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -47,6 +46,9 @@ const carouselImages = [
     hint: "marketing collage",
   },
 ];
+
+// The corrected Google Drive direct download URL for the video
+const VIDEO_SOURCE_URL = "https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f";
 
 export default function Home() {
   return (
@@ -121,19 +123,19 @@ export default function Home() {
             </div>
             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
               <Card className="overflow-hidden shadow-xl">
-                 <CardContent className="p-0">
-                    <div className="aspect-video">
-                        <video
-                          src="/videohero.mp4"
-                          className="w-full h-full object-cover"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          controls
-                        ></video>
-                    </div>
-                 </CardContent>
+                <CardContent className="p-0">
+                  <div className="aspect-video">
+                    <video
+                      src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      controls
+                    ></video>
+                  </div>
+                </CardContent>
               </Card>
             </div>
           </div>
@@ -145,30 +147,30 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
-                <Image
-                  src="https://picsum.photos/seed/ad-agency/600/400"
-                  alt="Advertising Agency"
-                  width={600}
-                  height={400}
-                  data-ai-hint="advertising agency"
-                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                />
+               <Image
+                 src="https://picsum.photos/seed/ad-agency/600/400"
+                 alt="Advertising Agency"
+                 width={600}
+                 height={400}
+                 data-ai-hint="advertising agency"
+                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+               />
             </div>
              <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
-                <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  As an Advertising Agency
-                </h2>
-                <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
-                  <li>We are a hybrid with the chutzpah of a millennial and the experience of a Gen X.</li>
-                  <li>We are agile and connect the dots quicker.</li>
-                  <li>We believe the future of Communications lies in the 4Es of Engagement, Exclusivity, Emotion, and Experience.</li>
-                </ul>
-                <Button asChild size="lg" className="group" variant="outline">
-                  <Link href="/story">
-                    Our Story{" "}
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
+               </h2>
+               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+                 <li>We are a hybrid with the chutzpah of a millennial and the experience of a Gen X.</li>
+                 <li>We are agile and connect the dots quicker.</li>
+                 <li>We believe the future of Communications lies in the 4Es of Engagement, Exclusivity, Emotion, and Experience.</li>
+               </ul>
+               <Button asChild size="lg" className="group" variant="outline">
+                 <Link href="/story">
+                   Our Story{" "}
+                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                 </Link>
+               </Button>
              </div>
           </div>
 
@@ -188,9 +190,9 @@ export default function Home() {
                 Our Gamut of Services
               </h2>
               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
-                  <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
-                  <li>From compelling brand identities to robust web solutions and targeted marketing.</li>
-                  <li>Our expertise covers the full spectrum of digital marketing.</li>
+                 <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
+                 <li>From compelling brand identities to robust web solutions and targeted marketing.</li>
+                 <li>Our expertise covers the full spectrum of digital marketing.</li>
               </ul>
               <Button asChild size="lg" className="group">
                 <Link href="/services">
@@ -341,5 +343,3 @@ export default function Home() {
     </>
   );
 }
-
-    

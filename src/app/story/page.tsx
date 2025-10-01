@@ -130,7 +130,7 @@ export default function StoryPage() {
     <>
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://drive.google.com/uc?export=view&id=1OqAyh5AJXjw63hlhWy3koRpY8GXgoGe6"
+          src="https://drive.google.com/uc?export=download&id=1OqAyh5AJXjw63hlhWy3koRpY8GXgoGe6"
           alt="Group of people collaborating"
           fill
           className="object-cover"
@@ -249,7 +249,7 @@ export default function StoryPage() {
                 <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
                         <Image
-                            src={`https://drive.google.com/uc?export=view&id=${member.imageId}`}
+                            src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
                             alt={member.name}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -303,5 +303,3 @@ export default function StoryPage() {
     </>
   );
 }
-
-    

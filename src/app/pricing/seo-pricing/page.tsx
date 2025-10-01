@@ -241,7 +241,7 @@ const pricingPlans = [
     priceMonthly: 499,
     priceYearly: 299,
     features: starterFeatures,
-    image: "https://drive.google.com/uc?id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
+    image: "https://drive.google.com/uc?export=download&id=1IfD7fT1xciArdh3tv7vf1rNEiCtuHbyY",
     highlight: false,
   },
   {
@@ -249,7 +249,7 @@ const pricingPlans = [
     priceMonthly: 699,
     priceYearly: 499,
     features: basicFeatures,
-    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
+    image: "https://drive.google.com/uc?export=download&id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     highlight: true,
   },
   {
@@ -257,7 +257,7 @@ const pricingPlans = [
     priceMonthly: 899,
     priceYearly: 699,
     features: enterpriseFeatures,
-    image: "https://drive.google.com/uc?id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
+    image: "https://drive.google.com/uc?export=download&id=1nAgNXV4xyznq9D515yopCYigQwB9kLLV",
     highlight: false,
   },
   {
@@ -265,7 +265,7 @@ const pricingPlans = [
     priceMonthly: 999,
     priceYearly: 899,
     features: businessFeatures,
-    image: "https://drive.google.com/uc?id=1t5M5S-pC7AkWXXznpa8oWlmVY0pe_IAv",
+    image: "https://drive.google.com/uc?export=download&id=1t5M5S-pC7AkWXXznpa8oWlmVY0pe_IAv",
     highlight: false,
   },
 ];

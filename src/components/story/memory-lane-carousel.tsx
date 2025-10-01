@@ -8,9 +8,9 @@ import Autoplay from "embla-carousel-autoplay";
 import { cn } from "@/lib/utils";
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1dxWqXHY_etcuQGpjAui9V_mTsV5CtaQk",
-  "https://drive.google.com/uc?export=view&id=1uv0gk9SPWCyStyE8qt1uCFceH4FG6yoz",
-  "https://drive.google.com/uc?export=view&id=1fuVNxekxY3OFM_P7OjHoBnSAb1lP0b0I",
+  "https://drive.google.com/uc?export=download&id=1dxWqXHY_etcuQGpjAui9V_mTsV5CtaQk",
+  "https://drive.google.com/uc?export=download&id=1uv0gk9SPWCyStyE8qt1uCFceH4FG6yoz",
+  "https://drive.google.com/uc?export=download&id=1fuVNxekxY3OFM_P7OjHoBnSAb1lP0b0I",
 ];
 
 const MemoryLaneCarousel = () => {

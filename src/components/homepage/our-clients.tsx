@@ -5,15 +5,15 @@ import Image from "next/image";
 
 // 🔥 FIX: URLs ko working content links (uc?id=FILE_ID) mein change kiya gaya hai.
 const clientLogos = [
-  { src: "https://drive.google.com/uc?id=1zCWkBc3CvzOA1aJLOPqNWK0CvhRY0XjG", alt: "Client 9" },
-  { src: "https://drive.google.com/uc?id=1j2qPrDz4DksDoFWUlcw4SH_FzIqyKT4W", alt: "Client 8" },
-  { src: "https://drive.google.com/uc?id=1Z0qzQSkiuCXCfBTFByuLTTTUK8_5TJQq", alt: "Client 7" },
-  { src: "https://drive.google.com/uc?id=1V-1ZN6YRSXiFwrg8SC2fZ40pacv20LSu", alt: "Client 6" },
-  { src: "https://drive.google.com/uc?id=1R7erTvruugfy6TonWIEYiAYDClLZKT_V", alt: "Client 5" },
-  { src: "https://drive.google.com/uc?id=1PPd2IcOvjjNdjXkGB0ujmfFv6SideA63", alt: "Client 4" },
-  { src: "https://drive.google.com/uc?id=1MtWFo7keLU5ReO-1Bvda0ZlQqwYugEAp", alt: "Client 3" },
-  { src: "https://drive.google.com/uc?id=1L7f9fjN0-jQc349EcttHLhnj0JyZqZph", alt: "Client 2" },
-  { src: "https://drive.google.com/uc?id=1Kd0-0XP3HgMxJq7KEQXb2ZMGcS5KU0l8", alt: "Client 1" },
+  { src: "https://drive.google.com/uc?export=download&id=1zCWkBc3CvzOA1aJLOPqNWK0CvhRY0XjG", alt: "Client 9" },
+  { src: "https://drive.google.com/uc?export=download&id=1j2qPrDz4DksDoFWUlcw4SH_FzIqyKT4W", alt: "Client 8" },
+  { src: "https://drive.google.com/uc?export=download&id=1Z0qzQSkiuCXCfBTFByuLTTTUK8_5TJQq", alt: "Client 7" },
+  { src: "https://drive.google.com/uc?export=download&id=1V-1ZN6YRSXiFwrg8SC2fZ40pacv20LSu", alt: "Client 6" },
+  { src: "https://drive.google.com/uc?export=download&id=1R7erTvruugfy6TonWIEYiAYDClLZKT_V", alt: "Client 5" },
+  { src: "https://drive.google.com/uc?export=download&id=1PPd2IcOvjjNdjXkGB0ujmfFv6SideA63", alt: "Client 4" },
+  { src: "https://drive.google.com/uc?export=download&id=1MtWFo7keLU5ReO-1Bvda0ZlQqwYugEAp", alt: "Client 3" },
+  { src: "https://drive.google.com/uc?export=download&id=1L7f9fjN0-jQc349EcttHLhnj0JyZqZph", alt: "Client 2" },
+  { src: "https://drive.google.com/uc?export=download&id=1Kd0-0XP3HgMxJq7KEQXb2ZMGcS5KU0l8", alt: "Client 1" },
 ];
 
 export default function OurClients({ showTitle = true }: { showTitle?: boolean }) {

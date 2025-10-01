@@ -72,7 +72,7 @@ export default function ContactForm() {
     <div className="w-full">
       <div className="flex items-center gap-4 mb-6">
         <Image
-          src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+          src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"
           width={120}
           height={40}

@@ -159,10 +159,10 @@ export default function Home() {
             </p>
           </div>
           <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <div className="w-full aspect-[4/3]">
+            <div className="w-full aspect-[16/9]">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-full object-contain rounded-lg shadow-xl"
+                className="w-full h-full object-contain rounded-lg shadow-xl bg-black"
                 autoPlay
                 loop
                 muted
@@ -391,3 +391,5 @@ export default function Home() {
     </>
   );
 }
+
+    

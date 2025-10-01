@@ -29,9 +29,14 @@ const carouselImages = [
     hint: "team brainstorming",
   },
   {
-    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(3).png?updatedAt=1759317268835",
     alt: "Hero Image 2",
     hint: "digital marketing",
+  },
+  {
+    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    alt: "Hero Image 3",
+    hint: "modern office",
   },
 ];
 
@@ -154,10 +159,10 @@ export default function Home() {
             </p>
           </div>
           <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <div className="aspect-video w-full">
+            <div className="w-full aspect-[4/3]">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-full object-cover rounded-lg shadow-xl"
+                className="w-full h-full object-contain rounded-lg shadow-xl"
                 autoPlay
                 loop
                 muted

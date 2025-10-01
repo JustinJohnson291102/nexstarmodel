@@ -14,19 +14,19 @@ const videoCards = [
     title: "Product Visualization",
     description: "See products in your space before you buy.",
     videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4",
-    image: { src: "https://picsum.photos/seed/ar-product-vibrant/800/450", hint: "ar product" },
+    image: { src: "https://picsum.photos/seed/yellow-ar-product/800/450", hint: "yellow ar product" },
   },
   {
     title: "Interactive Filters",
     description: "Engage users with fun, shareable brand filters.",
     videoSrc: "https://videos.pexels.com/video-files/7578508/7578508-sd_640_360_25fps.mp4",
-    image: { src: "https://picsum.photos/seed/ar-filter-vibrant/800/450", hint: "ar social" },
+    image: { src: "https://picsum.photos/seed/colorful-ar-filter/800/450", hint: "colorful ar social" },
   },
   {
     title: "AR Portals",
     description: "Step into a new world with immersive brand portals.",
     videoSrc: "https://videos.pexels.com/video-files/4429377/4429377-sd_540_960_30fps.mp4",
-    image: { src: "https://picsum.photos/seed/ar-portal-vibrant/800/450", hint: "ar portal" },
+    image: { src: "https://picsum.photos/seed/vibrant-ar-portal/800/450", hint: "vibrant ar portal" },
   },
 ];
 
@@ -82,8 +82,8 @@ const alternatingContent = [
             "Seamless integration with Shopify, WooCommerce, and other platforms."
         ],
         image: {
-            src: "https://picsum.photos/seed/ar-ecommerce-bright/800/600",
-            hint: "ar shopping"
+            src: "https://picsum.photos/seed/yellow-ar-ecommerce/800/600",
+            hint: "yellow ar shopping"
         }
     },
     {
@@ -96,8 +96,8 @@ const alternatingContent = [
             "WebAR portals that transport users to virtual worlds."
         ],
         image: {
-            src: "https://picsum.photos/seed/ar-marketing-bright/800/600",
-            hint: "ar event"
+            src: "https://picsum.photos/seed/colorful-ar-marketing/800/600",
+            hint: "colorful ar event"
         }
     }
 ];
@@ -108,7 +108,7 @@ export default function AugmentedRealityPage() {
     <>
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/ar-hero-professional/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/yellow-ar-hero/1920/1080')` }}
         >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -166,7 +166,7 @@ export default function AugmentedRealityPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('https://picsum.photos/seed/ar-parallax-vibrant/1920/1080')" }}
+        style={{ backgroundImage: "url('https://picsum.photos/seed/yellow-ar-parallax/1920/1080')" }}
         data-ai-hint="yellow augmented reality"
       >
         <div className="absolute inset-0 bg-primary/80" />
@@ -216,12 +216,12 @@ export default function AugmentedRealityPage() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                <Image 
-                src="https://picsum.photos/seed/webar-professional/800/600"
+                src="https://picsum.photos/seed/colorful-webar/800/600"
                 alt="WebAR on multiple devices"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-xl"
-                data-ai-hint="web ar devices"
+                data-ai-hint="colorful web ar"
                />
             </div>
             <div className="animate-in fade-in slide-in-from-right-10 duration-700">

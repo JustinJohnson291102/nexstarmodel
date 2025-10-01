@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -16,10 +17,10 @@ const servicesData = [
       "Campaign Creation + Execution",
       "Social Listening & Brand Positioning",
     ],
-    image: "https://picsum.photos/seed/social-dashboard/600/400",
-    imageAlt: "A person analyzing social media trends on a screen.",
+    image: "https://picsum.photos/seed/yellow-social-dashboard/600/400",
+    imageAlt: "A person analyzing social media trends on a screen with yellow accents.",
     link: "/social-media",
-    imageHint: "social media dashboard",
+    imageHint: "yellow social media",
   },
   {
     id: "branding",
@@ -31,10 +32,10 @@ const servicesData = [
       "Full Production: Photo & Video Shoots",
       "Brand Identity & Logo Design",
     ],
-    image: "https://picsum.photos/seed/branding-moodboard/600/400",
-    imageAlt: "A branding moodboard with color palettes and logos.",
+    image: "https://picsum.photos/seed/colorful-branding-moodboard/600/400",
+    imageAlt: "A colorful branding moodboard with color palettes and logos.",
     link: "/creative-branding",
-    imageHint: "branding moodboard",
+    imageHint: "colorful branding moodboard",
   },
   {
     id: "b2b",
@@ -46,10 +47,10 @@ const servicesData = [
       "Marketing & Sales Analytics Integration",
       "LinkedIn & Email Marketing Campaigns",
     ],
-    image: "https://picsum.photos/seed/b2b-strategy/600/400",
+    image: "https://picsum.photos/seed/professional-b2b-strategy/600/400",
     imageAlt: "Professionals in a meeting discussing B2B strategy.",
     link: "/b2b",
-    imageHint: "business strategy",
+    imageHint: "professional business strategy",
   },
   {
     id: "search-marketing",
@@ -61,10 +62,10 @@ const servicesData = [
       "PPC Campaign Management (Google & Bing)",
       "Content Marketing & Link Building",
     ],
-    image: "https://picsum.photos/seed/seo-growth/600/400",
-    imageAlt: "A graph showing upward growth from search engine marketing.",
+    image: "https://picsum.photos/seed/yellow-seo-growth/600/400",
+    imageAlt: "A graph showing upward growth from search engine marketing with yellow highlights.",
     link: "/search-marketing",
-    imageHint: "seo growth",
+    imageHint: "yellow seo growth",
   },
     {
     id: "video-production",
@@ -76,10 +77,10 @@ const servicesData = [
       "Animation & Motion Graphics",
       "Corporate Videos & Commercials",
     ],
-    image: "https://picsum.photos/seed/video-camera/600/400",
+    image: "https://picsum.photos/seed/professional-video-camera/600/400",
     imageAlt: "A professional video camera on a set.",
     link: "/video-production",
-    imageHint: "video camera",
+    imageHint: "professional video camera",
   },
   {
     id: "orm",
@@ -91,10 +92,10 @@ const servicesData = [
       "Crisis Response & Management",
       "Positive Content Creation & Promotion",
     ],
-    image: "https://picsum.photos/seed/reputation-shield/600/400",
-    imageAlt: "A concept image of a shield protecting a brand's reputation.",
+    image: "https://picsum.photos/seed/vibrant-reputation/600/400",
+    imageAlt: "A concept image of a shield protecting a brand's reputation with vibrant colors.",
     link: "/online-reputation-management",
-    imageHint: "brand protection",
+    imageHint: "vibrant brand protection",
   },
   {
     id: "ecommerce",
@@ -106,10 +107,10 @@ const servicesData = [
       "Payment Gateway Integration",
       "Conversion Rate Optimization (CRO)",
     ],
-    image: "https://picsum.photos/seed/ecommerce-code/600/400",
-    imageAlt: "Code on a screen representing e-commerce development.",
+    image: "https://picsum.photos/seed/colorful-ecommerce-code/600/400",
+    imageAlt: "Colorful code on a screen representing e-commerce development.",
     link: "/ecommerce-development",
-    imageHint: "ecommerce code",
+    imageHint: "colorful ecommerce code",
   },
   {
     id: "web-development",
@@ -121,10 +122,10 @@ const servicesData = [
       "Website Maintenance & Support",
       "Performance Optimization",
     ],
-    image: "https://picsum.photos/seed/web-design-ux/600/400",
-    imageAlt: "UI/UX design sketches for a website.",
+    image: "https://picsum.photos/seed/yellow-web-design/600/400",
+    imageAlt: "UI/UX design sketches for a website with yellow elements.",
     link: "/web-solutions",
-    imageHint: "website design",
+    imageHint: "yellow website design",
   },
   {
     id: "mobile-app-development",
@@ -136,10 +137,10 @@ const servicesData = [
       "Backend Development & API Integration",
       "App Store Submission & Optimization",
     ],
-    image: "https://picsum.photos/seed/mobile-app-ui/600/400",
-    imageAlt: "A mobile phone displaying a modern app interface.",
+    image: "https://picsum.photos/seed/colorful-mobile-app/600/400",
+    imageAlt: "A mobile phone displaying a colorful and modern app interface.",
     link: "/mobile-app-development",
-    imageHint: "mobile app",
+    imageHint: "colorful mobile app",
   },
   {
     id: "augmented-reality",
@@ -151,10 +152,10 @@ const servicesData = [
       "Interactive Product Visualization",
       "AR for Marketing & Events",
     ],
-    image: "https://picsum.photos/seed/ar-technology/600/400",
-    imageAlt: "A person using a smartphone to view an augmented reality object.",
+    image: "https://picsum.photos/seed/yellow-ar-tech/600/400",
+    imageAlt: "A person using a smartphone to view a yellow augmented reality object.",
     link: "/augmented-reality",
-    imageHint: "augmented reality",
+    imageHint: "yellow augmented reality",
   },
   {
     id: "performance-marketing",
@@ -166,10 +167,10 @@ const servicesData = [
       "Conversion Rate Optimization (CRO)",
       "Data-driven Campaign Analysis",
     ],
-    image: "https://picsum.photos/seed/performance-charts/600/400",
-    imageAlt: "A dashboard with charts showing marketing performance.",
-    link: "/services",
-    imageHint: "marketing analytics",
+    image: "https://picsum.photos/seed/vibrant-performance-charts/600/400",
+    imageAlt: "A vibrant dashboard with charts showing marketing performance.",
+    link: "/performance-marketing",
+    imageHint: "vibrant marketing analytics",
   },
   {
     id: "rapid-website-development",
@@ -181,10 +182,10 @@ const servicesData = [
       "Perfect for Startups & Events",
       "Fast Turnaround Times",
     ],
-    image: "https://picsum.photos/seed/fast-development/600/400",
-    imageAlt: "A rocket launching, symbolizing rapid development.",
-    link: "/services",
-    imageHint: "fast launch",
+    image: "https://picsum.photos/seed/colorful-fast-development/600/400",
+    imageAlt: "A colorful rocket launching, symbolizing rapid development.",
+    link: "/rapid-website-development",
+    imageHint: "colorful fast launch",
   },
   {
     id: "backend-frontend-outsource",
@@ -196,10 +197,10 @@ const servicesData = [
       "API Development & Integration",
       "Flexible Engagement Models",
     ],
-    image: "https://picsum.photos/seed/coding-team/600/400",
-    imageAlt: "A team of developers collaborating on code.",
-    link: "/services",
-    imageHint: "development team",
+    image: "https://picsum.photos/seed/professional-coding-team/600/400",
+    imageAlt: "A team of developers collaborating on code in a professional setting.",
+    link: "/backend-frontend-outsource",
+    imageHint: "professional development team",
   },
   {
     id: "whatsapp-chatbots",
@@ -211,10 +212,10 @@ const servicesData = [
       "E-commerce Integration",
       "Broadcast & Notification Automation",
     ],
-    image: "https://picsum.photos/seed/chatbot-interface/600/400",
-    imageAlt: "An illustration of a chatbot conversation interface.",
-    link: "/services",
-    imageHint: "chatbot conversation",
+    image: "https://picsum.photos/seed/yellow-chatbot-interface/600/400",
+    imageAlt: "An illustration of a chatbot conversation interface with yellow accents.",
+    link: "/whatsapp-chatbots",
+    imageHint: "yellow chatbot conversation",
   },
   {
     id: "digital-business-consulting",
@@ -226,10 +227,10 @@ const servicesData = [
       "Digital Roadmap Development",
       "Improving Operational Efficiency",
     ],
-    image: "https://picsum.photos/seed/business-consulting/600/400",
-    imageAlt: "A consultant presenting a strategy to a client in an office.",
-    link: "/services",
-    imageHint: "business consulting",
+    image: "https://picsum.photos/seed/professional-business-consulting/600/400",
+    imageAlt: "A consultant presenting a strategy to a client in a professional office.",
+    link: "/digital-business-consulting",
+    imageHint: "professional business consulting",
   },
   {
     id: "digital-branding",
@@ -241,10 +242,10 @@ const servicesData = [
       "Audience Persona Development",
       "Consistent Multi-channel Branding",
     ],
-    image: "https://picsum.photos/seed/digital-brand-id/600/400",
-    imageAlt: "A digital collage representing a brand's online identity.",
-    link: "/services",
-    imageHint: "digital identity",
+    image: "https://picsum.photos/seed/colorful-digital-brand/600/400",
+    imageAlt: "A colorful digital collage representing a brand's online identity.",
+    link: "/digital-branding",
+    imageHint: "colorful digital identity",
   },
   {
     id: "digital-analytics",
@@ -256,10 +257,10 @@ const servicesData = [
       "Attribution Modeling",
       "Actionable Insight Reporting",
     ],
-    image: "https://picsum.photos/seed/analytics-dashboard/600/400",
-    imageAlt: "A complex data analytics dashboard on a screen.",
+    image: "https://picsum.photos/seed/yellow-analytics-dashboard/600/400",
+    imageAlt: "A complex data analytics dashboard on a screen with yellow graphs.",
     link: "/xtrack",
-    imageHint: "analytics dashboard",
+    imageHint: "yellow analytics dashboard",
   },
   {
     id: "digital-transformation",
@@ -271,10 +272,10 @@ const servicesData = [
       "Data-driven Culture Implementation",
       "Change Management & Training",
     ],
-    image: "https://picsum.photos/seed/business-modernization/600/400",
-    imageAlt: "An abstract image showing digital transformation concepts.",
-    link: "/services",
-    imageHint: "digital business",
+    image: "https://picsum.photos/seed/vibrant-business-modernization/600/400",
+    imageAlt: "A vibrant abstract image showing digital transformation concepts.",
+    link: "/digital-transformation",
+    imageHint: "vibrant digital business",
   },
 ];
 
@@ -303,12 +304,12 @@ export default function ServicesPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://drive.google.com/uc?export=download&id=1t_TXcMnPTHoBkeRjQ4gE0w72lgzAquqW"
+          src="https://picsum.photos/seed/yellow-services-hero/1920/1080"
           alt="Services background"
           fill
           className="object-cover"
           priority
-          data-ai-hint="creative workspace"
+          data-ai-hint="yellow creative workspace"
         />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">

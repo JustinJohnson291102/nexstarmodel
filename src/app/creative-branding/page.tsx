@@ -42,8 +42,8 @@ const alternatingContent = [
             "Detailed brand guidelines to ensure consistency."
         ],
         image: {
-            src: "https://picsum.photos/seed/brand-strategy-professional/800/600",
-            hint: "brand strategy"
+            src: "https://picsum.photos/seed/yellow-brand-strategy/800/600",
+            hint: "yellow brand strategy"
         }
     },
     {
@@ -56,8 +56,8 @@ const alternatingContent = [
             "Content optimized for web, social media, and advertising."
         ],
         image: {
-            src: "https://picsum.photos/seed/creative-production-professional/800/600",
-            hint: "photo shoot"
+            src: "https://picsum.photos/seed/colorful-production/800/600",
+            hint: "colorful photo shoot"
         }
     }
 ];
@@ -73,8 +73,8 @@ export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
     description: "We craft unforgettable brand identities that tell your story, captivate your audience, and build lasting loyalty.",
-    heroImage: "https://picsum.photos/seed/branding-hero-professional/1920/1080",
-    heroHint: "vibrant creative branding",
+    heroImage: "https://picsum.photos/seed/yellow-branding-hero/1920/1080",
+    heroHint: "yellow creative branding",
     features: [
       {
         icon: Palette,
@@ -165,7 +165,7 @@ export default function CreativeBrandingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/branding-parallax-vibrant/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-branding-parallax/1920/1080')`}}
         data-ai-hint="colorful abstract design"
       >
         <div className="absolute inset-0 bg-background/80" />

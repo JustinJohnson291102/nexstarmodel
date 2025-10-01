@@ -45,8 +45,8 @@ const alternatingContent = [
             "Content tailored for each platform's algorithm and audience."
         ],
         image: {
-            src: "https://picsum.photos/seed/social-content/800/600",
-            hint: "content creation"
+            src: "https://picsum.photos/seed/yellow-content/800/600",
+            hint: "yellow content creation"
         }
     },
     {
@@ -59,25 +59,25 @@ const alternatingContent = [
             "Detailed performance reporting and insights."
         ],
         image: {
-            src: "https://picsum.photos/seed/social-ads/800/600",
-            hint: "social media ads"
+            src: "https://picsum.photos/seed/yellow-social-ads/800/600",
+            hint: "yellow social ads"
         }
     }
 ];
 
 const platformCards = [
-    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/instagram-ui/600/400", hint: "instagram feed" }},
-    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/facebook-ui/600/400", hint: "facebook page" }},
-    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/linkedin-ui/600/400", hint: "linkedin profile" }},
-    { platform: "TikTok", description: "Engaging short-form video and trend-setting.", image: { src: "https://picsum.photos/seed/tiktok-ui/600/400", hint: "tiktok videos" }},
+    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/yellow-instagram/600/400", hint: "yellow instagram feed" }},
+    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/yellow-facebook/600/400", hint: "yellow facebook page" }},
+    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/professional-linkedin/600/400", hint: "professional linkedin" }},
+    { platform: "TikTok", description: "Engaging short-form video and trend-setting.", image: { src: "https://picsum.photos/seed/colorful-tiktok/600/400", hint: "colorful tiktok" }},
 ];
 
 export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
     description: "We build and nurture online communities, turning followers into fans and fans into customers.",
-    heroImage: "https://picsum.photos/seed/social-media-hero/1920/1080",
-    heroHint: "social media network",
+    heroImage: "https://picsum.photos/seed/yellow-social-hero/1920/1080",
+    heroHint: "yellow social media",
     features: [
       {
         icon: Users,
@@ -168,7 +168,7 @@ export default function SocialMediaPage() {
 
       <section 
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/social-yellow-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/yellow-social-parallax/1920/1080')`}}
         data-ai-hint="yellow social media"
        >
         <div className="absolute inset-0 bg-primary/90" />

@@ -41,11 +41,6 @@ const carouselImages = [
     alt: "Hero Image 4",
     hint: "technology collage",
   },
-  {
-    src: "https://drive.google.com/uc?export=download&id=1H1Raqxyy4go2eLbMchu0yeuEPJ_eO7Am",
-    alt: "Hero Image 5",
-    hint: "marketing collage",
-  },
 ];
 
 export default function Home() {
@@ -341,5 +336,3 @@ export default function Home() {
     </>
   );
 }
-
-    

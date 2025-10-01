@@ -145,7 +145,7 @@ export default function Home() {
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -159,16 +159,16 @@ export default function Home() {
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
             </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 text-white">
                <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  As an Advertising Agency
                </h2>
-               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+               <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
                  <li>We are a hybrid with the chutzpah of a millennial and the experience of a Gen X.</li>
                  <li>We are agile and connect the dots quicker.</li>
                  <li>We believe the future of Communications lies in the 4Es of Engagement, Exclusivity, Emotion, and Experience.</li>
                </ul>
-               <Button asChild size="lg" className="group" variant="outline">
+               <Button asChild size="lg" className="group" variant="secondary">
                  <Link href="/story">
                    Our Story{" "}
                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -188,16 +188,16 @@ export default function Home() {
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 text-white">
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Our Gamut of Services
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
                  <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
                  <li>From compelling brand identities to robust web solutions and targeted marketing.</li>
                  <li>Our expertise covers the full spectrum of digital marketing.</li>
               </ul>
-              <Button asChild size="lg" className="group">
+              <Button asChild size="lg" className="group" variant="secondary">
                 <Link href="/services">
                   View More{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -217,16 +217,16 @@ export default function Home() {
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
             </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 text-white">
                <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  User-Centric Design
                </h2>
-               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+               <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
                  <li>We create intuitive and beautiful user interfaces that delight users.</li>
                  <li>Our UI/UX process is driven by research and focused on user needs.</li>
                  <li>We design experiences that are not just functional but also memorable.</li>
                </ul>
-               <Button asChild size="lg" className="group" variant="outline">
+               <Button asChild size="lg" className="group" variant="secondary">
                  <Link href="/web-solutions">
                    See Our Process{" "}
                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -246,16 +246,16 @@ export default function Home() {
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 text-white">
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Data-Driven Strategies
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
                  <li>We leverage data to make informed decisions and optimize for success.</li>
                  <li>Our analytics-first approach ensures every campaign is measurable.</li>
                  <li>Unlock powerful insights and achieve a higher return on investment.</li>
               </ul>
-              <Button asChild size="lg" className="group">
+              <Button asChild size="lg" className="group" variant="secondary">
                 <Link href="/xtrack">
                   Explore XTrack{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

@@ -93,8 +93,11 @@ export default function WhatsappChatbotsPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+        style={{ 
+            backgroundImage: `url('${pageData.heroImage}')`,
+            filter: 'brightness(1.1) contrast(1.1)' 
+        }}
         data-ai-hint={pageData.heroHint}
       >
         
@@ -244,5 +247,3 @@ export default function WhatsappChatbotsPage() {
     </div>
   );
 }
-
-    

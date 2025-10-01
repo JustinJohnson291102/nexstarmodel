@@ -89,8 +89,8 @@ export default function BackendFrontendOutsourcePage() {
   const pageData = {
     title: "Backend & Frontend Outsourcing",
     description: "Scale your development capabilities with our expert, dedicated teams.",
-    heroImage: "https://picsum.photos/seed/coding-team-professional/1920/1080",
-    heroHint: "development team",
+    heroImage: "https://picsum.photos/seed/dark-colorful-code/1920/1080",
+    heroHint: "dark colorful code",
   };
 
   return (
@@ -270,3 +270,5 @@ export default function BackendFrontendOutsourcePage() {
     </div>
   );
 }
+
+    

@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -51,7 +50,7 @@ const alternatingContent = [
         }
     },
     {
-        title: "Scalable & Powerful Platforms",
+        title: "Scalable &amp; Powerful Platforms",
         description: "We are experts in the world's leading e-commerce platforms, Shopify and WooCommerce. We'll help you choose the right one for your business and build a store that can scale with you. Whether you're a startup or an enterprise, we build solutions that last.",
         points: [
             "Expert development on Shopify, Shopify Plus, and WooCommerce.",
@@ -87,7 +86,7 @@ export default function EcommerceDevelopmentPage() {
       },
       {
         icon: Code,
-        title: "Platform Expertise (Shopify & WooCommerce)",
+        title: "Platform Expertise (Shopify &amp; WooCommerce)",
         description: "Whether you need the power of Shopify or the flexibility of WooCommerce, our experts will build your store on the right platform for your needs.",
       },
       {

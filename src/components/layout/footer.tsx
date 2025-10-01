@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
          <div className="border-t border-gray-300 mt-8 pt-6 text-center text-sm text-gray-600">
             <p>
-              &copy; {currentYear} Nexstar. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+              &amp;copy; {currentYear} Nexstar. All rights reserved. | <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
             </p>
           </div>
       </div>

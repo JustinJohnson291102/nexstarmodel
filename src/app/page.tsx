@@ -21,12 +21,12 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
-    src: "https://drive.google.com/uc?export=view&id=1Dr2V-q3ZFyhPXSR9uP-1dHWAxF5NSXSS",
+    src: "https://drive.google.com/uc?export=download&id=1Dr2V-q3ZFyhPXSR9uP-1dHWAxF5NSXSS",
     alt: "Hero Image 1",
     hint: "team brainstorming",
   },
   {
-    src: "https://drive.google.com/uc?export=view&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
     alt: "Hero Image 2",
     hint: "digital marketing",
   },
@@ -46,9 +46,6 @@ const carouselImages = [
     hint: "marketing collage",
   },
 ];
-
-// The corrected Google Drive direct download URL for the video
-const VIDEO_SOURCE_URL = "https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f";
 
 export default function Home() {
   return (
@@ -126,7 +123,7 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="aspect-video">
                     <video
-                      src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
+                      src="/videohero.mp4"
                       className="w-full h-full object-cover"
                       autoPlay
                       loop
@@ -141,7 +138,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
       <section className="relative bg-secondary text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
           
@@ -213,10 +210,10 @@ export default function Home() {
               WHO WE ARE
             </h3>
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
-              A Dynamic Fusion of Creativity & Technology
+              A Dynamic Fusion of Creativity &amp; Technology
             </h2>
             <p className="text-muted-foreground md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
-              At Nexstar, we are more than just an IT & Media company—we are a
+              At Nexstar, we are more than just an IT &amp; Media company—we are a
               team of passionate innovators, thinkers, and creators. Our strength
               lies in blending technology with creativity to deliver solutions
               that don't just solve problems, but inspire and engage.

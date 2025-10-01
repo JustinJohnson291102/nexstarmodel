@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -37,7 +36,7 @@ const pricingPlans = [
       "Monthly Reports",
       "Advanced Reports",
       "Shared Account Manager",
-      "Support: Email, Chat & Call",
+      "Support: Email, Chat &amp; Call",
       "Landing Page Creation INR 3500 Extra",
     ],
     highlight: false,

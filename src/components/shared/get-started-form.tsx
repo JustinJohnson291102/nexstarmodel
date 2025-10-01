@@ -1,4 +1,3 @@
-
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -71,7 +70,7 @@ export default function GetStartedForm() {
     <Card className="shadow-lg sticky top-32">
       <CardHeader className="text-center">
         <Image
-          src="https://drive.google.com/uc?export=view&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+          src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"
           width={120}
           height={40}

@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -92,7 +91,7 @@ const teamMembers = [
     { name: 'Robertson', title: 'Marketing Coordinator', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
     { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
     // Row 2
-    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
+    { name: 'Atul Srivastava', title: 'Director &amp; CEO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
     { name: 'Ali', title: 'Web Designer', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
     { name: 'Ichcha', title: 'Developer', imageId: '1ewP71AMnXgQWmfiBTCYKKWrpsE_LR95h' },
     { name: 'Anchal', title: 'Member', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
@@ -152,7 +151,7 @@ export default function StoryPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
-                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Mission & Vision</h2>
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Mission &amp; Vision</h2>
                  <p className="text-lg text-muted-foreground">
                    Founded on the principle of innovation, Nexstar Media Group was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
                  </p>

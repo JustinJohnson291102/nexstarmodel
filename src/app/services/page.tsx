@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -189,7 +188,7 @@ const servicesData = [
   },
   {
     id: "backend-frontend-outsource",
-    title: "Backend & Frontend Outsource",
+    title: "Backend &amp; Frontend Outsource",
     points: [
       "Dedicated Development Teams",
       "Staff Augmentation",
@@ -426,4 +425,3 @@ export default function ServicesPage() {
     </>
   );
 }
-

@@ -144,8 +144,8 @@ export default function Home() {
       </div>
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-5 gap-12 items-center">
+          <div className="md:col-span-2">
             <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight">
               Driving Digital Excellence
             </h2>
@@ -153,8 +153,8 @@ export default function Home() {
               At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
             </p>
           </div>
-          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <div className="aspect-[4/3] w-full">
+          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 md:col-span-3">
+            <div className="aspect-[21/9] w-full">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
                 className="w-full h-full object-contain rounded-lg shadow-xl"

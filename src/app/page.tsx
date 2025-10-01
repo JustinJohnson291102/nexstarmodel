@@ -127,21 +127,6 @@ export default function Home() {
             </Carousel>
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-              <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
-                Innovate. Create. Elevate.
-              </h1>
-              <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
-                We are the architects of your digital success story.
-              </p>
-              <Button
-                asChild
-                className="mt-16 group px-16 py-10 text-2xl"
-              >
-                <Link href="/services">
-                  Our Services{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
             </div>
           </section>
         </div>
@@ -149,7 +134,7 @@ export default function Home() {
             <div className="h-[64vh] w-full p-1">
                 <video
                     src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     autoPlay
                     loop
                     muted
@@ -376,5 +361,3 @@ export default function Home() {
     </>
   );
 }
-
-    

@@ -15,6 +15,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -32,6 +34,58 @@ const carouselImages = [
     hint: "digital marketing",
   },
 ];
+
+const whoWeAreCards = [
+    {
+      title: "Our Philosophy",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/philosophy.png?updatedAt=1759315996360",
+      imageHint: "passionate team",
+      description: "We thrive on challenges and innovation. From cutting-edge IT development to digital marketing, media production, and brand storytelling, our team's diverse expertise ensures we deliver not just services, but experiences that create real impact.",
+      link: "/story",
+      linkText: "Learn More"
+    },
+    {
+      title: "Our Approach",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/our%20appraoch.jpg?updatedAt=1759316106995",
+      imageHint: "team collaboration",
+      description: "We believe in collaboration, growth, and pushing boundaries. We work as an extension of your team, ensuring that our solutions are perfectly aligned with your vision and goals to help you achieve lasting success in today’s digital-first world.",
+      link: "/contact",
+      linkText: "Partner with Us"
+    },
+    {
+      title: "Our Global Presence",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/global-business-7042756.webp?updatedAt=1759316191989",
+      imageHint: "global network",
+      description: "With our headquarters in New York, and specialized offices in the UK and India, we unite creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.",
+      link: "/story",
+      linkText: "More About Us"
+    },
+    {
+      title: "Agile Methodology",
+      imageSrc: "https://picsum.photos/seed/agile-professional/800/520",
+      imageHint: "agile process",
+      description: "We embrace an agile and iterative workflow, allowing us to adapt quickly to change, deliver value faster, and ensure a flexible and responsive development process that keeps you ahead of the curve.",
+      link: "/story",
+      linkText: "Our Process"
+    },
+    {
+      title: "Client-Centric Focus",
+      imageSrc: "https://picsum.photos/seed/client-focus/800/520",
+      imageHint: "customer satisfaction",
+      description: "Your success is our ultimate goal. We are deeply committed to understanding your needs and building strong, lasting relationships based on trust, transparency, and mutual respect.",
+      link: "/contact",
+      linkText: "Get in Touch"
+    },
+    {
+      title: "Sustainable Growth",
+      imageSrc: "https://picsum.photos/seed/growth-eco/800/520",
+      imageHint: "sustainable business",
+      description: "We focus on building long-term value. Our strategies are designed not just for immediate impact but for sustainable growth, ensuring your digital assets remain effective and relevant for years to come.",
+      link: "/services",
+      linkText: "Explore Services"
+    }
+  ];
+
 
 export default function Home() {
   return (
@@ -124,7 +178,7 @@ export default function Home() {
                  src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035"
                  alt="Advertising Agency"
                  width={2636}
-                 height={2080}
+                 height={4160}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
@@ -153,7 +207,7 @@ export default function Home() {
                 src="https://ik.imagekit.io/ggelm1lwa/advetising%20services.jpg?updatedAt=1759315133641"
                 alt="Gamut of Services"
                 width={2636}
-                height={2080}
+                height={4160}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -182,7 +236,7 @@ export default function Home() {
                  src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870"
                  alt="UI/UX Design"
                  width={2636}
-                 height={2080}
+                 height={4160}
                  data-ai-hint="colorful ui ux"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
@@ -211,7 +265,7 @@ export default function Home() {
                 src="https://ik.imagekit.io/ggelm1lwa/data%20driven%20startegies.jpg?updatedAt=1759315702177"
                 alt="Data-Driven Strategies"
                 width={2636}
-                height={2080}
+                height={4160}
                 data-ai-hint="vibrant data"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -254,98 +308,56 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70">
-              <CardHeader className="p-0">
-                <Image
-                  src="https://picsum.photos/seed/team-passion-professional/2028/520"
-                  width={2636}
-                  height={520}
-                  alt="Passionate Team"
-                  data-ai-hint="passionate team"
-                  className="rounded-t-lg object-cover aspect-video"
-                />
-              </CardHeader>
-              <CardContent className="p-6 flex-grow flex flex-col">
-                <CardTitle className="font-headline mb-3 flex items-center gap-3">
-                  <Lightbulb className="w-7 h-7 text-primary" /> Our Philosophy
-                </CardTitle>
-                <p className="text-muted-foreground flex-grow">
-                  We thrive on challenges and innovation. From cutting-edge IT
-                  development to digital marketing, media production, and brand
-                  storytelling, our team's diverse expertise ensures we deliver
-                  not just services, but experiences that create real impact.
-                </p>
-                <Button asChild size="sm" className="group mt-4 w-fit">
-                  <Link href="/story">
-                    Learn More
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300 bg-card/70">
-              <CardHeader className="p-0">
-                <Image
-                  src="https://picsum.photos/seed/team-collab-professional/2028/520"
-                  width={2636}
-                  height={520}
-                  alt="Team Collaboration"
-                  data-ai-hint="team collaboration"
-                  className="rounded-t-lg object-cover aspect-video"
-                />
-              </CardHeader>
-              <CardContent className="p-6 flex-grow flex flex-col">
-                <CardTitle className="font-headline mb-3 flex items-center gap-3">
-                  <Users className="w-7 h-7 text-primary" /> Our Approach
-                </CardTitle>
-                <p className="text-muted-foreground flex-grow">
-                  We believe in collaboration, growth, and pushing boundaries. We
-                  work as an extension of your team, ensuring that our solutions
-                  are perfectly aligned with your vision and goals to help you
-                  achieve lasting success in today’s digital-first world.
-                </p>
-                <Button asChild size="sm" className="group mt-4 w-fit">
-                  <Link href="/contact">
-                    Partner with Us
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400 bg-card/70">
-              <CardHeader className="p-0">
-                <Image
-                  src="https://picsum.photos/seed/global-reach-professional/2028/520"
-                  width={2636}
-                  height={520}
-                  alt="Global Reach"
-                  data-ai-hint="global network"
-                  className="rounded-t-lg object-cover aspect-video"
-                />
-              </CardHeader>
-              <CardContent className="p-6 flex-grow flex flex-col">
-                <CardTitle className="font-headline mb-3 flex items-center gap-3">
-                  <Scaling className="w-7 h-7 text-primary" /> Our Global
-                  Presence
-                </CardTitle>
-                <p className="text-muted-foreground flex-grow">
-                  With our headquarters in New York, and specialized offices in
-                  the UK and India, we unite creativity, technology, and
-                  strategic intelligence to serve diverse international markets
-                  and fuel innovation on a worldwide scale.
-                </p>
-                <Button asChild size="sm" className="group mt-4 w-fit">
-                  <Link href="/story">
-                    More About Us
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+             plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: true,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {whoWeAreCards.map((card, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
+                      <CardHeader className="p-0">
+                        <Image
+                          src={card.imageSrc}
+                          width={800}
+                          height={520}
+                          alt={card.title}
+                          data-ai-hint={card.imageHint}
+                          className="rounded-t-lg object-cover aspect-video"
+                        />
+                      </CardHeader>
+                      <CardContent className="p-6 flex-grow flex flex-col">
+                        <CardTitle className="font-headline mb-3 flex items-center gap-3">
+                          <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
+                        </CardTitle>
+                        <p className="text-muted-foreground flex-grow">
+                         {card.description}
+                        </p>
+                        <Button asChild size="sm" className="group mt-4 w-fit">
+                          <Link href={card.link}>
+                            {card.linkText}
+                            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                          </Link>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
+          </Carousel>
         </div>
       </section>
 

@@ -97,7 +97,7 @@ export default function WhatsappChatbotsPage() {
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
         data-ai-hint={pageData.heroHint}
       >
-        <div className="absolute inset-0 bg-black/50" />
+        
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <MessageCircle className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">

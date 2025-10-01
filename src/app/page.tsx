@@ -22,6 +22,24 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 
+const carouselImages = [
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
+    alt: "Hero Image 1",
+    hint: "team brainstorming",
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(3).png?updatedAt=1759317268835",
+    alt: "Hero Image 2",
+    hint: "digital marketing",
+  },
+  {
+    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    alt: "Hero Image 3",
+    hint: "modern office",
+  },
+];
+
 const whoWeAreCards = [
     {
       title: "Our Philosophy",
@@ -77,75 +95,60 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-screen w-full flex items-center justify-center">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="md:order-1 flex justify-center">
-              <Carousel
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-                plugins={[
-                  Autoplay({
-                    delay: 3000,
-                    stopOnInteraction: true,
-                  }),
-                ]}
-                className="w-full"
-              >
-                <CarouselContent>
-                  <CarouselItem>
-                    <Image
-                      src="https://ik.imagekit.io/ggelm1lwa/advetising%20services.jpg?updatedAt=1759315133641"
-                      alt="Image 1"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-auto"
-                    />
+      <div className="w-full flex justify-center">
+        <div className="w-full md:w-[28%]">
+          <section className="relative h-[64vh] w-full">
+            <Carousel
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                  stopOnInteraction: false,
+                }),
+              ]}
+              className="w-full h-full"
+              opts={{ loop: true }}
+            >
+              <CarouselContent>
+                {carouselImages.map((img, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative h-[64vh] w-full">
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-contain w-full h-full"
+                        priority={index === 0}
+                        data-ai-hint={img.hint}
+                      />
+                    </div>
                   </CarouselItem>
-                  <CarouselItem>
-                    <Image
-                      src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035"
-                      alt="Image 2"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-auto"
-                    />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <Image
-                      src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870"
-                      alt="Image 3"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-auto"
-                    />
-                  </CarouselItem>
-                </CarouselContent>
-              </Carousel>
+                ))}
+              </CarouselContent>
+            </Carousel>
+            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
             </div>
-            <div className="md:order-2 flex justify-center">
-              <div className="relative h-[80vh] w-[45vh] overflow-hidden rounded-2xl border-8 border-gray-800 shadow-2xl">
-                <video
-                  src="https://videos.pexels.com/video-files/4434246/4434246-hd_720_1366_25fps.mp4"
-                  className="absolute top-0 left-0 w-full h-full object-contain"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                ></video>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+        <div className="hidden md:block w-[72%] p-1">
+            <div className="h-[64vh] w-full">
+                <video
+                    src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
+                    className="w-full h-full object-contain"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
+            </div>
+        </div>
+      </div>
       
       <section 
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -159,16 +162,16 @@ export default function Home() {
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
             </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 text-white">
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
                <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  As an Advertising Agency
                </h2>
-               <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
+               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
                  <li>We are a hybrid with the chutzpah of a millennial and the experience of a Gen X.</li>
                  <li>We are agile and connect the dots quicker.</li>
                  <li>We believe the future of Communications lies in the 4Es of Engagement, Exclusivity, Emotion, and Experience.</li>
                </ul>
-               <Button asChild size="lg" className="group" variant="secondary">
+               <Button asChild size="lg" className="group" variant="outline">
                  <Link href="/story">
                    Our Story{" "}
                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -188,16 +191,16 @@ export default function Home() {
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 text-white">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Our Gamut of Services
               </h2>
-              <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
                  <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
                  <li>From compelling brand identities to robust web solutions and targeted marketing.</li>
                  <li>Our expertise covers the full spectrum of digital marketing.</li>
               </ul>
-              <Button asChild size="lg" className="group" variant="secondary">
+              <Button asChild size="lg" className="group">
                 <Link href="/services">
                   View More{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -217,16 +220,16 @@ export default function Home() {
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
             </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 text-white">
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
                <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  User-Centric Design
                </h2>
-               <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
+               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
                  <li>We create intuitive and beautiful user interfaces that delight users.</li>
                  <li>Our UI/UX process is driven by research and focused on user needs.</li>
                  <li>We design experiences that are not just functional but also memorable.</li>
                </ul>
-               <Button asChild size="lg" className="group" variant="secondary">
+               <Button asChild size="lg" className="group" variant="outline">
                  <Link href="/web-solutions">
                    See Our Process{" "}
                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -246,16 +249,16 @@ export default function Home() {
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 text-white">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Data-Driven Strategies
               </h2>
-              <ul className="space-y-3 text-lg text-white/80 mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
                  <li>We leverage data to make informed decisions and optimize for success.</li>
                  <li>Our analytics-first approach ensures every campaign is measurable.</li>
                  <li>Unlock powerful insights and achieve a higher return on investment.</li>
               </ul>
-              <Button asChild size="lg" className="group" variant="secondary">
+              <Button asChild size="lg" className="group">
                 <Link href="/xtrack">
                   Explore XTrack{" "}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

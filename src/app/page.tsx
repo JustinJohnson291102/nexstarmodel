@@ -146,19 +146,15 @@ export default function Home() {
           </section>
         </div>
         <div className="hidden md:block w-[30%] p-4">
-            <div className="h-[91vh] w-full border-4 border-gray-300 p-1">
-                <div className="h-full w-full border-4 border-gray-400 p-1">
-                    <div className="h-full w-full border-4 border-gray-500 p-1">
-                        <video
-                            src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                            className="w-full h-full object-cover"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                        ></video>
-                    </div>
-                </div>
+            <div className="h-[91vh] w-full border border-gray-300 p-1">
+                <video
+                    src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
             </div>
         </div>
       </div>
@@ -380,3 +376,5 @@ export default function Home() {
     </>
   );
 }
+
+    

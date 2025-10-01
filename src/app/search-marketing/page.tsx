@@ -70,7 +70,7 @@ export default function SearchMarketingPage() {
   const pageData = {
     title: "Search Marketing (SEM & SEO)",
     description: "Dominate search engine results and drive targeted traffic to your website with our expert SEM and SEO strategies.",
-    heroImage: "https://picsum.photos/seed/search-marketing-hero/1920/1080",
+    heroImage: "/images/search-marketing.jpg",
     heroHint: "search engine marketing concept",
     features: [
       {
@@ -274,7 +274,3 @@ export default function SearchMarketingPage() {
     </div>
   );
 }
-
-    
-
-    

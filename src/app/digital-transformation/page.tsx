@@ -99,7 +99,7 @@ export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
     description: "Modernize your operations, automate processes, and embrace a data-driven culture to stay ahead of the curve.",
-    heroImage: "https://picsum.photos/seed/digital-transformation-professional/1920/1080",
+    heroImage: "/images/digital-transformation.jpg",
     heroHint: "abstract digital transformation",
   };
 

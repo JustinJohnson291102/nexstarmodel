@@ -121,7 +121,7 @@ export default function XtrackPage() {
       <section
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center"
         style={{
-          backgroundImage: `url('https://picsum.photos/seed/xtrack-hero/1920/1080')`,
+          backgroundImage: `url('/images/xtrack.jpg')`,
         }}
       >
         <div className="relative z-20 px-4 container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -351,5 +351,3 @@ export default function XtrackPage() {
     </div>
   );
 }
-
-    

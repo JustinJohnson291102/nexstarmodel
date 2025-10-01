@@ -140,7 +140,7 @@ export default function WebSolutionsPage() {
               </p>
                <div className="mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
-                    src="https://picsum.photos/seed/web-dev-hero/1200/600"
+                    src="/images/web-solutions.jpg"
                     alt="Modern Website Design on a laptop"
                     width={1200}
                     height={600}

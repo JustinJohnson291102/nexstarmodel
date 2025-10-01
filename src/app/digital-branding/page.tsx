@@ -99,7 +99,7 @@ export default function DigitalBrandingPage() {
   const pageData = {
     title: "Digital Branding",
     description: "Craft a consistent and compelling brand identity across all your digital touchpoints.",
-    heroImage: "https://picsum.photos/seed/digital-brand-professional/1920/1080",
+    heroImage: "/images/digital-branding.jpg",
     heroHint: "digital identity",
   };
 

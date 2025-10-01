@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "Can you remove negative reviews or articles?",
-        answer: "Removing content is often difficult and depends on the platform's terms of service. Our primary strategy is not removal, but suppression. We work to create and promote a wealth of positive content that pushes negative items further down in search results, making them much less visible."
+        answer: "Removing content is often difficult and depends on the platform's terms of service. Our primary strategy is not removal, but suppression. We work to create and promote a wealth of positive, authoritative content that pushes negative items further down in search results, making them much less visible."
     },
     {
         question: "What's the difference between SEO and ORM?",
@@ -67,7 +67,7 @@ export default function OnlineReputationManagementPage() {
   const pageData = {
     title: "Online Reputation Management",
     description: "Shape your brand's narrative, build trust, and protect your online image with our proactive reputation management services.",
-    heroImage: "https://picsum.photos/seed/reputation-hero-professional/1920/1080",
+    heroImage: "/images/online-reputation-management.jpg",
     heroHint: "brand trust",
     features: [
       {

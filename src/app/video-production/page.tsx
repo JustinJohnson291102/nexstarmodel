@@ -73,7 +73,7 @@ export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
     description: "From concept to completion, we create compelling video content that tells your story and engages your audience.",
-    heroImage: "https://picsum.photos/seed/yellow-video-production/1920/1080",
+    heroImage: "/images/video-production.jpg",
     heroHint: "yellow video setup",
     features: [
       {
@@ -167,7 +167,7 @@ export default function VideoProductionPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/yellow-video-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('/images/video-production.jpg')`}}
         data-ai-hint="yellow film reel"
       >
         <div className="absolute inset-0 bg-primary/90" />

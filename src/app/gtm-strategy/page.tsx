@@ -107,7 +107,7 @@ export default function GtmStrategyPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://picsum.photos/seed/gtm-hero-professional/1920/1080"
+          src="/images/gtm-strategy.jpg"
           alt="Go-To-Market Strategy"
           fill
           className="object-cover"

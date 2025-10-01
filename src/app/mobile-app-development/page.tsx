@@ -69,7 +69,7 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "https://picsum.photos/seed/mobile-dev-professional/1920/1080",
+    heroImage: "/images/mobile-app-development.jpg",
     heroHint: "mobile app development",
     features: [
       {

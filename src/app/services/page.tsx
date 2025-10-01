@@ -304,7 +304,7 @@ export default function ServicesPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://picsum.photos/seed/yellow-services-hero/1920/1080"
+          src="/images/services.jpg"
           alt="Services background"
           fill
           className="object-cover"

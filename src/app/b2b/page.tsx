@@ -117,7 +117,7 @@ export default function B2BPage() {
     <>
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://picsum.photos/seed/yellow-b2b-hero/1920/1080"
+          src="/images/b2b.jpg"
           alt="B2B Marketing"
           fill
           className="object-cover"

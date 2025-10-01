@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -87,7 +88,7 @@ export default function RapidWebsiteDevelopmentPage() {
   const pageData = {
     title: "Rapid Website Development",
     description: "Launch your online presence in record time with our efficient and agile website development services.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1GG6Apbf31al1DYa7DT9ik7DVXUh7HK7L",
+    heroImage: "/images/rapid-website-development.jpg",
     heroHint: "rocket launch",
   };
 
@@ -95,7 +96,7 @@ export default function RapidWebsiteDevelopmentPage() {
     <div className="bg-background">
       <section
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-rocket-launch/1920/1080')` }}
+        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">

@@ -108,7 +108,7 @@ export default function AugmentedRealityPage() {
     <>
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/yellow-ar-hero/1920/1080')` }}
+        style={{ backgroundImage: `url('/images/augmented reality.jpg')` }}
         >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">

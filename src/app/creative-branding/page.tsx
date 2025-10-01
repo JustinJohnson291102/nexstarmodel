@@ -73,7 +73,7 @@ export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
     description: "We craft unforgettable brand identities that tell your story, captivate your audience, and build lasting loyalty.",
-    heroImage: "https://picsum.photos/seed/yellow-branding-hero/1920/1080",
+    heroImage: "/images/creative-branding.jpg",
     heroHint: "yellow creative branding",
     features: [
       {

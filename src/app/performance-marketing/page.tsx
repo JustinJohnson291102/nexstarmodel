@@ -120,7 +120,7 @@ export default function PerformanceMarketingPage() {
     <>
       <section 
         className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/performance-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('/images/performance-marketing.jpg')`}}
         data-ai-hint="colorful data analytics"
       >
         <div className="absolute inset-0 bg-black/60" />
@@ -311,5 +311,3 @@ export default function PerformanceMarketingPage() {
     </>
   );
 }
-
-    

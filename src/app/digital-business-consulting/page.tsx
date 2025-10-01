@@ -99,7 +99,7 @@ export default function DigitalBusinessConsultingPage() {
   const pageData = {
     title: "Digital Business Consulting",
     description: "Navigate the complexities of the digital landscape with our expert guidance and strategic insights.",
-    heroImage: "https://picsum.photos/seed/business-consulting-professional/1920/1080",
+    heroImage: "/images/digital-business-consulting.jpg",
     heroHint: "business consulting",
   };
 

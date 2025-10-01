@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -85,7 +86,7 @@ export default function WhatsappChatbotsPage() {
   const pageData = {
     title: "WhatsApp Chatbots",
     description: "Automate customer conversations and drive engagement with AI-powered WhatsApp chatbots.",
-    heroImage: "https://drive.google.com/uc?export=download&id=1I_SdniqPDuy0QJKzv-wd1eFN6UdK6pSb",
+    heroImage: "/images/whatsapp-chatbots.jpg",
     heroHint: "chatbot conversation",
   };
 

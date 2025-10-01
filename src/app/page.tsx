@@ -66,7 +66,7 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-cover w-full h-full"
+                      className="object-contain w-full h-full"
                       priority={index === 0}
                       data-ai-hint={img.hint}
                     />
@@ -141,9 +141,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://picsum.photos/seed/ad-agency-professional/1200/400"
+                 src="https://picsum.photos/seed/ad-agency-professional/1560/400"
                  alt="Advertising Agency"
-                 width={1200}
+                 width={1560}
                  height={400}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
@@ -170,9 +170,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://picsum.photos/seed/service-gamut-professional/1200/400"
+                src="https://picsum.photos/seed/service-gamut-professional/1560/400"
                 alt="Gamut of Services"
-                width={1200}
+                width={1560}
                 height={400}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
@@ -220,8 +220,8 @@ export default function Home() {
             <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70">
               <CardHeader className="p-0">
                 <Image
-                  src="https://picsum.photos/seed/team-passion-professional/1200/400"
-                  width={1200}
+                  src="https://picsum.photos/seed/team-passion-professional/1560/400"
+                  width={1560}
                   height={400}
                   alt="Passionate Team"
                   data-ai-hint="passionate team"
@@ -250,8 +250,8 @@ export default function Home() {
             <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-300 bg-card/70">
               <CardHeader className="p-0">
                 <Image
-                  src="https://picsum.photos/seed/team-collab-professional/1200/400"
-                  width={1200}
+                  src="https://picsum.photos/seed/team-collab-professional/1560/400"
+                  width={1560}
                   height={400}
                   alt="Team Collaboration"
                   data-ai-hint="team collaboration"
@@ -280,8 +280,8 @@ export default function Home() {
             <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-400 bg-card/70">
               <CardHeader className="p-0">
                 <Image
-                  src="https://picsum.photos/seed/global-reach-professional/1200/400"
-                  width={1200}
+                  src="https://picsum.photos/seed/global-reach-professional/1560/400"
+                  width={1560}
                   height={400}
                   alt="Global Reach"
                   data-ai-hint="global network"
@@ -336,3 +336,5 @@ export default function Home() {
     </>
   );
 }
+
+    

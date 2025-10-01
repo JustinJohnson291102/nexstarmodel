@@ -31,11 +31,6 @@ const carouselImages = [
     alt: "Hero Image 2",
     hint: "digital marketing",
   },
-  {
-    src: "https://drive.google.com/uc?export=download&id=1S7D9GO56ZmKdoLWU9FVOI8dsDTBRgz94",
-    alt: "Hero Image 4",
-    hint: "technology collage",
-  },
 ];
 
 export default function Home() {
@@ -105,7 +100,7 @@ export default function Home() {
             </p>
           </div>
           <div className="md:col-span-3 animate-in fade-in slide-in-from-bottom-10 duration-700">
-            <div className="aspect-video w-full">
+            <div className="aspect-[4/3] w-full">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
                 className="w-full h-full object-contain rounded-lg shadow-xl"
@@ -129,7 +124,7 @@ export default function Home() {
                  src="https://picsum.photos/seed/ad-agency-professional/2028/1040"
                  alt="Advertising Agency"
                  width={2636}
-                 height={1040}
+                 height={2080}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
@@ -158,7 +153,7 @@ export default function Home() {
                 src="https://picsum.photos/seed/service-gamut-professional/2028/1040"
                 alt="Gamut of Services"
                 width={2636}
-                height={1040}
+                height={2080}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -379,5 +374,3 @@ export default function Home() {
     </>
   );
 }
-
-    

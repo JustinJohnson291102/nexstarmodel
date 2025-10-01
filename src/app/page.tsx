@@ -121,7 +121,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://picsum.photos/seed/ad-agency-professional/2028/1040"
+                 src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035"
                  alt="Advertising Agency"
                  width={2636}
                  height={2080}
@@ -150,7 +150,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://picsum.photos/seed/service-gamut-professional/2028/1040"
+                src="https://ik.imagekit.io/ggelm1lwa/advetising%20services.jpg?updatedAt=1759315133641"
                 alt="Gamut of Services"
                 width={2636}
                 height={2080}
@@ -179,10 +179,10 @@ export default function Home() {
            <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://picsum.photos/seed/colorful-ui-ux/2028/1040"
+                 src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870"
                  alt="UI/UX Design"
                  width={2636}
-                 height={1040}
+                 height={2080}
                  data-ai-hint="colorful ui ux"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
@@ -208,10 +208,10 @@ export default function Home() {
            <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://picsum.photos/seed/vibrant-data-analytics/2028/1040"
+                src="https://ik.imagekit.io/ggelm1lwa/data%20driven%20startegies.jpg?updatedAt=1759315702177"
                 alt="Data-Driven Strategies"
                 width={2636}
-                height={1040}
+                height={2080}
                 data-ai-hint="vibrant data"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />

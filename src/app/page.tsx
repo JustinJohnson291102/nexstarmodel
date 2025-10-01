@@ -24,7 +24,7 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
-    src: "https://drive.google.com/uc?export=download&id=1Dr2V-q3ZFyhPXSR9uP-1dHWAxF5NSXSS",
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
     alt: "Hero Image 1",
     hint: "team brainstorming",
   },
@@ -144,8 +144,8 @@ export default function Home() {
       </div>
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-5 gap-12 items-center">
-          <div className="md:col-span-2">
+        <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+          <div>
             <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight">
               Driving Digital Excellence
             </h2>
@@ -153,11 +153,11 @@ export default function Home() {
               At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
             </p>
           </div>
-          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 md:col-span-3">
-            <div className="aspect-[21/9] w-full">
+          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <div className="aspect-video w-full">
               <video
                 src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-                className="w-full h-full object-contain rounded-lg shadow-xl"
+                className="w-full h-full object-cover rounded-lg shadow-xl"
                 autoPlay
                 loop
                 muted

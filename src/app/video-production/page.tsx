@@ -42,8 +42,8 @@ const alternatingContent = [
             "Meticulous post-production including editing, color grading, and sound mixing."
         ],
         image: {
-            src: "https://picsum.photos/seed/video-storyboard/800/600",
-            hint: "video storyboard"
+            src: "https://picsum.photos/seed/yellow-storyboard/800/600",
+            hint: "yellow storyboard"
         }
     },
     {
@@ -56,25 +56,25 @@ const alternatingContent = [
             "Animated explainer videos for complex products or services."
         ],
         image: {
-            src: "https://picsum.photos/seed/video-platforms/800/600",
-            hint: "social media video"
+            src: "https://picsum.photos/seed/yellow-social-video/800/600",
+            hint: "yellow social video"
         }
     }
 ];
 
 const videoTypes = [
-    { type: "Brand Films", image: { src: "https://picsum.photos/seed/brand-film/400/500", hint: "cinematic film" } },
-    { type: "Commercials", image: { src: "https://picsum.photos/seed/commercial-ad/400/500", hint: "tv commercial" } },
-    { type: "Social Content", image: { src: "https://picsum.photos/seed/social-video/400/500", hint: "social media" } },
-    { type: "Animations", image: { src: "https://picsum.photos/seed/animation-video/400/500", hint: "abstract animation" } },
+    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://picsum.photos/seed/yellow-brand-film/400/500", hint: "yellow cinematic film" } },
+    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://picsum.photos/seed/yellow-commercial/400/500", hint: "yellow tv commercial" } },
+    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://picsum.photos/seed/yellow-social-content/400/500", hint: "yellow social media" } },
+    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://picsum.photos/seed/yellow-animation/400/500", hint: "yellow abstract animation" } },
 ];
 
 export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
     description: "From concept to completion, we create compelling video content that tells your story and engages your audience.",
-    heroImage: "https://picsum.photos/seed/video-production-vibrant/1920/1080",
-    heroHint: "video production setup",
+    heroImage: "https://picsum.photos/seed/yellow-video-production/1920/1080",
+    heroHint: "yellow video setup",
     features: [
       {
         icon: Film,
@@ -167,8 +167,8 @@ export default function VideoProductionPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/video-parallax/1920/1080')`}}
-        data-ai-hint="colorful film reel"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/yellow-video-parallax/1920/1080')`}}
+        data-ai-hint="yellow film reel"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-white">
@@ -180,9 +180,9 @@ export default function VideoProductionPage() {
             {videoTypes.map((video, index) => (
               <div key={video.type} className="group relative rounded-lg overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms`}}>
                 <Image src={video.image.src} alt={video.type} width={400} height={500} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={video.image.hint} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end" >
                   <h3 className="text-2xl font-bold font-headline">{video.type}</h3>
+                  <p className="text-sm text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 h-0 group-hover:h-auto">{video.description}</p>
                 </div>
               </div>
             ))}
@@ -266,5 +266,3 @@ export default function VideoProductionPage() {
     </div>
   );
 }
-
-    

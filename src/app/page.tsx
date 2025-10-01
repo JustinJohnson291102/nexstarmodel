@@ -80,7 +80,7 @@ export default function Home() {
       <section className="relative h-screen w-full flex items-center justify-center">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="md:order-2 flex justify-center">
+            <div className="md:order-1 flex justify-center">
               <Carousel
                 opts={{
                   align: "start",
@@ -125,7 +125,7 @@ export default function Home() {
                 </CarouselContent>
               </Carousel>
             </div>
-            <div className="md:order-1 flex justify-center">
+            <div className="md:order-2 flex justify-center">
               <div className="relative h-[80vh] w-[45vh] overflow-hidden rounded-2xl border-8 border-gray-800 shadow-2xl">
                 <video
                   src="https://videos.pexels.com/video-files/4434246/4434246-hd_720_1366_25fps.mp4"

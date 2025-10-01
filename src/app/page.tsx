@@ -66,7 +66,7 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-contain w-full h-full"
+                      className="object-cover w-full h-full"
                       priority={index === 0}
                       data-ai-hint={img.hint}
                     />
@@ -99,37 +99,25 @@ export default function Home() {
 
       <section className="relative bg-background text-foreground py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
-                Driving Digital Excellence
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
-              </p>
-              <Button asChild size="lg" className="group">
-                <Link href="/contact">
-                  Get Started{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-            <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-              <Card className="overflow-hidden shadow-xl">
-                <CardContent className="p-0">
-                  <div className="aspect-video">
-                    <video
-                      src="https://drive.google.com/uc?export=download&id=1zmqioP8bzyWC68vRS-iQKueqe2RpFA_f"
-                      className="w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      controls
-                    ></video>
-                  </div>
-                </CardContent>
-              </Card>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight">
+              Driving Digital Excellence
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
+              At Nexstar Media, we blend creativity with technology to deliver comprehensive digital solutions. From crafting compelling brand narratives to deploying cutting-edge web technologies, our mission is to elevate your brand's digital presence and drive measurable success.
+            </p>
+          </div>
+          <div className="animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <div className="aspect-video w-full">
+              <video
+                src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
+                className="w-full h-full object-cover rounded-lg shadow-xl"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+              ></video>
             </div>
           </div>
         </div>
@@ -143,8 +131,8 @@ export default function Home() {
                <Image
                  src="https://picsum.photos/seed/ad-agency-professional/1560/400"
                  alt="Advertising Agency"
-                 width={1560}
-                 height={400}
+                 width={2028}
+                 height={520}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                />
@@ -172,8 +160,8 @@ export default function Home() {
               <Image
                 src="https://picsum.photos/seed/service-gamut-professional/1560/400"
                 alt="Gamut of Services"
-                width={1560}
-                height={400}
+                width={2028}
+                height={520}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -221,8 +209,8 @@ export default function Home() {
               <CardHeader className="p-0">
                 <Image
                   src="https://picsum.photos/seed/team-passion-professional/1560/400"
-                  width={1560}
-                  height={400}
+                  width={2028}
+                  height={520}
                   alt="Passionate Team"
                   data-ai-hint="passionate team"
                   className="rounded-t-lg object-cover aspect-video"
@@ -251,8 +239,8 @@ export default function Home() {
               <CardHeader className="p-0">
                 <Image
                   src="https://picsum.photos/seed/team-collab-professional/1560/400"
-                  width={1560}
-                  height={400}
+                  width={2028}
+                  height={520}
                   alt="Team Collaboration"
                   data-ai-hint="team collaboration"
                   className="rounded-t-lg object-cover aspect-video"
@@ -281,8 +269,8 @@ export default function Home() {
               <CardHeader className="p-0">
                 <Image
                   src="https://picsum.photos/seed/global-reach-professional/1560/400"
-                  width={1560}
-                  height={400}
+                  width={2028}
+                  height={520}
                   alt="Global Reach"
                   data-ai-hint="global network"
                   className="rounded-t-lg object-cover aspect-video"
@@ -336,5 +324,3 @@ export default function Home() {
     </>
   );
 }
-
-    

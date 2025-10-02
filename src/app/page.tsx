@@ -23,19 +23,19 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
-    alt: "Hero Image 1",
-    hint: "team brainstorming",
-  },
-  {
     src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(3).png?updatedAt=1759317268835",
-    alt: "Hero Image 2",
+    alt: "Hero Image 1",
     hint: "digital marketing",
   },
   {
-    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
+    alt: "Hero Image 2",
+    hint: "team brainstorming",
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png.jpg?updatedAt=1759419448076",
     alt: "Hero Image 3",
-    hint: "modern office",
+    hint: "modern office collage",
   },
 ];
 

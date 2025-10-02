@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -23,19 +24,19 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
-    src: "https://picsum.photos/seed/hero1/1920/1080",
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
     alt: "Hero Image 1",
     hint: "team brainstorming",
   },
   {
-    src: "https://picsum.photos/seed/hero2/1920/1080",
+    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(3).png?updatedAt=1759317268835",
     alt: "Hero Image 2",
     hint: "digital marketing",
   },
   {
-    src: "https://picsum.photos/seed/hero3/1920/1080",
+    src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
     alt: "Hero Image 3",
-    hint: "modern office collage",
+    hint: "modern office",
   },
 ];
 
@@ -94,7 +95,7 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[84vh] w-full">
+      <section className="relative h-[70vh] w-full">
         <Carousel
           plugins={[
             Autoplay({
@@ -108,12 +109,12 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-full w-full">
+                <div className="relative h-[70vh] w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-cover"
+                    className="object-contain w-full h-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />
@@ -127,7 +128,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section 
+      <section
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >

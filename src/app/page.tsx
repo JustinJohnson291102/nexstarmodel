@@ -108,13 +108,12 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-[70vh]">
+                <div className="relative h-[70vh] w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    width={2534}
-                    height={1080}
-                    className="object-contain h-full w-full"
+                    fill
+                    className="object-fill w-full h-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />

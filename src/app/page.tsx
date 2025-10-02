@@ -112,7 +112,7 @@ export default function Home() {
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    width={2112}
+                    width={2534}
                     height={1080}
                     className="object-contain h-full"
                     priority={index === 0}

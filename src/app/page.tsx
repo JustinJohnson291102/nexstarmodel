@@ -108,7 +108,7 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-[70vh] w-full">
+                <div className="relative h-[70vh] w-[70%]">
                   <Image
                     src={img.src}
                     alt={img.alt}
@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section
+      <section 
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >

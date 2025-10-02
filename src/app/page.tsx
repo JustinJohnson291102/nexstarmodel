@@ -113,7 +113,7 @@ export default function Home() {
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-fill w-full h-full"
+                    className="object-fill"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />

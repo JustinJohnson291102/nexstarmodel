@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -91,40 +92,42 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[70vh] w-full">
-        <Carousel
-          plugins={[
-            Autoplay({
-              delay: 2000,
-              stopOnInteraction: false,
-            }),
-          ]}
-          className="w-full h-full"
-          opts={{ loop: true }}
-        >
-          <CarouselContent>
-            {carouselImages.map((img, index) => (
-              <CarouselItem key={index}>
-                <div className="relative h-[70vh] w-full">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-contain w-full h-full"
-                    priority={index === 0}
-                    data-ai-hint={img.hint}
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-        </div>
-      </section>
+       <div className="w-full">
+        <section className="relative h-[70vh] w-[70%] mr-auto">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+              }),
+            ]}
+            className="w-full h-full"
+            opts={{ loop: true }}
+          >
+            <CarouselContent>
+              {carouselImages.map((img, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative h-[70vh] w-full">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                      data-ai-hint={img.hint}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+          </div>
+        </section>
+      </div>
       
-      <section
+      <section 
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
@@ -344,4 +347,5 @@ export default function Home() {
       </section>
     </>
   );
-}
+
+    

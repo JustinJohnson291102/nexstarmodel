@@ -95,7 +95,7 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative w-full">
+      <section className="relative w-full h-[70vh]">
         <Carousel
           plugins={[
             Autoplay({
@@ -109,12 +109,12 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative w-full aspect-video">
+                <div className="relative w-full h-[70vh]">
                   <Image
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-contain w-full h-full"
+                    className="object-cover w-full h-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />
@@ -132,7 +132,7 @@ export default function Home() {
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
-        <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
           
           <div className="grid md:grid-cols-2 gap-12 items-center">

@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -93,7 +92,7 @@ export default function Home() {
   return (
     <>
        <div className="w-full">
-        <section className="relative h-[70vh] w-[70%] mr-auto">
+        <section className="relative h-[91vh] w-[70%] mr-auto">
           <Carousel
             plugins={[
               Autoplay({
@@ -107,7 +106,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[70vh] w-full">
+                  <div className="relative h-[91vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -347,5 +346,4 @@ export default function Home() {
       </section>
     </>
   );
-
-    
+}

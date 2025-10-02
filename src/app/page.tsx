@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -95,7 +94,7 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative w-full h-[70vh]">
+      <section className="relative w-full">
         <Carousel
           plugins={[
             Autoplay({
@@ -103,18 +102,19 @@ export default function Home() {
               stopOnInteraction: false,
             }),
           ]}
-          className="w-full h-full"
+          className="w-full"
           opts={{ loop: true }}
         >
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative w-full h-[70vh]">
+                <div className="relative w-full h-[600px]">
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    fill
-                    className="object-cover w-full h-full"
+                    width={1920}
+                    height={600}
+                    className="object-contain w-full h-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />
@@ -132,7 +132,7 @@ export default function Home() {
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
         <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
           
           <div className="grid md:grid-cols-2 gap-12 items-center">

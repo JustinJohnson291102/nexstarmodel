@@ -3,10 +3,7 @@
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
-  CheckCircle,
   Lightbulb,
-  Scaling,
-  Users,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -108,12 +105,12 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-full w-full">
+                <div className="relative h-[70vh] w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-fill"
+                    className="object-contain w-full h-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />
@@ -127,7 +124,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section 
+      <section
         className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >

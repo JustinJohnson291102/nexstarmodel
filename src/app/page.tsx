@@ -95,7 +95,7 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[70vh] w-full">
+      <section className="relative w-full">
         <Carousel
           plugins={[
             Autoplay({
@@ -109,12 +109,12 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-[70vh] w-full">
+                <div className="relative w-full aspect-video">
                   <Image
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-cover w-full h-full"
+                    className="object-contain w-full h-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />

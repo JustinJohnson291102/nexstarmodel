@@ -114,7 +114,7 @@ export default function Home() {
                     alt={img.alt}
                     width={2534}
                     height={1080}
-                    className="object-contain h-full"
+                    className="object-contain h-full w-full"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />

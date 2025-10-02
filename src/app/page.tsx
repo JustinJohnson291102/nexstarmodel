@@ -23,17 +23,17 @@ import OurClients from "@/components/homepage/our-clients";
 
 const carouselImages = [
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(3).png?updatedAt=1759317268835",
+    src: "https://picsum.photos/seed/hero1/1920/1080",
     alt: "Hero Image 1",
-    hint: "digital marketing",
-  },
-  {
-    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png%20(5).png?updatedAt=1759316955631",
-    alt: "Hero Image 2",
     hint: "team brainstorming",
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/photo-collage.png.jpg?updatedAt=1759419448076",
+    src: "https://picsum.photos/seed/hero2/1920/1080",
+    alt: "Hero Image 2",
+    hint: "digital marketing",
+  },
+  {
+    src: "https://picsum.photos/seed/hero3/1920/1080",
     alt: "Hero Image 3",
     hint: "modern office collage",
   },
@@ -113,7 +113,7 @@ export default function Home() {
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-fill"
+                    className="object-cover"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />

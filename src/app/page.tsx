@@ -108,7 +108,7 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-full w-[70%]">
+                <div className="relative h-full w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}

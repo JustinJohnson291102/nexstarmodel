@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -114,7 +113,7 @@ export default function Home() {
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-contain w-full h-full"
+                    className="object-fill"
                     priority={index === 0}
                     data-ai-hint={img.hint}
                   />

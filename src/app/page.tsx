@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <>
        <div className="flex w-full">
-        <section className="relative h-[91vh] w-[80%]">
+        <section className="relative h-[91vh] w-[70%]">
           <Carousel
             plugins={[
               Autoplay({
@@ -111,7 +111,7 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-cover w-full h-full"
+                      className="object-fill w-full h-full"
                       priority={index === 0}
                       data-ai-hint={img.hint}
                     />
@@ -124,7 +124,7 @@ export default function Home() {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
           </div>
         </section>
-        <div className="relative w-[20%] h-[91vh] border border-gray-300 rounded-lg overflow-hidden">
+        <div className="relative w-[30%] h-[91vh] border border-gray-300 rounded-lg overflow-hidden">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
             className="w-full h-full object-cover"

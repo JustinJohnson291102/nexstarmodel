@@ -124,7 +124,8 @@ export default function Home() {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
           </div>
         </section>
-        <div className="relative w-[30%] h-[91vh] border border-gray-300 rounded-lg overflow-hidden">
+        <div className="w-[5%] h-[91vh]" />
+        <div className="relative w-[25%] h-[91vh] border border-gray-300 rounded-lg overflow-hidden">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
             className="w-full h-full object-cover"

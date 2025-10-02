@@ -94,7 +94,7 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[70vh] w-full">
+      <section className="relative h-[84vh] w-[70%]">
         <Carousel
           plugins={[
             Autoplay({
@@ -108,7 +108,7 @@ export default function Home() {
           <CarouselContent>
             {carouselImages.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-[70vh] w-full">
+                <div className="relative h-full w-full">
                   <Image
                     src={img.src}
                     alt={img.alt}

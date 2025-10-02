@@ -94,7 +94,7 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[84vh] w-[70%]">
+      <section className="relative h-[84vh] w-full">
         <Carousel
           plugins={[
             Autoplay({

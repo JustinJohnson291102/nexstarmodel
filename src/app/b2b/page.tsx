@@ -124,6 +124,7 @@ export default function B2BPage() {
           fill
           className="object-cover"
           priority
+          quality={100}
         />
       </section>
 

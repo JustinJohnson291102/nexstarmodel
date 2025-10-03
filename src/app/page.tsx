@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -98,7 +97,7 @@ export default function Home() {
   return (
     <>
        <div className="flex flex-col md:flex-row w-full">
-        <section className="relative h-[64vh] w-full md:w-[70%] md:h-[91vh] bg-black">
+        <section className="relative h-[91vh] w-full md:w-[70%] md:h-[91vh] bg-black">
           <Carousel
             plugins={[
               Autoplay({
@@ -371,5 +370,3 @@ export default function Home() {
     </>
   );
 }
-
-    

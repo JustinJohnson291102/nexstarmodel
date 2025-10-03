@@ -84,8 +84,8 @@ const alternatingContent = [
             "Intuitive interfaces for complex workflows."
         ],
         image: {
-            src: "https://picsum.photos/seed/web-app/800/600",
-            hint: "web application"
+            src: "https://picsum.photos/seed/colorful-webapp/800/600",
+            hint: "colorful web application"
         }
     },
     {
@@ -98,8 +98,8 @@ const alternatingContent = [
             "Ongoing maintenance and security updates."
         ],
         image: {
-            src: "https://picsum.photos/seed/cms-backend/800/600",
-            hint: "cms dashboard"
+            src: "https://picsum.photos/seed/colorful-cms/800/600",
+            hint: "colorful cms dashboard"
         }
     }
 ];
@@ -130,15 +130,15 @@ export default function WebSolutionsPage() {
         className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-background"
       >
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2">
-              <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-primary animate-in fade-in slide-in-from-left-10 duration-700">
+              <h1 className="text-3xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-primary animate-in fade-in slide-in-from-left-10 duration-700">
                 Website Design & Development
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
+              <p className="text-base md:text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
                 We build beautiful, high-performance websites that are not only visually stunning but also engineered for performance, security, and scalability. Your website is your digital flagship—we make sure it stands out.
               </p>
-               <div className="mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+               <div className="mt-8 md:mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
                     src="/images/web-solutions.jpg"
                     alt="Modern Website Design on a laptop"
@@ -149,38 +149,38 @@ export default function WebSolutionsPage() {
                 />
                </div>
             </div>
-            <div className="md:col-span-1 sticky top-32 animate-in fade-in slide-in-from-right-10 duration-700">
+            <div className="md:col-span-1 md:sticky top-32 animate-in fade-in slide-in-from-right-10 duration-700">
                <GetStartedForm />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Built for the Modern Web</h2>
-                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every website we create is built on a foundation of cutting-edge technology and best practices.</p>
+                <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every website we create is built on a foundation of cutting-edge technology and best practices.</p>
             </div>
-             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+             <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                 {coreFeatures.map((feature, index) => (
-                    <div key={index} className="flex flex-col items-center text-center p-6 bg-card/50 rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index*100}ms`}}>
+                    <div key={index} className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index*100}ms`}}>
                         <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">
                             <feature.icon className="w-8 h-8" />
                         </div>
                         <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
-                        <p className="text-muted-foreground text-sm">{feature.description}</p>
+                        <p className="text-muted-foreground text-sm flex-grow">{feature.description}</p>
                     </div>
                 ))}
             </div>
           </div>
       </section>
 
-       <section className="py-20 md:py-32 bg-background">
+       <section className="py-16 md:py-32 bg-background">
         <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Proven Development Process</h2>
-                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">A streamlined, transparent process that ensures your project is delivered on time and to the highest standards.</p>
+                <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">A streamlined, transparent process that ensures your project is delivered on time and to the highest standards.</p>
             </div>
             <div className="relative max-w-5xl mx-auto">
                 <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/50 hidden md:block"></div>
@@ -189,11 +189,11 @@ export default function WebSolutionsPage() {
                         <div className="hidden md:block absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-10" style={index % 2 === 0 ? {left: '-8px'} : {right: '-8px'}}></div>
                         <Card className="w-full shadow-lg hover:shadow-primary/20 transition-shadow">
                             <CardHeader>
-                                <CardTitle className="flex items-center gap-3">
+                                <CardTitle className="flex items-center gap-3 text-lg md:text-2xl">
                                     <div className="bg-primary/10 text-primary p-2 rounded-md">
                                         <span className="font-bold text-xl">{index + 1}</span>
                                     </div>
-                                    <span className="font-headline text-2xl">{step.title}</span>
+                                    <span className="font-headline">{step.title}</span>
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -206,10 +206,10 @@ export default function WebSolutionsPage() {
         </div>
     </section>
 
-    <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+    <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -221,7 +221,7 @@ export default function WebSolutionsPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -237,50 +237,50 @@ export default function WebSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-background">
-          <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">Full-Spectrum Web Solutions</h2>
-                <p className="text-lg text-muted-foreground mb-8">
+                <p className="text-base md:text-lg text-muted-foreground mb-8">
                     We offer a wide array of web development services to meet your unique business needs. Whether you need a simple landing page or a complex e-commerce platform, our team has the expertise to deliver.
                 </p>
-                 <div className="grid grid-cols-2 gap-6">
+                 <div className="grid grid-cols-2 gap-4 md:gap-6">
                     {webPackages.map((pkg) => (
-                        <div key={pkg.title} className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border/20">
-                            <pkg.icon className="w-8 h-8 text-primary" />
-                            <h3 className="font-semibold">{pkg.title}</h3>
+                        <div key={pkg.title} className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-card rounded-lg border border-border/20">
+                            <pkg.icon className="w-6 h-6 md:w-8 md:h-8 text-primary shrink-0" />
+                            <h3 className="font-semibold text-sm md:text-base">{pkg.title}</h3>
                         </div>
                     ))}
                 </div>
             </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
                 <Image 
-                    src="https://picsum.photos/seed/web-solutions-grid/800/700"
+                    src="https://picsum.photos/seed/colorful-professional-grid/800/700"
                     alt="Web Solutions Collage"
                     width={800}
                     height={700}
                     className="rounded-lg shadow-xl"
-                    data-ai-hint="web design grid"
+                    data-ai-hint="colorful professional grid"
                 />
              </div>
           </div>
       </section>
 
       <section 
-        className="py-20 md:py-24 bg-secondary"
+        className="py-16 md:py-24 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us?
             </h2>
-            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
               We are more than just developers; we are your strategic partners in digital growth.
             </p>
           </div>
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
             {whyChooseUsFeatures.map((feature, index) => (
-                <div key={index} className="flex flex-col items-center p-8 bg-card/50 backdrop-blur-sm rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+                <div key={index} className="flex flex-col items-center p-6 md:p-8 bg-card rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
                     <feature.icon className="h-12 w-12 text-primary mb-4" />
                     <h3 className="text-xl font-semibold font-headline mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
@@ -292,14 +292,14 @@ export default function WebSolutionsPage() {
       
       <OurClients />
 
-      <section className="py-20 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-base md:text-lg text-muted-foreground mb-12">
               Your questions about our web development process, answered.
             </p>
           </div>

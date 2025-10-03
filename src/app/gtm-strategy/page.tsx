@@ -114,12 +114,12 @@ export default function GtmStrategyPage() {
           priority
           data-ai-hint="colorful professional abstract strategy"
         />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="absolute inset-0 bg-white/50" />
+        <div className="relative z-10 px-4 text-black animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Your Go-To-Market Launchpad
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
+            <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
                We turn great ideas into market-leading products. Our Go-To-Market (GTM) strategy is a comprehensive roadmap designed to navigate the complexities of launching and scaling your venture successfully.
             </p>
         </div>

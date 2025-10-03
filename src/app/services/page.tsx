@@ -311,12 +311,12 @@ export default function ServicesPage() {
           priority
           data-ai-hint="colorful professional creative workspace"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-white/30" />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-black mb-4">
             Our Services
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
             A complete suite of digital services to elevate your brand.
           </p>
         </div>

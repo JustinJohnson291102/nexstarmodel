@@ -101,13 +101,13 @@ export default function MobileAppDevelopmentPage() {
         className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 container mx-auto px-4 text-white">
+        <div className="absolute inset-0 bg-white/50" />
+        <div className="relative z-10 container mx-auto px-4 text-black">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
               {pageData.title}
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 px-4">
+            <p className="text-lg md:text-2xl text-black/90 px-4">
               {pageData.description}
             </p>
           </div>

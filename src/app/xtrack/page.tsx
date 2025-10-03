@@ -124,12 +124,12 @@ export default function XtrackPage() {
           backgroundImage: `url('https://picsum.photos/seed/colorful-professional-xtrack-hero/1920/1080')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-white/30" />
         <div className="relative z-20 px-4 container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-black mb-4">
             Meet XTrack
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
             The Ultimate Analytics Solution to Understand, Engage, and Grow Your
             Audience.
           </p>

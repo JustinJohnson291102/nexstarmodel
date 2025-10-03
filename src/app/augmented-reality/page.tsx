@@ -110,12 +110,12 @@ export default function AugmentedRealityPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-ar/1920/1080')` }}
         >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="absolute inset-0 bg-white/50" />
+        <div className="relative z-10 px-4 text-black animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             Augmented Reality Services
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-xl mx-auto md:mx-0">
+          <p className="text-lg md:text-2xl text-black/90 max-w-xl mx-auto md:mx-0">
             Blur the lines between digital and reality. We craft AR experiences that captivate, engage, and convert.
           </p>
           <Button asChild size="lg" className="mt-8 group" variant="secondary">

@@ -185,7 +185,7 @@ export default function SocialMediaPage() {
                         <div className="absolute inset-0 bg-black/30"></div>
                     </div>
                     <div className="p-4">
-                        <h3 className="font-headline text-xl font-bold mb-1">{card.platform}</h3>
+                        <h3 className="font-headline text-xl font-bold mb-1 text-white">{card.platform}</h3>
                         <p className="text-sm text-white/70">{card.description}</p>
                     </div>
                   </Card>
@@ -276,3 +276,5 @@ export default function SocialMediaPage() {
     </div>
   );
 }
+
+    

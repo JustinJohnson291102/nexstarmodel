@@ -98,7 +98,7 @@ export default function Home() {
   return (
     <>
        <div className="flex flex-col md:flex-row w-full">
-        <section className="relative h-[91vh] w-full md:w-[70%] bg-black">
+        <section className="relative h-[64vh] md:h-[91vh] w-full md:w-[70%] bg-black">
           <Carousel
             plugins={[
               Autoplay({
@@ -112,7 +112,7 @@ export default function Home() {
             <CarouselContent>
               {carouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[91vh] w-full">
+                  <div className="relative h-[64vh] md:h-[91vh] w-full">
                     <Image
                       src={img.src}
                       alt={img.alt}

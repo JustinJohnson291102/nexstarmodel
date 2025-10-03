@@ -73,7 +73,7 @@ export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
     description: "We craft unforgettable brand identities that tell your story, captivate your audience, and build lasting loyalty.",
-    heroImage: "/images/creative-branding.jpg",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/creative%20branding.jpg?updatedAt=1759474023368",
     heroHint: "yellow creative branding",
     features: [
       {
@@ -264,3 +264,5 @@ export default function CreativeBrandingPage() {
     </div>
   );
 }
+
+    

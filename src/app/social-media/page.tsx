@@ -66,10 +66,10 @@ const alternatingContent = [
 ];
 
 const platformCards = [
-    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/colorful-professional-instagram/600/400", hint: "colorful professional instagram feed" }},
-    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/colorful-professional-facebook/600/400", hint: "colorful professional facebook page" }},
-    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/professional-linkedin-profile/600/400", hint: "professional linkedin" }},
-    { platform: "Twitter", description: "Real-time updates and public conversations.", image: { src: "https://picsum.photos/seed/colorful-twitter-interface/600/400", hint: "colorful twitter" }},
+    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://ik.imagekit.io/ggelm1lwa/insta%20logo.jpg?updatedAt=1759498783851", hint: "instagram logo" }},
+    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://ik.imagekit.io/ggelm1lwa/Facebook_Logo_(2019).png?updatedAt=1759498783481", hint: "facebook logo" }},
+    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://ik.imagekit.io/ggelm1lwa/linkedin.jpg?updatedAt=1759498783490", hint: "linkedin logo" }},
+    { platform: "Twitter", description: "Real-time updates and public conversations.", image: { src: "https://ik.imagekit.io/ggelm1lwa/twitter%20logo.webp?updatedAt=1759498783502", hint: "twitter logo" }},
 ];
 
 export default function SocialMediaPage() {
@@ -276,6 +276,3 @@ export default function SocialMediaPage() {
     </div>
   );
 }
-
-    
-    

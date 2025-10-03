@@ -110,10 +110,10 @@ export default function SocialMediaPage() {
         data-ai-hint={pageData.heroHint}
       >
         <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-black">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-black max-w-3xl mx-auto">
             {pageData.description}
           </p>
         </div>

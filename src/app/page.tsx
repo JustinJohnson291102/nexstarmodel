@@ -102,7 +102,7 @@ export default function Home() {
             plugins={[
               Autoplay({
                 delay: 2000,
-                stopOnInteraction: false,
+                stopOnInteraction: true,
               }),
             ]}
             className="w-full h-full"
@@ -124,8 +124,6 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
           </Carousel>
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
@@ -365,5 +363,3 @@ export default function Home() {
     </>
   );
 }
-
-    

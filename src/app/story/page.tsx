@@ -12,7 +12,7 @@ const timelineEvents = [
     title: "The Spark of an Idea",
     description: "A small team of passionate creatives, developers, and marketers unites with a single mission: to bridge the gap between brilliant ideas and flawless digital execution.",
     image: {
-      src: "https://picsum.photos/seed/spark/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/sparkofidea.webp?updatedAt=1759495968572",
       hint: "bright lightbulb",
     }
   },
@@ -21,7 +21,7 @@ const timelineEvents = [
     title: "First Major Client",
     description: "Landed our first major retail client, delivering a comprehensive e-commerce and branding strategy that resulted in a 200% increase in their online sales within the first year.",
      image: {
-      src: "https://picsum.photos/seed/client-win/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/first%20client.jpg?updatedAt=1759496287545",
       hint: "business handshake",
     }
   },
@@ -30,7 +30,7 @@ const timelineEvents = [
     title: "Expanding Our Services",
     description: "Launched our dedicated B2B marketing and Go-To-Market strategy divisions, helping SaaS and tech companies make a powerful impact from day one.",
      image: {
-      src: "https://picsum.photos/seed/expand/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/service%20expanding.jpg?updatedAt=1759496382759",
       hint: "growth chart",
     }
   },
@@ -192,7 +192,7 @@ export default function StoryPage() {
                   <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
                 </div>
                 <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 overflow-hidden animate-in fade-in zoom-in-90 duration-500">
-                  <Image src={event.image.src} alt={event.title} width={600} height={400} className="w-full h-auto object-cover" data-ai-hint={event.image.hint} />
+                  <Image src={event.image.src} alt={event.title} width={600} height={400} className="w-full h-auto object-contain" data-ai-hint={event.image.hint} />
                   <div className="p-6">
                     <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>
                     <h3 className="mb-3 font-bold text-foreground text-xl">{event.title}</h3>

@@ -181,7 +181,7 @@ export default function SocialMediaPage() {
               {platformCards.map(card => (
                   <Card key={card.platform} className="bg-background/10 border-white/20 group overflow-hidden">
                     <div className="relative aspect-video">
-                        <Image src={card.image.src} alt={card.platform} fill className="object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint} />
+                        <Image src={card.image.src} alt={card.platform} fill className="object-contain transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint} />
                         <div className="absolute inset-0 bg-black/30"></div>
                     </div>
                     <div className="p-4">
@@ -276,3 +276,5 @@ export default function SocialMediaPage() {
     </div>
   );
 }
+
+    

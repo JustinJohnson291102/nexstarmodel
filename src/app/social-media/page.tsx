@@ -106,7 +106,6 @@ export default function SocialMediaPage() {
     <div className="bg-background">
       <section 
         className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('${pageData.heroImage}')` }}
         data-ai-hint={pageData.heroHint}
       >
         <div className="absolute inset-0 bg-white/30" />

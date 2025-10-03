@@ -85,7 +85,7 @@ export default function Chatbot() {
 
       <div
         className={cn(
-          "fixed bottom-24 right-6 z-50 w-full max-w-sm transition-all duration-300 ease-in-out",
+          "fixed bottom-24 z-50 w-[calc(100%-2rem)] max-w-sm transition-all duration-300 ease-in-out left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-6",
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"

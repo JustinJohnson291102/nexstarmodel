@@ -109,12 +109,11 @@ export default function SocialMediaPage() {
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
         data-ai-hint={pageData.heroHint}
       >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             {pageData.description}
           </p>
         </div>
@@ -169,7 +168,7 @@ export default function SocialMediaPage() {
 
       <section 
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-office-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-office/1920/1080')`}}
         data-ai-hint="colorful professional office"
        >
         <div className="absolute inset-0 bg-primary/90" />

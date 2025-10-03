@@ -30,10 +30,15 @@ const carouselImages = [
     hint: "digital marketing",
   },
   {
+    src: "https://ik.imagekit.io/ggelm1lwa/xebec%20yellow%20banner.jpg?updatedAt=1759468229202",
+    alt: "Hero Image 4",
+    hint: "yellow banner"
+  },
+  {
     src: "https://drive.google.com/uc?export=download&id=1AfTs2l2K095QR7q17gzL2eMtfRgIC3y4",
     alt: "Hero Image 3",
     hint: "modern office",
-  },
+  }
 ];
 
 const whoWeAreCards = [
@@ -119,12 +124,14 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
           </Carousel>
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
           </div>
         </section>
-        <div className="w-[5%] h-[91vh]" />
+        <div className="w-[5%]" />
         <div className="relative w-[25%] h-[91vh] border border-gray-300 rounded-lg overflow-hidden">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
@@ -358,3 +365,5 @@ export default function Home() {
     </>
   );
 }
+
+    

@@ -17,7 +17,7 @@ const servicesData = [
       "Campaign Creation + Execution",
       "Social Listening & Brand Positioning",
     ],
-    image: "https://picsum.photos/seed/yellow-social-dashboard/600/400",
+    image: "https://ik.imagekit.io/ggelm1lwa/social%20media%20marketing.jpg?updatedAt=1759469318952",
     imageAlt: "A person analyzing social media trends on a screen with yellow accents.",
     link: "/social-media",
     imageHint: "yellow social media",

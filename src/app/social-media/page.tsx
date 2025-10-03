@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -104,7 +105,7 @@ export default function SocialMediaPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        className="relative h-[90vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
         data-ai-hint={pageData.heroHint}
       >

@@ -76,8 +76,8 @@ export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
     description: "We build and nurture online communities, turning followers into fans and fans into customers.",
-    heroImage: "/images/social-media.jpg",
-    heroHint: "yellow social media",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/social%20media%20marketing.jpg?updatedAt=1759469318952",
+    heroHint: "social media marketing",
     features: [
       {
         icon: Users,
@@ -107,6 +107,7 @@ export default function SocialMediaPage() {
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
+        data-ai-hint={pageData.heroHint}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -168,8 +169,8 @@ export default function SocialMediaPage() {
 
       <section 
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/yellow-social-parallax/1920/1080')`}}
-        data-ai-hint="yellow social media"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-office-parallax/1920/1080')`}}
+        data-ai-hint="colorful professional office"
        >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">

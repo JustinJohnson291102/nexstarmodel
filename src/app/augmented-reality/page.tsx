@@ -14,7 +14,7 @@ const videoCards = [
     title: "Product Visualization",
     description: "See products in your space before you buy.",
     videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4",
-    image: { src: "https://picsum.photos/seed/yellow-ar-product/800/450", hint: "yellow ar product" },
+    image: { src: "https://picsum.photos/seed/colorful-ar-product/800/450", hint: "colorful ar product" },
   },
   {
     title: "Interactive Filters",
@@ -26,7 +26,7 @@ const videoCards = [
     title: "AR Portals",
     description: "Step into a new world with immersive brand portals.",
     videoSrc: "https://videos.pexels.com/video-files/4429377/4429377-sd_540_960_30fps.mp4",
-    image: { src: "https://picsum.photos/seed/vibrant-ar-portal/800/450", hint: "vibrant ar portal" },
+    image: { src: "https://picsum.photos/seed/colorful-ar-portal/800/450", hint: "colorful ar portal" },
   },
 ];
 
@@ -82,8 +82,8 @@ const alternatingContent = [
             "Seamless integration with Shopify, WooCommerce, and other platforms."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-ar-ecommerce/800/600",
-            hint: "yellow ar shopping"
+            src: "https://picsum.photos/seed/colorful-ar-ecommerce/800/600",
+            hint: "colorful ar shopping"
         }
     },
     {
@@ -108,7 +108,7 @@ export default function AugmentedRealityPage() {
     <>
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('/images/augmented reality.jpg')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-ar/1920/1080')` }}
         >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -126,11 +126,11 @@ export default function AugmentedRealityPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-16 md:py-32 bg-background">
         <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Transform Your Brand Experience with an Expert Augmented Reality Agency</h2>
-                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See how our AR solutions are already making an impact.</p>
+                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">See how our AR solutions are already making an impact.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {videoCards.map((card, index) => (
@@ -166,24 +166,24 @@ export default function AugmentedRealityPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('https://picsum.photos/seed/yellow-ar-parallax/1920/1080')" }}
-        data-ai-hint="yellow augmented reality"
+        style={{ backgroundImage: "url('https://picsum.photos/seed/colorful-professional-parallax/1920/1080')" }}
+        data-ai-hint="colorful professional augmented reality"
       >
         <div className="absolute inset-0 bg-primary/80" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
           <div className="text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">Step Into the Future</h2>
-            <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto">
+            <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto px-4">
               Augmented Reality is not just a technology; it's a new medium for storytelling, engagement, and commerce. We help brands harness its power to create unforgettable experiences.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -195,7 +195,7 @@ export default function AugmentedRealityPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -211,21 +211,21 @@ export default function AugmentedRealityPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-16 md:py-32 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                <Image 
-                src="https://picsum.photos/seed/colorful-webar/800/600"
+                src="https://picsum.photos/seed/colorful-professional-webar/800/600"
                 alt="WebAR on multiple devices"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-xl"
-                data-ai-hint="colorful web ar"
+                data-ai-hint="colorful professional web ar"
                />
             </div>
             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-               <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">Enhance Your Website with WebAR</h2>
+               <h2 className="text-2xl md:text-4xl font-bold font-headline mb-6">Enhance Your Website with WebAR</h2>
                <p className="text-lg text-muted-foreground mb-8">
                 Deliver augmented reality experiences directly through the web browser—no app download required. WebAR removes the friction, allowing users to instantly engage with your products and brand stories. It's the most accessible way to bring AR to the widest possible audience.
                </p>
@@ -239,21 +239,21 @@ export default function AugmentedRealityPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-16 md:py-32 bg-secondary">
           <div className="container mx-auto px-4">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 md:mb-16">
                   <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Build Your AR Dream Experience</h2>
-                  <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">From concept to launch, we provide end-to-end AR development services.</p>
+                  <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">From concept to launch, we provide end-to-end AR development services.</p>
               </div>
               <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                   {arFeatures.map((feature, index) => (
-                      <div key={index} className="flex gap-6 items-start p-6 bg-card/50 rounded-lg border border-border/20">
-                          <div className="text-primary bg-primary/10 p-4 rounded-lg">
-                              <feature.icon className="w-8 h-8" />
+                      <div key={index} className="flex gap-4 md:gap-6 items-start p-6 bg-card/50 rounded-lg border border-border/20">
+                          <div className="text-primary bg-primary/10 p-3 md:p-4 rounded-lg">
+                              <feature.icon className="w-6 h-6 md:w-8 md:h-8" />
                           </div>
                           <div>
-                              <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
-                              <p className="text-muted-foreground">{feature.description}</p>
+                              <h3 className="text-lg md:text-xl font-bold font-headline mb-2">{feature.title}</h3>
+                              <p className="text-muted-foreground text-sm md:text-base">{feature.description}</p>
                           </div>
                       </div>
                   ))}
@@ -261,10 +261,10 @@ export default function AugmentedRealityPage() {
           </div>
       </section>
       
-      <section className="py-20 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="space-y-6">
               <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Why AR Filters Are a Game-Changer</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 AR filters on social media are more than a gimmick; they're a powerful marketing tool that places your brand directly in the hands of your audience.
@@ -276,14 +276,14 @@ export default function AugmentedRealityPage() {
                            <item.icon className="w-6 h-6 text-primary" />
                         </div>
                         <div>
-                            <h3 className="text-xl font-bold font-headline">{item.title}</h3>
-                            <p className="text-muted-foreground">{item.description}</p>
+                            <h3 className="text-lg md:text-xl font-bold font-headline">{item.title}</h3>
+                            <p className="text-muted-foreground text-sm md:text-base">{item.description}</p>
                         </div>
                     </div>
                 ))}
               </div>
             </div>
-            <div>
+            <div className="mt-8 md:mt-0">
                 <GetStartedForm />
             </div>
           </div>

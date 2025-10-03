@@ -46,8 +46,8 @@ const alternatingContent = [
             "Mobile-first design for a seamless shopping experience on any device."
         ],
         image: {
-            src: "https://picsum.photos/seed/ecommerce-conversion-vibrant/800/600",
-            hint: "sales funnel"
+            src: "https://picsum.photos/seed/colorful-professional-conversion/800/600",
+            hint: "colorful professional sales funnel"
         }
     },
     {
@@ -60,8 +60,8 @@ const alternatingContent = [
             "Headless commerce solutions for ultimate flexibility and performance."
         ],
         image: {
-            src: "https://picsum.photos/seed/ecommerce-platforms-vibrant/800/600",
-            hint: "server infrastructure"
+            src: "https://picsum.photos/seed/colorful-professional-platforms/800/600",
+            hint: "colorful professional server infrastructure"
         }
     }
 ];
@@ -77,8 +77,8 @@ export default function EcommerceDevelopmentPage() {
   const pageData = {
     title: "E-commerce Website Design and Development",
     description: "We build beautiful, high-performing e-commerce websites that turn visitors into loyal customers.",
-    heroImage: "/images/ecommerce-development.jpg",
-    heroHint: "online shopping",
+    heroImage: "https://picsum.photos/seed/colorful-professional-ecommerce-hero/1920/1080",
+    heroHint: "colorful professional online shopping",
     features: [
       {
         icon: Store,
@@ -119,18 +119,18 @@ export default function EcommerceDevelopmentPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Build Your Digital Flagship</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Build Your Digital Flagship</h2>
                 <p>
                   Your e-commerce website is more than just a place to sell products; it's the heart of your online brand. It's your 24/7 salesperson, your primary marketing channel, and the most direct connection you have with your customers. We craft digital shopping experiences that are not only visually stunning but also engineered for performance, security, and scalability.
                 </p>
@@ -152,8 +152,8 @@ export default function EcommerceDevelopmentPage() {
                   </div>
                 ))}
               </div>
-               <div className="bg-secondary p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><ShoppingCart className="w-7 h-7 text-primary"/>Full-Service E-commerce Solutions</h3>
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><ShoppingCart className="w-7 h-7 text-primary"/>Full-Service E-commerce Solutions</h3>
                   <ul className="space-y-3">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Custom Theme Development &amp; Customization</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>App Integration and Custom Plugin Development</span></li>
@@ -175,18 +175,18 @@ export default function EcommerceDevelopmentPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/ecommerce-parallax-vibrant/1920/1080')` }}
-        data-ai-hint="abstract tech background"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-ecommerce-parallax/1920/1080')` }}
+        data-ai-hint="colorful abstract tech background"
       >
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline">Platform Agnostic, Results-Driven</h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">We have deep expertise across all major e-commerce platforms.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto px-4">We have deep expertise across all major e-commerce platforms.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {platformLogos.map((p) => (
-              <Card key={p.name} className="p-8 flex justify-center items-center bg-card/70 backdrop-blur-sm h-32 transition-transform duration-300 hover:-translate-y-2">
+              <Card key={p.name} className="p-6 md:p-8 flex justify-center items-center bg-card/70 backdrop-blur-sm h-24 md:h-32 transition-transform duration-300 hover:-translate-y-2">
                 <Image src={p.logo} alt={p.name} width={150} height={40} className="object-contain" />
               </Card>
             ))}
@@ -195,10 +195,10 @@ export default function EcommerceDevelopmentPage() {
       </section>
 
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -210,7 +210,7 @@ export default function EcommerceDevelopmentPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -236,21 +236,21 @@ export default function EcommerceDevelopmentPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us as Your E-commerce Partner?
             </h2>
-            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We're not just developers; we're e-commerce strategists dedicated to your growth. We focus on building scalable, secure, and sales-driven online stores that become valuable assets for your business. Our expertise ensures you get a site that not only looks great but also performs flawlessly and delivers a tangible return on investment.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Have questions? We have answers. Here are some common inquiries about our e-commerce development services.
             </p>
           </div>

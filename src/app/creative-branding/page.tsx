@@ -42,8 +42,8 @@ const alternatingContent = [
             "Detailed brand guidelines to ensure consistency."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-brand-strategy/800/600",
-            hint: "yellow brand strategy"
+            src: "https://picsum.photos/seed/colorful-professional-brand-strategy/800/600",
+            hint: "colorful professional brand strategy"
         }
     },
     {
@@ -56,8 +56,8 @@ const alternatingContent = [
             "Content optimized for web, social media, and advertising."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-production/800/600",
-            hint: "colorful photo shoot"
+            src: "https://picsum.photos/seed/colorful-professional-production/800/600",
+            hint: "colorful professional photo shoot"
         }
     }
 ];
@@ -73,8 +73,8 @@ export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
     description: "We craft unforgettable brand identities that tell your story, captivate your audience, and build lasting loyalty.",
-    heroImage: "https://ik.imagekit.io/ggelm1lwa/creative%20branding.jpg?updatedAt=1759474023368",
-    heroHint: "yellow creative branding",
+    heroImage: "https://picsum.photos/seed/colorful-professional-branding-hero/1920/1080",
+    heroHint: "colorful professional creative branding",
     features: [
       {
         icon: Palette,
@@ -105,22 +105,23 @@ export default function CreativeBrandingPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
       >
-        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Your Brand is Your Story. Let's Tell it Beautifully.</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Your Brand is Your Story. Let's Tell it Beautifully.</h2>
                 <p>
                   In a crowded market, a strong brand is your most valuable asset. It's more than just a logo or a color scheme; it's the feeling you evoke, the story you tell, and the promise you make to your customers. It's what separates you from the competition and builds a tribe of loyal advocates. Our creative and branding services are designed to uncover your unique identity and translate it into a powerful, cohesive brand experience.
                 </p>
@@ -142,8 +143,8 @@ export default function CreativeBrandingPage() {
                   </div>
                 ))}
               </div>
-               <div className="bg-secondary p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our Creative Services Include:</h3>
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our Creative Services Include:</h3>
                   <ul className="space-y-3 columns-1 sm:columns-2">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Brand Guidelines</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Graphic Design</span></li>
@@ -164,14 +165,14 @@ export default function CreativeBrandingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-branding-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-branding-parallax/1920/1080')`}}
         data-ai-hint="colorful abstract design"
       >
         <div className="absolute inset-0 bg-background/80" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline">Our Branding Process</h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">A collaborative journey to uncover your brand's true identity.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto px-4">A collaborative journey to uncover your brand's true identity.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
@@ -187,10 +188,10 @@ export default function CreativeBrandingPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+       <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -202,7 +203,7 @@ export default function CreativeBrandingPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -228,21 +229,21 @@ export default function CreativeBrandingPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us for Creative & Branding?
             </h2>
-            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We believe that great branding is a blend of strategic thinking and artistic expression. Our team doesn't just design; we solve business problems creatively. We immerse ourselves in your world to create a brand identity that is authentic, memorable, and designed to help you achieve your goals.
             </p>
           </div>
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Your questions about our branding and creative process, answered.
             </p>
           </div>
@@ -263,5 +264,3 @@ export default function CreativeBrandingPage() {
     </div>
   );
 }
-
-    

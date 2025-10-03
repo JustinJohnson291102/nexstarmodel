@@ -43,8 +43,8 @@ const alternatingContent = [
             "Competitor reputation tracking."
         ],
         image: {
-            src: "https://picsum.photos/seed/orm-monitoring-professional/800/600",
-            hint: "data monitoring"
+            src: "https://picsum.photos/seed/colorful-professional-orm-monitoring/800/600",
+            hint: "colorful professional data monitoring"
         }
     },
     {
@@ -57,8 +57,8 @@ const alternatingContent = [
             "Creation and optimization of owned media properties."
         ],
         image: {
-            src: "https://picsum.photos/seed/orm-content-professional/800/600",
-            hint: "positive content"
+            src: "https://picsum.photos/seed/colorful-professional-orm-content/800/600",
+            hint: "colorful professional positive content"
         }
     }
 ];
@@ -67,8 +67,8 @@ export default function OnlineReputationManagementPage() {
   const pageData = {
     title: "Online Reputation Management",
     description: "Shape your brand's narrative, build trust, and protect your online image with our proactive reputation management services.",
-    heroImage: "/images/online-reputation-management.jpg",
-    heroHint: "brand trust",
+    heroImage: "https://picsum.photos/seed/colorful-professional-orm-hero/1920/1080",
+    heroHint: "colorful professional brand trust",
     features: [
       {
         icon: Search,
@@ -104,18 +104,18 @@ export default function OnlineReputationManagementPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Your Reputation is Your Greatest Asset</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Your Reputation is Your Greatest Asset</h2>
                 <p>
                   In the digital age, your online reputation is paramount. It's the first impression you make on potential customers, partners, and employees. A single negative review, a misleading news article, or a viral social media comment can have a significant and lasting impact on your bottom line. Our Online Reputation Management (ORM) services are designed to build, protect, and maintain a positive brand image that fosters trust and credibility with your audience.
                 </p>
@@ -137,8 +137,8 @@ export default function OnlineReputationManagementPage() {
                   </div>
                 ))}
               </div>
-               <div className="bg-secondary p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><ShieldCheck className="w-7 h-7 text-primary"/>Why ORM is Crucial:</h3>
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><ShieldCheck className="w-7 h-7 text-primary"/>Why ORM is Crucial:</h3>
                   <ul className="space-y-3">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Over 90% of consumers read online reviews before visiting a business.</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>A one-star increase in Yelp rating can lead to a 5-9% increase in revenue.</span></li>
@@ -157,14 +157,14 @@ export default function OnlineReputationManagementPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/orm-parallax-vibrant/1920/1080')` }}
-        data-ai-hint="digital security"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-orm-parallax/1920/1080')` }}
+        data-ai-hint="colorful professional digital security"
       >
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline">Our ORM Strategy</h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">A proactive approach to building and protecting your brand image.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto px-4">A proactive approach to building and protecting your brand image.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-8 text-center bg-card/70 backdrop-blur-sm">
@@ -186,10 +186,10 @@ export default function OnlineReputationManagementPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -201,7 +201,7 @@ export default function OnlineReputationManagementPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -227,21 +227,21 @@ export default function OnlineReputationManagementPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us as Your ORM Partner?
             </h2>
-            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We understand the nuances of online reputation. Our team combines PR expertise, SEO mastery, and content strategy to build a robust defense for your brand. We act as your digital guardians, working tirelessly to ensure the conversation around your brand is positive, accurate, and aligned with your values.
             </p>
           </div>
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Your questions about online reputation, answered.
             </p>
           </div>

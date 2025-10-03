@@ -45,8 +45,8 @@ const alternatingContent = [
             "Content tailored for each platform's algorithm and audience."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-content/800/600",
-            hint: "yellow content creation"
+            src: "https://picsum.photos/seed/colorful-professional-content/800/600",
+            hint: "colorful professional content creation"
         }
     },
     {
@@ -59,25 +59,25 @@ const alternatingContent = [
             "Detailed performance reporting and insights."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-social-ads/800/600",
-            hint: "yellow social ads"
+            src: "https://picsum.photos/seed/colorful-professional-social-ads/800/600",
+            hint: "colorful professional social ads"
         }
     }
 ];
 
 const platformCards = [
-    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/yellow-instagram/600/400", hint: "yellow instagram feed" }},
-    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/yellow-facebook/600/400", hint: "yellow facebook page" }},
-    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/professional-linkedin/600/400", hint: "professional linkedin" }},
-    { platform: "TikTok", description: "Engaging short-form video and trend-setting.", image: { src: "https://picsum.photos/seed/colorful-tiktok/600/400", hint: "colorful tiktok" }},
+    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/colorful-professional-instagram/600/400", hint: "colorful professional instagram feed" }},
+    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/colorful-professional-facebook/600/400", hint: "colorful professional facebook page" }},
+    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/professional-linkedin-profile/600/400", hint: "professional linkedin" }},
+    { platform: "TikTok", description: "Engaging short-form video and trend-setting.", image: { src: "https://picsum.photos/seed/colorful-tiktok-interface/600/400", hint: "colorful tiktok" }},
 ];
 
 export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
     description: "We build and nurture online communities, turning followers into fans and fans into customers.",
-    heroImage: "https://ik.imagekit.io/ggelm1lwa/social%20media%20marketing.jpg?updatedAt=1759469318952",
-    heroHint: "social media marketing",
+    heroImage: "https://picsum.photos/seed/colorful-professional-social-media-hero/1920/1080",
+    heroHint: "colorful professional social media marketing",
     features: [
       {
         icon: Users,
@@ -105,27 +105,27 @@ export default function SocialMediaPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
         data-ai-hint={pageData.heroHint}
       >
-        <div className="absolute inset-0" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Engage, Excite, and Expand Your Reach</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Engage, Excite, and Expand Your Reach</h2>
                 <p>
                   Social media is more than just posting updates; it's about building a vibrant community, telling your brand's story, and creating meaningful connections with your audience. In a world where attention is the most valuable currency, a powerful social media presence is non-negotiable. It's your direct line to your customers, a platform for authentic engagement, and a powerful driver of business growth.
                 </p>
@@ -147,8 +147,8 @@ export default function SocialMediaPage() {
                   </div>
                 ))}
               </div>
-               <div className="bg-secondary p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our Social Media Services Include:</h3>
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our Social Media Services Include:</h3>
                   <ul className="space-y-3 columns-1 sm:columns-2">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Social Strategy Development</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Content Creation (Photo, Video, Graphics)</span></li>
@@ -169,14 +169,14 @@ export default function SocialMediaPage() {
 
       <section 
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-office/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-office-social/1920/1080')`}}
         data-ai-hint="colorful professional office"
        >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Mastering Every Platform</h2>
-             <p className="text-lg text-primary-foreground/80 mb-12 max-w-2xl mx-auto">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
+             <p className="text-lg text-primary-foreground/80 mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {platformCards.map(card => (
                   <Card key={card.platform} className="bg-background/10 border-white/20 group overflow-hidden">
@@ -195,10 +195,10 @@ export default function SocialMediaPage() {
         </div>
        </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -210,7 +210,7 @@ export default function SocialMediaPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -241,21 +241,21 @@ export default function SocialMediaPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us for Social Media Marketing?
             </h2>
-            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We're a blend of creative storytellers and data-driven strategists. We understand that success on social media requires both artistry and analytics. We're committed to creating a social presence for your brand that not only looks great but also contributes directly to your bottom line.
             </p>
           </div>
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Your top questions about social media marketing, answered.
             </p>
           </div>

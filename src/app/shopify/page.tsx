@@ -21,37 +21,37 @@ const shopifyFeatures = [
     icon: Store,
     title: "Custom Store Design",
     description: "We create stunning, on-brand Shopify themes from scratch that capture your audience and reflect your identity.",
-    image: { src: "https://picsum.photos/seed/colorful-design/600/400", hint: "colorful web design" }
+    image: { src: "https://picsum.photos/seed/colorful-professional-design/600/400", hint: "colorful professional web design" }
   },
   {
     icon: Brush,
     title: "Theme Customization",
     description: "Modify existing themes to match your specific needs, adding custom features and functionality for a unique feel.",
-    image: { src: "https://picsum.photos/seed/colorful-theme/600/400", hint: "colorful ui customization" }
+    image: { src: "https://picsum.photos/seed/colorful-professional-theme/600/400", hint: "colorful professional ui customization" }
   },
   {
     icon: Rocket,
     title: "App Integration & Development",
     description: "Extend your store's capabilities with custom Shopify apps or seamless integration of third-party solutions.",
-    image: { src: "https://picsum.photos/seed/colorful-apps/600/400", hint: "colorful app development" }
+    image: { src: "https://picsum.photos/seed/colorful-professional-apps/600/400", hint: "colorful professional app development" }
   },
   {
     icon: ShoppingCart,
     title: "Conversion Rate Optimization",
     description: "We analyze user behavior and optimize your store's layout and funnels to turn more visitors into customers.",
-    image: { src: "https://picsum.photos/seed/colorful-cro/600/400", hint: "colorful sales funnel" }
+    image: { src: "https://picsum.photos/seed/colorful-professional-cro/600/400", hint: "colorful professional sales funnel" }
   },
   {
     icon: Settings,
     title: "Migration to Shopify",
     description: "Seamlessly migrate your existing e-commerce store from any platform to Shopify with zero data loss.",
-    image: { src: "https://picsum.photos/seed/professional-migrate/600/400", hint: "professional data migration" }
+    image: { src: "https://picsum.photos/seed/professional-data-migration-colorful/600/400", hint: "professional data migration colorful" }
   },
   {
     icon: Repeat,
     title: "Ongoing Support & Maintenance",
     description: "Keep your store running smoothly with our reliable support, updates, and performance monitoring services.",
-    image: { src: "https://picsum.photos/seed/professional-support/600/400", hint: "professional customer support" }
+    image: { src: "https://picsum.photos/seed/professional-customer-support-colorful/600/400", hint: "professional customer support colorful" }
   },
 ];
 
@@ -79,7 +79,7 @@ export default function ShopifyPage() {
     <div className="bg-background">
        <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-hero/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-shopify-hero/1920/1080')` }}
         data-ai-hint="colorful professional hero"
         >
         <div className="absolute inset-0 bg-black/50" />
@@ -87,7 +87,7 @@ export default function ShopifyPage() {
            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
               Expert Shopify Development
             </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
               From stunning storefronts to powerful back-end solutions, we build Shopify experiences that sell.
             </p>
         </div>
@@ -101,7 +101,7 @@ export default function ShopifyPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Our Shopify Services
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We offer a complete suite of Shopify services to launch, manage, and grow your e-commerce business.
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function ShopifyPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us?
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We're not just developers; we're your partners in e-commerce success. Our approach is rooted in strategy, creativity, and a deep understanding of the Shopify platform.
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function ShopifyPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
               Beautiful Stores, Built to Convert
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100 px-4">
               We design and develop beautiful, high-converting Shopify stores
               that customers love. Check out some of our work.
             </p>
@@ -207,7 +207,7 @@ export default function ShopifyPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Build Your Shopify Empire?
             </h2>
-            <p className="text-base md:text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-base md:text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Let's talk about your project. Whether you're starting from scratch or looking to optimize your existing store, our Shopify experts are ready to help you succeed.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">

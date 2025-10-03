@@ -88,8 +88,8 @@ export default function RapidWebsiteDevelopmentPage() {
   const pageData = {
     title: "Rapid Website Development",
     description: "Launch your online presence in record time with our efficient and agile website development services.",
-    heroImage: "/images/rapid-website-development.jpg",
-    heroHint: "rocket launch",
+    heroImage: "https://picsum.photos/seed/colorful-professional-rocket/1920/1080",
+    heroHint: "colorful professional rocket launch",
   };
 
   return (
@@ -104,18 +104,18 @@ export default function RapidWebsiteDevelopmentPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Go from Idea to Launch, Faster Than Ever</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Go from Idea to Launch, Faster Than Ever</h2>
                 <p>
                   Need a professional, high-quality website without the long wait times and high costs of a fully custom project? Our rapid development service is the perfect solution. Ideal for startups, marketing campaigns, small businesses, or anyone needing to establish a powerful online presence quickly, we've streamlined the development process to deliver exceptional websites in record time.
                 </p>
@@ -152,14 +152,14 @@ export default function RapidWebsiteDevelopmentPage() {
 
        <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/rapid-dev-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-rapid-dev-parallax/1920/1080')`}}
         data-ai-hint="colorful speed abstract"
       >
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline">Rapid Development Packages</h2>
-                <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">Transparent pricing to get you online fast.</p>
+                <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto px-4">Transparent pricing to get you online fast.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {packages.map((pkg, index) => (
@@ -202,7 +202,7 @@ export default function RapidWebsiteDevelopmentPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Launch at Lightning Speed?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Don't let a long development timeline hold you back. Let's get your website live and start attracting customers now.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -216,7 +216,7 @@ export default function RapidWebsiteDevelopmentPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -224,7 +224,7 @@ export default function RapidWebsiteDevelopmentPage() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mt-8">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>

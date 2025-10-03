@@ -86,8 +86,8 @@ export default function WhatsappChatbotsPage() {
   const pageData = {
     title: "WhatsApp Chatbots",
     description: "Automate customer conversations and drive engagement with AI-powered WhatsApp chatbots.",
-    heroImage: "https://ik.imagekit.io/ggelm1lwa/WhatsApp-Chatbot-3.png?updatedAt=1759313002805",
-    heroHint: "chatbot conversation",
+    heroImage: "https://picsum.photos/seed/colorful-professional-whatsapp-hero/1920/1080",
+    heroHint: "colorful professional chatbot conversation",
   };
 
   return (
@@ -96,28 +96,27 @@ export default function WhatsappChatbotsPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
         style={{ 
             backgroundImage: `url('${pageData.heroImage}')`,
-            filter: 'brightness(1.1) contrast(1.1)' 
         }}
         data-ai-hint={pageData.heroHint}
       >
-        
-        <div className="relative z-20 px-4 text-brown-700 animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <MessageCircle className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-brown-700/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Engage Customers Where They Are</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Engage Customers Where They Are</h2>
                 <p>
                  With over 2 billion users, WhatsApp is the world's most popular messaging app. It offers a powerful, direct channel for businesses to connect with their customers. Our AI-powered WhatsApp Chatbots help you leverage this channel to automate conversations, provide 24/7 support, generate qualified leads, and even process orders directly within the app. Deliver a seamless and convenient experience that your customers will love.
                 </p>
@@ -128,16 +127,16 @@ export default function WhatsappChatbotsPage() {
                 </ul>
               </div>
 
-               <div className="bg-secondary p-8 rounded-lg">
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
                   <h3 className="text-2xl font-bold font-headline mb-6 text-center">Chatbot Capabilities</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                       {chatbotFeatures.map(feature => (
                           <div key={feature.title} className="flex flex-col items-center text-center gap-3 p-4 bg-card rounded-lg">
                               <div className="bg-primary/10 text-primary p-3 rounded-full">
                                 <feature.icon className="w-6 h-6" />
                               </div>
-                              <h4 className="font-semibold">{feature.title}</h4>
-                              <p className="text-sm text-muted-foreground">{feature.description}</p>
+                              <h4 className="font-semibold text-sm md:text-base">{feature.title}</h4>
+                              <p className="text-xs md:text-sm text-muted-foreground">{feature.description}</p>
                           </div>
                       ))}
                   </div>
@@ -150,11 +149,11 @@ export default function WhatsappChatbotsPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-16 md:py-32 bg-secondary">
           <div className="container mx-auto px-4">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 md:mb-16">
                   <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Development Process</h2>
-                  <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">From idea to implementation, we ensure a seamless journey.</p>
+                  <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">From idea to implementation, we ensure a seamless journey.</p>
               </div>
               <div className="relative max-w-5xl mx-auto">
                   <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/50 hidden md:block"></div>
@@ -174,14 +173,14 @@ export default function WhatsappChatbotsPage() {
 
        <section 
         className="py-20 md:py-24 bg-background bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/whatsapp-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-whatsapp-parallax/1920/1080')`}}
         data-ai-hint="colorful abstract tech"
        >
           <div className="absolute inset-0 bg-background/90" />
           <div className="container mx-auto px-4 relative z-10">
-               <div className="text-center mb-16">
+               <div className="text-center mb-12 md:mb-16">
                   <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Industry Use Cases</h2>
-                  <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See how WhatsApp chatbots can transform various industries.</p>
+                  <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">See how WhatsApp chatbots can transform various industries.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {useCases.map((useCase) => (
@@ -208,7 +207,7 @@ export default function WhatsappChatbotsPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Automate Your Conversations?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Let's build a powerful WhatsApp chatbot that delights your customers and drives business growth. Contact us for a free consultation.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -222,7 +221,7 @@ export default function WhatsappChatbotsPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -230,7 +229,7 @@ export default function WhatsappChatbotsPage() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mt-8">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>

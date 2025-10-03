@@ -42,8 +42,8 @@ const alternatingContent = [
             "Meticulous post-production including editing, color grading, and sound mixing."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-storyboard/800/600",
-            hint: "yellow storyboard"
+            src: "https://picsum.photos/seed/colorful-professional-storyboard/800/600",
+            hint: "colorful professional storyboard"
         }
     },
     {
@@ -56,25 +56,25 @@ const alternatingContent = [
             "Animated explainer videos for complex products or services."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-social-video/800/600",
-            hint: "yellow social video"
+            src: "https://picsum.photos/seed/colorful-professional-social-video/800/600",
+            hint: "colorful professional social video"
         }
     }
 ];
 
 const videoTypes = [
-    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://picsum.photos/seed/yellow-brand-film/400/500", hint: "yellow cinematic film" } },
-    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://picsum.photos/seed/yellow-commercial/400/500", hint: "yellow tv commercial" } },
-    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://picsum.photos/seed/yellow-social-content/400/500", hint: "yellow social media" } },
-    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://picsum.photos/seed/yellow-animation/400/500", hint: "yellow abstract animation" } },
+    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://picsum.photos/seed/colorful-professional-brand-film/400/500", hint: "colorful professional cinematic film" } },
+    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://picsum.photos/seed/colorful-professional-commercial/400/500", hint: "colorful professional tv commercial" } },
+    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://picsum.photos/seed/colorful-professional-social-content/400/500", hint: "colorful professional social media" } },
+    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://picsum.photos/seed/colorful-professional-animation/400/500", hint: "colorful professional abstract animation" } },
 ];
 
 export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
     description: "From concept to completion, we create compelling video content that tells your story and engages your audience.",
-    heroImage: "/images/video-production.jpg",
-    heroHint: "yellow video setup",
+    heroImage: "https://picsum.photos/seed/colorful-professional-video-hero/1920/1080",
+    heroHint: "colorful professional video setup",
     features: [
       {
         icon: Film,
@@ -110,18 +110,18 @@ export default function VideoProductionPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Content That Moves</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Content That Moves</h2>
                 <p>
                   Video is the most powerful and engaging tool in the digital marketer's arsenal. It captures attention, evokes emotion, and drives action like no other medium. In a world saturated with content, a well-crafted video can cut through the noise and deliver your message with impact and clarity. Whether you need a cinematic brand anthem, a viral social media clip, a detailed product demo, or a heartfelt customer testimonial, our video production team has the creativity and technical expertise to deliver.
                 </p>
@@ -143,8 +143,8 @@ export default function VideoProductionPage() {
                   </div>
                 ))}
               </div>
-               <div className="bg-secondary p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><Users className="w-7 h-7 text-primary"/>Our Video Services Include:</h3>
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><Users className="w-7 h-7 text-primary"/>Our Video Services Include:</h3>
                   <ul className="space-y-3 columns-1 sm:columns-2">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Corporate Videos</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Commercials &amp; TV Ads</span></li>
@@ -167,14 +167,14 @@ export default function VideoProductionPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('/images/video-production.jpg')`}}
-        data-ai-hint="yellow film reel"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-film-reel/1920/1080')`}}
+        data-ai-hint="colorful professional film reel"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-white">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Videos for Every Goal</h2>
-            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Crafting the perfect video format to meet your unique business objectives.</p>
+            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto px-4">Crafting the perfect video format to meet your unique business objectives.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {videoTypes.map((video, index) => (
@@ -190,10 +190,10 @@ export default function VideoProductionPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+       <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -205,7 +205,7 @@ export default function VideoProductionPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -231,21 +231,21 @@ export default function VideoProductionPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us as Your Video Production Partner?
             </h2>
-            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We believe video production is the perfect marriage of art and strategy. Our team consists of passionate filmmakers and sharp marketers, ensuring every frame we create is not only beautiful but also purposeful. We are committed to telling your unique story in the most compelling way possible, creating video assets that serve your brand for years to come.
             </p>
           </div>
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Answering your top questions about the video production process.
             </p>
           </div>

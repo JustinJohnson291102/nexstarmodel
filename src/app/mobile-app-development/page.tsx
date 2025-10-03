@@ -45,8 +45,8 @@ const alternatingContent = [
             "Full integration with device-native features like cameras and GPS."
         ],
         image: {
-            src: "https://picsum.photos/seed/native-app-professional/800/600",
-            hint: "mobile app screen"
+            src: "https://picsum.photos/seed/colorful-professional-native-app/800/600",
+            hint: "colorful professional mobile app screen"
         }
     },
     {
@@ -59,8 +59,8 @@ const alternatingContent = [
             "Third-party service integrations (payments, maps, social media)."
         ],
         image: {
-            src: "https://picsum.photos/seed/app-backend-professional/800/600",
-            hint: "cloud server"
+            src: "https://picsum.photos/seed/colorful-professional-app-backend/800/600",
+            hint: "colorful professional cloud server"
         }
     }
 ];
@@ -69,8 +69,8 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "/images/mobile-app-development.jpg",
-    heroHint: "mobile app development",
+    heroImage: "https://picsum.photos/seed/colorful-professional-app-hero/1920/1080",
+    heroHint: "colorful professional mobile app development",
     features: [
       {
         icon: Smartphone,
@@ -107,19 +107,19 @@ export default function MobileAppDevelopmentPage() {
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
               {pageData.title}
             </h1>
-            <p className="text-lg md:text-2xl text-white/90">
+            <p className="text-lg md:text-2xl text-white/90 px-4">
               {pageData.description}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Your Vision, In the Palm of Their Hand</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Your Vision, In the Palm of Their Hand</h2>
                 <p>
                   A mobile app is the most direct and personal way to connect with your customers. It's an immersive brand experience, a powerful business tool, and a permanent presence on the device they use most. In a mobile-first world, a well-designed app is essential for building loyalty, driving engagement, and creating a competitive advantage.
                 </p>
@@ -141,8 +141,8 @@ export default function MobileAppDevelopmentPage() {
                   </div>
                 ))}
               </div>
-               <div className="bg-secondary p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our App Development Lifecycle</h3>
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our App Development Lifecycle</h3>
                   <ul className="space-y-3 columns-1 sm:columns-2">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Strategy & Discovery</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>UI/UX Design & Prototyping</span></li>
@@ -163,14 +163,14 @@ export default function MobileAppDevelopmentPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/app-dev-parallax-vibrant/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-app-dev-parallax/1920/1080')` }}
         data-ai-hint="colorful app interface"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-white">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">One Codebase, Two Platforms</h2>
-            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Accelerate your time-to-market with cross-platform development.</p>
+            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto px-4">Accelerate your time-to-market with cross-platform development.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 text-center bg-white/10 backdrop-blur-md border-white/20">
@@ -192,10 +192,10 @@ export default function MobileAppDevelopmentPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
           {alternatingContent.map((item, index) => (
-            <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+            <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                 <Image 
                   src={item.image.src}
@@ -207,7 +207,7 @@ export default function MobileAppDevelopmentPage() {
                 />
               </div>
               <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                 <p className="text-muted-foreground mb-6">{item.description}</p>
                 <ul className="space-y-3">
                   {item.points.map(point => (
@@ -233,7 +233,7 @@ export default function MobileAppDevelopmentPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us as Your App Development Partner?
             </h2>
-            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We build more than just apps; we build business solutions. Our team focuses on creating scalable, secure, and engaging mobile experiences that deliver a clear return on investment. We are your long-term partner, committed to your app's success from launch and beyond.
             </p>
              <Button asChild size="lg" variant="secondary" className="mt-8 group">
@@ -245,14 +245,14 @@ export default function MobileAppDevelopmentPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Your most common questions about our mobile app development process, answered.
             </p>
           </div>

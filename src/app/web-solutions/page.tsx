@@ -84,8 +84,8 @@ const alternatingContent = [
             "Intuitive interfaces for complex workflows."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-webapp/800/600",
-            hint: "colorful web application"
+            src: "https://picsum.photos/seed/colorful-professional-webapp/800/600",
+            hint: "colorful professional web application"
         }
     },
     {
@@ -98,8 +98,8 @@ const alternatingContent = [
             "Ongoing maintenance and security updates."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-cms/800/600",
-            hint: "colorful cms dashboard"
+            src: "https://picsum.photos/seed/colorful-professional-cms/800/600",
+            hint: "colorful professional cms dashboard"
         }
     }
 ];
@@ -140,12 +140,12 @@ export default function WebSolutionsPage() {
               </p>
                <div className="mt-8 md:mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
-                    src="/images/web-solutions.jpg"
+                    src="https://picsum.photos/seed/colorful-professional-web-solutions/1200/600"
                     alt="Modern Website Design on a laptop"
                     width={1200}
                     height={600}
                     className="rounded-lg shadow-xl"
-                    data-ai-hint="website design laptop"
+                    data-ai-hint="colorful professional website design laptop"
                 />
                </div>
             </div>
@@ -160,7 +160,7 @@ export default function WebSolutionsPage() {
           <div className="container mx-auto px-4">
               <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Built for the Modern Web</h2>
-                <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every website we create is built on a foundation of cutting-edge technology and best practices.</p>
+                <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">Every website we create is built on a foundation of cutting-edge technology and best practices.</p>
             </div>
              <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                 {coreFeatures.map((feature, index) => (
@@ -180,7 +180,7 @@ export default function WebSolutionsPage() {
         <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Proven Development Process</h2>
-                <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">A streamlined, transparent process that ensures your project is delivered on time and to the highest standards.</p>
+                <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">A streamlined, transparent process that ensures your project is delivered on time and to the highest standards.</p>
             </div>
             <div className="relative max-w-5xl mx-auto">
                 <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/50 hidden md:block"></div>
@@ -255,7 +255,7 @@ export default function WebSolutionsPage() {
             </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
                 <Image 
-                    src="https://picsum.photos/seed/colorful-professional-grid/800/700"
+                    src="https://picsum.photos/seed/colorful-professional-web-grid/800/700"
                     alt="Web Solutions Collage"
                     width={800}
                     height={700}
@@ -274,7 +274,7 @@ export default function WebSolutionsPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us?
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We are more than just developers; we are your strategic partners in digital growth.
             </p>
           </div>
@@ -299,7 +299,7 @@ export default function WebSolutionsPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-12">
+            <p className="text-base md:text-lg text-muted-foreground mb-12 px-4">
               Your questions about our web development process, answered.
             </p>
           </div>

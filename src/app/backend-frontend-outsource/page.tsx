@@ -65,8 +65,8 @@ const alternatingContent = [
             "Cross-browser compatibility and accessibility compliance."
         ],
         image: {
-            src: "https://picsum.photos/seed/frontend-professional/800/600",
-            hint: "frontend code"
+            src: "https://picsum.photos/seed/colorful-professional-frontend/800/600",
+            hint: "colorful frontend code"
         }
     },
     {
@@ -79,8 +79,8 @@ const alternatingContent = [
             "Third-party service and API integration."
         ],
         image: {
-            src: "https://picsum.photos/seed/backend-professional/800/600",
-            hint: "server room"
+            src: "https://picsum.photos/seed/colorful-professional-backend/800/600",
+            hint: "colorful server room"
         }
     }
 ];
@@ -89,8 +89,8 @@ export default function BackendFrontendOutsourcePage() {
   const pageData = {
     title: "Backend & Frontend Outsourcing",
     description: "Scale your development capabilities with our expert, dedicated teams.",
-    heroImage: "/images/backend-frontend-outsource.jpg",
-    heroHint: "dark coding abstract",
+    heroImage: "https://picsum.photos/seed/colorful-professional-outsource/1920/1080",
+    heroHint: "colorful dark coding abstract",
   };
 
   return (
@@ -105,18 +105,18 @@ export default function BackendFrontendOutsourcePage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Extend Your Team with Our Expertise</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Extend Your Team with Our Expertise</h2>
                 <p>
                  Finding, hiring, and retaining top development talent is a significant challenge. Our outsourcing services provide you with immediate access to a pool of highly skilled, pre-vetted backend and frontend developers who can seamlessly integrate with your team. Whether you need to augment your staff for a specific project, build a new product from scratch, or require a fully dedicated team for long-term development, we have a flexible and cost-effective solution for you.
                 </p>
@@ -127,7 +127,7 @@ export default function BackendFrontendOutsourcePage() {
                 </ul>
               </div>
 
-               <div className="bg-secondary p-8 rounded-lg">
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
                 <h3 className="text-2xl font-bold font-headline mb-6 text-center">Flexible Engagement Models</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {engagementModels.map(model => (
@@ -144,9 +144,9 @@ export default function BackendFrontendOutsourcePage() {
 
                <div>
                     <h3 className="text-2xl font-bold font-headline mb-6 text-center">Our Technology Expertise</h3>
-                    <div className="flex flex-wrap justify-center gap-4">
+                    <div className="flex flex-wrap justify-center gap-3 md:gap-4">
                         {technologies.map(tech => (
-                            <div key={tech} className="bg-secondary text-secondary-foreground font-medium py-2 px-4 rounded-lg">{tech}</div>
+                            <div key={tech} className="bg-secondary text-secondary-foreground font-medium py-2 px-3 md:px-4 rounded-lg text-sm md:text-base">{tech}</div>
                         ))}
                     </div>
                 </div>
@@ -161,28 +161,28 @@ export default function BackendFrontendOutsourcePage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/outsource-parallax-vibrant/1920/1080')`}}
-        data-ai-hint="global network"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-network/1920/1080')`}}
+        data-ai-hint="colorful global network"
       >
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">Full-Stack Capabilities</h2>
               <p className="text-lg text-muted-foreground">From pixel-perfect frontends to robust and scalable backends, our developers cover the entire stack.</p>
             </div>
             <div className="grid grid-cols-1 gap-8">
               <Card className="bg-card/70 backdrop-blur-sm p-6 flex items-center gap-6">
-                <Brush className="w-12 h-12 text-primary" />
+                <Brush className="w-10 h-10 md:w-12 md:h-12 text-primary" />
                 <div>
-                  <h3 className="text-2xl font-bold font-headline">Frontend Development</h3>
+                  <h3 className="text-xl md:text-2xl font-bold font-headline">Frontend Development</h3>
                   <p className="text-muted-foreground">Engaging user interfaces built with modern frameworks like React, Vue, and Angular.</p>
                 </div>
               </Card>
               <Card className="bg-card/70 backdrop-blur-sm p-6 flex items-center gap-6">
-                <Server className="w-12 h-12 text-primary" />
+                <Server className="w-10 h-10 md:w-12 md:h-12 text-primary" />
                 <div>
-                  <h3 className="text-2xl font-bold font-headline">Backend Development</h3>
+                  <h3 className="text-xl md:text-2xl font-bold font-headline">Backend Development</h3>
                   <p className="text-muted-foreground">Secure and scalable server-side solutions using Node.js, Python, Java, and more.</p>
                 </div>
               </Card>
@@ -191,10 +191,10 @@ export default function BackendFrontendOutsourcePage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -206,7 +206,7 @@ export default function BackendFrontendOutsourcePage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -231,7 +231,7 @@ export default function BackendFrontendOutsourcePage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Build Your Dream Team Today
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Stop the endless search for talent. Let us provide the skilled developers you need to bring your vision to life.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -245,7 +245,7 @@ export default function BackendFrontendOutsourcePage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -253,7 +253,7 @@ export default function BackendFrontendOutsourcePage() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mt-8 md:mt-0">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>

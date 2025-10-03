@@ -58,8 +58,8 @@ const features = [
     description:
       "Monitor visitor activity as it happens. Understand user behavior and react to trends instantly.",
     image: {
-      src: "https://picsum.photos/seed/real-time/600/400",
-      hint: "live data",
+      src: "https://picsum.photos/seed/colorful-professional-real-time/600/400",
+      hint: "colorful professional live data",
     },
   },
   {
@@ -68,8 +68,8 @@ const features = [
     description:
       "Create personalized dashboards with the metrics that matter most to your business. No clutter, just clarity.",
     image: {
-      src: "https://picsum.photos/seed/dashboard-ui/600/400",
-      hint: "data dashboard",
+      src: "https://picsum.photos/seed/colorful-professional-dashboard-ui/600/400",
+      hint: "colorful professional data dashboard",
     },
   },
   {
@@ -78,8 +78,8 @@ const features = [
     description:
       "Segment your audience with powerful filters. Analyze data by demographics, location, behavior, and more.",
     image: {
-      src: "https://picsum.photos/seed/data-filter/600/400",
-      hint: "data filter",
+      src: "https://picsum.photos/seed/colorful-professional-data-filter/600/400",
+      hint: "colorful professional data filter",
     },
   },
   {
@@ -88,8 +88,8 @@ const features = [
     description:
       "Get a deep understanding of your visitors. Learn where they come from and what they're looking for.",
     image: {
-      src: "https://picsum.photos/seed/audience/600/400",
-      hint: "audience analysis",
+      src: "https://picsum.photos/seed/colorful-professional-audience/600/400",
+      hint: "colorful professional audience analysis",
     },
   },
   {
@@ -98,8 +98,8 @@ const features = [
     description:
       "Track goals and funnels to optimize your conversion rates and maximize your ROI.",
     image: {
-      src: "https://picsum.photos/seed/conversion/600/400",
-      hint: "sales funnel",
+      src: "https://picsum.photos/seed/colorful-professional-conversion/600/400",
+      hint: "colorful professional sales funnel",
     },
   },
   {
@@ -108,8 +108,8 @@ const features = [
     description:
       "Keep an eye on your site's performance with detailed reports on page speed and user experience.",
     image: {
-      src: "https://picsum.photos/seed/performance/600/400",
-      hint: "performance chart",
+      src: "https://picsum.photos/seed/colorful-professional-performance/600/400",
+      hint: "colorful professional performance chart",
     },
   },
 ];
@@ -121,14 +121,15 @@ export default function XtrackPage() {
       <section
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center"
         style={{
-          backgroundImage: `url('/images/xtrack.jpg')`,
+          backgroundImage: `url('https://picsum.photos/seed/colorful-professional-xtrack-hero/1920/1080')`,
         }}
       >
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-20 px-4 container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
             Meet XTrack
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             The Ultimate Analytics Solution to Understand, Engage, and Grow Your
             Audience.
           </p>
@@ -136,13 +137,13 @@ export default function XtrackPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 md:py-32 relative bg-background">
+      <section className="py-16 md:py-32 relative bg-background">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Clarity in Every Click
             </h2>
-            <p className="text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               XTrack is more than just an analytics tool; it's your strategic
               partner. We provide you with the insights you need to make
               smarter decisions, create better experiences, and drive
@@ -154,13 +155,13 @@ export default function XtrackPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 md:py-32 bg-secondary/50 relative">
+      <section className="py-16 md:py-32 bg-secondary/50 relative">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Powerful Features, Simply Presented
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               Everything you need to become a data-driven powerhouse.
             </p>
           </div>
@@ -213,7 +214,7 @@ export default function XtrackPage() {
           <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">
             Data-Driven Decisions, Made Easy
           </h2>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl max-w-3xl mx-auto px-4">
             Our intuitive interface makes complex data accessible to everyone
             on your team, fostering a culture of informed decision-making.
           </p>
@@ -221,13 +222,13 @@ export default function XtrackPage() {
       </section>
 
       {/* Dashboard Section */}
-      <section className="py-20 md:py-32 relative bg-background">
+      <section className="py-16 md:py-32 relative bg-background">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
               Your Data, Beautifully Visualized
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground px-4">
               Interact with your data in ways you never thought possible. Our
               stunning visualizations turn numbers into narratives.
             </p>
@@ -310,9 +311,10 @@ export default function XtrackPage() {
       <section
         className="relative min-h-[50vh] bg-cover bg-center flex items-center"
         style={{
-          backgroundImage: `url('https://picsum.photos/seed/xtrack-parallax2/1920/1080')`,
+          backgroundImage: `url('https://picsum.photos/seed/colorful-professional-xtrack-parallax2/1920/1080')`,
         }}
       >
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 container mx-auto px-4 py-20 text-white">
           <div className="max-w-2xl">
             <ShieldCheck className="h-12 w-12 text-primary mb-4" />
@@ -327,13 +329,13 @@ export default function XtrackPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-16 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Unlock Your Growth Potential?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Start your journey with XTrack today and see your business from a
               whole new perspective.
             </p>

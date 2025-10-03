@@ -17,10 +17,10 @@ const servicesData = [
       "Campaign Creation + Execution",
       "Social Listening & Brand Positioning",
     ],
-    image: "https://ik.imagekit.io/ggelm1lwa/social%20media%20marketing.jpg?updatedAt=1759469318952",
-    imageAlt: "A person analyzing social media trends on a screen with yellow accents.",
+    image: "https://picsum.photos/seed/colorful-professional-social-media/600/400",
+    imageAlt: "A person analyzing social media trends on a screen with colorful accents.",
     link: "/social-media",
-    imageHint: "yellow social media",
+    imageHint: "colorful professional social media",
   },
   {
     id: "branding",
@@ -32,10 +32,10 @@ const servicesData = [
       "Full Production: Photo & Video Shoots",
       "Brand Identity & Logo Design",
     ],
-    image: "https://picsum.photos/seed/colorful-branding-moodboard/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-branding-moodboard/600/400",
     imageAlt: "A colorful branding moodboard with color palettes and logos.",
     link: "/creative-branding",
-    imageHint: "colorful branding moodboard",
+    imageHint: "colorful professional branding moodboard",
   },
   {
     id: "b2b",
@@ -47,7 +47,7 @@ const servicesData = [
       "Marketing & Sales Analytics Integration",
       "LinkedIn & Email Marketing Campaigns",
     ],
-    image: "https://picsum.photos/seed/professional-b2b-strategy/600/400",
+    image: "https://picsum.photos/seed/professional-b2b-meeting/600/400",
     imageAlt: "Professionals in a meeting discussing B2B strategy.",
     link: "/b2b",
     imageHint: "professional business strategy",
@@ -62,10 +62,10 @@ const servicesData = [
       "PPC Campaign Management (Google & Bing)",
       "Content Marketing & Link Building",
     ],
-    image: "https://picsum.photos/seed/yellow-seo-growth/600/400",
-    imageAlt: "A graph showing upward growth from search engine marketing with yellow highlights.",
+    image: "https://picsum.photos/seed/colorful-professional-seo-growth/600/400",
+    imageAlt: "A graph showing upward growth from search engine marketing with colorful highlights.",
     link: "/search-marketing",
-    imageHint: "yellow seo growth",
+    imageHint: "colorful professional seo growth",
   },
     {
     id: "video-production",
@@ -77,7 +77,7 @@ const servicesData = [
       "Animation & Motion Graphics",
       "Corporate Videos & Commercials",
     ],
-    image: "https://picsum.photos/seed/professional-video-camera/600/400",
+    image: "https://picsum.photos/seed/professional-camera-setup/600/400",
     imageAlt: "A professional video camera on a set.",
     link: "/video-production",
     imageHint: "professional video camera",
@@ -92,10 +92,10 @@ const servicesData = [
       "Crisis Response & Management",
       "Positive Content Creation & Promotion",
     ],
-    image: "https://picsum.photos/seed/vibrant-reputation/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-reputation/600/400",
     imageAlt: "A concept image of a shield protecting a brand's reputation with vibrant colors.",
     link: "/online-reputation-management",
-    imageHint: "vibrant brand protection",
+    imageHint: "colorful professional brand protection",
   },
   {
     id: "ecommerce",
@@ -107,10 +107,10 @@ const servicesData = [
       "Payment Gateway Integration",
       "Conversion Rate Optimization (CRO)",
     ],
-    image: "https://picsum.photos/seed/colorful-ecommerce-code/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-ecommerce-code/600/400",
     imageAlt: "Colorful code on a screen representing e-commerce development.",
     link: "/ecommerce-development",
-    imageHint: "colorful ecommerce code",
+    imageHint: "colorful professional ecommerce code",
   },
   {
     id: "web-development",
@@ -122,10 +122,10 @@ const servicesData = [
       "Website Maintenance & Support",
       "Performance Optimization",
     ],
-    image: "https://picsum.photos/seed/yellow-web-design/600/400",
-    imageAlt: "UI/UX design sketches for a website with yellow elements.",
+    image: "https://picsum.photos/seed/colorful-professional-web-design/600/400",
+    imageAlt: "UI/UX design sketches for a website with colorful elements.",
     link: "/web-solutions",
-    imageHint: "yellow website design",
+    imageHint: "colorful professional website design",
   },
   {
     id: "mobile-app-development",
@@ -137,10 +137,10 @@ const servicesData = [
       "Backend Development & API Integration",
       "App Store Submission & Optimization",
     ],
-    image: "https://picsum.photos/seed/colorful-mobile-app/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-mobile-app/600/400",
     imageAlt: "A mobile phone displaying a colorful and modern app interface.",
     link: "/mobile-app-development",
-    imageHint: "colorful mobile app",
+    imageHint: "colorful professional mobile app",
   },
   {
     id: "augmented-reality",
@@ -152,10 +152,10 @@ const servicesData = [
       "Interactive Product Visualization",
       "AR for Marketing & Events",
     ],
-    image: "https://picsum.photos/seed/yellow-ar-tech/600/400",
-    imageAlt: "A person using a smartphone to view a yellow augmented reality object.",
+    image: "https://picsum.photos/seed/colorful-professional-ar-tech/600/400",
+    imageAlt: "A person using a smartphone to view a colorful augmented reality object.",
     link: "/augmented-reality",
-    imageHint: "yellow augmented reality",
+    imageHint: "colorful professional augmented reality",
   },
   {
     id: "performance-marketing",
@@ -167,10 +167,10 @@ const servicesData = [
       "Conversion Rate Optimization (CRO)",
       "Data-driven Campaign Analysis",
     ],
-    image: "https://picsum.photos/seed/vibrant-performance-charts/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-performance-charts/600/400",
     imageAlt: "A vibrant dashboard with charts showing marketing performance.",
     link: "/performance-marketing",
-    imageHint: "vibrant marketing analytics",
+    imageHint: "colorful professional marketing analytics",
   },
   {
     id: "rapid-website-development",
@@ -182,10 +182,10 @@ const servicesData = [
       "Perfect for Startups & Events",
       "Fast Turnaround Times",
     ],
-    image: "https://picsum.photos/seed/colorful-fast-development/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-fast-development/600/400",
     imageAlt: "A colorful rocket launching, symbolizing rapid development.",
     link: "/rapid-website-development",
-    imageHint: "colorful fast launch",
+    imageHint: "colorful professional fast launch",
   },
   {
     id: "backend-frontend-outsource",
@@ -197,10 +197,10 @@ const servicesData = [
       "API Development & Integration",
       "Flexible Engagement Models",
     ],
-    image: "https://picsum.photos/seed/professional-coding-team/600/400",
-    imageAlt: "A team of developers collaborating on code in a professional setting.",
+    image: "https://picsum.photos/seed/professional-coding-team-colorful/600/400",
+    imageAlt: "A team of developers collaborating on code in a professional setting with colorful highlights.",
     link: "/backend-frontend-outsource",
-    imageHint: "professional development team",
+    imageHint: "professional development team colorful",
   },
   {
     id: "whatsapp-chatbots",
@@ -212,10 +212,10 @@ const servicesData = [
       "E-commerce Integration",
       "Broadcast & Notification Automation",
     ],
-    image: "https://picsum.photos/seed/yellow-chatbot-interface/600/400",
-    imageAlt: "An illustration of a chatbot conversation interface with yellow accents.",
+    image: "https://picsum.photos/seed/colorful-professional-chatbot-interface/600/400",
+    imageAlt: "An illustration of a chatbot conversation interface with colorful accents.",
     link: "/whatsapp-chatbots",
-    imageHint: "yellow chatbot conversation",
+    imageHint: "colorful professional chatbot conversation",
   },
   {
     id: "digital-business-consulting",
@@ -227,10 +227,10 @@ const servicesData = [
       "Digital Roadmap Development",
       "Improving Operational Efficiency",
     ],
-    image: "https://picsum.photos/seed/professional-business-consulting/600/400",
-    imageAlt: "A consultant presenting a strategy to a client in a professional office.",
+    image: "https://picsum.photos/seed/professional-business-consulting-colorful/600/400",
+    imageAlt: "A consultant presenting a strategy to a client in a professional office with colorful charts.",
     link: "/digital-business-consulting",
-    imageHint: "professional business consulting",
+    imageHint: "professional business consulting colorful",
   },
   {
     id: "digital-branding",
@@ -242,10 +242,10 @@ const servicesData = [
       "Audience Persona Development",
       "Consistent Multi-channel Branding",
     ],
-    image: "https://picsum.photos/seed/colorful-digital-brand/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-digital-brand/600/400",
     imageAlt: "A colorful digital collage representing a brand's online identity.",
     link: "/digital-branding",
-    imageHint: "colorful digital identity",
+    imageHint: "colorful professional digital identity",
   },
   {
     id: "digital-analytics",
@@ -257,10 +257,10 @@ const servicesData = [
       "Attribution Modeling",
       "Actionable Insight Reporting",
     ],
-    image: "https://picsum.photos/seed/yellow-analytics-dashboard/600/400",
-    imageAlt: "A complex data analytics dashboard on a screen with yellow graphs.",
+    image: "https://picsum.photos/seed/colorful-professional-analytics-dashboard/600/400",
+    imageAlt: "A complex data analytics dashboard on a screen with colorful graphs.",
     link: "/xtrack",
-    imageHint: "yellow analytics dashboard",
+    imageHint: "colorful professional analytics dashboard",
   },
   {
     id: "digital-transformation",
@@ -272,10 +272,10 @@ const servicesData = [
       "Data-driven Culture Implementation",
       "Change Management & Training",
     ],
-    image: "https://picsum.photos/seed/vibrant-business-modernization/600/400",
+    image: "https://picsum.photos/seed/colorful-professional-business-modernization/600/400",
     imageAlt: "A vibrant abstract image showing digital transformation concepts.",
     link: "/digital-transformation",
-    imageHint: "vibrant digital business",
+    imageHint: "colorful professional digital business",
   },
 ];
 
@@ -304,19 +304,19 @@ export default function ServicesPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
-          src="/images/services.jpg"
+          src="https://picsum.photos/seed/colorful-professional-services-hero/1920/1080"
           alt="Services background"
           fill
           className="object-cover"
           priority
-          data-ai-hint="yellow creative workspace"
+          data-ai-hint="colorful professional creative workspace"
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">
             Our Services
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             A complete suite of digital services to elevate your brand.
           </p>
         </div>
@@ -352,7 +352,7 @@ export default function ServicesPage() {
                       : "md:items-start slide-in-from-right-10"
                   }`}
                 >
-                  <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">
+                  <h2 className="font-headline text-2xl md:text-4xl font-bold tracking-tight mb-6 text-primary">
                     {service.title}
                   </h2>
                   <ul className="space-y-3 mb-8">
@@ -386,7 +386,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Partner With Us?
             </h2>
-            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We are more than just a service provider; we are your dedicated partner in growth. Our approach is built on a foundation of collaboration, transparency, and a relentless pursuit of excellence.
             </p>
           </div>
@@ -409,7 +409,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Start Your Project?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Let's discuss how our services can be tailored to meet your unique goals. Contact us today for a free consultation and let's build something amazing together.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -426,5 +426,3 @@ export default function ServicesPage() {
     </>
   );
 }
-
-    

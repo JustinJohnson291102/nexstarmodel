@@ -68,8 +68,8 @@ const alternatingContent = [
             "Vendor selection and negotiation support."
         ],
         image: {
-            src: "https://picsum.photos/seed/tech-planning-professional/800/600",
-            hint: "technology strategy"
+            src: "https://picsum.photos/seed/colorful-professional-tech-planning/800/600",
+            hint: "colorful professional technology strategy"
         }
     },
     {
@@ -82,8 +82,8 @@ const alternatingContent = [
             "Data-driven marketing and sales funnel optimization."
         ],
         image: {
-            src: "https://picsum.photos/seed/data-growth-professional/800/600",
-            hint: "data analytics"
+            src: "https://picsum.photos/seed/colorful-professional-data-growth/800/600",
+            hint: "colorful professional data analytics"
         }
     }
 ];
@@ -99,8 +99,8 @@ export default function DigitalBusinessConsultingPage() {
   const pageData = {
     title: "Digital Business Consulting",
     description: "Navigate the complexities of the digital landscape with our expert guidance and strategic insights.",
-    heroImage: "/images/digital-business-consulting.jpg",
-    heroHint: "business consulting",
+    heroImage: "https://picsum.photos/seed/colorful-professional-consulting-hero/1920/1080",
+    heroHint: "colorful professional business consulting",
   };
 
   return (
@@ -115,22 +115,22 @@ export default function DigitalBusinessConsultingPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Your Strategic Partner in Digital Growth</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Your Strategic Partner in Digital Growth</h2>
                 <p>
                  In today's fast-paced market, having a clear digital strategy is crucial for success. Our digital business consulting services provide you with the expertise and roadmap needed to thrive. We help you navigate digital transformation, choose the right technologies, and optimize your operations for maximum efficiency and growth. We act as your trusted advisors, turning challenges into opportunities.
                 </p>
-                <ul className="space-y-4 mt-6">
+                 <ul className="space-y-4 mt-6">
                     <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Gain clarity and a competitive edge in your market.</span></li>
                     <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Make informed decisions backed by data and expert analysis.</span></li>
                     <li className="flex items-start"><CheckCircle className="h-6 w-6 text-primary mr-3 mt-1" /> <span>Optimize your technology investments for maximum ROI.</span></li>
@@ -140,7 +140,7 @@ export default function DigitalBusinessConsultingPage() {
                 <h3 className="text-2xl font-bold font-headline text-center">Our Consulting Services</h3>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {consultingServices.map(service => (
-                        <Card key={service.title} className="p-6 flex gap-6 items-start">
+                        <Card key={service.title} className="p-6 flex gap-4 md:gap-6 items-start">
                            <div className="bg-primary/10 text-primary p-3 rounded-lg mt-1">
                              <service.icon className="w-6 h-6" />
                            </div>
@@ -162,14 +162,14 @@ export default function DigitalBusinessConsultingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/consulting-parallax-vibrant/1920/1080')` }}
-        data-ai-hint="colorful business strategy"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-consulting-parallax/1920/1080')` }}
+        data-ai-hint="colorful professional business strategy"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-white">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Core Consulting Pillars</h2>
-            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">A holistic approach to navigating the digital landscape.</p>
+            <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto px-4">A holistic approach to navigating the digital landscape.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {consultingFocus.map((focus, index) => (
@@ -182,10 +182,10 @@ export default function DigitalBusinessConsultingPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+       <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -197,7 +197,7 @@ export default function DigitalBusinessConsultingPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -222,7 +222,7 @@ export default function DigitalBusinessConsultingPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Unlock Your Business Potential
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Let's work together to create a digital strategy that drives growth and positions you as a leader in your industry.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -236,7 +236,7 @@ export default function DigitalBusinessConsultingPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -244,7 +244,7 @@ export default function DigitalBusinessConsultingPage() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mt-8">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>

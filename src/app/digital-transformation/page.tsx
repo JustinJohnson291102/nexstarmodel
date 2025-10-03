@@ -69,8 +69,8 @@ const alternatingContent = [
             "Automated reporting and data entry solutions."
         ],
         image: {
-            src: "https://picsum.photos/seed/automation-professional/800/600",
-            hint: "business automation"
+            src: "https://picsum.photos/seed/colorful-professional-automation/800/600",
+            hint: "colorful professional business automation"
         }
     },
     {
@@ -83,8 +83,8 @@ const alternatingContent = [
             "Ongoing cloud management and cost optimization."
         ],
         image: {
-            src: "https://picsum.photos/seed/cloud-infra-professional/800/600",
-            hint: "cloud infrastructure"
+            src: "https://picsum.photos/seed/colorful-professional-cloud-infra/800/600",
+            hint: "colorful professional cloud infrastructure"
         }
     }
 ];
@@ -99,8 +99,8 @@ export default function DigitalTransformationPage() {
   const pageData = {
     title: "Digital Transformation",
     description: "Modernize your operations, automate processes, and embrace a data-driven culture to stay ahead of the curve.",
-    heroImage: "/images/digital-transformation.jpg",
-    heroHint: "abstract digital transformation",
+    heroImage: "https://picsum.photos/seed/colorful-professional-dt-hero/1920/1080",
+    heroHint: "colorful professional abstract digital transformation",
   };
 
   return (
@@ -115,18 +115,18 @@ export default function DigitalTransformationPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Evolve Your Business for the Digital Age</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Evolve Your Business for the Digital Age</h2>
                 <p>
                  To stay competitive in a rapidly changing world, businesses must adapt. Digital transformation is no longer an option—it's a necessity. Our services help you shed outdated legacy systems, automate time-consuming manual processes, and leverage the power of cloud computing and data analytics. We guide you through every step of the journey, from strategy and planning to implementation and change management, ensuring a successful transition to a more agile, efficient, and resilient organization.
                 </p>
@@ -138,7 +138,7 @@ export default function DigitalTransformationPage() {
                 </ul>
               </div>
 
-               <div className="bg-secondary p-8 rounded-lg">
+               <div className="bg-secondary p-6 md:p-8 rounded-lg">
                     <h3 className="text-2xl font-bold font-headline mb-6 text-center">Our Core Transformation Services</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {transformationServices.map((service) => (
@@ -162,14 +162,14 @@ export default function DigitalTransformationPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/dt-parallax-vibrant/1920/1080')`}}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-dt-parallax/1920/1080')`}}
         data-ai-hint="colorful data visualization"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">The Impact of Transformation</h2>
-            <p className="text-lg text-white/80 mt-4">Driving measurable improvements across your business.</p>
+            <p className="text-lg text-white/80 mt-4 px-4">Driving measurable improvements across your business.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {impactStats.map((stat, index) => (
@@ -182,10 +182,10 @@ export default function DigitalTransformationPage() {
         </div>
       </section>
       
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -197,7 +197,7 @@ export default function DigitalTransformationPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -222,7 +222,7 @@ export default function DigitalTransformationPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Future-Proof Your Business?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               The future is digital. Let us help you build a more agile, resilient, and competitive business. Contact us to begin your transformation journey.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -236,7 +236,7 @@ export default function DigitalTransformationPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -244,7 +244,7 @@ export default function DigitalTransformationPage() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mt-8">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>

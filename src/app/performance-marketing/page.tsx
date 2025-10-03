@@ -76,8 +76,8 @@ const alternatingContent = [
             "Post-purchase loyalty and retention programs."
         ],
         image: {
-            src: "https://picsum.photos/seed/advertising-funnel/800/600",
-            hint: "marketing funnel"
+            src: "https://picsum.photos/seed/colorful-professional-advertising-funnel/800/600",
+            hint: "colorful professional marketing funnel"
         }
     },
     {
@@ -90,8 +90,8 @@ const alternatingContent = [
             "Optimization of checkout and form submission processes."
         ],
         image: {
-            src: "https://picsum.photos/seed/conversion-optimization-chart/800/600",
-            hint: "conversion chart"
+            src: "https://picsum.photos/seed/colorful-professional-conversion-chart/800/600",
+            hint: "colorful professional conversion chart"
         }
     }
 ];
@@ -120,12 +120,12 @@ export default function PerformanceMarketingPage() {
     <>
       <section 
         className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('/images/performance-marketing.jpg')`}}
-        data-ai-hint="colorful data analytics"
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-performance-hero/1920/1080')`}}
+        data-ai-hint="colorful professional data analytics"
       >
         <div className="absolute inset-0 bg-black/60" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2">
               <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-white animate-in fade-in slide-in-from-left-10 duration-700">
                 Performance Marketing
@@ -133,14 +133,14 @@ export default function PerformanceMarketingPage() {
               <p className="text-lg md:text-xl text-white/80 max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
                  Drive growth and maximize your return on investment with our data-driven performance marketing strategies. We create, manage, and optimize campaigns that deliver measurable results.
               </p>
-               <div className="mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+               <div className="mt-8 md:mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
-                    src="https://picsum.photos/seed/performance-hero/1200/600"
+                    src="https://picsum.photos/seed/colorful-professional-marketing-dashboard/1200/600"
                     alt="Dashboard showing marketing performance"
                     width={1200}
                     height={600}
                     className="rounded-lg shadow-xl"
-                    data-ai-hint="marketing analytics dashboard"
+                    data-ai-hint="colorful professional marketing analytics dashboard"
                 />
                </div>
             </div>
@@ -151,13 +151,13 @@ export default function PerformanceMarketingPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 md:mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">The Benefits of Performance Marketing</h2>
-                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">An approach focused on action, measurement, and results.</p>
+                <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto px-4">An approach focused on action, measurement, and results.</p>
             </div>
-             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+             <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {benefits.map((benefit, index) => (
                     <div key={index} className="flex flex-col items-center text-center p-6 bg-card/50 rounded-lg border border-border/20 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index*100}ms`}}>
                         <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">
@@ -171,8 +171,8 @@ export default function PerformanceMarketingPage() {
           </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-32 bg-background">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">What's Included in Our Performance Marketing Package?</h2>
                 <p className="text-lg text-muted-foreground mb-8">
@@ -194,21 +194,21 @@ export default function PerformanceMarketingPage() {
             </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
                 <Image 
-                    src="https://picsum.photos/seed/marketing-funnel/800/900"
+                    src="https://picsum.photos/seed/colorful-professional-marketing-funnel/800/900"
                     alt="Marketing Funnel Diagram"
                     width={800}
                     height={900}
                     className="rounded-lg shadow-xl"
-                    data-ai-hint="marketing funnel diagram"
+                    data-ai-hint="colorful professional marketing funnel diagram"
                 />
              </div>
           </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -220,7 +220,7 @@ export default function PerformanceMarketingPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -237,14 +237,14 @@ export default function PerformanceMarketingPage() {
       </section>
       
       <section 
-        className="py-20 md:py-24 bg-background"
+        className="py-16 md:py-24 bg-background"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Choose Us for Performance Marketing?
             </h2>
-            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We're not just ad managers; we're your strategic growth partners. We dig deep into your data to unlock insights that drive real business impact.
             </p>
           </div>
@@ -269,7 +269,7 @@ export default function PerformanceMarketingPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Boost Your Performance?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Let's build a data-driven strategy that achieves your business objectives and delivers a powerful return on investment. Contact us for a free consultation.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -283,14 +283,14 @@ export default function PerformanceMarketingPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 px-4">
               Your top questions about our performance marketing services, answered.
             </p>
           </div>

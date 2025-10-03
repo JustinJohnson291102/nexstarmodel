@@ -21,8 +21,8 @@ const b2bServices = [
     title: "Account-Based Marketing (ABM)",
     description: "Target high-value accounts with personalized campaigns that treat individual accounts as markets in their own right.",
     image: {
-      src: "https://picsum.photos/seed/colorful-abm/600/400",
-      hint: "colorful marketing target",
+      src: "https://picsum.photos/seed/colorful-professional-abm/600/400",
+      hint: "colorful professional marketing target",
     }
   },
   {
@@ -30,8 +30,8 @@ const b2bServices = [
     title: "Lead Generation & Nurturing",
     description: "Build a robust pipeline of qualified leads and nurture them through the sales funnel with targeted content and automation.",
     image: {
-      src: "https://picsum.photos/seed/yellow-lead-gen/600/400",
-      hint: "yellow sales funnel",
+      src: "https://picsum.photos/seed/colorful-professional-lead-gen/600/400",
+      hint: "colorful professional sales funnel",
     }
   },
   {
@@ -39,8 +39,8 @@ const b2bServices = [
     title: "B2B Content Strategy",
     description: "Establish thought leadership and attract your target audience with valuable, relevant, and consistent content.",
      image: {
-      src: "https://picsum.photos/seed/vibrant-content-strategy/600/400",
-      hint: "vibrant content creation",
+      src: "https://picsum.photos/seed/colorful-professional-content-strategy/600/400",
+      hint: "colorful professional content creation",
     }
   },
   {
@@ -48,7 +48,7 @@ const b2bServices = [
     title: "Marketing & Sales Analytics",
     description: "Leverage data to optimize your marketing efforts, measure ROI, and align your sales and marketing teams.",
      image: {
-      src: "https://picsum.photos/seed/professional-analytics/600/400",
+      src: "https://picsum.photos/seed/professional-analytics-dashboard/600/400",
       hint: "professional data analytics",
     }
   },
@@ -85,8 +85,8 @@ const alternatingContent = [
             "Sales and marketing team alignment for seamless follow-up."
         ],
         image: {
-            src: "https://picsum.photos/seed/yellow-b2b-abm/800/600",
-            hint: "yellow marketing focus"
+            src: "https://picsum.photos/seed/colorful-professional-b2b-abm/800/600",
+            hint: "colorful professional marketing focus"
         }
     },
     {
@@ -99,8 +99,8 @@ const alternatingContent = [
             "Content distribution and promotion strategies."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-b2b-content/800/600",
-            hint: "colorful content writing"
+            src: "https://picsum.photos/seed/colorful-professional-b2b-content/800/600",
+            hint: "colorful professional content writing"
         }
     }
 ];
@@ -119,7 +119,7 @@ export default function B2BPage() {
         className="relative h-[60vh] md:h-[70vh] w-full"
       >
        <Image
-          src="https://ik.imagekit.io/ggelm1lwa/banner-b2b-desk%20(1).jpg?updatedAt=1759474436101"
+          src="https://picsum.photos/seed/colorful-professional-b2b-banner/1920/1080"
           alt="B2B Marketing Banner"
           fill
           className="object-cover"
@@ -136,7 +136,7 @@ export default function B2BPage() {
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Our Core B2B Services
             </h2>
-            <p className="text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We craft bespoke marketing strategies that connect you with your ideal customers, shorten sales cycles, and deliver measurable results. Our approach is built on a deep understanding of your industry, your business objectives, and your customers' needs.
             </p>
           </div>
@@ -179,8 +179,8 @@ export default function B2BPage() {
 
       <section
         className="py-20 md:py-24 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://picsum.photos/seed/yellow-b2b-parallax/1920/1080')"}}
-        data-ai-hint="yellow business success"
+        style={{backgroundImage: "url('https://picsum.photos/seed/colorful-professional-b2b-parallax/1920/1080')"}}
+        data-ai-hint="colorful professional business success"
       >
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
@@ -196,9 +196,9 @@ export default function B2BPage() {
       </section>
 
       <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 space-y-20 md:space-y-24">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -210,7 +210,7 @@ export default function B2BPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -230,7 +230,7 @@ export default function B2BPage() {
         className="relative py-16 md:py-24 bg-secondary"
       >
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Data-Driven Insights</h2>
                <p className="text-lg text-muted-foreground mb-8">
@@ -287,7 +287,7 @@ export default function B2BPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Why Our B2B Approach is Different
             </h2>
-            <p className="text-lg text-primary-foreground/90 mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/90 mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               We go beyond conventional marketing tactics to build meaningful relationships and drive sustainable growth.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -324,7 +324,7 @@ export default function B2BPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Ready to Elevate Your B2B Strategy?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Let's talk about how we can help you achieve your business goals. Whether you're looking to generate more leads, increase brand awareness, or drive revenue, our team of B2B marketing experts is here to help.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -340,5 +340,3 @@ export default function B2BPage() {
     </>
   );
 }
-
-    

@@ -68,8 +68,8 @@ const alternatingContent = [
             "Digital asset optimization for different channels."
         ],
         image: {
-            src: "https://picsum.photos/seed/digital-experience-vibrant/800/600",
-            hint: "digital interface"
+            src: "https://picsum.photos/seed/colorful-professional-digital-experience/800/600",
+            hint: "colorful professional digital interface"
         }
     },
     {
@@ -82,25 +82,25 @@ const alternatingContent = [
             "Content distribution strategy to maximize reach."
         ],
         image: {
-            src: "https://picsum.photos/seed/brand-content-vibrant/800/600",
-            hint: "content creation"
+            src: "https://picsum.photos/seed/colorful-professional-brand-content/800/600",
+            hint: "colorful professional content creation"
         }
     }
 ];
 
 const touchpoints = [
-    { name: "Website", image: { src: "https://picsum.photos/seed/touchpoint-web-professional/400/300", hint: "website design" } },
-    { name: "Social Media", image: { src: "https://picsum.photos/seed/touchpoint-social-professional/400/300", hint: "social media app" } },
-    { name: "Email", image: { src: "https://picsum.photos/seed/touchpoint-email-professional/400/300", hint: "email marketing" } },
-    { name: "Digital Ads", image: { src: "https://picsum.photos/seed/touchpoint-ads-professional/400/300", hint: "online advertising" } },
+    { name: "Website", image: { src: "https://picsum.photos/seed/colorful-touchpoint-web/400/300", hint: "colorful website design" } },
+    { name: "Social Media", image: { src: "https://picsum.photos/seed/colorful-touchpoint-social/400/300", hint: "colorful social media app" } },
+    { name: "Email", image: { src: "https://picsum.photos/seed/colorful-touchpoint-email/400/300", hint: "colorful email marketing" } },
+    { name: "Digital Ads", image: { src: "https://picsum.photos/seed/colorful-touchpoint-ads/400/300", hint: "colorful online advertising" } },
 ];
 
 export default function DigitalBrandingPage() {
   const pageData = {
     title: "Digital Branding",
     description: "Craft a consistent and compelling brand identity across all your digital touchpoints.",
-    heroImage: "/images/digital-branding.jpg",
-    heroHint: "digital identity",
+    heroImage: "https://picsum.photos/seed/colorful-professional-digital-identity/1920/1080",
+    heroHint: "colorful professional digital identity",
   };
 
   return (
@@ -115,18 +115,18 @@ export default function DigitalBrandingPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-16 items-start">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold font-headline mb-4">Build a Brand That Thrives Online</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Build a Brand That Thrives Online</h2>
                 <p>
                  In the digital world, your brand is more than a logo; it's an experience. It's the sum of every interaction a customer has with you online. Our digital branding services focus on creating a cohesive and powerful brand presence across your website, social media, and all other digital channels. We develop your online brand identity, content strategy, and digital brand guidelines to ensure you connect with your audience in a meaningful and memorable way.
                 </p>
@@ -141,7 +141,7 @@ export default function DigitalBrandingPage() {
                 <h3 className="text-2xl font-bold font-headline text-center">Our Digital Branding Services</h3>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {digitalBrandingServices.map(service => (
-                        <Card key={service.title} className="p-6 flex gap-6 items-start bg-secondary">
+                        <Card key={service.title} className="p-6 flex gap-4 md:gap-6 items-start bg-secondary">
                            <div className="bg-primary/10 text-primary p-3 rounded-lg mt-1">
                              <service.icon className="w-6 h-6" />
                            </div>
@@ -164,14 +164,14 @@ export default function DigitalBrandingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/digital-brand-parallax-vibrant/1920/1080')` }}
+        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-abstract-pattern/1920/1080')` }}
         data-ai-hint="colorful abstract pattern"
       >
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline">Consistency Across All Touchpoints</h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">We ensure your brand looks and feels the same everywhere your customers interact with it.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto px-4">We ensure your brand looks and feels the same everywhere your customers interact with it.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {touchpoints.map((item, index) => (
@@ -189,10 +189,10 @@ export default function DigitalBrandingPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 space-y-24">
+      <section className="py-16 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 space-y-16 md:space-y-24">
             {alternatingContent.map((item, index) => (
-                <div key={item.title} className="grid md:grid-cols-2 gap-16 items-center">
+                <div key={item.title} className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
                         <Image 
                             src={item.image.src}
@@ -204,7 +204,7 @@ export default function DigitalBrandingPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-3xl font-bold font-headline mb-4">{item.title}</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
@@ -229,7 +229,7 @@ export default function DigitalBrandingPage() {
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
               Define Your Digital Identity
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100">
+            <p className="text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
               Ready to build a brand that commands attention online? Let's craft a digital identity that sets you apart.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
@@ -243,7 +243,7 @@ export default function DigitalBrandingPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 bg-secondary">
+       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
              <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -251,7 +251,7 @@ export default function DigitalBrandingPage() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mt-8">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>

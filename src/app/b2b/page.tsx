@@ -116,18 +116,15 @@ export default function B2BPage() {
   return (
     <>
       <section 
-        className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/banner-b2b-desk%20(1).jpg?updatedAt=1759474436101')` }}
+        className="relative h-[60vh] md:h-[70vh] w-full"
       >
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
-           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
-              B2B Marketing That Drives Results
-            </h1>
-            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Fueling Growth with Strategic Connections and Data-Driven Insights
-            </p>
-        </div>
+       <Image
+          src="https://ik.imagekit.io/ggelm1lwa/banner-b2b-desk%20(1).jpg?updatedAt=1759474436101"
+          alt="B2B Marketing Banner"
+          fill
+          className="object-cover"
+          priority
+        />
       </section>
 
       <section 
@@ -342,3 +339,5 @@ export default function B2BPage() {
     </>
   );
 }
+
+    

@@ -152,8 +152,8 @@ export default function StoryPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
-                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Mission &amp; Vision</h2>
-                 <p className="text-lg text-muted-foreground">
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">About Us</h2>
+                 <p className="text-lg text-muted-foreground text-justify">
                    Nexstar Media India Pvt Ltd is an active Indian company, founded in 2019 and based in Noida, Uttar Pradesh, that specializes in the media entertainment and IT service sectors. The company offers services in digital media solutions, website and app development, and IT service management, serving clients internationally from its global headquarters in Delaware, US. It is a private company owned by ERAFAV LLC and focuses on providing quality leads and digital solutions to businesses.
                  </p>
              </div>

@@ -69,7 +69,7 @@ const platformCards = [
     { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://picsum.photos/seed/colorful-professional-instagram/600/400", hint: "colorful professional instagram feed" }},
     { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://picsum.photos/seed/colorful-professional-facebook/600/400", hint: "colorful professional facebook page" }},
     { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://picsum.photos/seed/professional-linkedin-profile/600/400", hint: "professional linkedin" }},
-    { platform: "TikTok", description: "Engaging short-form video and trend-setting.", image: { src: "https://picsum.photos/seed/colorful-tiktok-interface/600/400", hint: "colorful tiktok" }},
+    { platform: "Twitter", description: "Real-time updates and public conversations.", image: { src: "https://picsum.photos/seed/colorful-twitter-interface/600/400", hint: "colorful twitter" }},
 ];
 
 export default function SocialMediaPage() {
@@ -277,4 +277,5 @@ export default function SocialMediaPage() {
   );
 }
 
+    
     

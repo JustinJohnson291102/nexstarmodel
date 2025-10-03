@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -153,10 +154,7 @@ export default function StoryPage() {
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Our Mission &amp; Vision</h2>
                  <p className="text-lg text-muted-foreground">
-                   Founded on the principle of innovation, Nexstar Media Group was born from a desire to bridge the gap between creative vision and digital execution. We saw a world brimming with incredible ideas that just needed the right strategy and technical expertise to come to life.
-                 </p>
-                 <p className="text-lg text-muted-foreground">
-                   Our vision is to be the leading partner for brands brave enough to shape the future, empowering them to connect with their audiences in more meaningful and impactful ways. We believe in the power of collaboration, the magic of creativity, and the impact of technology.
+                   Nexstar Media India Pvt Ltd is an active Indian company, founded in 2019 and based in Noida, Uttar Pradesh, that specializes in the media entertainment and IT service sectors. The company offers services in digital media solutions, website and app development, and IT service management, serving clients internationally from its global headquarters in Delaware, US. It is a private company owned by ERAFAV LLC and focuses on providing quality leads and digital solutions to businesses.
                  </p>
              </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">

@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -129,10 +128,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/30" />
         </section>
         <div className="w-full md:w-[5%]" />
-        <div className="relative w-full md:w-[25%] h-[59vh] md:h-[91vh] border border-gray-300 rounded-lg overflow-hidden my-4 md:my-0">
+        <div className="relative w-4/5 mx-auto md:w-[25%] h-[59vh] md:h-[91vh] border border-gray-300 rounded-lg overflow-hidden my-4 md:my-0">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-09-30%20at%2010.23.22%20PM.mp4?updatedAt=1759313283558"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             autoPlay
             loop
             muted

@@ -48,7 +48,7 @@ export default function RootLayout({
         ) : (
           <>
             <Header />
-            <main className="pt-20 md:pt-32">{children}</main>
+            <main className="pt-[4.5rem] md:pt-28">{children}</main>
             <Footer />
             <Marquee text="Igniting brands with ideas that transform behaviour. Contact us to start your digital success story." />
             <Chatbot />

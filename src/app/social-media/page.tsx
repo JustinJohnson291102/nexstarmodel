@@ -105,11 +105,11 @@ export default function SocialMediaPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[90vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('${pageData.heroImage}')` }}
         data-ai-hint={pageData.heroHint}
       >
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}

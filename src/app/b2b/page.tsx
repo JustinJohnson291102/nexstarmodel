@@ -115,16 +115,11 @@ const stats = [
 export default function B2BPage() {
   return (
     <>
-      <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center">
-        <Image
-          src="/images/b2b.jpg"
-          alt="B2B Marketing"
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint="yellow b2b marketing"
-        />
-        <div className="absolute inset-0 bg-black/50" />
+      <section 
+        className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/banner-b2b-desk%20(1).jpg?updatedAt=1759474436101')` }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
               B2B Marketing That Drives Results

@@ -118,7 +118,6 @@ export default function Home() {
               </CarouselContent>
             </Carousel>
           </div>
-          <div className="absolute inset-0 bg-black/30" />
         </section>
       </div>
       
@@ -263,7 +262,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
               WHO WE ARE
             </h3>
-            <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
               A Dynamic Fusion of Creativity &amp; Technology
             </h2>
             <p className="text-muted-foreground md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">

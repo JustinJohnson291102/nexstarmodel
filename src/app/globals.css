@@ -74,30 +74,26 @@
   /* Animated Text Styles */
   .animated-text-container h1 {
     color: #2c3e50;
-    font-size: 3.2rem; /* Adjusted from 1.6rem */
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.5;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    width: 650px;
-    height: 4.8rem; /* Adjusted from 2.4rem */
+    width: 325px;
+    height: 2.4rem;
     display: flex;
     align-items: center;
   }
 
   .animated-text-container h1 span.prefix {
-    font-size: 3.2rem; /* Adjusted from 1.6rem */
-    margin-left: 20px;
+    font-size: 1.6rem;
+    margin-left: 10px;
     position: relative;
     cursor: pointer;
     transition: color 0.3s ease;
     color: white; /* Added for visibility */
-  }
-
-  .animated-text-container h1 span.prefix:hover {
-    color: #7c5ce0;
   }
 
   .animated-text-container .message {
@@ -110,7 +106,7 @@
     top: 0.2rem;
     border-radius: 4px;
     animation: openclose 12s ease-in-out infinite;
-    height: 4.8rem; /* Adjusted from 2.4rem */
+    height: 2.4rem;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
@@ -126,7 +122,7 @@
     position: absolute;
     width: 100%;
     opacity: 0;
-    height: 4.8rem; /* Adjusted from 2.4rem */
+    height: 2.4rem;
     display: flex;
     align-items: center;
     white-space: normal;
@@ -147,19 +143,19 @@
   @keyframes openclose {
     0% { top: 0.2rem; width: 0; }
     5% { width: 0; }
-    10% { width: 650px; }
-    20% { top: 0.2rem; width: 650px; }
+    10% { width: 325px; }
+    20% { top: 0.2rem; width: 325px; }
     25% { top: 0.2rem; width: 0; }
     30% { top: 0.2rem; width: 0; }
-    35% { top: 0.2rem; width: 650px; }
-    45% { top: 0.2rem; width: 650px; }
+    35% { top: 0.2rem; width: 325px; }
+    45% { top: 0.2rem; width: 325px; }
     50% { top: 0.2rem; width: 0; }
     55% { top: 0.2rem; width: 0; }
-    60% { top: 0.2rem; width: 650px; }
-    70% { top: 0.2rem; width: 650px; }
+    60% { top: 0.2rem; width: 325px; }
+    70% { top: 0.2rem; width: 325px; }
     75% { top: 0.2rem; width: 0; }
-    80% { top: 0.2rem; width: 650px; }
-    90% { top: 0.2rem; width: 650px; }
+    80% { top: 0.2rem; width: 325px; }
+    90% { top: 0.2rem; width: 325px; }
     95% { top: 0.2rem; width: 0; }
     100% { top: 0.2rem; width: 0; }
   }

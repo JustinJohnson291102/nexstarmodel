@@ -24,6 +24,11 @@ const carouselImages = [
     src: "https://ik.imagekit.io/ggelm1lwa/xebec%20yellow%20banner.jpg?updatedAt=1759468229202",
     alt: "Hero Image 4",
     hint: "yellow banner"
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/Orange%20and%20Cream%20Illustration%20Marketing%20Plan%20Presentation.png?updatedAt=1759558440845",
+    alt: "Marketing Plan Presentation",
+    hint: "marketing plan"
   }
 ];
 
@@ -87,7 +92,7 @@ export default function Home() {
           <Carousel
             plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 3000,
                 stopOnInteraction: true,
               }),
             ]}

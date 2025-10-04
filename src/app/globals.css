@@ -83,6 +83,8 @@
     position: relative;
     width: 450px; /* Adjusted from 650px */
     height: 3rem; /* Adjusted from 4.5rem */
+    display: flex;
+    align-items: center;
   }
 
   .animated-text-container h1 span.prefix {
@@ -104,10 +106,9 @@
     display: block;
     font-weight: 700;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     padding: 0.2rem 1rem;
     top: 0.2rem;
-    left: 170px; /* Adjusted from 270px */
     border-radius: 4px;
     animation: openclose 8s ease-in-out infinite;
     height: 3rem; /* Adjusted from 4.5rem */
@@ -171,5 +172,3 @@
   }
 
 }
-
-    

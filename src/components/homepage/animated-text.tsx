@@ -53,16 +53,14 @@ export default function AnimatedText() {
   return (
     <div className="animated-text-container">
       <h1>
-        <span className="prefix">We are</span>
         <div className="message">
           <div className="word1">awesome</div>
           <div className="word2">nice</div>
           <div className="word3">sweet</div>
           <div className="word4">great</div>
         </div>
+        <span className="prefix">We are</span>
       </h1>
     </div>
   );
 }
-
-    

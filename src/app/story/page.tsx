@@ -128,12 +128,12 @@ const testimonials = [
 export default function StoryPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-start pt-24 justify-center text-center overflow-hidden">
+      <section className="relative h-[70vh] w-full flex items-start pt-24 justify-center text-center overflow-hidden">
         <Image
           src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
           alt="Group of people collaborating"
           fill
-          className="object-cover relative top-16"
+          className="object-cover relative top-32"
           priority
         />
         <div className="absolute inset-0 bg-white/30" />
@@ -185,7 +185,7 @@ export default function StoryPage() {
           <div className="relative wrap overflow-hidden p-10 h-full">
             <div className="absolute border-primary/20 h-full border" style={{left: '50%'}}></div>
             {timelineEvents.map((event, index) => (
-               <div key={index} className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? 'flex-row-reverse left-timeline' : 'right-timeline'}`}>
+               <div key={index} className={'mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? "flex-row-reverse left-timeline" : "right-timeline"}'}>
                 <div className="order-1 w-5/12"></div>
                 <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
                   <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
@@ -214,7 +214,7 @@ export default function StoryPage() {
           </div>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {coreValues.map((value, index) => (
-               <Card key={index} className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: `${index * 150}ms`}}>
+               <Card key={index} className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: '${index * 150}ms'}}>
                   <Image src={value.image.src} alt={value.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={value.image.hint} />
                   <div className="absolute inset-0 bg-black/30" />
                   <CardContent className="relative z-10 p-6 text-center text-white flex flex-col items-center justify-center h-full">
@@ -244,10 +244,10 @@ export default function StoryPage() {
           </div>
           <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-12">
             {teamMembers.map((member, index) => (
-                <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
+                <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: '${index * 100}ms'}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
                         <Image
-                            src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
+                            src={'https://drive.google.com/uc?export=download&id=${member.imageId}'}
                             alt={member.name}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -275,7 +275,7 @@ export default function StoryPage() {
               <div 
                 key={index}
                 className="animate-in fade-in slide-in-from-bottom-7 duration-500"
-                style={{animationDelay: `${index * 150}ms`}}
+                style={{animationDelay: '${index * 150}ms'}}
               >
               <Card className="bg-primary/5 text-foreground backdrop-blur-md border-primary/20 h-full shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                 <CardContent className="p-8 flex flex-col h-full">
@@ -303,4 +303,6 @@ export default function StoryPage() {
 }
  
     
+    
+
     

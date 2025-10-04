@@ -70,4 +70,106 @@
   .animate-typing2 {
     @apply inline-block overflow-hidden whitespace-nowrap border-r-4 border-r-primary-foreground pr-1;
   }
+
+  /* Animated Text Styles */
+  .animated-text-container h1 {
+    color: #2c3e50;
+    font-size: 2rem; /* Adjusted from 3rem */
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 450px; /* Adjusted from 650px */
+    height: 3rem; /* Adjusted from 4.5rem */
+  }
+
+  .animated-text-container h1 span.prefix {
+    font-size: 2rem; /* Adjusted from 40px */
+    margin-left: 20px; /* Adjusted from 40px */
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white; /* Added for visibility */
+  }
+
+  .animated-text-container h1 span.prefix:hover {
+    color: #7c5ce0;
+  }
+
+  .animated-text-container .message {
+    background: linear-gradient(45deg, #a8d8ea, #aa96da);
+    color: #000;
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+    padding: 0.2rem 1rem;
+    top: 0.2rem;
+    left: 170px; /* Adjusted from 270px */
+    border-radius: 4px;
+    animation: openclose 8s ease-in-out infinite;
+    height: 3rem; /* Adjusted from 4.5rem */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .animated-text-container .message:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .word1, .word2, .word3, .word4 {
+    font-family: tahoma;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    height: 3rem; /* Adjusted from 4.5rem */
+  }
+
+  .animated-text-container .message .word1 { animation: word-animation 8s infinite; }
+  .animated-text-container .message .word2 { animation: word-animation 8s infinite 2s; }
+  .animated-text-container .message .word3 { animation: word-animation 8s infinite 4s; }
+  .animated-text-container .message .word4 { animation: word-animation 8s infinite 6s; }
+
+  @keyframes word-animation {
+    0%, 5% { opacity: 0; }
+    10%, 22% { opacity: 1; }
+    27%, 100% { opacity: 0; }
+  }
+
+  @keyframes openclose {
+    0% { top: 0.2rem; width: 0; }
+    5% { width: 0; }
+    10% { width: 180px; } /* Adjusted */
+    20% { top: 0.2rem; width: 180px; } /* Adjusted */
+    25% { top: 0.2rem; width: 0; }
+    30% { top: 0.2rem; width: 0; }
+    35% { top: 0.2rem; width: 180px; } /* Adjusted */
+    45% { top: 0.2rem; width: 180px; } /* Adjusted */
+    50% { top: 0.2rem; width: 0; }
+    55% { top: 0.2rem; width: 0; }
+    60% { top: 0.2rem; width: 180px; } /* Adjusted */
+    70% { top: 0.2rem; width: 180px; } /* Adjusted */
+    75% { top: 0.2rem; width: 0; }
+    80% { top: 0.2rem; width: 180px; } /* Adjusted */
+    90% { top: 0.2rem; width: 180px; } /* Adjusted */
+    95% { top: 0.2rem; width: 0; }
+    100% { top: 0.2rem; width: 0; }
+  }
+  
+  @keyframes sparkle {
+    from {
+      transform: scale(0) rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.5) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
 }
+
+    

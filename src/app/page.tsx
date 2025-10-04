@@ -19,6 +19,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 import { useState, useEffect } from "react";
+import AnimatedText from "@/components/homepage/animated-text";
 
 const carouselImages = [
   {
@@ -129,13 +130,10 @@ export default function Home() {
                     />
                 </div>
                  <div className="mt-4 text-center">
-                    <h2 className="text-xl md:text-2xl font-headline text-white font-semibold tracking-wider">
-                        {animatedText}
-                        <span className="inline-block w-1 animate-ping h-6 bg-white ml-1"></span>
-                    </h2>
+                    <AnimatedText />
                 </div>
             </div>
-            <div className="relative z-10 w-full h-full pl-[60%] pr-[1.2%] pt-[1.2%] pb-[1.2%]">
+            <div className="relative z-10 w-full h-full pr-[1.2%] pt-[1.2%] pb-[1.2%] pl-[60%]">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"

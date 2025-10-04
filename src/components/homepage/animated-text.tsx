@@ -54,7 +54,7 @@ export default function AnimatedText() {
     <div className="animated-text-container">
       <h1 className="flex items-center">
         <span className="prefix">We are</span>
-        <div className="message">
+        <div className="message ml-0.5">
           <div className="word1">awesome</div>
           <div className="word2">nice</div>
           <div className="word3">sweet</div>

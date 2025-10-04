@@ -143,19 +143,19 @@
   @keyframes openclose {
     0% { top: 0.2rem; width: 0; }
     5% { width: 0; }
-    10% { width: 180px; }
-    20% { top: 0.2rem; width: 180px; }
+    10% { width: 190px; }
+    20% { top: 0.2rem; width: 190px; }
     25% { top: 0.2rem; width: 0; }
     30% { top: 0.2rem; width: 0; }
-    35% { top: 0.2rem; width: 180px; }
-    45% { top: 0.2rem; width: 180px; }
+    35% { top: 0.2rem; width: 190px; }
+    45% { top: 0.2rem; width: 190px; }
     50% { top: 0.2rem; width: 0; }
     55% { top: 0.2rem; width: 0; }
-    60% { top: 0.2rem; width: 180px; }
-    70% { top: 0.2rem; width: 180px; }
+    60% { top: 0.2rem; width: 190px; }
+    70% { top: 0.2rem; width: 190px; }
     75% { top: 0.2rem; width: 0; }
-    80% { top: 0.2rem; width: 180px; }
-    90% { top: 0.2rem; width: 180px; }
+    80% { top: 0.2rem; width: 190px; }
+    90% { top: 0.2rem; width: 190px; }
     95% { top: 0.2rem; width: 0; }
     100% { top: 0.2rem; width: 0; }
   }

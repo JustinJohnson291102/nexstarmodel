@@ -45,6 +45,11 @@ const carouselImages = [
     alt: "Hero Image 4",
     hint: "yellow banner"
   },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
+    alt: "Office hero banner",
+    hint: "office banner"
+  }
 ];
 
 const whoWeAreCards = [

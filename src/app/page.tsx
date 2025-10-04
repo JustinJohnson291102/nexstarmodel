@@ -49,7 +49,23 @@ const carouselImages = [
     src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
     alt: "Office hero banner",
     hint: "office banner"
-  }
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Image%202025-10-04%20at%2012.45.11%20PM.jpeg?updatedAt=1759580256883",
+    alt: "Office hero banner",
+    hint: "office banner"
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Image%202025-10-04%20at%201.16.26%20PM.jpeg?updatedAt=1759580240543",
+    alt: "Office hero banner",
+    hint: "office banner"
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821",
+    alt: "Office hero banner",
+    hint: "office banner"
+  },
+  
 ];
 
 const whoWeAreCards = [

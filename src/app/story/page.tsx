@@ -130,17 +130,18 @@ export default function StoryPage() {
     <>
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
         <Image
-          src="https://drive.google.com/uc?export=download&id=1OqAyh5AJXjw63hlhWy3koRpY8GXgoGe6"
+          src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
           alt="Group of people collaborating"
           fill
           className="object-cover"
           priority
         />
+        <div className="absolute inset-0 bg-white/30" />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white mb-4">
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
             Our Story
           </h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl mx-auto">
             We ignite brands with ideas that transform behaviour
           </p>
         </div>

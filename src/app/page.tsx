@@ -103,7 +103,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute z-20 top-8 left-8 text-white">
+            <div className="absolute z-20 top-8 left-8 text-white max-w-[35%]">
               <h1 className="text-4xl md:text-5xl font-bold font-headline animate-typing-long overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-1">NEXSTAR MEDIA INDIA</h1>
               <h2 className="text-2xl md:text-3xl font-semibold font-headline animate-typing-short overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-1 mt-2">PVT LTD</h2>
             </div>
@@ -383,5 +383,3 @@ export default function Home() {
     </>
   );
 }
-
-    

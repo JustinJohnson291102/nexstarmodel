@@ -103,6 +103,10 @@ export default function Home() {
               muted
               playsInline
             />
+            <div className="absolute z-20 top-8 left-8 text-white">
+              <h1 className="text-4xl md:text-5xl font-bold font-headline animate-typing-long overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-1">NEXSTAR MEDIA INDIA</h1>
+              <h2 className="text-2xl md:text-3xl font-semibold font-headline animate-typing-short overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-1 mt-2">PVT LTD</h2>
+            </div>
             <div className="relative z-10 w-full h-full pl-[60%] pr-[0.8%] pt-[0.8%] pb-[0.8%]">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
@@ -379,3 +383,5 @@ export default function Home() {
     </>
   );
 }
+
+    

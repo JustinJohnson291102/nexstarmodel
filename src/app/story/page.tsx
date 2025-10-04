@@ -133,7 +133,7 @@ export default function StoryPage() {
           src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
           alt="Group of people collaborating"
           fill
-          className="object-cover"
+          className="object-cover relative top-16"
           priority
         />
         <div className="absolute inset-0 bg-white/30" />

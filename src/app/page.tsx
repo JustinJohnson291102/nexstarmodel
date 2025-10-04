@@ -26,9 +26,9 @@ const carouselImages = [
     hint: "yellow banner"
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/Orange%20and%20Cream%20Illustration%20Marketing%20Plan%20Presentation.png?updatedAt=1759558440845",
-    alt: "Marketing Plan Presentation",
-    hint: "marketing plan"
+    src: "https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226",
+    alt: "Office hero banner",
+    hint: "office banner"
   },
   {
     src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",

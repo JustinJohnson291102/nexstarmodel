@@ -120,16 +120,14 @@ export default function StoryPage() {
   return (
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center overflow-hidden bg-secondary">
+        <Image
+            src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
+            alt="Mastering Platform"
+            fill
+            className="object-contain"
+            data-ai-hint="mastering platform"
+        />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-           <div className="relative w-full h-28 mb-8">
-              <Image
-                src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
-                alt="Mastering Platform"
-                fill
-                className="object-contain"
-                data-ai-hint="mastering platform"
-              />
-          </div>
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
             Our Story
           </h1>
@@ -293,5 +291,3 @@ export default function StoryPage() {
     </>
   );
 }
-
-    

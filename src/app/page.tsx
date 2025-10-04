@@ -177,19 +177,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
-        <div className="relative w-full h-full">
+      <section className="py-12 bg-white flex justify-center">
+        <div className="relative w-1/2">
             <Image
                 src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
                 alt="Office hero banner"
-                fill
-                className="object-cover w-full h-full"
+                width={1280}
+                height={720}
+                className="object-contain w-full h-auto rounded-lg shadow-lg"
                 data-ai-hint="office banner"
             />
         </div>
       </section>
 
-       <div className="flex flex-col md:flex-row w-full py-4 bg-white">
+       <div className="flex flex-col md:flex-row w-full py-12 bg-white">
         <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
           <div className="w-full h-full px-[10%]">
             <Carousel

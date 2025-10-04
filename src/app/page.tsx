@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -121,7 +120,7 @@ export default function Home() {
               playsInline
             />
             <div className="absolute z-10 top-0 left-0 h-full w-[60%] flex flex-col items-start justify-center">
-                <div className="relative w-2/3 h-1/2 mb-8 animate-scale-up pl-[10%]">
+                <div className="relative w-2/3 h-1/2 mb-8 animate-scale-up pl-[5%]">
                     <Image
                         src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
                         alt="Nexstar Logo"
@@ -129,7 +128,7 @@ export default function Home() {
                         className="object-contain"
                     />
                 </div>
-                 <div className="text-left pl-[10%]">
+                 <div className="text-left pl-[5%]">
                     <AnimatedText />
                 </div>
             </div>
@@ -409,5 +408,3 @@ export default function Home() {
     </>
   );
 }
-
-    

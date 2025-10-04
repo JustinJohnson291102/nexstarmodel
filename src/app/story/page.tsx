@@ -9,7 +9,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const timelineEvents = [
   {
-    year: "2010",
+    year: "2019",
     title: "The Spark of an Idea",
     description: "A small team of passionate creatives, developers, and marketers unites with a single mission: to bridge the gap between brilliant ideas and flawless digital execution.",
     image: {
@@ -18,7 +18,7 @@ const timelineEvents = [
     }
   },
   {
-    year: "2014",
+    year: "2021",
     title: "First Major Client",
     description: "Landed our first major retail client, delivering a comprehensive e-commerce and branding strategy that resulted in a 200% increase in their online sales within the first year.",
      image: {
@@ -27,21 +27,12 @@ const timelineEvents = [
     }
   },
   {
-    year: "2018",
+    year: "2023",
     title: "Expanding Our Services",
     description: "Launched our dedicated B2B marketing and Go-To-Market strategy divisions, helping SaaS and tech companies make a powerful impact from day one.",
      image: {
       src: "https://ik.imagekit.io/ggelm1lwa/service%20expanding.jpg?updatedAt=1759496382759",
       hint: "growth chart",
-    }
-  },
-  {
-    year: "2023",
-    title: "Launching XTrack",
-    description: "Introduced our proprietary analytics platform, XTrack, providing clients with unparalleled insights into their digital performance and user behavior.",
-    image: {
-      src: "https://picsum.photos/seed/xtrack-launch/600/400",
-      hint: "data analytics",
     }
   }
 ];
@@ -301,8 +292,3 @@ export default function StoryPage() {
     </>
   );
 }
- 
-    
-    
-
-    

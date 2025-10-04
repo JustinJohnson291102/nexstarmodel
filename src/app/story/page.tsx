@@ -185,7 +185,7 @@ export default function StoryPage() {
           <div className="relative wrap overflow-hidden p-10 h-full">
             <div className="absolute border-primary/20 h-full border" style={{left: '50%'}}></div>
             {timelineEvents.map((event, index) => (
-               <div key={index} className={'mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? "flex-row-reverse left-timeline" : "right-timeline"}'}>
+               <div key={index} className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? "flex-row-reverse left-timeline" : "right-timeline"}`}>
                 <div className="order-1 w-5/12"></div>
                 <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
                   <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
@@ -247,7 +247,7 @@ export default function StoryPage() {
                 <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: '${index * 100}ms'}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
                         <Image
-                            src={'https://drive.google.com/uc?export=download&id=${member.imageId}'}
+                            src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
                             alt={member.name}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-300"

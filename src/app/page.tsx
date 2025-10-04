@@ -103,7 +103,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 w-full h-full pl-[60%] pr-0 pt-0 pb-0">
+            <div className="relative z-10 w-full h-full pl-[60%] pr-[2%] pt-[2%] pb-[2%]">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"
@@ -379,3 +379,5 @@ export default function Home() {
     </>
   );
 }
+
+    

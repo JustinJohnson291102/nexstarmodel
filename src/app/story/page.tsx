@@ -128,14 +128,16 @@ const testimonials = [
 export default function StoryPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <Image
-          src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
-          alt="Group of people collaborating"
-          fill
-          className="object-contain"
-          priority
-        />
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center overflow-hidden">
+        <div className="absolute inset-0 -mx-24">
+          <Image
+            src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
+            alt="Group of people collaborating"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-white/30" />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">

@@ -133,14 +133,6 @@ export default function Home() {
               playsInline
             />
             <div className="relative z-10 w-1/2 h-full flex flex-col items-center justify-center">
-                <div className="relative w-2/3 h-1/2 mb-16 animate-scale-up">
-                    <Image
-                        src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
-                        alt="Nexstar Logo"
-                        fill
-                        className="object-contain"
-                    />
-                </div>
                  <div className="w-full text-center">
                     <AnimatedText />
                 </div>

@@ -302,21 +302,12 @@ const whyChooseUsFeatures = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
-        <Image
-          src="https://picsum.photos/seed/colorful-professional-services-hero/1920/1080"
-          alt="Services background"
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint="colorful professional creative workspace"
-        />
-        <div className="absolute inset-0 bg-white/30" />
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-background">
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-black mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-foreground mb-4">
             Our Services
           </h1>
-          <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
             A complete suite of digital services to elevate your brand.
           </p>
         </div>

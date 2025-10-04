@@ -26,7 +26,7 @@ const carouselImages = [
     hint: "yellow banner"
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226",
+    src: "https://ik.imagekit.io/ggelm1lwa/Orange%20and%20Cream%20Illustration%20Marketing%20Plan%20Presentation.png?updatedAt=1759558440845",
     alt: "Marketing Plan Presentation",
     hint: "marketing plan"
   },
@@ -103,7 +103,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 w-full h-full pl-[40%] pr-0">
+            <div className="relative z-10 w-full h-full pl-[30%] pr-0">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"
@@ -286,7 +286,7 @@ export default function Home() {
           />
         <div className="absolute inset-0 bg-background/80 z-0"/>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 pt-8">
             <h3 className="text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
               WHO WE ARE
             </h3>

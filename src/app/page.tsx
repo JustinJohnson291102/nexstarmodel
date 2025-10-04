@@ -30,6 +30,12 @@ const carouselImages = [
     alt: "Marketing Plan Presentation",
     hint: "marketing plan"
   },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
+    alt: "office hero banner",
+    hint: "office"
+  }
+
 ];
 
 const whoWeAreCards = [
@@ -87,6 +93,28 @@ const whoWeAreCards = [
 export default function Home() {
   return (
     <>
+       <div className="flex flex-col md:flex-row w-full">
+         <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
+            <video 
+              src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
+              className="absolute z-0 top-0 left-0 w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+            <div className="relative z-10 w-full h-full px-[10%]">
+              <video 
+                src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            </div>
+          </section>
+        </div>
        <div className="flex flex-col md:flex-row w-full">
         <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
           <div className="w-full h-full px-[10%]">

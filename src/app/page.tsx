@@ -132,8 +132,8 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 w-3/5 h-full flex flex-col items-center justify-start pl-10 pt-10">
-                <div className="relative w-2/3 h-1/2 animate-scale-up">
+            <div className="relative z-10 w-1/2 h-full flex flex-col items-center justify-center">
+                <div className="relative w-2/3 h-1/2 mb-16 animate-scale-up">
                     <Image
                         src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
                         alt="Nexstar Logo"
@@ -141,11 +141,11 @@ export default function Home() {
                         className="object-contain"
                     />
                 </div>
-                 <div className="text-left w-full pl-8">
+                 <div className="w-full text-center">
                     <AnimatedText />
                 </div>
             </div>
-            <div className="relative z-10 w-2/5 h-full">
+            <div className="relative z-10 w-1/2 h-full">
               <Image
                   src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
                   alt="Office hero banner"
@@ -174,7 +174,7 @@ export default function Home() {
             ))}
           </div>
            <div className="mt-12 flex justify-center">
-            <div className="relative w-1/2">
+             <div className="relative w-1/2">
                <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-auto rounded-lg shadow-lg"

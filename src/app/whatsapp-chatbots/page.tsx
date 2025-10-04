@@ -93,19 +93,14 @@ export default function WhatsappChatbotsPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ 
-            backgroundImage: `url('${pageData.heroImage}')`,
-        }}
-        data-ai-hint={pageData.heroHint}
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-background"
       >
-        <div className="absolute inset-0 bg-white/30" />
-        <div className="relative z-20 px-4 text-black animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="relative z-20 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
           <MessageCircle className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>

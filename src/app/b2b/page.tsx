@@ -116,21 +116,12 @@ export default function B2BPage() {
   return (
     <>
       <section 
-        className="relative h-[60vh] md:h-[70vh] w-full"
+        className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center bg-background"
       >
-       <Image
-          src="https://picsum.photos/seed/colorful-professional-b2b-banner/1920/1080"
-          alt="B2B Marketing Banner"
-          fill
-          className="object-cover"
-          priority
-          quality={100}
-        />
-        <div className="absolute inset-0 bg-white/50" />
         <div className="container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-black mb-4">B2B Marketing</h1>
-            <p className="text-lg md:text-2xl text-black/80">Drive meaningful engagement and sustainable growth with our strategic B2B marketing solutions.</p>
+            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-foreground mb-4">B2B Marketing</h1>
+            <p className="text-lg md:text-2xl text-muted-foreground">Drive meaningful engagement and sustainable growth with our strategic B2B marketing solutions.</p>
           </div>
         </div>
       </section>

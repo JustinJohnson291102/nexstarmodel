@@ -103,7 +103,17 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 w-full h-full pl-[60%] pr-[2%] pt-[2%] pb-[2%]">
+            <div className="absolute z-10 top-0 left-0 h-full w-[60%] flex items-center justify-center">
+                <div className="relative w-1/2 h-1/2 animate-scale-up">
+                    <Image
+                        src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
+                        alt="Nexstar Logo"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+            </div>
+            <div className="relative z-10 w-full h-full pl-[60%] pt-[2%] pb-[2%] pr-[2%]">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"

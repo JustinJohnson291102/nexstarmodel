@@ -102,6 +102,10 @@ export default {
           '50%': { width: '0' },
           '100%': { width: '100%' },
         },
+        'scale-up': {
+          '0%': { transform: 'scale(0.5)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -111,6 +115,7 @@ export default {
         'chat-bubble': 'chat-bubble 6s ease-in-out infinite',
         'typing-long': 'typing-long 2s steps(20, end), blink-caret .75s step-end infinite',
         'typing-short': 'typing-short 2s steps(8, end), blink-caret .75s step-end infinite',
+        'scale-up': 'scale-up 1.5s ease-out forwards',
       },
     },
   },
@@ -118,5 +123,3 @@ export default {
     require('tailwindcss-animate'),
   ],
 } satisfies Config;
-
-    

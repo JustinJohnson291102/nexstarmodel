@@ -165,9 +165,7 @@ export default function SocialMediaPage() {
       </section>
 
       <section 
-        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821')`}}
-        data-ai-hint="colorful professional office"
+        className="py-20 md:py-32 bg-pink-600"
        >
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">

@@ -128,7 +128,7 @@ const testimonials = [
 export default function StoryPage() {
   return (
     <>
-      <section className="relative h-[70vh] w-full flex items-center justify-center text-center">
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center">
         <Image
           src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
           alt="Group of people collaborating"

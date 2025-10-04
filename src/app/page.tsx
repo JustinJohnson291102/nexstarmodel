@@ -24,28 +24,31 @@ import AnimatedText from "@/components/homepage/animated-text";
 const newServices = [
     {
       icon: "https://ik.imagekit.io/ggelm1lwa/link%20building.png?updatedAt=1759574875462",
+      name: "Link Building",
       description: "Enhance your site’s authority with our strategic link-building services, designed to secure high-quality, relevant links that boost your SEO and online presence.",
     },
     {
       icon: "https://ik.imagekit.io/ggelm1lwa/web%20development.png?updatedAt=1759574875611",
+      name: "Web Development",
       description: "Build a tailored, responsive website with our web development services, focusing on user experience, functionality, and modern design to meet your business needs",
     },
     {
       icon: "https://ik.imagekit.io/ggelm1lwa/digital%20marketing.png?updatedAt=1759574875809",
+      name: "Digital Marketing",
       description: "Increase your reach with our digital marketing strategies, utilizing cutting-edge tools in social media, email, and content marketing to engage and expand your audience.",
     },
   ];
 
 const carouselImages = [
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/xebec%20yellow%20banner.jpg?updatedAt=1759468229202",
-    alt: "Hero Image 4",
-    hint: "yellow banner"
-  },
-  {
     src: "https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226",
     alt: "Office hero banner",
     hint: "office banner"
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/xebec%20yellow%20banner.jpg?updatedAt=1759468229202",
+    alt: "Hero Image 4",
+    hint: "yellow banner"
   },
   {
     src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
@@ -170,7 +173,7 @@ export default function Home() {
             {newServices.map((service, index) => (
               <div key={index} className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl">
                 <div className="relative h-20 w-20 mb-4">
-                  <Image src={service.icon} alt="" fill className="object-contain" />
+                  <Image src={service.icon} alt={service.name} fill className="object-contain" />
                 </div>
                 <p className="text-muted-foreground">{service.description}</p>
               </div>

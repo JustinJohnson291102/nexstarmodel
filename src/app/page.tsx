@@ -140,7 +140,7 @@ export default function Home() {
                     <AnimatedText />
                 </div>
             </div>
-            <div className="relative z-10 w-full h-full pr-[1.2%] pt-[1.2%] pb-[1.2%] pl-[60%]">
+            <div className="relative z-10 w-full h-full pr-[1.1%] pt-[1.1%] pb-[1.1%] pl-[60%]">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"

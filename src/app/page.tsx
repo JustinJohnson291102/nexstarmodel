@@ -146,13 +146,13 @@ export default function Home() {
                 </div>
             </div>
             <div className="relative z-10 w-full h-full pr-[1.1%] pt-[1.1%] pb-[1.1%] pl-[60%]">
-              <video 
-                src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
-                className="w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
+              <Image
+                  src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
+                  alt="Office hero banner"
+                  width={1280}
+                  height={720}
+                  className="w-full h-full object-cover"
+                  data-ai-hint="office banner"
               />
             </div>
           </section>
@@ -176,13 +176,13 @@ export default function Home() {
           </div>
            <div className="mt-12 flex justify-center">
             <div className="relative w-1/2">
-              <Image
-                  src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
-                  alt="Office hero banner"
-                  width={1280}
-                  height={720}
-                  className="object-contain w-full h-auto rounded-lg shadow-lg"
-                  data-ai-hint="office banner"
+               <video 
+                src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
+                className="w-full h-auto rounded-lg shadow-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
           </div>

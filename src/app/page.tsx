@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -179,6 +178,18 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
+        <div className="relative w-full h-full">
+            <Image
+                src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
+                alt="Office hero banner"
+                fill
+                className="object-cover w-full h-full"
+                data-ai-hint="office banner"
+            />
         </div>
       </section>
 

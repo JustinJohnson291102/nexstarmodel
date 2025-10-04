@@ -169,19 +169,18 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="py-12 bg-white flex justify-center">
-        <div className="relative w-1/2">
-            <Image
-                src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
-                alt="Office hero banner"
-                width={1280}
-                height={720}
-                className="object-contain w-full h-auto rounded-lg shadow-lg"
-                data-ai-hint="office banner"
-            />
+           <div className="mt-12 flex justify-center">
+            <div className="relative w-1/2">
+              <Image
+                  src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
+                  alt="Office hero banner"
+                  width={1280}
+                  height={720}
+                  className="object-contain w-full h-auto rounded-lg shadow-lg"
+                  data-ai-hint="office banner"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

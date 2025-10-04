@@ -169,7 +169,6 @@ export default function SocialMediaPage() {
         style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-office-social/1920/1080')`}}
         data-ai-hint="colorful professional office"
        >
-        <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Mastering Every Platform</h2>

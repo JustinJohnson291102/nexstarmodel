@@ -121,7 +121,7 @@ export default function StoryPage() {
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center overflow-hidden bg-secondary">
         <Image
-          src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
+          src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
           alt="Mastering Platform"
           fill
           className="object-fill"

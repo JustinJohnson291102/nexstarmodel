@@ -132,7 +132,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 w-2/5 h-full flex flex-col items-start justify-center pl-10">
+            <div className="relative z-10 w-3/5 h-full flex flex-col items-start justify-center pl-10">
                 <div className="relative w-2/3 h-1/2 mb-8 animate-scale-up">
                     <Image
                         src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
@@ -145,7 +145,7 @@ export default function Home() {
                     <AnimatedText />
                 </div>
             </div>
-            <div className="relative z-10 w-3/5 h-full">
+            <div className="relative z-10 w-2/5 h-full">
               <Image
                   src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
                   alt="Office hero banner"
@@ -452,5 +452,3 @@ export default function Home() {
     </>
   );
 }
-
-    

@@ -30,11 +30,6 @@ const carouselImages = [
     alt: "Marketing Plan Presentation",
     hint: "marketing plan"
   },
-  {
-    src: "https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226",
-    alt: "office hero banner",
-    hint: "office"
-  }
 ];
 
 const whoWeAreCards = [
@@ -93,7 +88,7 @@ export default function Home() {
   return (
     <>
        <div className="flex flex-col md:flex-row w-full">
-        <section className="relative h-[64vh] md:h-[91vh] w-full bg-black">
+        <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
           <div className="w-full h-full px-[10%]">
             <Carousel
               plugins={[
@@ -236,7 +231,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Data-Driven Strategies
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl_5">
                  <li>We leverage data to make informed decisions and optimize for success.</li>
                  <li>Our analytics-first approach ensures every campaign is measurable.</li>
                  <li>Unlock powerful insights and achieve a higher return on investment.</li>
@@ -265,7 +260,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/80 z-0"/>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
+            <h3 className="text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
               WHO WE ARE
             </h3>
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">

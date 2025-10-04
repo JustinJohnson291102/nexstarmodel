@@ -129,7 +129,7 @@ export default function StoryPage() {
   return (
     <>
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center overflow-hidden">
-        <div className="absolute inset-0 -mx-24">
+        <div className="absolute inset-0 w-[200%] left-[-50%]">
           <Image
             src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.webp?updatedAt=1759559628821"
             alt="Group of people collaborating"
@@ -303,3 +303,4 @@ export default function StoryPage() {
     </>
   );
 }
+ 

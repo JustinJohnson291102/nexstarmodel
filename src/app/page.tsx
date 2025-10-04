@@ -18,6 +18,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
+import { useState, useEffect } from "react";
 
 const carouselImages = [
   {
@@ -91,6 +92,21 @@ const whoWeAreCards = [
 
 
 export default function Home() {
+    const [animatedText, setAnimatedText] = useState('');
+    const fullText = "Architects of Digital Success";
+
+    useEffect(() => {
+        let index = 0;
+        const intervalId = setInterval(() => {
+        setAnimatedText((prev) => fullText.substring(0, index + 1));
+        index++;
+        if (index === fullText.length) {
+            clearInterval(intervalId);
+        }
+        }, 100);
+        return () => clearInterval(intervalId);
+    }, []);
+
   return (
     <>
        <div className="flex flex-col md:flex-row w-full">
@@ -103,7 +119,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute z-10 bottom-5 left-0 h-full w-[60%] flex justify-center">
+            <div className="absolute z-10 bottom-5 left-0 h-full w-[60%] flex flex-col items-center justify-center">
                 <div className="relative w-1/2 h-1/2 animate-scale-up">
                     <Image
                         src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
@@ -111,6 +127,12 @@ export default function Home() {
                         fill
                         className="object-contain"
                     />
+                </div>
+                 <div className="mt-4 text-center">
+                    <h2 className="text-xl md:text-2xl font-headline text-white font-semibold tracking-wider">
+                        {animatedText}
+                        <span className="inline-block w-1 animate-ping h-6 bg-white ml-1"></span>
+                    </h2>
                 </div>
             </div>
             <div className="relative z-10 w-full h-full pl-[60%] pr-[1.2%] pt-[1.2%] pb-[1.2%]">
@@ -389,3 +411,5 @@ export default function Home() {
     </>
   );
 }
+
+    

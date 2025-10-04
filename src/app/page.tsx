@@ -103,7 +103,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 w-full h-full pl-[60%] pr-[2%] pt-[2%] pb-[2%]">
+            <div className="relative z-10 w-full h-full pl-[60%] pr-0 pt-0 pb-0">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"
@@ -275,7 +275,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-12 bg-background overflow-hidden">
+      <section className="relative py-8 bg-background overflow-hidden">
         <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"

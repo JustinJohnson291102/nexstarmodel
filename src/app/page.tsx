@@ -343,7 +343,7 @@ export default function Home() {
                         <CardTitle className="font-headline mb-3 flex items-center gap-3">
                           <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
                         </CardTitle>
-                        <p className="text-muted-foreground flex-grow">
+                        <p className="text-muted-foreground flex-grow animate-typing">
                          {card.description}
                         </p>
                         <Button asChild size="sm" className="group mt-4 w-fit">

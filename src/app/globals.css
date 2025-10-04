@@ -73,14 +73,14 @@
 
   /* Animated Text Styles */
   .animated-text-container {
-    @apply bg-black/10 backdrop-blur-sm p-10 rounded-xl border border-white/20;
+    @apply text-center;
   }
   .animated-text-container .prefix {
-    @apply text-xl md:text-2xl font-light text-white/70 block text-center mb-2;
+    @apply text-4xl font-light text-white/90 block;
   }
 
   .animated-text-container .message {
-    @apply text-white text-3xl md:text-4xl font-bold font-headline relative h-12 w-full flex items-center justify-center;
+    @apply text-white text-6xl font-bold font-headline relative h-20 w-full flex items-center justify-center;
   }
 
   .word1, .word2, .word3, .word4 {
@@ -93,10 +93,10 @@
   .word4 { animation-delay: 9s; }
 
   @keyframes word-animation {
-    0% { opacity: 0; transform: translateY(15px); }
+    0% { opacity: 0; transform: translateY(10px); }
     10% { opacity: 1; transform: translateY(0); }
     25% { opacity: 1; transform: translateY(0); }
-    35% { opacity: 0; transform: translateY(-15px); }
+    35% { opacity: 0; transform: translateY(-10px); }
     100% { opacity: 0; }
   }
   

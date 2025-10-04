@@ -246,7 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-20 md:py-32 bg-background overflow-hidden">
+      <section className="relative py-12 md:py-20 bg-background overflow-hidden">
         <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -258,7 +258,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/80 z-0"/>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
+            <h3 className="text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
               WHO WE ARE
             </h3>
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">

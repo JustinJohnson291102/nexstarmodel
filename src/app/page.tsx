@@ -123,7 +123,7 @@ export default function Home() {
   return (
     <>
        <div className="flex flex-col md:flex-row w-full">
-         <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
+         <section className="relative h-[64vh] md:h-[91vh] w-full flex bg-white">
             <video 
               src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
               className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -132,8 +132,8 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute z-10 top-0 left-0 h-full w-[60%] flex flex-col items-start justify-center">
-                <div className="relative w-2/3 h-1/2 mb-8 animate-scale-up pl-[25%]">
+            <div className="relative z-10 w-2/5 h-full flex flex-col items-start justify-center pl-10">
+                <div className="relative w-2/3 h-1/2 mb-8 animate-scale-up">
                     <Image
                         src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"
                         alt="Nexstar Logo"
@@ -141,16 +141,15 @@ export default function Home() {
                         className="object-contain"
                     />
                 </div>
-                 <div className="text-left pl-[25%]">
+                 <div className="text-left">
                     <AnimatedText />
                 </div>
             </div>
-            <div className="relative z-10 w-full h-full pr-[1.1%] pt-[1.1%] pb-[1.1%] pl-[60%]">
+            <div className="relative z-10 w-3/5 h-full">
               <Image
                   src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
                   alt="Office hero banner"
-                  width={1280}
-                  height={720}
+                  fill
                   className="w-full h-full object-cover"
                   data-ai-hint="office banner"
               />
@@ -453,3 +452,5 @@ export default function Home() {
     </>
   );
 }
+
+    

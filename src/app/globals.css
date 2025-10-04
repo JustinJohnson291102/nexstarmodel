@@ -80,7 +80,7 @@
   }
 
   .animated-text-container .message {
-    @apply text-white text-4xl md:text-5xl font-bold font-headline relative h-16 w-full flex items-center justify-center overflow-hidden;
+    @apply text-white text-4xl md:text-5xl font-bold font-headline relative h-20 w-full flex items-center justify-center;
   }
 
   .word1, .word2, .word3, .word4 {

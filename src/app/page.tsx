@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OurClients from "@/components/homepage/our-clients";
 import { useState, useEffect } from "react";
 import AnimatedText from "@/components/homepage/animated-text";
+
+const newServices = [
+    {
+      icon: "https://ik.imagekit.io/ggelm1lwa/link%20building.png?updatedAt=1759574875462",
+      description: "Enhance your site’s authority with our strategic link-building services, designed to secure high-quality, relevant links that boost your SEO and online presence.",
+    },
+    {
+      icon: "https://ik.imagekit.io/ggelm1lwa/web%20development.png?updatedAt=1759574875611",
+      description: "Build a tailored, responsive website with our web development services, focusing on user experience, functionality, and modern design to meet your business needs",
+    },
+    {
+      icon: "https://ik.imagekit.io/ggelm1lwa/digital%20marketing.png?updatedAt=1759574875809",
+      description: "Increase your reach with our digital marketing strategies, utilizing cutting-edge tools in social media, email, and content marketing to engage and expand your audience.",
+    },
+  ];
 
 const carouselImages = [
   {
@@ -144,6 +160,25 @@ export default function Home() {
             </div>
           </section>
         </div>
+        
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12 max-w-4xl mx-auto">
+            Our services cater to clients in India and globally, delivering tailored strategies for effective results.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {newServices.map((service, index) => (
+              <div key={index} className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <div className="relative h-20 w-20 mb-4">
+                  <Image src={service.icon} alt="" fill className="object-contain" />
+                </div>
+                <p className="text-muted-foreground">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
        <div className="flex flex-col md:flex-row w-full">
         <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
           <div className="w-full h-full px-[10%]">

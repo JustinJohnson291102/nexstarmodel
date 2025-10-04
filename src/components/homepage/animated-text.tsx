@@ -55,10 +55,10 @@ export default function AnimatedText() {
       <h1 className="flex items-center">
         <span className="prefix">We offer</span>
         <div className="message ml-1">
-          <div className="word1">awesome</div>
-          <div className="word2">nice</div>
-          <div className="word3">sweet</div>
-          <div className="word4">great</div>
+          <div className="word1">Web Development</div>
+          <div className="word2">Digital Marketing</div>
+          <div className="word3">B2B Marketing</div>
+          <div className="word4">Augmented Reality</div>
         </div>
       </h1>
     </div>

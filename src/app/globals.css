@@ -81,15 +81,12 @@
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    width: 325px;
-    height: 2.4rem;
     display: flex;
     align-items: center;
   }
 
   .animated-text-container h1 span.prefix {
     font-size: 1.6rem;
-    margin-left: 10px;
     position: relative;
     cursor: pointer;
     transition: color 0.3s ease;

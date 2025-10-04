@@ -45,12 +45,6 @@ const carouselImages = [
     alt: "Hero Image 4",
     hint: "yellow banner"
   },
-  {
-    src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
-    alt: "office hero banner",
-    hint: "office"
-  }
-
 ];
 
 const whoWeAreCards = [
@@ -170,6 +164,7 @@ export default function Home() {
                 <div className="relative h-20 w-20 mb-4">
                   <Image src={service.icon} alt={service.name} fill className="object-contain" />
                 </div>
+                <h3 className="font-headline text-xl font-bold mb-2">{service.name}</h3>
                 <p className="text-muted-foreground">{service.description}</p>
               </div>
             ))}

@@ -29,6 +29,11 @@ const carouselImages = [
     src: "https://ik.imagekit.io/ggelm1lwa/Orange%20and%20Cream%20Illustration%20Marketing%20Plan%20Presentation.png?updatedAt=1759558440845",
     alt: "Marketing Plan Presentation",
     hint: "marketing plan"
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226",
+    alt: "office hero banner",
+    hint: "office"
   }
 ];
 
@@ -89,39 +94,41 @@ export default function Home() {
     <>
        <div className="flex flex-col md:flex-row w-full">
         <section className="relative h-[64vh] md:h-[91vh] w-full bg-black">
-          <Carousel
-            plugins={[
-              Autoplay({
-                delay: 3000,
-                stopOnInteraction: true,
-              }),
-            ]}
-            className="w-full h-full"
-            opts={{ loop: true }}
-          >
-            <CarouselContent>
-              {carouselImages.map((img, index) => (
-                <CarouselItem key={index}>
-                  <div className="relative h-[64vh] md:h-[91vh] w-full">
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-fill w-full h-full"
-                      priority={index === 0}
-                      data-ai-hint={img.hint}
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+          <div className="w-full h-full px-[10%]">
+            <Carousel
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                  stopOnInteraction: true,
+                }),
+              ]}
+              className="w-full h-full"
+              opts={{ loop: true }}
+            >
+              <CarouselContent>
+                {carouselImages.map((img, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative h-[64vh] md:h-[91vh] w-full">
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-fill w-full h-full"
+                        priority={index === 0}
+                        data-ai-hint={img.hint}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
           <div className="absolute inset-0 bg-black/30" />
         </section>
       </div>
       
       <section 
-        className="relative bg-cover bg-center bg-fixed text-foreground py-20 md:py-32"
+        className="relative bg-cover bg-center bg-fixed text-foreground pt-12 md:pt-20 pb-20 md:pb-32"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
@@ -258,7 +265,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/80 z-0"/>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h3 className="text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
+            <h3 className="text-4xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
               WHO WE ARE
             </h3>
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">

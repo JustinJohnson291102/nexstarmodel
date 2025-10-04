@@ -109,7 +109,7 @@
     padding: 0.2rem 1rem 1rem;
     top: 0.2rem;
     border-radius: 4px;
-    animation: openclose 8s ease-in-out infinite;
+    animation: openclose 12s ease-in-out infinite;
     height: 3rem; /* Adjusted from 4.5rem */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -129,10 +129,10 @@
     height: 3rem; /* Adjusted from 4.5rem */
   }
 
-  .animated-text-container .message .word1 { animation: word-animation 8s infinite; }
-  .animated-text-container .message .word2 { animation: word-animation 8s infinite 2s; }
-  .animated-text-container .message .word3 { animation: word-animation 8s infinite 4s; }
-  .animated-text-container .message .word4 { animation: word-animation 8s infinite 6s; }
+  .animated-text-container .message .word1 { animation: word-animation 12s infinite; }
+  .animated-text-container .message .word2 { animation: word-animation 12s infinite 3s; }
+  .animated-text-container .message .word3 { animation: word-animation 12s infinite 6s; }
+  .animated-text-container .message .word4 { animation: word-animation 12s infinite 9s; }
 
   @keyframes word-animation {
     0%, 5% { opacity: 0; }

@@ -103,7 +103,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute z-10 top-0 left-0 h-full w-[60%] flex items-center justify-center">
+            <div className="absolute z-10 bottom-5 left-0 h-full w-[60%] flex justify-center">
                 <div className="relative w-1/2 h-1/2 animate-scale-up">
                     <Image
                         src="https://ik.imagekit.io/ggelm1lwa/nexstar_logo-removebg-preview.png?updatedAt=1759567751685"

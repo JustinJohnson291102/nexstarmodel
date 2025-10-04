@@ -103,15 +103,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute z-20 top-8 left-8 max-w-[35%] p-[5px]">
-              <h1 className="text-3xl md:text-4xl font-bold font-headline animate-typing-long overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-1">
-                <span className="text-red-500">NE</span><span className="text-blue-500">X</span><span className="text-red-500">STAR</span> <span className="text-blue-500">MEDIA INDIA</span>
-              </h1>
-              <h2 className="text-xl md:text-2xl font-semibold font-headline animate-typing-short overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-1 mt-2 text-blue-500">
-                PVT LTD
-              </h2>
-            </div>
-            <div className="relative z-10 w-full h-full pl-[60%] pr-[0.8%] pt-[0.8%] pb-[0.8%]">
+            <div className="relative z-10 w-full h-full pl-[60%] pr-[2%] pt-[2%] pb-[2%]">
               <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-full object-cover"

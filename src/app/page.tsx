@@ -129,7 +129,7 @@ export default function Home() {
                         className="object-contain"
                     />
                 </div>
-                 <div className="text-center pl-8">
+                 <div className="text-center pl-0">
                     <AnimatedText />
                 </div>
             </div>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -39,11 +40,6 @@ const newServices = [
   ];
 
 const carouselImages = [
-  {
-    src: "https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226",
-    alt: "Office hero banner",
-    hint: "office banner"
-  },
   {
     src: "https://ik.imagekit.io/ggelm1lwa/xebec%20yellow%20banner.jpg?updatedAt=1759468229202",
     alt: "Hero Image 4",
@@ -193,7 +189,7 @@ export default function Home() {
         </div>
       </section>
 
-       <div className="flex flex-col md:flex-row w-full">
+       <div className="flex flex-col md:flex-row w-full py-4 bg-white">
         <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
           <div className="w-full h-full px-[10%]">
             <Carousel

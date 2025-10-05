@@ -412,7 +412,7 @@ export default function Home() {
                           height={520}
                           alt={card.title}
                           data-ai-hint={card.imageHint}
-                          className="rounded-t-lg object-cover aspect-video"
+                          className="rounded-t-lg object-contain aspect-video"
                         />
                       </CardHeader>
                       <CardContent className="p-6 flex-grow flex flex-col">

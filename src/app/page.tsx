@@ -144,7 +144,7 @@ export default function Home() {
                   alt="Animated Orbit"
                   width={1350}
                   height={761}
-                  className="w-full h-auto scale-200"
+                  className="w-full h-auto scale-[5]"
                 />
               </div>
             </div>

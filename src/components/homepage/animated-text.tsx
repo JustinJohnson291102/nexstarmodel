@@ -7,7 +7,7 @@ export default function AnimatedText() {
   
   return (
     <div className="animated-text-container">
-      <span className="prefix mb-12">We offer</span>
+      <span className="prefix mb-4 md:mb-12">We offer</span>
       <div className="message">
         <div className="word1">Web Development</div>
         <div className="word2">Digital Marketing</div>

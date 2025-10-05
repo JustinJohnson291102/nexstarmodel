@@ -138,20 +138,22 @@ export default function Home() {
 
   return (
     <>
-       <div className="flex flex-col md:flex-row w-full">
-         <section className="relative h-[64vh] md:h-[91vh] w-full flex bg-background">
-            <video 
-              src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
-              className="absolute z-0 top-0 left-0 w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-            <div className="relative z-10 w-1/2 h-full flex flex-col items-center justify-center p-4">
+       <div className="flex flex-col w-full">
+         <section className="relative h-auto md:h-[91vh] w-full flex flex-col md:flex-row bg-background">
+            <div className="relative w-full md:w-1/2 h-[50vh] md:h-full flex flex-col items-center justify-center p-4">
+              <video 
+                src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
+                className="absolute z-0 top-0 left-0 w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+              <div className="relative z-10">
                 <AnimatedText />
+              </div>
             </div>
-            <div className="relative z-10 w-1/2 h-full">
+            <div className="relative w-full md:w-1/2 h-[50vh] md:h-full">
               <Image
                   src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
                   alt="Office hero banner"
@@ -180,7 +182,7 @@ export default function Home() {
             ))}
           </div>
            <div className="mt-12 flex justify-center">
-             <div className="relative w-1/2">
+             <div className="relative w-full md:w-1/2">
                <video 
                 src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
                 className="w-full h-auto rounded-lg shadow-lg"
@@ -194,9 +196,9 @@ export default function Home() {
         </div>
       </section>
 
-       <div className="flex flex-col md:flex-row w-full py-12 bg-white">
-        <section className="relative h-[64vh] md:h-[91vh] w-full bg-white">
-          <div className="w-full h-full px-[10%]">
+       <div className="w-full py-12 bg-white">
+        <section className="relative h-auto md:h-[91vh] w-full bg-white">
+          <div className="w-full h-full px-4 sm:px-8 md:px-[10%]">
             <Carousel
               plugins={[
                 Autoplay({
@@ -210,12 +212,12 @@ export default function Home() {
               <CarouselContent>
                 {carouselImages.map((img, index) => (
                   <CarouselItem key={index}>
-                    <div className="relative h-[64vh] md:h-[91vh] w-full">
+                    <div className="relative h-[40vh] sm:h-[60vh] md:h-[91vh] w-full">
                       <Image
                         src={img.src}
                         alt={img.alt}
                         fill
-                        className="object-fill w-full h-full"
+                        className="object-cover w-full h-full"
                         priority={index === 0}
                         data-ai-hint={img.hint}
                       />
@@ -229,13 +231,13 @@ export default function Home() {
       </div>
       
       <section 
-        className="relative bg-cover bg-center bg-fixed text-foreground pt-12 md:pt-20 pb-20 md:pb-32"
+        className="relative bg-cover bg-center bg-fixed text-foreground py-12 md:py-20"
         style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
         >
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-        <div className="container mx-auto px-4 relative z-10 space-y-20 md:space-y-32">
+        <div className="container mx-auto px-4 relative z-10 space-y-12 md:space-y-20">
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
                  src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035"
@@ -247,7 +249,7 @@ export default function Home() {
                />
             </div>
              <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
-               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+               <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  As an Advertising Agency
                </h2>
                <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
@@ -264,7 +266,7 @@ export default function Home() {
              </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
                 src="https://ik.imagekit.io/ggelm1lwa/advetising%20services.jpg?updatedAt=1759315133641"
@@ -276,7 +278,7 @@ export default function Home() {
               />
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Our Gamut of Services
               </h2>
               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
@@ -293,7 +295,7 @@ export default function Home() {
             </div>
           </div>
 
-           <div className="grid md:grid-cols-2 gap-12 items-center">
+           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
                  src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870"
@@ -305,7 +307,7 @@ export default function Home() {
                />
             </div>
              <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
-               <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+               <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  User-Centric Design
                </h2>
                <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
@@ -322,7 +324,7 @@ export default function Home() {
              </div>
           </div>
           
-           <div className="grid md:grid-cols-2 gap-12 items-center">
+           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
                 src="https://ik.imagekit.io/ggelm1lwa/data%20driven%20startegies.jpg?updatedAt=1759315702177"
@@ -334,10 +336,10 @@ export default function Home() {
               />
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
-              <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Data-Driven Strategies
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl_5">
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
                  <li>We leverage data to make informed decisions and optimize for success.</li>
                  <li>Our analytics-first approach ensures every campaign is measurable.</li>
                  <li>Unlock powerful insights and achieve a higher return on investment.</li>
@@ -366,13 +368,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/80 z-0"/>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 pt-8">
-            <h3 className="text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
+            <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">
               WHO WE ARE
             </h3>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
               A Dynamic Fusion of Creativity &amp; Technology
             </h2>
-            <p className="text-muted-foreground md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-muted-foreground text-base md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
               At Nexstar, we are more than just an IT &amp; Media company—we are a
               team of passionate innovators, thinkers, and creators. Our strength
               lies in blending technology with creativity to deliver solutions
@@ -409,10 +411,10 @@ export default function Home() {
                         />
                       </CardHeader>
                       <CardContent className="p-6 flex-grow flex flex-col">
-                        <CardTitle className="font-headline mb-3 flex items-center gap-3">
+                        <CardTitle className="font-headline mb-3 flex items-center gap-3 text-xl md:text-2xl">
                           <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
                         </CardTitle>
-                        <p className="text-muted-foreground flex-grow animate-typing">
+                        <p className="text-muted-foreground flex-grow">
                          {card.description}
                         </p>
                         <Button asChild size="sm" className="group mt-4 w-fit">
@@ -427,8 +429,8 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
-            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
+            <CarouselPrevious className="absolute left-[-20px] md:left-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
+            <CarouselNext className="absolute right-[-20px] md:right-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
           </Carousel>
         </div>
       </section>
@@ -437,10 +439,10 @@ export default function Home() {
 
       <section className="py-20 md:py-32 bg-primary text-primary-foreground relative">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight text-white mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
             Architects of Digital Success
           </h1>
-          <p className="max-w-3xl mx-auto text-white/90 md:text-xl mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
+          <p className="max-w-3xl mx-auto text-white/90 text-base md:text-xl mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-200">
             From groundbreaking strategies to stunning Shopify stores, we are the
             architects of your digital success. Explore our services and see how
             we can elevate your brand.
@@ -458,3 +460,4 @@ export default function Home() {
     </>
   );
 }
+

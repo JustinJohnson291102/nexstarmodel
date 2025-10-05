@@ -77,15 +77,16 @@
   }
   .animated-text-container .prefix {
     @apply text-2xl md:text-4xl font-light text-white/90 block;
+    animation: text-color-change 12s infinite;
   }
 
   .animated-text-container .message {
     @apply text-white text-4xl md:text-6xl font-bold font-headline relative h-12 md:h-20 w-full flex items-center justify-center;
   }
 
-  .word1, .word2, .word3, .word4 {
-    @apply absolute w-full h-full flex items-center justify-center opacity-0 text-white;
-    animation: word-animation 12s infinite;
+  .word-animation {
+    @apply absolute w-full h-full flex items-center justify-center opacity-0;
+    animation: word-animation 12s infinite, text-color-change 12s infinite;
   }
 
   .word2 { animation-delay: 3s; }
@@ -98,6 +99,13 @@
     25% { opacity: 1; transform: translateY(0); }
     35% { opacity: 0; transform: translateY(-10px); }
     100% { opacity: 0; }
+  }
+
+  @keyframes text-color-change {
+    0%, 100% { color: #88c8ff; } /* Light Blue */
+    25% { color: #98ff98; } /* Mint Green */
+    50% { color: #ffb3ba; } /* Light Pink */
+    75% { color: #ffdfba; } /* Light Peach */
   }
   
   @keyframes sparkle {
@@ -112,4 +120,3 @@
   }
 
 }
-

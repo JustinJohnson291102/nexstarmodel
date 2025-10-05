@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -414,7 +415,7 @@ export default function Home() {
                           data-ai-hint={card.imageHint}
                           className={`rounded-t-lg w-full aspect-video transition-transform duration-500 hover:scale-105 ${
                             card.title === "Our Global Presence"
-                              ? "object-cover object-top -translate-y-[20px]"
+                              ? "object-cover relative top-[-20px]"
                               : "object-contain"
                           }`}
                         />

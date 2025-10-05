@@ -124,8 +124,23 @@ export default function Home() {
     const [carouselImages, setCarouselImages] = useState(baseCarouselImages);
 
     useEffect(() => {
+        const checkIsMobile = () => {
+           return window.innerWidth < 768;
+        };
+        
+        if (checkIsMobile()) {
+            const mobileImages = [...baseCarouselImages];
+            // Swap 2nd and 3rd
+            [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
+            // Swap 4th and 5th
+            [mobileImages[3], mobileImages[4]] = [mobileImages[4], mobileImages[3]];
+            setCarouselImages(mobileImages);
+        } else {
+            setCarouselImages(baseCarouselImages);
+        }
+
         const handleResize = () => {
-            if (window.innerWidth < 768) {
+             if (checkIsMobile()) {
                 const mobileImages = [...baseCarouselImages];
                 // Swap 2nd and 3rd
                 [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
@@ -135,9 +150,8 @@ export default function Home() {
             } else {
                 setCarouselImages(baseCarouselImages);
             }
-        };
+        }
 
-        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -413,10 +427,10 @@ export default function Home() {
                           height={520}
                           alt={card.title}
                           data-ai-hint={card.imageHint}
-                          className={`rounded-t-lg w-full aspect-video transition-transform duration-500 hover:scale-105 ${
+                           className={`relative rounded-t-lg w-full aspect-video transition-transform duration-500 hover:scale-105 ${
                             card.title === "Our Global Presence"
-                              ? "object-contain relative top-[-15px]"
-                              : "object-contain"
+                              ? "object-contain top-[-15px]"
+                              : "object-cover"
                           }`}
                         />
                       </CardHeader>

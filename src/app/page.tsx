@@ -120,16 +120,15 @@ const whoWeAreCards = [
   ];
 
 const OrbitingCards = () => (
-    <div className="orbit-container">
-      <img className="center-image" src="https://ik.imagekit.io/ggelm1lwa/new/nexstar-bg.png?updatedAt=1759684296482" alt="Center Image" />
-      <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/gtm-strategy.jpg?updatedAt=1759684296824" alt="GTM Strategy" /></div>
-      <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/E-Commerce-Development-Bloom-IT.webp?updatedAt=1759684296526" alt="E-Commerce" /></div>
-      <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/creative-branding.jpg?updatedAt=1759684296346" alt="Branding" /></div>
-      <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/digital-marketing.png?updatedAt=1759684296218" alt="Digital Marketing" /></div>
-      <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/seo.jpg?updatedAt=1759684297044" alt="SEO" /></div>
-    </div>
-  );
-
+  <div className="orbit-container">
+    <img className="center-image" src="https://ik.imagekit.io/ggelm1lwa/new/nexstar-bg.png?updatedAt=1759684296482" alt="Center Image" />
+    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/gtm-strategy.jpg?updatedAt=1759684296824" alt="GTM Strategy" /></div>
+    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/E-Commerce-Development-Bloom-IT.webp?updatedAt=1759684296526" alt="E-Commerce" /></div>
+    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/creative-branding.jpg?updatedAt=1759684296346" alt="Branding" /></div>
+    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/digital-marketing.png?updatedAt=1759684296218" alt="Digital Marketing" /></div>
+    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/seo.jpg?updatedAt=1759684297044" alt="SEO" /></div>
+  </div>
+);
 
 export default function Home() {
 
@@ -149,7 +148,7 @@ export default function Home() {
               <div className="flex-1 flex justify-start items-center pl-[60px]">
                 <AnimatedText />
               </div>
-              <div className="flex-1 flex justify-center items-center">
+              <div className="flex-1 flex justify-center items-center" style={{ position: 'relative', top: '-20px' }}>
                 <OrbitingCards />
               </div>
             </div>

@@ -405,14 +405,18 @@ export default function Home() {
                 <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
-                      <CardHeader className="p-0">
+                      <CardHeader className="p-0 overflow-hidden rounded-t-lg">
                         <Image
                           src={card.imageSrc}
                           width={800}
                           height={520}
                           alt={card.title}
                           data-ai-hint={card.imageHint}
-                          className="rounded-t-lg object-contain aspect-video"
+                          className={`rounded-t-lg w-full aspect-video transition-transform duration-500 hover:scale-105 ${
+                            card.title === "Our Global Presence"
+                              ? "object-cover object-top -translate-y-[20px]"
+                              : "object-contain"
+                          }`}
                         />
                       </CardHeader>
                       <CardContent className="p-6 flex-grow flex flex-col">

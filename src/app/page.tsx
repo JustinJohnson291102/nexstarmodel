@@ -145,9 +145,11 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 flex items-center justify-between p-4 w-full h-full pl-[60px]">
+            <div className="relative z-10 flex items-center justify-center p-4 w-full h-full pl-[110px]">
               <AnimatedText />
-              <OrbitingCards />
+              <div className="flex-1 flex justify-center items-center">
+                <OrbitingCards />
+              </div>
             </div>
           </section>
           <section className="relative w-full h-auto md:h-[91vh]">
@@ -462,5 +464,3 @@ export default function Home() {
     </>
   );
 }
-
-    

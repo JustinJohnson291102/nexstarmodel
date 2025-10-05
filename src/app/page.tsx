@@ -121,58 +121,32 @@ const whoWeAreCards = [
 
 
 export default function Home() {
-  const [carouselImages, setCarouselImages] = useState(baseCarouselImages);
-
-  useEffect(() => {
-    const checkIsMobile = () => {
-      return window.innerWidth < 768;
-    };
-
-    const reorderImagesForMobile = () => {
-      if (checkIsMobile()) {
-        const mobileImages = [...baseCarouselImages];
-        // Swap 2nd and 3rd
-        [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
-        // Swap 4th and 5th
-        [mobileImages[3], mobileImages[4]] = [mobileImages[4], mobileImages[3]];
-        setCarouselImages(mobileImages);
-      } else {
-        setCarouselImages(baseCarouselImages);
-      }
-    };
-
-    reorderImagesForMobile();
-
-    window.addEventListener('resize', reorderImagesForMobile);
-    return () => window.removeEventListener('resize', reorderImagesForMobile);
-  }, []);
 
   return (
     <>
        <div className="flex flex-col w-full">
-         <section className="relative h-auto md:h-[91vh] w-full flex flex-col md:flex-row bg-background">
-            <div className="relative w-full md:w-1/2 h-[50vh] md:h-full flex flex-col items-center justify-center p-4">
-              <video 
-                src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
-                className="absolute z-0 top-0 left-0 w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-              <div className="relative z-10">
-                <AnimatedText />
+         <section className="relative h-auto md:h-[91vh] w-full flex items-center justify-center bg-background">
+            <video 
+              src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
+              className="absolute z-0 top-0 left-0 w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 w-full h-full">
+              <div className="flex flex-col items-center justify-center p-4">
+                 <AnimatedText />
               </div>
-            </div>
-            <div className="relative w-full md:w-1/2 h-[50vh] md:h-full">
-              <video 
-                src="https://ik.imagekit.io/ggelm1lwa/Orbit-Carousel---16x9.mp4?updatedAt=1759670806028"
-                className="w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
+              <div className="relative flex items-center justify-center">
+                 <Image 
+                  src="https://ik.imagekit.io/ggelm1lwa/Orbit-Carousel-16x9-1--unscreen.gif?updatedAt=1759672280293"
+                  alt="Animated Orbit"
+                  width={600}
+                  height={338}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </section>
           <section className="relative w-full h-auto md:h-[91vh]">
@@ -231,7 +205,7 @@ export default function Home() {
               opts={{ loop: true }}
             >
               <CarouselContent>
-                {carouselImages.map((img, index) => (
+                {baseCarouselImages.map((img, index) => (
                   <CarouselItem key={index}>
                     <div className="relative h-[40vh] sm:h-[60vh] md:h-[91vh] w-full">
                       <Image

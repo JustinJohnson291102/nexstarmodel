@@ -50,7 +50,7 @@ const prompt = ai.definePrompt({
   - **XTrack:** A proprietary analytics platform for real-time analytics, custom dashboards, audience insights, and conversion tracking.
 
   **Contact Information:**
-  - **Email:** hello@nexstar.com
+  - **Email:** support@nexstarlive.com
   - **Phone:** (123) 456-7890
   - **Address:** 123 Digital Ave, Innovation City, 12345
   - You can always direct users to the /contact page to get in touch.
@@ -77,4 +77,3 @@ const chatFlow = ai.defineFlow(
     return output!;
   }
 );
-

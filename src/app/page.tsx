@@ -127,20 +127,9 @@ export default function Home() {
         const checkIsMobile = () => {
            return window.innerWidth < 768;
         };
-        
-        if (checkIsMobile()) {
-            const mobileImages = [...baseCarouselImages];
-            // Swap 2nd and 3rd
-            [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
-            // Swap 4th and 5th
-            [mobileImages[3], mobileImages[4]] = [mobileImages[4], mobileImages[3]];
-            setCarouselImages(mobileImages);
-        } else {
-            setCarouselImages(baseCarouselImages);
-        }
 
-        const handleResize = () => {
-             if (checkIsMobile()) {
+        const reorderImagesForMobile = () => {
+            if (checkIsMobile()) {
                 const mobileImages = [...baseCarouselImages];
                 // Swap 2nd and 3rd
                 [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
@@ -150,10 +139,12 @@ export default function Home() {
             } else {
                 setCarouselImages(baseCarouselImages);
             }
-        }
+        };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        reorderImagesForMobile();
+
+        window.addEventListener('resize', reorderImagesForMobile);
+        return () => window.removeEventListener('resize', reorderImagesForMobile);
     }, []);
 
   return (
@@ -237,7 +228,7 @@ export default function Home() {
                         src={img.src}
                         alt={img.alt}
                         fill
-                        className="object-contain sm:object-cover w-full h-full"
+                        className="object-fill w-full h-full"
                         priority={index === 0}
                         data-ai-hint={img.hint}
                       />
@@ -421,18 +412,20 @@ export default function Home() {
                   <div className="p-1 h-full">
                     <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
                       <CardHeader className="p-0 overflow-hidden rounded-t-lg">
-                        <Image
-                          src={card.imageSrc}
-                          width={800}
-                          height={520}
-                          alt={card.title}
-                          data-ai-hint={card.imageHint}
-                           className={`relative rounded-t-lg w-full aspect-video transition-transform duration-500 hover:scale-105 ${
-                            card.title === "Our Global Presence"
-                              ? "object-contain top-[-15px]"
-                              : "object-cover"
-                          }`}
-                        />
+                        <div className="relative w-full aspect-video overflow-hidden">
+                          <Image
+                            src={card.imageSrc}
+                            width={800}
+                            height={520}
+                            alt={card.title}
+                            data-ai-hint={card.imageHint}
+                            className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
+                              card.title === "Our Global Presence"
+                                ? "object-contain relative top-[-15px]"
+                                : "object-cover"
+                            }`}
+                          />
+                        </div>
                       </CardHeader>
                       <CardContent className="p-6 flex-grow flex flex-col">
                         <CardTitle className="font-headline mb-3 flex items-center gap-3 text-xl md:text-2xl">

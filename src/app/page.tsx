@@ -134,19 +134,8 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 w-full h-full">
-              <div className="flex flex-col items-center justify-center p-4">
+            <div className="relative z-10 flex flex-col items-center justify-center p-4 w-full h-full">
                  <AnimatedText />
-              </div>
-              <div className="relative flex items-center justify-center">
-                 <Image 
-                  src="https://ik.imagekit.io/ggelm1lwa/Orbit-Carousel-16x9-1--unscreen.gif?updatedAt=1759672280293"
-                  alt="Animated Orbit"
-                  width={1350}
-                  height={761}
-                  className="w-full h-auto scale-[5]"
-                />
-              </div>
             </div>
           </section>
           <section className="relative w-full h-auto md:h-[91vh]">

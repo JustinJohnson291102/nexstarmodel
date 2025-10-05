@@ -39,7 +39,7 @@ const newServices = [
     },
   ];
 
-const carouselImages = [
+const baseCarouselImages = [
   {
     src: "https://ik.imagekit.io/ggelm1lwa/xebec%20yellow%20banner.jpg?updatedAt=1759468229202",
     alt: "Hero Image 4",
@@ -121,19 +121,25 @@ const whoWeAreCards = [
 
 
 export default function Home() {
-    const [animatedText, setAnimatedText] = useState('');
-    const fullText = "Architects of Digital Success";
+    const [carouselImages, setCarouselImages] = useState(baseCarouselImages);
 
     useEffect(() => {
-        let index = 0;
-        const intervalId = setInterval(() => {
-        setAnimatedText((prev) => fullText.substring(0, index + 1));
-        index++;
-        if (index === fullText.length) {
-            clearInterval(intervalId);
-        }
-        }, 100);
-        return () => clearInterval(intervalId);
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                const mobileImages = [...baseCarouselImages];
+                // Swap 2nd and 3rd
+                [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
+                // Swap 4th and 5th
+                [mobileImages[3], mobileImages[4]] = [mobileImages[4], mobileImages[3]];
+                setCarouselImages(mobileImages);
+            } else {
+                setCarouselImages(baseCarouselImages);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
   return (
@@ -202,7 +208,7 @@ export default function Home() {
             <Carousel
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 2000,
                   stopOnInteraction: true,
                 }),
               ]}
@@ -217,7 +223,7 @@ export default function Home() {
                         src={img.src}
                         alt={img.alt}
                         fill
-                        className="object-cover w-full h-full"
+                        className="object-contain sm:object-cover w-full h-full"
                         priority={index === 0}
                         data-ai-hint={img.hint}
                       />
@@ -461,3 +467,4 @@ export default function Home() {
   );
 }
 
+    

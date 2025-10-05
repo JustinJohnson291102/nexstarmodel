@@ -415,7 +415,7 @@ export default function Home() {
                           data-ai-hint={card.imageHint}
                           className={`rounded-t-lg w-full aspect-video transition-transform duration-500 hover:scale-105 ${
                             card.title === "Our Global Presence"
-                              ? "object-cover relative top-[-20px]"
+                              ? "object-contain relative top-[-15px]"
                               : "object-contain"
                           }`}
                         />

@@ -121,31 +121,31 @@ const whoWeAreCards = [
 
 
 export default function Home() {
-    const [carouselImages, setCarouselImages] = useState(baseCarouselImages);
+  const [carouselImages, setCarouselImages] = useState(baseCarouselImages);
 
-    useEffect(() => {
-        const checkIsMobile = () => {
-           return window.innerWidth < 768;
-        };
+  useEffect(() => {
+    const checkIsMobile = () => {
+      return window.innerWidth < 768;
+    };
 
-        const reorderImagesForMobile = () => {
-            if (checkIsMobile()) {
-                const mobileImages = [...baseCarouselImages];
-                // Swap 2nd and 3rd
-                [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
-                // Swap 4th and 5th
-                [mobileImages[3], mobileImages[4]] = [mobileImages[4], mobileImages[3]];
-                setCarouselImages(mobileImages);
-            } else {
-                setCarouselImages(baseCarouselImages);
-            }
-        };
+    const reorderImagesForMobile = () => {
+      if (checkIsMobile()) {
+        const mobileImages = [...baseCarouselImages];
+        // Swap 2nd and 3rd
+        [mobileImages[1], mobileImages[2]] = [mobileImages[2], mobileImages[1]];
+        // Swap 4th and 5th
+        [mobileImages[3], mobileImages[4]] = [mobileImages[4], mobileImages[3]];
+        setCarouselImages(mobileImages);
+      } else {
+        setCarouselImages(baseCarouselImages);
+      }
+    };
 
-        reorderImagesForMobile();
+    reorderImagesForMobile();
 
-        window.addEventListener('resize', reorderImagesForMobile);
-        return () => window.removeEventListener('resize', reorderImagesForMobile);
-    }, []);
+    window.addEventListener('resize', reorderImagesForMobile);
+    return () => window.removeEventListener('resize', reorderImagesForMobile);
+  }, []);
 
   return (
     <>
@@ -165,14 +165,24 @@ export default function Home() {
               </div>
             </div>
             <div className="relative w-full md:w-1/2 h-[50vh] md:h-full">
-              <Image
-                  src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
-                  alt="Office hero banner"
-                  fill
-                  className="w-full h-full object-cover"
-                  data-ai-hint="office banner"
+              <video 
+                src="https://ik.imagekit.io/ggelm1lwa/Orbit-Carousel---16x9.mp4?updatedAt=1759670806028"
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
+          </section>
+          <section className="relative w-full h-auto md:h-[91vh]">
+            <Image
+                src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
+                alt="Office hero banner"
+                fill
+                className="w-full h-full object-cover"
+                data-ai-hint="office banner"
+            />
           </section>
         </div>
         

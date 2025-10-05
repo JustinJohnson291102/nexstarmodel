@@ -134,7 +134,7 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 flex flex-col items-center justify-center p-4 w-full h-full">
+            <div className="relative z-10 flex flex-col items-end justify-center p-4 w-full h-full mr-[50px]">
                  <AnimatedText />
             </div>
           </section>

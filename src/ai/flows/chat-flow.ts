@@ -6,74 +6,24 @@
  * - chat - A function that handles the chat interaction.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+// A simple map of questions to answers.
+const predefinedResponses: Record<string, string> = {
+  hi: "Hi Sir/Ma'am, I am the Nexstar assistant. How can I help you today?",
+  hello: "Hi Sir/Ma'am, I am the Nexstar assistant. How can I help you today?",
+  services: "Nexstar offers a wide range of services including Social Media Marketing, Creative & Branding, Web/Tech Solutions, B2B Marketing, and much more. You can see all our services on the /services page.",
+  contact: "You can contact us via email at support@nexstarlive.com, call us at (123) 456-7890, or visit our /contact page to get in touch.",
+  'what services do you offer?': "Nexstar offers a wide range of services including Social Media Marketing, Creative & Branding, Web/Tech Solutions, B2B Marketing, and much more. You can see all our services on the /services page.",
+  'how can i contact you?': "You can contact us via email at support@nexstarlive.com, call us at (123) 456-7890, or visit our /contact page to get in touch.",
+};
 
-const ChatInputSchema = z.object({
-  message: z.string().describe('The user message'),
-});
-export type ChatInput = z.infer<typeof ChatInputSchema>;
+const defaultResponse = "I'm sorry, I can only answer some basic questions right now. For more detailed inquiries, please visit our contact page or email us at support@nexstarlive.com.";
 
-const ChatOutputSchema = z.object({
-  message: z.string().describe('The AI response'),
-});
-export type ChatOutput = z.infer<typeof ChatOutputSchema>;
-
+/**
+ * Handles the chat interaction by looking up a predefined response.
+ * @param message The user's message.
+ * @returns A predefined response or a default message.
+ */
 export async function chat(message: string): Promise<string> {
-  const {message: response} = await chatFlow({message});
-  return response;
+  const lowerCaseMessage = message.toLowerCase().trim();
+  return predefinedResponses[lowerCaseMessage] || defaultResponse;
 }
-
-const prompt = ai.definePrompt({
-  name: 'chatPrompt',
-  input: {schema: ChatInputSchema},
-  output: {schema: ChatOutputSchema},
-  prompt: `You are a helpful and friendly assistant for a digital marketing agency called Nexstar. Your goal is to answer user questions about the agency and encourage them to get in touch.
-
-  Use the following information about Nexstar to answer the user's questions. Do not make up information. If you don't know the answer, politely say that you don't have that information and suggest they contact the agency directly.
-
-  **About Nexstar:**
-  - **Mission:** Nexstar ignites brands with ideas that transform behavior. They are architects of digital success.
-  - **Company:** A hybrid marketing company with the chutzpah of a millennial and the experience of Gen X. They connect the dots quicker.
-  - **Philosophy:** The future of Communications lies in the 4Es - Engagement, Exclusivity, Emotion, and Experience.
-
-  **Services Offered:**
-  - **Social Media Marketing:** Strategy, platform management, community building, campaigns, listening, and analysis.
-  - **Creative and Branding:** Strategy, graphic design, illustration, copywriting, photo/video production.
-  - **Web/Tech Solutions:** Responsive web design (mobile-first), UI/UX, e-commerce (Shopify, WooCommerce), custom apps, CMS, and maintenance.
-  - **B2B Marketing:** Account-Based Marketing (ABM), lead generation/nurturing, content strategy, and analytics.
-  - **Go-To-Market (GTM) Strategy:** A comprehensive roadmap for launching and scaling new products.
-  - **Search Marketing (SEO/SEM):** Drive targeted traffic through search engine optimization and paid advertising.
-  - **Video Production:** Concept development, filming, and post-production for compelling video content.
-  - **Online Reputation Management (ORM):** Shape and protect your brand's online image.
-  - **E-commerce Development:** Build high-performing online stores on platforms like Shopify and WooCommerce.
-  - **XTrack:** A proprietary analytics platform for real-time analytics, custom dashboards, audience insights, and conversion tracking.
-
-  **Contact Information:**
-  - **Email:** support@nexstarlive.com
-  - **Phone:** (123) 456-7890
-  - **Address:** 123 Digital Ave, Innovation City, 12345
-  - You can always direct users to the /contact page to get in touch.
-
-  **Frequently Asked Questions (FAQs):**
-  - **Q: What kind of clients do you work with?** A: We work with a diverse range of clients, from startups to established enterprises, across various industries.
-  - **Q: Where are you located?** A: Our headquarters are in New York, with specialized offices in the UK and India.
-  - **Q: How can I get a quote?** A: The best way to get a quote is to visit our contact page and fill out the form. Our team will get back to you to discuss your project in detail.
-
-  This is the user's message:
-  {{{message}}}
-  
-  Keep your response concise, helpful, and friendly. If the user seems interested in a service, suggest they get in touch via the contact page.`,
-});
-
-const chatFlow = ai.defineFlow(
-  {
-    name: 'chatFlow',
-    inputSchema: ChatInputSchema,
-    outputSchema: ChatOutputSchema,
-  },
-  async input => {
-    const {output} = await prompt(input);
-    return output!;
-  }
-);

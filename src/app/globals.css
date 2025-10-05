@@ -121,29 +121,30 @@
   /* Orbiting Cards Animation */
   .orbit-container {
     position: relative;
-    width: 500px; /* Adjust as needed */
-    height: 500px; /* Adjust as needed */
-    transform: scale(0.8); /* Scale down to fit layout */
+    width: 500px;
+    height: 500px;
   }
 
   .center-image {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     object-fit: cover;
+    margin-left: 50px;
+    margin-top: 80px;
   }
 
   .orbit-card {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 156px;
-    height: 208px;
+    width: 120px;
+    height: 160px;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -166,10 +167,10 @@
 
   @keyframes orbit {
     0% {
-      transform: rotate(var(--angle)) translateX(396px) rotate(calc(-1 * var(--angle)));
+      transform: rotate(var(--angle)) translateX(198px) rotate(calc(-1 * var(--angle)));
     }
     100% {
-      transform: rotate(calc(var(--angle) + 360deg)) translateX(396px) rotate(calc(-1 * (var(--angle) + 360deg)));
+      transform: rotate(calc(var(--angle) + 360deg)) translateX(198px) rotate(calc(-1 * (var(--angle) + 360deg)));
     }
   }
 }

@@ -142,8 +142,8 @@ export default function Home() {
                  <Image 
                   src="https://ik.imagekit.io/ggelm1lwa/Orbit-Carousel-16x9-1--unscreen.gif?updatedAt=1759672280293"
                   alt="Animated Orbit"
-                  width={600}
-                  height={338}
+                  width={900}
+                  height={507}
                   className="w-full h-auto"
                 />
               </div>

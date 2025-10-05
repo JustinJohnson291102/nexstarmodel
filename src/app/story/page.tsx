@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -151,10 +150,10 @@ export default function StoryPage() {
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
                     <Image
-                      src="https://picsum.photos/seed/mission-image/800/600"
+                      src="https://ik.imagekit.io/ggelm1lwa/nexstar%20about%20us.png?updatedAt=1759650054593"
                       alt="Team discussing a project on a whiteboard"
                       fill
-                      className="object-cover"
+                      className="object-fill"
                       data-ai-hint="team collaboration"
                     />
                 </div>

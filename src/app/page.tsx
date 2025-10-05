@@ -148,7 +148,7 @@ export default function Home() {
               <div className="flex-1 flex justify-start items-center pl-[60px]">
                 <AnimatedText />
               </div>
-              <div className="flex-1 flex justify-center items-center" style={{ position: 'relative', top: '-20px' }}>
+              <div className="flex-1 flex justify-center items-center" style={{ position: 'relative', top: '-40px' }}>
                 <OrbitingCards />
               </div>
             </div>
@@ -465,3 +465,5 @@ export default function Home() {
     </>
   );
 }
+
+    

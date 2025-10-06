@@ -32,11 +32,11 @@ export default function Footer() {
 
   return (
     <footer className="bg-secondary text-secondary-foreground">
-      <div className="container mx-auto py-12 px-4 md:px-6">
+      <div className="container mx-auto py-8 px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           
           <div className="md:col-span-4 flex flex-col items-start">
-            <Link href="/" className="mb-4">
+            <Link href="/" className="mb-2">
                <Image
                 src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
                 alt="Nexstar Logo"
@@ -45,7 +45,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </Link>
-            <p className="text-sm text-muted-foreground max-w-sm">
+            <p className="text-sm text-muted-foreground max-w-sm mt-2">
               Innovating the digital space, one pixel at a time. We are the
               architects of your digital success.
             </p>
@@ -97,5 +97,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-    

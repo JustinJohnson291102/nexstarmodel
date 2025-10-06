@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -116,7 +115,7 @@ export default function B2BPage() {
   return (
     <>
       <section 
-        className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center bg-background"
+        className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center bg-white"
       >
         <div className="container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left relative z-10">
           <div className="max-w-2xl">
@@ -338,3 +337,5 @@ export default function B2BPage() {
     </>
   );
 }
+
+    

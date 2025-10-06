@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -98,7 +97,7 @@ export default function MobileAppDevelopmentPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-background"
+        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-white"
       >
         <div className="relative z-10 container mx-auto px-4 text-foreground">
           <div className="max-w-3xl mx-auto">
@@ -271,3 +270,5 @@ export default function MobileAppDevelopmentPage() {
     </div>
   );
 }
+
+    

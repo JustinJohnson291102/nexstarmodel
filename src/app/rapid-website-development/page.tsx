@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -95,7 +94,7 @@ export default function RapidWebsiteDevelopmentPage() {
   return (
     <div className="bg-background">
       <section
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-background"
+        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
       >
         <div className="relative z-20 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
           <Rocket className="h-16 w-16 mx-auto mb-4" />
@@ -239,3 +238,5 @@ export default function RapidWebsiteDevelopmentPage() {
     </div>
   );
 }
+
+    

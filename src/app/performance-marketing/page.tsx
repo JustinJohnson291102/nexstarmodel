@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -119,7 +118,7 @@ export default function PerformanceMarketingPage() {
   return (
     <>
       <section 
-        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-background"
+        className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-white"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
@@ -308,3 +307,5 @@ export default function PerformanceMarketingPage() {
     </>
   );
 }
+
+    

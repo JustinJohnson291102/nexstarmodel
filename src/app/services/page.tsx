@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -302,7 +301,7 @@ const whyChooseUsFeatures = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-background">
+      <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white">
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-foreground mb-4">
             Our Services
@@ -417,3 +416,5 @@ export default function ServicesPage() {
     </>
   );
 }
+
+    

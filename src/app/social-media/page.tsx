@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -105,7 +104,7 @@ export default function SocialMediaPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center bg-background"
+        className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center bg-white"
       >
         <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
@@ -270,3 +269,5 @@ export default function SocialMediaPage() {
     </div>
   );
 }
+
+    

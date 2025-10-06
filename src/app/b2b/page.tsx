@@ -20,7 +20,7 @@ const b2bServices = [
     title: "Account-Based Marketing (ABM)",
     description: "Target high-value accounts with personalized campaigns that treat individual accounts as markets in their own right.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-abm/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/accont%20based%20marketing.jpg?updatedAt=1759733267396",
       hint: "colorful professional marketing target",
     }
   },
@@ -29,7 +29,7 @@ const b2bServices = [
     title: "Lead Generation & Nurturing",
     description: "Build a robust pipeline of qualified leads and nurture them through the sales funnel with targeted content and automation.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-lead-gen/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/lead%20genertion.png?updatedAt=1759733267113",
       hint: "colorful professional sales funnel",
     }
   },
@@ -38,7 +38,7 @@ const b2bServices = [
     title: "B2B Content Strategy",
     description: "Establish thought leadership and attract your target audience with valuable, relevant, and consistent content.",
      image: {
-      src: "https://picsum.photos/seed/colorful-professional-content-strategy/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/b2b.jpg?updatedAt=1759733267424",
       hint: "colorful professional content creation",
     }
   },
@@ -47,7 +47,7 @@ const b2bServices = [
     title: "Marketing & Sales Analytics",
     description: "Leverage data to optimize your marketing efforts, measure ROI, and align your sales and marketing teams.",
      image: {
-      src: "https://picsum.photos/seed/professional-analytics-dashboard/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/marketing-analytics-101-open-graph.webp?updatedAt=1759733267129",
       hint: "professional data analytics",
     }
   },
@@ -84,7 +84,7 @@ const alternatingContent = [
             "Sales and marketing team alignment for seamless follow-up."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-b2b-abm/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/Account-Based-Marketing-e1748241143773.jpg?updatedAt=1759733391413",
             hint: "colorful professional marketing focus"
         }
     },
@@ -98,7 +98,7 @@ const alternatingContent = [
             "Content distribution and promotion strategies."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-b2b-content/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/content-that-converts-facebook.png?updatedAt=1759733526096",
             hint: "colorful professional content writing"
         }
     }
@@ -119,8 +119,8 @@ export default function B2BPage() {
       >
         <div className="container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-black mb-4">B2B Marketing</h1>
-            <p className="text-lg md:text-2xl text-gray-600">Drive meaningful engagement and sustainable growth with our strategic B2B marketing solutions.</p>
+            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">B2B Marketing</h1>
+            <p className="text-lg md:text-2xl text-white">Drive meaningful engagement and sustainable growth with our strategic B2B marketing solutions.</p>
           </div>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function B2BPage() {
                         src={service.image.src}
                         alt={service.title}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-fill transition-transform duration-500 group-hover:scale-105"
                         data-ai-hint={service.image.hint}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
@@ -203,7 +203,7 @@ export default function B2BPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

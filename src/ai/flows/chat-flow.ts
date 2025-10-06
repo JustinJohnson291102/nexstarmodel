@@ -8,6 +8,10 @@
 
 // A map of keywords to predefined responses and the relevant page URL.
 const predefinedResponses: { [key: string]: { response: string; url?: string } } = {
+    "services": {
+        response: "We offer a wide range of digital services, including Social Media Marketing, Creative & Branding, B2B Marketing, Search Marketing (SEO/SEM), Video Production, Web & Mobile App Development, and more. You can explore all our offerings on our services page.",
+        url: "/services"
+    },
     "social media": {
         response: "We offer Social Media Marketing services, including strategy, content creation, and community management. You can find more details on our Social Media page.",
         url: "/social-media"
@@ -44,6 +48,10 @@ const predefinedResponses: { [key: string]: { response: string; url?: string } }
         response: "We design and develop beautiful, high-performance websites. See our Web Solutions page to learn more.",
         url: "/web-solutions"
     },
+    "web solutions": {
+        response: "We design and develop beautiful, high-performance websites, from simple brochure sites to complex web applications. See our Web Solutions page to learn more.",
+        url: "/web-solutions"
+    },
     "mobile app": {
         response: "We build intuitive and high-performance native iOS and Android mobile apps. Visit our Mobile App Development page for details.",
         url: "/mobile-app-development"
@@ -55,6 +63,10 @@ const predefinedResponses: { [key: string]: { response: string; url?: string } }
     "contact": {
         response: "You can get in touch with us via our contact page for a free consultation. Our email is contact@nexstarlive.com and phone is +1 (917) 672-8930.",
         url: "/contact"
+    },
+    "about us": {
+        response: "You can learn more about our story, our mission, and our team on our Story page.",
+        url: "/story"
     },
     "story": {
         response: "You can learn more about our story, our mission, and our team on our Story page.",

@@ -8,17 +8,19 @@
 
 const servicesResponse = "Nexstar offers a wide range of services including Social Media Marketing, Creative & Branding, Web/Tech Solutions, B2B Marketing, and much more. You can see all our services on the /services page.";
 
+const newGreeting = "Hello I'm your Nexstar AI assistant. How can I help you ?";
+
 // A simple map of questions to answers.
 const predefinedResponses: Record<string, string> = {
-  hi: "Hi Sir/Ma'am, I am the Nexstar assistant. How can I help you today?",
-  hello: "Hi Sir/Ma'am, I am the Nexstar assistant. How can I help you today?",
+  hi: newGreeting,
+  hello: newGreeting,
   services: servicesResponse,
   contact: "You can contact us via email at support@nexstarlive.com, call us at (123) 456-7890, or visit our /contact page to get in touch.",
   'what services do you offer?': servicesResponse,
   'how can i contact you?': "You can contact us via email at support@nexstarlive.com, call us at (123) 456-7890, or visit our /contact page to get in touch.",
 };
 
-const defaultResponse = "I'm sorry, I can only answer some basic questions right now. For more detailed inquiries, please visit our contact page or email us at support@nexstarlive.com.";
+const defaultResponse = newGreeting;
 
 /**
  * Handles the chat interaction by looking up a predefined response.

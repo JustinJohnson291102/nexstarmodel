@@ -119,8 +119,8 @@ export default function B2BPage() {
       >
         <div className="container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-foreground mb-4">B2B Marketing</h1>
-            <p className="text-lg md:text-2xl text-muted-foreground">Drive meaningful engagement and sustainable growth with our strategic B2B marketing solutions.</p>
+            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-black mb-4">B2B Marketing</h1>
+            <p className="text-lg md:text-2xl text-gray-600">Drive meaningful engagement and sustainable growth with our strategic B2B marketing solutions.</p>
           </div>
         </div>
       </section>
@@ -337,5 +337,3 @@ export default function B2BPage() {
     </>
   );
 }
-
-    

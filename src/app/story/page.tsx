@@ -123,7 +123,7 @@ export default function StoryPage() {
           src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
           alt="Mastering Platform"
           fill
-          className="object-fill"
+          className="object-contain"
           data-ai-hint="mastering platform"
         />
         <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -153,7 +153,7 @@ export default function StoryPage() {
                       src="https://ik.imagekit.io/ggelm1lwa/nexstar%20about%20us.png?updatedAt=1759650054593"
                       alt="Team discussing a project on a whiteboard"
                       fill
-                      className="object-fill"
+                      className="object-contain"
                       data-ai-hint="team collaboration"
                     />
                 </div>
@@ -239,7 +239,7 @@ export default function StoryPage() {
                             src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
                             alt={member.name}
                             fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            className="object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     </div>

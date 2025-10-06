@@ -152,7 +152,7 @@ export default function B2BPage() {
                         src={service.image.src}
                         alt={service.title}
                         fill
-                        className="object-fill transition-transform duration-500 group-hover:scale-105"
+                        className="object-contain transition-transform duration-500 group-hover:scale-105"
                         data-ai-hint={service.image.hint}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
@@ -203,7 +203,7 @@ export default function B2BPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-contain rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

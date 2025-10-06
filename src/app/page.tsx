@@ -138,7 +138,7 @@ export default function Home() {
                 <AnimatedText />
               </div>
               <div className="flex justify-center items-center">
-                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={800} height={1100} className="object-cover rounded-lg shadow-lg" data-ai-hint="office banner" />
+                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={600} height={700} className="object-contain rounded-lg shadow-lg" data-ai-hint="office banner" />
               </div>
             </div>
           </section>
@@ -196,7 +196,7 @@ export default function Home() {
                         src={img.src}
                         alt={img.alt}
                         fill
-                        className="object-fill w-full h-full"
+                        className="object-contain w-full h-full"
                         priority={index === 0}
                         data-ai-hint={img.hint}
                       />

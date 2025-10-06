@@ -6,7 +6,6 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import Marquee from "@/components/layout/marquee";
 import { useState, useEffect } from "react";
 import Preloader from "@/components/layout/preloader";
 import Chatbot from "@/components/layout/chatbot";
@@ -50,7 +49,6 @@ export default function RootLayout({
             <Header />
             <main className="pt-[4.5rem] md:pt-28">{children}</main>
             <Footer />
-            <Marquee text="Igniting brands with ideas that transform behaviour. Contact us to start your digital success story." />
             <Chatbot />
             <Toaster />
           </>

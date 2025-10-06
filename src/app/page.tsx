@@ -119,17 +119,6 @@ const whoWeAreCards = [
     }
   ];
 
-const OrbitingCards = () => (
-  <div className="orbit-container">
-    <img className="center-image" src="https://ik.imagekit.io/ggelm1lwa/new/nexstar-bg.png?updatedAt=1759684296482" alt="Center Image" />
-    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/gtm-strategy.jpg?updatedAt=1759684296824" alt="GTM Strategy" /></div>
-    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/E-Commerce-Development-Bloom-IT.webp?updatedAt=1759684296526" alt="E-Commerce" /></div>
-    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/creative-branding.jpg?updatedAt=1759684296346" alt="Branding" /></div>
-    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/digital-marketing.png?updatedAt=1759684296218" alt="Digital Marketing" /></div>
-    <div className="orbit-card"><img src="https://ik.imagekit.io/ggelm1lwa/new/seo.jpg?updatedAt=1759684297044" alt="SEO" /></div>
-  </div>
-);
-
 export default function Home() {
 
   return (
@@ -149,18 +138,9 @@ export default function Home() {
                 <AnimatedText />
               </div>
               <div className="flex justify-center items-center">
-                <OrbitingCards />
+                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={600} height={400} className="object-cover rounded-lg shadow-lg" data-ai-hint="office banner" />
               </div>
             </div>
-          </section>
-          <section className="relative w-full h-auto md:h-[91vh]">
-            <Image
-                src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226"
-                alt="Office hero banner"
-                fill
-                className="w-full h-full object-cover"
-                data-ai-hint="office banner"
-            />
           </section>
         </div>
         

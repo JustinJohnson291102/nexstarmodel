@@ -131,7 +131,7 @@ export default function WebSolutionsPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="md:col-span-2">
-              <h1 className="text-3xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-primary animate-in fade-in slide-in-from-left-10 duration-700">
+              <h1 className="text-3xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-foreground animate-in fade-in slide-in-from-left-10 duration-700">
                 Website Design & Development
               </h1>
               <p className="text-base md:text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-10 duration-700 delay-100">
@@ -319,5 +319,3 @@ export default function WebSolutionsPage() {
     </>
   );
 }
-
-    

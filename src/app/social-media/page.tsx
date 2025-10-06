@@ -110,7 +110,7 @@ export default function SocialMediaPage() {
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
@@ -269,5 +269,3 @@ export default function SocialMediaPage() {
     </div>
   );
 }
-
-    

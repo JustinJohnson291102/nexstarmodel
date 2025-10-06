@@ -138,7 +138,7 @@ export default function Home() {
                 <AnimatedText />
               </div>
               <div className="flex justify-center items-center mb-5">
-                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={600} height={150} className="object-cover rounded-lg shadow-lg" data-ai-hint="office banner" />
+                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={600} height={200} className="object-cover rounded-lg shadow-lg" data-ai-hint="office banner" />
               </div>
             </div>
           </section>
@@ -445,5 +445,3 @@ export default function Home() {
     </>
   );
 }
-
-    

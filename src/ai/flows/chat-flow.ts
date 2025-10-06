@@ -5,73 +5,95 @@
  *
  * - chat - A function that handles the chat interaction.
  */
-import { ai } from '@/ai/genkit';
-import { z } from 'zod';
 
-// Define the context for the AI model. This gives it knowledge about the website.
-const websiteContext = `
-You are the Nexstar AI assistant. Your goal is to help users by answering their questions about Nexstar and its services.
-Nexstar is a digital media and IT services company with a global presence, including offices in New York, the UK, and India.
-
-Here is a summary of the services offered. Use this information to answer user questions. Direct users to the relevant page URL for more details.
-
-- **Social Media Marketing (/social-media):** Building and nurturing online communities. Includes strategy, content creation, and paid campaigns.
-- **Creative & Branding (/creative-branding):** Crafting brand identities, logos, and visual systems. Includes full photo and video production.
-- **B2B Marketing (/b2b):** Strategic marketing for business-to-business clients, including Account-Based Marketing (ABM) and lead generation.
-- **Search Marketing (SEO/SEM) (/search-marketing):** A dual approach using SEO for long-term organic growth and PPC/SEM for immediate, targeted traffic.
-- **Video Production (/video-production):** End-to-end video creation, from concept and scriptwriting to filming and post-production for brand films, commercials, and social content.
-- **Online Reputation Management (/online-reputation-management):** Proactively building and protecting a brand's online image by monitoring conversations and managing reviews.
-- **E-commerce Development (/ecommerce-development):** Building high-performing online stores on platforms like Shopify and WooCommerce.
-- **Website Development (/web-solutions):** Designing and developing beautiful, high-performance websites engineered for performance and scalability.
-- **Mobile App Development (/mobile-app-development):** Building intuitive and high-performance native iOS and Android mobile apps.
-- **Augmented Reality (/augmented-reality):** Crafting captivating AR experiences for marketing, e-commerce, and events.
-- **Go-To-Market Strategy (/gtm-strategy):** A comprehensive roadmap for launching and scaling new products or ventures.
-- **Performance Marketing (/performance-marketing):** Data-driven campaign management to drive growth and maximize ROI on advertising spend.
-- **Rapid Website Development (/rapid-website-development):** An agile service to launch professional websites quickly, ideal for startups and marketing campaigns.
-- **Backend & Frontend Outsourcing (/backend-frontend-outsource):** Providing dedicated development teams and staff augmentation to scale clients' technical capabilities.
-- **WhatsApp Chatbots (/whatsapp-chatbots):** Developing AI-powered chatbots to automate customer conversations on WhatsApp.
-- **Digital Business Consulting (/digital-business-consulting):** Offering strategic guidance to help businesses navigate digital transformation and leverage technology for growth.
-- **Digital Branding (/digital-branding):** Crafting a consistent and compelling brand identity across all digital touchpoints.
-- **XTrack Analytics (/xtrack):** A powerful analytics solution to understand, engage, and grow audiences with real-time data.
-- **Digital Transformation (/digital-transformation):** Modernizing operations, automating processes, and helping businesses embrace a data-driven culture.
-- **Contact Information (/contact):** Users can get in touch via the contact page for a free consultation. Email: contact@nexstarlive.com, Phone: +1 (917) 672-8930.
-- **Our Story (/story):** Nexstar was founded in 2019 to bridge the gap between brilliant ideas and flawless digital execution. We are a hybrid agency with global offices.
-- **Podcast (/podcast):** The "Nexstar Insights" podcast covers digital marketing trends, strategies, and success stories.
-- **Portfolio (/portfolio):** Showcases our recent work and case studies across various industries.
-- **Pricing:** We have pricing pages for SEO, SMO, and PPC services.
-`;
-
-const ChatInputSchema = z.object({
-  message: z.string(),
-});
-
-const chatFlow = ai.defineFlow(
-  {
-    name: 'chatFlow',
-    inputSchema: ChatInputSchema,
-    outputSchema: z.string(),
-  },
-  async (input) => {
-    const llmResponse = await ai.generate({
-      model: 'gemini-1.5-flash-latest',
-      prompt: `${websiteContext}\n\nUser question: "${input.message}"\n\nAnswer the user's question based on the context provided. If the user says hi or hello, respond with a friendly greeting and ask how you can help.`,
-      config: {
-        temperature: 0.5,
-      },
-    });
-
-    return llmResponse.text;
-  }
-);
+// A map of keywords to predefined responses and the relevant page URL.
+const predefinedResponses: { [key: string]: { response: string; url?: string } } = {
+    "social media": {
+        response: "We offer Social Media Marketing services, including strategy, content creation, and community management. You can find more details on our Social Media page.",
+        url: "/social-media"
+    },
+    "branding": {
+        response: "Our Creative & Branding services help you craft a strong brand identity. This includes logo design, brand strategy, and more. Check out our Creative & Branding page for details.",
+        url: "/creative-branding"
+    },
+    "b2b marketing": {
+        response: "We specialize in B2B Marketing strategies, including Account-Based Marketing (ABM) and lead generation. Learn more on our B2B Marketing page.",
+        url: "/b2b"
+    },
+    "seo": {
+        response: "Our Search Marketing services cover both SEO and SEM to improve your visibility. For more details, visit our Search Marketing page.",
+        url: "/search-marketing"
+    },
+    "sem": {
+        response: "Our Search Marketing services cover both SEO and SEM to improve your visibility. For more details, visit our Search Marketing page.",
+        url: "/search-marketing"
+    },
+    "video production": {
+        response: "We offer full-service video production, from concept to final cut. You can see more on our Video Production page.",
+        url: "/video-production"
+    },
+    "reputation management": {
+        response: "We can help you with Online Reputation Management to protect and improve your brand's image. Visit our ORM page for more information.",
+        url: "/online-reputation-management"
+    },
+    "ecommerce": {
+        response: "We build high-performing e-commerce websites on platforms like Shopify and WooCommerce. Check out our E-commerce Development page for more.",
+        url: "/ecommerce-development"
+    },
+    "website": {
+        response: "We design and develop beautiful, high-performance websites. See our Web Solutions page to learn more.",
+        url: "/web-solutions"
+    },
+    "mobile app": {
+        response: "We build intuitive and high-performance native iOS and Android mobile apps. Visit our Mobile App Development page for details.",
+        url: "/mobile-app-development"
+    },
+    "augmented reality": {
+        response: "We create captivating AR experiences for marketing, e-commerce, and events. Learn more on our Augmented Reality page.",
+        url: "/augmented-reality"
+    },
+    "contact": {
+        response: "You can get in touch with us via our contact page for a free consultation. Our email is contact@nexstarlive.com and phone is +1 (917) 672-8930.",
+        url: "/contact"
+    },
+    "story": {
+        response: "You can learn more about our story, our mission, and our team on our Story page.",
+        url: "/story"
+    },
+    "podcast": {
+        response: "We have a podcast called 'Nexstar Insights' where we discuss digital marketing trends. You can find it on our Podcast page.",
+        url: "/podcast"
+    },
+    "portfolio": {
+        response: "You can see examples of our work in our Portfolio.",
+        url: "/portfolio"
+    },
+    "pricing": {
+        response: "We have pricing pages for our SEO, SMO, and PPC services. You can find them under the 'Pricing' menu.",
+        url: "/pricing/seo-pricing"
+    }
+};
 
 /**
- * Handles the chat interaction by passing the user's message to a Genkit flow.
+ * Handles the chat interaction by checking for keywords in the user's message.
  * @param message The user's message.
  * @returns An AI-generated response.
  */
 export async function chat(message: string): Promise<string> {
-    if (!message) {
-        return "Hello! I'm the Nexstar Assistant. How can I help you today?";
+    const defaultResponse = "Hello! I'm your Nexstar AI assistant. How can I help you ?";
+    
+    if (!message || message.trim().toLowerCase() === 'hi' || message.trim().toLowerCase() === 'hello') {
+        return defaultResponse;
     }
-    return await chatFlow({ message });
+
+    const lowerCaseMessage = message.toLowerCase();
+
+    for (const keyword in predefinedResponses) {
+        if (lowerCaseMessage.includes(keyword)) {
+            const { response, url } = predefinedResponses[keyword];
+            return `${response}${url ? `\n\nYou can visit the page here: ${url}` : ''}`;
+        }
+    }
+
+    return defaultResponse;
 }

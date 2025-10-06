@@ -144,11 +144,11 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 flex items-center justify-center p-4 w-full h-full">
-              <div className="flex-1 flex justify-start items-center pl-[60px]">
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center p-4 w-full h-full">
+              <div className="flex justify-center items-center">
                 <AnimatedText />
               </div>
-              <div className="flex-1 flex justify-center items-center" style={{ position: 'relative', top: '-40px' }}>
+              <div className="flex justify-center items-center">
                 <OrbitingCards />
               </div>
             </div>
@@ -465,5 +465,3 @@ export default function Home() {
     </>
   );
 }
-
-    

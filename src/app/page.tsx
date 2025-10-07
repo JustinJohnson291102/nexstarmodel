@@ -223,7 +223,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://ik.imagekit.io/ggelm1lwa/advertising%20agency%20pics.jpg?updatedAt=1759315547035"
+                 src="https://ik.imagekit.io/ggelm1lwa/5bbc85f4895a1.jpg?updatedAt=1759850326755"
                  alt="Advertising Agency"
                  width={2636}
                  height={4160}

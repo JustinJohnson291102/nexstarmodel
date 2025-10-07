@@ -320,7 +320,7 @@ export default function Home() {
                 width={2636}
                 height={4160}
                 data-ai-hint="vibrant data"
-                className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                className="rounded-lg w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
                 priority
               />
             </div>

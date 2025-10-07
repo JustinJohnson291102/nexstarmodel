@@ -95,7 +95,7 @@ const whoWeAreCards = [
     },
     {
       title: "Agile Methodology",
-      imageSrc: "https://ik.imagekit.io/ggelm1lwa/agile-methodology-1.png?updatedAt=1759654163973",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/agile%20methodlogy.avif?updatedAt=1759839301965",
       imageHint: "agile process",
       description: "We embrace an agile and iterative workflow, allowing us to adapt quickly to change, deliver value faster, and ensure a flexible and responsive development process that keeps you ahead of the curve.",
       link: "/story",
@@ -378,7 +378,7 @@ export default function Home() {
                           alt={card.title}
                           data-ai-hint={card.imageHint}
                           className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
-                            card.title === "Our Global Presence"
+                            card.title === "Our Global Presence" || card.title === "Agile Methodology"
                               ? "object-contain relative top-[-15px]"
                               : "object-cover"
                           }`}

@@ -145,6 +145,7 @@ export default function Home() {
                 className="object-cover" 
                 data-ai-hint="office banner"
                 priority
+                quality={100}
               />
             </div>
           </div>

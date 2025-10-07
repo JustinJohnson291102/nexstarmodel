@@ -120,8 +120,8 @@ export default function StoryPage() {
   return (
     <>
       <section className="relative h-[70vh] w-full bg-secondary">
-        <div className="container mx-auto h-full grid grid-cols-1 md:grid-cols-2 items-center">
-            <div className="relative z-20 px-4 text-center md:text-left animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="h-full grid grid-cols-1 md:grid-cols-2 items-center w-full">
+            <div className="relative z-20 px-4 text-center md:text-left container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
                 <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
                     Our Story
                 </h1>
@@ -134,8 +134,9 @@ export default function StoryPage() {
                     src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
                     alt="Mastering Platform"
                     fill
-                    className="object-contain"
+                    className="object-cover"
                     data-ai-hint="mastering platform"
+                    priority
                 />
             </div>
         </div>
@@ -153,7 +154,7 @@ export default function StoryPage() {
                  </p>
              </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700 flex justify-center">
-                <div className="relative aspect-[4/3] w-full max-w-md rounded-lg overflow-hidden">
+                <div className="relative aspect-square w-full max-w-xs rounded-lg overflow-hidden">
                     <Image
                       src="https://ik.imagekit.io/ggelm1lwa/NexstarMedia-Logo.png?updatedAt=1759845284932"
                       alt="Team discussing a project on a whiteboard"

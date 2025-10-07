@@ -124,8 +124,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full flex flex-col md:grid md:grid-cols-2 bg-background">
-        {/* Left side with video and text */}
-        <div className="relative h-[60vh] md:h-[91vh] w-full flex items-center justify-center">
+        <div className="relative h-[60vh] md:h-[91vh] w-full">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -139,7 +138,6 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Right side with image */}
         <div className="relative w-full h-[40vh] md:h-[91vh]">
           <Image 
             src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" 
@@ -199,7 +197,7 @@ export default function Home() {
             <CarouselContent>
               {baseCarouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-[40vh] sm:h-[60vh] md:h-[91vh] w-full">
+                  <div className="relative aspect-video w-full h-auto md:h-full">
                     <Image
                       src={img.src}
                       alt={img.alt}

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -13,19 +14,19 @@ const videoCards = [
     title: "Product Visualization",
     description: "See products in your space before you buy.",
     videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4",
-    image: { src: "https://picsum.photos/seed/colorful-ar-product/800/450", hint: "colorful ar product" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-mikhail-nilov-8296996.jpg?updatedAt=1759858562852", hint: "colorful ar product" },
   },
   {
     title: "Interactive Filters",
     description: "Engage users with fun, shareable brand filters.",
     videoSrc: "https://videos.pexels.com/video-files/7578508/7578508-sd_640_360_25fps.mp4",
-    image: { src: "https://picsum.photos/seed/colorful-ar-filter/800/450", hint: "colorful ar social" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-mikhail-nilov-8297031.jpg?updatedAt=1759858562776", hint: "colorful ar social" },
   },
   {
     title: "AR Portals",
     description: "Step into a new world with immersive brand portals.",
     videoSrc: "https://videos.pexels.com/video-files/4429377/4429377-sd_540_960_30fps.mp4",
-    image: { src: "https://picsum.photos/seed/colorful-ar-portal/800/450", hint: "colorful ar portal" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "colorful ar portal" },
   },
 ];
 
@@ -81,7 +82,7 @@ const alternatingContent = [
             "Seamless integration with Shopify, WooCommerce, and other platforms."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-ar-ecommerce/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-disha-sheta-3746618-10023428.jpg?updatedAt=1759858562758",
             hint: "colorful ar shopping"
         }
     },
@@ -95,7 +96,7 @@ const alternatingContent = [
             "WebAR portals that transport users to virtual worlds."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-ar-marketing/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-ivan-samkov-8121045.jpg?updatedAt=1759858562699",
             hint: "colorful ar event"
         }
     }
@@ -163,7 +164,7 @@ export default function AugmentedRealityPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('https://picsum.photos/seed/colorful-professional-parallax/1920/1080')" }}
+        style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/pexels-mikhail-nilov-8297031.jpg?updatedAt=1759858562776')" }}
         data-ai-hint="colorful professional augmented reality"
       >
         <div className="absolute inset-0 bg-primary/80" />
@@ -213,7 +214,7 @@ export default function AugmentedRealityPage() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                <Image 
-                src="https://picsum.photos/seed/colorful-professional-webar/800/600"
+                src="https://ik.imagekit.io/ggelm1lwa/pexels-disha-sheta-3746618-10023428.jpg?updatedAt=1759858562758"
                 alt="WebAR on multiple devices"
                 width={800}
                 height={600}

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -41,7 +42,7 @@ const alternatingContent = [
             "Meticulous post-production including editing, color grading, and sound mixing."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-storyboard/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
             hint: "colorful professional storyboard"
         }
     },
@@ -55,24 +56,24 @@ const alternatingContent = [
             "Animated explainer videos for complex products or services."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-social-video/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270",
             hint: "colorful professional social video"
         }
     }
 ];
 
 const videoTypes = [
-    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://picsum.photos/seed/colorful-professional-brand-film/400/500", hint: "colorful professional cinematic film" } },
-    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://picsum.photos/seed/colorful-professional-commercial/400/500", hint: "colorful professional tv commercial" } },
-    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://picsum.photos/seed/colorful-professional-social-content/400/500", hint: "colorful professional social media" } },
-    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://picsum.photos/seed/colorful-professional-animation/400/500", hint: "colorful professional abstract animation" } },
+    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "colorful professional cinematic film" } },
+    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "colorful professional tv commercial" } },
+    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270", hint: "colorful professional social media" } },
+    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "colorful professional abstract animation" } },
 ];
 
 export default function VideoProductionPage() {
   const pageData = {
     title: "Video Production",
     description: "From concept to completion, we create compelling video content that tells your story and engages your audience.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-video-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
     heroHint: "colorful professional video setup",
     features: [
       {
@@ -164,7 +165,7 @@ export default function VideoProductionPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-film-reel/1920/1080')`}}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347')`}}
         data-ai-hint="colorful professional film reel"
       >
         <div className="absolute inset-0 bg-primary/90" />

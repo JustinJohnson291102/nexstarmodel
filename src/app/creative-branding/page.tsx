@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -41,7 +42,7 @@ const alternatingContent = [
             "Detailed brand guidelines to ensure consistency."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-brand-strategy/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606",
             hint: "colorful professional brand strategy"
         }
     },
@@ -55,7 +56,7 @@ const alternatingContent = [
             "Content optimized for web, social media, and advertising."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-production/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
             hint: "colorful professional photo shoot"
         }
     }
@@ -72,7 +73,7 @@ export default function CreativeBrandingPage() {
   const pageData = {
     title: "Creative & Branding Services",
     description: "We craft unforgettable brand identities that tell your story, captivate your audience, and build lasting loyalty.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-branding-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-antoni-shkraba-4348401.jpg?updatedAt=1759859066487",
     heroHint: "colorful professional creative branding",
     features: [
       {
@@ -162,7 +163,7 @@ export default function CreativeBrandingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-branding-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-antoni-shkraba-4348401.jpg?updatedAt=1759859066487')`}}
         data-ai-hint="colorful abstract design"
       >
         <div className="absolute inset-0 bg-background/80" />

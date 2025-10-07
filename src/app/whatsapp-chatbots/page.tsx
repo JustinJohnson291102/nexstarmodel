@@ -86,7 +86,7 @@ export default function WhatsappChatbotsPage() {
   const pageData = {
     title: "WhatsApp Chatbots",
     description: "Automate customer conversations and drive engagement with AI-powered WhatsApp chatbots.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-whatsapp-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
     heroHint: "colorful professional chatbot conversation",
   };
 
@@ -168,7 +168,7 @@ export default function WhatsappChatbotsPage() {
 
        <section 
         className="py-20 md:py-24 bg-background bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-whatsapp-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')`}}
         data-ai-hint="colorful abstract tech"
        >
           <div className="absolute inset-0 bg-background/90" />

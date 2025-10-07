@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -21,7 +22,7 @@ const episodes = [
     title: "The Future of Digital Marketing",
     category: "Marketing Trends",
     description: "An in-depth discussion on how AI, machine learning, and data analytics are shaping the future of the marketing industry.",
-    image: { src: "https://picsum.photos/seed/podcast-future/800/600", hint: "futuristic marketing" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "futuristic marketing" },
     tags: ["AI", "Data Analytics", "Marketing"],
     episodeNumber: "Ep. 12",
   },
@@ -29,7 +30,7 @@ const episodes = [
     title: "Building a Brand That Lasts",
     category: "Branding",
     description: "Experts share their secrets on creating a strong brand identity that resonates with audiences and stands the test of time.",
-    image: { src: "https://picsum.photos/seed/podcast-branding/800/600", hint: "brand identity" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606", hint: "brand identity" },
     tags: ["Branding", "Strategy", "Storytelling"],
     episodeNumber: "Ep. 11",
   },
@@ -37,7 +38,7 @@ const episodes = [
     title: "The Art of Conversion Rate Optimization",
     category: "E-commerce",
     description: "Learn the techniques and tools used by top professionals to turn website visitors into loyal customers.",
-    image: { src: "https://picsum.photos/seed/podcast-cro/800/600", hint: "conversion optimization" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "conversion optimization" },
     tags: ["CRO", "E-commerce", "UX"],
     episodeNumber: "Ep. 10",
   },
@@ -45,7 +46,7 @@ const episodes = [
     title: "Navigating the World of B2B Marketing",
     category: "B2B",
     description: "A deep dive into the unique challenges and opportunities in the B2B marketing landscape, with a focus on ABM and lead nurturing.",
-    image: { src: "https://picsum.photos/seed/podcast-b2b/800/600", hint: "b2b strategy" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496", hint: "b2b strategy" },
     tags: ["B2B", "ABM", "Lead Generation"],
     episodeNumber: "Ep. 09",
   },
@@ -53,7 +54,7 @@ const episodes = [
     title: "Mastering Social Media Engagement",
     category: "Social Media",
     description: "Explore strategies for creating authentic connections and fostering a vibrant community around your brand on social media.",
-    image: { src: "https://picsum.photos/seed/podcast-social/800/600", hint: "social media engagement" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270", hint: "social media engagement" },
     tags: ["Community", "Engagement", "Content"],
     episodeNumber: "Ep. 08",
   },
@@ -61,7 +62,7 @@ const episodes = [
     title: "The Power of Video Storytelling",
     category: "Video Production",
     description: "Discover how to leverage video to tell compelling stories that capture attention and drive action.",
-    image: { src: "https://picsum.photos/seed/podcast-video/800/600", hint: "video storytelling" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "video storytelling" },
     tags: ["Video", "Storytelling", "Production"],
     episodeNumber: "Ep. 07",
   },
@@ -71,17 +72,17 @@ const featuredGuests = [
   {
     name: "Jane Doe",
     title: "CEO, Innovate Inc.",
-    image: { src: "https://picsum.photos/seed/guest-jane/400", hint: "business woman" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-justin-shaifer-1222271.jpg?updatedAt=1759859739505", hint: "business woman" },
   },
   {
     name: "John Smith",
     title: "Marketing Guru & Author",
-    image: { src: "https://picsum.photos/seed/guest-john/400", hint: "marketing expert" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-daniel-xavier-1239291.jpg?updatedAt=1759859739498", hint: "marketing expert" },
   },
   {
     name: "Emily White",
     title: "Head of UX, Creative Solutions",
-    image: { src: "https://picsum.photos/seed/guest-emily/400", hint: "ux designer" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-stefan-stefancik-91227.jpg?updatedAt=1759859739508", hint: "ux designer" },
   },
 ];
 
@@ -114,7 +115,7 @@ export default function PodcastPage() {
       <section className="relative py-20 md:py-24 bg-secondary">
          <div 
           className="absolute inset-0 bg-cover bg-center opacity-10" 
-          style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-bg/1920/1080')`}}
+          style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347')`}}
           data-ai-hint="colorful abstract"
         ></div>
         <div className="container mx-auto px-4 relative z-10">

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -75,7 +76,7 @@ const alternatingContent = [
             "Post-purchase loyalty and retention programs."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-advertising-funnel/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
             hint: "colorful professional marketing funnel"
         }
     },
@@ -89,7 +90,7 @@ const alternatingContent = [
             "Optimization of checkout and form submission processes."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-conversion-chart/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
             hint: "colorful professional conversion chart"
         }
     }
@@ -131,7 +132,7 @@ export default function PerformanceMarketingPage() {
               </p>
                <div className="mt-8 md:mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
-                    src="https://picsum.photos/seed/colorful-professional-marketing-dashboard/1200/600"
+                    src="https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839"
                     alt="Dashboard showing marketing performance"
                     width={1200}
                     height={600}
@@ -190,7 +191,7 @@ export default function PerformanceMarketingPage() {
             </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
                 <Image 
-                    src="https://picsum.photos/seed/colorful-professional-marketing-funnel/800/900"
+                    src="https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839"
                     alt="Marketing Funnel Diagram"
                     width={800}
                     height={900}
@@ -307,5 +308,3 @@ export default function PerformanceMarketingPage() {
     </>
   );
 }
-
-    

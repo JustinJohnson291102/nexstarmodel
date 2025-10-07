@@ -58,7 +58,7 @@ const features = [
     description:
       "Monitor visitor activity as it happens. Understand user behavior and react to trends instantly.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-real-time/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional live data",
     },
   },
@@ -68,7 +68,7 @@ const features = [
     description:
       "Create personalized dashboards with the metrics that matter most to your business. No clutter, just clarity.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-dashboard-ui/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional data dashboard",
     },
   },
@@ -78,7 +78,7 @@ const features = [
     description:
       "Segment your audience with powerful filters. Analyze data by demographics, location, behavior, and more.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-data-filter/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional data filter",
     },
   },
@@ -88,7 +88,7 @@ const features = [
     description:
       "Get a deep understanding of your visitors. Learn where they come from and what they're looking for.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-audience/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496",
       hint: "colorful professional audience analysis",
     },
   },
@@ -98,7 +98,7 @@ const features = [
     description:
       "Track goals and funnels to optimize your conversion rates and maximize your ROI.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-conversion/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional sales funnel",
     },
   },
@@ -108,7 +108,7 @@ const features = [
     description:
       "Keep an eye on your site's performance with detailed reports on page speed and user experience.",
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-performance/600/400",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional performance chart",
     },
   },
@@ -121,7 +121,7 @@ export default function XtrackPage() {
       <section
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center"
         style={{
-          backgroundImage: `url('https://picsum.photos/seed/colorful-professional-xtrack-hero/1920/1080')`,
+          backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839')`,
         }}
       >
         <div className="absolute inset-0 bg-white/30" />
@@ -311,7 +311,7 @@ export default function XtrackPage() {
       <section
         className="relative min-h-[50vh] bg-cover bg-center flex items-center"
         style={{
-          backgroundImage: `url('https://picsum.photos/seed/colorful-professional-xtrack-parallax2/1920/1080')`,
+          backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')`,
         }}
       >
         <div className="absolute inset-0 bg-black/50" />

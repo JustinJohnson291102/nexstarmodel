@@ -65,7 +65,7 @@ const alternatingContent = [
             "Cross-browser compatibility and accessibility compliance."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-frontend/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-tranmautritam-326576.jpg?updatedAt=1759858762100",
             hint: "colorful frontend code"
         }
     },
@@ -79,7 +79,7 @@ const alternatingContent = [
             "Third-party service and API integration."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-backend/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-negative-space-160107.jpg?updatedAt=1759858762512",
             hint: "colorful server room"
         }
     }
@@ -89,7 +89,7 @@ export default function BackendFrontendOutsourcePage() {
   const pageData = {
     title: "Backend & Frontend Outsourcing",
     description: "Scale your development capabilities with our expert, dedicated teams.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-outsource/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-thisisengineering-3861969.jpg?updatedAt=1759858762013",
     heroHint: "colorful dark coding abstract",
   };
 
@@ -159,7 +159,7 @@ export default function BackendFrontendOutsourcePage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-network/1920/1080')`}}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-christina-morillo-1181298.jpg?updatedAt=1759858762510')`}}
         data-ai-hint="colorful global network"
       >
         <div className="absolute inset-0 bg-background/90" />

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -87,7 +88,7 @@ export default function RapidWebsiteDevelopmentPage() {
   const pageData = {
     title: "Rapid Website Development",
     description: "Launch your online presence in record time with our efficient and agile website development services.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-rocket/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606",
     heroHint: "colorful professional rocket launch",
   };
 
@@ -149,7 +150,7 @@ export default function RapidWebsiteDevelopmentPage() {
 
        <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-rapid-dev-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')`}}
         data-ai-hint="colorful speed abstract"
       >
         <div className="absolute inset-0 bg-background/90" />
@@ -238,5 +239,3 @@ export default function RapidWebsiteDevelopmentPage() {
     </div>
   );
 }
-
-    

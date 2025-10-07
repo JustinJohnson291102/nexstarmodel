@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -45,7 +46,7 @@ const alternatingContent = [
             "Strategic link-building to boost your site's authority."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-seo/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
             hint: "colorful professional seo chart"
         }
     },
@@ -59,7 +60,7 @@ const alternatingContent = [
             "A/B testing for continuous performance improvement."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-ppc/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
             hint: "colorful professional ppc ads"
         }
     }
@@ -69,32 +70,32 @@ export default function SearchMarketingPage() {
   const pageData = {
     title: "Search Marketing (SEM & SEO)",
     description: "Dominate search engine results and drive targeted traffic to your website with our expert SEM and SEO strategies.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-search-marketing/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
     heroHint: "colorful professional search engine marketing concept",
     features: [
       {
         icon: Search,
         title: "Comprehensive SEO Audits",
         description: "We identify technical, on-page, and off-page SEO issues and opportunities to build a solid foundation for growth.",
-        image: { src: "https://picsum.photos/seed/colorful-professional-seo-audit/600/400", hint: "colorful professional seo analysis" }
+        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "colorful professional seo analysis" }
       },
       {
         icon: BarChart,
         title: "Keyword Research & Strategy",
         description: "Target the right audience with in-depth keyword analysis, mapping user intent to your business goals.",
-        image: { src: "https://picsum.photos/seed/colorful-professional-keyword-research/600/400", hint: "colorful professional keyword strategy" }
+        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "colorful professional keyword strategy" }
       },
       {
         icon: Target,
         title: "PPC Campaign Management",
         description: "Maximize your ROI with meticulously managed Pay-Per-Click campaigns on Google Ads and Bing Ads.",
-        image: { src: "https://picsum.photos/seed/colorful-professional-ppc-campaign/600/400", hint: "colorful professional ppc management" }
+        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606", hint: "colorful professional ppc management" }
       },
       {
         icon: TrendingUp,
         title: "Content & Link Building",
         description: "Boost your authority and rankings with high-quality, SEO-optimized content and strategic link-building outreach.",
-        image: { src: "https://picsum.photos/seed/colorful-professional-link-building/600/400", hint: "colorful professional content strategy" }
+        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "colorful professional content strategy" }
       }
     ]
   };
@@ -161,7 +162,7 @@ export default function SearchMarketingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-search-parallax/1920/1080')`}}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')`}}
         data-ai-hint="colorful professional digital data stream"
       >
         <div className="absolute inset-0 bg-black/70" />

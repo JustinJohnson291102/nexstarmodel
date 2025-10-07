@@ -68,7 +68,7 @@ const alternatingContent = [
             "Vendor selection and negotiation support."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-tech-planning/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496",
             hint: "colorful professional technology strategy"
         }
     },
@@ -82,7 +82,7 @@ const alternatingContent = [
             "Data-driven marketing and sales funnel optimization."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-data-growth/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
             hint: "colorful professional data analytics"
         }
     }
@@ -99,7 +99,7 @@ export default function DigitalBusinessConsultingPage() {
   const pageData = {
     title: "Digital Business Consulting",
     description: "Navigate the complexities of the digital landscape with our expert guidance and strategic insights.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-consulting-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496",
     heroHint: "colorful professional business consulting",
   };
 
@@ -160,7 +160,7 @@ export default function DigitalBusinessConsultingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-consulting-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')` }}
         data-ai-hint="colorful professional business strategy"
       >
         <div className="absolute inset-0 bg-primary/90" />

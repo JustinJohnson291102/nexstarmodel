@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -44,7 +45,7 @@ const alternatingContent = [
             "Full integration with device-native features like cameras and GPS."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-native-app/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-torsten-dettlaff-70955.jpg?updatedAt=1759859341492",
             hint: "colorful professional mobile app screen"
         }
     },
@@ -58,7 +59,7 @@ const alternatingContent = [
             "Third-party service integrations (payments, maps, social media)."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-app-backend/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-negative-space-160107.jpg?updatedAt=1759858762512",
             hint: "colorful professional cloud server"
         }
     }
@@ -68,7 +69,7 @@ export default function MobileAppDevelopmentPage() {
   const pageData = {
     title: "Mobile App Development",
     description: "We build intuitive, high-performance mobile apps that engage users, drive business growth, and bring your ideas to life.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-app-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696",
     heroHint: "colorful professional mobile app development",
     features: [
       {
@@ -160,7 +161,7 @@ export default function MobileAppDevelopmentPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-app-dev-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696')` }}
         data-ai-hint="colorful app interface"
       >
         <div className="absolute inset-0 bg-primary/90" />

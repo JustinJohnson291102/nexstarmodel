@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -18,7 +19,7 @@ const roadmapSteps = [
         "Analyze pricing models and potential revenue streams."
     ],
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-market-research/800/600",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional market research",
     },
   },
@@ -32,7 +33,7 @@ const roadmapSteps = [
         "Create a comprehensive brand style guide."
     ],
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-positioning/800/600",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496",
       hint: "colorful professional brand positioning",
     },
   },
@@ -46,7 +47,7 @@ const roadmapSteps = [
         "Launch a coming-soon landing page to capture leads."
     ],
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-pre-launch/800/600",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
       hint: "colorful professional product launch",
     },
   },
@@ -60,7 +61,7 @@ const roadmapSteps = [
         "Secure launch coverage on product discovery sites like Product Hunt."
     ],
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-launch-campaign/800/600",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606",
       hint: "colorful professional rocket launch",
     },
   },
@@ -74,7 +75,7 @@ const roadmapSteps = [
         "Establish key partnerships and affiliate programs."
     ],
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-growth/800/600",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional growth chart",
     },
   },
@@ -88,7 +89,7 @@ const roadmapSteps = [
         "Continuously refine product features and marketing strategies."
     ],
     image: {
-      src: "https://picsum.photos/seed/colorful-professional-optimize/800/600",
+      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
       hint: "colorful professional optimization process",
     },
   },
@@ -161,7 +162,7 @@ export default function GtmStrategyPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://picsum.photos/seed/colorful-professional-gtm-parallax/1920/1080')"}}
+        style={{backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')"}}
         data-ai-hint="colorful professional launch success"
       >
         <div className="absolute inset-0 bg-primary/90" />
@@ -206,5 +207,3 @@ export default function GtmStrategyPage() {
     </>
   );
 }
-
-    

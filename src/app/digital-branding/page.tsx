@@ -68,7 +68,7 @@ const alternatingContent = [
             "Digital asset optimization for different channels."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-digital-experience/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-antoni-shkraba-4348401.jpg?updatedAt=1759859066487",
             hint: "colorful professional digital interface"
         }
     },
@@ -82,24 +82,24 @@ const alternatingContent = [
             "Content distribution strategy to maximize reach."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-brand-content/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
             hint: "colorful professional content creation"
         }
     }
 ];
 
 const touchpoints = [
-    { name: "Website", image: { src: "https://picsum.photos/seed/colorful-touchpoint-web/400/300", hint: "colorful website design" } },
-    { name: "Social Media", image: { src: "https://picsum.photos/seed/colorful-touchpoint-social/400/300", hint: "colorful social media app" } },
-    { name: "Email", image: { src: "https://picsum.photos/seed/colorful-touchpoint-email/400/300", hint: "colorful email marketing" } },
-    { name: "Digital Ads", image: { src: "https://picsum.photos/seed/colorful-touchpoint-ads/400/300", hint: "colorful online advertising" } },
+    { name: "Website", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-picjumbocom-196644.jpg?updatedAt=1759859066548", hint: "colorful website design" } },
+    { name: "Social Media", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270", hint: "colorful social media app" } },
+    { name: "Email", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-torsten-dettlaff-70955.jpg?updatedAt=1759859341492", hint: "colorful email marketing" } },
+    { name: "Digital Ads", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696", hint: "colorful online advertising" } },
 ];
 
 export default function DigitalBrandingPage() {
   const pageData = {
     title: "Digital Branding",
     description: "Craft a consistent and compelling brand identity across all your digital touchpoints.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-digital-identity/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696",
     heroHint: "colorful professional digital identity",
   };
 
@@ -162,7 +162,7 @@ export default function DigitalBrandingPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-abstract-pattern/1920/1080')` }}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')` }}
         data-ai-hint="colorful abstract pattern"
       >
         <div className="absolute inset-0 bg-background/90" />

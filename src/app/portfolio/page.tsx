@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -13,7 +14,7 @@ const caseStudies = [
     title: "Backup, Blockchain & Crypto",
     category: "Cyber Security",
     description: "Developed a decentralized backup solution using blockchain technology, ensuring immutable and secure data storage for crypto assets.",
-    image: { src: "https://picsum.photos/seed/office-blockchain/800/600", hint: "office blockchain" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "office blockchain" },
     tags: ["Blockchain", "Cyber Security", "Go"],
     link: "/portfolio/blockchain-crypto"
   },
@@ -21,7 +22,7 @@ const caseStudies = [
     title: "App Design for Local Agency",
     category: "UI/UX Design",
     description: "Redesigned a mobile application for a local government agency, improving user engagement by 40% through an intuitive, human-centered interface.",
-    image: { src: "https://picsum.photos/seed/office-app-design/800/600", hint: "office app design" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-antoni-shkraba-4348401.jpg?updatedAt=1759859066487", hint: "office app design" },
     tags: ["UI/UX", "Figma", "React Native"],
      link: "/portfolio/app-design"
   },
@@ -29,7 +30,7 @@ const caseStudies = [
     title: "The New in Upcoming Design Think",
     category: "UI/UX Design",
     description: "A forward-thinking exploration of future design trends, culminating in a conceptual prototype for a next-generation mixed-reality interface.",
-    image: { src: "https://picsum.photos/seed/office-design-thinking/800/600", hint: "office design thinking" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696", hint: "office design thinking" },
     tags: ["AR/VR", "Prototyping", "UX Research"],
      link: "/portfolio/design-think"
   },
@@ -37,7 +38,7 @@ const caseStudies = [
     title: "Branding for American IT",
     category: "IT Consultancy",
     description: "Crafted a new brand identity for a major American IT firm, positioning them as an innovative leader in a competitive market.",
-    image: { src: "https://picsum.photos/seed/office-branding/800/600", hint: "office branding" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606", hint: "office branding" },
     tags: ["Branding", "Strategy", "Marketing"],
      link: "/portfolio/it-branding"
   },
@@ -45,7 +46,7 @@ const caseStudies = [
     title: "World Best Available Scope",
     category: "Data Analytics",
     description: "Executed a global market analysis project, identifying key growth opportunities and providing actionable insights through advanced data modeling.",
-    image: { src: "https://picsum.photos/seed/office-analytics/800/600", hint: "office analytics" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "office analytics" },
     tags: ["Data Science", "Tableau", "Python"],
      link: "/portfolio/market-analysis"
   },
@@ -53,7 +54,7 @@ const caseStudies = [
     title: "Software License Management",
     category: "IT Consultancy",
     description: "Implemented a comprehensive software license management system for a Fortune 500 company, saving them over $2M annually.",
-    image: { src: "https://picsum.photos/seed/office-software/800/600", hint: "office software" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-negative-space-160107.jpg?updatedAt=1759858762512", hint: "office software" },
     tags: ["ITAM", "SaaS", "Optimization"],
      link: "/portfolio/license-management"
   },
@@ -63,17 +64,17 @@ const similarProjects = [
   {
     title: "AI-Powered Threat Detection",
     description: "A real-time cybersecurity platform that uses machine learning to predict and neutralize threats before they can cause damage.",
-    image: { src: "https://picsum.photos/seed/ai-threat/800/600", hint: "ai security" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "ai security" },
   },
   {
     title: "E-commerce Personalization Engine",
     description: "A data-driven recommendation engine that increased average order value by 25% for a major online retailer.",
-    image: { src: "https://picsum.photos/seed/ecommerce-ai/800/600", hint: "ecommerce analytics" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "ecommerce analytics" },
   },
   {
     title: "IoT Smart City Dashboard",
     description: "A UI/UX project to visualize complex city-wide data from IoT sensors, enabling better urban planning and resource management.",
-    image: { src: "https://picsum.photos/seed/smart-city/800/600", hint: "smart city" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696", hint: "smart city" },
   },
 ];
 

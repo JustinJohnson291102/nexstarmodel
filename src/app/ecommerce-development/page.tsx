@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -45,7 +46,7 @@ const alternatingContent = [
             "Mobile-first design for a seamless shopping experience on any device."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-conversion/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
             hint: "colorful professional sales funnel"
         }
     },
@@ -59,7 +60,7 @@ const alternatingContent = [
             "Headless commerce solutions for ultimate flexibility and performance."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-platforms/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/pexels-picjumbocom-196644.jpg?updatedAt=1759859066548",
             hint: "colorful professional server infrastructure"
         }
     }
@@ -76,7 +77,7 @@ export default function EcommerceDevelopmentPage() {
   const pageData = {
     title: "E-commerce Website Design and Development",
     description: "We build beautiful, high-performing e-commerce websites that turn visitors into loyal customers.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-ecommerce-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
     heroHint: "colorful professional online shopping",
     features: [
       {
@@ -165,7 +166,7 @@ export default function EcommerceDevelopmentPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-ecommerce-parallax/1920/1080')` }}
+        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839')` }}
         data-ai-hint="colorful abstract tech background"
       >
         <div className="absolute inset-0 bg-background/90" />

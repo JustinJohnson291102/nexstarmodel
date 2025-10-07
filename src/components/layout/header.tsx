@@ -99,8 +99,8 @@ export default function Header() {
            <Image
             src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
             alt="Nexstar Logo"
-            width={180}
-            height={60}
+            width={153}
+            height={51}
             className="object-contain"
           />
         </Link>
@@ -174,7 +174,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="hidden md:flex items-center ml-auto">
-           <Button asChild className="rounded-full">
+           <Button asChild className="rounded-full text-base">
               <Link href="/contact">Contact Us</Link>
             </Button>
         </div>
@@ -196,8 +196,8 @@ export default function Header() {
                    <Image
                     src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
                     alt="Nexstar Logo"
-                    width={180}
-                    height={60}
+                    width={153}
+                    height={51}
                     className="object-contain"
                   />
                 </Link>
@@ -249,7 +249,7 @@ export default function Header() {
                 <NavLink href="/podcast" label="Podcast" className="text-lg p-2" />
                  <NavLink href="/portfolio" label="Portfolio" className="text-lg p-2" />
               </div>
-              <Button asChild className="mt-4 rounded-full">
+              <Button asChild className="mt-4 rounded-full text-base">
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}

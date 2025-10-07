@@ -365,62 +365,44 @@ export default function Home() {
             </p>
           </div>
 
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-             plugins={[
-              Autoplay({
-                delay: 4000,
-                stopOnInteraction: true,
-              }),
-            ]}
-            className="w-full max-w-6xl mx-auto"
-          >
-            <CarouselContent className="-ml-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {whoWeAreCards.map((card, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
-                      <CardHeader className="p-0 overflow-hidden rounded-t-lg">
-                        <div className="relative w-full aspect-video overflow-hidden">
-                          <Image
-                            src={card.imageSrc}
-                            width={800}
-                            height={520}
-                            alt={card.title}
-                            data-ai-hint={card.imageHint}
-                            className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
-                              card.title === "Our Global Presence"
-                                ? "object-contain relative top-[-15px]"
-                                : "object-cover"
-                            }`}
-                          />
-                        </div>
-                      </CardHeader>
-                      <CardContent className="p-6 flex-grow flex flex-col">
-                        <CardTitle className="font-headline mb-3 flex items-center gap-3 text-xl md:text-2xl">
-                          <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
-                        </CardTitle>
-                        <p className="text-muted-foreground flex-grow">
-                         {card.description}
-                        </p>
-                        <Button asChild size="sm" className="group mt-4 w-fit">
-                          <Link href={card.link}>
-                            {card.linkText}
-                            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                          </Link>
-                        </Button>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
+                <div key={index} className="p-1 h-full">
+                  <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
+                    <CardHeader className="p-0 overflow-hidden rounded-t-lg">
+                      <div className="relative w-full aspect-video overflow-hidden">
+                        <Image
+                          src={card.imageSrc}
+                          width={800}
+                          height={520}
+                          alt={card.title}
+                          data-ai-hint={card.imageHint}
+                          className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
+                            card.title === "Our Global Presence"
+                              ? "object-contain relative top-[-15px]"
+                              : "object-cover"
+                          }`}
+                        />
+                      </div>
+                    </CardHeader>
+                    <CardContent className="p-6 flex-grow flex flex-col">
+                      <CardTitle className="font-headline mb-3 flex items-center gap-3 text-xl md:text-2xl">
+                        <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
+                      </CardTitle>
+                      <p className="text-muted-foreground flex-grow">
+                       {card.description}
+                      </p>
+                      <Button asChild size="sm" className="group mt-4 w-fit">
+                        <Link href={card.link}>
+                          {card.linkText}
+                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
               ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-[-20px] md:left-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
-            <CarouselNext className="absolute right-[-20px] md:right-[-50px] top-1/2 -translate-y-1/2 hidden xl:flex" />
-          </Carousel>
+          </div>
         </div>
       </section>
 

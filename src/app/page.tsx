@@ -133,12 +133,12 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center p-4 w-full h-full">
-              <div className="flex justify-center items-center">
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center px-4 py-12 w-full h-full">
+              <div className="flex justify-center items-center relative h-[24rem]">
                 <AnimatedText />
               </div>
               <div className="flex justify-center items-center">
-                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={700} height={2800} className="object-contain rounded-lg shadow-lg" data-ai-hint="office banner" />
+                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={2636} height={4160} className="object-contain rounded-lg shadow-lg" data-ai-hint="office banner" />
               </div>
             </div>
           </section>

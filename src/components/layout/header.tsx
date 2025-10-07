@@ -78,7 +78,7 @@ export default function Header() {
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors hover:text-primary",
+        "text-lg font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary" : "text-foreground",
         className
       )}
@@ -115,7 +115,7 @@ export default function Header() {
                  <Link
                     href="/services"
                     className={cn(
-                      "flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        isServiceActive ? 'text-primary' : ''
                     )}
                   >
@@ -135,7 +135,7 @@ export default function Header() {
               <DropdownMenuTrigger asChild>
                  <button
                     className={cn(
-                      "flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        isWebSolutionActive ? 'text-primary' : ''
                     )}
                   >
@@ -155,7 +155,7 @@ export default function Header() {
               <DropdownMenuTrigger asChild>
                  <button
                     className={cn(
-                      "flex items-center text-base font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
+                      "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        isPricingActive ? 'text-primary' : ''
                     )}
                   >

@@ -185,8 +185,10 @@ export default function StoryPage() {
                 <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
                   <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
                 </div>
-                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 overflow-hidden animate-in fade-in zoom-in-90 duration-500">
-                  <Image src={event.image.src} alt={event.title} width={600} height={400} className="w-full h-auto object-contain" data-ai-hint={event.image.hint} />
+                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 max-w-sm overflow-hidden animate-in fade-in zoom-in-90 duration-500">
+                  <div className="relative w-full h-48">
+                    <Image src={event.image.src} alt={event.title} fill className="object-cover" data-ai-hint={event.image.hint} />
+                  </div>
                   <div className="p-6">
                     <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>
                     <h3 className="mb-3 font-bold text-foreground text-xl">{event.title}</h3>
@@ -297,3 +299,5 @@ export default function StoryPage() {
     </>
   );
 }
+
+    

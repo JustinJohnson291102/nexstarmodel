@@ -315,7 +315,7 @@ export default function Home() {
            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://ik.imagekit.io/ggelm1lwa/data%20driven%20startegies.jpg?updatedAt=1759315702177"
+                src="https://ik.imagekit.io/ggelm1lwa/data%20driven%20stratgeies.jpg?updatedAt=1759315702177"
                 alt="Data-Driven Strategies"
                 width={2636}
                 height={4160}
@@ -388,8 +388,8 @@ export default function Home() {
               {whoWeAreCards.map((card, index) => (
                 <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
-                    <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
-                      <CardHeader className="p-0 overflow-hidden rounded-t-lg">
+                    <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full rounded-xl">
+                      <CardHeader className="p-0 overflow-hidden rounded-t-xl">
                         <div className="relative w-full aspect-video overflow-hidden">
                           <Image
                             src={card.imageSrc}
@@ -397,7 +397,7 @@ export default function Home() {
                             height={520}
                             alt={card.title}
                             data-ai-hint={card.imageHint}
-                            className='rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 object-contain p-4'
+                            className='rounded-t-xl w-full h-full transition-transform duration-500 hover:scale-105 object-contain p-4'
                             priority
                           />
                         </div>

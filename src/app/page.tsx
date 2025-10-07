@@ -283,7 +283,7 @@ export default function Home() {
            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
              <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 overflow-hidden rounded-lg shadow-xl">
                <Image
-                 src="https://ik.imagekit.io/ggelm1lwa/user%20centric%20designs.jpg?updatedAt=1759315636870"
+                 src="https://ik.imagekit.io/ggelm1lwa/pexels-pixabay-221185.jpg?updatedAt=1759850785263"
                  alt="UI/UX Design"
                  width={2636}
                  height={4160}

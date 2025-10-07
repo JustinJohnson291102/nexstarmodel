@@ -119,26 +119,26 @@ const testimonials = [
 export default function StoryPage() {
   return (
     <>
-      <section className="relative h-[70vh] w-full bg-secondary">
-        <div className="h-full grid grid-cols-1 md:grid-cols-2 items-center w-full">
-            <div className="relative z-20 px-4 text-center md:text-left container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
-                <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
-                    Our Story
-                </h1>
-                <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl">
-                    We ignite brands with ideas that transform behaviour
-                </p>
-            </div>
-            <div className="relative h-full w-full hidden md:block">
-                 <Image
-                    src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
-                    alt="Mastering Platform"
-                    fill
-                    className="object-cover"
-                    data-ai-hint="mastering platform"
-                    priority
-                />
-            </div>
+      <section className="relative w-full bg-secondary pt-20 md:pt-0">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:h-[70vh] items-center w-full">
+          <div className="relative z-20 px-4 py-16 md:py-0 text-center md:text-left container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
+              Our Story
+            </h1>
+            <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl">
+              We ignite brands with ideas that transform behaviour
+            </p>
+          </div>
+          <div className="relative w-full h-64 md:h-full">
+            <Image
+              src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
+              alt="Mastering Platform"
+              fill
+              className="object-contain md:object-cover"
+              data-ai-hint="mastering platform"
+              priority
+            />
+          </div>
         </div>
       </section>
 
@@ -185,9 +185,9 @@ export default function StoryPage() {
                 <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
                   <h1 className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</h1>
                 </div>
-                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-lg shadow-xl w-5/12 max-w-sm overflow-hidden animate-in fade-in zoom-in-90 duration-500">
+                <div className="order-1 bg-card/80 backdrop-blur-sm rounded-xl shadow-xl w-5/12 max-w-sm overflow-hidden animate-in fade-in zoom-in-90 duration-500">
                   <div className="relative w-full h-48">
-                    <Image src={event.image.src} alt={event.title} fill className="object-contain" data-ai-hint={event.image.hint} />
+                    <Image src={event.image.src} alt={event.title} fill className="object-contain p-2" data-ai-hint={event.image.hint} />
                   </div>
                   <div className="p-6">
                     <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>

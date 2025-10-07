@@ -205,7 +205,7 @@ export default function Home() {
                         alt={img.alt}
                         fill
                         className="object-contain w-full h-full"
-                        priority={index === 0}
+                        priority
                         data-ai-hint={img.hint}
                       />
                     </div>
@@ -397,7 +397,7 @@ export default function Home() {
                             height={520}
                             alt={card.title}
                             data-ai-hint={card.imageHint}
-                            className='rounded-t-xl w-full h-full transition-transform duration-500 hover:scale-105 object-contain p-4'
+                            className='rounded-xl w-full h-full transition-transform duration-500 hover:scale-105 object-contain p-4'
                             priority
                           />
                         </div>

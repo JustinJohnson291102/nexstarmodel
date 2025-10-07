@@ -246,6 +246,7 @@ export default function StoryPage() {
                             alt={member.name}
                             fill
                             className="object-contain group-hover:scale-105 transition-transform duration-300"
+                            priority
                         />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     </div>
@@ -296,5 +297,3 @@ export default function StoryPage() {
     </>
   );
 }
-
-    

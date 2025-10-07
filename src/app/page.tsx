@@ -183,37 +183,35 @@ export default function Home() {
         </div>
       </section>
 
-       <div className="w-full py-12 bg-white">
-        <section className="relative h-auto md:h-[91vh] w-full bg-white">
-          <div className="w-full h-full px-4 sm:px-8 md:px-[10%]">
-            <Carousel
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                  stopOnInteraction: true,
-                }),
-              ]}
-              className="w-full h-full"
-              opts={{ loop: true }}
-            >
-              <CarouselContent>
-                {baseCarouselImages.map((img, index) => (
-                  <CarouselItem key={index}>
-                    <div className="relative h-[40vh] sm:h-[60vh] md:h-[91vh] w-full">
-                      <Image
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        className="object-contain w-full h-full"
-                        priority
-                        data-ai-hint={img.hint}
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
+       <div className="w-full py-12 bg-white flex justify-center">
+        <section className="relative h-auto md:h-[91vh] w-full md:w-3/4 bg-white">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: true,
+              }),
+            ]}
+            className="w-full h-full"
+            opts={{ loop: true }}
+          >
+            <CarouselContent>
+              {baseCarouselImages.map((img, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative h-[40vh] sm:h-[60vh] md:h-[91vh] w-full">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-contain w-full h-full"
+                      priority
+                      data-ai-hint={img.hint}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </section>
       </div>
       
@@ -389,7 +387,7 @@ export default function Home() {
                 <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full rounded-xl">
-                      <CardHeader className="p-0 overflow-hidden rounded-t-xl">
+                      <CardHeader className="p-0 overflow-hidden rounded-xl">
                         <div className="relative w-full aspect-video overflow-hidden">
                           <Image
                             src={card.imageSrc}

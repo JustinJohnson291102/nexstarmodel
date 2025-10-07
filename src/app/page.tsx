@@ -123,8 +123,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col w-full">
-        <section className="relative h-auto md:h-[91vh] w-full flex items-center justify-center bg-background">
+      <section className="w-full flex flex-col md:grid md:grid-cols-2 bg-background">
+        {/* Left side with video and text */}
+        <div className="relative h-[60vh] md:h-[91vh] w-full flex items-center justify-center">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -133,24 +134,24 @@ export default function Home() {
             muted
             playsInline
           />
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-0 items-center justify-center w-full h-full">
-            <div className="flex justify-center items-center h-full">
-              <AnimatedText />
-            </div>
-            <div className="relative w-full h-full">
-              <Image 
-                src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" 
-                alt="Office hero banner" 
-                fill 
-                className="object-cover" 
-                data-ai-hint="office banner"
-                priority
-                quality={100}
-              />
-            </div>
+          <div className="relative z-10 flex justify-center items-center h-full">
+            <AnimatedText />
           </div>
-        </section>
-      </div>
+        </div>
+        
+        {/* Right side with image */}
+        <div className="relative w-full h-[40vh] md:h-[91vh]">
+          <Image 
+            src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" 
+            alt="Office hero banner" 
+            fill 
+            className="object-cover" 
+            data-ai-hint="office banner"
+            priority
+            quality={100}
+          />
+        </div>
+      </section>
         
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
@@ -202,7 +203,8 @@ export default function Home() {
                     <Image
                       src={img.src}
                       alt={img.alt}
-                      fill
+                      width={1280}
+                      height={720}
                       className="object-contain w-full h-full"
                       priority
                       data-ai-hint={img.hint}

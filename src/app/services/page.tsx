@@ -122,10 +122,10 @@ const servicesData = [
       "Website Maintenance & Support",
       "Performance Optimization",
     ],
-    image: "https://ik.imagekit.io/ggelm1lwa/gtm%20strategy.jpg?updatedAt=1759846130523",
-    imageAlt: "UI/UX design sketches for a website with colorful elements.",
+    image: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696",
+    imageAlt: "A woman coding on a laptop in a well-lit room.",
     link: "/web-solutions",
-    imageHint: "colorful professional website design",
+    imageHint: "professional woman coding",
   },
   {
     id: "mobile-app-development",
@@ -334,7 +334,7 @@ export default function ServicesPage() {
                     height={400}
                     className="rounded-lg w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
                      data-ai-hint={service.imageHint}
-                     priority
+                     priority={index < 4}
                   />
                 </div>
                 <div

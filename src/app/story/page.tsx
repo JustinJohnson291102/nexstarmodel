@@ -119,21 +119,25 @@ const testimonials = [
 export default function StoryPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center overflow-hidden bg-secondary">
-        <Image
-          src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
-          alt="Mastering Platform"
-          fill
-          className="object-contain"
-          data-ai-hint="mastering platform"
-        />
-        <div className="relative z-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
-            Our Story
-          </h1>
-          <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl mx-auto">
-            We ignite brands with ideas that transform behaviour
-          </p>
+      <section className="relative h-[70vh] w-full bg-secondary">
+        <div className="container mx-auto h-full grid grid-cols-1 md:grid-cols-2 items-center">
+            <div className="relative z-20 px-4 text-center md:text-left animate-in fade-in slide-in-from-bottom-10 duration-700">
+                <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
+                    Our Story
+                </h1>
+                <p className="text-lg md:text-2xl text-foreground/90 max-w-3xl">
+                    We ignite brands with ideas that transform behaviour
+                </p>
+            </div>
+            <div className="relative h-full w-full hidden md:block">
+                 <Image
+                    src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
+                    alt="Mastering Platform"
+                    fill
+                    className="object-contain"
+                    data-ai-hint="mastering platform"
+                />
+            </div>
         </div>
       </section>
 

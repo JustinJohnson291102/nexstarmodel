@@ -149,9 +149,9 @@ export default function StoryPage() {
                  </p>
              </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700 flex justify-center">
-                <div className="relative aspect-[4/3] w-full max-w-md rounded-lg overflow-hidden shadow-2xl">
+                <div className="relative aspect-[4/3] w-full max-w-md rounded-lg overflow-hidden">
                     <Image
-                      src="https://ik.imagekit.io/ggelm1lwa/nexstar%20about%20us.png?updatedAt=1759650054593"
+                      src="https://ik.imagekit.io/ggelm1lwa/NexstarMedia-Logo.png?updatedAt=1759845284932"
                       alt="Team discussing a project on a whiteboard"
                       fill
                       className="object-contain"

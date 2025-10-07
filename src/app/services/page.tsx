@@ -327,15 +327,17 @@ export default function ServicesPage() {
                     index % 2 !== 0 ? "md:order-2 slide-in-from-right-10" : "slide-in-from-left-10"
                   }`}
                 >
-                  <Image
-                    src={service.image}
-                    alt={service.imageAlt}
-                    width={600}
-                    height={400}
-                    className="rounded-lg w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
-                     data-ai-hint={service.imageHint}
-                     priority={index < 4}
-                  />
+                  <div className="relative w-full h-[400px]">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      className="rounded-lg object-contain transition-transform duration-500 hover:scale-105"
+                       data-ai-hint={service.imageHint}
+                       priority={index < 4}
+                       quality={100}
+                    />
+                  </div>
                 </div>
                 <div
                   className={`flex flex-col animate-in fade-in duration-700 ${

@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto py-8 px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           
           <div className="md:col-span-4 flex flex-col items-start">
             <Link href="/" className="mb-2">

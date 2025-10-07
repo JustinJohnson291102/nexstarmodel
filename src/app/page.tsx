@@ -315,7 +315,7 @@ export default function Home() {
            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="https://ik.imagekit.io/ggelm1lwa/data%20driven%20stratgeies.jpg?updatedAt=1759315702177"
+                src="https://ik.imagekit.io/ggelm1lwa/pexels-tima-miroshnichenko-7567595.jpg?updatedAt=1759849043340"
                 alt="Data-Driven Strategies"
                 width={2636}
                 height={4160}
@@ -453,3 +453,5 @@ export default function Home() {
     </>
   );
 }
+
+    

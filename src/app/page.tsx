@@ -123,26 +123,32 @@ export default function Home() {
 
   return (
     <>
-       <div className="flex flex-col w-full">
-         <section className="relative h-auto md:h-[91vh] w-full flex items-center justify-center bg-background">
-            <video 
-              src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
-              className="absolute z-0 top-0 left-0 w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center px-4 py-12 w-full h-full">
-              <div className="flex justify-center items-center relative h-[24rem]">
-                <AnimatedText />
-              </div>
-              <div className="flex justify-center items-center">
-                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={2800} height={4160} className="object-contain rounded-lg shadow-lg" data-ai-hint="office banner" />
-              </div>
+      <div className="flex flex-col w-full">
+        <section className="relative h-auto md:h-[91vh] w-full flex items-center justify-center bg-background">
+          <video 
+            src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
+            className="absolute z-0 top-0 left-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-0 items-center justify-center w-full h-full">
+            <div className="flex justify-center items-center h-full">
+              <AnimatedText />
             </div>
-          </section>
-        </div>
+            <div className="relative w-full h-full">
+              <Image 
+                src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" 
+                alt="Office hero banner" 
+                fill 
+                className="object-cover" 
+                data-ai-hint="office banner" 
+              />
+            </div>
+          </div>
+        </section>
+      </div>
         
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">

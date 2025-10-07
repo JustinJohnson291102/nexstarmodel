@@ -184,7 +184,7 @@ export default function Home() {
       </section>
 
        <div className="w-full py-12 bg-white flex justify-center">
-        <section className="relative h-auto md:h-[91vh] w-full md:w-3/4 bg-white">
+        <section className="relative h-auto md:h-[91vh] w-3/4 bg-white">
           <Carousel
             plugins={[
               Autoplay({
@@ -451,5 +451,3 @@ export default function Home() {
     </>
   );
 }
-
-    

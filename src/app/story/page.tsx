@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -147,8 +148,8 @@ export default function StoryPage() {
                    Nexstar Media India Pvt Ltd is an active Indian company founded in 2019. Based in Noida, Uttar Pradesh, it specializes in the media entertainment and IT service sectors. The company offers a wide range of services in digital media solutions, website and app development, and IT service management. As a privately held organization, it serves an international clientele and is focused on delivering quality leads and premier digital solutions to businesses worldwide.
                  </p>
              </div>
-             <div className="animate-in fade-in slide-in-from-right-10 duration-700">
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+             <div className="animate-in fade-in slide-in-from-right-10 duration-700 flex justify-center">
+                <div className="relative aspect-[4/3] w-full max-w-md rounded-lg overflow-hidden shadow-2xl">
                     <Image
                       src="https://ik.imagekit.io/ggelm1lwa/nexstar%20about%20us.png?updatedAt=1759650054593"
                       alt="Team discussing a project on a whiteboard"
@@ -290,5 +291,3 @@ export default function StoryPage() {
     </>
   );
 }
-
-    

@@ -397,11 +397,7 @@ export default function Home() {
                             height={520}
                             alt={card.title}
                             data-ai-hint={card.imageHint}
-                            className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
-                              card.title.includes("Agile") || card.title.includes("Client") || card.title.includes("Sustainable")
-                                ? "object-contain p-4"
-                                : "object-cover"
-                            }`}
+                            className='rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 object-contain p-4'
                             priority
                           />
                         </div>

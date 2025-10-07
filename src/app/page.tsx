@@ -124,7 +124,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full flex flex-col md:grid md:grid-cols-2 bg-background">
-        <div className="relative h-[60vh] md:h-[91vh] w-full">
+        <div className="relative h-[70vh] md:h-[91vh] w-full">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"

@@ -103,7 +103,7 @@ const whoWeAreCards = [
     },
     {
       title: "Client-Centric Focus",
-      imageSrc: "https://ik.imagekit.io/ggelm1lwa/client-centric.jpg?updatedAt=1759654164223",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/client%20centric%20focus.jpg?updatedAt=1759839371473",
       imageHint: "customer satisfaction",
       description: "Your success is our ultimate goal. We are deeply committed to understanding your needs and building strong, lasting relationships based on trust, transparency, and mutual respect.",
       link: "/contact",
@@ -111,7 +111,7 @@ const whoWeAreCards = [
     },
     {
       title: "Sustainable Growth",
-      imageSrc: "https://ik.imagekit.io/ggelm1lwa/sustainable-growth.jpg?updatedAt=1759654163974",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/sustainable%20growth.webp?updatedAt=1759839439643",
       imageHint: "sustainable business",
       description: "We focus on building long-term value. Our strategies are designed not just for immediate impact but for sustainable growth, ensuring your digital assets remain effective and relevant for years to come.",
       link: "/services",
@@ -143,7 +143,8 @@ export default function Home() {
                 alt="Office hero banner" 
                 fill 
                 className="object-cover" 
-                data-ai-hint="office banner" 
+                data-ai-hint="office banner"
+                priority
               />
             </div>
           </div>
@@ -159,7 +160,7 @@ export default function Home() {
             {newServices.map((service, index) => (
               <div key={index} className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl">
                 <div className="relative h-20 w-20 mb-4">
-                  <Image src={service.icon} alt={service.name} fill className="object-contain" />
+                  <Image src={service.icon} alt={service.name} fill className="object-contain" priority/>
                 </div>
                 <h3 className="font-headline text-xl font-bold mb-2">{service.name}</h3>
                 <p className="text-muted-foreground">{service.description}</p>
@@ -229,6 +230,7 @@ export default function Home() {
                  height={4160}
                  data-ai-hint="advertising agency"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                 priority
                />
             </div>
              <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
@@ -258,6 +260,7 @@ export default function Home() {
                 height={4160}
                 data-ai-hint="marketing services"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                priority
               />
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
@@ -287,6 +290,7 @@ export default function Home() {
                  height={4160}
                  data-ai-hint="colorful ui ux"
                  className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                 priority
                />
             </div>
              <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
@@ -316,6 +320,7 @@ export default function Home() {
                 height={4160}
                 data-ai-hint="vibrant data"
                 className="rounded-lg w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                priority
               />
             </div>
             <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
@@ -364,45 +369,65 @@ export default function Home() {
               that don't just solve problems, but inspire and engage.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          
+           <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: true,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
               {whoWeAreCards.map((card, index) => (
-                <div key={index} className="p-1 h-full">
-                  <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
-                    <CardHeader className="p-0 overflow-hidden rounded-t-lg">
-                      <div className="relative w-full aspect-video overflow-hidden">
-                        <Image
-                          src={card.imageSrc}
-                          width={800}
-                          height={520}
-                          alt={card.title}
-                          data-ai-hint={card.imageHint}
-                          className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
-                            card.title === "Our Global Presence" || card.title === "Agile Methodology"
-                              ? "object-contain relative top-[-15px]"
-                              : "object-cover"
-                          }`}
-                        />
-                      </div>
-                    </CardHeader>
-                    <CardContent className="p-6 flex-grow flex flex-col">
-                      <CardTitle className="font-headline mb-3 flex items-center gap-3 text-xl md:text-2xl">
-                        <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
-                      </CardTitle>
-                      <p className="text-muted-foreground flex-grow">
-                       {card.description}
-                      </p>
-                      <Button asChild size="sm" className="group mt-4 w-fit">
-                        <Link href={card.link}>
-                          {card.linkText}
-                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </div>
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full">
+                      <CardHeader className="p-0 overflow-hidden rounded-t-lg">
+                        <div className="relative w-full aspect-video overflow-hidden">
+                          <Image
+                            src={card.imageSrc}
+                            width={800}
+                            height={520}
+                            alt={card.title}
+                            data-ai-hint={card.imageHint}
+                            className={`rounded-t-lg w-full h-full transition-transform duration-500 hover:scale-105 ${
+                              card.title.includes("Agile") || card.title.includes("Client") || card.title.includes("Sustainable")
+                                ? "object-contain p-4"
+                                : "object-cover"
+                            }`}
+                            priority
+                          />
+                        </div>
+                      </CardHeader>
+                      <CardContent className="p-6 flex-grow flex flex-col">
+                        <CardTitle className="font-headline mb-3 flex items-center gap-3 text-xl md:text-2xl">
+                          <Lightbulb className="w-7 h-7 text-primary" /> {card.title}
+                        </CardTitle>
+                        <p className="text-muted-foreground flex-grow">
+                         {card.description}
+                        </p>
+                        <Button asChild size="sm" className="group mt-4 w-fit">
+                          <Link href={card.link}>
+                            {card.linkText}
+                            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                          </Link>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
               ))}
-          </div>
+            </CarouselContent>
+             <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
+          </Carousel>
+
         </div>
       </section>
 
@@ -429,5 +454,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  );
+  )
 }

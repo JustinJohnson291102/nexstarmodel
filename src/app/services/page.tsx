@@ -323,7 +323,7 @@ export default function ServicesPage() {
                 className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center"
               >
                 <div
-                  className={`animate-in fade-in duration-700 overflow-hidden rounded-lg shadow-xl ${
+                  className={`animate-in fade-in duration-700 overflow-hidden shadow-xl rounded-xl ${
                     index % 2 !== 0 ? "md:order-2 slide-in-from-right-10" : "slide-in-from-left-10"
                   }`}
                 >
@@ -332,7 +332,7 @@ export default function ServicesPage() {
                       src={service.image}
                       alt={service.imageAlt}
                       fill
-                      className="rounded-lg object-contain transition-transform duration-500 hover:scale-105"
+                      className="rounded-xl object-contain transition-transform duration-500 hover:scale-105"
                        data-ai-hint={service.imageHint}
                        priority={index < 4}
                        quality={100}

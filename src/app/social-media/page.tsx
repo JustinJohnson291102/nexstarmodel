@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -44,7 +45,7 @@ const alternatingContent = [
             "Content tailored for each platform's algorithm and audience."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-content/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/content-connects.jpg?updatedAt=1759654164344",
             hint: "colorful professional content creation"
         }
     },
@@ -58,7 +59,7 @@ const alternatingContent = [
             "Detailed performance reporting and insights."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-social-ads/800/600",
+            src: "https://ik.imagekit.io/ggelm1lwa/targeted-ads.jpg?updatedAt=1759654164101",
             hint: "colorful professional social ads"
         }
     }
@@ -75,7 +76,7 @@ export default function SocialMediaPage() {
   const pageData = {
     title: "Social Media Marketing",
     description: "We build and nurture online communities, turning followers into fans and fans into customers.",
-    heroImage: "https://picsum.photos/seed/colorful-professional-social-media-hero/1920/1080",
+    heroImage: "https://ik.imagekit.io/ggelm1lwa/social-media-hero.jpg?updatedAt=1759654164375",
     heroHint: "colorful professional social media marketing",
     features: [
       {

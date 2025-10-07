@@ -95,7 +95,7 @@ const whoWeAreCards = [
     },
     {
       title: "Agile Methodology",
-      imageSrc: "https://picsum.photos/seed/agile-professional/800/520",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/agile-methodology-1.png?updatedAt=1759654163973",
       imageHint: "agile process",
       description: "We embrace an agile and iterative workflow, allowing us to adapt quickly to change, deliver value faster, and ensure a flexible and responsive development process that keeps you ahead of the curve.",
       link: "/story",
@@ -103,7 +103,7 @@ const whoWeAreCards = [
     },
     {
       title: "Client-Centric Focus",
-      imageSrc: "https://picsum.photos/seed/client-focus/800/520",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/client-centric.jpg?updatedAt=1759654164223",
       imageHint: "customer satisfaction",
       description: "Your success is our ultimate goal. We are deeply committed to understanding your needs and building strong, lasting relationships based on trust, transparency, and mutual respect.",
       link: "/contact",
@@ -111,7 +111,7 @@ const whoWeAreCards = [
     },
     {
       title: "Sustainable Growth",
-      imageSrc: "https://picsum.photos/seed/growth-eco/800/520",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/sustainable-growth.jpg?updatedAt=1759654163974",
       imageHint: "sustainable business",
       description: "We focus on building long-term value. Our strategies are designed not just for immediate impact but for sustainable growth, ensuring your digital assets remain effective and relevant for years to come.",
       link: "/services",
@@ -138,7 +138,7 @@ export default function Home() {
                 <AnimatedText />
               </div>
               <div className="flex justify-center items-center">
-                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={600} height={700} className="object-contain rounded-lg shadow-lg" data-ai-hint="office banner" />
+                 <Image src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" alt="Office hero banner" width={700} height={800} className="object-contain rounded-lg shadow-lg" data-ai-hint="office banner" />
               </div>
             </div>
           </section>
@@ -210,10 +210,8 @@ export default function Home() {
       </div>
       
       <section 
-        className="relative bg-cover bg-center bg-fixed text-foreground py-12 md:py-20"
-        style={{ backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/gettyimages-978350096-612x612.jpg?updatedAt=1759319192199')" }}
+        className="relative text-foreground py-12 md:py-20 bg-background"
         >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
         <div className="container mx-auto px-4 relative z-10 space-y-12 md:space-y-20">
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">

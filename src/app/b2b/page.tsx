@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -176,7 +177,7 @@ export default function B2BPage() {
 
       <section
         className="py-20 md:py-24 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://picsum.photos/seed/colorful-professional-b2b-parallax/1920/1080')"}}
+        style={{backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/b2b-parallax.jpg?updatedAt=1759654519969')"}}
         data-ai-hint="colorful professional business success"
       >
         <div className="absolute inset-0 bg-primary/90" />

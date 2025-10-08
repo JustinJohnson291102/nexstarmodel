@@ -140,7 +140,7 @@ export default function Home() {
         
         <div className="relative w-full h-[40vh] md:h-[91vh]">
           <Image 
-            src="https://ik.imagekit.io/ggelm1lwa/office%20hero%20banner.jpeg?updatedAt=1759561798226" 
+            src="https://ik.imagekit.io/ggelm1lwa/Screenshot%20(52).png?updatedAt=1759926016148" 
             alt="Office hero banner" 
             fill 
             className="object-cover" 

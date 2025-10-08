@@ -169,9 +169,9 @@ export default function Home() {
             ))}
           </div>
            <div className="mt-12 flex justify-center">
-             <div className="relative w-full md:w-1/2">
+             <div className="relative w-full">
                <video 
-                src="https://ik.imagekit.io/ggelm1lwa/hero%20banner%20video.mp4?updatedAt=1759563722583"
+                src="https://ik.imagekit.io/ggelm1lwa/6007968_4k_Beautiful_1280x720.mp4?updatedAt=1759927250287"
                 className="w-full h-auto rounded-lg shadow-lg"
                 autoPlay
                 loop
@@ -452,5 +452,3 @@ export default function Home() {
     </>
   );
 }
-
-    

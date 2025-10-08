@@ -20,8 +20,8 @@ export default function Preloader() {
         <Image
           src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"
-          width={300}
-          height={100}
+          width={240}
+          height={80}
           className="object-contain"
           priority
         />

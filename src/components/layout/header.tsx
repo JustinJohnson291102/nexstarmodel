@@ -172,7 +172,7 @@ export default function Header() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            <NavLink href="/podcast" label="Podcast" />
+            <NavLink href="/podcast" label="Digital TV" />
           </nav>
         </div>
         <div className="hidden md:flex items-center ml-auto">
@@ -250,7 +250,7 @@ export default function Header() {
                   </AccordionItem>
                 </Accordion>
 
-                <NavLink href="/podcast" label="Podcast" className="text-lg p-2" />
+                <NavLink href="/podcast" label="Digital TV" className="text-lg p-2" />
                  <NavLink href="/portfolio" label="Portfolio" className="text-lg p-2" />
               </div>
               <Button asChild className="mt-4 rounded-full text-base">

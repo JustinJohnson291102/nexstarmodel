@@ -97,7 +97,7 @@ export default function Header() {
       <div className="container flex h-[4.5rem] md:h-28 items-center px-4 md:px-6">
         <Link href="/" className="mr-6 flex items-center space-x-2">
            <Image
-            src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo.png?updatedAt=1759921485846"
+            src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
             alt="Nexstar Logo"
             width={200}
             height={100}
@@ -194,7 +194,7 @@ export default function Header() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                    <Image
-                    src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo.png?updatedAt=1759921485846"
+                    src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
                     alt="Nexstar Logo"
                     width={200}
                     height={100}

@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
          <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
             <p>
-              &copy; {currentYear} Nexstar. All rights reserved. | The Flagship Company of Nexstar Live LLC, United States
+              &copy; {currentYear} Nexstar Media. All rights reserved. | The Flagship Company of Nexstar Live LLC, United States
             </p>
           </div>
       </div>

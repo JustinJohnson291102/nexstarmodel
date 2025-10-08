@@ -126,7 +126,7 @@ export default function Home() {
       <section className="w-full flex flex-col md:grid md:grid-cols-5 bg-background">
         <div className="relative w-full md:col-span-2 flex items-center justify-center">
           <video 
-            src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-01%20at%205.42.02%20PM.mp4?updatedAt=1759320826895"
+            src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-08%20at%206.14.02%20PM.mp4?updatedAt=1759927469651"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
             autoPlay
             loop

@@ -99,8 +99,8 @@ export default function Header() {
            <Image
             src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo.png?updatedAt=1759921485846"
             alt="Nexstar Logo"
-            width={50}
-            height={20}
+            width={100}
+            height={50}
             className="object-contain"
           />
         </Link>
@@ -196,8 +196,8 @@ export default function Header() {
                    <Image
                     src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo.png?updatedAt=1759921485846"
                     alt="Nexstar Logo"
-                    width={50}
-                    height={20}
+                    width={100}
+                    height={50}
                     className="object-contain"
                   />
                 </Link>

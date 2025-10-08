@@ -16,12 +16,12 @@ export default function Preloader() {
         isMounted ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div>
+      <div className="p-8">
         <Image
-          src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+          src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
           alt="Nexstar Logo"
-          width={240}
-          height={80}
+          width={1280}
+          height={770}
           className="object-contain"
           priority
         />

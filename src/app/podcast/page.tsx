@@ -15,6 +15,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { Input } from "@/components/ui/input";
 
 
 const episodes = [
@@ -190,6 +191,28 @@ export default function PodcastPage() {
             <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
           </Carousel>
 
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-card p-8 md:p-12 rounded-lg shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">Never Miss an Episode</h3>
+                <p className="text-muted-foreground mb-6">Subscribe to get the latest episodes delivered straight to your inbox.</p>
+                <div className="flex w-full max-w-sm items-center space-x-2">
+                    <Input type="email" placeholder="Enter your email" />
+                    <Button type="submit">Subscribe</Button>
+                </div>
+            </div>
+             <div className="text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">Listen On Your Favorite Platform</h3>
+                 <p className="text-muted-foreground mb-6">Find Nexstar Insights on all major podcast platforms.</p>
+                <div className="flex justify-center md:justify-start space-x-4">
+                   <Button variant="outline" size="lg">Spotify</Button>
+                   <Button variant="outline" size="lg">Apple Podcasts</Button>
+                   <Button variant="outline" size="lg">Google Podcasts</Button>
+                </div>
+            </div>
         </div>
       </section>
 

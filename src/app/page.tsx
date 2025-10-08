@@ -82,7 +82,7 @@ const whoWeAreCards = [
     },
     {
       title: "Our Global Presence",
-      imageSrc: "https://ik.imagekit.io/ggelm1lwa/global-business-7042756.webp?updatedAt=1759316191989",
+      imageSrc: "https://ik.imagekit.io/ggelm1lwa/187448540_10789341.png?updatedAt=1759941638466",
       imageHint: "global network",
       description: "With our headquarters in New York, and specialized offices in the UK and India, we unite creativity, technology, and strategic intelligence to serve diverse international markets and fuel innovation on a worldwide scale.",
       link: "/story",

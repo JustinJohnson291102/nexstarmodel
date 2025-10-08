@@ -113,6 +113,35 @@ export default function PodcastPage() {
         </div>
       </section>
 
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="border-2 border-double border-border p-px">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="aspect-video">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/zmdTK3rfWFA" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen>
+                </iframe>
+              </div>
+              <div className="flex items-center justify-center p-8 md:border-l-2 md:border-double md:border-border">
+                <Image 
+                  src="https://ik.imagekit.io/ggelm1lwa/Nexstar-Bharat-768x768-removebg-preview.png?updatedAt=1759936634616" 
+                  alt="Nexstar Bharat Logo" 
+                  width={300} 
+                  height={300} 
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative py-20 md:py-24 bg-secondary">
          <div 
           className="absolute inset-0 bg-cover bg-center opacity-10" 
@@ -263,3 +292,5 @@ export default function PodcastPage() {
     </div>
   );
 }
+
+    

@@ -367,7 +367,7 @@ export default function Home() {
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-700">
               A Dynamic Fusion of Creativity &amp; Technology
             </h2>
-            <p className="text-muted-foreground text-base md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-foreground text-base md:text-lg max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
               At Nexstar, we are more than just an IT &amp; Media company—we are a
               team of passionate innovators, thinkers, and creators. Our strength
               lies in blending technology with creativity to deliver solutions

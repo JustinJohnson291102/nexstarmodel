@@ -168,7 +168,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-           <div className="mt-12 flex justify-center">
+           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
              <div className="relative w-full">
                <video 
                 src="https://ik.imagekit.io/ggelm1lwa/6007968_4k_Beautiful_1280x720.mp4?updatedAt=1759927250287"
@@ -178,6 +178,9 @@ export default function Home() {
                 muted
                 playsInline
               />
+            </div>
+            <div className="relative w-full h-full flex items-center justify-center p-8 bg-black rounded-lg">
+                <p className="font-cursive text-white text-6xl font-bold">winter glamour</p>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="md:col-span-4 flex flex-col items-start -mt-16">
             <Link href="/" className="mb-2">
                <Image
-                src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
+                src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
                 alt="Nexstar Logo"
                 width={180}
                 height={60}

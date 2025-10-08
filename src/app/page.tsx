@@ -188,7 +188,7 @@ export default function Home() {
                 stopOnInteraction: true,
               }),
             ]}
-            className="w-full h-full"
+            className="w-full"
             opts={{ loop: true }}
           >
             <CarouselContent>
@@ -199,7 +199,7 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-contain w-full h-full"
+                      className="object-cover w-full h-full"
                       priority
                       data-ai-hint={img.hint}
                     />

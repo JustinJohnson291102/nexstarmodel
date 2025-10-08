@@ -393,7 +393,7 @@ export default function Home() {
                 <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card className="flex flex-col animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200 bg-card/70 h-full rounded-xl">
-                      <CardHeader className="p-0 overflow-hidden rounded-xl">
+                      <CardHeader className="p-0 overflow-hidden rounded-t-xl">
                         <div className="relative w-full aspect-video overflow-hidden">
                           <Image
                             src={card.imageSrc}
@@ -401,7 +401,7 @@ export default function Home() {
                             height={520}
                             alt={card.title}
                             data-ai-hint={card.imageHint}
-                            className='rounded-xl w-full h-full transition-transform duration-500 hover:scale-105 object-fill'
+                            className='rounded-t-xl w-full h-full transition-transform duration-500 hover:scale-105 object-cover'
                             priority
                           />
                         </div>

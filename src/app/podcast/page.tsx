@@ -23,7 +23,7 @@ const episodes = [
     title: "The Future of Digital Marketing",
     category: "Marketing Trends",
     description: "An in-depth discussion on how AI, machine learning, and data analytics are shaping the future of the marketing industry.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "futuristic marketing" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/digital-marketing-with-icons-business-people.jpg?updatedAt=1759942542891", hint: "futuristic marketing" },
     tags: ["AI", "Data Analytics", "Marketing"],
     episodeNumber: "Ep. 12",
   },
@@ -292,5 +292,3 @@ export default function PodcastPage() {
     </div>
   );
 }
-
-    

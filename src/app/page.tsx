@@ -401,7 +401,7 @@ export default function Home() {
                             height={520}
                             alt={card.title}
                             data-ai-hint={card.imageHint}
-                            className='rounded-xl w-full h-full transition-transform duration-500 hover:scale-105 object-contain p-4'
+                            className='rounded-xl w-full h-full transition-transform duration-500 hover:scale-105 object-fill'
                             priority
                           />
                         </div>

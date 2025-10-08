@@ -181,11 +181,11 @@ export default function Home() {
 
        <div className="w-full py-12 bg-white flex justify-center">
         <section className="relative w-full bg-white">
-          <div className="text-center py-12 md:py-16">
+          <div className="text-center pt-8 pb-12 md:pt-12 md:pb-16">
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">
               Our <span className="text-blue-600">Creative Canvas</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4 px-4">
+            <p className="text-xl text-foreground max-w-3xl mx-auto mt-4 px-4">
               A visual journey through our culture, process, and the moments that define our commitment to building exceptional brands. This is where innovation comes to life.
             </p>
           </div>

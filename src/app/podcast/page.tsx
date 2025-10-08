@@ -31,7 +31,7 @@ const episodes = [
     title: "Building a Brand That Lasts",
     category: "Branding",
     description: "Experts share their secrets on creating a strong brand identity that resonates with audiences and stands the test of time.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606", hint: "brand identity" },
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/digital-marketing-branding-loyalty-graphics.jpg?updatedAt=1759942678944", hint: "brand identity" },
     tags: ["Branding", "Strategy", "Storytelling"],
     episodeNumber: "Ep. 11",
   },

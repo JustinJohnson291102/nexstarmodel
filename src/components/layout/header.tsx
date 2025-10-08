@@ -96,13 +96,15 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-[4.5rem] md:h-28 items-center px-4 md:px-6">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-           <Image
-            src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
-            alt="Nexstar Logo"
-            width={200}
-            height={100}
-            className="object-contain"
-          />
+          <div className="relative -top-[5px]">
+            <Image
+              src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
+              alt="Nexstar Logo"
+              width={200}
+              height={100}
+              className="object-contain"
+            />
+          </div>
         </Link>
         <div className="flex flex-1 items-center justify-end md:justify-center">
           <nav className="hidden md:flex md:gap-6 items-center">
@@ -193,13 +195,15 @@ export default function Header() {
                   className="flex items-center space-x-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                   <Image
-                    src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
-                    alt="Nexstar Logo"
-                    width={200}
-                    height={100}
-                    className="object-contain"
-                  />
+                  <div className="relative -top-[5px]">
+                    <Image
+                      src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
+                      alt="Nexstar Logo"
+                      width={200}
+                      height={100}
+                      className="object-contain"
+                    />
+                  </div>
                 </Link>
               </div>
               <div className="flex-1 flex flex-col gap-2 overflow-y-auto pt-4">

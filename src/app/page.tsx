@@ -46,11 +46,6 @@ const baseCarouselImages = [
     hint: "yellow banner"
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Image%202025-10-04%20at%201.16.26%20PM.jpeg?updatedAt=1759580240543",
-    alt: "Office hero banner",
-    hint: "office banner"
-  },
-  {
     src: "https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831",
     alt: "Office hero banner",
     hint: "office banner"

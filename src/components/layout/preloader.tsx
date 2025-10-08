@@ -20,8 +20,8 @@ export default function Preloader() {
         <Image
           src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
           alt="Nexstar Logo"
-          width={1280}
-          height={770}
+          width={800}
+          height={500}
           className="object-contain"
           priority
         />

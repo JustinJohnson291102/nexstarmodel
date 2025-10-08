@@ -185,7 +185,7 @@ export default function Home() {
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">
               Our <span className="text-blue-600">Creative Canvas</span>
             </h2>
-            <p className="text-xl text-foreground mx-auto mt-4 px-4 text-justify">
+            <p className="text-2xl text-foreground mx-auto mt-4 px-4 text-justify max-w-4xl">
               A visual journey through our culture, process, and the moments that define our commitment to building exceptional brands. This is where innovation comes to life.
             </p>
           </div>

@@ -187,7 +187,7 @@ export default function StoryPage() {
                 </div>
                 <div className="order-1 bg-card/80 backdrop-blur-sm rounded-xl shadow-xl w-5/12 max-w-sm overflow-hidden animate-in fade-in zoom-in-90 duration-500">
                   <div className="relative w-full h-48">
-                    <Image src={event.image.src} alt={event.title} fill className="object-contain p-2" data-ai-hint={event.image.hint} />
+                    <Image src={event.image.src} alt={event.title} fill className="object-fill p-2" data-ai-hint={event.image.hint} />
                   </div>
                   <div className="p-6">
                     <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>

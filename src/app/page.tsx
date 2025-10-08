@@ -199,7 +199,9 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-cover w-full h-full"
+                      className={`${
+                        img.hint === "yellow banner" ? "object-cover" : "object-fill"
+                      } w-full h-full`}
                       priority
                       data-ai-hint={img.hint}
                     />

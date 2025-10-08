@@ -246,7 +246,7 @@ export default function StoryPage() {
                             src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
                             alt={member.name}
                             fill
-                            className="object-contain group-hover:scale-105 transition-transform duration-300"
+                            className="object-contain group-hover:scale-105 transition-transform duration-300 filter brightness-125 group-hover:brightness-100"
                             priority
                         />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

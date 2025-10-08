@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
        <div className="w-full py-12 bg-white flex justify-center">
-        <section className="relative h-auto md:h-[91vh] w-3/4 bg-white">
+        <section className="relative w-full bg-white">
           <Carousel
             plugins={[
               Autoplay({
@@ -199,12 +199,11 @@ export default function Home() {
             <CarouselContent>
               {baseCarouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative aspect-video w-full h-auto md:h-full">
+                  <div className="relative w-full h-[720px]">
                     <Image
                       src={img.src}
                       alt={img.alt}
-                      width={1280}
-                      height={720}
+                      fill
                       className="object-contain w-full h-full"
                       priority
                       data-ai-hint={img.hint}
@@ -354,7 +353,7 @@ export default function Home() {
             muted
             playsInline
           />
-        <div className="absolute inset-0 bg-background/80 z-0"/>
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 pt-8">
             <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-primary mb-2 animate-in fade-in slide-in-from-bottom-5 duration-500">

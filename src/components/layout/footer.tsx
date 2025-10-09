@@ -22,10 +22,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { href: '#', label: 'Facebook', icon: Facebook },
+    { href: 'https://www.facebook.com/nexstarmediaindia', label: 'Facebook', icon: Facebook },
     { href: '#', label: 'Twitter', icon: Twitter },
-    { href: '#', label: 'LinkedIn', icon: Linkedin },
-    { href: '#', label: 'Instagram', icon: Instagram },
+    { href: 'https://in.linkedin.com/company/nexstarmediaprivatelimited', label: 'LinkedIn', icon: Linkedin },
+    { href: 'https://www.instagram.com/nexstarmedialive', label: 'Instagram', icon: Instagram },
     { href: '#', label: 'YouTube', icon: Youtube },
   ];
 
@@ -79,7 +79,14 @@ export default function Footer() {
               <h4 className="font-bold text-lg mb-3">Connect With Us</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (
-                  <a key={link.label} href={link.href} className="text-muted-foreground hover:text-primary transition-colors" aria-label={link.label}>
+                  <a 
+                    key={link.label} 
+                    href={link.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-muted-foreground hover:text-primary transition-colors" 
+                    aria-label={link.label}
+                  >
                     <link.icon className="h-6 w-6" />
                   </a>
                 ))}

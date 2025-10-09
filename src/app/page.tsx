@@ -133,7 +133,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full flex flex-col md:flex-row bg-background">
-        <div className="relative flex items-center justify-center shrink-0" style={{ width: 'calc(100vh - 7rem - 40px)'}}>
+        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[calc(100vh-7rem-40px)] h-[60vh] md:h-auto">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-08%20at%206.14.02%20PM.mp4?updatedAt=1759927469651"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -142,7 +142,7 @@ export default function Home() {
             muted
             playsInline
           />
-          <div className="relative z-10 flex justify-center items-center h-full py-20 md:py-0">
+          <div className="relative z-10 flex justify-center items-center h-full">
             <AnimatedText />
           </div>
         </div>
@@ -483,5 +483,3 @@ export default function Home() {
     </>
   );
 }
-
-    

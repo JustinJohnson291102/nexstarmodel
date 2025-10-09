@@ -233,9 +233,9 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className={`${
-                        img.hint === "yellow banner" ? "object-cover" : "object-fill"
-                      } w-full h-full`}
+                      className={`object-fill w-full h-full ${
+                        img.hint === "yellow banner" ? "md:object-cover" : ""
+                      }`}
                       priority
                       data-ai-hint={img.hint}
                     />

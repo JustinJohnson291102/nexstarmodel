@@ -166,24 +166,24 @@ export default function SocialMediaPage() {
 
       <section 
         className="relative py-20 md:py-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
-        data-ai-hint="colorful abstract tech"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xhYm9yYXRpb258ZW58MHx8fHwxNzYyODIzNTMxfDA&ixlib=rb-4.0.3&q=80&w=1080')" }}
+        data-ai-hint="professional bright office"
        >
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+        <div className="absolute inset-0 bg-background/80" />
+        <div className="container mx-auto px-4 relative z-10 text-foreground">
           <div className="max-w-4xl mx-auto text-center">
-             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 text-white">Mastering Every Platform</h2>
-             <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
+             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Mastering Every Platform</h2>
+             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {platformCards.map(card => (
-                  <Card key={card.platform} className="bg-background/10 border-white/20 group overflow-hidden">
+                  <Card key={card.platform} className="bg-card/70 backdrop-blur-sm border-border/50 group overflow-hidden">
                     <div className="relative aspect-video">
                         <Image src={card.image.src} alt={card.platform} fill className="object-contain transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint} />
-                        <div className="absolute inset-0 bg-black/30"></div>
+                        <div className="absolute inset-0 bg-black/10"></div>
                     </div>
                     <div className="p-4">
-                        <h3 className="font-headline text-xl font-bold mb-1 text-white">{card.platform}</h3>
-                        <p className="text-sm text-white/70">{card.description}</p>
+                        <h3 className="font-headline text-xl font-bold mb-1">{card.platform}</h3>
+                        <p className="text-sm text-muted-foreground">{card.description}</p>
                     </div>
                   </Card>
               ))}

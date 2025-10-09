@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Mic, Headphones, PlayCircle, Rss } from "lucide-react";
+import { ArrowRight, Mic, Headphones, PlayCircle, Rss, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -39,7 +39,7 @@ const episodes = [
     title: "The Art of Conversion Rate Optimization",
     category: "E-commerce",
     description: "Learn the techniques and tools used by top professionals to turn website visitors into loyal customers.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "conversion optimization" },
+    image: { src: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "conversion optimization" },
     tags: ["CRO", "E-commerce", "UX"],
     episodeNumber: "Ep. 10",
   },
@@ -47,7 +47,7 @@ const episodes = [
     title: "Navigating the World of B2B Marketing",
     category: "B2B",
     description: "A deep dive into the unique challenges and opportunities in the B2B marketing landscape, with a focus on ABM and lead nurturing.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496", hint: "b2b strategy" },
+    image: { src: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiMmIlMjBtYXJrZXRpbmd8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "b2b strategy" },
     tags: ["B2B", "ABM", "Lead Generation"],
     episodeNumber: "Ep. 09",
   },
@@ -55,7 +55,7 @@ const episodes = [
     title: "Mastering Social Media Engagement",
     category: "Social Media",
     description: "Explore strategies for creating authentic connections and fostering a vibrant community around your brand on social media.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270", hint: "social media engagement" },
+    image: { src: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGVuZ2FnZW1lbnR8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "social media engagement" },
     tags: ["Community", "Engagement", "Content"],
     episodeNumber: "Ep. 08",
   },
@@ -63,7 +63,7 @@ const episodes = [
     title: "The Power of Video Storytelling",
     category: "Video Production",
     description: "Discover how to leverage video to tell compelling stories that capture attention and drive action.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "video storytelling" },
+    image: { src: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aWRlbyUyMHN0b3J5dGVsbGluZ3xlbnwwfHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "video storytelling" },
     tags: ["Video", "Storytelling", "Production"],
     episodeNumber: "Ep. 07",
   },
@@ -73,19 +73,35 @@ const featuredGuests = [
   {
     name: "Jane Doe",
     title: "CEO, Innovate Inc.",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-justin-shaifer-1222271.jpg?updatedAt=1759859739505", hint: "business woman" },
+    image: { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjMzODE1Nnww&ixlib=rb-4.0.3&q=80&w=1080", hint: "business woman" },
   },
   {
     name: "John Smith",
     title: "Marketing Guru & Author",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-daniel-xavier-1239291.jpg?updatedAt=1759859739498", hint: "marketing expert" },
+    image: { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBleHBlcnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIzMzgxNTZ8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "marketing expert" },
   },
   {
     name: "Emily White",
     title: "Head of UX, Creative Solutions",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-stefan-stefancik-91227.jpg?updatedAt=1759859739508", hint: "ux designer" },
+    image: { src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1eCUyMGRlc2lnbmVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMzM4MTU2fDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "ux designer" },
+  },
+  {
+    name: "Michael Brown",
+    title: "Data Scientist",
+    image: { src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMzM4MTU2fDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "data scientist" },
+  },
+  {
+    name: "Jessica Green",
+    title: "Social Media Strategist",
+    image: { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMHN0cmF0ZWdpc3QlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIzMzgxNTZ8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "social media strategist" },
+  },
+  {
+    name: "David Wilson",
+    title: "Founder, Growth Hype",
+    image: { src: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIzMzgxNTZ8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "startup founder" },
   },
 ];
+
 
 export default function PodcastPage() {
   return (
@@ -113,8 +129,9 @@ export default function PodcastPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-8" style={{fontFamily: 'cursive', color: 'hsl(var(--primary))'}}>India's Nexstar coming soon</h2>
           <div className="border-2 border-double border-border p-px">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="aspect-video">
@@ -145,7 +162,7 @@ export default function PodcastPage() {
       <section className="relative py-20 md:py-24 bg-secondary">
          <div 
           className="absolute inset-0 bg-cover bg-center opacity-10" 
-          style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347')`}}
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1517420704952-d9f39e95b413?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}
           data-ai-hint="colorful abstract"
         ></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -177,7 +194,7 @@ export default function PodcastPage() {
                   <div className="p-1 h-full">
                     <Card 
                       className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6 h-full flex flex-col"
-                      style={{ animationDelay: `${index * 100}ms` }}
+                      style={{ animationDelay: `${index * 100}ms`, borderRadius: '10px' }}
                     >
                         <CardHeader className="p-0">
                           <div className="relative aspect-video">
@@ -185,7 +202,8 @@ export default function PodcastPage() {
                               src={episode.image.src}
                               alt={episode.title}
                               fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              className="transition-transform duration-500 group-hover:scale-105"
+                              style={{objectFit: 'fill', borderRadius: '10px 10px 0 0'}}
                               data-ai-hint={episode.image.hint}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -223,6 +241,19 @@ export default function PodcastPage() {
         </div>
       </section>
 
+      <section
+        className="py-16 md:py-32 bg-cover bg-center"
+        style={{backgroundImage: `url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}
+      >
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl text-center mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-white mb-4">Influencer Marketing Hub</h2>
+            <p className="text-lg text-white/80 mb-8">Connect with creators, amplify your message, and drive authentic engagement. We build bridges between brands and influential voices.</p>
+            <Button size="lg">Explore Campaigns <ArrowRight className="ml-2 h-5 w-5"/></Button>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="bg-card p-8 md:p-12 rounded-lg shadow-lg">
@@ -257,29 +288,48 @@ export default function PodcastPage() {
               We've had the pleasure of hosting some of the brightest minds in the industry.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {featuredGuests.map((guest, index) => (
-              <div 
-                key={guest.name} 
-                className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6 text-center"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="relative aspect-square">
-                    <Image
-                        src={guest.image.src}
-                        alt={guest.name}
-                        fill
-                        className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                        data-ai-hint={guest.image.hint}
-                    />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="font-headline text-2xl font-bold text-white mb-1">{guest.name}</h3>
-                  <p className="text-white/80 text-sm">{guest.title}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+           <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: true,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {featuredGuests.map((guest, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div 
+                    className="group relative overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-6 text-center"
+                    style={{ animationDelay: `${index * 150}ms`, borderRadius: '10px' }}
+                  >
+                    <div className="relative aspect-square">
+                        <Image
+                            src={guest.image.src}
+                            alt={guest.name}
+                            fill
+                            className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-110"
+                            style={{borderRadius: '10px'}}
+                            data-ai-hint={guest.image.hint}
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6" style={{borderRadius: '10px'}}>
+                      <h3 className="font-headline text-2xl font-bold text-white mb-1">{guest.name}</h3>
+                      <p className="text-white/80 text-sm">{guest.title}</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+             <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 hidden lg:flex" />
+          </Carousel>
+
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
               <Button asChild size="lg" variant="secondary" className="group">
                 <Link href="/contact">
@@ -292,3 +342,6 @@ export default function PodcastPage() {
     </div>
   );
 }
+
+
+    

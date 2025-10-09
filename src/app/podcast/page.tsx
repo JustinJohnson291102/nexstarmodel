@@ -73,7 +73,7 @@ const featuredGuests = [
   {
     name: "Jane Doe",
     title: "CEO, Innovate Inc.",
-    image: { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjMzODE1Nnww&ixlib=rb-4.0.3&q=80&w=1080", hint: "business woman" },
+    image: { src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjM0MjAwNHww&ixlib=rb-4.0.3&q=80&w=1080", hint: "business woman" },
   },
   {
     name: "John Smith",

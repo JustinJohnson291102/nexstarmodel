@@ -48,7 +48,6 @@ const serviceLinks = [
     { href: "/digital-business-consulting", label: "Digital Business Consulting" },
     { href: "/digital-branding", label: "Digital Branding" },
     { href: "/digital-transformation", label: "Digital Transformation" },
-    { href: "/broadcast-solutions", label: "Broadcast Solutions" },
     { href: "/ott-services", label: "OTT Services" },
 ];
 
@@ -269,3 +268,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

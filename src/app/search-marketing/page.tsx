@@ -46,7 +46,7 @@ const alternatingContent = [
             "Strategic link-building to boost your site's authority."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
+            src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional seo chart"
         }
     },
@@ -60,7 +60,7 @@ const alternatingContent = [
             "A/B testing for continuous performance improvement."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
+            src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWlkJTIwYWRzfGVufDB8fHx8fDE3NjIzOTQwODd8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional ppc ads"
         }
     }
@@ -77,25 +77,25 @@ export default function SearchMarketingPage() {
         icon: Search,
         title: "Comprehensive SEO Audits",
         description: "We identify technical, on-page, and off-page SEO issues and opportunities to build a solid foundation for growth.",
-        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "colorful professional seo analysis" }
+        image: { src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional seo analysis" }
       },
       {
         icon: BarChart,
         title: "Keyword Research & Strategy",
         description: "Target the right audience with in-depth keyword analysis, mapping user intent to your business goals.",
-        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "colorful professional keyword strategy" }
+        image: { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWlkJTIwYWRzfGVufDB8fHx8fDE3NjIzOTQwODd8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional keyword strategy" }
       },
       {
         icon: Target,
         title: "PPC Campaign Management",
         description: "Maximize your ROI with meticulously managed Pay-Per-Click campaigns on Google Ads and Bing Ads.",
-        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606", hint: "colorful professional ppc management" }
+        image: { src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional ppc management" }
       },
       {
         icon: TrendingUp,
         title: "Content & Link Building",
         description: "Boost your authority and rankings with high-quality, SEO-optimized content and strategic link-building outreach.",
-        image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "colorful professional content strategy" }
+        image: { src: "https://images.unsplash.com/photo-1455849318743-b2233052fcff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb250ZW50JTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional content strategy" }
       }
     ]
   };
@@ -103,13 +103,21 @@ export default function SearchMarketingPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative h-[30vh] w-full flex items-center justify-center text-center bg-white"
       >
-        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <Image
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080"
+          alt="Search Marketing"
+          fill
+          className="object-fill"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
@@ -161,8 +169,7 @@ export default function SearchMarketingPage() {
       </section>
 
       <section
-        className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')`}}
+        className="py-20 md:py-32 bg-cover bg-center bg-fixed bg-primary"
         data-ai-hint="colorful professional digital data stream"
       >
         <div className="absolute inset-0 bg-black/70" />
@@ -172,18 +179,18 @@ export default function SearchMarketingPage() {
                 <p className="text-lg text-white/80 max-w-2xl mx-auto mb-12 px-4">We combine SEO and SEM for short-term wins and long-term dominance.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <Card className="bg-white/10 border-white/20 text-white backdrop-blur-md">
+                <Card className="bg-background/90 text-foreground backdrop-blur-md">
                     <CardContent className="p-8 text-center">
-                        <Search className="w-12 h-12 mx-auto mb-4 text-accent" />
+                        <Search className="w-12 h-12 mx-auto mb-4 text-primary" />
                         <h3 className="text-2xl font-bold font-headline mb-3">SEO: The Foundation</h3>
-                        <p className="text-white/80">Building your brand's authority for sustainable, organic growth that lasts.</p>
+                        <p className="text-muted-foreground">Building your brand's authority for sustainable, organic growth that lasts.</p>
                     </CardContent>
                 </Card>
-                 <Card className="bg-white/10 border-white/20 text-white backdrop-blur-md">
+                 <Card className="bg-background/90 text-foreground backdrop-blur-md">
                     <CardContent className="p-8 text-center">
-                        <DollarSign className="w-12 h-12 mx-auto mb-4 text-accent" />
+                        <DollarSign className="w-12 h-12 mx-auto mb-4 text-primary" />
                         <h3 className="text-2xl font-bold font-headline mb-3">SEM: The Accelerator</h3>
-                        <p className="text-white/80">Driving immediate, targeted traffic to capture customers at the moment of intent.</p>
+                        <p className="text-muted-foreground">Driving immediate, targeted traffic to capture customers at the moment of intent.</p>
                     </CardContent>
                 </Card>
             </div>
@@ -201,7 +208,7 @@ export default function SearchMarketingPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

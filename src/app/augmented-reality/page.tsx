@@ -14,19 +14,19 @@ const videoCards = [
     title: "Product Visualization",
     description: "See products in your space before you buy.",
     videoSrc: "https://videos.pexels.com/video-files/5406087/5406087-sd_640_360_25fps.mp4",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-mikhail-nilov-8296996.jpg?updatedAt=1759858562852", hint: "colorful ar product" },
+    image: { src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxVSXxlbnwwfHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful ar product" },
   },
   {
     title: "Interactive Filters",
     description: "Engage users with fun, shareable brand filters.",
     videoSrc: "https://videos.pexels.com/video-files/7578508/7578508-sd_640_360_25fps.mp4",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-mikhail-nilov-8297031.jpg?updatedAt=1759858562776", hint: "colorful ar social" },
+    image: { src: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGVuZ2FnZW1lbnR8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful ar social" },
   },
   {
     title: "AR Portals",
     description: "Step into a new world with immersive brand portals.",
     videoSrc: "https://videos.pexels.com/video-files/4429377/4429377-sd_540_960_30fps.mp4",
-    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "colorful ar portal" },
+    image: { src: "https://images.unsplash.com/photo-1629904853716-f0bc64219b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmltYXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful ar portal" },
   },
 ];
 
@@ -82,7 +82,7 @@ const alternatingContent = [
             "Seamless integration with Shopify, WooCommerce, and other platforms."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-disha-sheta-3746618-10023428.jpg?updatedAt=1759858562758",
+            src: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful ar shopping"
         }
     },
@@ -96,7 +96,7 @@ const alternatingContent = [
             "WebAR portals that transport users to virtual worlds."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-ivan-samkov-8121045.jpg?updatedAt=1759858562699",
+            src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJ0eXxlbnwwfHx8fDE3NjIzOTQwODd8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful ar event"
         }
     }
@@ -109,11 +109,19 @@ export default function AugmentedRealityPage() {
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
         >
-        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <Image
+            src="https://images.unsplash.com/photo-1629904853716-f0bc64219b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmltYXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
+            alt="Augmented Reality"
+            fill
+            className="object-fill"
+            priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             Augmented Reality Services
           </h1>
-          <p className="text-lg md:text-2xl text-muted-foreground max-w-xl mx-auto md:mx-0">
+          <p className="text-lg md:text-2xl max-w-xl mx-auto md:mx-0">
             Blur the lines between digital and reality. We craft AR experiences that captivate, engage, and convert.
           </p>
           <Button asChild size="lg" className="mt-8 group" variant="secondary">
@@ -138,7 +146,7 @@ export default function AugmentedRealityPage() {
                                 <video
                                     src={card.videoSrc}
                                     poster={card.image.src}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-fill"
                                     autoPlay
                                     loop
                                     muted
@@ -189,7 +197,7 @@ export default function AugmentedRealityPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
@@ -214,7 +222,7 @@ export default function AugmentedRealityPage() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-in fade-in slide-in-from-left-10 duration-700">
                <Image 
-                src="https://ik.imagekit.io/ggelm1lwa/pexels-disha-sheta-3746618-10023428.jpg?updatedAt=1759858562758"
+                src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxVSXxlbnwwfHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080"
                 alt="WebAR on multiple devices"
                 width={800}
                 height={600}

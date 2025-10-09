@@ -46,7 +46,7 @@ const alternatingContent = [
             "Mobile-first design for a seamless shopping experience on any device."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
+            src: "https://images.unsplash.com/photo-1556155092-490a1ba16284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZWFkJTIwZ2VuZXJhdGlvbnxlbnwwfHx8fDE3NjIzOTQwODd8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional sales funnel"
         }
     },
@@ -60,7 +60,7 @@ const alternatingContent = [
             "Headless commerce solutions for ultimate flexibility and performance."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-picjumbocom-196644.jpg?updatedAt=1759859066548",
+            src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional server infrastructure"
         }
     }
@@ -106,11 +106,19 @@ export default function EcommerceDevelopmentPage() {
   return (
     <div className="bg-background">
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white">
-        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <Image
+            src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
+            alt="E-commerce Development"
+            fill
+            className="object-fill"
+            priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
@@ -197,7 +205,7 @@ export default function EcommerceDevelopmentPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

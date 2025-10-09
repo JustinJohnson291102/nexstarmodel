@@ -42,7 +42,7 @@ const alternatingContent = [
             "Meticulous post-production including editing, color grading, and sound mixing."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
+            src: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional storyboard"
         }
     },
@@ -56,17 +56,17 @@ const alternatingContent = [
             "Animated explainer videos for complex products or services."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270",
+            src: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGVuZ2FnZW1lbnR8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional social video"
         }
     }
 ];
 
 const videoTypes = [
-    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "colorful professional cinematic film" } },
-    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347", hint: "colorful professional tv commercial" } },
-    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-tracy-le-blanc-607812.jpg?updatedAt=1759859066270", hint: "colorful professional social media" } },
-    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "colorful professional abstract animation" } },
+    { type: "Brand Films", description: "Cinematic narratives that build an emotional connection with your audience.", image: { src: "https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaW5lbWF0aWN8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional cinematic film" } },
+    { type: "Commercials", description: "High-impact ads for TV and digital platforms designed to drive action.", image: { src: "https://images.unsplash.com/photo-1607908611192-495243241465?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0diUyMGFkfGVufDB8fHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional tv commercial" } },
+    { type: "Social Content", description: "Engaging, short-form videos optimized for platforms like Instagram and TikTok.", image: { src: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGVuZ2FnZW1lbnR8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional social media" } },
+    { type: "Animations", description: "Visually stunning 2D/3D animations to simplify complex ideas.", image: { src: "https://images.unsplash.com/photo-1629904853716-f0bc64219b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmltYXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional abstract animation" } },
 ];
 
 export default function VideoProductionPage() {
@@ -104,11 +104,19 @@ export default function VideoProductionPage() {
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
       >
-        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+         <Image
+            src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aWRlbyUyMHN0b3J5dGVsbGluZ3xlbnwwfHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080"
+            alt="Video Production"
+            fill
+            className="object-fill"
+            priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
             {pageData.title}
           </h1>
-          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-2xl max-w-3xl mx-auto px-4">
             {pageData.description}
           </p>
         </div>
@@ -177,7 +185,7 @@ export default function VideoProductionPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {videoTypes.map((video, index) => (
               <div key={video.type} className="group relative rounded-lg overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-5 duration-500" style={{ animationDelay: `${index * 150}ms`}}>
-                <Image src={video.image.src} alt={video.type} width={400} height={500} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={video.image.hint} />
+                <Image src={video.image.src} alt={video.type} width={400} height={500} className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-105" data-ai-hint={video.image.hint} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end" >
                   <h3 className="text-2xl font-bold font-headline">{video.type}</h3>
                   <p className="text-sm text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 h-0 group-hover:h-auto">{video.description}</p>
@@ -199,7 +207,7 @@ export default function VideoProductionPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

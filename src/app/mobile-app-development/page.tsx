@@ -45,7 +45,7 @@ const alternatingContent = [
             "Full integration with device-native features like cameras and GPS."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-torsten-dettlaff-70955.jpg?updatedAt=1759859341492",
+            src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxVSXxlbnwwfHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional mobile app screen"
         }
     },
@@ -59,7 +59,7 @@ const alternatingContent = [
             "Third-party service integrations (payments, maps, social media)."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/pexels-negative-space-160107.jpg?updatedAt=1759858762512",
+            src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional cloud server"
         }
     }
@@ -100,12 +100,20 @@ export default function MobileAppDevelopmentPage() {
       <section 
         className="relative h-[70vh] w-full flex items-center justify-center text-center bg-white"
       >
-        <div className="relative z-10 container mx-auto px-4 text-foreground">
+        <Image
+          src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmRyb2lkfGVufDB8fHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080"
+          alt="Mobile App Development"
+          fill
+          className="object-fill"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 container mx-auto px-4 text-white">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
               {pageData.title}
             </h1>
-            <p className="text-lg md:text-2xl text-muted-foreground px-4">
+            <p className="text-lg md:text-2xl px-4">
               {pageData.description}
             </p>
           </div>
@@ -201,7 +209,7 @@ export default function MobileAppDevelopmentPage() {
                   width={800}
                   height={600}
                   data-ai-hint={item.image.hint}
-                  className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                  className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

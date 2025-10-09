@@ -21,7 +21,7 @@ const b2bServices = [
     title: "Account-Based Marketing (ABM)",
     description: "Target high-value accounts with personalized campaigns that treat individual accounts as markets in their own right.",
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/accont%20based%20marketing.jpg?updatedAt=1759733267396",
+      src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional marketing target",
     }
   },
@@ -30,7 +30,7 @@ const b2bServices = [
     title: "Lead Generation & Nurturing",
     description: "Build a robust pipeline of qualified leads and nurture them through the sales funnel with targeted content and automation.",
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/lead%20genertion.png?updatedAt=1759733267113",
+      src: "https://images.unsplash.com/photo-1556155092-490a1ba16284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZWFkJTIwZ2VuZXJhdGlvbnxlbnwwfHx8fDE3NjIzOTQwODd8MA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional sales funnel",
     }
   },
@@ -39,7 +39,7 @@ const b2bServices = [
     title: "B2B Content Strategy",
     description: "Establish thought leadership and attract your target audience with valuable, relevant, and consistent content.",
      image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/b2b.jpg?updatedAt=1759733267424",
+      src: "https://images.unsplash.com/photo-1455849318743-b2233052fcff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb250ZW50JTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional content creation",
     }
   },
@@ -48,7 +48,7 @@ const b2bServices = [
     title: "Marketing & Sales Analytics",
     description: "Leverage data to optimize your marketing efforts, measure ROI, and align your sales and marketing teams.",
      image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/marketing-analytics-101-open-graph.webp?updatedAt=1759733267129",
+      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "professional data analytics",
     }
   },
@@ -85,7 +85,7 @@ const alternatingContent = [
             "Sales and marketing team alignment for seamless follow-up."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/Account-Based-Marketing-e1748241143773.jpg?updatedAt=1759733391413",
+            src: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional marketing focus"
         }
     },
@@ -99,7 +99,7 @@ const alternatingContent = [
             "Content distribution and promotion strategies."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/content-that-converts-facebook.png?updatedAt=1759733526096",
+            src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcHRpbWl6YXRpb24lMjBwcm9jZXNzfGVufDB8fHx8fDE3NjIyNDgwMTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
             hint: "colorful professional content writing"
         }
     }
@@ -116,8 +116,17 @@ export default function B2BPage() {
   return (
     <>
       <section 
-        className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative w-full flex items-center justify-center text-center bg-white"
+        style={{ height: 'calc(60vh - 80px)' }}
       >
+        <Image
+            src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiMmIlMjBtYXJrZXRpbmd8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
+            alt="B2B Marketing"
+            fill
+            className="object-fill"
+            priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">B2B Marketing</h1>
@@ -153,7 +162,7 @@ export default function B2BPage() {
                         src={service.image.src}
                         alt={service.title}
                         fill
-                        className="object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="object-fill transition-transform duration-500 group-hover:scale-105"
                         data-ai-hint={service.image.hint}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
@@ -180,13 +189,13 @@ export default function B2BPage() {
         style={{backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/b2b-parallax.jpg?updatedAt=1759654519969')"}}
         data-ai-hint="colorful professional business success"
       >
-        <div className="absolute inset-0 bg-primary/90" />
-        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+        <div className="absolute inset-0 bg-blue-200/90" />
+        <div className="container mx-auto px-4 relative z-10 text-primary">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             {stats.map(stat => (
               <div key={stat.label} className="p-6 bg-black/10 rounded-lg">
                 <p className="text-5xl md:text-6xl font-bold font-headline">{stat.value}</p>
-                <p className="text-base md:text-lg text-primary-foreground/80 mt-2">{stat.label}</p>
+                <p className="text-base md:text-lg text-primary/80 mt-2">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -204,7 +213,7 @@ export default function B2BPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-contain rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

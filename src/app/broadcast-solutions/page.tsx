@@ -1,8 +1,9 @@
+
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, HelpCircle, Server, TowerBroadcast, Video, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle, HelpCircle, Server, RadioTower, Video, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -11,7 +12,7 @@ import OurClients from "@/components/homepage/our-clients";
 
 const services = [
     {
-        icon: TowerBroadcast,
+        icon: RadioTower,
         title: "Playout & Automation",
         description: "Reliable, 24/7 automated playout solutions for television channels, ensuring seamless content delivery with dynamic graphics and branding.",
     },
@@ -56,7 +57,7 @@ export default function BroadcastSolutionsPage() {
         <div className="bg-background">
             <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white">
                 <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
-                    <TowerBroadcast className="h-16 w-16 mx-auto mb-4" />
+                    <RadioTower className="h-16 w-16 mx-auto mb-4" />
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
                         Broadcast Solutions
                     </h1>

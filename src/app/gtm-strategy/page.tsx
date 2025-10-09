@@ -109,7 +109,7 @@ export default function GtmStrategyPage() {
         className="relative py-20 md:py-32 w-full flex items-center justify-center text-center bg-cover bg-center"
         style={{ backgroundImage: `url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXJrZXRpbmclMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ4MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080')`}}
       >
-        <div className="absolute inset-0 bg-primary/60" />
+        <div className="absolute inset-0 bg-primary/10" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Your Go-To-Market Launchpad
@@ -173,14 +173,14 @@ export default function GtmStrategyPage() {
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10 text-white">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Measurable Impact</h2>
-                <p className="text-lg mt-4 px-4">Our GTM strategies deliver tangible results.</p>
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-white">Measurable Impact</h2>
+                <p className="text-lg mt-4 px-4 text-white">Our GTM strategies deliver tangible results.</p>
             </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {stats.map(stat => (
               <div key={stat.label} className="p-8">
-                <p className="text-6xl font-bold font-headline">{stat.value}</p>
-                <p className="text-lg mt-2">{stat.label}</p>
+                <p className="text-6xl font-bold font-headline text-white">{stat.value}</p>
+                <p className="text-lg mt-2 text-white">{stat.label}</p>
               </div>
             ))}
           </div>

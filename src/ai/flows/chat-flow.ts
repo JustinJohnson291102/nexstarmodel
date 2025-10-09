@@ -91,11 +91,5 @@ const chatFlow = ai.defineFlow(
  * @returns An AI-generated response.
  */
 export async function chat(message: string): Promise<string> {
-    const defaultResponse = "Hello! I'm your Nexstar AI assistant. How can I help you ?";
-    
-    if (!message || message.trim().toLowerCase() === 'hi' || message.trim().toLowerCase() === 'hello') {
-        return defaultResponse;
-    }
-    
-    return await chatFlow({ message });
+  return await chatFlow({ message });
 }

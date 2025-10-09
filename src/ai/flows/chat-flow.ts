@@ -7,7 +7,6 @@
  */
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
-import { googleAI } from '@genkit-ai/google-genai';
 
 const ChatInputSchema = z.object({
   message: z.string(),
@@ -18,7 +17,7 @@ const ChatOutputSchema = z.string();
 const chatPrompt = ai.definePrompt(
   {
     name: 'chatPrompt',
-    model: googleAI('gemini-1.5-flash-latest'),
+    model: 'googleai/gemini-1.5-flash-latest',
     input: { schema: ChatInputSchema },
     output: { schema: ChatOutputSchema },
     system: `You are a friendly and professional AI assistant for Nexstar Media, a premier IT & Media company. Your goal is to answer user questions accurately based on the context provided and guide them to the correct pages on the website.
@@ -80,12 +79,6 @@ const chatFlow = ai.defineFlow(
     outputSchema: ChatOutputSchema,
   },
   async (input) => {
-    // Check for empty or simple greetings first
-    const message = input.message.trim().toLowerCase();
-    if (message === 'hi' || message === 'hello') {
-        return "Hello! I'm your Nexstar AI assistant. How can I help you today?";
-    }
-
     try {
         const { output } = await chatPrompt(input);
         // Ensure there is always a fallback response.

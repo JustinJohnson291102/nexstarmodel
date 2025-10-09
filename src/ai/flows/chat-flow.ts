@@ -17,7 +17,7 @@ const ChatOutputSchema = z.string();
 const chatPrompt = ai.definePrompt(
   {
     name: 'chatPrompt',
-    model: 'googleai/gemini-1.5-flash-latest',
+    model: 'gemini-1.5-flash-latest',
     input: { schema: ChatInputSchema },
     output: { schema: ChatOutputSchema },
     system: `You are a friendly and professional AI assistant for Nexstar Media, a premier IT & Media company. Your goal is to answer user questions accurately based on the context provided and guide them to the correct pages on the website.

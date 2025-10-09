@@ -114,6 +114,20 @@ const whoWeAreCards = [
     }
   ];
 
+const heroCarouselImages = [
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/Screenshot%20(52).png?updatedAt=1759926016148",
+    alt: "Office hero banner 1",
+    hint: "office banner",
+  },
+  {
+    src: "https://ik.imagekit.io/ggelm1lwa/Screenshot%20(54).png?updatedAt=1759995765105",
+    alt: "Office hero banner 2",
+    hint: "office banner",
+  },
+];
+
+
 export default function Home() {
 
   return (
@@ -134,16 +148,28 @@ export default function Home() {
         </div>
         
         <div className="relative w-full md:col-span-3">
-          <Image 
-            src="https://ik.imagekit.io/ggelm1lwa/Screenshot%20(52).png?updatedAt=1759926016148" 
-            alt="Office hero banner" 
-            width={1920}
-            height={1080}
-            className="object-contain w-full h-auto" 
-            data-ai-hint="office banner"
-            priority
-            quality={100}
-          />
+          <Carousel
+            opts={{ loop: true }}
+            plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
+          >
+            <CarouselContent>
+              {heroCarouselImages.map((img, index) => (
+                <CarouselItem key={index}>
+                   <div className="relative w-full h-[40vh] md:h-[calc(100vh-7rem)]">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-contain w-full h-full"
+                      data-ai-hint={img.hint}
+                      priority
+                      quality={100}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </section>
         

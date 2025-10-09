@@ -147,7 +147,13 @@ export default function Header() {
               <DropdownMenuContent>
                 {webSolutionLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <Link href={link.href}>{link.label}</Link>
+                    <Link 
+                      href={link.href}
+                      target={link.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                    >
+                      {link.label}
+                    </Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -231,7 +237,16 @@ export default function Header() {
                     <AccordionContent className="pl-4">
                        <div className="flex flex-col gap-2">
                         {webSolutionLinks.map(link => (
-                          <NavLink key={link.href} href={link.href} label={link.label} className="text-base p-2" />
+                          <Link 
+                            key={link.href}
+                            href={link.href}
+                            target={link.href.startsWith('http') ? '_blank' : '_self'}
+                            rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                            className="text-base p-2 text-foreground transition-colors hover:text-primary"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                           {link.label}
+                          </Link>
                         ))}
                       </div>
                     </AccordionContent>

@@ -303,7 +303,7 @@ export default function PodcastPage() {
           >
             <CarouselContent className="-ml-4">
               {featuredGuests.map((guest, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/6">
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div 
                     className="group relative overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-6 text-center"
                     style={{ animationDelay: `${index * 150}ms`, borderRadius: '10px' }}

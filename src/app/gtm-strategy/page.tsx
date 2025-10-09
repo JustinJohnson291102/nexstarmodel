@@ -109,7 +109,7 @@ export default function GtmStrategyPage() {
         className="relative py-20 md:py-32 w-full flex items-center justify-center text-center bg-cover bg-center"
         style={{ backgroundImage: `url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXJrZXRpbmclMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ4MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080')`}}
       >
-        <div className="absolute inset-0 bg-primary/80" />
+        <div className="absolute inset-0 bg-primary/60" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Your Go-To-Market Launchpad
@@ -133,14 +133,15 @@ export default function GtmStrategyPage() {
             {roadmapSteps.map((step, index) => (
               <div key={step.title} className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className={`overflow-hidden rounded-lg shadow-xl animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-1 slide-in-from-left-10' : 'md:order-2 slide-in-from-right-10'}`}>
-                    <Image 
-                        src={step.image.src}
-                        alt={step.title}
-                        width={800}
-                        height={600}
-                        data-ai-hint={step.image.hint}
-                        className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
-                    />
+                    <div className="relative aspect-video w-full">
+                        <Image 
+                            src={step.image.src}
+                            alt={step.title}
+                            fill
+                            data-ai-hint={step.image.hint}
+                            className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
                 </div>
                 <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
                     <div className="flex items-center gap-4 mb-4">
@@ -170,16 +171,16 @@ export default function GtmStrategyPage() {
         data-ai-hint="colorful professional launch success"
       >
         <div className="absolute inset-0 bg-background/90" />
-        <div className="container mx-auto px-4 relative z-10 text-foreground">
+        <div className="container mx-auto px-4 relative z-10 text-white">
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Measurable Impact</h2>
-                <p className="text-lg text-muted-foreground mt-4 px-4">Our GTM strategies deliver tangible results.</p>
+                <p className="text-lg mt-4 px-4">Our GTM strategies deliver tangible results.</p>
             </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {stats.map(stat => (
-              <div key={stat.label} className="p-8 bg-card rounded-lg backdrop-blur-sm border border-border/20">
-                <p className="text-6xl font-bold font-headline text-primary">{stat.value}</p>
-                <p className="text-lg text-muted-foreground mt-2">{stat.label}</p>
+              <div key={stat.label} className="p-8">
+                <p className="text-6xl font-bold font-headline">{stat.value}</p>
+                <p className="text-lg mt-2">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -210,3 +211,5 @@ export default function GtmStrategyPage() {
       </section>
     </>
   );
+}
+    

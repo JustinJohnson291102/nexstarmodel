@@ -22,7 +22,7 @@ const cannedResponses: { [key: string]: string } = {
  * @returns A pre-written response if a keyword is found, otherwise a default message.
  */
 export async function chat(message: string): Promise<string> {
-    const defaultResponse = "I'm sorry, I can only answer questions about our services, portfolio, and contact information. For more complex queries, please get in touch with our team via the /contact page.";
+    const defaultResponse = "I'm sorry, I don't have the answer to that. For more complex queries, please reach out to our team by emailing atul@nexstarmedia.in.";
     const normalizedMessage = message.toLowerCase();
 
     for (const pattern in cannedResponses) {

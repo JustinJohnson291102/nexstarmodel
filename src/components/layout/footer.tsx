@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   const mainLinks = [
     { href: '/', label: 'Home' },
@@ -90,7 +89,7 @@ export default function Footer() {
         </div>
          <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
             <p>
-              &copy; {currentYear} Nexstar Media. All rights reserved. | The Flagship Company of Nexstar Live LLC, United States
+              &copy; 2019 Nexstar Media. All rights reserved. | The Flagship Company of Nexstar Live LLC, United States
             </p>
           </div>
       </div>

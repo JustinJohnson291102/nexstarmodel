@@ -73,7 +73,7 @@ const featuredGuests = [
   {
     name: "Jane Doe",
     title: "CEO, Innovate Inc.",
-    image: { src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjM0MjAwNHww&ixlib=rb-4.0.3&q=80&w=1080", hint: "business woman" },
+    image: { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", hint: "business woman" },
   },
   {
     name: "John Smith",
@@ -281,7 +281,7 @@ export default function PodcastPage() {
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-foreground animate-in fade-in slide-in-from-bottom-4 duration-500">
               Featured Guests
             </h2>
             <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
@@ -313,7 +313,7 @@ export default function PodcastPage() {
                             src={guest.image.src}
                             alt={guest.name}
                             fill
-                            className="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110"
+                            className="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110 filter brightness-125 group-hover:brightness-100"
                             style={{borderRadius: '10px'}}
                             data-ai-hint={guest.image.hint}
                         />
@@ -341,5 +341,3 @@ export default function PodcastPage() {
       </section>
     </div>
   );
-
-    

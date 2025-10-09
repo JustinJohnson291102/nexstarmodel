@@ -133,7 +133,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full flex flex-col md:flex-row bg-background">
-        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[calc(100vh-7rem-40px)] h-[60vh] md:h-auto">
+        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[calc(80vh-7rem-40px)] h-[48vh] md:h-auto">
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-08%20at%206.14.02%20PM.mp4?updatedAt=1759927469651"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -155,7 +155,7 @@ export default function Home() {
             <CarouselContent>
               {heroCarouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                   <div className="relative w-full h-[40vh] md:h-[calc(100vh-7rem)]">
+                   <div className="relative w-full h-[32vh] md:h-[calc(80vh-7rem)]">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -233,7 +233,7 @@ export default function Home() {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className={`object-fill w-full h-full ${
+                      className={`object-fill md:object-cover w-full h-full ${
                         img.hint === "yellow banner" ? "md:object-cover" : ""
                       }`}
                       priority

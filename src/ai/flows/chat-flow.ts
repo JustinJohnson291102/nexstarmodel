@@ -1,112 +1,37 @@
-
 'use server';
 /**
- * @fileOverview A simple chat flow for the site assistant.
+ * @fileOverview A simple, rule-based chatbot flow.
  *
- * - chat - A function that handles the chat interaction.
+ * - chat - A function that handles the chat interaction based on keywords.
  */
-import { ai } from '@/ai/genkit';
-import { z } from 'zod';
 
-const ChatInputSchema = z.object({
-  message: z.string(),
-});
-
-const ChatOutputSchema = z.string();
-
-const chatPrompt = ai.definePrompt(
-  {
-    name: 'chatPrompt',
-    model: 'gemini-1.5-flash-latest',
-    input: { schema: ChatInputSchema },
-    output: { schema: ChatOutputSchema },
-    system: `You are a friendly and professional AI assistant for Nexstar Media, a premier IT & Media company. Your goal is to answer user questions accurately based on the context provided and guide them to the correct pages on the website.
-
-CONTEXT ABOUT NEXSTAR MEDIA:
-- Company: Nexstar Media is a flagship company of Nexstar Live LLC, USA, specializing in media entertainment and IT services. It offers digital media solutions, web/app development, and IT service management to an international clientele.
-- General Contact Email: contact@nexstarlive.com
-- General Phone Numbers: +91-9821000921, +1-917-6721794
-- Email for Enquiry Forms/Consultations: atul@nexstarmedia.in
-
-AVAILABLE PAGES & SERVICES:
-- Home (/): Main landing page showcasing all services and company information.
-- Our Story (/story): Information about Nexstar's history, mission, team, and core values.
-- All Services (/services): A comprehensive list of all services offered.
-- Social Media (/social-media): Social media strategy, platform management, community building, and campaigns.
-- Creative & Branding (/creative-branding): Brand strategy, logo design, graphic design, copywriting, and full photo/video production.
-- B2B Marketing (/b2b): Account-Based Marketing (ABM), lead generation, and B2B content strategy.
-- Search Marketing (SEO/SEM) (/search-marketing): SEO audits, keyword research, PPC campaign management, and content marketing.
-- Video Production (/video-production): Concept development, filming, post-production, animation, and motion graphics.
-- Online Reputation Management (/online-reputation-management): Brand monitoring, review management, and crisis response.
-- E-commerce Development (/ecommerce-development): Custom e-commerce sites on Shopify & WooCommerce, conversion rate optimization.
-- Website Development (/web-solutions): Responsive web design, UI/UX, and CMS development.
-- Mobile App Development (/mobile-app-development): Native iOS & Android app development, UI/UX design, and backend integration.
-- Augmented Reality (/augmented-reality): Custom AR app development, WebAR, and interactive product visualization.
-- GTM Strategy (/gtm-strategy): Go-To-Market strategy for product launches, including market research, positioning, and growth.
-- Performance Marketing (/performance-marketing): Paid search (PPC), social media advertising, and conversion rate optimization (CRO).
-- Rapid Website Development (/rapid-website-development): Fast, template-based website creation for startups and marketing campaigns.
-- Backend & Frontend Outsource (/backend-frontend-outsource): Dedicated development teams and staff augmentation.
-- WhatsApp Chatbots (/whatsapp-chatbots): AI-powered chatbot development for customer support and lead generation on WhatsApp.
-- Digital Business Consulting (/digital-business-consulting): Digital transformation roadmaps, technology stack advisory, and market entry strategy.
-- Digital Branding (/digital-branding): Crafting a consistent and compelling brand identity across all digital touchpoints.
-- Digital Transformation (/digital-transformation): Modernizing operations, automating processes, and embracing a data-driven culture.
-- OTT Services (/ott-services): Launch your own branded streaming service for web, mobile, and smart TVs.
-- Shopify Expertise (/shopify): Specialized services for building and optimizing Shopify stores.
-- Digital TV / Podcast (/podcast): The "Nexstar Insights" podcast discussing digital marketing trends.
-- Pricing Pages:
-  - SEO Pricing (/pricing/seo-pricing)
-  - SMO Pricing (/pricing/smo-pricing)
-  - PPC Pricing (/pricing/ppc-pricing)
-- Portfolio (/portfolio): A showcase of recent projects and case studies.
-- Contact (/contact): Contact form and location details. Our addresses are 845 3rd Ave 6th floor, New York, NY 10022, and Level-5, SB Tower, Film City, Sector-16A, Noida – 201301, India.
-
-YOUR BEHAVIOR:
-1. If the user asks "hi" or "hello", respond with a friendly greeting: "Hello! I'm your Nexstar AI assistant. How can I help you today?".
-2. For any other query, analyze the user's message and provide a concise, helpful answer based *only* on the context provided above.
-3. If the user's query matches a specific service or page, provide a brief summary and ALWAYS include the URL to that page. For example, if they ask about "making a mobile app", tell them about the mobile app development service and provide the link: /mobile-app-development.
-4. If the user asks for contact information, provide the relevant email or phone number. For general contact, use contact@nexstarlive.com. For specific project enquiries, suggest filling out the form or using atul@nexstarmedia.in.
-5. Do not make up information. If a question cannot be answered from the context, politely say "I can't find information on that, but you can learn more about our services at /services or get in touch with our team at /contact."
-6. Keep responses friendly, professional, and to the point.
-`,
-  },
-  `{{message}}`
-);
-
-const chatFlow = ai.defineFlow(
-  {
-    name: 'chatFlow',
-    inputSchema: ChatInputSchema,
-    outputSchema: ChatOutputSchema,
-  },
-  async (input) => {
-    try {
-        const simpleGreeting = /^\s*(hi|hello)\s*$/i.test(input.message);
-        const promptInput = {
-            message: simpleGreeting 
-                ? "The user said hi. Please respond with your standard greeting." 
-                : input.message
-        };
-
-        const { output } = await chatPrompt(promptInput);
-        
-        if (!output) {
-            console.error("AI returned an empty response.");
-            return "I'm sorry, I'm having trouble thinking of a response. Could you please rephrase?";
-        }
-        return output;
-    } catch (error) {
-        console.error("Error in chatFlow:", error);
-        return "I'm sorry, I encountered an error. Please check your API key and configuration, and try again.";
-    }
-  }
-);
+// A map of keywords to canned responses.
+// The keys are regex patterns to match against the user's message.
+const cannedResponses: { [key: string]: string } = {
+    'services': "We offer a wide range of services including Social Media Marketing, Creative & Branding, B2B Marketing, SEO/SEM, Video Production, and much more. You can see all of them at /services.",
+    'contact|reach out|email|phone': "You can contact us via the form on our /contact page, or by email at contact@nexstarlive.com. Our phone numbers are +91-9821000921 and +1-917-6721794.",
+    'pricing|cost': "We have pricing pages for some of our key services. You can find them here: SEO Pricing (/pricing/seo-pricing), SMO Pricing (/pricing/smo-pricing), and PPC Pricing (/pricing/ppc-pricing). For anything else, please reach out via the /contact page.",
+    'story|about us|who are you': "We are Nexstar Media, a premier IT & Media company specializing in digital media, development, and IT services. You can learn more about our journey at /story.",
+    'portfolio|work|case studies': "You can see examples of our work and successful projects in our portfolio at /portfolio.",
+    'hello|hi': "Hello! I'm the Nexstar site assistant. How can I help you today? You can ask me about our services, pricing, or how to contact us.",
+};
 
 /**
- * Handles the chat interaction by passing the user's message to an AI model.
+ * Handles the chat interaction by checking for keywords in the user's message.
  * @param message The user's message.
- * @returns An AI-generated response.
+ * @returns A pre-written response if a keyword is found, otherwise a default message.
  */
 export async function chat(message: string): Promise<string> {
-  // Pass every message to the AI flow.
-  return await chatFlow({ message });
+    const defaultResponse = "I'm sorry, I can only answer questions about our services, portfolio, and contact information. For more complex queries, please get in touch with our team via the /contact page.";
+    const normalizedMessage = message.toLowerCase();
+
+    for (const pattern in cannedResponses) {
+        // Create a regex from the pattern string. 'i' flag makes it case-insensitive.
+        const regex = new RegExp(pattern, 'i');
+        if (regex.test(normalizedMessage)) {
+            return cannedResponses[pattern];
+        }
+    }
+
+    return defaultResponse;
 }

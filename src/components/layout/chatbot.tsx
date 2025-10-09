@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -48,23 +47,15 @@ export default function Chatbot() {
     setIsSubmitting(true);
 
     try {
+      // The `chat` function is now the simple, rule-based one.
       const response = await chat(currentInput);
       const assistantMessage = { role: "assistant", content: response };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error: any) {
       console.error("Chat error:", error);
-      let errorMessageContent = "Sorry, I'm having trouble connecting. Please try again later.";
-      if (error && error.message) {
-        if (error.message.includes('API key not valid')) {
-            errorMessageContent = "There seems to be an issue with the API key. Please check the configuration.";
-        } else if (error.message.includes('permission')) {
-             errorMessageContent = "It looks like there's a permission issue with the API. Please ensure the API is enabled in your Google Cloud project.";
-        }
-      }
-      
       const errorMessage = {
         role: "assistant",
-        content: errorMessageContent,
+        content: "Sorry, I'm having a technical issue. Please try again later.",
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {

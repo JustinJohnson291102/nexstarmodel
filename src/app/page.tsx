@@ -132,8 +132,8 @@ export default function Home() {
 
   return (
     <>
-      <section className="w-full flex flex-col md:grid md:grid-cols-5 bg-background">
-        <div className="relative w-full md:col-span-2 flex items-center justify-center">
+      <section className="w-full flex flex-col md:flex-row bg-background">
+        <div className="relative flex items-center justify-center shrink-0" style={{ width: 'calc(100vh - 7rem)'}}>
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-08%20at%206.14.02%20PM.mp4?updatedAt=1759927469651"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="relative w-full md:col-span-3">
+        <div className="relative w-full flex-1">
           <Carousel
             opts={{ loop: true }}
             plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}

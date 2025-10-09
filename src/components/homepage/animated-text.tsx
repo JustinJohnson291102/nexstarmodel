@@ -7,7 +7,7 @@ export default function AnimatedText() {
   
   return (
     <div className="animated-text-container">
-      <span className="prefix mb-4 md:mb-12" style={{ color: 'white', fontSize: '2.5rem' }}>We offer</span>
+      <span className="prefix mb-4 md:mb-12" style={{ color: 'white' }}>We offer</span>
       <div className="message">
         <div className="word1 word-animation" style={{color: 'white'}}>Web Development</div>
         <div className="word2 word-animation" style={{color: 'white'}}>Digital Marketing</div>

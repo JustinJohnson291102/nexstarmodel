@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -47,8 +46,9 @@ const serviceLinks = [
     { href: "/whatsapp-chatbots", label: "WhatsApp Chatbots" },
     { href: "/digital-business-consulting", label: "Digital Business Consulting" },
     { href: "/digital-branding", label: "Digital Branding" },
-    { href: "/xtrack", label: "XTrack Analytics" },
     { href: "/digital-transformation", label: "Digital Transformation" },
+    { href: "/broadcast-solutions", label: "Broadcast Solutions" },
+    { href: "/ott-services", label: "OTT Services" },
 ];
 
 const webSolutionLinks = [

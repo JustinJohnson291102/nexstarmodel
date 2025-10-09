@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -248,21 +247,6 @@ const servicesData = [
     imageHint: "colorful professional digital identity",
   },
   {
-    id: "digital-analytics",
-    title: "Digital Analytics",
-    points: [
-      "Custom Analytics Implementation (e.g., XTrack)",
-      "Data Visualization & Dashboarding",
-      "Customer Journey Analysis",
-      "Attribution Modeling",
-      "Actionable Insight Reporting",
-    ],
-    image: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3183153.jpg?updatedAt=1759847446940",
-    imageAlt: "A complex data analytics dashboard on a screen with colorful graphs.",
-    link: "/xtrack",
-    imageHint: "colorful professional analytics dashboard",
-  },
-  {
     id: "digital-transformation",
     title: "Digital Transformation",
     points: [
@@ -276,6 +260,36 @@ const servicesData = [
     imageAlt: "A vibrant abstract image showing digital transformation concepts.",
     link: "/digital-transformation",
     imageHint: "colorful professional digital business",
+  },
+  {
+    id: "broadcast-solutions",
+    title: "Broadcast Solutions",
+    points: [
+      "Playout & Automation",
+      "Live Streaming & Encoding",
+      "Media Asset Management (MAM)",
+      "Broadcast Infrastructure Design",
+      "24/7 Technical Support",
+    ],
+    image: "https://images.unsplash.com/photo-1586933777559-80860538a712?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageAlt: "A broadcast control room with multiple screens.",
+    link: "/broadcast-solutions",
+    imageHint: "broadcast control room",
+  },
+  {
+    id: "ott-services",
+    title: "OTT Services",
+    points: [
+      "Custom OTT App Development",
+      "VOD & Live Streaming Platforms",
+      "Multi-platform Support (iOS, Android, Web, TV)",
+      "Monetization Models (SVOD, AVOD, TVOD)",
+      "Secure Content Delivery (DRM)",
+    ],
+    image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageAlt: "A person watching a streaming service on a large screen TV.",
+    link: "/ott-services",
+    imageHint: "ott streaming service",
   },
 ];
 

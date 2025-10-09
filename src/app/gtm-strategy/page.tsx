@@ -19,7 +19,7 @@ const roadmapSteps = [
         "Analyze pricing models and potential revenue streams."
     ],
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
+      src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional market research",
     },
   },
@@ -33,7 +33,7 @@ const roadmapSteps = [
         "Create a comprehensive brand style guide."
     ],
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496",
+      src: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional brand positioning",
     },
   },
@@ -47,7 +47,7 @@ const roadmapSteps = [
         "Launch a coming-soon landing page to capture leads."
     ],
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/pexels-george-milton-7014337.jpg?updatedAt=1759859066347",
+      src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwciUyMGxhdW5jaHxlbnwwfHx8fDE3NjIyNDc4MTB8MA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional product launch",
     },
   },
@@ -61,7 +61,7 @@ const roadmapSteps = [
         "Secure launch coverage on product discovery sites like Product Hunt."
     ],
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606",
+      src: "https://images.unsplash.com/photo-1563050854-43d9a7845014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ3ODg2fDA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional rocket launch",
     },
   },
@@ -75,7 +75,7 @@ const roadmapSteps = [
         "Establish key partnerships and affiliate programs."
     ],
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
+      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional growth chart",
     },
   },
@@ -89,7 +89,7 @@ const roadmapSteps = [
         "Continuously refine product features and marketing strategies."
     ],
     image: {
-      src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839",
+      src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcHRpbWl6YXRpb24lMjBwcm9jZXNzfGVufDB8fHx8fDE3NjIyNDgwMTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
       hint: "colorful professional optimization process",
     },
   },
@@ -105,12 +105,16 @@ const stats = [
 export default function GtmStrategyPage() {
   return (
     <>
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white">
-        <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
+      <section 
+        className="relative py-20 md:py-32 w-full flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXJrZXRpbmclMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ4MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080')`}}
+      >
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Your Go-To-Market Launchpad
             </h1>
-            <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+            <p className="text-lg md:text-2xl max-w-3xl mx-auto px-4">
                We turn great ideas into market-leading products. Our Go-To-Market (GTM) strategy is a comprehensive roadmap designed to navigate the complexities of launching and scaling your venture successfully.
             </p>
         </div>
@@ -162,20 +166,20 @@ export default function GtmStrategyPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')"}}
+        style={{backgroundImage: "url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080')"}}
         data-ai-hint="colorful professional launch success"
       >
-        <div className="absolute inset-0 bg-primary/90" />
-        <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="container mx-auto px-4 relative z-10 text-foreground">
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">Measurable Impact</h2>
-                <p className="text-lg text-primary-foreground/80 mt-4 px-4">Our GTM strategies deliver tangible results.</p>
+                <p className="text-lg text-muted-foreground mt-4 px-4">Our GTM strategies deliver tangible results.</p>
             </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {stats.map(stat => (
-              <div key={stat.label} className="p-8 bg-black/10 rounded-lg backdrop-blur-sm border border-white/20">
-                <p className="text-6xl font-bold font-headline">{stat.value}</p>
-                <p className="text-lg text-primary-foreground/80 mt-2">{stat.label}</p>
+              <div key={stat.label} className="p-8 bg-card rounded-lg backdrop-blur-sm border border-border/20">
+                <p className="text-6xl font-bold font-headline text-primary">{stat.value}</p>
+                <p className="text-lg text-muted-foreground mt-2">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -206,4 +210,3 @@ export default function GtmStrategyPage() {
       </section>
     </>
   );
-}

@@ -81,8 +81,11 @@ const chatFlow = ai.defineFlow(
   async (input) => {
     try {
         const { output } = await chatPrompt(input);
-        // Ensure there is always a fallback response.
-        return output || "I'm sorry, I'm having trouble thinking of a response. Could you please rephrase?";
+        if (!output) {
+            console.error("AI returned an empty response.");
+            return "I'm sorry, I'm having trouble thinking of a response. Could you please rephrase?";
+        }
+        return output;
     } catch (error) {
         console.error("Error in chatFlow:", error);
         return "I'm sorry, I encountered an error. Please check your API key and configuration, and try again.";
@@ -96,5 +99,6 @@ const chatFlow = ai.defineFlow(
  * @returns An AI-generated response.
  */
 export async function chat(message: string): Promise<string> {
+  // Pass every message to the AI flow.
   return await chatFlow({ message });
 }

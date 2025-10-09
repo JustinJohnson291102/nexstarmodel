@@ -119,7 +119,7 @@ export default function Chatbot() {
               >
                 <div
                   className={cn(
-                    "max-w-[75%] rounded-lg p-3 text-sm",
+                    "max-w-[75%] rounded-lg p-3 text-sm whitespace-pre-wrap",
                     msg.role === "user"
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary"

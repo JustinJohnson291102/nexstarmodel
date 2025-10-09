@@ -73,7 +73,7 @@ const featuredGuests = [
   {
     name: "Jane Doe",
     title: "CEO, Innovate Inc.",
-    image: { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", hint: "business woman" },
+    image: { src: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", hint: "business woman" },
   },
   {
     name: "John Smith",
@@ -331,7 +331,7 @@ export default function PodcastPage() {
           </Carousel>
 
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
-              <Button asChild size="lg" variant="secondary" className="group">
+              <Button asChild size="lg" className="group">
                 <Link href="/contact">
                   Become a Guest <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -341,3 +341,5 @@ export default function PodcastPage() {
       </section>
     </div>
   );
+
+    

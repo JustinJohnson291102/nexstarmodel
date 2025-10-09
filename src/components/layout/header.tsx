@@ -52,7 +52,7 @@ const serviceLinks = [
 ];
 
 const webSolutionLinks = [
-    { href: "/web-solutions", label: "Web/Tech Solutions" },
+    { href: "http://www.nexstar.host", label: "Web/Tech Solutions" },
     { href: "/shopify", label: "Shopify Expertise" },
 ]
 
@@ -89,7 +89,7 @@ export default function Header() {
   );
 
   const isServiceActive = serviceLinks.some(link => pathname.startsWith(link.href));
-  const isWebSolutionActive = webSolutionLinks.some(link => pathname.startsWith(link.href));
+  const isWebSolutionActive = webSolutionLinks.some(link => pathname.startsWith(link.href) && link.href !== "http://www.nexstar.host");
   const isPricingActive = pagesLinks.some(link => pathname.startsWith(link.href));
 
   return (
@@ -268,5 +268,3 @@ export default function Header() {
     </header>
   );
 }
-
-    

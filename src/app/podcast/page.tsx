@@ -83,7 +83,7 @@ const featuredGuests = [
   {
     name: "Emily White",
     title: "Head of UX, Creative Solutions",
-    image: { src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1eCUyMGRlc2lnbmVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMzM4MTU2fDA&ixlib=rb-4.0.3&q=80&w=1080", hint: "ux designer" },
+    image: { src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1eCUyMGRlc2lnbmVyJ2Bwb3J0cmFpdHxlbnwwfHx8fDE3NjIzMzgxNTZ8MA&ixlib=rb-4.0.3&q=80&w=1080", hint: "ux designer" },
   },
   {
     name: "Michael Brown",
@@ -341,5 +341,6 @@ export default function PodcastPage() {
       </section>
     </div>
   );
+}
 
     

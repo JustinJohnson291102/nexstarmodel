@@ -243,7 +243,7 @@ export default function PodcastPage() {
 
       <section
         className="py-16 md:py-32 bg-cover bg-center"
-        style={{backgroundImage: `url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}
+        style={{backgroundImage: `url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl text-center mx-auto">
@@ -343,3 +343,4 @@ export default function PodcastPage() {
   );
 }
 
+    

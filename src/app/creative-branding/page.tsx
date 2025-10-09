@@ -127,7 +127,7 @@ export default function CreativeBrandingPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Your Brand is Your Story. Let's Tell it Beautifully.</h2>
                 <p>
                   In a crowded market, a strong brand is your most valuable asset. It's more than just a logo or a color scheme; it's the feeling you evoke, the story you tell, and the promise you make to your customers. It's what separates you from the competition and builds a tribe of loyal advocates. Our creative and branding services are designed to uncover your unique identity and translate it into a powerful, cohesive brand experience.
@@ -139,8 +139,8 @@ export default function CreativeBrandingPage() {
 
               <div className="space-y-8">
                 {pageData.features.map(feature => (
-                  <div key={feature.title} className="flex flex-col sm:flex-row gap-6 items-start">
-                    <div className="bg-primary/10 text-primary p-4 rounded-lg">
+                  <div key={feature.title} className="flex flex-col sm:flex-row gap-6 items-start text-center sm:text-left">
+                    <div className="bg-primary/10 text-primary p-4 rounded-lg mx-auto sm:mx-0">
                       <feature.icon className="w-8 h-8" />
                     </div>
                     <div>
@@ -151,8 +151,8 @@ export default function CreativeBrandingPage() {
                 ))}
               </div>
                <div className="bg-secondary p-6 md:p-8 rounded-lg">
-                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><CheckCircle className="w-7 h-7 text-primary"/>Our Creative Services Include:</h3>
-                  <ul className="space-y-3 columns-1 sm:columns-2">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3 justify-center md:justify-start"><CheckCircle className="w-7 h-7 text-primary"/>Our Creative Services Include:</h3>
+                  <ul className="space-y-3 columns-1 sm:columns-2 text-left">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Brand Guidelines</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Graphic Design</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Illustration</span></li>
@@ -209,10 +209,10 @@ export default function CreativeBrandingPage() {
                             className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
-                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'} text-center md:text-left`}>
                         <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 inline-block text-left">
                             {item.points.map(point => (
                                 <li key={point} className="flex items-start">
                                    <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />

@@ -66,7 +66,7 @@ export default function OTTServicesPage() {
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
                         <div className="md:col-span-2 space-y-12">
@@ -142,7 +142,7 @@ export default function OTTServicesPage() {
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center">
                         <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />

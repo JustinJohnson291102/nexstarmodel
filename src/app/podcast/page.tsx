@@ -313,7 +313,7 @@ export default function PodcastPage() {
                             src={guest.image.src}
                             alt={guest.name}
                             fill
-                            className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-110"
+                            className="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110"
                             style={{borderRadius: '10px'}}
                             data-ai-hint={guest.image.hint}
                         />
@@ -343,5 +343,3 @@ export default function PodcastPage() {
   );
 }
 
-
-    

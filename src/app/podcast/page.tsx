@@ -277,14 +277,14 @@ export default function PodcastPage() {
       </section>
 
       <section
-        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
+        className="relative py-20 md:py-32 bg-background text-foreground"
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
               Featured Guests
             </h2>
-            <p className="text-lg text-white/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
               We've had the pleasure of hosting some of the brightest minds in the industry.
             </p>
           </div>
@@ -341,4 +341,5 @@ export default function PodcastPage() {
       </section>
     </div>
   );
-}
+
+    

@@ -47,7 +47,7 @@ const roadmapSteps = [
         "Launch a coming-soon landing page to capture leads."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwciUyMGxhdW5jaHxlbnwwfHx8fDE3NjIyNDc4MTB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwciUyMGxhdW5jaHxlbnwwfHx8fDE3NjIyNDc4MTB8MA&ixlib-rb-4.0.3&q=80&w=1080",
       hint: "colorful professional product launch",
     },
   },
@@ -61,7 +61,7 @@ const roadmapSteps = [
         "Secure launch coverage on product discovery sites like Product Hunt."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1563050854-43d9a7845014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ3ODg2fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      src: "https://images.unsplash.com/photo-1563050854-43d9a7845014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ3ODg2fDA&ixlib-rb-4.0.3&q=80&w=1080",
       hint: "colorful professional rocket launch",
     },
   },
@@ -178,14 +178,14 @@ export default function GtmStrategyPage() {
         <div className="absolute inset-0 bg-background/90" />
         <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-black">Measurable Impact</h2>
-                <p className="text-lg mt-4 px-4 text-muted-foreground">Our GTM strategies deliver tangible results.</p>
+                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-white">Measurable Impact</h2>
+                <p className="text-lg mt-4 px-4 text-white/80">Our GTM strategies deliver tangible results.</p>
             </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {stats.map(stat => (
               <div key={stat.label} className="p-8">
-                <p className="text-6xl font-bold font-headline text-black">{stat.value}</p>
-                <p className="text-lg mt-2 text-muted-foreground">{stat.label}</p>
+                <p className="text-6xl font-bold font-headline text-white">{stat.value}</p>
+                <p className="text-lg mt-2 text-white/80">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -217,6 +217,4 @@ export default function GtmStrategyPage() {
     </>
   );
 }
-    
-
     

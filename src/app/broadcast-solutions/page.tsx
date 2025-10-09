@@ -54,28 +54,19 @@ const faqs = [
 
 export default function BroadcastSolutionsPage() {
     return (
-        <div className="bg-background">
-            <section className="relative h-[30vh] w-full flex items-center justify-center text-center">
-                <Image
-                    src="https://images.unsplash.com/photo-1593352222493-2591461f1c7e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Broadcast control room"
-                    fill
-                    className="object-cover"
-                    priority
-                    data-ai-hint="broadcast control room"
-                />
-                <div className="absolute inset-0 bg-black/50" />
-                <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+        <div className="bg-white">
+            <section className="relative h-[30vh] w-full flex items-center justify-center text-center bg-white">
+                <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
                         Broadcast Solutions
                     </h1>
-                    <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
+                    <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
                         Engineering the future of media delivery with robust and innovative broadcast solutions.
                     </p>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-3 gap-8 md:gap-16 items-start">
                         <div className="md:col-span-2 space-y-12">
@@ -151,7 +142,7 @@ export default function BroadcastSolutionsPage() {
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center">
                         <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />

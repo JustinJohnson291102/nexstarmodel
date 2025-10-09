@@ -55,12 +55,12 @@ export default function OTTServicesPage() {
     return (
         <div className="bg-background">
             <section className="relative h-[84vh] w-full flex items-center justify-center text-center bg-white">
-                <div className="relative z-10 px-4 text-foreground animate-in fade-in slide-in-from-bottom-10 duration-700">
-                    <Tv className="h-16 w-16 mx-auto mb-4" />
-                    <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
+                <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+                    <Tv className="h-16 w-16 mx-auto mb-4 text-white" />
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4 text-white">
                         OTT Platform Services
                     </h1>
-                    <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+                    <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto px-4">
                         Launch your own branded streaming service and deliver your content directly to a global audience.
                     </p>
                 </div>

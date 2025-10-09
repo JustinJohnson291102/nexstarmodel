@@ -9,12 +9,13 @@
 // A map of keywords to canned responses.
 // The keys are regex patterns to match against the user's message.
 const cannedResponses: { [key: string]: string } = {
-    'services': "We offer a wide range of services including Social Media Marketing, Creative & Branding, B2B Marketing, SEO/SEM, Video Production, and much more. You can see all of them at /services.",
-    'contact|reach out|email|phone': "You can contact us at:\n\nEmail: contact@nexstarlive.com\nPhone (India): +91-9821000921\nPhone (US): +1-917-6721794",
-    'pricing|cost': "We have pricing pages for some of our key services. You can find them here: SEO Pricing (/pricing/seo-pricing), SMO Pricing (/pricing/smo-pricing), and PPC Pricing (/pricing/ppc-pricing). For anything else, please reach out via the /contact page.",
-    'story|about us|who are you': "We are Nexstar Media, a premier IT & Media company specializing in digital media, development, and IT services. You can learn more about our journey at /story.",
-    'portfolio|work|case studies': "You can see examples of our work and successful projects in our portfolio at /portfolio.",
-    'hello|hi': "Hello! I'm the Nexstar site assistant. How can I help you today? You can ask me about our services, pricing, or how to contact us.",
+    'services|what do you do|offer': "We offer a wide range of services including Social Media Marketing, Creative & Branding, B2B Marketing, SEO/SEM, Video Production, and much more. You can see all of them at /services.",
+    'contact|reach out|email|phone|address|location': "You can contact us at:\n\nEmail: contact@nexstarlive.com\nPhone (India): +91-9821000921\nPhone (US): +1-917-6721794",
+    'pricing|cost|rates': "We have pricing pages for some of our key services. You can find them here: SEO Pricing (/pricing/seo-pricing), SMO Pricing (/pricing/smo-pricing), and PPC Pricing (/pricing/ppc-pricing). For anything else, please reach out via the /contact page.",
+    'story|about us|who are you|history|company': "We are Nexstar Media, a premier IT & Media company specializing in digital media, development, and IT services. You can learn more about our journey at /story.",
+    'portfolio|work|case studies|examples|projects': "You can see examples of our work and successful projects in our portfolio at /portfolio.",
+    'inquiry|enquiry|query|question': "For any inquiries or to fill out an enquiry form, please email our team at atul@nexstarmedia.in. We'll be happy to assist you.",
+    'hello|hi|hey': "Hello! I'm the Nexstar site assistant. How can I help you today? You can ask me about our services, pricing, or how to contact us.",
 };
 
 /**

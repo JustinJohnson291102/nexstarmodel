@@ -165,12 +165,15 @@ export default function SocialMediaPage() {
       </section>
 
       <section 
-        className="py-20 md:py-32 bg-pink-600"
+        className="relative py-20 md:py-32 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
+        data-ai-hint="colorful abstract tech"
        >
+        <div className="absolute inset-0 bg-black/70" />
         <div className="container mx-auto px-4 relative z-10 text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
-             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Mastering Every Platform</h2>
-             <p className="text-lg text-primary-foreground/80 mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
+             <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 text-white">Mastering Every Platform</h2>
+             <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {platformCards.map(card => (
                   <Card key={card.platform} className="bg-background/10 border-white/20 group overflow-hidden">

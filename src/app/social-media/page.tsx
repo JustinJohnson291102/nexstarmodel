@@ -66,10 +66,10 @@ const alternatingContent = [
 ];
 
 const platformCards = [
-    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://ik.imagekit.io/ggelm1lwa/insta%20logo.jpg?updatedAt=1759498783851", hint: "instagram logo" }},
-    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://ik.imagekit.io/ggelm1lwa/Facebook_Logo_(2019).png?updatedAt=1759498783481", hint: "facebook logo" }},
-    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://ik.imagekit.io/ggelm1lwa/linkedin.jpg?updatedAt=1759498783490", hint: "linkedin logo" }},
-    { platform: "Twitter", description: "Real-time updates and public conversations.", image: { src: "https://ik.imagekit.io/ggelm1lwa/twitter%20logo.webp?updatedAt=1759498783502", hint: "twitter logo" }},
+    { platform: "Instagram", description: "Visually-driven storytelling for brands.", image: { src: "https://ik.imagekit.io/ggelm1lwa/insta%20logo.jpg?updatedAt=1759498783851", hint: "instagram logo" }, href: "https://www.instagram.com/nexstarmedialive" },
+    { platform: "Facebook", description: "Broad audience reach and community building.", image: { src: "https://ik.imagekit.io/ggelm1lwa/Facebook_Logo_(2019).png?updatedAt=1759498783481", hint: "facebook logo" }, href: "https://www.facebook.com/nexstarmediaindia" },
+    { platform: "LinkedIn", description: "Professional networking and B2B leadership.", image: { src: "https://ik.imagekit.io/ggelm1lwa/linkedin.jpg?updatedAt=1759498783490", hint: "linkedin logo" }, href: "https://in.linkedin.com/company/nexstarmediaprivatelimited" },
+    { platform: "Twitter", description: "Real-time updates and public conversations.", image: { src: "https://ik.imagekit.io/ggelm1lwa/twitter%20logo.webp?updatedAt=1759498783502", hint: "twitter logo" }, href: "#" },
 ];
 
 export default function SocialMediaPage() {
@@ -176,7 +176,8 @@ export default function SocialMediaPage() {
              <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {platformCards.map(card => (
-                  <Card key={card.platform} className="bg-card/70 backdrop-blur-sm border-border/50 group overflow-hidden">
+                <Link key={card.platform} href={card.href} target={card.href === '#' ? '_self' : '_blank'} rel="noopener noreferrer" className={card.href === '#' ? 'pointer-events-none' : ''}>
+                  <Card className="bg-card/70 backdrop-blur-sm border-border/50 group overflow-hidden h-full">
                     <div className="relative aspect-video">
                         <Image src={card.image.src} alt={card.platform} fill className="object-contain transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint} />
                         <div className="absolute inset-0 bg-black/10"></div>
@@ -186,6 +187,7 @@ export default function SocialMediaPage() {
                         <p className="text-sm text-muted-foreground">{card.description}</p>
                     </div>
                   </Card>
+                </Link>
               ))}
              </div>
           </div>

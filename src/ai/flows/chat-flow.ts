@@ -5,89 +5,86 @@
  *
  * - chat - A function that handles the chat interaction.
  */
+import { ai } from '@/ai/genkit';
+import { z } from 'zod';
 
-// A map of keywords to predefined responses and the relevant page URL.
-const predefinedResponses: { [key: string]: { response: string; url?: string } } = {
-    "services": {
-        response: "We offer a wide range of digital services, including Social Media Marketing, Creative & Branding, B2B Marketing, Search Marketing (SEO/SEM), Video Production, Web & Mobile App Development, and more. You can explore all our offerings on our services page.",
-        url: "/services"
-    },
-    "social media": {
-        response: "We offer Social Media Marketing services, including strategy, content creation, and community management. You can find more details on our Social Media page.",
-        url: "/social-media"
-    },
-    "branding": {
-        response: "Our Creative & Branding services help you craft a strong brand identity. This includes logo design, brand strategy, and more. Check out our Creative & Branding page for details.",
-        url: "/creative-branding"
-    },
-    "b2b marketing": {
-        response: "We specialize in B2B Marketing strategies, including Account-Based Marketing (ABM) and lead generation. Learn more on our B2B Marketing page.",
-        url: "/b2b"
-    },
-    "seo": {
-        response: "Our Search Marketing services cover both SEO and SEM to improve your visibility. For more details, visit our Search Marketing page.",
-        url: "/search-marketing"
-    },
-    "sem": {
-        response: "Our Search Marketing services cover both SEO and SEM to improve your visibility. For more details, visit our Search Marketing page.",
-        url: "/search-marketing"
-    },
-    "video production": {
-        response: "We offer full-service video production, from concept to final cut. You can see more on our Video Production page.",
-        url: "/video-production"
-    },
-    "reputation management": {
-        response: "We can help you with Online Reputation Management to protect and improve your brand's image. Visit our ORM page for more information.",
-        url: "/online-reputation-management"
-    },
-    "ecommerce": {
-        response: "We build high-performing e-commerce websites on platforms like Shopify and WooCommerce. Check out our E-commerce Development page for more.",
-        url: "/ecommerce-development"
-    },
-    "website": {
-        response: "We design and develop beautiful, high-performance websites. See our Web Solutions page to learn more.",
-        url: "/web-solutions"
-    },
-    "web solutions": {
-        response: "We design and develop beautiful, high-performance websites, from simple brochure sites to complex web applications. See our Web Solutions page to learn more.",
-        url: "/web-solutions"
-    },
-    "mobile app": {
-        response: "We build intuitive and high-performance native iOS and Android mobile apps. Visit our Mobile App Development page for details.",
-        url: "/mobile-app-development"
-    },
-    "augmented reality": {
-        response: "We create captivating AR experiences for marketing, e-commerce, and events. Learn more on our Augmented Reality page.",
-        url: "/augmented-reality"
-    },
-    "contact": {
-        response: "You can get in touch with us via our contact page for a free consultation. Our email is contact@nexstarlive.com and phone is +1 (917) 672-8930.",
-        url: "/contact"
-    },
-    "about us": {
-        response: "You can learn more about our story, our mission, and our team on our Story page.",
-        url: "/story"
-    },
-    "story": {
-        response: "You can learn more about our story, our mission, and our team on our Story page.",
-        url: "/story"
-    },
-    "podcast": {
-        response: "We have a podcast called 'Nexstar Insights' where we discuss digital marketing trends. You can find it on our Podcast page.",
-        url: "/podcast"
-    },
-    "portfolio": {
-        response: "You can see examples of our work in our Portfolio.",
-        url: "/portfolio"
-    },
-    "pricing": {
-        response: "We have pricing pages for our SEO, SMO, and PPC services. You can find them under the 'Pricing' menu.",
-        url: "/pricing/seo-pricing"
-    }
-};
+const ChatInputSchema = z.object({
+  message: z.string(),
+});
+
+const ChatOutputSchema = z.string();
+
+const chatPrompt = ai.definePrompt(
+  {
+    name: 'chatPrompt',
+    input: { schema: ChatInputSchema },
+    output: { schema: ChatOutputSchema },
+    system: `You are a friendly and professional AI assistant for Nexstar Media, a premier IT & Media company. Your goal is to answer user questions accurately based on the context provided and guide them to the correct pages on the website.
+
+CONTEXT ABOUT NEXSTAR MEDIA:
+- Company: Nexstar Media is a flagship company of Nexstar Live LLC, USA, specializing in media entertainment and IT services. It offers digital media solutions, web/app development, and IT service management to an international clientele.
+- General Contact Email: contact@nexstarlive.com
+- General Phone Numbers: +91-9821000921, +1-917-6721794
+- Email for Enquiry Forms/Consultations: atul@nexstarmedia.in
+
+AVAILABLE PAGES & SERVICES:
+- Home (/): Main landing page showcasing all services and company information.
+- Our Story (/story): Information about Nexstar's history, mission, team, and core values.
+- All Services (/services): A comprehensive list of all services offered.
+- Social Media (/social-media): Social media strategy, platform management, community building, and campaigns.
+- Creative & Branding (/creative-branding): Brand strategy, logo design, graphic design, copywriting, and full photo/video production.
+- B2B Marketing (/b2b): Account-Based Marketing (ABM), lead generation, and B2B content strategy.
+- Search Marketing (SEO/SEM) (/search-marketing): SEO audits, keyword research, PPC campaign management, and content marketing.
+- Video Production (/video-production): Concept development, filming, post-production, animation, and motion graphics.
+- Online Reputation Management (/online-reputation-management): Brand monitoring, review management, and crisis response.
+- E-commerce Development (/ecommerce-development): Custom e-commerce sites on Shopify & WooCommerce, conversion rate optimization.
+- Website Development (/web-solutions): Responsive web design, UI/UX, and CMS development.
+- Mobile App Development (/mobile-app-development): Native iOS & Android app development, UI/UX design, and backend integration.
+- Augmented Reality (/augmented-reality): Custom AR app development, WebAR, and interactive product visualization.
+- GTM Strategy (/gtm-strategy): Go-To-Market strategy for product launches, including market research, positioning, and growth.
+- Performance Marketing (/performance-marketing): Paid search (PPC), social media advertising, and conversion rate optimization (CRO).
+- Rapid Website Development (/rapid-website-development): Fast, template-based website creation for startups and marketing campaigns.
+- Backend & Frontend Outsource (/backend-frontend-outsource): Dedicated development teams and staff augmentation.
+- WhatsApp Chatbots (/whatsapp-chatbots): AI-powered chatbot development for customer support and lead generation on WhatsApp.
+- Digital Business Consulting (/digital-business-consulting): Digital transformation roadmaps, technology stack advisory, and market entry strategy.
+- Digital Branding (/digital-branding): Crafting a consistent and compelling brand identity across all digital touchpoints.
+- Digital Transformation (/digital-transformation): Modernizing operations, automating processes, and embracing a data-driven culture.
+- OTT Services (/ott-services): Launch your own branded streaming service for web, mobile, and smart TVs.
+- Shopify Expertise (/shopify): Specialized services for building and optimizing Shopify stores.
+- Digital TV / Podcast (/podcast): The "Nexstar Insights" podcast discussing digital marketing trends.
+- Pricing Pages:
+  - SEO Pricing (/pricing/seo-pricing)
+  - SMO Pricing (/pricing/smo-pricing)
+  - PPC Pricing (/pricing/ppc-pricing)
+- Portfolio (/portfolio): A showcase of recent projects and case studies.
+- Contact (/contact): Contact form and location details. Our addresses are 845 3rd Ave 6th floor, New York, NY 10022, and Level-5, SB Tower, Film City, Sector-16A, Noida – 201301, India.
+
+YOUR BEHAVIOR:
+1. If the user asks "hi" or "hello", respond with a friendly greeting: "Hello! I'm your Nexstar AI assistant. How can I help you today?".
+2. For any other query, analyze the user's message and provide a concise, helpful answer based *only* on the context provided above.
+3. If the user's query matches a specific service or page, provide a brief summary and ALWAYS include the URL to that page. For example, if they ask about "making a mobile app", tell them about the mobile app development service and provide the link: /mobile-app-development.
+4. If the user asks for contact information, provide the relevant email or phone number. For general contact, use contact@nexstarlive.com. For specific project enquiries, suggest filling out the form or using atul@nexstarmedia.in.
+5. Do not make up information. If a question cannot be answered from the context, politely say "I can't find information on that, but you can learn more about our services at /services or get in touch with our team at /contact."
+6. Keep responses friendly, professional, and to the point.
+`,
+  },
+  `{{message}}`
+);
+
+const chatFlow = ai.defineFlow(
+  {
+    name: 'chatFlow',
+    inputSchema: ChatInputSchema,
+    outputSchema: ChatOutputSchema,
+  },
+  async (input) => {
+    const { output } = await chatPrompt(input);
+    return output || "I'm sorry, I couldn't generate a response. Please try again.";
+  }
+);
 
 /**
- * Handles the chat interaction by checking for keywords in the user's message.
+ * Handles the chat interaction by passing the user's message to an AI model.
  * @param message The user's message.
  * @returns An AI-generated response.
  */
@@ -97,15 +94,6 @@ export async function chat(message: string): Promise<string> {
     if (!message || message.trim().toLowerCase() === 'hi' || message.trim().toLowerCase() === 'hello') {
         return defaultResponse;
     }
-
-    const lowerCaseMessage = message.toLowerCase();
-
-    for (const keyword in predefinedResponses) {
-        if (lowerCaseMessage.includes(keyword)) {
-            const { response, url } = predefinedResponses[keyword];
-            return `${response}${url ? `\n\nYou can visit the page here: ${url}` : ''}`;
-        }
-    }
-
-    return defaultResponse;
+    
+    return await chatFlow({ message });
 }

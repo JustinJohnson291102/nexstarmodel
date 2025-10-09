@@ -80,7 +80,15 @@ const chatFlow = ai.defineFlow(
   },
   async (input) => {
     try {
-        const { output } = await chatPrompt(input);
+        const simpleGreeting = /^\s*(hi|hello)\s*$/i.test(input.message);
+        const promptInput = {
+            message: simpleGreeting 
+                ? "The user said hi. Please respond with your standard greeting." 
+                : input.message
+        };
+
+        const { output } = await chatPrompt(promptInput);
+        
         if (!output) {
             console.error("AI returned an empty response.");
             return "I'm sorry, I'm having trouble thinking of a response. Could you please rephrase?";

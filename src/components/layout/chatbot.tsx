@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -50,11 +51,20 @@ export default function Chatbot() {
       const response = await chat(currentInput);
       const assistantMessage = { role: "assistant", content: response };
       setMessages((prev) => [...prev, assistantMessage]);
-    } catch (error) {
+    } catch (error: any) {
       console.error("Chat error:", error);
+      let errorMessageContent = "Sorry, I'm having trouble connecting. Please try again later.";
+      if (error && error.message) {
+        if (error.message.includes('API key not valid')) {
+            errorMessageContent = "There seems to be an issue with the API key. Please check the configuration.";
+        } else if (error.message.includes('permission')) {
+             errorMessageContent = "It looks like there's a permission issue with the API. Please ensure the API is enabled in your Google Cloud project.";
+        }
+      }
+      
       const errorMessage = {
         role: "assistant",
-        content: "Sorry, I'm having trouble connecting. Please try again later.",
+        content: errorMessageContent,
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {

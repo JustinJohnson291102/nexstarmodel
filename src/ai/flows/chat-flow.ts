@@ -80,8 +80,20 @@ const chatFlow = ai.defineFlow(
     outputSchema: ChatOutputSchema,
   },
   async (input) => {
-    const { output } = await chatPrompt(input);
-    return output || "I'm sorry, I couldn't generate a response. Please try again.";
+    // Check for empty or simple greetings first
+    const message = input.message.trim().toLowerCase();
+    if (message === 'hi' || message === 'hello') {
+        return "Hello! I'm your Nexstar AI assistant. How can I help you today?";
+    }
+
+    try {
+        const { output } = await chatPrompt(input);
+        // Ensure there is always a fallback response.
+        return output || "I'm sorry, I'm having trouble thinking of a response. Could you please rephrase?";
+    } catch (error) {
+        console.error("Error in chatFlow:", error);
+        return "I'm sorry, I encountered an error. Please check your API key and configuration, and try again.";
+    }
   }
 );
 

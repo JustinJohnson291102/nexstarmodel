@@ -217,8 +217,8 @@ export default function B2BPage() {
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
-                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
-                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4 text-center md:text-left">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6 text-center md:text-left">{item.description}</p>
                         <ul className="space-y-3">
                             {item.points.map(point => (
                                 <li key={point} className="flex items-start">
@@ -238,12 +238,12 @@ export default function B2BPage() {
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="animate-in fade-in slide-in-from-left-10 duration-700 text-center md:text-left">
                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">Data-Driven Insights</h2>
                <p className="text-lg text-muted-foreground mb-8">
                 We don't guess, we measure. Our B2B strategies are powered by robust analytics to ensure every marketing dollar is spent effectively. We track lead generation, qualification rates, and campaign performance to continuously optimize for ROI.
                </p>
-               <ul className="space-y-4">
+               <ul className="space-y-4 inline-block text-left">
                 <li className="flex items-center"><CheckCircle className="h-6 w-6 text-primary mr-3" /> <span className="text-lg">Real-time performance dashboards</span></li>
                 <li className="flex items-center"><CheckCircle className="h-6 w-6 text-primary mr-3" /> <span className="text-lg">Funnel analysis and optimization</span></li>
                 <li className="flex items-center"><CheckCircle className="h-6 w-6 text-primary mr-3" /> <span className="text-lg">Predictive analytics for lead scoring</span></li>

@@ -133,7 +133,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full flex flex-col md:flex-row bg-background">
-        <div className="relative flex items-center justify-center shrink-0" style={{ width: 'calc(100vh - 7rem - 40px)'}}>
+        <div className="relative flex items-center justify-center shrink-0 w-full md:w-auto" style={{ md: { width: 'calc(100vh - 7rem - 40px)'} }}>
           <video 
             src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-08%20at%206.14.02%20PM.mp4?updatedAt=1759927469651"
             className="absolute z-0 top-0 left-0 w-full h-full object-cover"
@@ -198,8 +198,8 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute inset-0 flex items-center justify-end pr-16">
-              <p className="font-cursive text-white text-6xl font-bold">winter glamour</p>
+            <div className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16">
+              <p className="font-cursive text-white text-4xl md:text-6xl font-bold">winter glamour</p>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function Home() {
             <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">
               Our <span className="text-blue-600">Creative Canvas</span>
             </h2>
-            <p className="text-2xl text-foreground mx-auto mt-4 px-4 text-justify max-w-4xl">
+            <p className="text-lg md:text-2xl text-foreground mx-auto mt-4 px-4 text-justify max-w-4xl">
               A visual journey through our culture, process, and the moments that define our commitment to building exceptional brands. This is where innovation comes to life.
             </p>
           </div>
@@ -228,7 +228,7 @@ export default function Home() {
             <CarouselContent>
               {baseCarouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative w-full h-[720px]">
+                  <div className="relative w-full h-[40vh] md:h-[720px]">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -264,11 +264,11 @@ export default function Home() {
                  priority
                />
             </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 text-center md:text-left">
                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  As an Advertising Agency
                </h2>
-               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5 text-left">
                  <li>We are a hybrid with the chutzpah of a millennial and the experience of a Gen X.</li>
                  <li>We are agile and connect the dots quicker.</li>
                  <li>We believe the future of Communications lies in the 4Es of Engagement, Exclusivity, Emotion, and Experience.</li>
@@ -294,11 +294,11 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Our Gamut of Services
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5 text-left">
                  <li>We offer a comprehensive suite to build, grow, and sustain your brand's presence.</li>
                  <li>From compelling brand identities to robust web solutions and targeted marketing.</li>
                  <li>Our expertise covers the full spectrum of digital marketing.</li>
@@ -324,11 +324,11 @@ export default function Home() {
                  priority
                />
             </div>
-             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700">
+             <div className="md:order-2 animate-in fade-in slide-in-from-right-10 duration-700 text-center md:text-left">
                <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                  User-Centric Design
                </h2>
-               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+               <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5 text-left">
                  <li>We create intuitive and beautiful user interfaces that delight users.</li>
                  <li>Our UI/UX process is driven by research and focused on user needs.</li>
                  <li>We design experiences that are not just functional but also memorable.</li>
@@ -354,11 +354,11 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="md:order-1 animate-in fade-in slide-in-from-left-10 duration-700 text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6">
                 Data-Driven Strategies
               </h2>
-              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5">
+              <ul className="space-y-3 text-lg text-muted-foreground mb-8 list-disc pl-5 text-left">
                  <li>We leverage data to make informed decisions and optimize for success.</li>
                  <li>Our analytics-first approach ensures every campaign is measurable.</li>
                  <li>Unlock powerful insights and achieve a higher return on investment.</li>
@@ -483,5 +483,3 @@ export default function Home() {
     </>
   );
 }
-
-    

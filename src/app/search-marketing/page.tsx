@@ -89,7 +89,7 @@ export default function SearchMarketingPage() {
         icon: Target,
         title: "PPC Campaign Management",
         description: "Maximize your ROI with meticulously managed Pay-Per-Click campaigns on Google Ads and Bing Ads.",
-        image: { src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080", hint: "colorful professional ppc management" }
+        image: { src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib-rb-4.0.3&q=80&w=1080", hint: "colorful professional ppc management" }
       },
       {
         icon: TrendingUp,
@@ -127,7 +127,7 @@ export default function SearchMarketingPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2 space-y-12">
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Climb the Ranks, Capture the Clicks</h2>
                 <p>
                   In today's digital marketplace, visibility is everything. If your customers can't find you on Google, you might as well not exist. More than 90% of online experiences begin with a search engine, and the top results capture the vast majority of traffic. Our Search Marketing services are designed to put your brand at the top of those results, connecting you with customers who are actively and intentionally looking for your products and services.
@@ -139,8 +139,8 @@ export default function SearchMarketingPage() {
 
               <div className="space-y-8">
                 {pageData.features.map(feature => (
-                  <div key={feature.title} className="flex flex-col sm:flex-row gap-6 items-start">
-                    <div className="bg-primary/10 text-primary p-4 rounded-lg">
+                  <div key={feature.title} className="flex flex-col sm:flex-row gap-6 items-start text-center sm:text-left">
+                    <div className="bg-primary/10 text-primary p-4 rounded-lg mx-auto sm:mx-0">
                       <feature.icon className="w-8 h-8" />
                     </div>
                     <div>
@@ -151,8 +151,8 @@ export default function SearchMarketingPage() {
                 ))}
               </div>
                <div className="bg-secondary p-6 md:p-8 rounded-lg">
-                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3"><DollarSign className="w-7 h-7 text-primary"/>Measurable Results, Tangible ROI</h3>
-                  <ul className="space-y-3">
+                  <h3 className="text-xl md:text-2xl font-bold font-headline mb-4 flex items-center gap-3 justify-center md:justify-start"><DollarSign className="w-7 h-7 text-primary"/>Measurable Results, Tangible ROI</h3>
+                  <ul className="space-y-3 text-left">
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Increase organic traffic and generate high-quality leads.</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Improve keyword rankings for valuable, high-intent terms.</span></li>
                       <li className="flex items-start"><CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 shrink-0" /> <span>Lower your cost-per-acquisition (CPA) with highly optimized ad campaigns.</span></li>
@@ -211,10 +211,10 @@ export default function SearchMarketingPage() {
                             className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
-                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>
+                    <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'} text-center md:text-left`}>
                         <h3 className="text-2xl md:text-3xl font-bold font-headline mb-4">{item.title}</h3>
                         <p className="text-muted-foreground mb-6">{item.description}</p>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 inline-block text-left">
                             {item.points.map(point => (
                                 <li key={point} className="flex items-start">
                                    <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />

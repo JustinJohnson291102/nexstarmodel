@@ -45,7 +45,7 @@ const alternatingContent = [
             "Content tailored for each platform's algorithm and audience."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/content-connects.jpg?updatedAt=1759654164344",
+            src: "https://ik.imagekit.io/asnkt5q09/SMM1.png?updatedAt=1761218507167",
             hint: "colorful professional content creation"
         }
     },
@@ -59,7 +59,7 @@ const alternatingContent = [
             "Detailed performance reporting and insights."
         ],
         image: {
-            src: "https://ik.imagekit.io/ggelm1lwa/targeted-ads.jpg?updatedAt=1759654164101",
+            src: "https://ik.imagekit.io/asnkt5q09/SMM2.png?updatedAt=1761218507012",
             hint: "colorful professional social ads"
         }
     }
@@ -205,7 +205,7 @@ export default function SocialMediaPage() {
                             width={800}
                             height={600}
                             data-ai-hint={item.image.hint}
-                            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                            className="w-full h-auto object-fill rounded-lg transition-transform duration-500 hover:scale-105"
                         />
                     </div>
                     <div className={`animate-in fade-in duration-700 ${index % 2 === 0 ? 'md:order-2 slide-in-from-right-10' : 'md:order-1 slide-in-from-left-10'}`}>

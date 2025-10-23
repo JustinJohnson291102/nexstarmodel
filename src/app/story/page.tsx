@@ -129,15 +129,16 @@ export default function StoryPage() {
               We ignite brands with ideas that transform behaviour
             </p>
           </div>
-          <div className="relative w-full h-64 md:h-full">
-            <Image
-              src="https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831"
-              alt="Mastering Platform"
-              fill
-              className="object-contain md:object-cover"
-              data-ai-hint="mastering platform"
-              priority
-            />
+          <div className="relative w-full h-64 md:h-full flex items-center justify-center">
+            <div className="relative w-full h-full transform scale-85">
+              <Image
+                src="https://ik.imagekit.io/asnkt5q09/our%20story.png?updatedAt=1761216552113"
+                alt="Our Story"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>

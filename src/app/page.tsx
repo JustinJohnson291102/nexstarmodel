@@ -51,12 +51,12 @@ const baseCarouselImages = [
     hint: "office banner"
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Image%202025-10-04%20at%2012.45.11%20PM.jpeg?updatedAt=1759580256883",
+    src: "https://ik.imagekit.io/asnkt5q09/creative%20canvas2.png?updatedAt=1761215788619",
     alt: "Office hero banner",
     hint: "office banner"
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
+    src: "https://ik.imagekit.io/asnkt5q09/creative%20canvas1.png?updatedAt=1761215789119",
     alt: "Office hero banner",
     hint: "office banner"
   },
@@ -198,9 +198,6 @@ export default function Home() {
               muted
               playsInline
             />
-            <div className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16">
-              <p className="font-cursive text-white text-4xl md:text-6xl font-bold">winter glamour</p>
-            </div>
           </div>
         </div>
       </section>

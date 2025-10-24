@@ -21,7 +21,7 @@ const b2bServices = [
     title: "Account-Based Marketing (ABM)",
     description: "Target high-value accounts with personalized campaigns that treat individual accounts as markets in their own right.",
     image: {
-      src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080",
+      src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080&h=200",
       hint: "colorful professional marketing target",
     }
   },
@@ -117,7 +117,7 @@ export default function B2BPage() {
     <>
       <section 
         className="relative w-full flex items-center justify-center text-center bg-white"
-        style={{ height: 'calc(98vh - 9px)' }}
+        style={{ height: 'calc(82vh - 9px)' }}
       >
         <Image
             src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiMmIlMjBtYXJrZXRpbmd8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"

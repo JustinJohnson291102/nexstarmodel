@@ -85,7 +85,7 @@ const alternatingContent = [
             "Sales and marketing team alignment for seamless follow-up."
         ],
         image: {
-            src: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+            src: "https://ik.imagekit.io/asnkt5q09/b2b.png?updatedAt=1761220190007",
             hint: "colorful professional marketing focus"
         }
     },
@@ -117,7 +117,7 @@ export default function B2BPage() {
     <>
       <section 
         className="relative w-full flex items-center justify-center text-center bg-white"
-        style={{ height: 'calc(60vh - 80px)' }}
+        style={{ height: 'calc(98vh - 98px)' }}
       >
         <Image
             src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiMmIlMjBtYXJrZXRpbmd8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
@@ -126,7 +126,7 @@ export default function B2BPage() {
             className="object-fill"
             priority
         />
-        <div className="absolute inset-0 bg-black/50" />
+        
         <div className="container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white mb-4">B2B Marketing</h1>

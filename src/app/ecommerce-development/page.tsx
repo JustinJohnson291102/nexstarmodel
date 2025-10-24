@@ -105,7 +105,7 @@ export default function EcommerceDevelopmentPage() {
 
   return (
     <div className="bg-background">
-      <section className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white">
+      <section className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white">
         <Image
             src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
             alt="E-commerce Development"

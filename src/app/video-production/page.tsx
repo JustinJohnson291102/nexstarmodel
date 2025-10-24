@@ -102,7 +102,7 @@ export default function VideoProductionPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white"
       >
          <Image
             src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aWRlbyUyMHN0b3J5dGVsbGluZ3xlbnwwfHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080"

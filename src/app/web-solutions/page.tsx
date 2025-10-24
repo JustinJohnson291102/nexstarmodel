@@ -83,7 +83,7 @@ const alternatingContent = [
             "Intuitive interfaces for complex workflows."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-webapp/800/600",
+            src: "https://ik.imagekit.io/asnkt5q09/webdev2.png?updatedAt=1761291421231",
             hint: "colorful professional web application"
         }
     },
@@ -97,7 +97,7 @@ const alternatingContent = [
             "Ongoing maintenance and security updates."
         ],
         image: {
-            src: "https://picsum.photos/seed/colorful-professional-cms/800/600",
+            src: "https://ik.imagekit.io/asnkt5q09/webd3.png?updatedAt=1761292902416",
             hint: "colorful professional cms dashboard"
         }
     }
@@ -139,7 +139,7 @@ export default function WebSolutionsPage() {
               </p>
                <div className="mt-8 md:mt-12 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
                 <Image 
-                    src="https://picsum.photos/seed/colorful-professional-web-solutions/1200/600"
+                    src="https://ik.imagekit.io/asnkt5q09/webdev%201.png?updatedAt=1761291421687"
                     alt="Modern Website Design on a laptop"
                     width={1200}
                     height={600}
@@ -254,7 +254,7 @@ export default function WebSolutionsPage() {
             </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700">
                 <Image 
-                    src="https://picsum.photos/seed/colorful-professional-web-grid/800/700"
+                    src="https://ik.imagekit.io/asnkt5q09/web4.png?updatedAt=1761292902495"
                     alt="Web Solutions Collage"
                     width={800}
                     height={700}

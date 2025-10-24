@@ -98,7 +98,7 @@ export default function MobileAppDevelopmentPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[70vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white"
       >
         <Image
           src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmRyb2lkfGVufDB8fHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080"

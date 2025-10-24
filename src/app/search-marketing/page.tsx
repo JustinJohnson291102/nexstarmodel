@@ -103,7 +103,7 @@ export default function SearchMarketingPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[30vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white"
       >
         <Image
           src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080"

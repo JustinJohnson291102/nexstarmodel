@@ -96,7 +96,7 @@ export default function OnlineReputationManagementPage() {
   return (
     <div className="bg-background">
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white"
       >
         <Image
             src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080"

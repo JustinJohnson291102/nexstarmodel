@@ -107,11 +107,11 @@ export default function AugmentedRealityPage() {
   return (
     <>
       <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-white"
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white"
         >
         <Image
             src="https://images.unsplash.com/photo-1629904853716-f0bc64219b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmltYXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
-            alt="Augmented Reality"
+            alt=""
             fill
             className="object-fill"
             priority

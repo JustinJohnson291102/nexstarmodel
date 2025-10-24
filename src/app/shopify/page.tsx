@@ -78,17 +78,20 @@ export default function ShopifyPage() {
   return (
     <div className="bg-background">
        <section 
-        className="relative h-[60vh] w-full flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/colorful-professional-shopify-hero/1920/1080')` }}
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('https://ik.imagekit.io/asnkt5q09/expert%20shopify%20dev.png?updatedAt=1761300619193')`,
+                 backgroundSize: '100% 100%',
+                 backgroundRepeat: 'no-repeat'
+         }}
         data-ai-hint="colorful professional hero"
         >
         <div className="absolute inset-0 bg-white/50" />
         <div className="relative z-20 px-4 text-black animate-in fade-in slide-in-from-bottom-10 duration-700">
            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
-              Expert Shopify Development
+              
             </h1>
             <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
-              From stunning storefronts to powerful back-end solutions, we build Shopify experiences that sell.
+              
             </p>
         </div>
       </section>

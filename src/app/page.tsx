@@ -116,12 +116,12 @@ const whoWeAreCards = [
 
 const heroCarouselImages = [
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/Screenshot%20(52).png?updatedAt=1759926016148",
+    src: "https://ik.imagekit.io/asnkt5q09/hero1.png?updatedAt=1761299257132",
     alt: "Office hero banner 1",
     hint: "office banner",
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/Screenshot%20(54).png?updatedAt=1759995765105",
+    src: "https://ik.imagekit.io/asnkt5q09/hero2.png?updatedAt=1761299257037",
     alt: "Office hero banner 2",
     hint: "office banner",
   },

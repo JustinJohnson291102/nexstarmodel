@@ -175,7 +175,7 @@ export default function CreativeBrandingPage() {
         style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-antoni-shkraba-4348401.jpg?updatedAt=1759859066487')`}}
         data-ai-hint="colorful abstract design"
       >
-        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0 bg-background/0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline">Our Branding Process</h2>

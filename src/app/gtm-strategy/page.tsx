@@ -19,8 +19,8 @@ const roadmapSteps = [
         "Analyze pricing models and potential revenue streams."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080",
-      hint: "colorful professional market research",
+      src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNlYXJjaCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2MjI0NzU0OHww&ixlib=rb-4.0.3&q=80&w=1080",
+      hint: "professional market research analysis",
     },
   },
   {
@@ -33,8 +33,8 @@ const roadmapSteps = [
         "Create a comprehensive brand style guide."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      hint: "colorful professional brand positioning",
+      src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      hint: "professional brand positioning meeting",
     },
   },
   {
@@ -47,8 +47,8 @@ const roadmapSteps = [
         "Launch a coming-soon landing page to capture leads."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwciUyMGxhdW5jaHxlbnwwfHx8fDE3NjIyNDc4MTB8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      hint: "colorful professional product launch",
+      src: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwciUyMGxhdW5jaHxlbnwwfHx8fDE3NjIyNDc4MTB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      hint: "creative product pre-launch buzz",
     },
   },
   {
@@ -61,8 +61,8 @@ const roadmapSteps = [
         "Secure launch coverage on product discovery sites like Product Hunt."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1563050854-43d9a7845014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ3ODg2fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      hint: "colorful professional rocket launch",
+      src: "https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ3ODg2fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      hint: "rocket launching into the sky",
     },
   },
   {
@@ -75,8 +75,8 @@ const roadmapSteps = [
         "Establish key partnerships and affiliate programs."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      hint: "colorful professional growth chart",
+      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      hint: "business growth chart on a laptop",
     },
   },
   {
@@ -89,8 +89,8 @@ const roadmapSteps = [
         "Continuously refine product features and marketing strategies."
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcHRpbWl6YXRpb24lMjBwcm9jZXNzfGVufDB8fHx8fDE3NjIyNDgwMTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      hint: "colorful professional optimization process",
+      src: "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcHRpbWl6YXRpb24lMjBwcm9jZXNzfGVufDB8fHx8fDE3NjIyNDgwMTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      hint: "team optimizing a process on a whiteboard",
     },
   },
 ];
@@ -106,10 +106,10 @@ export default function GtmStrategyPage() {
   return (
     <>
       <section 
-        className="relative py-20 md:py-32 w-full flex items-center justify-center text-center bg-cover bg-center"
+        className="relative py-20 md:py-32 w-full flex items-center justify-center text-center"
       >
         <Image 
-          src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXJrZXRpbmclMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ4MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080'
+          src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ4MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080'
           alt="Go-To-Market Launchpad"
           fill
           className="object-cover"
@@ -172,10 +172,10 @@ export default function GtmStrategyPage() {
 
       <section
         className="py-20 md:py-32 bg-cover bg-center bg-fixed"
-        style={{backgroundImage: "url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjIyNDc5NTN8MA&ixlib=rb-4.0.3&q=80&w=1080')"}}
-        data-ai-hint="colorful professional launch success"
+        style={{backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBsYXVuY2glMjBzdWNjZXNzfGVufDB8fHx8MTc2MjI0ODMyN3ww&ixlib=rb-4.0.3&q=80&w=1080')"}}
+        data-ai-hint="professional launch success"
       >
-        <div className="absolute inset-0 bg-background/90" />
+        <div className="absolute inset-0 bg-background/0" />
         <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight text-white">Measurable Impact</h2>
@@ -217,6 +217,3 @@ export default function GtmStrategyPage() {
     </>
   );
 }
-    
-
-    

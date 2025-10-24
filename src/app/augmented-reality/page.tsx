@@ -111,7 +111,7 @@ export default function AugmentedRealityPage() {
         >
         <Image
             src="https://images.unsplash.com/photo-1629904853716-f0bc64219b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmltYXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
-            alt=""
+            alt="i"
             fill
             className="object-fill"
             priority

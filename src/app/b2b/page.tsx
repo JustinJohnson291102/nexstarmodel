@@ -117,7 +117,7 @@ export default function B2BPage() {
     <>
       <section 
         className="relative w-full flex items-center justify-center text-center bg-white"
-        style={{ height: 'calc(98vh - 98px)' }}
+        style={{ height: 'calc(98vh - 9px)' }}
       >
         <Image
             src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiMmIlMjBtYXJrZXRpbmd8ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"

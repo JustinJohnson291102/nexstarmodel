@@ -166,7 +166,7 @@ export default function OnlineReputationManagementPage() {
         style={{ backgroundImage: `url('https://ik.imagekit.io/ggelm1lwa/pexels-fauxels-3184292.jpg?updatedAt=1759859341496')` }}
         data-ai-hint="colorful professional digital security"
       >
-        <div className="absolute inset-0 bg-background/90" />
+        <div className="absolute inset-0 bg-background/0" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-headline">Our ORM Strategy</h2>

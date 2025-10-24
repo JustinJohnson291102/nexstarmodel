@@ -42,7 +42,7 @@ const alternatingContent = [
             "Meticulous post-production including editing, color grading, and sound mixing."
         ],
         image: {
-            src: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzYyMjQ3NzEyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+            src: "https://ik.imagekit.io/asnkt5q09/video%20production.png?updatedAt=1761303702975",
             hint: "colorful professional storyboard"
         }
     },

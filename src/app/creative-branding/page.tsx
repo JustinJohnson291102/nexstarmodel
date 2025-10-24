@@ -103,7 +103,7 @@ export default function CreativeBrandingPage() {
     <div className="bg-background">
       <section 
         className="relative w-full flex items-center justify-center text-center bg-white"
-        style={{ height: 'calc(80vh - 80px)' }}
+        style={{ height: 'calc(100vh - 80px)' }}
       >
         <Image
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG90byUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"

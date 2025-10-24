@@ -46,7 +46,7 @@ const baseCarouselImages = [
     hint: "yellow banner"
   },
   {
-    src: "https://ik.imagekit.io/ggelm1lwa/mastering%20platform.jpg?updatedAt=1759592307831",
+    src: "https://ik.imagekit.io/ggelm1lwa/officehero1.jpeg?updatedAt=1759562749267",
     alt: "Office hero banner",
     hint: "office banner"
   },

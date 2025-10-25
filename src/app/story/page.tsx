@@ -80,11 +80,11 @@ const teamMembers = [
     // Row 1
     { name: 'Kristin Watson', title: 'Team Member', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
     { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: '1HUudFYwCkR5WFgOW2QEnWzZBxU8BBvQI' },
-    { name: 'Robertson', title: 'Marketing Coordinator', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
+    { name: 'Firoz', title: 'Marketing Coordinator', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
     { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
     // Row 2
     { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
-    { name: 'Ali', title: 'Web Designer', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
+    { name: 'Johnson', title: 'Web Designer', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
     { name: 'Ichcha', title: 'Developer', imageId: '1ewP71AMnXgQWmfiBTCYKKWrpsE_LR95h' },
     { name: 'Anchal', title: 'Member', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
     // Row 3
@@ -151,7 +151,7 @@ export default function StoryPage() {
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">About Us</h2>
                  <p className="text-lg text-muted-foreground text-justify">
-                   Nexstar Media India Pvt Ltd is the Flagship Company of Nexstar Live LLC, United States. It is an active Indian company founded in 2019, based in Noida (National Capital Region, New Delhi), Uttar Pradesh, India. It specializes in the media entertainment and IT service sectors. The company offers a wide range of services in digital media solutions, website and app development, and IT service management. As a privately held organization, it serves an international clientele and is focused on delivering quality leads and premier digital solutions to businesses worldwide.
+                   Nexstar Media India Pvt Ltd is the Flagship Company of Nexstar Live Technologies LLC, United States. It is an active Indian company founded in 2019, based in Noida (National Capital Region, New Delhi), Uttar Pradesh, India. It specializes in the media entertainment and IT service sectors. The company offers a wide range of services in digital media solutions, website and app development, and IT service management. As a privately held organization, it serves an international clientele and is focused on delivering quality leads and premier digital solutions to businesses worldwide.
                  </p>
              </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700 flex justify-center">

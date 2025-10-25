@@ -147,22 +147,22 @@ export default function Home() {
 
   return (
     <>
-      <section className="w-full flex flex-col md:flex-row bg-background">
-        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[40%] h-[70vh] md:h-[calc(90vh-7rem)]">
-          <video 
-            src="https://ik.imagekit.io/ggelm1lwa/WhatsApp%20Video%202025-10-08%20at%206.14.02%20PM.mp4?updatedAt=1759927469651"
-            className="absolute z-0 top-0 left-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-          <div className="relative z-10 flex justify-center items-center h-full">
-            <AnimatedText />
-          </div>
-        </div>
-        
-        <div className="relative w-full md:w-[60%]">
+   <section className="w-full flex flex-col md:flex-row bg-background">
+        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[45%] h-[70vh] md:h-[calc(90vh-7rem)]">
+          <video 
+            src="https://ik.imagekit.io/asnkt5q09/Nexstar%20Studio%20Video.mp4?updatedAt=1761382376058"
+            className="absolute z-0 top-0 left-0 w-full h-full object-fill"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <div className="relative z-10 flex justify-center items-center h-full">
+         
+          </div>
+        </div>
+  
+        <div className="relative w-full md:w-[55%]">
           <Carousel
             opts={{ loop: true }}
             plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}

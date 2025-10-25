@@ -23,10 +23,8 @@ export default function Footer() {
 
   const socialLinks = [
     { href: 'https://www.facebook.com/nexstarmediaindia', label: 'Facebook', icon: Facebook },
-    { href: '#', label: 'Twitter', icon: Twitter },
     { href: 'https://in.linkedin.com/company/nexstarmediaprivatelimited', label: 'LinkedIn', icon: Linkedin },
     { href: 'https://www.instagram.com/nexstarmedialive', label: 'Instagram', icon: Instagram },
-    { href: '#', label: 'YouTube', icon: Youtube },
   ];
 
   return (
@@ -96,7 +94,7 @@ export default function Footer() {
         </div>
          <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
             <p>
-              &copy; 2019 Nexstar Media. All rights reserved. | The Flagship Company of Nexstar Live LLC, United States
+              &copy; 2019 Nexstar Media. All rights reserved. | The Flagship Company of Nexstar Live Technologies LLC, United States
             </p>
           </div>
       </div>

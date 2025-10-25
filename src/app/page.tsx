@@ -148,7 +148,7 @@ export default function Home() {
   return (
     <>
    <section className="w-full flex flex-col md:flex-row bg-background">
-        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[45%] h-[55vh] md:h-[calc(90vh-7rem)]">
+        <div className="relative flex items-center justify-center w-full shrink-0 md:w-[45%] h-[40vh] md:h-[calc(90vh-7rem)]">
           <video 
             src="https://ik.imagekit.io/asnkt5q09/Nexstar%20Studio%20Video.mp4?updatedAt=1761382376058"
             className="absolute z-0 top-0 left-0 w-full h-full object-fill"
@@ -170,7 +170,7 @@ export default function Home() {
             <CarouselContent>
               {heroCarouselImages.map((img, index) => (
                 <CarouselItem key={index}>
-                   <div className="relative w-full h-[38vh] md:h-[calc(90vh-7rem)]">
+                   <div className="relative w-full h-[35vh] md:h-[calc(90vh-7rem)]">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -503,3 +503,4 @@ export default function Home() {
     </>
   );
 }
+git 

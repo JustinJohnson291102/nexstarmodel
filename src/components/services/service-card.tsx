@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 
 
-export default function ServiceCard({ image, title, description }) {
+export default function ServiceCard({ image, title, description }: { image?: any; title: string; description: string }) {
   return (
     <Card className="h-full group transition-all duration-300 ease-in-out hover:border-primary hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 hover:rotate-1 overflow-hidden">
       {image && (

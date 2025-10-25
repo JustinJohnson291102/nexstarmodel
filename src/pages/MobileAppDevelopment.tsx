@@ -99,7 +99,7 @@ export default function MobileAppDevelopmentPage() {
       >
         <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmRyb2lkfGVufDB8fHx8fDE3NjIzMzc3NTF8MA&ixlib=rb-4.0.3&q=80&w=1080"
           alt="Mobile App Development"
-          className="w-full h-full object- loading="eager" />
+          className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container mx-auto px-4 text-white">
           <div className="max-w-3xl mx-auto">

@@ -87,7 +87,7 @@ export default function PortfolioPage() {
       >
         <img src={heroImageUrl} 
           alt="Abstract blue and pink technology background for portfolio hero section" 
-          className="w-full h-full object-cover object-center loading="eager" />
+          className="w-full h-full object-cover object-center" loading="eager" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
             <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />

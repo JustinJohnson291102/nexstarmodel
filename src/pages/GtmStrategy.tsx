@@ -107,7 +107,7 @@ export default function GtmStrategyPage() {
       >
         <img src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBsYXVuY2h8ZW58MHx8fHwxNzYyMjQ4MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080'
           alt="Go-To-Market Launchpad"
-          className="w-full h-full object-cover loading="eager" />
+          className="w-full h-full object-cover" loading="eager" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-0 duration-700" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>
            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight mb-4">
               Your Go-To-Market Launchpad

@@ -2,7 +2,7 @@
 
 
 
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { ArrowRight, Briefcase, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -109,7 +109,7 @@ export default function PortfolioPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {caseStudies.map((study, index) => (
-               <Link href={study.link} key={study.title}>
+               <Link to={study.link} key={study.title}>
                 <Card 
                   className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6 h-full"
                   style={{ animationDelay: `${index * 100}ms` }}
@@ -188,7 +188,7 @@ export default function PortfolioPage() {
           </div>
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
               <Button asChild size="lg" variant="secondary" className="group">
-                <Link href="/contact">
+                <Link to="/contact">
                   Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

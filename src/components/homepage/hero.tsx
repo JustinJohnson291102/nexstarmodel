@@ -44,10 +44,9 @@ export default function Hero() {
                 <img
                   src={img.imageUrl}
                   alt={img.description}
-                 
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                   data-ai-hint={img.imageHint}
-                  loading="eager"={img.id === "hero-1"}
+                  loading={img.id === "hero-1" ? "eager" : "lazy"}
                 />
               </div>
             </CarouselItem>

@@ -105,7 +105,7 @@ export default function EcommerceDevelopmentPage() {
       <section className="relative h-[80vh] w-full flex items-center justify-center text-center bg-white">
         <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzYyMzM3NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080"
             alt="E-commerce Development"
-            className="w-full h-full object- loading="eager" />
+            className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">

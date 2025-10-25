@@ -146,7 +146,7 @@ export default function Header() {
                   <DropdownMenuItem key={link.href} asChild>
                     {link.href.startsWith('http') ? (
                       <a 
-                        to={link.href}
+                        href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -240,16 +240,27 @@ export default function Header() {
                     <AccordionContent className="pl-4">
                        <div className="flex flex-col gap-2">
                         {webSolutionLinks.map(link => (
-                          <Link 
-                            key={link.href}
-                            to={link.href}
-                            target={link.href.startsWith('http') ? '_blank' : '_self'}
-                            rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                            className="text-base p-2 text-foreground transition-colors hover:text-primary"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                          >
-                           {link.label}
-                          </Link>
+                          link.href.startsWith('http') ? (
+                            <a 
+                              key={link.href}
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-base p-2 text-foreground transition-colors hover:text-primary"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                             {link.label}
+                            </a>
+                          ) : (
+                            <Link 
+                              key={link.href}
+                              to={link.href}
+                              className="text-base p-2 text-foreground transition-colors hover:text-primary"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                             {link.label}
+                            </Link>
+                          )
                         ))}
                       </div>
                     </AccordionContent>

@@ -342,7 +342,7 @@ export default function ServicesPage() {
                     <img src={service.image}
                       alt={service.imageAlt}
                       className="w-full h-full rounded-xl object-contain transition-transform duration-500 hover:scale-105"
-                       data-ai-hint={service.imageHint} loading="eager" {index < 4} />
+                       data-ai-hint={service.imageHint} loading="eager" />
                   </div>
                 </div>
                 <div

@@ -108,7 +108,7 @@ export default function PodcastPage() {
       >
         <img src="https://drive.google.com/uc?export=download&id=1eT9LRdRF581FRDSpAeWrdlKlOMuMpYOv"
           alt="Podcast hero background"
-          className="w-full h-full object-cover loading="eager data-ai-hint="podcast setup"
+          className="w-full h-full object-cover" loading="eager" data-ai-hint="podcast setup"
          />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
@@ -192,8 +192,8 @@ export default function PodcastPage() {
                           <div className="relative aspect-video">
                             <img src={episode.image.src}
                               alt={episode.title}
-                              className="w-full h-full transition-transform duration-500 group-hover:scale-105"
-                              style={{objectFit: '', borderRadius: '10px 10px 0 0'}}
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                              style={{borderRadius: '10px 10px 0 0'}}
                               data-ai-hint={episode.image.hint}
                              />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

@@ -173,7 +173,8 @@ export default function SocialMediaPage() {
              <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto px-4">We speak the language of every social platform to ensure your brand's voice is heard everywhere.</p>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {platformCards.map(card => (
-                <Link key={card.platform} href={card.href} target={card.href === '#' ? '_self' : '_blank'} rel="noopener noreferrer" className={card.href === '#' ? 'pointer-events-none' : ''}>
+                card.href === '#' ? (
+                  <div key={card.platform} className="pointer-events-none">
                   <Card className="bg-card/70 backdrop-blur-sm border-border/50 group overflow-hidden h-full">
                     <div className="relative aspect-video">
                         <img src={card.image.src} alt={card.platform} className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint}  />
@@ -184,7 +185,21 @@ export default function SocialMediaPage() {
                         <p className="text-sm text-muted-foreground">{card.description}</p>
                     </div>
                   </Card>
-                </Link>
+                  </div>
+                ) : (
+                <a key={card.platform} href={card.href} target="_blank" rel="noopener noreferrer">
+                  <Card className="bg-card/70 backdrop-blur-sm border-border/50 group overflow-hidden h-full">
+                    <div className="relative aspect-video">
+                        <img src={card.image.src} alt={card.platform} className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" data-ai-hint={card.image.hint}  />
+                        <div className="absolute inset-0 bg-black/10"></div>
+                    </div>
+                    <div className="p-4">
+                        <h3 className="font-headline text-xl font-bold mb-1">{card.platform}</h3>
+                        <p className="text-sm text-muted-foreground">{card.description}</p>
+                    </div>
+                  </Card>
+                </a>
+                )
               ))}
              </div>
           </div>

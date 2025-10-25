@@ -205,7 +205,7 @@ export default function Home() {
             ))}
           </div>
            <div className="mt-12">
-    <Link href="www.nexstar.host" target="_blank" rel="noopener noreferrer">
+    <Link href="https://www.nexstar.host" target="_blank" rel="noopener noreferrer">
         <div className="relative w-full h-auto aspect-[1920/700] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
             <Image
                 src="https://ik.imagekit.io/asnkt5q09/Book%20Your%20Domain%20Name.png?updatedAt=1761388283455"

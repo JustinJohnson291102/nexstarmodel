@@ -205,7 +205,7 @@ export default function Home() {
             ))}
           </div>
            <div className="mt-12">
-    <Link href="https://www.nexstar.host" target="_blank" rel="noopener noreferrer">
+    <Link href="www.nexstar.host" target="_blank" rel="noopener noreferrer">
         <div className="relative w-full h-auto aspect-[1920/700] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
             <Image
                 src="https://ik.imagekit.io/asnkt5q09/Book%20Your%20Domain%20Name.png?updatedAt=1761388283455"
@@ -217,16 +217,11 @@ export default function Home() {
         </div>
     </Link>
 </div>
-           <div className="mt-12 relative">
-             <video 
-              src="https://ik.imagekit.io/ggelm1lwa/6007968_4k_Beautiful_1280x720.mp4?updatedAt=1759927250287"
-              className="w-full h-auto rounded-lg shadow-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </div>
+<div className="mt-12 text-center p-6 border-b-4 border-primary mx-auto max-w-xl">
+    <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
+        Music Videos/Shoots
+    </h3>
+</div>
         </div>
       </section>
 

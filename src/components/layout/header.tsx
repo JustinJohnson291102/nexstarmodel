@@ -1,10 +1,6 @@
 
-"use client";
-
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -64,22 +60,23 @@ const pagesLinks = [
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
+  const location = useLocation();
+  const pathname = location.pathname;
 
   const NavLink = ({
-    href,
+    to,
     label,
     className = "",
   }: {
-    href: string;
+    to: string;
     label: string;
     className?: string;
   }) => (
     <Link
-      href={href}
+      to={to}
       className={cn(
         "text-lg font-medium transition-colors hover:text-primary",
-        pathname === href ? "text-primary" : "text-foreground",
+        pathname === to ? "text-primary" : "text-foreground",
         className
       )}
        onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}
@@ -95,9 +92,9 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-[4.5rem] md:h-28 items-center px-4 md:px-6">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link to="/" className="mr-6 flex items-center space-x-2">
           <div className="relative -top-[5px]">
-            <Image
+            <img
               src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
               alt="Nexstar Logo"
               width={200}
@@ -109,13 +106,13 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end md:justify-center">
           <nav className="hidden md:flex md:gap-6 items-center">
             {mainLinks.map((link) => (
-              <NavLink key={link.href} href={link.href} label={link.label} />
+              <NavLink key={link.href} to={link.href} label={link.label} />
             ))}
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                  <Link
-                    href="/services"
+                    to="/services"
                     className={cn(
                       "flex items-center text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none",
                        isServiceActive ? 'text-primary' : ''
@@ -127,7 +124,7 @@ export default function Header() {
               <DropdownMenuContent className="max-h-96 overflow-y-auto w-56">
                 {serviceLinks.map((link, index) => (
                   <DropdownMenuItem key={`${link.href}-${index}`} asChild>
-                    <Link href={link.href}>{link.label}</Link>
+                    <Link to={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -147,13 +144,19 @@ export default function Header() {
               <DropdownMenuContent>
                 {webSolutionLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <Link 
-                      href={link.href}
-                      target={link.href.startsWith('http') ? '_blank' : '_self'}
-                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                    >
-                      {link.label}
-                    </Link>
+                    {link.href.startsWith('http') ? (
+                      <a 
+                        to={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link to={link.href}>
+                        {link.label}
+                      </Link>
+                    )}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -173,17 +176,17 @@ export default function Header() {
               <DropdownMenuContent>
                 {pagesLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <Link href={link.href}>{link.label}</Link>
+                    <Link to={link.href}>{link.label}</Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            <NavLink href="/podcast" label="Digital TV" />
+            <NavLink to="/podcast" label="Digital TV" />
           </nav>
         </div>
         <div className="hidden md:flex items-center ml-auto">
            <Button asChild className="rounded-full text-base">
-              <Link href="/contact">Contact Us</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
         </div>
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -197,12 +200,12 @@ export default function Header() {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between pb-6 border-b">
                 <Link
-                  href="/"
+                  to="/"
                   className="flex items-center space-x-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <div className="relative -top-[5px]">
-                    <Image
+                    <img
                       src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
                       alt="Nexstar Logo"
                       width={200}
@@ -214,7 +217,7 @@ export default function Header() {
               </div>
               <div className="flex-1 flex flex-col gap-2 overflow-y-auto pt-4">
                 {mainLinks.map(({ href, label }) => (
-                  <NavLink key={href} href={href} label={label} className="text-lg p-2" />
+                  <NavLink key={href} to={href} label={label} className="text-lg p-2" />
                 ))}
 
                 <Accordion type="multiple" className="w-full">
@@ -225,7 +228,7 @@ export default function Header() {
                     <AccordionContent className="pl-4">
                       <div className="flex flex-col gap-2">
                         {serviceLinks.map(link => (
-                          <NavLink key={link.href} href={link.href} label={link.label} className="text-base p-2" />
+                          <NavLink key={link.href} to={link.href} label={link.label} className="text-base p-2" />
                         ))}
                       </div>
                     </AccordionContent>
@@ -239,7 +242,7 @@ export default function Header() {
                         {webSolutionLinks.map(link => (
                           <Link 
                             key={link.href}
-                            href={link.href}
+                            to={link.href}
                             target={link.href.startsWith('http') ? '_blank' : '_self'}
                             rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
                             className="text-base p-2 text-foreground transition-colors hover:text-primary"
@@ -258,19 +261,19 @@ export default function Header() {
                     <AccordionContent className="pl-4">
                        <div className="flex flex-col gap-2">
                         {pagesLinks.map(link => (
-                          <NavLink key={link.href} href={link.href} label={link.label} className="text-base p-2" />
+                          <NavLink key={link.href} to={link.href} label={link.label} className="text-base p-2" />
                         ))}
                       </div>
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
 
-                <NavLink href="/podcast" label="Digital TV" className="text-lg p-2" />
-                 <NavLink href="/portfolio" label="Portfolio" className="text-lg p-2" />
+                <NavLink to="/podcast" label="Digital TV" className="text-lg p-2" />
+                 <NavLink to="/portfolio" label="Portfolio" className="text-lg p-2" />
               </div>
               <Button asChild className="mt-4 rounded-full text-base">
                 <Link
-                  href="/contact"
+                  to="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact Us

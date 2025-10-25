@@ -1,7 +1,7 @@
-"use client";
+
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { MessageSquare, Send, X, Loader2 } from "lucide-react";
@@ -95,7 +95,7 @@ export default function Chatbot() {
         <Card className="shadow-2xl">
           <CardHeader className="flex flex-row items-center justify-between border-b">
             <div className="flex items-center gap-3">
-               <Image
+               <img
                 src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
                 alt="Nexstar Logo"
                 width={24}

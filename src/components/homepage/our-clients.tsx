@@ -1,7 +1,7 @@
 
-"use client";
 
-import Image from "next/image";
+
+
 
 // 🔥 FIX: URLs ko working content links (uc?id=FILE_ID) mein change kiya gaya hai.
 const clientLogos = [
@@ -37,7 +37,7 @@ export default function OurClients({ showTitle = true }: { showTitle?: boolean }
             <div className="flex w-max animate-marquee-slow flex-shrink-0">
               {extendedLogos.map((logo, index) => (
                 <div key={`set1-${index}`} className="mx-10 flex items-center justify-center h-24 opacity-50 transition-opacity duration-300 hover:opacity-100">
-                  <Image
+                  <img
                     src={logo.src}
                     alt={logo.alt}
                     width={195}
@@ -52,7 +52,7 @@ export default function OurClients({ showTitle = true }: { showTitle?: boolean }
             <div className="flex w-max animate-marquee-slow flex-shrink-0" aria-hidden="true">
               {extendedLogos.map((logo, index) => (
                 <div key={`set2-${index}`} className="mx-10 flex items-center justify-center h-24 opacity-50 transition-opacity duration-300 hover:opacity-100">
-                  <Image
+                  <img
                     src={logo.src}
                     alt={logo.alt}
                     width={195}

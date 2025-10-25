@@ -1,0 +1,199 @@
+
+import { Link } from "react-router-dom";
+import { ArrowRight, Briefcase, Eye } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import OurClients from "@/components/homepage/our-clients";
+
+const caseStudies = [
+  {
+    title: "Backup, Blockchain & Crypto",
+    category: "Cyber Security",
+    description: "Developed a decentralized backup solution using blockchain technology, ensuring immutable and secure data storage for crypto assets.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "office blockchain" },
+    tags: ["Blockchain", "Cyber Security", "Go"],
+    link: "/portfolio/blockchain-crypto"
+  },
+  {
+    title: "App Design for Local Agency",
+    category: "UI/UX Design",
+    description: "Redesigned a mobile application for a local government agency, improving user engagement by 40% through an intuitive, human-centered interface.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-antoni-shkraba-4348401.jpg?updatedAt=1759859066487", hint: "office app design" },
+    tags: ["UI/UX", "Figma", "React Native"],
+     link: "/portfolio/app-design"
+  },
+  {
+    title: "The New in Upcoming Design Think",
+    category: "UI/UX Design",
+    description: "A forward-thinking exploration of future design trends, culminating in a conceptual prototype for a next-generation mixed-reality interface.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696", hint: "office design thinking" },
+    tags: ["AR/VR", "Prototyping", "UX Research"],
+     link: "/portfolio/design-think"
+  },
+  {
+    title: "Branding for American IT",
+    category: "IT Consultancy",
+    description: "Crafted a new brand identity for a major American IT firm, positioning them as an innovative leader in a competitive market.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-anamul-rezwan-1216589.jpg?updatedAt=1759859066606", hint: "office branding" },
+    tags: ["Branding", "Strategy", "Marketing"],
+     link: "/portfolio/it-branding"
+  },
+  {
+    title: "World Best Available Scope",
+    category: "Data Analytics",
+    description: "Executed a global market analysis project, identifying key growth opportunities and providing actionable insights through advanced data modeling.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "office analytics" },
+    tags: ["Data Science", "Tableau", "Python"],
+     link: "/portfolio/market-analysis"
+  },
+  {
+    title: "Software License Management",
+    category: "IT Consultancy",
+    description: "Implemented a comprehensive software license management system for a Fortune 500 company, saving them over $2M annually.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-negative-space-160107.jpg?updatedAt=1759858762512", hint: "office software" },
+    tags: ["ITAM", "SaaS", "Optimization"],
+     link: "/portfolio/license-management"
+  },
+];
+
+const similarProjects = [
+  {
+    title: "AI-Powered Threat Detection",
+    description: "A real-time cybersecurity platform that uses machine learning to predict and neutralize threats before they can cause damage.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-alesiakozik-7925852.jpg?updatedAt=1759858563339", hint: "ai security" },
+  },
+  {
+    title: "E-commerce Personalization Engine",
+    description: "A data-driven recommendation engine that increased average order value by 25% for a major online retailer.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-lisa-fotios-1279330.jpg?updatedAt=1759859556839", hint: "ecommerce analytics" },
+  },
+  {
+    title: "IoT Smart City Dashboard",
+    description: "A UI/UX project to visualize complex city-wide data from IoT sensors, enabling better urban planning and resource management.",
+    image: { src: "https://ik.imagekit.io/ggelm1lwa/pexels-divinetechygirl-1181244.jpg?updatedAt=1759847079696", hint: "smart city" },
+  },
+];
+
+export default function PortfolioPage() {
+  
+  const heroImageUrl = "https://drive.google.com/uc?export=download&id=1gqYCJDH8bS2luE65l9ltyfg3zeifp6wp";
+
+  return (
+    <div className="bg-background text-foreground">
+      
+      <section
+        className="relative h-[60vh] w-full flex items-center justify-center text-center"
+      >
+        <img src={heroImageUrl} 
+          alt="Abstract blue and pink technology background for portfolio hero section" 
+          className="w-full h-full object-cover object-center loading="eager" />
+        <div className="relative z-20 px-4 text-white animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <div className="bg-background/20 backdrop-blur-sm p-8 rounded-lg">
+            <Briefcase className="h-20 w-20 mx-auto mb-4 text-primary" />
+            <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-white">
+              Our Portfolio
+            </h1>
+            <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+              A showcase of our commitment to excellence, innovation, and impactful results.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative py-20 md:py-24 bg-secondary">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
+              Recent Case Studies
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+              Transforming challenges into triumphs. Here's a look at how we've helped our clients succeed.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {caseStudies.map((study, index) => (
+              <Link to={study.link} key={study.title}>
+              <Card
+                className="group relative overflow-hidden bg-card/70 backdrop-blur-sm border-border/50 shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-6 h-full"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardHeader className="p-0">
+                  <div className="relative aspect-video">
+                    <img src={study.image.src}
+                      alt={study.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      data-ai-hint={study.image.hint}
+                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+                    <div className="absolute top-4 right-4">
+                      <Badge variant="secondary" className="bg-background/20 text-white backdrop-blur-sm">{study.category}</Badge>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="font-headline text-xl mb-2 leading-tight group-hover:text-primary transition-colors">{study.title}</CardTitle>
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{study.description}</p>
+                   <div className="flex flex-wrap gap-2">
+                    {study.tags.map(tag => (
+                      <Badge key={tag} variant="outline">{tag}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter className="p-6 pt-0">
+                  <div className="flex items-center text-primary font-semibold">
+                    <Eye className="mr-2 h-4 w-4" /> View Case Study <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-1" />
+                  </div>
+                </CardFooter>
+              </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <OurClients showTitle={false} />
+
+      <section
+        className="relative py-20 md:py-32 bg-primary text-primary-foreground"
+      >
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-500">
+              Our Projects
+            </h2>
+            <p className="text-lg text-primary-foreground/80 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+              A glimpse into our technical expertise and innovative solutions across various domains.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {similarProjects.map((project, index) => (
+              <div
+                key={project.title}
+                className="group relative overflow-hidden rounded-lg shadow-2xl aspect-video animate-in fade-in slide-in-from-bottom-6 transition-all duration-300 hover:shadow-primary/30"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <img src={project.image.src}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-ai-hint={project.image.hint}
+                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6 transition-all duration-300 group-hover:bg-gradient-to-t group-hover:from-black/70 group-hover:to-black/10">
+                  <h3 className="font-headline text-2xl font-bold text-white mb-2 transition-transform duration-300 group-hover:-translate-y-2">{project.title}</h3>
+                  <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 h-0 group-hover:h-auto group-hover:-translate-y-2 delay-75">{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+           <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
+             <Button asChild size="lg" variant="secondary" className="group">
+               <Link to="/contact">
+                 Discuss Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+               </Link>
+             </Button>
+           </div>
+        </div>
+      </section>
+    </div>
+  );
+}

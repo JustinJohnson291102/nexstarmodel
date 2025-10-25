@@ -19,6 +19,11 @@
 
 # production
 /build
+/dist
+
+# vite
+.vite
+dist-ssr
 
 # misc
 .DS_Store

@@ -1,7 +1,7 @@
-"use client";
+
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+
 
 export default function Preloader() {
   const [isMounted, setIsMounted] = useState(false);
@@ -17,13 +17,13 @@ export default function Preloader() {
       }`}
     >
       <div className="p-8">
-        <Image
+        <img
           src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
           alt="Nexstar Logo"
           width={800}
           height={500}
           className="object-contain"
-          priority
+          loading="eager"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 
-"use client";
 
-import Image from "next/image";
+
+
 import Link from "next/link";
 import { ArrowRight, Briefcase, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -116,10 +116,10 @@ export default function PortfolioPage() {
                 >
                   <CardHeader className="p-0">
                     <div className="relative aspect-video">
-                      <Image
+                      <img
                         src={study.image.src}
                         alt={study.title}
-                        fill
+                       
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         data-ai-hint={study.image.hint}
                       />
@@ -171,7 +171,7 @@ export default function PortfolioPage() {
                 className="group relative overflow-hidden rounded-lg shadow-2xl animate-in fade-in slide-in-from-bottom-6"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <Image
+                <img
                   src={project.image.src}
                   alt={project.title}
                   width={800}

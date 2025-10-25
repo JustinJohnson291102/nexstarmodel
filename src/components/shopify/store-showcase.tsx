@@ -1,5 +1,5 @@
-"use client";
-import Image from "next/image";
+
+
 import {
   Carousel,
   CarouselContent,
@@ -29,7 +29,7 @@ export default function StoreShowcase() {
             <div className="p-1">
               <Card className="overflow-hidden group">
                 <CardContent className="flex aspect-[4/3] items-center justify-center p-0">
-                  <Image
+                  <img
                     src={image.imageUrl}
                     alt={image.description}
                     width={800}

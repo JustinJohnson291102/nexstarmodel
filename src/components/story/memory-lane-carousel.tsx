@@ -1,7 +1,7 @@
-"use client";
+
 
 import React, { useState, useEffect, useCallback } from "react";
-import Image from "next/image";
+
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { cn } from "@/lib/utils";
@@ -45,10 +45,10 @@ const MemoryLaneCarousel = () => {
                   index === selectedIndex ? "scale-110" : "scale-75 opacity-50"
                 )}
               >
-                <Image
+                <img
                   src={src}
                   alt={`Memory lane image ${index + 1}`}
-                  fill
+                 
                   className="object-contain rounded-lg"
                 />
               </div>

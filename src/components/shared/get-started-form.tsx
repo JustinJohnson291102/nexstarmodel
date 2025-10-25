@@ -1,9 +1,9 @@
-"use client";
+
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import Image from "next/image";
+
 
 import { Button } from "@/components/ui/button";
 import {
@@ -69,7 +69,7 @@ export default function GetStartedForm() {
   return (
     <Card className="shadow-lg sticky top-32">
       <CardHeader className="text-center">
-        <Image
+        <img
           src="https://drive.google.com/uc?export=download&id=1gxR728fAj2QFBzzcnADMc9jFwX2dbAwf"
           alt="Nexstar Logo"
           width={120}

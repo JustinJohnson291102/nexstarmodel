@@ -1,7 +1,7 @@
-"use client";
+
 
 import React, { useState } from "react";
-import Image from "next/image";
+
 import {
   Carousel,
   CarouselContent,
@@ -41,13 +41,13 @@ export default function Hero() {
           {images.map((img) => (
             <CarouselItem key={img.id}>
               <div className="relative h-[60vh] md:h-[80vh] w-full">
-                <Image
+                <img
                   src={img.imageUrl}
                   alt={img.description}
-                  fill
+                 
                   className="object-cover"
                   data-ai-hint={img.imageHint}
-                  priority={img.id === "hero-1"}
+                  loading="eager"={img.id === "hero-1"}
                 />
               </div>
             </CarouselItem>

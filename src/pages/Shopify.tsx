@@ -1,0 +1,223 @@
+
+import { Link } from "react-router-dom";
+import { ArrowRight, Store, Brush, Rocket, ShoppingCart, Settings, Repeat, TrendingUp, ShieldCheck, Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import StoreShowcase from "@/components/shopify/store-showcase";
+import Testimonials from "@/components/shopify/testimonials";
+
+const shopifyFeatures = [
+  {
+    icon: Store,
+    title: "Custom Store Design",
+    description: "We create stunning, on-brand Shopify themes from scratch that capture your audience and reflect your identity.",
+    image: { src: "https://picsum.photos/seed/colorful-professional-design/600/400", hint: "colorful professional web design" }
+  },
+  {
+    icon: Brush,
+    title: "Theme Customization",
+    description: "Modify existing themes to match your specific needs, adding custom features and functionality for a unique feel.",
+    image: { src: "https://picsum.photos/seed/colorful-professional-theme/600/400", hint: "colorful professional ui customization" }
+  },
+  {
+    icon: Rocket,
+    title: "App Integration & Development",
+    description: "Extend your store's capabilities with custom Shopify apps or seamless integration of third-party solutions.",
+    image: { src: "https://picsum.photos/seed/colorful-professional-apps/600/400", hint: "colorful professional app development" }
+  },
+  {
+    icon: ShoppingCart,
+    title: "Conversion Rate Optimization",
+    description: "We analyze user behavior and optimize your store's layout and funnels to turn more visitors into customers.",
+    image: { src: "https://picsum.photos/seed/colorful-professional-cro/600/400", hint: "colorful professional sales funnel" }
+  },
+  {
+    icon: Settings,
+    title: "Migration to Shopify",
+    description: "Seamlessly migrate your existing e-commerce store from any platform to Shopify with zero data loss.",
+    image: { src: "https://picsum.photos/seed/professional-data-migration-colorful/600/400", hint: "professional data migration colorful" }
+  },
+  {
+    icon: Repeat,
+    title: "Ongoing Support & Maintenance",
+    description: "Keep your store running smoothly with our reliable support, updates, and performance monitoring services.",
+    image: { src: "https://picsum.photos/seed/professional-customer-support-colorful/600/400", hint: "professional customer support colorful" }
+  },
+];
+
+const whyChooseUsFeatures = [
+    {
+        icon: TrendingUp,
+        title: "Growth-Oriented",
+        description: "Our solutions are built with scalability and growth in mind, helping you expand your business.",
+    },
+    {
+        icon: ShieldCheck,
+        title: "Secure & Reliable",
+        description: "We prioritize security and performance to ensure your store is always safe and fast.",
+    },
+    {
+        icon: Star,
+        title: "Expert Team",
+        description: "Our team of certified Shopify experts are dedicated to your success and providing top-notch service.",
+    }
+];
+
+
+export default function ShopifyPage() {
+  return (
+    <div className="bg-background">
+       <section 
+        className="relative h-[80vh] w-full flex items-center justify-center text-center bg-cover bg-center"
+        style={{ backgroundImage: `url('https://ik.imagekit.io/asnkt5q09/expert%20shopify%20dev.png?updatedAt=1761300619193')`,
+                 backgroundSize: '100% 100%',
+                 backgroundRepeat: 'no-repeat'
+         }}
+        data-ai-hint="colorful professional hero"
+        >
+        <div className="absolute inset-0 bg-white/50" />
+        <div className="relative z-20 px-4 text-black animate-in fade-in slide-in-from-bottom-10 duration-700">
+           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight mb-4">
+              
+            </h1>
+            <p className="text-lg md:text-2xl text-black/90 max-w-3xl mx-auto px-4">
+              
+            </p>
+        </div>
+      </section>
+
+       <section 
+        className="relative py-16 md:py-24 bg-background"
+      >
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Our Shopify Services
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
+              We offer a complete suite of Shopify services to launch, manage, and grow your e-commerce business.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {shopifyFeatures.map((feature, index) => (
+              <div
+                key={feature.title}
+                className="animate-in fade-in slide-in-from-bottom-8 duration-500"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <Card className="h-full group text-left bg-card border transition-all duration-300 hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 overflow-hidden">
+                   <CardHeader className="p-0">
+                    <div className="relative aspect-video w-full">
+                       <img src={feature.image.src}
+                        alt={feature.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        data-ai-hint={feature.image.hint}
+                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+                      <div className="absolute bottom-4 left-4 flex items-start gap-3">
+                        <div className="bg-primary/50 backdrop-blur-sm p-3 rounded-lg border border-primary-foreground/20">
+                          <feature.icon className="h-6 w-6 text-primary-foreground" />
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <CardTitle className="font-headline text-xl leading-tight mb-2">
+                      {feature.title}
+                    </CardTitle>
+                    <p className="text-muted-foreground text-sm">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      <section 
+        className="py-16 md:py-24 bg-secondary"
+      >
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Why Choose Us?
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
+              We're not just developers; we're your partners in e-commerce success. Our approach is rooted in strategy, creativity, and a deep understanding of the Shopify platform.
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+            {whyChooseUsFeatures.map((feature, index) => (
+                <div key={index} className="flex flex-col items-center p-6 md:p-8 bg-card rounded-lg border transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+                    <feature.icon className="h-12 w-12 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold font-headline mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground text-sm">{feature.description}</p>
+                </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              Beautiful Stores, Built to Convert
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100 px-4">
+              We design and develop beautiful, high-converting Shopify stores
+              that customers love. Check out some of our work.
+            </p>
+          </div>
+          <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 delay-200">
+            <StoreShowcase />
+          </div>
+        </div>
+      </section>
+
+       <section 
+        className="relative py-16 md:py-24 bg-secondary"
+       >
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              What Our Clients Say
+            </h2>
+          </div>
+          <div className="animate-in fade-in slide-in-from-bottom-5 duration-500 delay-100">
+            <Testimonials />
+          </div>
+        </div>
+      </section>
+
+       <section className="py-16 md:py-32 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              Ready to Build Your Shopify Empire?
+            </h2>
+            <p className="text-base md:text-lg text-primary-foreground/80 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-500 delay-100 px-4">
+              Let's talk about your project. Whether you're starting from scratch or looking to optimize your existing store, our Shopify experts are ready to help you succeed.
+            </p>
+            <div className="animate-in fade-in slide-in-from-bottom-7 duration-500 delay-200">
+              <Button asChild size="lg" variant="secondary" className="group">
+                <Link to="/contact">
+                  Start Your Project <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

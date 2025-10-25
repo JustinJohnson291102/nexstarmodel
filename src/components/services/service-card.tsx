@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
+
 
 export default function ServiceCard({ image, title, description }) {
   return (
@@ -8,10 +8,10 @@ export default function ServiceCard({ image, title, description }) {
       {image && (
         <CardHeader className="p-0">
           <div className="relative aspect-video w-full overflow-hidden">
-            <Image
+            <img
               src={image.imageUrl}
               alt={title}
-              fill
+             
               className="object-cover transition-transform duration-500 group-hover:scale-110"
               data-ai-hint={image.imageHint}
             />

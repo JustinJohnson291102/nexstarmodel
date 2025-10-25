@@ -1,6 +1,5 @@
 
-import Link from 'next/link';
-import Image from 'next/image';
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
@@ -33,8 +32,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           
           <div className="md:col-span-4 flex flex-col items-start -mt-16">
-            <Link href="/" className="mb-2">
-               <Image
+            <Link to="/" className="mb-2">
+               <img
                 src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
                 alt="Nexstar Logo"
                 width={180}
@@ -54,7 +53,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {mainLinks.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -66,7 +65,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {serviceLinks.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -79,7 +78,7 @@ export default function Footer() {
                 {socialLinks.map((link) => (
                   <a 
                     key={link.label} 
-                    href={link.href} 
+                    to={link.href} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-muted-foreground hover:text-primary transition-colors" 

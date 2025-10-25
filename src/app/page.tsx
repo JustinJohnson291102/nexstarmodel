@@ -204,6 +204,19 @@ export default function Home() {
               </div>
             ))}
           </div>
+           <div className="mt-12">
+    <Link href="https://www.nexstar.host" target="_blank" rel="noopener noreferrer">
+        <div className="relative w-full h-auto aspect-[1920/700] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+            <Image
+                src="https://ik.imagekit.io/asnkt5q09/Book%20Your%20Domain%20Name.png?updatedAt=1761388283455"
+                alt="Book Your Domain Name Banner"
+                fill
+                className="object-fill"
+                priority
+            />
+        </div>
+    </Link>
+</div>
            <div className="mt-12 relative">
              <video 
               src="https://ik.imagekit.io/ggelm1lwa/6007968_4k_Beautiful_1280x720.mp4?updatedAt=1759927250287"

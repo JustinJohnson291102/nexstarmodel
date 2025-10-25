@@ -116,15 +116,30 @@ const whoWeAreCards = [
 
 const heroCarouselImages = [
   {
-    src: "https://ik.imagekit.io/asnkt5q09/hero1.png?updatedAt=1761299257132",
+    src: "https://ik.imagekit.io/asnkt5q09/2.png?updatedAt=1761375058113",
     alt: "Office hero banner 1",
     hint: "office banner",
   },
   {
-    src: "https://ik.imagekit.io/asnkt5q09/hero2.png?updatedAt=1761299257037",
+    src: "https://ik.imagekit.io/asnkt5q09/3.png?updatedAt=1761375058206",
     alt: "Office hero banner 2",
     hint: "office banner",
   },
+  {
+    src: "https://ik.imagekit.io/asnkt5q09/1.png?updatedAt=1761375058364",
+    alt: "Office hero banner 2",
+    hint: "office banner",
+  },
+  {
+    src: "https://ik.imagekit.io/asnkt5q09/4.png?updatedAt=1761375058497",
+    alt: "Office hero banner 2",
+    hint: "office banner",
+  },
+  {
+    src: "https://ik.imagekit.io/asnkt5q09/Purple%20Neon%20Bold%20DJ%20Night%20Music%20Video.jpg?updatedAt=1761375056605",
+    alt: "Office hero banner 2",
+    hint: "office banner",
+  }
 ];
 
 

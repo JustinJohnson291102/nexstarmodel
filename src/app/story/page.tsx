@@ -151,7 +151,7 @@ export default function StoryPage() {
              <div className="animate-in fade-in slide-in-from-left-10 duration-700 space-y-8 text-center md:text-left">
                 <h2 className="text-3xl md:text-5xl font-bold font-headline tracking-tight">About Us</h2>
                  <p className="text-lg text-muted-foreground text-justify">
-                   Nexstar Media India Pvt Ltd is the Flagship Company of Nexstar Live Technologies LLC, United States. It is an active Indian company founded in 2019, based in Noida (National Capital Region, New Delhi), Uttar Pradesh, India. It specializes in the media entertainment and IT service sectors. The company offers a wide range of services in digital media solutions, website and app development, and IT service management. As a privately held organization, it serves an international clientele and is focused on delivering quality leads and premier digital solutions to businesses worldwide.
+                   Nexstar Media India Private Limited is the Flagship Company of Nexstar Live Technologies LLC, United States. It is an active Indian company founded in 2019, based in Noida (National Capital Region, New Delhi), Uttar Pradesh, India. It specializes in the media entertainment and IT service sectors. The company offers a wide range of services in digital media solutions, website and app development, and IT service management. As a privately held organization, it serves an international clientele and is focused on delivering quality leads and premier digital solutions to businesses worldwide.
                  </p>
              </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700 flex justify-center">

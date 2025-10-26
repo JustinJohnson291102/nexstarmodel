@@ -55,7 +55,7 @@ export default function App() {
       ) : (
         <>
           <Header />
-          <main>
+          <main className="pt-[4.5rem] md:pt-28">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/augmented-reality" element={<AugmentedReality />} />

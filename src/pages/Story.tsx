@@ -242,7 +242,9 @@ export default function StoryPage() {
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
                         <img src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
                             alt={member.name}
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 filter brightness-125 group-hover:brightness-100" loading="eager" />
+                            className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 filter brightness-125 group-hover:brightness-100"
+                            loading="eager"
+                        />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     </div>
                     <h3 className="text-lg font-bold font-headline text-accent">{member.name}</h3>

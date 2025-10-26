@@ -1,5 +1,8 @@
 
-import { Link } from "react-router-dom";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, Mic, Headphones, PlayCircle, Rss, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -106,11 +109,12 @@ export default function PodcastPage() {
       <section 
         className="relative h-[60vh] w-full flex items-center justify-center text-center"
       >
-        <img
+        <Image
           src="https://drive.google.com/uc?export=download&id=1eT9LRdRF581FRDSpAeWrdlKlOMuMpYOv"
           alt="Podcast hero background"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="eager"
+          fill
+          className="object-cover"
+          priority
           data-ai-hint="podcast setup"
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -142,11 +146,12 @@ export default function PodcastPage() {
                 </iframe>
               </div>
               <div className="flex items-center justify-center p-8 md:border-l-2 md:border-double md:border-border">
-                <img
+                <Image 
                   src="https://ik.imagekit.io/ggelm1lwa/Nexstar-Bharat-768x768-removebg-preview.png?updatedAt=1759936634616" 
                   alt="Nexstar Bharat Logo" 
-                  className="object-contain w-[300px] h-[300px]"
-                  loading="eager"
+                  width={300} 
+                  height={300} 
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -193,13 +198,13 @@ export default function PodcastPage() {
                     >
                         <CardHeader className="p-0">
                           <div className="relative aspect-video">
-                            <img
+                            <Image
                               src={episode.image.src}
                               alt={episode.title}
-                              className="absolute inset-0 w-full h-full object-fill transition-transform duration-500 group-hover:scale-105"
-                              style={{borderRadius: '10px 10px 0 0'}}
+                              fill
+                              className="transition-transform duration-500 group-hover:scale-105"
+                              style={{objectFit: 'fill', borderRadius: '10px 10px 0 0'}}
                               data-ai-hint={episode.image.hint}
-                              loading="eager"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                              <div className="absolute top-4 left-4">
@@ -304,13 +309,13 @@ export default function PodcastPage() {
                     style={{ animationDelay: `${index * 150}ms`, borderRadius: '10px' }}
                   >
                     <div className="relative aspect-square">
-                        <img
+                        <Image
                             src={guest.image.src}
                             alt={guest.name}
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 filter brightness-125 group-hover:brightness-100"
+                            fill
+                            className="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110 filter brightness-125 group-hover:brightness-100"
                             style={{borderRadius: '10px'}}
                             data-ai-hint={guest.image.hint}
-                            loading="eager"
                         />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6" style={{borderRadius: '10px'}}>
@@ -327,7 +332,7 @@ export default function PodcastPage() {
 
            <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom-7 duration-500 delay-300">
               <Button asChild size="lg" className="group">
-                <Link to="/contact">
+                <Link href="/contact">
                   Become a Guest <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

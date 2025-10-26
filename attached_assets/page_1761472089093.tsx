@@ -1,4 +1,7 @@
 
+"use client";
+
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Check, Target, Lightbulb, Heart, Users, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -128,11 +131,12 @@ export default function StoryPage() {
           </div>
           <div className="relative w-full h-64 md:h-full flex items-center justify-center">
             <div className="relative w-full h-full transform scale-85">
-              <img
+              <Image
                 src="https://ik.imagekit.io/asnkt5q09/our%20story.png?updatedAt=1761216552113"
                 alt="Our Story"
-                className="absolute inset-0 w-full h-full object-contain"
-                loading="eager"
+                fill
+                className="object-contain"
+                priority
               />
             </div>
           </div>
@@ -152,12 +156,12 @@ export default function StoryPage() {
              </div>
              <div className="animate-in fade-in slide-in-from-right-10 duration-700 flex justify-center">
                 <div className="relative aspect-square w-full max-w-xs rounded-lg overflow-hidden">
-                    <img
+                    <Image
                       src="https://ik.imagekit.io/ggelm1lwa/nexstar-logo-removebg-preview.png?updatedAt=1759921791444"
                       alt="Nexstar Logo"
-                      className="absolute inset-0 w-full h-full object-contain"
+                      fill
+                      className="object-contain"
                       data-ai-hint="nexstar logo"
-                      loading="eager"
                     />
                 </div>
              </div>
@@ -184,7 +188,7 @@ export default function StoryPage() {
                 </div>
                 <div className="order-1 bg-card/80 backdrop-blur-sm rounded-xl shadow-xl w-5/12 max-w-sm overflow-hidden animate-in fade-in zoom-in-90 duration-500">
                   <div className="relative w-full h-48">
-                    <img src={event.image.src} alt={event.title} className="absolute inset-0 w-full h-full object-fill p-2" data-ai-hint={event.image.hint} loading="eager" />
+                    <Image src={event.image.src} alt={event.title} fill className="object-fill p-2" data-ai-hint={event.image.hint} />
                   </div>
                   <div className="p-6">
                     <p className="mb-3 text-sm text-primary font-semibold">{event.year}</p>
@@ -208,8 +212,8 @@ export default function StoryPage() {
           </div>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {coreValues.map((value, index) => (
-               <Card key={index} className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: `${index * 150}ms`}}>
-                  <img src={value.image.src} alt={value.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={value.image.hint} loading="eager" />
+               <Card key={index} className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-border/50 animate-in fade-in slide-in-from-bottom-5 duration-500" style={{animationDelay: '${index * 150}ms'}}>
+                  <Image src={value.image.src} alt={value.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" data-ai-hint={value.image.hint} />
                   <div className="absolute inset-0 bg-black/30" />
                   <CardContent className="relative z-10 p-6 text-center text-white flex flex-col items-center justify-center h-full">
                       <div className="inline-block p-4 bg-white/10 text-white rounded-full mb-4">
@@ -238,11 +242,15 @@ export default function StoryPage() {
           </div>
           <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-12">
             {teamMembers.map((member, index) => (
-                <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
+                <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: '${index * 100}ms'}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
-                        <img src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
+                        <Image
+                            src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
                             alt={member.name}
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 filter brightness-125 group-hover:brightness-100" loading="eager" />
+                            fill
+                            className="object-contain group-hover:scale-105 transition-transform duration-300 filter brightness-125 group-hover:brightness-100"
+                            priority
+                        />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     </div>
                     <h3 className="text-lg font-bold font-headline text-accent">{member.name}</h3>
@@ -266,7 +274,7 @@ export default function StoryPage() {
               <div 
                 key={index}
                 className="animate-in fade-in slide-in-from-bottom-7 duration-500"
-                style={{animationDelay: `${index * 150}ms`}}
+                style={{animationDelay: '${index * 150}ms'}}
               >
               <Card className="bg-primary/5 text-foreground backdrop-blur-md border-primary/20 h-full shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                 <CardContent className="p-8 flex flex-col h-full">

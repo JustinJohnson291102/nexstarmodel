@@ -213,6 +213,16 @@ export default function Home() {
         Music Videos/Shoots
     </h3>
 </div>
+<div className="mt-12 relative">
+  <video
+    src="https://ik.imagekit.io/asnkt5q09/8039281-uhd_4096_2160_25fps.mp4?updatedAt=1761397314037"
+    className="w-full h-auto rounded-lg shadow-lg"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
         </div>
       </section>
 

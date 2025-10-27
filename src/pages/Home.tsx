@@ -141,7 +141,7 @@ export default function Home() {
 
   return (
     <>
-   <section className="w-full flex flex-col md:flex-row bg-background">
+   <section className="w-full flex flex-col md:flex-row bg-background pt-32">
         <div className="relative flex items-center justify-center w-full shrink-0 md:w-[45%] h-[40vh] md:h-[calc(90vh-7rem)]">
           <video 
             src="https://ik.imagekit.io/asnkt5q09/Nexstar%20Studio%20Video.mp4?updatedAt=1761382376058"

@@ -5,15 +5,15 @@
 
 // 🔥 FIX: URLs ko working content links (uc?id=FILE_ID) mein change kiya gaya hai.
 const clientLogos = [
-  { src: "https://drive.google.com/uc?export=download&id=1zCWkBc3CvzOA1aJLOPqNWK0CvhRY0XjG", alt: "Client 9" },
-  { src: "https://drive.google.com/uc?export=download&id=1j2qPrDz4DksDoFWUlcw4SH_FzIqyKT4W", alt: "Client 8" },
-  { src: "https://drive.google.com/uc?export=download&id=1Z0qzQSkiuCXCfBTFByuLTTTUK8_5TJQq", alt: "Client 7" },
-  { src: "https://drive.google.com/uc?export=download&id=1V-1ZN6YRSXiFwrg8SC2fZ40pacv20LSu", alt: "Client 6" },
-  { src: "https://drive.google.com/uc?export=download&id=1R7erTvruugfy6TonWIEYiAYDClLZKT_V", alt: "Client 5" },
-  { src: "https://drive.google.com/uc?export=download&id=1PPd2IcOvjjNdjXkGB0ujmfFv6SideA63", alt: "Client 4" },
-  { src: "https://drive.google.com/uc?export=download&id=1MtWFo7keLU5ReO-1Bvda0ZlQqwYugEAp", alt: "Client 3" },
-  { src: "https://drive.google.com/uc?export=download&id=1L7f9fjN0-jQc349EcttHLhnj0JyZqZph", alt: "Client 2" },
-  { src: "https://drive.google.com/uc?export=download&id=1Kd0-0XP3HgMxJq7KEQXb2ZMGcS5KU0l8", alt: "Client 1" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download-removebg-preview.png?updatedAt=1761487160864", alt: "Client 9" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__11_-BWbJYOwO-removebg-preview.png?updatedAt=1761487160751", alt: "Client 8" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__13_-CIOG7-ML-removebg-preview.png?updatedAt=1761487160729", alt: "Client 7" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__7_-DDamdP-Q-removebg-preview.png?updatedAt=1761487160687", alt: "Client 6" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__3_-removebg-preview.png?updatedAt=1761487160646", alt: "Client 5" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__2_-removebg-preview.png?updatedAt=1761487160623", alt: "Client 4" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__4_-removebg-preview.png?updatedAt=1761487160611", alt: "Client 3" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__1_-QcHrYjAO-removebg-preview.png?updatedAt=1761487160401", alt: "Client 2" },
+  { src: "https://ik.imagekit.io/ggelm1lwa/new/download__1_-removebg-preview.png?updatedAt=1761487160366", alt: "Client 1" },
 ];
 
 export default function OurClients({ showTitle = true }: { showTitle?: boolean }) {

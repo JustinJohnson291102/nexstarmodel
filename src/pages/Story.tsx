@@ -75,20 +75,20 @@ const coreValues = [
 
 const teamMembers = [
     // Row 1
-    { name: 'Kristin Watson', title: 'Team Member', imageId: '1s5ADPTtVthtutqydr-2jPSU-qQgLEOJk' },
-    { name: 'Mubbasher Yasin', title: 'Web Designer', imageId: '1HUudFYwCkR5WFgOW2QEnWzZBxU8BBvQI' },
-    { name: 'Firoz', title: 'Marketing Coordinator', imageId: '1-B1a7qr1ybkVKsagzQP91pTLfmIDAaXp' },
-    { name: 'Mehak Steward', title: 'SEO Specialist', imageId: '1sURQD1WwpnFKNOhyVuiY08KTFmCcdScE' },
+    { name: 'Kristin Watson', title: 'Team Member', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/images.jpg?updatedAt=1761478249961' },
+    { name: 'Mubbasher Yasin', title: 'Web Designer', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/istockphoto-496516225-612x612.jpg?updatedAt=1761478250133' },
+    { name: 'Firoz', title: 'Marketing Coordinator', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/Robertson.jpeg?updatedAt=1761478250089' },
+    { name: 'Mehak Steward', title: 'SEO Specialist', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/images%20(1).jpg?updatedAt=1761478249696' },
     // Row 2
-    { name: 'Atul Srivastava', title: 'Director & CEO', imageId: '1l3aXBS4uG7PQur9FLqXgLTCx2T-xTqoc' },
-    { name: 'Johnson', title: 'Web Designer', imageId: '1FhOvgIXw_3rHdB9CL_KMTLSbBVf2sxxy' },
-    { name: 'Ichcha', title: 'Developer', imageId: '1ewP71AMnXgQWmfiBTCYKKWrpsE_LR95h' },
-    { name: 'Anchal', title: 'Member', imageId: '1uXpCfuBPRgeyB1v3tC4yamkVY7z8eR7P' },
+    { name: 'Atul Srivastava', title: 'Director & CEO', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/atul_srivastava-DS6Y1N1M.jpeg?updatedAt=1761478250146' },
+    { name: 'Johnson', title: 'Web Designer', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/Ali-e1714297747935.webp?updatedAt=1761478249334' },
+    { name: 'Ichcha', title: 'Developer', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/Ichcha-BQXtqYnh.jpg?updatedAt=1761478250247' },
+    { name: 'Anchal', title: 'Member', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/anchal_sharma-B6-1UbYI.png?updatedAt=1761478250384' },
     // Row 3
-    { name: 'Arpita', title: 'Corporate Affairs', imageId: '1DsRA9C6eGN-1rl0m9J5YQBLMo_JjBpyx' },
-    { name: 'Aaditya', title: 'Team', imageId: '1d-ouV02fKu-8_9FrrkALO9btr-7FWUmD' },
-    { name: 'Priyanka', title: 'Team', imageId: '1T0pqC9Ugnwan9wU6ZAqwDsNbeOZMq_Re' },
-    { name: 'Aleena Chenail', title: 'Member', imageId: '14RRr3Fne2qOOAN_pOzuhgQ9cWx_vjjOp' },
+    { name: 'Arpita', title: 'Corporate Affairs', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/Arpita-tu5PbAG1.png?updatedAt=1761478250980' },
+    { name: 'Aaditya', title: 'Team', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/Aditya-Cl4HbbuV.jpg?updatedAt=1761478249232' },
+    { name: 'Priyanka', title: 'Team', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/Priya-CREGH9u7.jpg?updatedAt=1761478249951' },
+    { name: 'Aleena Chenail', title: 'Member', imageUrl: 'https://ik.imagekit.io/ggelm1lwa/new-storage/images%20(2).jpg?updatedAt=1761478249689' },
 ];
 
 const testimonials = [
@@ -116,7 +116,7 @@ const testimonials = [
 export default function StoryPage() {
   return (
     <>
-      <section className="relative w-full bg-secondary pt-20 md:pt-0">
+      <section className="relative w-full bg-secondary pt-28">
         <div className="flex flex-col md:grid md:grid-cols-2 md:h-[70vh] items-center w-full">
           <div className="relative z-20 px-4 py-16 md:py-0 text-center md:text-left container mx-auto animate-in fade-in slide-in-from-bottom-10 duration-700">
             <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tight text-foreground mb-4">
@@ -240,7 +240,7 @@ export default function StoryPage() {
             {teamMembers.map((member, index) => (
                 <div key={member.name} className="text-center animate-in fade-in slide-in-from-bottom-7 duration-500" style={{animationDelay: `${index * 100}ms`}}>
                     <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-4 overflow-hidden rounded-lg shadow-lg group">
-                        <img src={`https://drive.google.com/uc?export=download&id=${member.imageId}`}
+                        <img src={member.imageUrl}
                             alt={member.name}
                             className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 filter brightness-125 group-hover:brightness-100"
                             loading="eager"

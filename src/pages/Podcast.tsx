@@ -107,7 +107,7 @@ export default function PodcastPage() {
         className="relative h-[60vh] w-full flex items-center justify-center text-center"
       >
         <img
-          src="https://drive.google.com/uc?export=download&id=1eT9LRdRF581FRDSpAeWrdlKlOMuMpYOv"
+          src="https://ik.imagekit.io/asnkt5q09/podcasthero.png?updatedAt=1761487714468"
           alt="Podcast hero background"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
